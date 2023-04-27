@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import parse from 'html-react-parser';
 
-class ApartmentV1 extends Component {
 
-    render() {
 
-    let publicUrl = process.env.PUBLIC_URL+'/'
-	let CustomClass = this.props.CustomClass ? this.props.CustomClass : ''
 
-    return <div className={"ltn__apartments-plan-area pt-115--- pb-70 "+CustomClass}>
+const ApartmentV1 = (props) => {
+	let publicUrl = process.env.PUBLIC_URL+'/'
+	let customClass = props.customClass ? props.customClass :''
+  return (
+	<div className={"ltn__apartments-plan-area pt-115--- pb-70 "+customClass}>
 			  <div className="container">
 			    <div className="row">
 			      <div className="col-lg-12">
@@ -177,7 +177,9 @@ class ApartmentV1 extends Component {
 			    </div>
 			  </div>
 			</div>
-        }
+  )
 }
+
+
 
 export default ApartmentV1

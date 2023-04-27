@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Apartments = () => {
     let publicUrl = process.env.PUBLIC_URL+'/'
+	
 
   return (
     <div>

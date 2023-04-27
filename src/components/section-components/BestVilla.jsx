@@ -1,10 +1,13 @@
 import React from 'react'
 
-const BestVilla = () => {
+const BestVilla = (props) => {
     let publicUrl = process.env.PUBLIC_URL+'/'
+    let customClass = props.customClass ? props.customClass :''
 
   return (
-    <div className="ltn__about-us-area pt-120 pb-90 ">
+
+  <div className={customClass}>
+  <div className="ltn__about-us-area pt-120 pb-90 ">
     <div className="container">
       <div className="row">
         <div className="col-lg-6 align-self-center">
@@ -45,6 +48,7 @@ const BestVilla = () => {
         </div>
       </div>
     </div>
+  </div>
   </div>
   )
 }

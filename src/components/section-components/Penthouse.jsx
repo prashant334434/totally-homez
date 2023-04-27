@@ -1,11 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-const Penthouse = () => {
+const Penthouse = (props) => {
     let publicUrl = process.env.PUBLIC_URL+'/'
+    let customClass = props.customClass ? props.customClass :''
 
   return (
-    <div>
+    <div className={customClass}>
 			<div className="ltn__product-slider-area ltn__product-gutter pt-115 pb-70">
 				<div className="container">
 					<div className="row">
