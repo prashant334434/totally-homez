@@ -6,7 +6,7 @@ import Featuresv1 from './section-components/features-v1';
 import ProSlider from './section-components/product-slider-v4';
 import BlogSlider from './blog-components/blog-slider-v1';
 import Gallery from './section-components/gallery-v1';
-import Apartment from './section-components/apartment-v1';
+import ApartmentV1 from './section-components/apartment-v1';
 import VideoV1 from './section-components/video-v1';
 import Category from './section-components/category-v1';
 import Testimonial from './section-components/testimonial-v1';
@@ -31,23 +31,23 @@ const Home_V7 = () => {
         <BestProperty/>
         {/* <Aboutv2 /> */}
         <Gallery />
-        <BestVilla />
-        <Villa />
+        <BestVilla customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---" />
+        <Villa customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---" />
         <BestApartment />
         <Apartments />
-        <BestPenthouse />
-        <Penthouse />
+        <BestPenthouse customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---"  />
+        <Penthouse customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---"  />
         <BestTownhouse />
         <Townhouse />
         {/* <Featuresv1 customClass="ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---"/> */}
         {/* <ProSlider /> */}
         {/* <Gallery /> */}
-        <Apartment CustomClass="pt-115" />
+        <ApartmentV1 CustomClass=" ltn__feature-area section-bg-2 pt-120 pb-90 mb-120---" />
         {/* <VideoV1 /> */}
         {/* <Category /> */}
         {/* <Testimonial /> */}
         {/* <BlogSlider customClass="section-subtitle-2"/> */}
-        <TeamAgents/>
+        <TeamAgents />
         <CallToActionV1 />
         <Footer />
     </div>
