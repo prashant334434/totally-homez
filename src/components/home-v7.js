@@ -18,7 +18,11 @@ import BestVilla from './section-components/BestVilla';
 import Villa from './section-components/Villa';
 import BestApartment from './section-components/BestApartment';
 import Apartments from './section-components/Apartment';
-
+import BestPenthouse from './section-components/BestPenthouse';
+import Penthouse from './section-components/Penthouse';
+import BestTownhouse from './section-components/BestTownhouse';
+import Townhouse from './section-components/Townhouse';
+import TeamAgents from './section-components/TeamAgents';
 
 const Home_V7 = () => {
     return <div>
@@ -31,14 +35,19 @@ const Home_V7 = () => {
         <Villa />
         <BestApartment />
         <Apartments />
-        <Featuresv1 customClass="ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---"/>
-        <ProSlider />
-        <Gallery />
+        <BestPenthouse />
+        <Penthouse />
+        <BestTownhouse />
+        <Townhouse />
+        {/* <Featuresv1 customClass="ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---"/> */}
+        {/* <ProSlider /> */}
+        {/* <Gallery /> */}
         <Apartment CustomClass="pt-115" />
-        <VideoV1 />
-        <Category />
-        <Testimonial />
-        <BlogSlider customClass="section-subtitle-2"/>
+        {/* <VideoV1 /> */}
+        {/* <Category /> */}
+        {/* <Testimonial /> */}
+        {/* <BlogSlider customClass="section-subtitle-2"/> */}
+        <TeamAgents/>
         <CallToActionV1 />
         <Footer />
     </div>
