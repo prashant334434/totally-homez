@@ -14,14 +14,13 @@ const BestPenthouse = (props) => {
             <div className="section-title-area ltn__section-title-2--- mb-30">
               {/* <h6 className="section-subtitle section-subtitle-2 ltn__secondary-color">About Us</h6> */}
               <h1 className="section-title">Best Penthouses In Dubai  </h1>
-              <p>Houzez allow you to design unlimited panels and real estate custom
-                forms to capture leads and keep record of all information</p>
+              <p>Experience the pinnacle of luxury living in Dubai's most exclusive penthouses.</p>
             </div>
             <ul className="ltn__list-item-1 ltn__list-item-1-before clearfix">
-              <li> Live Music Cocerts at Luviana</li>
-              <li>Our SecretIsland Boat Tour is Just for You</li>
-              <li>Live Music Cocerts at Luviana</li>
-              <li>Live Music Cocerts at Luviana</li>
+              <li> High-end appliances, smart home technology, and designer finishes .</li>
+              <li>Gourmet kitchens, private elevators, and breathtaking views from every room.</li>
+              <li>24/7 security and CCTV surveillance for ultimate peace of mind.</li>
+              
             </ul>
             <ul className="ltn__list-item-2 ltn__list-item-2-before ltn__flat-info">
               <li><span>3 <i className="flaticon-bed" /></span>

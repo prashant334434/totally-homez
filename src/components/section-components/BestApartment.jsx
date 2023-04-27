@@ -12,14 +12,13 @@ const BestApartment = () => {
             <div className="section-title-area ltn__section-title-2--- mb-30">
               {/* <h6 className="section-subtitle section-subtitle-2 ltn__secondary-color">About Us</h6> */}
               <h1 className="section-title">Best Apartments In Dubai  </h1>
-              <p>Houzez allow you to design unlimited panels and real estate custom
-                forms to capture leads and keep record of all information</p>
+              <p>Live the high life in the most luxurious apartments in Dubai.</p>
             </div>
             <ul className="ltn__list-item-1 ltn__list-item-1-before clearfix">
-              <li> Live Music Cocerts at Luviana</li>
-              <li>Our SecretIsland Boat Tour is Just for You</li>
-              <li>Live Music Cocerts at Luviana</li>
-              <li>Live Music Cocerts at Luviana</li>
+              <li> Feel safe and secure with 24/7 security and CCTV surveillance.</li>
+              <li>Experience 24/7 concierge service for a hassle-free lifestyle.</li>
+              <li>Experience 24/7 concierge service for a hassle-free lifestyle.</li>
+              
             </ul>
             <ul className="ltn__list-item-2 ltn__list-item-2-before ltn__flat-info">
               <li><span>3 <i className="flaticon-bed" /></span>

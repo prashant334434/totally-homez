@@ -12,14 +12,15 @@ const BestTownhouse = () => {
             <div className="section-title-area ltn__section-title-2--- mb-30">
               {/* <h6 className="section-subtitle section-subtitle-2 ltn__secondary-color">About Us</h6> */}
               <h1 className="section-title">Best Townhouses In Dubai  </h1>
-              <p>Houzez allow you to design unlimited panels and real estate custom
-                forms to capture leads and keep record of all information</p>
+              <p>
+Live in style and comfort with our spacious townhouses in Dubai's most sought-after communities.
+</p>
             </div>
             <ul className="ltn__list-item-1 ltn__list-item-1-before clearfix">
-              <li> Live Music Cocerts at Luviana</li>
-              <li>Our SecretIsland Boat Tour is Just for You</li>
-              <li>Live Music Cocerts at Luviana</li>
-              <li>Live Music Cocerts at Luviana</li>
+              <li> Enjoy the benefits of community living with access to world-class amenities.</li>
+              <li>Relax in your own private garden or terrace with beautiful views of the city skyline or lush green parks</li>
+              <li>Stay secure with 24/7 security and CCTV surveillance for peace of mind in your family-friendly townhouse.</li>
+            
             </ul>
             <ul className="ltn__list-item-2 ltn__list-item-2-before ltn__flat-info">
               <li><span>3 <i className="flaticon-bed" /></span>
