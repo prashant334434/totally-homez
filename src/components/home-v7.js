@@ -31,6 +31,8 @@ const Home_V7 = () => {
         <BestProperty/>
         {/* <Aboutv2 /> */}
         <Gallery />
+        <ApartmentV1 CustomClass=" ltn__feature-area section-bg-2 pt-120 pb-90 mb-120---" />
+
         <BestVilla customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---" />
         <Villa customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---" />
         <BestApartment />
@@ -42,7 +44,6 @@ const Home_V7 = () => {
         {/* <Featuresv1 customClass="ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---"/> */}
         {/* <ProSlider /> */}
         {/* <Gallery /> */}
-        <ApartmentV1 CustomClass=" ltn__feature-area section-bg-2 pt-120 pb-90 mb-120---" />
         {/* <VideoV1 /> */}
         {/* <Category /> */}
         {/* <Testimonial /> */}

@@ -14,16 +14,16 @@ const ApartmentV1 = (props) => {
 			    <div className="row">
 			      <div className="col-lg-12">
 			        <div className="section-title-area ltn__section-title-2--- text-center">
-			          <h6 className="section-subtitle section-subtitle-2 ltn__secondary-color">Apartment Sketch</h6>
-			          <h1 className="section-title">Apartments Plan</h1>
+			          {/* <h6 className="section-subtitle section-subtitle-2 ltn__secondary-color">Apartment Sketch</h6> */}
+			          <h1 className="section-title">Property Of The Day</h1>
 			        </div>
 			        <div className="ltn__tab-menu ltn__tab-menu-3 ltn__tab-menu-top-right-- text-uppercase--- text-center">
 			          <div className="nav">
-			            <a data-bs-toggle="tab" href="#liton_tab_3_1">The Studio</a>
-			            <a className="active show" data-bs-toggle="tab" href="#liton_tab_3_2">Deluxe Portion</a>
-			            <a data-bs-toggle="tab" href="#liton_tab_3_3" >Penthouse</a>
-			            <a data-bs-toggle="tab" href="#liton_tab_3_4" >Top Garden</a>
-			            <a data-bs-toggle="tab" href="#liton_tab_3_5" >Double Height</a>
+			            <a data-bs-toggle="tab" href="#liton_tab_3_1">Buy</a>
+			            <a className="active show" data-bs-toggle="tab" href="#liton_tab_3_2">Rent</a>
+			            <a data-bs-toggle="tab" href="#liton_tab_3_3" >Comercial </a>
+			            <a data-bs-toggle="tab" href="#liton_tab_3_4" >Off Plan</a>
+			            <a data-bs-toggle="tab" href="#liton_tab_3_5" >Plots</a>
 			          </div>
 			        </div>
 			        <div className="tab-content">
@@ -32,16 +32,13 @@ const ApartmentV1 = (props) => {
 			              <div className="row">
 			                <div className="col-lg-6">
 			                  <div className="apartments-plan-info ltn__secondary-bg text-color-white">
-			                    <h2>The Studio</h2>
-			                    <p>Enimad minim veniam quis nostrud exercitation ullamco laboris.
-			                      Lorem ipsum dolor sit amet cons aetetur adipisicing elit sedo
-			                      eiusmod tempor.Incididunt labore et dolore magna aliqua.
-			                      sed ayd minim veniam.</p>
+			                    <h2>Coastal Charm Lounge</h2>
+			                    <p>This stunning luxury apartment is located in the heart of Downtown Dubai, just steps away from the Burj Khalifa and Dubai Mall. With high-end finishes, top-notch amenities, and breathtaking views of the city, this apartment is the epitome of luxury living.</p>
 			                    <div className="apartments-info-list apartments-info-list-color mt-40">
 			                      <ul>
 			                        <li><label>Total Area</label> <span>2800 Sq. Ft</span></li>
-			                        <li><label>Bedroom</label> <span>150 Sq. Ft</span></li>
-			                        <li><label>Bathroom</label> <span>45 Sq. Ft</span></li>
+			                        <li><label>Bedroom</label> <span>2</span></li>
+			                        <li><label>Bathroom</label> <span>4</span></li>
 			                        <li><label>Belcony/Pets</label> <span>Allowed</span></li>
 			                        <li><label>Lounge</label> <span>650 Sq. Ft</span></li>
 			                      </ul>
@@ -61,16 +58,13 @@ const ApartmentV1 = (props) => {
 			              <div className="row">
 			                <div className="col-lg-6">
 			                  <div className="apartments-plan-info ltn__secondary-bg text-color-white">
-			                    <h2>Deluxe Portion</h2>
-			                    <p>Enimad minim veniam quis nostrud exercitation ullamco laboris.
-			                      Lorem ipsum dolor sit amet cons aetetur adipisicing elit sedo
-			                      eiusmod tempor.Incididunt labore et dolore magna aliqua.
-			                      sed ayd minim veniam.</p>
+			                    <h2>Dubai Marina</h2>
+			                    <p>This stunning 2-bedroom apartment is located in the heart of Dubai Marina, offering spectacular views of the waterfront and a luxurious lifestyle.</p>
 			                    <div className="apartments-info-list apartments-info-list-color mt-40">
 			                      <ul>
 			                        <li><label>Total Area</label> <span>2800 Sq. Ft</span></li>
-			                        <li><label>Bedroom</label> <span>150 Sq. Ft</span></li>
-			                        <li><label>Bathroom</label> <span>45 Sq. Ft</span></li>
+			                        <li><label>Bedroom</label> <span>6 </span></li>
+			                        <li><label>Bathroom</label> <span>4</span></li>
 			                        <li><label>Belcony/Pets</label> <span>Allowed</span></li>
 			                        <li><label>Lounge</label> <span>650 Sq. Ft</span></li>
 			                      </ul>
@@ -90,16 +84,13 @@ const ApartmentV1 = (props) => {
 			              <div className="row">
 			                <div className="col-lg-6">
 			                  <div className="apartments-plan-info ltn__secondary-bg text-color-white">
-			                    <h2>Penthouse</h2>
-			                    <p>Enimad minim veniam quis nostrud exercitation ullamco laboris.
-			                      Lorem ipsum dolor sit amet cons aetetur adipisicing elit sedo
-			                      eiusmod tempor.Incididunt labore et dolore magna aliqua.
-			                      sed ayd minim veniam.</p>
+			                    <h2>The Crown Building</h2>
+			                    <p>This spacious commercial space is located in the bustling area of Downtown Dubai, perfect for businesses looking to establish a presence in a prime location.</p>
 			                    <div className="apartments-info-list apartments-info-list-color mt-40">
 			                      <ul>
 			                        <li><label>Total Area</label> <span>2800 Sq. Ft</span></li>
-			                        <li><label>Bedroom</label> <span>150 Sq. Ft</span></li>
-			                        <li><label>Bathroom</label> <span>45 Sq. Ft</span></li>
+			                        <li><label>Bedroom</label> <span>5 </span></li>
+			                        <li><label>Bathroom</label> <span>4</span></li>
 			                        <li><label>Belcony/Pets</label> <span>Allowed</span></li>
 			                        <li><label>Lounge</label> <span>650 Sq. Ft</span></li>
 			                      </ul>
@@ -119,16 +110,13 @@ const ApartmentV1 = (props) => {
 			              <div className="row">
 			                <div className="col-lg-6">
 			                  <div className="apartments-plan-info ltn__secondary-bg text-color-white">
-			                    <h2>Top Garden</h2>
-			                    <p>Enimad minim veniam quis nostrud exercitation ullamco laboris.
-			                      Lorem ipsum dolor sit amet cons aetetur adipisicing elit sedo
-			                      eiusmod tempor.Incididunt labore et dolore magna aliqua.
-			                      sed ayd minim veniam.</p>
+			                    <h2>The Ultimate Vision Apartments</h2>
+			                    <p>With a focus on sustainability and energy efficiency, it's the perfect choice for businesses looking to make a positive impact. Don't miss this opportunity to elevate your business in a premier location.</p>
 			                    <div className="apartments-info-list apartments-info-list-color mt-40">
 			                      <ul>
 			                        <li><label>Total Area</label> <span>2800 Sq. Ft</span></li>
-			                        <li><label>Bedroom</label> <span>150 Sq. Ft</span></li>
-			                        <li><label>Bathroom</label> <span>45 Sq. Ft</span></li>
+			                        <li><label>Bedroom</label> <span>1</span></li>
+			                        <li><label>Bathroom</label> <span>4</span></li>
 			                        <li><label>Belcony/Pets</label> <span>Allowed</span></li>
 			                        <li><label>Lounge</label> <span>650 Sq. Ft</span></li>
 			                      </ul>
@@ -148,11 +136,8 @@ const ApartmentV1 = (props) => {
 			              <div className="row">
 			                <div className="col-lg-6">
 			                  <div className="apartments-plan-info ltn__secondary-bg text-color-white">
-			                    <h2>Double Height</h2>
-			                    <p>Enimad minim veniam quis nostrud exercitation ullamco laboris.
-			                      Lorem ipsum dolor sit amet cons aetetur adipisicing elit sedo
-			                      eiusmod tempor.Incididunt labore et dolore magna aliqua.
-			                      sed ayd minim veniam.</p>
+			                    <h2>Greenview Plots</h2>
+			                    <p>a collection of prime residential plots located in a serene and picturesque environment. Nestled in the heart of a lush green landscape, these plots offer the perfect canvas for your dream home.</p>
 			                    <div className="apartments-info-list apartments-info-list-color mt-40">
 			                      <ul>
 			                        <li><label>Total Area</label> <span>2800 Sq. Ft</span></li>
