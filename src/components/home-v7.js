@@ -23,6 +23,8 @@ import Penthouse from './section-components/Penthouse';
 import BestTownhouse from './section-components/BestTownhouse';
 import Townhouse from './section-components/Townhouse';
 import TeamAgents from './section-components/TeamAgents';
+import AboutV4 from './section-components/about-v4';
+
 
 const Home_V7 = () => {
     return <div>
@@ -48,6 +50,7 @@ const Home_V7 = () => {
         {/* <Category /> */}
         {/* <Testimonial /> */}
         {/* <BlogSlider customClass="section-subtitle-2"/> */}
+        <AboutV4 />
         <TeamAgents />
         <CallToActionV1 />
         <Footer />

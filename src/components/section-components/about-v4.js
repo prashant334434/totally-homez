@@ -2,13 +2,15 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import parse from 'html-react-parser';
 
-class AboutV4 extends Component {
 
-    render() {
 
-        let publicUrl = process.env.PUBLIC_URL+'/'
 
-    return  <div className="ltn__about-us-area pt-120--- pb-90 mt--30 go-top">
+const AboutV4 = () => {
+	let publicUrl = process.env.PUBLIC_URL+'/'
+
+  return (
+	<div>
+		<div className="ltn__about-us-area pt-120--- pb-90 mt--30 go-top">
 				<div className="container">
 				<div className="row">
 					<div className="col-lg-6 align-self-center">
@@ -63,7 +65,10 @@ class AboutV4 extends Component {
 				</div>
 				</div>
 			</div>
-        }
+	</div>
+  )
 }
 
 export default AboutV4
+
+
