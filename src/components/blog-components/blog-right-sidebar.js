@@ -18,7 +18,7 @@ Uptown Dubai</h1>
 					{/* Blog Item */}
 					<div className="ltn__blog-item ltn__blog-item-5 go-top">
 					<div className="ltn__blog-img">
-						<Link to="/blog-details"><img src={publicUrl+"assets/img/blog/31.jpg"} alt="Image" /></Link>
+						<Link to="/blog-details"><img src={publicUrl+"assets/img/service/uptownDubai.jpeg"} alt="Image" /></Link>
 					</div>
 				
 					</div>

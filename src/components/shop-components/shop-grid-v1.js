@@ -812,19 +812,7 @@ const ShopGirdV1 = () => {
 								</div>
 								</div>
 							</div>
-							<div className="ltn__pagination-area text-center">
-								<div className="ltn__pagination">
-								<ul>
-									<li><a href="#"><i className="fas fa-angle-double-left" /></a></li>
-									<li><a href="#">1</a></li>
-									<li className="active"><a href="#">2</a></li>
-									<li><a href="#">3</a></li>
-									<li><a href="#">...</a></li>
-									<li><a href="#">10</a></li>
-									<li><a href="#"><i className="fas fa-angle-double-right" /></a></li>
-								</ul>
-								</div>
-							</div>
+						
 							</div>
 						</div>
 				</div>

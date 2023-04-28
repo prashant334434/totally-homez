@@ -39,7 +39,7 @@ duplexes and two exclusive 3-bedroom penthouses for sale
               <Link to="/service" className="theme-btn-1 btn btn-effect-1">GET PROJECT BROCHURE</Link>
 
             </div>
-            <ul className="ltn__list-item-half clearfix pt-80">
+            <ul className="ltn__list-item-half clearfix pt-100">
               
               <li>
                 <i className="flaticon-mountain" />
@@ -75,11 +75,11 @@ duplexes and two exclusive 3-bedroom penthouses for sale
         </div>
         <div className="col-lg-5 align-self-center">
           <div className="about-us-img-wrap about-img-left">
-            <img src={publicUrl+"assets/img/others/7.png"} alt="About Us Image" />
+            <img src={publicUrl+"assets/img/others/13.png"} alt="About Us Image" />
             <div className="about-us-img-info about-us-img-info-2 about-us-img-info-3">
               <div className="ltn__video-img ltn__animation-pulse1">
-                <img src={publicUrl+"assets/img/others/8.png" } alt="video popup bg image" />
-                <a className="ltn__video-icon-2 ltn__video-icon-2-border---" href="https://www.youtube.com/embed/X7R-q9rsrtU?autoplay=1&showinfo=0" data-rel="lightcase:myCollection">
+                <img src={publicUrl+"assets/img/others/13.png" } alt="video popup bg image" />
+                <a className="ltn__video-icon-2 ltn__video-icon-2-border---" href="https://www.youtube.com/embed/xyUZ3lJpF5s?autoplay=1&showinfo=0" data-rel="lightcase:myCollection">
                   <i className="fa fa-play" />
                 </a>
               </div>
