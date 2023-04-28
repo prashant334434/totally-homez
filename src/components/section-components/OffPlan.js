@@ -16,7 +16,7 @@ import CounterFeatures from './CounterFeatures';
 const OffPlan = () => {
   return ( <div>
      <div>
-        <Navbar />
+        <Navbar page={"offplan"} />
         <AboutOffPlan/>
         <BlogUpfront/>
         <CounterFeatures/>
