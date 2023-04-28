@@ -24,6 +24,7 @@ import BestTownhouse from './section-components/BestTownhouse';
 import Townhouse from './section-components/Townhouse';
 import TeamAgents from './section-components/TeamAgents';
 import AboutV4 from './section-components/about-v4';
+import HomeCrousal from './shop-components/HomeCrousal';
 
 
 const Home_V7 = () => {
@@ -32,7 +33,8 @@ const Home_V7 = () => {
         <BannerV6 />
         <BestProperty/>
         {/* <Aboutv2 /> */}
-        <Gallery />
+        {/* <Gallery /> */}
+        <HomeCrousal/>
         <ApartmentV1 CustomClass=" ltn__feature-area section-bg-2 pt-120 pb-90 mb-120---" />
 
         <BestVilla customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---" />

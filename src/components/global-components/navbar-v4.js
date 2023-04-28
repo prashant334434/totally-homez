@@ -88,8 +88,8 @@ class NavbarV3 extends Component {
 							<nav>
 							<div className="ltn__main-menu">
 								<ul>
-								<li className="menu-icon"><Link to="/">Home</Link>
-								<ul className="sub-menu menu-pages-img-show">
+								{/* <li ><Link to="/">Home</Link> */}
+								{/* <ul className="sub-menu menu-pages-img-show">
 									<li>
 										<Link to="/">Home Style 01</Link>
 										<img src={publicUrl+"assets/img/home-demos/home-1.jpg"} alt="#" />
@@ -130,10 +130,10 @@ class NavbarV3 extends Component {
 										<Link to="/home-v10">Home Style 10</Link>
 										<img src={publicUrl+"assets/img/home-demos/home-11.jpg"}  alt="#" />
 									</li>
-								</ul>
-								</li>
-								<li className="menu-icon"><Link to="/about">About</Link>
-									<ul>
+								</ul> */}
+								{/* </li> */}
+								<li className="menu-icon"><Link to="/about">Buy </Link>
+									{/* <ul>
 										<li><Link to="/about">About</Link></li>
 										<li><Link to="/service">Services</Link></li>
 										<li><Link to="/service-details">Service Details</Link></li>
@@ -144,10 +144,10 @@ class NavbarV3 extends Component {
 										<li><Link to="/team-details">Team Details</Link></li>
 										<li><Link to="/faq">FAQ</Link></li>
 										<li><Link to="/location">Google Map Locations</Link></li>
-									</ul>
+									</ul> */}
 								</li>
-								<li className="menu-icon"><Link to="/shop">Shop</Link>
-									<ul>
+								<li className="menu-icon"><Link to="/shop">Rent</Link>
+									{/* <ul>
 										<li><Link to="/shop">Shop</Link></li>
 										<li><Link to="/shop-grid">Shop Grid</Link></li>
 										<li><Link to="/shop-left-sidebar">Shop Left sidebar</Link></li>
@@ -158,19 +158,19 @@ class NavbarV3 extends Component {
 										<li><Link to="/my-account">My Account</Link></li>
 										<li><Link to="/login">Sign in</Link></li>
 										<li><Link to="/register">Register</Link></li>
-									</ul>
+									</ul> */}
 								</li>
-								<li className="menu-icon"><Link to="/blog-grid">News</Link>
-									<ul>
+								<li className="menu-icon"><Link to="/blog-grid">Commercial</Link>
+									{/* <ul>
 										<li><Link to="/blog">News</Link></li>
 										<li><Link to="/blog-grid">News Grid</Link></li>
 										<li><Link to="/blog-left-sidebar">News Left sidebar</Link></li>
 										<li><Link to="/blog-right-sidebar">News Right sidebar</Link></li>
 										<li><Link to="/blog-details">News details</Link></li>
-									</ul>
+									</ul> */}
 								</li>
-								<li className="menu-icon"><Link to="#">Pages</Link>
-								<ul className="mega-menu">
+								<li className="menu-icon"><Link to="#">Luxury</Link>
+								{/* <ul className="mega-menu">
 									<li><a href="#">Inner Pages</a>
 										<ul>
 											<li><Link to="/portfolio">Portfolio</Link></li>
@@ -203,11 +203,11 @@ class NavbarV3 extends Component {
 									</li>
 									<li><Link to="/shop"><img src={publicUrl+"assets/img/banner/menu-banner-1.jpg"} alt="#" /></Link>
 									</li>
-								</ul>
+								</ul> */}
 							</li>
-								<li><Link to="/contact">Contact</Link></li>
+								<li><Link to="/contact">Blog</Link></li>
 								<li className="special-link">
-									<Link to="/add-listing">Add Listing</Link>
+									<Link to="/add-listing">Sign In</Link>
 								</li>
 								</ul>
 							</div>
