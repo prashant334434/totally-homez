@@ -233,10 +233,10 @@ body{
   /* Darken */
   --ltn__primary-color-3: #133236;
   /* Lighten */
-  --ltn__secondary-color: #ff5a3c;
-  --ltn__secondary-color-2: #cb3421;
+  --ltn__secondary-color: #eb2027;
+  --ltn__secondary-color-2: #eb2027;
   /* Darken */
-  --ltn__secondary-color-3: #fb412a;
+  --ltn__secondary-color-3: #eb2027;
   /* Lighten */
   --ltn__heading-color: #071c1f;
   --ltn__paragraph-color: #5c727d;
@@ -293,9 +293,9 @@ body{
   /* Black */
   --border-color-3: #5c617f;
   /* Black */
-  --border-color-4: #eb6954;
+  --border-color-4: #eb2027;
   /* Red */
-  --border-color-5: #bc3928;
+  --border-color-5: #eb2027;
   /* Red */
   --border-color-6: #103034;
   /* Black */
@@ -336,9 +336,9 @@ body{
   --white-8: #fafafa;
   --white-9: #f2f7fa;
   --white-10: #ededed;
-  --red: #ff0000;
-  --red-2: #f34f3f;
-  --red-3: #db483b;
+  --red: #eb2027;
+  --red-2: #eb2027;
+  --red-3: #eb2027;
   --silver: #c0c0c0;
   --gray: #808080;
   --maroon: #800000;
@@ -361,14 +361,14 @@ body{
   --facebook: #365493;
   --twitter: #3cf;
   --linkedin: #0077b5;
-  --pinterest: #c8232c;
-  --dribbble: #ea4c89;
+  --pinterest: #eb2027;
+  --dribbble: #eb2027;
   --behance: #131418;
-  --google-plus: #dd4b39;
-  --instagram: #e4405f;
+  --google-plus: #eb2027;
+  --instagram: #eb2027;
   --vk: #3b5998;
   --wechat: #7bb32e;
-  --youtube: #cb2027;
+  --youtube: #eb2027;
   --email: #f89a1e;
 }
 
