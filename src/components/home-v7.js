@@ -28,6 +28,7 @@ import HomeCrousal from './shop-components/HomeCrousal';
 import AboutV5 from './section-components/about-v5';
 import BlogT from './blog-components/BlogT';
 import ProductSliderV1 from './section-components/product-slider-v1';
+import Footer2 from './global-components/Footer2';
 
 
 const Home_V7 = () => {
@@ -63,6 +64,7 @@ const Home_V7 = () => {
 
         {/* <BlogT customClass='ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---'/> */}
         <CallToActionV1 />
+        <Footer2 />
         <Footer />
     </div>
 }
