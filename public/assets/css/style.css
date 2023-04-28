@@ -70,6 +70,10 @@ font-family: 'Poppins', sans-serif;
 /* ====================================================
     Gutter Code 
 ==================================================== */
+body{
+  overflow-x: hidden;
+
+}
 .container,
 .container-fluid {
   padding-right: 15px;
