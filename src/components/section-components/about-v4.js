@@ -5,11 +5,12 @@ import parse from 'html-react-parser';
 
 
 
-const AboutV4 = () => {
+const AboutV4 = (props) => {
 	let publicUrl = process.env.PUBLIC_URL+'/'
+    let customClass = props.customClass ? props.customClass :''
 
   return (
-	<div>
+	<div className={customClass}>
 		<div className="ltn__about-us-area pt-120--- pb-90 mt--30 go-top">
 				<div className="container">
 				<div className="row">

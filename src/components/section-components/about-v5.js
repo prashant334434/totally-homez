@@ -2,13 +2,15 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import parse from 'html-react-parser';
 
-class AboutV5 extends Component {
 
-    render() {
 
-        let publicUrl = process.env.PUBLIC_URL+'/'
+const AboutV5 = (props) => {
+	let publicUrl = process.env.PUBLIC_URL+'/'
+    let customClass = props.customClass ? props.customClass :''
 
-    return <div className="ltn__about-us-area pb-115 go-top">
+  return (
+	<div className={customClass}>
+		<div className="ltn__about-us-area pb-115 go-top">
 				<div className="container">
 				<div className="row">
 					<div className="col-lg-5 align-self-center">
@@ -35,8 +37,18 @@ class AboutV5 extends Component {
 					</div>
 				</div>
 				</div>
-			</div>	
-        }
+			</div>
+	</div>
+  )
 }
+
+
+
+    
+
+   
+		
+  
+
 
 export default AboutV5

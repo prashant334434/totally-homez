@@ -88,7 +88,7 @@ class NavbarV3 extends Component {
 							<nav>
 							<div className="ltn__main-menu">
 								<ul>
-								{/* <li ><Link to="/">Home</Link> */}
+								<li ><Link to="/">Home</Link>
 								{/* <ul className="sub-menu menu-pages-img-show">
 									<li>
 										<Link to="/">Home Style 01</Link>
@@ -131,7 +131,7 @@ class NavbarV3 extends Component {
 										<img src={publicUrl+"assets/img/home-demos/home-11.jpg"}  alt="#" />
 									</li>
 								</ul> */}
-								{/* </li> */}
+								</li>
 								<li className="menu-icon"><Link to="/about">Buy </Link>
 									{/* <ul>
 										<li><Link to="/about">About</Link></li>

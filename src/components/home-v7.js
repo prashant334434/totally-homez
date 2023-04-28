@@ -25,6 +25,8 @@ import Townhouse from './section-components/Townhouse';
 import TeamAgents from './section-components/TeamAgents';
 import AboutV4 from './section-components/about-v4';
 import HomeCrousal from './shop-components/HomeCrousal';
+import AboutV5 from './section-components/about-v5';
+import BlogT from './blog-components/BlogT';
 
 
 const Home_V7 = () => {
@@ -38,12 +40,12 @@ const Home_V7 = () => {
         <ApartmentV1 CustomClass=" ltn__feature-area section-bg-2 pt-120 pb-90 mb-120---" />
 
         <BestVilla customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---" />
-        <Villa customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---" />
-        <BestApartment />
+        <Villa />
+        <BestApartment customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---"  />
         <Apartments />
         <BestPenthouse customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---"  />
-        <Penthouse customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---"  />
-        <BestTownhouse />
+        <Penthouse  />
+        <BestTownhouse customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---"  />
         <Townhouse />
         {/* <Featuresv1 customClass="ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---"/> */}
         {/* <ProSlider /> */}
@@ -52,8 +54,9 @@ const Home_V7 = () => {
         {/* <Category /> */}
         {/* <Testimonial /> */}
         {/* <BlogSlider customClass="section-subtitle-2"/> */}
-        <AboutV4 />
+        <AboutV5  customClass='ltn__feature-area section-bg-5 pt-120 pb-90 mb-120---'/>
         <TeamAgents />
+        <BlogT customClass='ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---'/>
         <CallToActionV1 />
         <Footer />
     </div>
