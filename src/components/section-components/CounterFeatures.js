@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 import parse from 'html-react-parser';
 
 
-const CounterV1 = (props) => {
+const CounterFeatures = (props) => {
 	let customClass = props.customClass ? props.customClass :''
 let publicUrl = process.env.PUBLIC_URL+'/'
   return (
 	<div className={customClass}>
-	<div className="ltn__counterup-area section-bg-1 pt-120 pb-70">
+	<div className="ltn__counterup-area section-bg-1 pt-20">
 			  <div className="container">
 			    <div className="row">
 			      <div className="col-md-3 col-sm-6 align-self-center">
@@ -16,8 +16,8 @@ let publicUrl = process.env.PUBLIC_URL+'/'
 			          <div className="counter-icon">
 			            <i className="flaticon-select" />
 			          </div>
-			          <h1><span className="">30</span>{" "}<span className="">Minutes</span> </h1>
-			          <h6>to Downtown Dubai</h6>
+			          <h1><span className="">24/7</span>{" "}<span className=""></span> </h1>
+			          <h6>CCTV</h6>
 			        </div>
 			      </div>
 			      <div className="col-md-3 col-sm-6 align-self-center">
@@ -25,8 +25,8 @@ let publicUrl = process.env.PUBLIC_URL+'/'
 			          <div className="counter-icon">
 			            <i className="flaticon-office" />
 			          </div>
-			          <h1><span className="">10</span>{" "}<span>Minutes</span><span className="counterUp-icon"></span> </h1>
-			          <h6>to Dubai Marina
+			          <h1><span className="">Smart</span>{" "}<span></span><span className="counterUp-icon"></span> </h1>
+			          <h6>Home
 
 </h6>
 			        </div>
@@ -36,8 +36,8 @@ let publicUrl = process.env.PUBLIC_URL+'/'
 			          <div className="counter-icon">
 			            <i className="flaticon-excavator" />
 			          </div>
-			          <h1><span className="">30</span><span>Minutes</span> </h1>
-			          <h6>to DXB Airport
+			          <h1><span className="">Infinity</span><span></span> </h1>
+			          <h6>Pools
 
 </h6>
 			        </div>
@@ -47,8 +47,8 @@ let publicUrl = process.env.PUBLIC_URL+'/'
 			          <div className="counter-icon">
 			            <i className="flaticon-armchair" />
 			          </div>
-			          <h1><span className="">40</span><span>Minutes</span> </h1>
-			          <h6>to DWC Airport
+			          <h1><span className="">Furnished</span><span></span> </h1>
+			          <h6>Residences
 
 </h6>
 			        </div>
@@ -61,5 +61,5 @@ let publicUrl = process.env.PUBLIC_URL+'/'
   )
 }
 
-export default CounterV1
+export default CounterFeatures
 

@@ -47,6 +47,8 @@ import AddListing from './components/add-listing';
 import Wishlist from './components/wishlist';
 import OrderTracking from './components/order-tracking';
 import History from './components/history';
+import ShopGridV1 from './components/shop-components/shop-right-sidebar';
+import OffPlan from './components/section-components/OffPlan';
 
 
 
@@ -103,6 +105,9 @@ import History from './components/history';
         <Route path="/wishlist" component={ Wishlist } />
         <Route path="/order-tracking" component={ OrderTracking } />
         <Route path="/history" component={ History } />
+
+        <Route path="/off-plan" component={ OffPlan } />
+
     </Switch>
     </div>
 </HashRouter>   )

@@ -15010,7 +15010,7 @@ input.cart-plus-minus-box {
   flex-flow: row wrap;
 }
 .ltn__list-item-half li {
-  width: 50%;
+  width: 33%;
   float: left;
   list-style: none;
   display: -webkit-box;
@@ -17862,6 +17862,10 @@ input.cart-plus-minus-box {
 .theme-btn-2 {
   background-color: var(--ltn__primary-color);
   color: var(--white);
+}
+.theme-btn-black {
+  background-color: var(--ltn__primary-color-3);
+  color: var(--black-2);
 }
 .theme-btn-2:hover {
   background-color: var(--ltn__secondary-color);

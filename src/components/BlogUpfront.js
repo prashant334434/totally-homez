@@ -4,14 +4,15 @@ import PageHeader from './global-components/page-header';
 import BlogRightSidebar from './blog-components/blog-right-sidebar';
 import CallToActionV1 from './section-components/call-to-action-v1';
 import Footer from './global-components/footer';
+import BlogUpfrontDetails from './blog-components/blogUpfront';
 
-const BlogRightSidebarPage = () => {
+const BlogUpfront = () => {
     return <div>
    
-        <BlogRightSidebar />
+        <BlogUpfrontDetails />
         
     </div>
 }
 
-export default BlogRightSidebarPage
+export default BlogUpfront
 

@@ -2,58 +2,61 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import parse from 'html-react-parser';
 
-class ShopGridV1 extends Component {
 
-    render() {
+const ShopGirdV1 = () => {
+	let publicUrl = process.env.PUBLIC_URL+'/'
 
-        let publicUrl = process.env.PUBLIC_URL+'/'
-
-    return <div>
-			<div className="ltn__product-area ltn__product-gutter mb-100">
+  return (
+	<div>
+			<div className="ltn__product-area ltn__product-gutter pt-100 mb-100">
 				<div className="container">
 						<div className="row">
 							<div className="col-lg-12">
-							<div className="ltn__shop-options">
-								<ul>
+						<h2>Trending Off Plan Properties in Dubai</h2>
+					<div className="ltn__shop-options">
+							<ul className="justify-content-start">
 								<li>
-									<div className="ltn__grid-list-tab-menu ">
+								<div className="ltn__grid-list-tab-menu ">
 									<div className="nav">
-										<a className="active show" data-bs-toggle="tab" href="#liton_product_grid"><i className="fas fa-th-large" /></a>
-										<a data-bs-toggle="tab" href="#liton_product_list"><i className="fas fa-list" /></a>
+									<a className="active show" data-bs-toggle="tab" href="#liton_product_grid"><i className="fas fa-th-large" /></a>
+									<a data-bs-toggle="tab" href="#liton_product_list"><i className="fas fa-list" /></a>
 									</div>
-									</div>
+								</div>
+								</li>
+								<li className="d-none">
+								<div className="showing-product-number text-right">
+									<span>Showing 1–12 of 18 results</span>
+								</div> 
 								</li>
 								<li>
-									<div className="short-by text-center">
+								<div className="short-by text-center">
 									<select className="nice-select">
-										<option>Default sorting</option>
-										<option>Sort by popularity</option>
-										<option>Sort by new arrivals</option>
-										<option>Sort by price: low to high</option>
-										<option>Sort by price: high to low</option>
+									<option>Default Sorting</option>
+									<option>Sort by popularity</option>
+									<option>Sort by new arrivals</option>
+									<option>Sort by price: low to high</option>
+									<option>Sort by price: high to low</option>
 									</select>
-									</div> 
+								</div> 
 								</li>
 								<li>
-									<div className="showing-product-number text-right">
-									<span>Showing 9 of 20 results</span>
-									</div> 
+								<div className="short-by text-center">
+									<select className="nice-select">
+									<option>Per Page: 12</option>
+									<option>Per Page: 20</option>
+									<option>Per Page: 30</option>
+									<option>Per Page: 50</option>
+									<option>Per Page: 100</option>
+									</select>
+								</div> 
 								</li>
-								</ul>
+							</ul>
 							</div>
 							<div className="tab-content ">
 								<div className="tab-pane fade active show" id="liton_product_grid">
 								<div className="ltn__product-tab-content-inner ltn__product-grid-view">
 									<div className="row">
-									<div className="col-lg-12">
-										{/* Search Widget */}
-										<div className="ltn__search-widget mb-30">
-										<form action="#">
-											<input type="text" name="search" placeholder="Search your keyword..." />
-											<button type="submit"><i className="fas fa-search" /></button>
-										</form>
-										</div>
-									</div>
+									
 									{/* ltn__product-item */}
 									<div className="col-lg-4 col-sm-6 col-12">
 										<div className="ltn__product-item ltn__product-item-4 ltn__product-item-5 text-center---">
@@ -997,8 +1000,8 @@ class ShopGridV1 extends Component {
 
 
 			</div>
-
-        }
+  )
 }
 
-export default ShopGridV1
+
+export default ShopGirdV1
