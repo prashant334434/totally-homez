@@ -10123,13 +10123,13 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 /* Bootstrap Tab with Slider Issue Fix Start */
 .tab-content {
-  width: 100%;
+  width: 100%s;
 }
 
 .tab-content .tab-pane {
   display: block;
   height: 0;
-  max-width: 100%;
+  min-width: 100%;
   visibility: hidden;
   overflow: hidden;
   opacity: 0;
