@@ -47,6 +47,8 @@ import AddListing from './components/add-listing';
 import Wishlist from './components/wishlist';
 import OrderTracking from './components/order-tracking';
 import History from './components/history';
+import Listings from './components/Listings';
+import PropertyDetails from './components/PropertyDetails';
 
 
 
@@ -103,6 +105,8 @@ import History from './components/history';
         <Route path="/wishlist" component={ Wishlist } />
         <Route path="/order-tracking" component={ OrderTracking } />
         <Route path="/history" component={ History } />
+        <Route path="/listings" component={ Listings } />
+        <Route path="/property-details" component={ PropertyDetails } />
     </Switch>
     </div>
 </HashRouter>   )
