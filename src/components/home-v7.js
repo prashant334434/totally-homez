@@ -29,6 +29,11 @@ import AboutV5 from './section-components/about-v5';
 import BlogT from './blog-components/BlogT';
 import ProductSliderV1 from './section-components/product-slider-v1';
 import Footer2 from './global-components/Footer2';
+import UpcomingProductV1 from './section-components/upcoming-product-v1';
+import Video from './section-components/video-v2';
+import ProductSlider from './section-components/product-slider-v2';
+import Banner from './section-components/banner-v2';
+import Neighbour from './section-components/neighbour';
 
 
 const Home_V7 = () => {
@@ -41,16 +46,24 @@ const Home_V7 = () => {
         {/* <HomeCrousal/> */}
         <ApartmentV1 CustomClass=" ltn__feature-area section-bg-2 pt-120 pb-90 mb-120---" />
 
-        <BestVilla customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---" />
-        <ProductSliderV1/>
-        <BestApartment customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---"  />
-        <ProductSliderV1/>
+        <UpcomingProductV1 />
+        {/* <BestVilla customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---" /> */}
+        {/* <ProductSliderV1/> */}
+        {/* <BestApartment customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---"  /> */}
+        <Video />
 
-        <BestPenthouse customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---"  />
-        <ProductSliderV1/>
-
+        {/* <ProductSliderV1/> */}
         <BestTownhouse customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---"  />
         <ProductSliderV1/>
+        {/* <BestPenthouse customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---"  /> */}
+        {/* <ProductSliderV1/> */}
+        {/* <Banner /> */}
+        {/* <Neighbour customClass="ltn__feature-area section-bg-8 pt-120 pb-90 mb-120---"/> */}
+
+ 
+
+        <ProductSlider customClass="ltn__feature-area section-bg-4 pt-120 pb-90 mb-120---"/>
+
 
         {/* <Featuresv1 customClass="ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---"/> */}
         {/* <ProSlider /> */}

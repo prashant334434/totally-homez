@@ -2,20 +2,20 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import parse from 'html-react-parser';
 
-class ProductSliderV2 extends Component {
 
-    render() {
 
-        let publicUrl = process.env.PUBLIC_URL+'/'
-
-    return <div className="ltn__search-by-place-area before-bg-top bg-image-top--- pt-115 pb-70" data-bs-bg={publicUrl+"assets/img/bg/20.jpg"}>
+const ProductSliderV2 = (props) => {
+	let publicUrl = process.env.PUBLIC_URL+'/'
+		let customClass = props.customClass ? props.customClass :''
+  return (
+	<div>
+		<div className="ltn__search-by-place-area before-bg-top bg-image-top--- pt-115 pb-70" data-bs-bg={publicUrl+"assets/img/bg/20.jpg"}>
 			  <div className="container">
 			    <div className="row">
 			      <div className="col-lg-12">
 			        <div className="section-title-area ltn__section-title-2--- text-center---">
-			          <h6 className="section-subtitle section-subtitle-2--- ltn__secondary-color">Area Properties</h6>
-			          <h1 className="section-title">Find Your Dream House <br />
-			            Search By Area</h1>
+			          <h6 className="section-subtitle section-subtitle-2--- ltn__secondary-color">Best Penthouses In Dubai</h6>
+			          <h1 className="section-title">Experience the pinnacle of luxury living in Dubai's</h1>
 			        </div>
 			      </div>
 			    </div>
@@ -100,7 +100,9 @@ class ProductSliderV2 extends Component {
 			    </div>
 			  </div>
 			</div>
-        }
+	</div>
+  )
 }
+
 
 export default ProductSliderV2
