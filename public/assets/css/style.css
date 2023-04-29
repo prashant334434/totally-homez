@@ -1049,7 +1049,7 @@ input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="password"]:focus,
 textarea:focus {
-  border-color: var(--ltn__secondary-color);
+  border-color: #999;
 }
 
 input[type="password"] {
@@ -15883,20 +15883,27 @@ input.cart-plus-minus-box {
 
 .ltn__car-dealer-form-box .ltn__car-dealer-form-item {
   position: relative;
-  display: inline-block;
+  /* display: flex; */
   margin-bottom: 30px;
-}
+  padding: 0;
+  margin: 5px;
+  width: 15.5%;
 
+}
+.banner_search {
+  display: flex;
+  align-items: center;
+}
 .ltn__car-dealer-form-box .nice-select {
   margin: 0;
-  height: 60px;
+  height: 52%;
   line-height: 58px;
   padding-right: 40px;
   padding-left: 20px;
   border-radius: 0;
-  min-width: 200px;
-  font-size: 16px;
-  font-weight: 500;
+  min-width: 95%;
+  font-size: 13px;
+  font-weight: 400;
   font-family: var(--ltn__heading-font);
   width: 100%;
 }
