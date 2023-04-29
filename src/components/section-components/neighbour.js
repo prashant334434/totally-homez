@@ -2,14 +2,16 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import parse from 'html-react-parser';
 
-class Neighbour extends Component {
 
-    render() {
 
-        let publicUrl = process.env.PUBLIC_URL+'/'
-        let imagealt = 'image'
+const Neighbour = (props) => {
+	let publicUrl = process.env.PUBLIC_URL+'/'
+	let imagealt = 'image'
+    let customClass = props.customClass ? props.customClass :''
 
-    return <div className="neighbour-area section-bg-1 pt-118 pb-120">
+  return (
+	<div className={customClass}>
+		<div className="neighbour-area section-bg-1 pt-118 pb-120">
 			  <div className="container">
 			    <div className="row">
 			      <div className="col-lg-12">
@@ -228,7 +230,10 @@ class Neighbour extends Component {
 			    </div>
 			  </div>
 			</div>
-        }
+	</div>
+  )
 }
+
+
 
 export default Neighbour
