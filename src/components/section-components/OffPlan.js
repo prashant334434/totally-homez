@@ -13,14 +13,22 @@ import AboutV1 from './about-v1';
 import AboutOffPlan from './AboutOffPlan';
 import CounterFeatures from './CounterFeatures';
 import Carousel from './carousel/Carousel';
+import { IMAGES, VIDEOS, LARGE_IMAGES } from "../../data/data";
 
 const OffPlan = () => {
-  return ( <div>
+  return ( 
+  
+  <div>
      <div>
         <Navbar page={"offplan"} />
         <AboutOffPlan/>
-        <Carousel/>
-        <BlogUpfront/>
+        <div className='container'>
+        <Carousel images={IMAGES} slidesToShow={5} />
+      </div>
+      
+           
+      
+         <BlogUpfront/>
         <CounterFeatures/>
 
         <ShogGrid />
