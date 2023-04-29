@@ -50,6 +50,9 @@ import History from './components/history';
 import ShopGridV1 from './components/shop-components/shop-right-sidebar';
 import OffPlan from './components/section-components/OffPlan';
 
+import Listings from './components/Listings';
+import PropertyDetails from './components/PropertyDetails';
+
 
 
  
@@ -108,6 +111,9 @@ import OffPlan from './components/section-components/OffPlan';
 
         <Route path="/off-plan" component={ OffPlan } />
 
+
+        <Route path="/listings" component={ Listings } />
+        <Route path="/property-details" component={ PropertyDetails } />
     </Switch>
     </div>
 </HashRouter>   )
