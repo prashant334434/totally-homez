@@ -65,7 +65,7 @@ class BannerV6 extends Component {
 																<input type="text" name="ltn__name" placeholder="Size in ft2 (*only numbers)" />
 
 															</div>
-															<div className="ltn__car-dealer-form-item  col-lg-2 col-md-4">
+															<div className="ltn__car-dealer-form-item bedroom_class  col-lg-2 col-md-4">
 																<label>Bedrooms :</label>
 
 																<select className="nice-select">
@@ -92,50 +92,50 @@ class BannerV6 extends Component {
 												<div className="tab-pane fade" id="ltn__form_tab_1_2">
 													<div className="car-dealer-form-inner">
 														<form action="#" className="ltn__car-dealer-form-box row">
-															<div className="ltn__car-dealer-form-item  col-lg-3 col-md-6">
+														<div className="ltn__car-dealer-form-item   col-lg-2 col-md-4">
+																<label>Location :</label>
+																<input type="text" name="ltn__name" placeholder="Size in ft2 (*only numbers)" />
+
+															</div>
+															<div className="ltn__car-dealer-form-item  col-lg-2 col-md-4">
+
+																<label>Select Category :</label>
+
 																<select className="nice-select">
-																	<option>Property Type</option>
+																	<option>All Categories :</option>
 																	<option>Apartment</option>
 																	<option>Villa</option>
 																	<option>Penthouse</option>
 																	<option>Townhouse</option>
 																	<option>Residential Land</option>
 																</select>
+																</div>
+															<div className="ltn__car-dealer-form-item   col-lg-2 col-md-4">
+																<label>Min Price :</label>
+																<input type="text" name="ltn__name" placeholder="Size in ft2 (*only numbers)" />
+
 															</div>
-															<div className="ltn__car-dealer-form-item  col-lg-3 col-md-6">
-																<select className="nice-select">
-																	<option>BedRoom</option>
-																	<option>Studio</option>
-																	<option>1</option>
-																	<option>2</option>
-																	<option>3</option>
-																	<option>4</option>
-																	<option>5</option>
-																	<option>6</option>
-																	<option>7+</option>
-																</select>
+															<div className="ltn__car-dealer-form-item   col-lg-2 col-md-4">
+																<label>Max  Price :</label>
+																<input type="text" name="ltn__name" placeholder="Size in ft2 (*only numbers)" />
+
 															</div>
-															<div className="ltn__car-dealer-form-item  col-lg-3 col-md-6">
+															<div className="ltn__car-dealer-form-item bedroom_class  col-lg-2 col-md-4">
+																<label>Bedrooms :</label>
+
 																<select className="nice-select">
-																	<option>Price</option>
-																	<option>1,000,000</option>
-																	<option>2,000,000</option>
-																	<option>3,000,000</option>
-																	<option>4,000,000</option>
-																	<option>5,000,000</option>
-																	<option>10,000,000</option>
-																	<option>15,000,000</option>
-																	<option>20,000,000</option>
-																	<option>30,000,000</option>
-																	<option>40,000,000</option>
-																	<option>50,000,000</option>
-																	<option>75,000,000</option>
-																	<option>85,000,000</option>
-																	<option>1,000,000</option>
+																	<option>All Bedrooms</option>
+																	<option>1 bedroom</option>
+																	<option>2 bedrooms</option>
+																	<option>3 bedrooms</option>
+																	<option>4 bedrooms</option>
+																	<option>5 bedrooms</option>
+																	<option>5+ bedrooms</option>
+
 
 																</select>
 															</div>
-															<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-calendar col-lg-3 col-md-6">
+															<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-calendar col-lg-2 col-md-4 banner_search">
 																<div className="btn-wrapper text-center mt-0 go-top">
 																	{/* <button type="submit" class="btn theme-btn-1 btn-effect-1 text-uppercase">Search Inventory</button> */}
 																	<Link to="/shop-right-sidebar" className="btn theme-btn-1 btn-effect-1 text-uppercase">Search</Link>
@@ -147,50 +147,50 @@ class BannerV6 extends Component {
 												<div className="tab-pane fade" id="ltn__form_tab_1_3">
 													<div className="car-dealer-form-inner">
 														<form action="#" className="ltn__car-dealer-form-box row">
-															<div className="ltn__car-dealer-form-item  col-lg-3 col-md-6">
+														<div className="ltn__car-dealer-form-item   col-lg-2 col-md-4">
+																<label>Location :</label>
+																<input type="text" name="ltn__name" placeholder="Size in ft2 (*only numbers)" />
+
+															</div>
+															<div className="ltn__car-dealer-form-item  col-lg-2 col-md-4">
+
+																<label>Select Category :</label>
+
 																<select className="nice-select">
-																	<option>Property Type</option>
+																	<option>All Categories :</option>
 																	<option>Apartment</option>
 																	<option>Villa</option>
 																	<option>Penthouse</option>
 																	<option>Townhouse</option>
 																	<option>Residential Land</option>
 																</select>
+																</div>
+															<div className="ltn__car-dealer-form-item   col-lg-2 col-md-4">
+																<label>Min Price :</label>
+																<input type="text" name="ltn__name" placeholder="Size in ft2 (*only numbers)" />
+
 															</div>
-															<div className="ltn__car-dealer-form-item  col-lg-3 col-md-6">
-																<select className="nice-select">
-																	<option>BedRoom</option>
-																	<option>Studio</option>
-																	<option>1</option>
-																	<option>2</option>
-																	<option>3</option>
-																	<option>4</option>
-																	<option>5</option>
-																	<option>6</option>
-																	<option>7+</option>
-																</select>
+															<div className="ltn__car-dealer-form-item   col-lg-2 col-md-4">
+																<label>Max  Price :</label>
+																<input type="text" name="ltn__name" placeholder="Size in ft2 (*only numbers)" />
+
 															</div>
-															<div className="ltn__car-dealer-form-item  col-lg-3 col-md-6">
+															<div className="ltn__car-dealer-form-item bedroom_class  col-lg-2 col-md-4">
+																<label>Bedrooms :</label>
+
 																<select className="nice-select">
-																	<option>Price</option>
-																	<option>1,000,000</option>
-																	<option>2,000,000</option>
-																	<option>3,000,000</option>
-																	<option>4,000,000</option>
-																	<option>5,000,000</option>
-																	<option>10,000,000</option>
-																	<option>15,000,000</option>
-																	<option>20,000,000</option>
-																	<option>30,000,000</option>
-																	<option>40,000,000</option>
-																	<option>50,000,000</option>
-																	<option>75,000,000</option>
-																	<option>85,000,000</option>
-																	<option>1,000,000</option>
+																	<option>All Bedrooms</option>
+																	<option>1 bedroom</option>
+																	<option>2 bedrooms</option>
+																	<option>3 bedrooms</option>
+																	<option>4 bedrooms</option>
+																	<option>5 bedrooms</option>
+																	<option>5+ bedrooms</option>
+
 
 																</select>
 															</div>
-															<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-calendar col-lg-3 col-md-6">
+															<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-calendar col-lg-2 col-md-4 banner_search">
 																<div className="btn-wrapper text-center mt-0 go-top">
 																	{/* <button type="submit" class="btn theme-btn-1 btn-effect-1 text-uppercase">Search Inventory</button> */}
 																	<Link to="/shop-right-sidebar" className="btn theme-btn-1 btn-effect-1 text-uppercase">Search</Link>
@@ -199,61 +199,8 @@ class BannerV6 extends Component {
 														</form>
 													</div>
 												</div>
-												<div className="tab-pane fade" id="ltn__form_tab_1_4">
-													<div className="car-dealer-form-inner">
-														<form action="#" className="ltn__car-dealer-form-box row">
-															<div className="ltn__car-dealer-form-item  col-lg-3 col-md-6">
-																<select className="nice-select">
-																	<option>Property Type</option>
-																	<option>Apartment</option>
-																	<option>Villa</option>
-																	<option>Penthouse</option>
-																	<option>Townhouse</option>
-																	<option>Residential Land</option>
-																</select>
-															</div>
-															<div className="ltn__car-dealer-form-item  col-lg-3 col-md-6">
-																<select className="nice-select">
-																	<option>BedRoom</option>
-																	<option>Studio</option>
-																	<option>1</option>
-																	<option>2</option>
-																	<option>3</option>
-																	<option>4</option>
-																	<option>5</option>
-																	<option>6</option>
-																	<option>7+</option>
-																</select>
-															</div>
-															<div className="ltn__car-dealer-form-item  col-lg-3 col-md-6">
-																<select className="nice-select">
-																	<option>Price</option>
-																	<option>1,000,000</option>
-																	<option>2,000,000</option>
-																	<option>3,000,000</option>
-																	<option>4,000,000</option>
-																	<option>5,000,000</option>
-																	<option>10,000,000</option>
-																	<option>15,000,000</option>
-																	<option>20,000,000</option>
-																	<option>30,000,000</option>
-																	<option>40,000,000</option>
-																	<option>50,000,000</option>
-																	<option>75,000,000</option>
-																	<option>85,000,000</option>
-																	<option>1,000,000</option>
-
-																</select>
-															</div>
-															<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-calendar col-lg-3 col-md-6">
-																<div className="btn-wrapper text-center mt-0 go-top">
-																	{/* <button type="submit" class="btn theme-btn-1 btn-effect-1 text-uppercase">Search Inventory</button> */}
-																	<Link to="/shop-right-sidebar" className="btn theme-btn-1 btn-effect-1 text-uppercase">Search</Link>
-																</div>
-															</div>
-														</form>
-													</div>
-												</div>
+												
+												
 											</div>
 
 										</div>
