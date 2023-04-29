@@ -12,12 +12,14 @@ import BlogUpfront from '../BlogUpfront';
 import AboutV1 from './about-v1';
 import AboutOffPlan from './AboutOffPlan';
 import CounterFeatures from './CounterFeatures';
+import Carousel from './carousel/Carousel';
 
 const OffPlan = () => {
   return ( <div>
      <div>
         <Navbar page={"offplan"} />
         <AboutOffPlan/>
+        <Carousel/>
         <BlogUpfront/>
         <CounterFeatures/>
 
