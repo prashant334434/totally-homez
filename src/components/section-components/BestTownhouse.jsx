@@ -6,7 +6,7 @@ const BestTownhouse = (props) => {
 
   return (
     <div className={customClass}>
-       <div className="ltn__about-us-area pt-120 pb-90 ">
+       <div className="ltn__about-us-area pt-40 pb-50 ">
     <div className="container">
       <div className="row">
       <div className="col-lg-6 align-self-center">

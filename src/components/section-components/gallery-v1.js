@@ -8,13 +8,13 @@ class Gallery extends Component {
 
         let publicUrl = process.env.PUBLIC_URL+'/'
 
-    return <div className="ltn__img-slider-area">
+    return <div className="ltn__img-slider-area pt-40 pb-50">
 				<div className="container-fluid">
 				<div className="row ltn__image-slider-4-active slick-arrow-1 slick-arrow-1-inner ltn__no-gutter-all">
 					<div className="col-lg-12">
 					<div className="ltn__img-slide-item-4">
-						<a href={"https://cdn.pixabay.com/photo/2023/04/26/05/36/flat-7951608_1280.jpg"} data-rel="lightcase:myCollection">
-						<img  src={"https://is1-3.housingcdn.com/4f2250e8/f58877a8b0685231682483c25b3b00fb/v0/large/bonyan_panoramic_tower-dubai_marina-dubai-bonyan_emirates.jpeg"} alt="Image" />
+						<a href={publicUrl+"assets/img/img-slide/21.jpg"} data-rel="lightcase:myCollection">
+						<img  src={publicUrl+"assets/img/img-slide/21.jpg"} alt="Image" />
 						</a>
 						<div className="ltn__img-slide-info">
 						<div className="ltn__img-slide-info-brief gp-top">

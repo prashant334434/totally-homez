@@ -2,20 +2,26 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import parse from 'html-react-parser';
 
-class TestimonialV3 extends Component {
 
-    render() {
 
-        let publicUrl = process.env.PUBLIC_URL+'/'
-
-    return <div className="ltn__testimonial-area ltn__testimonial-4 pt-115 pb-100 plr--9 go-top">
+const TestimonialV3 = (props) => {
+    let customClass = props.customClass ? props.customClass :''
+	let publicUrl = process.env.PUBLIC_URL+'/'
+	
+  return (
+	<div>
+		<div className={"ltn__testimonial-area ltn__testimonial-4 pt-115 pb-100 plr--9 go-top"+customClass}>
 			  <div className="container-fluid">
 			    <div className="row">
 			      <div className="col-lg-12">
+				  
 			        <div className="section-title-area ltn__section-title-2--- text-center">
-			          <h6 className="section-subtitle section-subtitle-2 ltn__secondary-color">Our Testimonial</h6>
-			          <h1 className="section-title">Clients Feedback</h1>
+					<center>
+			          <h6 className="section-subtitle section-subtitle-2 ltn__secondary-color">Team</h6>
+			          <h1 className="section-title">Property Agents</h1>
+					  </center>
 			        </div>
+				
 			      </div>
 			    </div>
 			    <div className="row">
@@ -78,7 +84,9 @@ class TestimonialV3 extends Component {
 			    </div>
 			  </div>
 			</div>
-        }
+	</div>
+  )
 }
+
 
 export default TestimonialV3

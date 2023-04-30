@@ -54,7 +54,7 @@ class Footer_v1 extends Component {
 				                <img src={publicUrl+"assets/img/logo.png"} alt="Logo" />
 				              </div>
 				            </div>
-				            <p>Lorem Ipsum is simply dummy text of the and typesetting industry. Lorem Ipsum is dummy text of the printing.</p>
+				            {/* <p>To Get In Touch</p> */}
 				            <div className="footer-address">
 				              <ul>
 				                <li>
@@ -62,7 +62,7 @@ class Footer_v1 extends Component {
 				                    <i className="icon-placeholder" />
 				                  </div>
 				                  <div className="footer-address-info">
-				                    <p>Brooklyn, New York, United States</p>
+				                    <p>Office 103, Building 6 Bay Square Tower, Business Bay, Dubai, United Arab Emirates. PO Box: 418317</p>
 				                  </div>
 				                </li>
 				                <li>
@@ -70,7 +70,7 @@ class Footer_v1 extends Component {
 				                    <i className="icon-call" />
 				                  </div>
 				                  <div className="footer-address-info">
-				                    <p><a href="tel:+0123-456789">+0123-456789</a></p>
+				                    <p><a href="+971 45 54 8620">+971 45 54 8620</a></p>
 				                  </div>
 				                </li>
 				                <li>
@@ -78,7 +78,7 @@ class Footer_v1 extends Component {
 				                    <i className="icon-mail" />
 				                  </div>
 				                  <div className="footer-address-info">
-				                    <p><a href="mailto:example@example.com">example@example.com</a></p>
+				                    <p><a href="support@totallyhomerealestate.ae">support@totallyhomerealestate.ae</a></p>
 				                  </div>
 				                </li>
 				              </ul>
@@ -88,39 +88,39 @@ class Footer_v1 extends Component {
 				            </div>
 				          </div>
 				        </div>
-				        <div className="col-xl-2 col-md-6 col-sm-6 col-12">
+				        <div className="col-xl-3 col-md-6 col-sm-6 col-12">
 				          <div className="footer-widget footer-menu-widget clearfix">
-				            <h4 className="footer-title">Company</h4>
+				            <h4 className="footer-title">Curations </h4>
 				            <div className="footer-menu go-top">
 				              <ul>
-				                <li><Link to="/about">About</Link></li>
-				                <li><Link to="/blog-grid">Blog</Link></li>
-				                <li><Link to="/shop">All Products</Link></li>
-				                <li><Link to="/contact">Contact</Link></li>
-				                <li><Link to="/faq">FAQ</Link></li>
-				                <li><Link to="/contact">Contact us</Link></li>
+				                <li><Link to="/about">Akoya Oxygen</Link></li>
+				                <li><Link to="/blog-grid">Al Barari</Link></li>
+				                <li><Link to="/shop">Al Satwa</Link></li>
+				                <li><Link to="/contact">Al Warqaa</Link></li>
+				                <li><Link to="/faq">Culture Village</Link></li>
+				                <li><Link to="/contact">Deira</Link></li>
 				              </ul>
 				            </div>
 				          </div>
 				        </div>
-				        <div className="col-xl-2 col-md-6 col-sm-6 col-12">
+				        <div className="col-xl-3 col-md-6 col-sm-6 col-12">
 				          <div className="footer-widget footer-menu-widget clearfix">
-				            <h4 className="footer-title">Services</h4>
+				            <h4 className="footer-title">Navigate </h4>
 				            <div className="footer-menu go-top">
 				              <ul>
-				                <li><Link to="/cart">Cart</Link></li>
-				                <li><Link to="/wishlist">Wish List</Link></li>
-				                <li><Link to="/login">Login</Link></li>
-				                <li><Link to="/checkout">Checkout</Link></li>
-				                <li><Link to="/about">Terms &amp; Conditions</Link></li>
-				                <li><Link to="/shop">Promotional Offers</Link></li>
+							  <li><Link to="/about">About</Link></li>
+				                <li><Link to="/blog-grid">Team </Link></li>
+				                <li><Link to="/shop">Blogs</Link></li>
+				                <li><Link to="/contact">Gallery</Link></li>
+				                <li><Link to="/faq"> Sell with us</Link></li>
+				                <li><Link to="/contact">Careers</Link></li>
 				              </ul>
 				            </div>
 				          </div>
 				        </div>
-				        <div className="col-xl-2 col-md-6 col-sm-6 col-12">
+				        <div className="col-xl-3 col-md-6 col-sm-6 col-12">
 				          <div className="footer-widget footer-menu-widget clearfix">
-				            <h4 className="footer-title">Customer Care</h4>
+				            <h4 className="footer-title">Community Guides </h4>
 				            <div className="footer-menu go-top">
 				              <ul>
 				                <li><Link to="/login">Login</Link></li>
@@ -133,22 +133,7 @@ class Footer_v1 extends Component {
 				            </div>
 				          </div>
 				        </div>
-				        <div className="col-xl-3 col-md-6 col-sm-12 col-12">
-				          <div className="footer-widget footer-newsletter-widget">
-				            <h4 className="footer-title">Newsletter</h4>
-				            <p>Subscribe to our weekly Newsletter and receive updates via email.</p>
-				            <div className="footer-newsletter">
-				              <form action="#">
-				                <input type="email" name="email" placeholder="Email*" />
-				                <div className="btn-wrapper">
-				                  <button className="theme-btn-1 btn" type="submit"><i className="fas fa-location-arrow" /></button>
-				                </div>
-				              </form>
-				            </div>
-				            <h5 className="mt-30">We Accept</h5>
-				            <img src={publicUrl+"assets/img/icons/payment-4.png"} alt="Payment Image" />
-				          </div>
-				        </div>
+				        
 				      </div>
 				    </div>
 				  </div>
