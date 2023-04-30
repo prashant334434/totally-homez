@@ -25,6 +25,8 @@ import UpcomingProductV1 from './section-components/upcoming-product-v1';
 import Video from './section-components/video-v2';
 import ProductSlider from './section-components/product-slider-v2';
 import TeamAgents from './section-components/TeamAgents';
+import Carousel from './section-components/carousel/Carousel';
+import { IMAGES, VIDEOS, LARGE_IMAGES } from "../data/data";
 
 
 
@@ -32,9 +34,11 @@ const Home_V7 = () => {
     return <div>
         <Navbar CustomClass="ltn__header-transparent gradient-color-2" /> 
         <BannerV6 />
-        <BestProperty/>
+        <BestProperty customClass='ltn__feature-area section-bg-1 pt-80  mb-120---' />
         {/* <Aboutv2 /> */}
-        <Gallery />
+        {/* <Gallery /> */}
+        <Carousel images={IMAGES} slidesToShow={5} />
+
         {/* <HomeCrousal/> */}
         <ApartmentV1 CustomClass=" ltn__feature-area section-bg-3 pt-120 pb-90 mb-120---" />
 
@@ -66,7 +70,7 @@ const Home_V7 = () => {
         {/* <VideoV1 /> */}
         {/* <Category /> */}
         {/* <Testimonial /> */}
-        <AboutV5  customClass='ltn__feature-area section-bg-5 pt-120 pb-90 mb-120---'/>
+        <AboutV5  customClass='ltn__feature-area section-bg-8 pt-120 pb-90 mb-120---'/>
         <TeamAgents customClass='ltn__feature-area section-bg-1 pt-80  mb-120---' />
         {/* <Testimonial customClass='ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---'/> */}
 

@@ -1,10 +1,11 @@
 import React from 'react'
 
-const BestProperty = () => {
+const BestProperty = (props) => {
     let publicUrl = process.env.PUBLIC_URL+'/'
+    let customClass = props.customClass ? props.customClass :''
 
   return (
-    <div className="ltn__about-us-area pt-40 pb-40 ">
+    <div className={"ltn__about-us-area pt-40 pb-40 "+customClass}>
     <div className="container">
       <div className="row">
         <div className="col-lg-6 align-self-center">
