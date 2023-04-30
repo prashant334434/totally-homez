@@ -50,12 +50,12 @@ font-family: 'Titillium Web', sans-serif;
 */
 
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&family=Poppins:wght@400;500;600;700;800;900&display=swap');
 /*
 font-family: 'Nunito Sans', sans-serif;
 font-family: 'Poppins', sans-serif;
 */
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap');
 
 
 /* ====================================================
@@ -226,8 +226,8 @@ font-family: 'Poppins', sans-serif;
     --ltn__heading-color: #071c1f;
     --ltn__paragraph-color: #5C727D;
     
-    --ltn__heading-font: 'Poppins', sans-serif;
-    --ltn__body-font: 'Nunito Sans', sans-serif;
+    --ltn__heading-font: 'Montserrat', sans-serif;
+    --ltn__body-font: 'Montserrat', sans-serif ;
     
     /* Footer ACD2D8 8CB2B2  */
     --ltn__color-1: #8cb2b2; 
