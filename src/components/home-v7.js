@@ -24,6 +24,7 @@ import Footer2 from './global-components/Footer2';
 import UpcomingProductV1 from './section-components/upcoming-product-v1';
 import Video from './section-components/video-v2';
 import ProductSlider from './section-components/product-slider-v2';
+import TeamAgents from './section-components/TeamAgents';
 
 
 
@@ -66,8 +67,8 @@ const Home_V7 = () => {
         {/* <Category /> */}
         {/* <Testimonial /> */}
         <AboutV5  customClass='ltn__feature-area section-bg-5 pt-120 pb-90 mb-120---'/>
-        {/* <TeamAgents  customClass='ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---' /> */}
-        <Testimonial customClass='ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---'/>
+        <TeamAgents customClass='ltn__feature-area section-bg-1 pt-80  mb-120---' />
+        {/* <Testimonial customClass='ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---'/> */}
 
         <BlogSlider customClass="section-subtitle-2 "/>
 

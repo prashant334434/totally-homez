@@ -10824,7 +10824,7 @@ p{
 }
 
 .section-subtitle {
-  font-weight: 600;
+  font-weight: 500;
   font-family: var(--ltn__body-font);
 }
 
@@ -12065,7 +12065,7 @@ p{
 .ltn__blog-item-3 .ltn__blog-btn,
 .ltn__blog-item-4 .ltn__blog-btn {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--ltn__secondary-color);
   text-transform: uppercase;
 }

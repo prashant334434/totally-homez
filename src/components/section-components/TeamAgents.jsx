@@ -6,7 +6,7 @@ const TeamAgents = (props) => {
     let customClass = props.customClass ? props.customClass :''
 
   return (
-	<div className={customClass}><div className="ltn__team-area pt-115 pb-90 go-top">
+	<div className={customClass}><div className="ltn__team-area   go-top">
 	<div className="container">
 	<div className="row">
 		<div className="col-lg-12">
