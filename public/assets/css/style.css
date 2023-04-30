@@ -240,8 +240,8 @@ body{
   /* Lighten */
   --ltn__heading-color: #071c1f;
   --ltn__paragraph-color: #5c727d;
-  --ltn__heading-font: "Poppins", sans-serif;
-  --ltn__body-font: "Nunito Sans", sans-serif;
+  --ltn__heading-font: "Montserrat", sans-serif;
+  --ltn__body-font: "Montserrat", sans-serif;
   /* Footer ACD2D8 8CB2B2  */
   --ltn__color-1: #8cb2b2;
   --ltn__color-2: #acd2d8;
@@ -4577,6 +4577,9 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 .popular-post-widget-img img {
   max-width: 80px;
+}
+p{
+  font-family: "Montserrat";
 }
 
 .popular-post-widget-brief {
@@ -14585,6 +14588,9 @@ input.cart-plus-minus-box {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+body {
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* ----------------------------------------------------
