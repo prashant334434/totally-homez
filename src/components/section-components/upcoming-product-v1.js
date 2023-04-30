@@ -9,7 +9,7 @@ const  UpcomingProductV1= () => {
 
   return (
 	<div>
-		<div className="ltn__upcoming-project-area section-bg-1--- bg-image-top pt-115 pb-65" data-bs-bg={publicUrl+"assets/img/bg/22.jpg"}>
+		<div className="ltn__upcoming-project-area section-bg-1--- bg-image-top pt-40 " data-bs-bg={publicUrl+"assets/img/bg/22.jpg"}>
 			  <div className="container">
 			    <div className="row">
 			      <div className="col-lg-12">

@@ -8,7 +8,7 @@ class BlogSlider extends Component {
     let customClass = this.props.customClass ? this.props.customClass :''
     let sectionClass = this.props.sectionClass ? this.props.sectionClass :''
     return (
-      <div className={ "ltn__blog-area pt-120 pb-90 go-top "+ sectionClass}>
+      <div className={ "ltn__blog-area pt-120  go-top "+ sectionClass}>
 		  <div className="container">
 		    <div className="row">
 		      <div className="col-lg-12">

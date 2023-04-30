@@ -9,7 +9,7 @@ const ApartmentV1 = (props) => {
 	let publicUrl = process.env.PUBLIC_URL+'/'
 	let customClass = props.customClass ? props.customClass :''
   return (
-	<div className={"ltn__apartments-plan-area pt-40 pb-50"+customClass}>
+	<div className={"ltn__apartments-plan-area pt-40 "+customClass}>
 			  <div className="container">
 			    <div className="row">
 			      <div className="col-lg-12">

@@ -9,12 +9,15 @@ const ProductSliderV2 = (props) => {
 		let customClass = props.customClass ? props.customClass :''
   return (
 	<div>
-		<div className="ltn__search-by-place-area before-bg-top bg-image-top--- pt-115 pb-70" data-bs-bg={publicUrl+"assets/img/bg/20.jpg"}>
+		<div className="ltn__search-by-place-area before-bg-top bg-image-top--- pt-40 " data-bs-bg={publicUrl+"assets/img/bg/20.jpg"}>
 			  <div className="container">
 			    <div className="row">
 			      <div className="col-lg-12">
 			        <div className="section-title-area ltn__section-title-2--- text-center---">
-			          <h6 className="section-subtitle section-subtitle-2--- ltn__secondary-color">Best Penthouses In Dubai</h6>
+			          <h6 className="section-subtitle section-subtitle-2--- ltn__secondary-color">
+					  
+					  
+					  Best Penthouses In Dubai</h6>
 			          <h1 className="section-title">Experience the pinnacle of luxury living in Dubai's</h1>
 			        </div>
 			      </div>
@@ -32,7 +35,12 @@ const ProductSliderV2 = (props) => {
 			          </div>
 			          <div className="search-by-place-info">
 			            <h6><Link to="/contact">San Francisco</Link></h6>
-			            <h4><Link to="/product-details">Mission District Area</Link></h4>
+			            <h4><Link to="/product-details">
+						
+						<b>
+							Mission District Area
+						</b>
+						</Link></h4>
 			            <div className="search-by-place-btn">
 			              <Link to="/product-details">View Property <i className="flaticon-right-arrow" /></Link>
 			            </div>
@@ -51,7 +59,12 @@ const ProductSliderV2 = (props) => {
 			          </div>
 			          <div className="search-by-place-info">
 			            <h6><Link to="/contact">New York</Link></h6>
-			            <h4><Link to="/product-details">Pacific Heights Area</Link></h4>
+			            <h4><Link to="/product-details">
+						
+						<b>
+						Pacific Heights Area
+						</b>
+						</Link></h4>
 			            <div className="search-by-place-btn">
 			              <Link to="/product-details">View Property <i className="flaticon-right-arrow" /></Link>
 			            </div>
@@ -70,7 +83,12 @@ const ProductSliderV2 = (props) => {
 			          </div>
 			          <div className="search-by-place-info">
 			            <h6><Link to="/contact">Sedona, Arizona</Link></h6>
-			            <h4><Link to="/product-details">Noe Valley Zones</Link></h4>
+			            <h4><Link to="/product-details">
+						
+						<b>
+						Noe Valley Zones
+						</b>
+						</Link></h4>
 			            <div className="search-by-place-btn">
 			              <Link to="/product-details">View Property <i className="flaticon-right-arrow" /></Link>
 			            </div>

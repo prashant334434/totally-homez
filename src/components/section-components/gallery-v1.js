@@ -8,7 +8,7 @@ class Gallery extends Component {
 
         let publicUrl = process.env.PUBLIC_URL+'/'
 
-    return <div className="ltn__img-slider-area pt-40 pb-50">
+    return <div className="ltn__img-slider-area ">
 				<div className="container-fluid">
 				<div className="row ltn__image-slider-4-active slick-arrow-1 slick-arrow-1-inner ltn__no-gutter-all">
 					<div className="col-lg-12">

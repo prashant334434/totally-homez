@@ -4,7 +4,7 @@ const BestProperty = () => {
     let publicUrl = process.env.PUBLIC_URL+'/'
 
   return (
-    <div className="ltn__about-us-area pt-40 pb-50 ">
+    <div className="ltn__about-us-area pt-40 pb-40 ">
     <div className="container">
       <div className="row">
         <div className="col-lg-6 align-self-center">
