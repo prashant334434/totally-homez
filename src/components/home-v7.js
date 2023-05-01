@@ -34,6 +34,7 @@ import Video from './section-components/video-v2';
 import ProductSlider from './section-components/product-slider-v2';
 import Banner from './section-components/banner-v2';
 import Neighbour from './section-components/neighbour';
+import ProductGrid from './shop-components/ProductGrid';
 
 
 const Home_V7 = () => {
@@ -48,7 +49,7 @@ const Home_V7 = () => {
 
         {/* <UpcomingProductV1 /> */}
         <BestVilla customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---" />
-        {/* <ProductSliderV1/> */}
+        <ProductSliderV1/>
         {/* <BestApartment customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---"  /> */}
         <Video />
 
@@ -63,7 +64,7 @@ const Home_V7 = () => {
  
 
         <ProductSlider customClass="ltn__feature-area section-bg-4 pt-120 pb-90 mb-120---"/>
-
+        <ProductGrid />
 
         {/* <Featuresv1 customClass="ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---"/> */}
         {/* <ProSlider /> */}
