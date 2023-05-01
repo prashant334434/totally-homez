@@ -1,15 +1,11 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import parse from 'html-react-parser';
+import React from 'react'
 
-
-
-
-const ApartmentV1 = (props) => {
+const ProductGrid = (props) => {
 	let publicUrl = process.env.PUBLIC_URL+'/'
-	let customClass = props.customClass ? props.customClass :''
+    let customClass = props.customClass ? props.customClass :''
   return (
-	<div className={"ltn__apartments-plan-area pt-40 "+customClass}>
+    <div>
+		<div className={"ltn__apartments-plan-area pt-115--- pb-70 "+customClass}>
 			  <div className="container">
 			    <div className="row">
 			      <div className="col-lg-12">
@@ -30,6 +26,7 @@ const ApartmentV1 = (props) => {
 			            <div className="ltn__apartments-tab-content-inner">
 			              <div className="row">
 			                <div className="col-lg-7">
+
 			                  <div className="apartments-plan-info ltn__secondary-bg text-color-white">
 							<h2 className="section-title">Property Of The Day</h2>
 
@@ -171,9 +168,8 @@ const ApartmentV1 = (props) => {
 			    </div>
 			  </div>
 			</div>
+	</div>
   )
 }
 
-
-
-export default ApartmentV1
+export default ProductGrid

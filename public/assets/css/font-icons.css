@@ -38,6 +38,7 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
     font-variant: normal;
     text-transform: none;
     line-height: 1;
+    color:red;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
