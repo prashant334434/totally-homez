@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import ProductSliderV1 from '../section-components/product-slider-v1';
 
-const ShopDetails = () => {
+const FactsandFigures = () => {
     let publicUrl = process.env.PUBLIC_URL+'/'
 
   return (
@@ -13,40 +13,7 @@ const ShopDetails = () => {
         <aside className="sidebar ltn__shop-sidebar ltn__right-sidebar---">
             {/* Author Widget */}
             
-            <div className="widget ltn__author-widget">
-            <div className="ltn__author-widget-inner text-center">
-            <center>
-                <img src={publicUrl+"assets/img/team/4.jpg"} alt="Image" />
-                <h5>Thomas Elliott
-
-</h5>
-                <small>Private Client Advisor</small>
-                <div className="product-ratting">
-                <ul>
-                    <li><a href="#"><i className="fas fa-star" /></a></li>
-                    <li><a href="#"><i className="fas fa-star" /></a></li>
-                    <li><a href="#"><i className="fas fa-star" /></a></li>
-                    <li><a href="#"><i className="fas fa-star-half-alt" /></a></li>
-                    <li><a href="#"><i className="far fa-star" /></a></li>
-                    <li className="review-total"> <a href="#"> ( 1 Reviews )</a></li>
-                </ul>
-                </div>
-                <p>Thomas is part of our team in Arabian Ranches 1, the original family community in Dubai...</p>
-                <a href='#' >Read More</a>
-                <div className="ltn__social-media">
-                <ul>
-                    <li><a href="#" title="Facebook"><i className="fab fa-facebook-f" /></a></li>
-                    <li><a href="#" title="Twitter"><i className="fab fa-twitter" /></a></li>
-                    <li><a href="#" title="Linkedin"><i className="fab fa-linkedin" /></a></li>
-                    <li><a href="#" title="Youtube"><i className="fab fa-youtube" /></a></li>
-                </ul>
-                <br/>
-                <button type="submit" className="btn theme-btn-1">Contact Agent </button>
-
-                </div>
-                </center>
-            </div>
-            </div>
+          
             
             {/* Search Widget */}
             {/* <div className="widget ltn__search-widget">
@@ -380,51 +347,13 @@ const ShopDetails = () => {
             </ul>
             </div> */}
             {/* Banner Widget */}
-            <div className="widget ltn__banner-widget d-none go-top">
-            <Link to="/shop"><img src={publicUrl+"assets/img/banner/2.jpg"} alt="#" /></Link>
-            </div>
+            
         </aside>
         </div>
-        <div className="col-lg-8 col-md-12">
+        <div className="col-lg-12 col-md-12">
         <div className="ltn__shop-details-inner ltn__page-details-inner mb-60">
-            <div className="ltn__blog-meta">
-            <ul>
-                <li className="ltn__blog-category">
-                <Link to="#">Featured</Link>
-                </li>
-                <li className="ltn__blog-category">
-                <Link className="bg-orange" to="#">For Rent</Link>
-                </li>
-                <li className="ltn__blog-date">
-                <i className="far fa-calendar-alt" />May 19, 2021
-                </li>
-                <li>
-                <Link to="#"><i className="far fa-comments" />35 Comments</Link>
-                </li>
-            </ul>
-            </div>
-            <h4 className="title-2">Key Information</h4>  
-            <div className="property-detail-info-list section-bg-1 clearfix mb-60">                          
-            <ul>
-                <li><label>Location :</label> <span>Jumeirah Golf Estates, Dubai</span></li>
-                <li><label>Ref. No.: </label> <span>LP18536</span></li>
-                <li><label>Plot Size :</label> <span>8,441 Sq Ft</span></li>
-                <li><label>Baths:</label> <span>2</span></li>
-                <li><label>Year built:</label> <span>1992</span></li>
-            </ul>
-            {/* <ul>
-                <li><label>Lot Area:</label> <span>HZ29 </span></li>
-                <li><label>Lot dimensions:</label> <span>120 sqft</span></li>
-                <li><label>Beds:</label> <span>7</span></li>
-                <li><label>Price:</label> <span>2</span></li>
-                <li><label>Property Status:</label> <span>For Sale</span></li>
-            </ul> */}
-            </div>
-            <h1>Diamond Manor Apartment</h1>
-            <label><span className="ltn__secondary-color"><i className="flaticon-pin" /></span> Belmont Gardens, Chicago</label>
-            <h4 className="title-2">Description</h4>
-            <p>Welcome to the luxurious world of Sanctuary Falls at Jumeirah Golf Estates, where you will find an exquisite upgraded villa that is truly a masterpiece.</p>
-            <p>This high-end contemporary villa boasts modern and warm tones that will instantly captivate you. With a built-up area of 6,371 square feet and a plot area of 8,441 square feet, this villa is the epitome of luxury living.</p>
+          
+          
             {/* <p>As you enter this magnificent villa, you will be welcomed by a spacious and elegant foyer that leads to the living and dining areas, which are surrounded by floor-to-ceiling windows that allow natural light to flood in and provide breathtaking views of the full lake and fountain.</p>
             <p>This villa features 5 generously sized bedrooms and 7 bathrooms, providing ample space for family and guests to relax and unwind. The villa includes a study, maid's, and driver's rooms, catering to all your needs. The three fully equipped kitchens with Hacker and Miele appliances are a chef's delight and are perfect for hosting dinner parties and gatherings.</p>
             <p>The master bedroom is a masterpiece in itself, with a custom-built walk-in wardrobe that is the epitome of luxury. You can indulge in a spa-like experience in the en-suite bathroom, which features a standalone bathtub and a walk-in shower.</p>
@@ -436,39 +365,12 @@ const ShopDetails = () => {
             <h4 className="title-2">Facts and Features</h4>
             <div className="property-detail-feature-list clearfix mb-45">                            
             <ul>
-                <li>
-                <div className="property-detail-feature-list-item">
-                    <i className="flaticon-double-bed" />
-                    <div>
-                    <h6>Living Room</h6>
-                    <small>20 x 16 sq feet</small>
-                    </div>
-                </div>
-                </li>
-                <li>
-                <div className="property-detail-feature-list-item">
-                    <i className="flaticon-double-bed" />
-                    <div>
-                    <h6>Garage</h6>
-                    <small>20 x 16 sq feet</small>
-                    </div>
-                </div>
-                </li>
-                <li>
-                <div className="property-detail-feature-list-item">
-                    <i className="flaticon-double-bed" />
-                    <div>
-                    <h6>Dining Area</h6>
-                    <small>20 x 16 sq feet</small>
-                    </div>
-                </div>
-                </li>
-                <li>
+            <li>
                 <div className="property-detail-feature-list-item">
                     <i className="flaticon-double-bed" />
                     <div>
                     <h6>Bedroom</h6>
-                    <small>20 x 16 sq feet</small>
+                    <small>3</small>
                     </div>
                 </div>
                 </li>
@@ -477,6 +379,15 @@ const ShopDetails = () => {
                     <i className="flaticon-double-bed" />
                     <div>
                     <h6>Bathroom</h6>
+                    <small>2</small>
+                    </div>
+                </div>
+                </li>
+                <li>
+                <div className="property-detail-feature-list-item">
+                    <i className="flaticon-double-bed" />
+                    <div>
+                    <h6>Size</h6>
                     <small>20 x 16 sq feet</small>
                     </div>
                 </div>
@@ -485,8 +396,8 @@ const ShopDetails = () => {
                 <div className="property-detail-feature-list-item">
                     <i className="flaticon-double-bed" />
                     <div>
-                    <h6>Gym Area</h6>
-                    <small>20 x 16 sq feet</small>
+                    <h6>Type</h6>
+                    <small>Villa</small>
                     </div>
                 </div>
                 </li>
@@ -494,19 +405,23 @@ const ShopDetails = () => {
                 <div className="property-detail-feature-list-item">
                     <i className="flaticon-double-bed" />
                     <div>
-                    <h6>Garden</h6>
-                    <small>20 x 16 sq feet</small>
+                    <h6>View</h6>
+                    <small>Burj Khalifa</small>
                     </div>
                 </div>
                 </li>
+           
                 <li>
                 <div className="property-detail-feature-list-item">
                     <i className="flaticon-double-bed" />
                     <div>
-                    <h6>Parking</h6>
-                    <small>20 x 16 sq feet</small>
+                    <h6>For</h6>
+                    <small>Sale</small>
                     </div>
                 </div>
+                </li>
+                <li>
+             
                 </li>
             </ul>
             </div>
@@ -958,11 +873,10 @@ const ShopDetails = () => {
         </div>    
     </div>   
 </div>
-        <h4 className="title-2" style={{marginLeft:'3.5%',marginBottom:'0%'}}>Related Properties</h4>
-        <ProductSliderV1 />
+        
     </div>
 </div>
   )
 }
 
-export default ShopDetails
+export default FactsandFigures
