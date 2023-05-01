@@ -14,12 +14,12 @@ const BestProperty = () => {
               <h1 className="section-title">Best Off Plan Projects In Dubai </h1>
               <p>the best off-plan projects in Dubai offer a combination of attractive payment plans, high-quality amenities, prime locations, investment opportunities, innovative design, reliable developers, and easy access to transportation.</p>
             </div>
-            <ul className="ltn__list-item-1 ltn__list-item-1-before clearfix">
+            {/* <ul className="ltn__list-item-1 ltn__list-item-1-before clearfix">
               <li>High-quality amenities</li>
               <li>Investment opportunities</li>
               <li>Easy access to transportation</li>
-            </ul>
-            <ul className="ltn__list-item-2 ltn__list-item-2-before ltn__flat-info">
+            </ul> */}
+            {/* <ul className="ltn__list-item-2 ltn__list-item-2-before ltn__flat-info">
               <li><span>3 <i className="flaticon-bed" /></span>
                 Bedrooms
               </li>
@@ -32,7 +32,7 @@ const BestProperty = () => {
               <li><span>3450 <i className="flaticon-square-shape-design-interface-tool-symbol" /></span>
                 square Ft
               </li>
-            </ul>
+            </ul> */}
             <ul className="ltn__list-item-2 ltn__list-item-2-before--- ltn__list-item-2-img mb-50">
               <li>
                 <a href={publicUrl+"assets/img/img-slide/11.jpg"} data-rel="lightcase:myCollection">

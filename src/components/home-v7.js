@@ -46,8 +46,8 @@ const Home_V7 = () => {
         {/* <HomeCrousal/> */}
         <ApartmentV1 CustomClass=" ltn__feature-area section-bg-2 pt-120 pb-90 mb-120---" />
 
-        <UpcomingProductV1 />
-        {/* <BestVilla customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---" /> */}
+        {/* <UpcomingProductV1 /> */}
+        <BestVilla customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---" />
         {/* <ProductSliderV1/> */}
         {/* <BestApartment customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---"  /> */}
         <Video />

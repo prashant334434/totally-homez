@@ -15,7 +15,6 @@ const ApartmentV1 = (props) => {
 			      <div className="col-lg-12">
 			        <div className="section-title-area ltn__section-title-2--- text-center">
 			          {/* <h6 className="section-subtitle section-subtitle-2 ltn__secondary-color">Apartment Sketch</h6> */}
-			          <h1 className="section-title">Property Of The Day</h1>
 			        </div>
 			        <div className="ltn__tab-menu ltn__tab-menu-3 ltn__tab-menu-top-right-- text-uppercase--- text-center">
 			          <div className="nav">
@@ -30,9 +29,12 @@ const ApartmentV1 = (props) => {
 			          <div className="tab-pane fade" id="liton_tab_3_1">
 			            <div className="ltn__apartments-tab-content-inner">
 			              <div className="row">
-			                <div className="col-lg-6">
+			                <div className="col-lg-7">
+
 			                  <div className="apartments-plan-info ltn__secondary-bg text-color-white">
-			                    <h2>Coastal Charm Lounge</h2>
+							<h2 className="section-title">Property Of The Day</h2>
+
+			                    <h3>Coastal Charm Lounge</h3>
 			                    <p>This stunning luxury apartment is located in the heart of Downtown Dubai, just steps away from the Burj Khalifa and Dubai Mall. With high-end finishes, top-notch amenities, and breathtaking views of the city, this apartment is the epitome of luxury living.</p>
 			                    <div className="apartments-info-list apartments-info-list-color mt-40">
 			                      <ul>
@@ -45,7 +47,7 @@ const ApartmentV1 = (props) => {
 			                    </div>
 			                  </div>
 			                </div>
-			                <div className="col-lg-6">
+			                <div className="col-lg-5">
 			                  <div className="apartments-plan-img">
 			                    <img src={publicUrl+"assets/img/others/10.png"} alt="#" />
 			                  </div>
@@ -56,9 +58,11 @@ const ApartmentV1 = (props) => {
 			          <div className="tab-pane fade active show" id="liton_tab_3_2">
 			            <div className="ltn__product-tab-content-inner">
 			              <div className="row">
-			                <div className="col-lg-6">
+			                <div className="col-lg-7">
 			                  <div className="apartments-plan-info ltn__secondary-bg text-color-white">
-			                    <h2>Dubai Marina</h2>
+							   <h2 className="section-title">Property Of The Day</h2>
+
+			                    <h3>Dubai Marina</h3>
 			                    <p>This stunning 2-bedroom apartment is located in the heart of Dubai Marina, offering spectacular views of the waterfront and a luxurious lifestyle.</p>
 			                    <div className="apartments-info-list apartments-info-list-color mt-40">
 			                      <ul>
@@ -71,7 +75,7 @@ const ApartmentV1 = (props) => {
 			                    </div>
 			                  </div>
 			                </div>
-			                <div className="col-lg-6">
+			                <div className="col-lg-5">
 			                  <div className="apartments-plan-img">
 			                    <img src={publicUrl+"assets/img/others/10.png"} alt="#" />
 			                  </div>
@@ -82,9 +86,11 @@ const ApartmentV1 = (props) => {
 			          <div className="tab-pane fade" id="liton_tab_3_3">
 			            <div className="ltn__product-tab-content-inner">
 			              <div className="row">
-			                <div className="col-lg-6">
+			                <div className="col-lg-7">
 			                  <div className="apartments-plan-info ltn__secondary-bg text-color-white">
-			                    <h2>The Crown Building</h2>
+							<h2 className="section-title">Property Of The Day</h2>
+
+			                    <h3>The Crown Building</h3>
 			                    <p>This spacious commercial space is located in the bustling area of Downtown Dubai, perfect for businesses looking to establish a presence in a prime location.</p>
 			                    <div className="apartments-info-list apartments-info-list-color mt-40">
 			                      <ul>
@@ -97,7 +103,7 @@ const ApartmentV1 = (props) => {
 			                    </div>
 			                  </div>
 			                </div>
-			                <div className="col-lg-6">
+			                <div className="col-lg-5">
 			                  <div className="apartments-plan-img">
 			                    <img src={publicUrl+"assets/img/others/10.png"} alt="#" />
 			                  </div>
@@ -108,9 +114,11 @@ const ApartmentV1 = (props) => {
 			          <div className="tab-pane fade" id="liton_tab_3_4">
 			            <div className="ltn__product-tab-content-inner">
 			              <div className="row">
-			                <div className="col-lg-6">
+			                <div className="col-lg-7">
 			                  <div className="apartments-plan-info ltn__secondary-bg text-color-white">
-			                    <h2>The Ultimate Vision Apartments</h2>
+							<h2 className="section-title">Property Of The Day</h2>
+
+			                    <h3> Ultimate Vision Apartments</h3>
 			                    <p>With a focus on sustainability and energy efficiency, it's the perfect choice for businesses looking to make a positive impact. Don't miss this opportunity to elevate your business in a premier location.</p>
 			                    <div className="apartments-info-list apartments-info-list-color mt-40">
 			                      <ul>
@@ -123,7 +131,7 @@ const ApartmentV1 = (props) => {
 			                    </div>
 			                  </div>
 			                </div>
-			                <div className="col-lg-6">
+			                <div className="col-lg-5">
 			                  <div className="apartments-plan-img">
 			                    <img src={publicUrl+"assets/img/others/10.png"} alt="#" />
 			                  </div>
@@ -134,9 +142,11 @@ const ApartmentV1 = (props) => {
 			          <div className="tab-pane fade" id="liton_tab_3_5">
 			            <div className="ltn__product-tab-content-inner">
 			              <div className="row">
-			                <div className="col-lg-6">
+			                <div className="col-lg-7">
 			                  <div className="apartments-plan-info ltn__secondary-bg text-color-white">
-			                    <h2>Greenview Plots</h2>
+							<h2 className="section-title">Property Of The Day</h2>
+
+			                    <h3>Greenview Plots</h3>
 			                    <p>a collection of prime residential plots located in a serene and picturesque environment. Nestled in the heart of a lush green landscape, these plots offer the perfect canvas for your dream home.</p>
 			                    <div className="apartments-info-list apartments-info-list-color mt-40">
 			                      <ul>
@@ -149,7 +159,7 @@ const ApartmentV1 = (props) => {
 			                    </div>
 			                  </div>
 			                </div>
-			                <div className="col-lg-6">
+			                <div className="col-lg-5">
 			                  <div className="apartments-plan-img">
 			                    <img src={publicUrl+"assets/img/others/10.png"} alt="#" />
 			                  </div>
