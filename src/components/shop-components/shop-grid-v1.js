@@ -10,48 +10,12 @@ const ShopGirdV1 = () => {
 	<div>
 			<div className="ltn__product-area ltn__product-gutter pt-100 mb-100">
 				<div className="container">
+				<h4 className="title-2">Related Properties</h4>
+
 						<div className="row">
 							<div className="col-lg-12">
-						<h2>Trending Off Plan Properties in Dubai</h2>
-					<div className="ltn__shop-options">
-							<ul className="justify-content-start">
-								<li>
-								<div className="ltn__grid-list-tab-menu ">
-									<div className="nav">
-									<a className="active show" data-bs-toggle="tab" href="#liton_product_grid"><i className="fas fa-th-large" /></a>
-									<a data-bs-toggle="tab" href="#liton_product_list"><i className="fas fa-list" /></a>
-									</div>
-								</div>
-								</li>
-								<li className="d-none">
-								<div className="showing-product-number text-right">
-									<span>Showing 1–12 of 18 results</span>
-								</div> 
-								</li>
-								<li>
-								<div className="short-by text-center">
-									<select className="nice-select">
-									<option>Default Sorting</option>
-									<option>Sort by popularity</option>
-									<option>Sort by new arrivals</option>
-									<option>Sort by price: low to high</option>
-									<option>Sort by price: high to low</option>
-									</select>
-								</div> 
-								</li>
-								<li>
-								<div className="short-by text-center">
-									<select className="nice-select">
-									<option>Per Page: 12</option>
-									<option>Per Page: 20</option>
-									<option>Per Page: 30</option>
-									<option>Per Page: 50</option>
-									<option>Per Page: 100</option>
-									</select>
-								</div> 
-								</li>
-							</ul>
-							</div>
+						
+					
 							<div className="tab-content ">
 								<div className="tab-pane fade active show" id="liton_product_grid">
 								<div className="ltn__product-tab-content-inner ltn__product-grid-view">
