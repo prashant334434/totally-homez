@@ -9,8 +9,9 @@ import Footer from './global-components/footer';
 const Product_Details = () => {
     return <div>
         <Navbar />
-        <PageHeader headertitle="Product Details" customclass="mb-0" />
         <ProductSlider />
+
+        <PageHeader headertitle="Garden Homes Frond C" customclass="mb-0" />
         <ProductDetails />
         <CallToActionV1 />
         <Footer />

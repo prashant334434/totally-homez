@@ -1,19 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react'
 import { Link } from 'react-router-dom';
 
-class Page_header extends Component {
+const PageHead = (props) => {
+    let HeaderTitle = props.headertitle;
+    let publicUrl = process.env.PUBLIC_URL+'/'
+    let Subheader = props.subheader ? props.subheader : "Villa"
+	let Subheader2 = props.subheader ? props.subheader : "Jumeirah"
 
-    render() {
+	let Subheader3 = props.subheader ? props.subheader : "Garden Homes"
+	let Subheader4 = props.subheader ? props.subheader : "Garden Homes Frond C"
 
-        let HeaderTitle = this.props.headertitle;
-        let publicUrl = process.env.PUBLIC_URL+'/'
-        let Subheader = this.props.subheader ? this.props.subheader : HeaderTitle
-		let CustomClass = this.props.customclass ? this.props.customclass : ''
-        let Img = this.props.Img ? this.props.Img :'14.jpg'
 
-        return (
-
-		<div className={"ltn__breadcrumb-area text-left bg-overlay-white-30 bg-image "+CustomClass} data-bs-bg={publicUrl+"assets/img/bg/14.jpg"}>
+    let CustomClass = props.customclass ? props.customclass : ''
+  return (
+    <div>
+        	<div className={"ltn__breadcrumb-area text-left bg-overlay-white-30 bg-image "+CustomClass} data-bs-bg={publicUrl+"assets/img/bg/14.jpg"}>
 			<div className="container">
 				<div className="row">
 				<div className="col-lg-12">
@@ -21,20 +22,25 @@ class Page_header extends Component {
 					<h1 className="page-title">{ HeaderTitle }</h1>
 					<div className="ltn__breadcrumb-list">
 						<ul>
-						<li><Link to="/"><span className="ltn__secondary-color"><i className="fas fa-home" /></span> Home</Link></li>
+						<li><Link to="/"><span className="ltn__secondary-color"><i className="fas fa-home" /></span> Dubai</Link></li>
 						<li>{ Subheader }</li>
+						<li>{ Subheader2 }</li>
+
+						<li>{ Subheader3 }</li>
+
+						<li>{ Subheader4 }</li>
+
 						</ul>
 					</div>
 					</div>
+					
 				</div>
 				</div>
 			</div>
 		</div>
-
-
-        )
-    }
+		
+    </div>
+  )
 }
 
-
-export default Page_header
+export default PageHead

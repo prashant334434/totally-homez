@@ -350,7 +350,7 @@ const FactsandFigures = () => {
             
         </aside>
         </div>
-        <div className="col-lg-12 col-md-12">
+        <div className="col-lg-6  col-md-12">
         <div className="ltn__shop-details-inner ltn__page-details-inner mb-60">
           
           
@@ -870,7 +870,8 @@ const FactsandFigures = () => {
             </div>
             </div> */}         
         </div>      
-        </div>    
+        </div>  
+          
     </div>   
 </div>
         

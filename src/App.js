@@ -113,7 +113,7 @@ import PropertyDetails from './components/PropertyDetails';
 
 
         <Route path="/listings" component={ Listings } />
-        <Route path="/property-details" component={ PropertyDetails } />
+        <Route path="/property-details" component={ ProdductDetails } />
     </Switch>
     </div>
 </HashRouter>   )
