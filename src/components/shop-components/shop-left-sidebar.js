@@ -873,12 +873,12 @@ class ShopGridV1 extends Component {
 						<div className="ltn__quick-view-modal-inner">
 							<div className="modal-product-item">
 							<div className="row">
-								<div className="col-lg-6 col-12">
+								<div className="col-lg-8 col-12">
 								<div className="modal-product-img">
 									<img src={publicUrl+"assets/img/product/4.png"} alt="#" />
 								</div>
 								</div>
-								<div className="col-lg-6 col-12">
+								<div className="col-lg-8 col-12">
 								<div className="modal-product-info">
 									<div className="product-ratting">
 									<ul>
