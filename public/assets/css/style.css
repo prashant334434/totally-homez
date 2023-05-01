@@ -10798,9 +10798,16 @@ p{
   text-align: left !important;
 }
 
+.sticky-sidebarDEtails{
+  position: fixed;
+  top: 0;
+  width: 360px;
+  height: 100%;
+  z-index: 2;
+}
 /* Section Title 3 */
 .section-title-style-3 {
-  display: -webkit-box;
+  display: -webkit-box;         
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
