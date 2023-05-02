@@ -3,45 +3,71 @@
 
 
 import React, { useEffect, useRef } from 'react';
-import Swiper from 'swiper';
-import 'swiper/swiper-bundle.css';
 
-import $ from 'jquery';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import 'slick-carousel/slick/slick';
+import { Swiper, SwiperSlide } from 'swiper/react/swiper-react'
+
+
+
+import 'swiper/swiper.min.css'
+import 'swiper/modules/pagination/pagination.min.css'
+
+import { EffectCoverflow, Pagination, Navigation } from 'swiper';
 const CarouselSLick = ({ slides }) => {
-  const swiperRef = useRef(null);
-
-  useEffect(() => {
-    new Swiper(swiperRef.current, {
-      effect: 'coverflow',
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: 'auto',
-      coverflowEffect: {
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows: true,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-      },
-    });
-  }, []);
+ 
 
   return (
-    <div ref={swiperRef} className="swiper-container">
-      <div className="swiper-wrapper">
-        {slides.map((slide) => (
-          <div key={slide.id} className="swiper-slide">
-            <img src={slide.imageUrl} alt={slide.title} />
+    <div className="swiperContainer">
+      <h1 className="heading">Flower Gallery</h1>
+      <Swiper
+        effect={'coverflow'}
+        grabCursor={true}
+        centeredSlides={true}
+        loop={true}
+        slidesPerView={'auto'}
+        coverflowEffect={{
+          rotate: 0,
+          stretch: 0,
+          depth: 100,
+          modifier: 2.5,
+        }}
+        pagination={{ el: '.swiper-pagination', clickable: true }}
+        navigation={{
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+          clickable: true,
+        }}
+        modules={[EffectCoverflow, Pagination, Navigation]}
+        className="swiper_container_4"
+      >
+        <SwiperSlide>
+          <img src={"https://res.cloudinary.com/daily-now/image/upload/f_auto,q_auto/v1/posts/d7157ffd4da088c4cddc448987631774?_a=AQADKdt"} alt="slide_image" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={"https://res.cloudinary.com/daily-now/image/upload/f_auto,q_auto/v1/posts/d7157ffd4da088c4cddc448987631774?_a=AQADKdt"} alt="slide_image" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={"https://res.cloudinary.com/daily-now/image/upload/f_auto,q_auto/v1/posts/d7157ffd4da088c4cddc448987631774?_a=AQADKdt"} alt="slide_image" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={"https://res.cloudinary.com/daily-now/image/upload/f_auto,q_auto/v1/posts/d7157ffd4da088c4cddc448987631774?_a=AQADKdt"} alt="slide_image" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={"https://res.cloudinary.com/daily-now/image/upload/f_auto,q_auto/v1/posts/d7157ffd4da088c4cddc448987631774?_a=AQADKdt"} alt="slide_image" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={"https://res.cloudinary.com/daily-now/image/upload/f_auto,q_auto/v1/posts/d7157ffd4da088c4cddc448987631774?_a=AQADKdt"} alt="slide_image" />
+        </SwiperSlide>
+
+        <div className="slider-controler  pt-100">
+          <div className="swiper-button-prev slider-arrow">
+            <ion-icon name="arrow-back-outline"></ion-icon>
           </div>
-        ))}
-      </div>
-      <div className="swiper-pagination"></div>
+          <div className="swiper-button-next slider-arrow">
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </div>
+          <div className="swiper-pagination"></div>
+        </div>
+      </Swiper>
     </div>
   );
 };
