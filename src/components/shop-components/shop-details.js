@@ -340,7 +340,24 @@ const ShopDetails = () => {
 					
 					<br/>
 					<br/>
-					<Link className="btn btn-effect-3" to="/contact">WhatsApp</Link>
+	
+					<script
+    src="https://sleekflow.io/whatsapp-button.js"
+    async
+    onLoad="whatsappButton({
+    buttonName:'Message Us',
+    buttonIconSize: '22',
+    brandImageUrl:'https://sleekflow.io/static/images/sleekflow-icon.png',
+    buttonMargin:'true',
+    brandName:'SleekFlow',
+    brandSubtitleText:'Typically replies within a day',
+    buttonSize:'large',
+    callToAction:'Start Chat',
+    phoneNumber:'917015535765',
+    welcomeMessage:'Hi there 👋',
+    })"
+    > whatsapp
+</script>
 				
 				</div>
 				
