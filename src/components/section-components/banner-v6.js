@@ -15,7 +15,7 @@ class BannerV6 extends Component {
 					<source src={publicUrl + "assets/media/3.mp4"} type="video/mp4" />
 				</video>
 
-				<div className="ltn__slide-item ltn__slide-item-2 ltn__slide-item-7 bg-image--- bg-overlay-theme-black-30" data-bs-bg={publicUrl + "assets/img/slider/41.jpg"}>
+				<div className="ltn__slide-item ltn__slide-item-2 ltn__slide-item-7 bg-image--- bg-1" data-bs-bg={publicUrl + "assets/img/slider/41.jpg"}>
 					<div className="ltn__slide-item-inner text-center">
 						<div className="container">
 							<div className="row">

@@ -9779,6 +9779,7 @@ p{
   border: 1px solid #e5e5e5;
   padding: 50px 50px 30px;
   background-color: var(--section-bg-1);
+  font-family: 'League Spartan';
 }
 .ltn__shop-details-tab-content-inner .ltn__comment-reply-area form {
   padding: 0;
@@ -10136,7 +10137,7 @@ p{
   width: 100%;
 }
 p{
-  font-size:20px;
+  font-size:17px;
 }
 .tab-content .tab-pane {
   display: block;
@@ -10145,6 +10146,7 @@ p{
   visibility: hidden;
   overflow: hidden;
   opacity: 0;
+
 }
 
 .tab-content .tab-pane.active {
@@ -14625,7 +14627,7 @@ input.cart-plus-minus-box {
   transform: rotate(45deg);
 }
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'League Spartan', sans-serif;
 }
 
 /* ----------------------------------------------------
