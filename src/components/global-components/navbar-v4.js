@@ -206,9 +206,7 @@ class NavbarV3 extends Component {
 								</ul> */}
 							</li>
 								<li><Link to="/contact">Blog</Link></li>
-								<li className="special-link">
-									<Link to="/add-listing">Sign In</Link>
-								</li>
+								
 								</ul>
 							</div>
 							</nav>
@@ -236,7 +234,7 @@ class NavbarV3 extends Component {
 				<div className="ltn__utilize-menu-inner ltn__scrollbar">
 					<div className="ltn__utilize-menu-head">
 					<div className="site-logo">
-						<Link to="/"><img src={publicUrl+"assets/img/logo.png"} alt="Logo" /></Link>
+						<Link to="/"><img src={publicUrl+"assets/img/logo2.png"} alt="Logo" /></Link>
 					</div>
 					<button className="ltn__utilize-close">×</button>
 					</div>

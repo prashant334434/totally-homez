@@ -60,24 +60,24 @@ const Home_V7 = () => {
         <div className='container'>
             <div className='row'>
                 <div className='col-lg-12 align-self-center'>
-                <BestProperty customClass='ltn__feature-area section-bg-1 pt-80  mb-120---' />
+                <BestProperty customClass='ltn__feature-area section-bg-0' />
         {/* <Aboutv2 /> */}
-        {/* <Gallery /> */}
-        <Carousel images={IMAGES} slidesToShow={5} />
+        <Gallery />
+      
 
         {/* <HomeCrousal/> */}
-        <ApartmentV1 CustomClass="ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---" />
-        <BestVilla customClass="ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---"/>
+        <ApartmentV1 CustomClass="ltn__feature-area section-bg-0 pt-10 ---" />
+        <BestVilla customClass="ltn__feature-area section-bg-0 pt-120 ---"/>
         <ProductGrid />
 
-        <ApartmentV1 CustomClass="ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---" />
+        <ApartmentV1 CustomClass="ltn__feature-area section-bg-1 pt-10---" />
 
         {/* <UpcomingProductV1 /> */}
 {  //      <BestVilla customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---" />
 }        <ProductSliderV1/>
         {/* <BestApartment customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---"  /> */}
         <Video className=' pb-50'/>
-        <ApartmentV1 CustomClass="ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---" />
+        <ApartmentV1 CustomClass="ltn__feature-area section-bg-1 pt-120" />
 
         {/* <ProductSliderV1/> */}
         {/* <BestTownhouse customClass="ltn__feature-area section-bg-6 pt-40 pb-50 mb-120---"  />
@@ -96,7 +96,9 @@ const Home_V7 = () => {
 
  
 
-        <ProductSlider customClass="ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---"/>
+        <ProductSlider customClass="ltn__feature-area section-bg-0"/>
+        <ApartmentV1 CustomClass="ltn__feature-area section-bg-1" />
+
         <ProductGrid />
 
         {/* <Featuresv1 customClass="ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---"/> */}
@@ -105,8 +107,9 @@ const Home_V7 = () => {
         {/* <VideoV1 /> */}
         {/* <Category /> */}
         {/* <Testimonial /> */}
-        <AboutV5  customClass='ltn__feature-area section-bg-8 pt-120 pb-90 mb-120---'/>
-        <TeamAgents customClass='ltn__feature-area section-bg-1 pt-80  mb-120---' />
+
+        <AboutV5  customClass='ltn__feature-area section-bg-8 '/>
+        <TeamAgents customClass='ltn__feature-area section-bg-' />
         {/* <Testimonial customClass='ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---'/> */}
 
         <BlogSlider customClass="section-subtitle-2 "/>
@@ -123,6 +126,7 @@ const Home_V7 = () => {
 
       
         </div>
+        
 
         <Footer />
 

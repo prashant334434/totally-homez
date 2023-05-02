@@ -27,7 +27,12 @@ class BannerV6 extends Component {
 											<div className="tab-content pb-10">
 											<div className="ltn__tab-menu   text-left">
 												<div className="nav">
-													<a className="active show" data-bs-toggle="tab" href="#ltn__form_tab_1_1"><i className="fas fa-home" />Project</a>
+													<a className="active show" data-bs-toggle="tab" href="#ltn__form_tab_1_1"><i className="fas fa-home" />
+													
+													<bold>
+													Project
+													</bold>
+													</a>
 													<a data-bs-toggle="tab" href="#ltn__form_tab_1_2" className><i className="fas fa-home" />Rent</a>
 													<a data-bs-toggle="tab" href="#ltn__form_tab_1_3" className><i className="fas fa-home" />Sale</a>
 
@@ -94,7 +99,7 @@ class BannerV6 extends Component {
 														<form action="#" className="ltn__car-dealer-form-box row">
 														<div className="ltn__car-dealer-form-item   col-lg-2 col-md-4">
 																<label>Location :</label>
-																<input type="text" name="ltn__name" placeholder="Size in ft2 (*only numbers)" />
+																<input type="text" name="ltn__name" placeholder="Location" />
 
 															</div>
 															<div className="ltn__car-dealer-form-item  col-lg-2 col-md-4">

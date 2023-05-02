@@ -7,7 +7,7 @@ const ProductGrid = (props) => {
   return (
     <div>
 		<div>
-		<div className="ltn__product-slider-area ltn__product-gutter pt-115 pb-90 plr--7">
+		<div className="ltn__product-slider-area ltn__product-gutter pb-90 plr--7">
 	  <div className="container-fluid">
 		<div className="row">
 		  <div className="col-lg-12">

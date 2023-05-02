@@ -9,7 +9,7 @@ const ApartmentV1 = (props) => {
 	let publicUrl = process.env.PUBLIC_URL+'/'
 	let customClass = props.customClass ? props.customClass :''
   return (
-	<div className={"ltn__apartments-plan-area pt-40 "+customClass}>
+	<div className={"ltn__apartments-plan-area "+customClass}>
 			  <div className="container">
 			    <div className="row">
 			      <div className="col-lg-12">
@@ -31,7 +31,7 @@ const ApartmentV1 = (props) => {
 			              <div className="row">
 			                <div className="col-lg-7">
 			                  <div className="apartments-plan-info ltn__secondary-bg text-color-white">
-							<h2 className="section-title">Property Of The Day to Buy</h2>
+							<h4 className="section-title">Property Of The Day to Buy</h4>
 
 			                    <h3>Coastal Charm Lounge</h3>
 			                    <p>This stunning luxury apartment is located in the heart of Downtown Dubai, just steps away from the Burj Khalifa and Dubai Mall. With high-end finishes, top-notch amenities, and breathtaking views of the city, this apartment is the epitome of luxury living.</p>
@@ -51,8 +51,7 @@ const ApartmentV1 = (props) => {
 			              <div className="row">
 			                <div className="col-lg-7">
 			                  <div className="apartments-plan-info ltn__secondary-bg text-color-white">
-							   <h2 className="section-title">Property Of The Day to Rent</h2>
-
+							   <h4 	 className="section-title">Rental | Property Of The Day  </h4 	>
 			                    <h3>Dubai Marina</h3>
 			                    <p>This stunning 2-bedroom apartment is located in the heart of Dubai Marina, offering spectacular views of the waterfront and a luxurious lifestyle.</p>
 			                  
