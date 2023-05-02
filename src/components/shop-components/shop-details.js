@@ -235,14 +235,7 @@ const ShopDetails = () => {
 			
 			</div>
 			{/* APARTMENTS PLAN AREA END */}
-		
-			
-			<div className="row">
-			{/* ltn__product-item */}
-		
-			{/* ltn__product-item */}
-			
-			</div>
+	
 		</div>
 		</div>
 		<div className="col-lg-4">
@@ -307,7 +300,28 @@ const ShopDetails = () => {
 		</aside>
 		</div>
 	</div>
+	<div className="row">
+		<div className="col-lg-8 col-md-12">
+		<div className="ltn__shop-details-inner ltn__page-details-inner ">
+			
+		
+     
+			
+			
+		
+		
+			
+			{/* APARTMENTS PLAN AREA START */}
+		
+			
+			{/* APARTMENTS PLAN AREA END */}
+		
+			
+		
+		</div>
+		</div>
 	
+	</div>
 	</div>
 </div>
   )
