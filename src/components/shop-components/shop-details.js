@@ -246,7 +246,7 @@ const ShopDetails = () => {
 		</div>
 		</div>
 		<div className="col-lg-4">
-		<aside className="sidebar ltn__shop-sidebar ltn__right-sidebar---">
+		<aside className="sidebar sticky-sidebarDEtails ltn__shop-sidebar ltn__right-sidebar---">
 			{/* Author Widget */}
 			<div className="widget ltn__author-widget">
 			<div className="ltn__author-widget-inner text-center">
