@@ -32,6 +32,7 @@ import Banner from './section-components/banner-v2';
 import Neighbour from './section-components/neighbour';
 import ProductGrid from './shop-components/ProductGrid';
 import BestVilla from './section-components/BestVilla';
+import CarouselSwiper from './shop-components/CarouselSwiper';
 
 
 const Home_V7 = () => {
@@ -82,6 +83,8 @@ const Home_V7 = () => {
 
         {/* <BlogT customClass='ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---'/> */}
         <CallToActionV1 />
+
+        <CarouselSwiper/>
         <Footer2 customClass='ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---'/>
         <Footer />
     </div>
