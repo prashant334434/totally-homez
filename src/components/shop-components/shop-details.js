@@ -14,9 +14,79 @@ const ShopDetails = () => {
 	  
   return (
 	<div className="ltn__shop-details-area pt-40 pb-10">
+	<div className='container'>
+	<div className="row">
+	<div className="col-lg-12 col-md-12">
+	<h4 className="title-2">Facts and Features</h4>
+			<div className="property-detail-feature-list clearfix mb-45">                            
+			<ul>
+			<li>
+				<div className="property-detail-feature-list-item">
+					<i className="flaticon-double-bed" />
+					<div>
+					<h6>Bedroom</h6>
+					<small>20 x 16 sq feet</small>
+					</div>
+				</div>
+				</li>
+				<li>
+				<div className="property-detail-feature-list-item">
+					<i className="flaticon-double-bed" />
+					<div>
+					<h6>Bathroom</h6>
+					<small>20 x 16 sq feet</small>
+					</div>
+				</div>
+				</li>
+				<li>
+				<div className="property-detail-feature-list-item">
+					<i className="flaticon-double-bed" />
+					<div>
+					<h6>Size</h6>
+					<small>20 x 16 sq feet</small>
+					</div>
+				</div>
+				</li>
+				<li>
+				<div className="property-detail-feature-list-item">
+					<i className="flaticon-double-bed" />
+					<div>
+					<h6>Type</h6>
+					<small>Villa</small>
+					</div>
+				</div>
+				</li>
+				<li>
+				<div className="property-detail-feature-list-item">
+					<i className="flaticon-double-bed" />
+					<div>
+					<h6>For</h6>
+					<small>Sale</small>
+					</div>
+				</div>
+				</li>
+				
+				<li>
+				<div className="property-detail-feature-list-item">
+					<i className="flaticon-double-bed" />
+					<div>
+					<h6>View</h6>
+					<small>Burj Khalifa</small>
+					</div>
+				</div>
+				</li>
+			
+			</ul>
+			</div>
+
+	</div>
+	</div>
+	</div>
+	
 	<div className="container">
 	<div className="row">
 		<div className="col-lg-8 col-md-12">
+		
 		<div className="ltn__shop-details-inner ltn__page-details-inner mb-60">
 			<div className="ltn__blog-meta">
 			
