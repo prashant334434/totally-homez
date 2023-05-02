@@ -58,12 +58,12 @@ class BannerV6 extends Component {
 															</div>
 															<div className="ltn__car-dealer-form-item   col-lg-2 col-md-4">
 																<label>Min Price :</label>
-																<input type="text" name="ltn__name" placeholder="Size in ft2 (*only numbers)" />
+																<input type="text" name="ltn__name" placeholder="Min Price " />
 
 															</div>
 															<div className="ltn__car-dealer-form-item   col-lg-2 col-md-4">
 																<label>Max  Price :</label>
-																<input type="text" name="ltn__name" placeholder="Size in ft2 (*only numbers)" />
+																<input type="text" name="ltn__name" placeholder="Max  Price" />
 
 															</div>
 															<div className="ltn__car-dealer-form-item bedroom_class  col-lg-2 col-md-4">
@@ -113,12 +113,12 @@ class BannerV6 extends Component {
 																</div>
 															<div className="ltn__car-dealer-form-item   col-lg-2 col-md-4">
 																<label>Min Price :</label>
-																<input type="text" name="ltn__name" placeholder="Size in ft2 (*only numbers)" />
+																<input type="text" name="ltn__name" placeholder="Min Price " />
 
 															</div>
 															<div className="ltn__car-dealer-form-item   col-lg-2 col-md-4">
 																<label>Max  Price :</label>
-																<input type="text" name="ltn__name" placeholder="Size in ft2 (*only numbers)" />
+																<input type="text" name="ltn__name" placeholder="Max Price " />
 
 															</div>
 															<div className="ltn__car-dealer-form-item bedroom_class  col-lg-2 col-md-4">
@@ -150,7 +150,7 @@ class BannerV6 extends Component {
 														<form action="#" className="ltn__car-dealer-form-box row">
 														<div className="ltn__car-dealer-form-item   col-lg-2 col-md-4">
 																<label>Location :</label>
-																<input type="text" name="ltn__name" placeholder="Size in ft2 (*only numbers)" />
+																<input type="text" name="ltn__name" placeholder="Location" />
 
 															</div>
 															<div className="ltn__car-dealer-form-item  col-lg-2 col-md-4">
@@ -168,12 +168,12 @@ class BannerV6 extends Component {
 																</div>
 															<div className="ltn__car-dealer-form-item   col-lg-2 col-md-4">
 																<label>Min Price :</label>
-																<input type="text" name="ltn__name" placeholder="Min Price :" />
+																<input type="text" name="ltn__name" placeholder="Min Price " />
 
 															</div>
 															<div className="ltn__car-dealer-form-item   col-lg-2 col-md-4">
 																<label>Max  Price :</label>
-																<input type="text" name="ltn__name" placeholder="Max  Price :" />
+																<input type="text" name="ltn__name" placeholder="Max  Price " />
 
 															</div>
 															<div className="ltn__car-dealer-form-item bedroom_class  col-lg-2 col-md-4">
