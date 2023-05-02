@@ -3,7 +3,7 @@ import Navbar from './global-components/navbar-v4';
 import BannerV6 from './section-components/banner-v6';
 import Aboutv2 from './section-components/about-v2';
 import Featuresv1 from './section-components/features-v1';
-import ProSlider from './section-components/product-slider-v4';
+import ProSlider from './section-components/product-slider-v1';
 import BlogSlider from './blog-components/blog-slider-v1';
 import Gallery from './section-components/gallery-v1';
 import ApartmentV1 from './section-components/apartment-v1';
@@ -19,7 +19,7 @@ import AboutV4 from './section-components/about-v4';
 
 import AboutV5 from './section-components/about-v5';
 import BlogT from './blog-components/BlogT';
-import ProductSliderV1 from './section-components/product-slider-v1';
+import ProductSliderV1 from './section-components/product-slider-v4';
 import Footer2 from './global-components/Footer2';
 import UpcomingProductV1 from './section-components/upcoming-product-v1';
 import Video from './section-components/video-v2';
@@ -33,6 +33,7 @@ import Neighbour from './section-components/neighbour';
 import ProductGrid from './shop-components/ProductGrid';
 import BestVilla from './section-components/BestVilla';
 import CarouselSwiper from './shop-components/CarouselSwiper';
+import BestVillaTabs from './section-components/BestVillaTabs';
 
 
 const Home_V7 = () => {
@@ -62,8 +63,12 @@ const Home_V7 = () => {
         <Carousel images={IMAGES} slidesToShow={5} />
 
         {/* <HomeCrousal/> */}
-        <ApartmentV1 CustomClass=" ltn__feature-area section-bg-3 pt-120 pb-90 mb-120---" />
-<BestVilla customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---"/>
+        <ApartmentV1 CustomClass="ltn__feature-area section-bg-3 pt-120 pb-90 mb-120---" />
+        <BestVilla customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---"/>
+        <ProductGrid />
+
+        <ApartmentV1 CustomClass="ltn__feature-area section-bg-3 pt-120 pb-90 mb-120---" />
+
         {/* <UpcomingProductV1 /> */}
 {  //      <BestVilla customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---" />
 }        <ProductSliderV1/>
@@ -74,8 +79,9 @@ const Home_V7 = () => {
         {/* <BestTownhouse customClass="ltn__feature-area section-bg-6 pt-40 pb-50 mb-120---"  />
          */}
         <AboutV4/>
+        <ProductGrid />
 
-        <ProductSliderV1/>
+
         {/* <BestPenthouse customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---"  /> */}
         {/* <ProductSliderV1/> */}
         {/* <Banner /> */}
