@@ -20,7 +20,7 @@ class VideoV2 extends Component {
 			            <p>Over 39,000 people work for us in more than 70 countries all over the
 			              This breadth of global coverage, combined with specialist services</p>
 			          </div>
-			          <ul className="ltn__list-item-half ltn__list-item-half-2 list-item-margin clearfix">
+			         {/* { <ul className="ltn__list-item-half ltn__list-item-half-2 list-item-margin clearfix">
 			            <li>
 			              <i className="icon-done" />
 			              Living rooms are pre-wired for Surround
@@ -45,7 +45,7 @@ class VideoV2 extends Component {
 			              <i className="icon-done" />
 			              Outdoor grilling with dining court
 			            </li>
-			          </ul>
+			          </ul>} */}
 			          <div className="  ltn__animation-pulse2 text-center mt-30">
 			            <a className="ltn__video-play-btn bg-white--- ltn__secondary-bg" href="https://www.youtube.com/embed/HnbMYzdjuBs?autoplay=1&showinfo=0" data-rel="lightcase">
 			              <i className="icon-play  ltn__secondary-color--- white-color" />

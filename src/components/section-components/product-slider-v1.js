@@ -21,7 +21,7 @@ const ProductSliderV1= () => {
 			</div>
 		  </div>
 		</div>
-		<div className="row ltn__product-slider-item-four-active-full-width slick-arrow-1">
+		<div className="row ltn__product-slider-item-four-active-full-width slick-arrow-1 ">
 		  {/* ltn__product-item */}
 		  <div className="col-lg-12">
 			<div className="ltn__product-item ltn__product-item-4 text-center---">
@@ -77,12 +77,12 @@ const ProductSliderV1= () => {
 				  <ul>
 					<li>
 					  <a href="#" title="Quick View" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
-						<i className="fab fa-whatsapp" />
+						<i  style={{ fontSize: "1.5em" }} className="fab fa-whatsapp" />
 					  </a>
 					</li>
 					<li>
 					  <a href="#" title="Wishlist" data-bs-toggle="modal" data-bs-target="#liton_wishlist_modal">
-						<i className="fa fa-phone" /></a>
+						<i  style={{ fontSize: "1.5em" }} className="fa fa-phone" /></a>
 					</li>
 					
 				  </ul>
@@ -138,12 +138,12 @@ const ProductSliderV1= () => {
 				  <ul>
 					<li>
 					  <a href="#" title="Quick View" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
-						<i className="fab fa-whatsapp" />
+						<i  style={{ fontSize: "1.5rem" }} className="fab fa-whatsapp" />
 					  </a>
 					</li>
 					<li>
 					  <a href="#" title="Wishlist" data-bs-toggle="modal" data-bs-target="#liton_wishlist_modal">
-						<i className="fa fa-phone" /></a>
+						<i  style={{ fontSize: "1.5rem" }}  className="fa fa-phone" /></a>
 					</li>
 					
 				  </ul>
@@ -198,12 +198,12 @@ const ProductSliderV1= () => {
 				  <ul>
 					<li>
 					  <a href="#" title="Quick View" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
-						<i className="fab fa-whatsapp" />
+						<i  style={{ fontSize: "1.5em" }} className="fab fa-whatsapp" />
 					  </a>
 					</li>
 					<li>
 					  <a href="#" title="Wishlist" data-bs-toggle="modal" data-bs-target="#liton_wishlist_modal">
-						<i className="fa fa-phone" /></a>
+						<i  style={{ fontSize: "1.5em" }} className="fa fa-phone" /></a>
 					</li>
 					
 				  </ul>
@@ -213,7 +213,7 @@ const ProductSliderV1= () => {
 		  </div>
 		  {/* ltn__product-item */}
 		  <div className="col-lg-12">
-			<div className="ltn__product-item ltn__product-item-4 text-center---">
+			<div className="ltn__product-item ltn__product-item-4 text-center--- ">
 			  <div className="product-img go-top">
 				<Link to="/product-details"><img src={publicUrl+"assets/img/product-3/4.jpg"} alt="#" /></Link>
 				<div className="product-badge">
@@ -258,12 +258,12 @@ const ProductSliderV1= () => {
 				  <ul>
 					<li>
 					  <a href="#" title="Quick View" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
-						<i className="fab fa-whatsapp" />
+						<i  style={{ fontSize: "1.5em" }} className="fab fa-whatsapp" />
 					  </a>
 					</li>
 					<li>
 					  <a href="#" title="Wishlist" data-bs-toggle="modal" data-bs-target="#liton_wishlist_modal">
-						<i className="fa fa-phone" /></a>
+						<i  style={{ fontSize: "1.5em" }} className="fa fa-phone" /></a>
 					</li>
 					
 				  </ul>
@@ -318,12 +318,12 @@ const ProductSliderV1= () => {
 				  <ul>
 					<li>
 					  <a href="#" title="Quick View" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
-						<i className="fab fa-whatsapp" />
+						<i style={{ fontSize: "1.5em" }}  className="fab fa-whatsapp" />
 					  </a>
 					</li>
 					<li>
 					  <a href="#" title="Wishlist" data-bs-toggle="modal" data-bs-target="#liton_wishlist_modal">
-						<i className="fa fa-phone" /></a>
+						<i style={{ fontSize: "1.5em" }}  className="fa fa-phone" /></a>
 					</li>
 					
 				  </ul>

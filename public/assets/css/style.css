@@ -537,7 +537,7 @@ ol li {
 .section-bg-2,
 .section-bg-6,
 .section-bg-7 {
-  background-color: var(--section-bg-2);
+  background-color: #36454F;
 }
 .section-bg-2 h1,
 .section-bg-2 h2,
@@ -677,7 +677,7 @@ ol li {
 }
 
 .section-bg-7 {
-  background-color: var(--section-bg-7);
+  background-color: #36454F;
 }
 
 .text-color-white {
@@ -4586,7 +4586,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   max-width: 80px;
 }
 p{
-  font-family: "Montserrat";
+  font-family: "League Spartan";
 }
 
 .popular-post-widget-brief {
@@ -9494,7 +9494,7 @@ p{
 .ltn__tab-menu a {
   display: inline-block;
   padding: 15px 40px;
-  margin-right: 5px;
+  
   margin-bottom: 10px;
   color: var(--ltn__heading-color);
   background-color: var(--section-bg-1);
@@ -15918,6 +15918,7 @@ body {
 .ltn__car-dealer-form-tab .tab-content {
   padding: 40px;
   background-color: var(--section-bg-1);
+  border-radius: 10px;
 }
 
 .ltn__car-dealer-form-box .ltn__car-dealer-form-item {

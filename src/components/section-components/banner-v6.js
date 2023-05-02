@@ -21,11 +21,9 @@ class BannerV6 extends Component {
 							<div className="row">
 								<div className="col-lg-12 align-self-center">
 									<div className="slide-item-car-dealer-form">
-										<div className="section-title-area ltn__section-title-2 text-center">
-											<h1 className="section-title  text-color-white">Find Your <span className="ltn__secondary-color-3">Perfect</span> Home</h1>
-										</div>
+										
 										<div className="ltn__car-dealer-form-tab">
-											<div className="ltn__tab-menu  text-uppercase text-center">
+											<div className="ltn__tab-menu   text-center">
 												<div className="nav">
 													<a className="active show" data-bs-toggle="tab" href="#ltn__form_tab_1_1"><i className="fas fa-home" />Project</a>
 													<a data-bs-toggle="tab" href="#ltn__form_tab_1_2" className><i className="fas fa-home" />Rent</a>
