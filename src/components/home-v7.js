@@ -36,6 +36,23 @@ import CarouselSwiper from './shop-components/CarouselSwiper';
 
 
 const Home_V7 = () => {
+    const slides = [
+        {
+          id: 1,
+          title: 'Slide 1',
+          imageUrl: 'https://placeimg.com/640/480/tech',
+        },
+        {
+          id: 2,
+          title: 'Slide 2',
+          imageUrl: 'https://placeimg.com/640/480/nature',
+        },
+        {
+          id: 3,
+          title: 'Slide 3',
+          imageUrl: 'https://placeimg.com/640/480/animals',
+        },
+      ];
     return <div>
         <Navbar CustomClass="ltn__header-transparent gradient-color-2" /> 
         <BannerV6 />
@@ -83,8 +100,8 @@ const Home_V7 = () => {
 
         {/* <BlogT customClass='ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---'/> */}
         <CallToActionV1 />
+        <CarouselSwiper slides={slides} />
 
-        <CarouselSwiper/>
         <Footer2 customClass='ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---'/>
         <Footer />
     </div>

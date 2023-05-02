@@ -57,6 +57,23 @@ import PropertyDetails from './components/PropertyDetails';
 
  
  const App = () => {
+    const slides = [
+        {
+          id: 1,
+          title: 'Slide 1',
+          imageUrl: 'https://placeimg.com/640/480/tech',
+        },
+        {
+          id: 2,
+          title: 'Slide 2',
+          imageUrl: 'https://placeimg.com/640/480/nature',
+        },
+        {
+          id: 3,
+          title: 'Slide 3',
+          imageUrl: 'https://placeimg.com/640/480/animals',
+        },
+      ];
    return (
     <HashRouter basename="/">
     <div>
