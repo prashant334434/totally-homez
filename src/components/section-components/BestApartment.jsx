@@ -62,6 +62,8 @@ const BestApartment = (props) => {
         </div>
       </div>
     </div>
+    <ApartmentV1/>
+
   </div>
     </div>
    

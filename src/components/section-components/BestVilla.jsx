@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import ApartmentV1 from './apartment-v1'
 
 const BestVilla = (props) => {
     let publicUrl = process.env.PUBLIC_URL+'/'
@@ -42,29 +44,17 @@ const BestVilla = (props) => {
                 square Ft
               </li>
             </ul> */}
-            <ul className="ltn__list-item-2 ltn__list-item-2-before--- ltn__list-item-2-img mb-50">
-              <li>
-                <a href={publicUrl+"assets/img/img-slide/11.jpg"} data-rel="lightcase:myCollection">
-                  <img src={publicUrl+"assets/img/img-slide/11.jpg"} alt="Image" />
-                </a>
-              </li>
-              <li>
-                <a href={publicUrl+"assets/img/img-slide/12.jpg"} data-rel="lightcase:myCollection">
-                  <img src={publicUrl+"assets/img/img-slide/12.jpg"} alt="Image" />
-                </a>
-              </li>
-              <li>
-                <a href={publicUrl+"assets/img/img-slide/13.jpg"} data-rel="lightcase:myCollection">
-                  <img src={publicUrl+"assets/img/img-slide/13.jpg"} alt="Image" />
-                </a>
-              </li>
-            </ul>
+           <div className="read-more">
+	  <button className="btn theme-btn-1" >LEARN MORE</button>
+
+      </div>
          
           </div>
         </div>
         
       </div>
     </div>
+    <ApartmentV1/>
   </div>
   
   </div>

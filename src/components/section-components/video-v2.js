@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import parse from 'html-react-parser';
+import ApartmentV1 from './apartment-v1';
 
 class VideoV2 extends Component {
 
@@ -57,8 +58,10 @@ class VideoV2 extends Component {
 			        <div className="about-us-img-wrap about-img-left">
 			        </div>
 			      </div>
+
 			    </div>
 			  </div>
+
 			</div>
         }
 }

@@ -8128,7 +8128,7 @@ p{
 }
 
 .ltn__slide-item-9 .ltn__tab-menu a {
-  padding: 12px 20px;
+  padding: 12px 10px;
 }
 
 .ltn__slide-item-9 .slide-item-info-line-no::before,
@@ -9493,7 +9493,7 @@ p{
 .ltn__gallery-filter-menu button,
 .ltn__tab-menu a {
   display: inline-block;
-  padding: 15px 40px;
+  padding: 5px 40px;
   
   margin-bottom: 10px;
   color: var(--ltn__heading-color);
@@ -10133,9 +10133,11 @@ p{
 
 /* Bootstrap Tab with Slider Issue Fix Start */
 .tab-content {
-  width: 100%s;
+  width: 100%;
 }
-
+p{
+  font-size:20px;
+}
 .tab-content .tab-pane {
   display: block;
   height: 0;
@@ -15916,7 +15918,7 @@ body {
 }
 
 .ltn__car-dealer-form-tab .tab-content {
-  padding: 40px;
+  padding: 20px;
   background-color: var(--section-bg-1);
   border-radius: 10px;
 }

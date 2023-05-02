@@ -57,28 +57,35 @@ const Home_V7 = () => {
     return <div>
         <Navbar CustomClass="ltn__header-transparent gradient-color-2" /> 
         <BannerV6 />
-        <BestProperty customClass='ltn__feature-area section-bg-1 pt-80  mb-120---' />
+        <div className='container'>
+            <div className='row'>
+                <div className='col-lg-12 align-self-center'>
+                <BestProperty customClass='ltn__feature-area section-bg-1 pt-80  mb-120---' />
         {/* <Aboutv2 /> */}
         {/* <Gallery /> */}
         <Carousel images={IMAGES} slidesToShow={5} />
 
         {/* <HomeCrousal/> */}
-        <ApartmentV1 CustomClass="ltn__feature-area section-bg-3 pt-120 pb-90 mb-120---" />
-        <BestVilla customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---"/>
+        <ApartmentV1 CustomClass="ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---" />
+        <BestVilla customClass="ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---"/>
         <ProductGrid />
 
-        <ApartmentV1 CustomClass="ltn__feature-area section-bg-3 pt-120 pb-90 mb-120---" />
+        <ApartmentV1 CustomClass="ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---" />
 
         {/* <UpcomingProductV1 /> */}
 {  //      <BestVilla customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---" />
 }        <ProductSliderV1/>
         {/* <BestApartment customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---"  /> */}
         <Video className=' pb-50'/>
+        <ApartmentV1 CustomClass="ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---" />
 
         {/* <ProductSliderV1/> */}
         {/* <BestTownhouse customClass="ltn__feature-area section-bg-6 pt-40 pb-50 mb-120---"  />
          */}
         <AboutV4/>
+        <ApartmentV1 CustomClass="ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---" />
+
+
         <ProductGrid />
 
 
@@ -89,7 +96,7 @@ const Home_V7 = () => {
 
  
 
-        <ProductSlider customClass="ltn__feature-area section-bg-4 pt-120 pb-90 mb-120---"/>
+        <ProductSlider customClass="ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---"/>
         <ProductGrid />
 
         {/* <Featuresv1 customClass="ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---"/> */}
@@ -109,7 +116,16 @@ const Home_V7 = () => {
         {/* <CarouselSwiper slides={slides} /> */}
 
         <Footer2 customClass='ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---'/>
+
+                </div>
+
+            </div>
+
+      
+        </div>
+
         <Footer />
+
     </div>
 }
 

@@ -23,7 +23,9 @@ class BannerV6 extends Component {
 									<div className="slide-item-car-dealer-form">
 										
 										<div className="ltn__car-dealer-form-tab">
-											<div className="ltn__tab-menu   text-center">
+											
+											<div className="tab-content pb-10">
+											<div className="ltn__tab-menu   text-left">
 												<div className="nav">
 													<a className="active show" data-bs-toggle="tab" href="#ltn__form_tab_1_1"><i className="fas fa-home" />Project</a>
 													<a data-bs-toggle="tab" href="#ltn__form_tab_1_2" className><i className="fas fa-home" />Rent</a>
@@ -31,7 +33,6 @@ class BannerV6 extends Component {
 
 												</div>
 											</div>
-											<div className="tab-content pb-10">
 												<div className="tab-pane fade active show" id="ltn__form_tab_1_1">
 													<div className="car-dealer-form-inner">
 														<form action="#" className="ltn__car-dealer-form-box row">

@@ -14,6 +14,8 @@ const BestProperty = (props) => {
               {/* <h6 className="section-subtitle section-subtitle-2 ltn__secondary-color">About Us</h6> */}
               <h1 className="section-title">Best Off Plan Projects In Dubai </h1>
               <p>the best off-plan projects in Dubai offer a combination of attractive payment plans, high-quality amenities, prime locations, investment opportunities, innovative design, reliable developers, and easy access to transportation.</p>
+                            <p>the best off-plan projects in Dubai offer a combination of attractive payment plans, high-quality amenities, prime locations, investment opportunities, innovative design, reliable developers, and easy access to transportation.</p>
+
             </div>
             {/* <ul className="ltn__list-item-1 ltn__list-item-1-before clearfix">
               <li>High-quality amenities</li>
@@ -34,7 +36,7 @@ const BestProperty = (props) => {
                 square Ft
               </li>
             </ul> */}
-            <ul className="ltn__list-item-2 ltn__list-item-2-before--- ltn__list-item-2-img mb-50">
+            {/* <ul className="ltn__list-item-2 ltn__list-item-2-before--- ltn__list-item-2-img mb-50">
               <li>
                 <a href={publicUrl+"assets/img/img-slide/11.jpg"} data-rel="lightcase:myCollection">
                   <img src={publicUrl+"assets/img/img-slide/11.jpg"} alt="Image" />
@@ -50,12 +52,12 @@ const BestProperty = (props) => {
                   <img src={publicUrl+"assets/img/img-slide/13.jpg"} alt="Image" />
                 </a>
               </li>
-            </ul>
+            </ul> */}
           </div>
         </div>
         <div className="col-lg-6 align-self-center">
           <div className="about-us-img-wrap about-img-right">
-            <img src={publicUrl+"assets/img/others/9.png"} alt="About Us Image" />
+            <img src={publicUrl+"assets/img/others/10.jpg"} alt="About Us Image" />
           </div>
         </div>
       </div>
