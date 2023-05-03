@@ -11,6 +11,10 @@ const NewContact = () => {
         <Navbar />
         {/* <BlogDetails /> */}
         <ContactDetails/>
+
+        {/* <PageHeader headertitle="Contact us" /> */}
+        {/* <BlogDetails /> */}
+        {/* <CallToActionV1 /> */}
         <Footer />
     </div>
 }
