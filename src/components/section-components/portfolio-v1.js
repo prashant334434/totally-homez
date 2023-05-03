@@ -18,10 +18,8 @@ class PortfolioV1 extends Component {
 						<div className="ltn__gallery-item-inner">
 							<div className="ltn__gallery-item-img">
 							<a href={publicUrl+"assets/img/gallery/1.jpg"} data-rel="lightcase:myCollection">
-								<img src={publicUrl+"assets/img/gallery/1.jpg"} alt="Image" />
-								<span className="ltn__gallery-action-icon">
-								<i className="fas fa-search" />
-								</span>
+								<img src={publicUrl+"assets/img/team/112.jpg"} alt="Image" />
+								
 							</a>
 							</div>
 							<div className="ltn__gallery-item-info">
