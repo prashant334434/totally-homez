@@ -5,7 +5,7 @@ const BestProperty = (props) => {
     let customClass = props.customClass ? props.customClass :''
 
   return (
-    <div className={"ltn__about-us-area pt-120 pb-40 "+customClass}>
+    <div className={"ltn__about-us-area"+customClass}>
     <div className="container">
       <div className="row">
         <div className="col-lg-6 align-self-center">

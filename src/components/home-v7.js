@@ -54,83 +54,86 @@ const Home_V7 = () => {
           imageUrl: 'https://placeimg.com/640/480/animals',
         },
       ];
-    return <div>
-        <Navbar CustomClass="ltn__header-transparent gradient-color-2" /> 
-        <BannerV6 />
-        <div className='container'>
-            <div className='row'>
-                <div className='col-lg-12 align-self-center'>
-                <BestProperty customClass='ltn__feature-area section-bg-0' />
-        {/* <Aboutv2 /> */}
-        <Gallery />
-      
+      return <div>
+    <Navbar CustomClass="ltn__header-transparent gradient-color-2" /> 
+    <BannerV6 />
 
-        {/* <HomeCrousal/> */}
-        <ApartmentV1 CustomClass="ltn__feature-area section-bg-0 pt-10 ---" />
-        <BestVilla customClass="ltn__feature-area section-bg-0 pt-120 ---"/>
-        <ProductGrid />
 
-        <ApartmentV1 CustomClass="ltn__feature-area section-bg-1 pt-10---" />
 
-        {/* <UpcomingProductV1 /> */}
+    <div className='container mt-500'>
+        <div className='row'>
+            <div className='col-lg-12 align-self-center'>
+            <BestProperty customClass='ltn__feature-area section-bg-0' />
+    {/* <Aboutv2 /> */}
+    <Gallery />
+  
+
+    {/* <HomeCrousal/> */}
+    <ApartmentV1 CustomClass="ltn__feature-area section-bg-0 pt-10 ---" />
+    <BestVilla customClass="ltn__feature-area section-bg-0 pt-120 ---"/>
+    <ProductGrid />
+
+    <ApartmentV1 CustomClass="ltn__feature-area section-bg-1 pt-10---" />
+
+    {/* <UpcomingProductV1 /> */}
 {  //      <BestVilla customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---" />
 }        <ProductSliderV1/>
-        {/* <BestApartment customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---"  /> */}
-        <Video className=' pb-50'/>
-        <ApartmentV1 CustomClass="ltn__feature-area section-bg-1 pt-120" />
+    {/* <BestApartment customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---"  /> */}
+    <Video className=' pb-50'/>
+    <ApartmentV1 CustomClass="ltn__feature-area section-bg-1 pt-120" />
 
-        {/* <ProductSliderV1/> */}
-        {/* <BestTownhouse customClass="ltn__feature-area section-bg-6 pt-40 pb-50 mb-120---"  />
-         */}
-        <AboutV4/>
-        <ApartmentV1 CustomClass="ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---" />
-
-
-        <ProductGrid />
+    {/* <ProductSliderV1/> */}
+    {/* <BestTownhouse customClass="ltn__feature-area section-bg-6 pt-40 pb-50 mb-120---"  />
+     */}
+    <AboutV4/>
+    <ApartmentV1 CustomClass="ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---" />
 
 
-        {/* <BestPenthouse customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---"  /> */}
-        {/* <ProductSliderV1/> */}
-        {/* <Banner /> */}
-        {/* <Neighbour customClass="ltn__feature-area section-bg-8 pt-120 pb-90 mb-120---"/> */}
+    <ProductGrid />
 
- 
 
-        <ProductSlider customClass="ltn__feature-area section-bg-0"/>
-        <ApartmentV1 CustomClass="ltn__feature-area section-bg-1" />
+    {/* <BestPenthouse customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---"  /> */}
+    {/* <ProductSliderV1/> */}
+    {/* <Banner /> */}
+    {/* <Neighbour customClass="ltn__feature-area section-bg-8 pt-120 pb-90 mb-120---"/> */}
 
-        <ProductGrid />
 
-        {/* <Featuresv1 customClass="ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---"/> */}
-        {/* <ProSlider /> */}
-        {/* <Gallery /> */}
-        {/* <VideoV1 /> */}
-        {/* <Category /> */}
-        {/* <Testimonial /> */}
 
-        <AboutV5  customClass='ltn__feature-area section-bg-8 '/>
-        <TeamAgents customClass='ltn__feature-area section-bg-' />
-        {/* <Testimonial customClass='ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---'/> */}
+    <ProductSlider customClass="ltn__feature-area section-bg-0"/>
+    <ApartmentV1 CustomClass="ltn__feature-area section-bg-1" />
 
-        <BlogSlider customClass="section-subtitle-2 "/>
+    <ProductGrid />
 
-        {/* <BlogT customClass='ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---'/> */}
-        <CallToActionV1 />
-        {/* <CarouselSwiper slides={slides} /> */}
+    {/* <Featuresv1 customClass="ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---"/> */}
+    {/* <ProSlider /> */}
+    {/* <Gallery /> */}
+    {/* <VideoV1 /> */}
+    {/* <Category /> */}
+    {/* <Testimonial /> */}
 
-        <Footer2 customClass='ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---'/>
+    <AboutV5  customClass='ltn__feature-area section-bg-8 '/>
+    <TeamAgents customClass='ltn__feature-area section-bg-' />
+    {/* <Testimonial customClass='ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---'/> */}
 
-                </div>
+    <BlogSlider customClass="section-subtitle-2 "/>
+
+    {/* <BlogT customClass='ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---'/> */}
+    <CallToActionV1 />
+    {/* <CarouselSwiper slides={slides} /> */}
+
+    <Footer2 customClass='ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---'/>
 
             </div>
 
-      
         </div>
-        
 
-        <Footer />
-
+  
     </div>
+    
+
+    <Footer />
+
+</div>
 }
 
 export default Home_V7
