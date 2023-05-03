@@ -12,7 +12,7 @@ class TeamV2 extends Component {
     return <div className="ltn__team-area pt-110--- pb-90">
 				<div className="container">
 				<div className="row justify-content-center go-top">
-					<div className="col-lg-4 col-sm-6">
+					<div className="col-lg-3 col-sm-6">
 					<div className="ltn__team-item ltn__team-item-3---">
 						<div className="team-img">
 						<img src={publicUrl+"assets/img/team/4.jpg"} alt="Image" />
@@ -30,7 +30,7 @@ class TeamV2 extends Component {
 						</div>
 					</div>
 					</div>
-					<div className="col-lg-4 col-sm-6">
+					<div className="col-lg-3 col-sm-6">
 					<div className="ltn__team-item ltn__team-item-3---">
 						<div className="team-img">
 						<img src={publicUrl+"assets/img/team/2.jpg"} alt="Image" />
@@ -48,7 +48,7 @@ class TeamV2 extends Component {
 						</div>
 					</div>
 					</div>
-					<div className="col-lg-4 col-sm-6">
+					<div className="col-lg-3 col-sm-6">
 					<div className="ltn__team-item ltn__team-item-3---">
 						<div className="team-img">
 						<img src={publicUrl+"assets/img/team/3.jpg"} alt="Image" />
@@ -66,7 +66,7 @@ class TeamV2 extends Component {
 						</div>
 					</div>
 					</div>
-					<div className="col-lg-4 col-sm-6">
+					<div className="col-lg-3 col-sm-6">
 					<div className="ltn__team-item ltn__team-item-3---">
 						<div className="team-img">
 						<img src={publicUrl+"assets/img/team/1.jpg"} alt="Image" />
@@ -84,7 +84,7 @@ class TeamV2 extends Component {
 						</div>
 					</div>
 					</div>
-					<div className="col-lg-4 col-sm-6">
+					<div className="col-lg-3 col-sm-6">
 					<div className="ltn__team-item ltn__team-item-3---">
 						<div className="team-img">
 						<img src={publicUrl+"assets/img/team/5.jpg"} alt="Image" />
@@ -102,7 +102,7 @@ class TeamV2 extends Component {
 						</div>
 					</div>
 					</div>
-					<div className="col-lg-4 col-sm-6">
+					<div className="col-lg-3 col-sm-6">
 					<div className="ltn__team-item ltn__team-item-3---">
 						<div className="team-img">
 						<img src={publicUrl+"assets/img/team/6.jpg"} alt="Image" />

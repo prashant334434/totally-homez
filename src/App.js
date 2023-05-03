@@ -53,6 +53,7 @@ import OffPlan from './components/section-components/OffPlan';
 import Listings from './components/Listings';
 import PropertyDetails from './components/PropertyDetails';
 import NewContact from './components/NewContact';
+import TeamsNew from './components/TeamsNew';
 
 
 
@@ -133,6 +134,7 @@ import NewContact from './components/NewContact';
         <Route path="/listings" component={ Listings } />
         <Route path="/property-details" component={ ProdductDetails } />
         <Route path="/contact-us" component={ NewContact } />
+        <Route path="/our-team" component={ TeamsNew } />
     </Switch>
     </div>
 </HashRouter>   )
