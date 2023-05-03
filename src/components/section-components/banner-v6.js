@@ -8,7 +8,7 @@ class BannerV6 extends Component {
 
 		let publicUrl = process.env.PUBLIC_URL + '/'
 
-		return <div className="ltn__slider-area ltn__slider-4 position-relative  ltn__primary-bg">
+		return <div className="ltn__slider-area pb-40 ltn__slider-4 position-relative  ltn__primary-bg">
 			<div className="ltn__slide-one-active----- slick-slide-arrow-1----- slick-slide-dots-1----- arrow-white----- ltn__slide-animation-active">
 
 				<video autoPlay muted loop id="myVideo">
