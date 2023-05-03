@@ -2,22 +2,23 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Comments from './comments';
 import Sidebar from './sidebar';
-class BlogDetails extends Component {
-  render() {
+
     let publicUrl = process.env.PUBLIC_URL+'/'
     let imagealt = 'image'
 
-    return (
+
+const BlogDetails = () => {
+	return (
 		<div className="ltn__page-details-area ltn__blog-details-area mb-120">
 			<div className="container">
 			<div className="row">
-				<div className="col-lg-8">
+				<div className="col-lg-12">
 				<div className="ltn__blog-details-wrap">
 					<div className="ltn__page-details-inner ltn__blog-details-inner">
 					<div className="ltn__blog-meta">
 						<ul>
 						<li className="ltn__blog-category">
-							<Link to="/shop">Real Estate</Link>
+							{/* <Link to="/shop">Real Estate</Link> */}
 						</li>
 						</ul>
 					</div>
@@ -128,11 +129,11 @@ class BlogDetails extends Component {
 							</div>
 							<div className="ltn__blog-brief">
 							<div className="ltn__blog-meta">
-								<ul>
+								{/* <ul>
 								<li className="ltn__blog-date ltn__secondary-color">
 									<i className="far fa-calendar-alt" />June 22, 2020
 								</li>
-								</ul>
+								</ul> */}
 							</div>
 							<h3 className="ltn__blog-title"><Link to="/blog-details">A series of iOS 7 inspire
 								vector icons sense.</Link></h3>
@@ -149,9 +150,9 @@ class BlogDetails extends Component {
 							<div className="ltn__blog-brief">
 							<div className="ltn__blog-meta">
 								<ul>
-								<li className="ltn__blog-date ltn__secondary-color">
+								{/* <li className="ltn__blog-date ltn__secondary-color">
 									<i className="far fa-calendar-alt" />June 22, 2020
-								</li>
+								</li> */}
 								</ul>
 							</div>
 							<h3 className="ltn__blog-title"><Link to="/blog-details">A series of iOS 7 inspire
@@ -162,15 +163,17 @@ class BlogDetails extends Component {
 						</div>
 					</div>
 					</div>
-					<Comments/>
+					{/* <Comments/> */}
 				</div>
 				</div>
-				<Sidebar/>
+				{/* <Sidebar/> */}
 			</div>
 			</div>
 		</div>
     )
-  }
 }
+
+
+   
 
 export default BlogDetails;

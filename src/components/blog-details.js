@@ -8,7 +8,7 @@ import Footer from './global-components/footer';
 const BlogDetailsPage = () => {
     return <div>
         <Navbar />
-        <PageHeader headertitle="News Details" />
+        {/* <PageHeader headertitle="News Details" /> */}
         <BlogDetails />
         <CallToActionV1 />
         <Footer />
