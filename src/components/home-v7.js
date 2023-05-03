@@ -60,8 +60,8 @@ const Home_V7 = () => {
 
 
 
-    <div className='container mt-500'>
-        <div className='row'>
+    <div className='container mt-550'>
+        <div className='row pt-50'>
             <div className='col-lg-12 align-self-center'>
             <BestProperty customClass='ltn__feature-area section-bg-0' />
     {/* <Aboutv2 /> */}
@@ -70,7 +70,7 @@ const Home_V7 = () => {
 
     {/* <HomeCrousal/> */}
     <ApartmentV1 CustomClass="ltn__feature-area section-bg-0 pt-10 ---" />
-    <BestVilla customClass="ltn__feature-area section-bg-0 pt-120 ---"/>
+    <BestVilla customClass="ltn__feature-area section-bg-0 pt-40 ---"/>
     <ProductGrid />
 
     <ApartmentV1 CustomClass="ltn__feature-area section-bg-1 pt-10---" />

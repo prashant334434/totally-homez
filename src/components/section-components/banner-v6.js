@@ -24,7 +24,7 @@ class BannerV6 extends Component {
 										
 										<div className="ltn__car-dealer-form-tab">
 											
-											<div className="tab-content pb-10">
+											<div className="tab-content   pb-10">
 											<div className="ltn__tab-menu   text-left">
 												<div className="nav">
 													<a className="active show" data-bs-toggle="tab" href="#ltn__form_tab_1_1"><i className="fas fa-home" />
@@ -88,7 +88,7 @@ class BannerV6 extends Component {
 															<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-calendar col-lg-2 col-md-4 banner_search">
 																<div className="btn-wrapper text-center mt-0 go-top">
 																	{/* <button type="submit" class="btn theme-btn-1 btn-effect-1 text-uppercase">Search Inventory</button> */}
-																	<Link to="/shop-right-sidebar" className="btn theme-btn-1 btn-effect-1 text-uppercase">Search</Link>
+																	<Link to="/shop-right-sidebar" className="btn theme-btn-search text-uppercase">Search</Link>
 																</div>
 															</div>
 														</form>
@@ -198,7 +198,7 @@ class BannerV6 extends Component {
 															<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-calendar col-lg-2 col-md-4 banner_search">
 																<div className="btn-wrapper text-center mt-0 go-top">
 																	{/* <button type="submit" class="btn theme-btn-1 btn-effect-1 text-uppercase">Search Inventory</button> */}
-																	<Link to="/shop-right-sidebar" className="btn theme-btn-1 btn-effect-1 text-uppercase">Search</Link>
+																	<Link to="/shop-right-sidebar" className=" searchButton btn  theme-btn-1 btn-effect-1 text-uppercase">Search</Link>
 																</div>
 															</div>
 														</form>
