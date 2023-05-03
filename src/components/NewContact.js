@@ -9,10 +9,10 @@ import ContactDetails from './blog-components/ContactDetails';
 const NewContact = () => {
     return <div>
         <Navbar />
-        <PageHeader headertitle="Contact us" />
+        {/* <PageHeader headertitle="Contact us" /> */}
         {/* <BlogDetails /> */}
         <ContactDetails/>
-        <CallToActionV1 />
+        {/* <CallToActionV1 /> */}
         <Footer />
     </div>
 }
