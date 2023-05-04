@@ -211,6 +211,12 @@ class BannerV6 extends Component {
 										</div>
 									</div>
 								</div>
+								<div className="col-lg-12 pt-40 align-self-center">
+									<center>
+									<button type="submit" className="btn theme-btn-1">Featured Property Of the Day</button>
+
+									</center>
+								</div>
 							</div>
 						</div>
 					</div>

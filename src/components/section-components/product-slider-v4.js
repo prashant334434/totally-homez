@@ -52,7 +52,7 @@ class ProductSliderV4 extends Component {
 						</div>
 						<div className="product-info">
 							<div className="product-price">
-							<span>$34,900<label>/Month</label></span>
+							<span>$34,9009999<label>/Month</label></span>
 							</div>
 							<h2 className="product-title go-top"><Link to="/product-details">New Apartment Nice View</Link></h2>
 							<div className="product-description">

@@ -60,78 +60,60 @@ const Home_V7 = () => {
 
 
 
-    <div className='container mt-550'>
-        <div className='row pt-50'>
-            <div className='col-lg-12 align-self-center'>
-            <BestProperty customClass='ltn__feature-area section-bg-0' />
-    {/* <Aboutv2 /> */}
-    <Gallery />
-  
 
-    {/* <HomeCrousal/> */}
-    <ApartmentV1 CustomClass="ltn__feature-area section-bg-0 pt-10 ---" />
-    <BestVilla customClass="ltn__feature-area section-bg-0 pt-40 ---"/>
-    <ProductGrid />
+    <BestProperty customClass='ltn__feature-area section-bg-1 pt-80  mb-120---' />
+        {/* <Aboutv2 /> */}
+        {/* <Gallery /> */}
+        <Carousel images={IMAGES} slidesToShow={5} />
 
-    <ApartmentV1 CustomClass="ltn__feature-area section-bg-1 pt-10---" />
+        {/* <HomeCrousal/> */}
+        <ApartmentV1 CustomClass="ltn__feature-area section-bg-3 pt-120 pb-90 mb-120---" />
+        <BestVilla customClass="ltn__feature-area section-bg-0 pt-120 pb-90 mb-120---"/>
+        <ProductGrid />
 
-    {/* <UpcomingProductV1 /> */}
+        <ApartmentV1 CustomClass="ltn__feature-area section-bg-3 pt-120 pb-90 mb-120---" />
+
+        {/* <UpcomingProductV1 /> */}
 {  //      <BestVilla customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---" />
 }        <ProductSliderV1/>
-    {/* <BestApartment customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---"  /> */}
-    <Video className=' pb-50'/>
-    <ApartmentV1 CustomClass="ltn__feature-area section-bg-1 pt-120" />
+        {/* <BestApartment customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---"  /> */}
+        <Video className=' pb-50'/>
 
-    {/* <ProductSliderV1/> */}
-    {/* <BestTownhouse customClass="ltn__feature-area section-bg-6 pt-40 pb-50 mb-120---"  />
-     */}
-    <AboutV4/>
-    <ApartmentV1 CustomClass="ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---" />
-
-
-    <ProductGrid />
+        {/* <ProductSliderV1/> */}
+        {/* <BestTownhouse customClass="ltn__feature-area section-bg-6 pt-40 pb-50 mb-120---"  />
+         */}
+        <AboutV4/>
+        <ProductGrid />
 
 
-    {/* <BestPenthouse customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---"  /> */}
-    {/* <ProductSliderV1/> */}
-    {/* <Banner /> */}
-    {/* <Neighbour customClass="ltn__feature-area section-bg-8 pt-120 pb-90 mb-120---"/> */}
+        {/* <BestPenthouse customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---"  /> */}
+        {/* <ProductSliderV1/> */}
+        {/* <Banner /> */}
+        {/* <Neighbour customClass="ltn__feature-area section-bg-8 pt-120 pb-90 mb-120---"/> */}
 
+ 
 
+        <ProductSlider customClass="ltn__feature-area section-bg-4 pt-120 pb-90 mb-120---"/>
+        <ProductGrid />
 
-    <ProductSlider customClass="ltn__feature-area section-bg-0"/>
-    <ApartmentV1 CustomClass="ltn__feature-area section-bg-1" />
+        {/* <Featuresv1 customClass="ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---"/> */}
+        {/* <ProSlider /> */}
+        {/* <Gallery /> */}
+        {/* <VideoV1 /> */}
+        {/* <Category /> */}
+        {/* <Testimonial /> */}
+        <AboutV5  customClass='ltn__feature-area section-bg-8 pt-120 pb-90 mb-120---'/>
+        <TeamAgents customClass='ltn__feature-area section-bg-1 pt-80  mb-120---' />
+        {/* <Testimonial customClass='ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---'/> */}
 
-    <ProductGrid />
+        <BlogSlider customClass="section-subtitle-2 "/>
 
-    {/* <Featuresv1 customClass="ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---"/> */}
-    {/* <ProSlider /> */}
-    {/* <Gallery /> */}
-    {/* <VideoV1 /> */}
-    {/* <Category /> */}
-    {/* <Testimonial /> */}
+        {/* <BlogT customClass='ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---'/> */}
+        <CallToActionV1 />
+        {/* <CarouselSwiper slides={slides} /> */}
 
-    <AboutV5  customClass='ltn__feature-area section-bg-8 '/>
-    <TeamAgents customClass='ltn__feature-area section-bg-' />
-    {/* <Testimonial customClass='ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---'/> */}
-
-    <BlogSlider customClass="section-subtitle-2 "/>
-
-    {/* <BlogT customClass='ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---'/> */}
-    <CallToActionV1 />
-    {/* <CarouselSwiper slides={slides} /> */}
-
-    <Footer2 customClass='ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---'/>
-
-            </div>
-
-        </div>
-
-  
-    </div>
-    
-
-    <Footer />
+        <Footer2 customClass='ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---'/>
+        <Footer />
 
 </div>
 }
