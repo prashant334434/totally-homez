@@ -34,6 +34,8 @@ import ProductGrid from './shop-components/ProductGrid';
 import BestVilla from './section-components/BestVilla';
 import CarouselSwiper from './shop-components/CarouselSwiper';
 import BestVillaTabs from './section-components/BestVillaTabs';
+import TeamCarousel from './shop-components/TeamCarousel';
+import CategoryV3 from './section-components/category-v3';
 
 
 const Home_V7 = () => {
@@ -65,27 +67,12 @@ const Home_V7 = () => {
         {/* <Aboutv2 /> */}
         {/* <Gallery /> */}
         <Carousel images={IMAGES} slidesToShow={5} />
+        <CategoryV3/>
 
         {/* <HomeCrousal/> */}
         <ApartmentV1 CustomClass="ltn__feature-area section-bg-3 pt-120 pb-90 mb-120---" />
         <BestVilla customClass="ltn__feature-area section-bg-0 pt-120 pb-90 mb-120---"/>
-        <ProductGrid />
-
-        <ApartmentV1 CustomClass="ltn__feature-area section-bg-3 pt-120 pb-90 mb-120---" />
-
-        {/* <UpcomingProductV1 /> */}
-{  //      <BestVilla customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---" />
-}        <ProductSliderV1/>
-        {/* <BestApartment customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---"  /> */}
-        <Video className=' pb-50'/>
-
-        {/* <ProductSliderV1/> */}
-        {/* <BestTownhouse customClass="ltn__feature-area section-bg-6 pt-40 pb-50 mb-120---"  />
-         */}
-        <AboutV4/>
-        <ProductGrid />
-
-
+       
         {/* <BestPenthouse customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---"  /> */}
         {/* <ProductSliderV1/> */}
         {/* <Banner /> */}
@@ -107,6 +94,7 @@ const Home_V7 = () => {
         {/* <Testimonial customClass='ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---'/> */}
 
         <BlogSlider customClass="section-subtitle-2 "/>
+        <TeamCarousel/>
 
         {/* <BlogT customClass='ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---'/> */}
         <CallToActionV1 />
