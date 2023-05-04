@@ -23,15 +23,15 @@ const TeamAgents = (props) => {
 			<img className="img2" src={publicUrl+"assets/img/team/4.jpg"} alt="Image" />
 			</div>
 			<div className="team-info">
-			<h4><Link to="/team-details">Rosalina D. William</Link></h4>
-			<h6 className="ltn__secondary-color">Real Estate Broker</h6>
-			<div className="ltn__social-media">
+			<h4>Rosalina D. William</h4>
+			<h6 className=" designnation ltn__secondary-color">Real Estate Broker</h6>
+			{/* <div className="ltn__social-media">
 				<ul>
 				<li><a href="#"><i className="fab fa-facebook-f" /></a></li>
 				<li><a href="#"><i className="fab fa-twitter" /></a></li>
 				<li><a href="#"><i className="fab fa-linkedin" /></a></li>
 				</ul>
-			</div>
+			</div> */}
 			</div>
 		</div>
 		</div>
@@ -41,15 +41,15 @@ const TeamAgents = (props) => {
 			<img className="img2" src={publicUrl+"assets/img/team/4.jpg"} alt="Image" />
 			</div>
 			<div className="team-info">
-			<h4><Link to="/team-details">Rosalina D. William</Link></h4>
-			<h6 className="ltn__secondary-color">Real Estate Broker</h6>
-			<div className="ltn__social-media">
+			<h4>Rosalina D. William</h4>
+			<h6 className="designnation ltn__secondary-color">Real Estate Broker</h6>
+			{/* <div className="ltn__social-media">
 				<ul>
 				<li><a href="#"><i className="fab fa-facebook-f" /></a></li>
 				<li><a href="#"><i className="fab fa-twitter" /></a></li>
 				<li><a href="#"><i className="fab fa-linkedin" /></a></li>
 				</ul>
-			</div>
+			</div> */}
 			</div>
 		</div>
 		</div>
@@ -59,15 +59,15 @@ const TeamAgents = (props) => {
 			<img className="img2" src={publicUrl+"assets/img/team/2.jpg"} alt="Image" />
 			</div>
 			<div className="team-info">
-			<h4><Link to="/team-details">Kelian Anderson</Link></h4>
-			<h6 className="ltn__secondary-color">Selling Agents</h6>
-			<div className="ltn__social-media">
+			<h4>Rosalina D. William</h4>
+			<h6 className="designnation ltn__secondary-color">Selling Agents</h6>
+			{/* <div className="ltn__social-media">
 				<ul>
 				<li><a href="#"><i className="fab fa-facebook-f" /></a></li>
 				<li><a href="#"><i className="fab fa-twitter" /></a></li>
 				<li><a href="#"><i className="fab fa-linkedin" /></a></li>
 				</ul>
-			</div>
+			</div> */}
 			</div>
 		</div>
 		</div>
@@ -77,15 +77,15 @@ const TeamAgents = (props) => {
 			<img  className="img2" src={publicUrl+"assets/img/team/5.jpg"} alt="Image" />
 			</div>
 			<div className="team-info">
-			<h4><Link to="/team-details">Miranda H. Halim</Link></h4>
-			<h6 className="ltn__secondary-color">Property Seller</h6>
-			<div className="ltn__social-media">
+			<h4>Rosalina D. William</h4>
+			<h6 className="designnation ltn__secondary-color">Property Seller</h6>
+			{/* <div className="ltn__social-media">
 				<ul>
 				<li><a href="#"><i className="fab fa-facebook-f" /></a></li>
 				<li><a href="#"><i className="fab fa-twitter" /></a></li>
 				<li><a href="#"><i className="fab fa-linkedin" /></a></li>
 				</ul>
-			</div>
+			</div> */}
 			</div>
 		</div>
 		</div>

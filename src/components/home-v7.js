@@ -102,7 +102,6 @@ const Home_V7 = () => {
         {/* <Testimonial customClass='ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---'/> */}
 
         <BlogSlider customClass="section-subtitle-2 "/>
-        <TeamCarousel/>
 
         {/* <BlogT customClass='ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---'/> */}
         <CallToActionV1 />

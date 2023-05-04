@@ -324,7 +324,7 @@ h1,h4,h2,h3,h5,h6{
   --border-color-13: #f1f8ff;
   /* White */
   /* Box Shadow Colors */
-  --ltn__box-shadow-1: 0 16px 32px 0 rgba(7, 28, 31, 0.1);
+  --ltn__box-shadow-1: 0 16px 32px 0 rgba(7, 28, 31);
   --ltn__box-shadow-2: 0 0 4px rgba(0, 0, 0, 0.1);
   /* like border */
   --ltn__box-shadow-3: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
@@ -520,7 +520,6 @@ a i {
 
 img {
   max-width: 100%;
-  border-radius: 22px;
 }
 
 ul li,
@@ -6569,7 +6568,7 @@ label{
 
 /* Sticky Background Black */
 .sticky-active.ltn__sticky-bg-black {
-  background-color: #1c1c1c;
+  background-color: #fff;
 }
 .sticky-active.ltn__sticky-bg-black .ltn__main-menu > ul > li > a,
 .sticky-active.ltn__sticky-bg-black .header-wishlist a,
@@ -6584,7 +6583,7 @@ label{
   > ul
   > li
   > a {
-  color: var(--white);
+  color: var(--black);
 }
 .sticky-active.ltn__sticky-bg-black .ltn__header-options-2 .header-search-1,
 .sticky-active.ltn__sticky-bg-black .ltn__header-options-2 .header-search-1 i,
@@ -13233,7 +13232,9 @@ blockquote::before {
   align-items: center;
   margin-bottom: 20px;
 }
-
+.designnation{
+  font-size: 18px !important;
+}
 @media (max-width: 991px) {
   .ltn__testimonial-item-2 {
     max-width: 70%;

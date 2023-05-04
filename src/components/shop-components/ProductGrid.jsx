@@ -21,7 +21,7 @@ const ProductGrid = (props) => {
 		  {/* ltn__product-item */}
 		  <div className="col-lg-12">
 			<div className="ltn__product-item ltn__product-item-4 text-center---">
-			  <div className="product-img go-top">
+			  <div className="product go-top">
 				<Link to="/product-details"><img src={publicUrl+"assets/img/product-3/1.jpg"} alt="#" /></Link>
 				<div className="product-badge">
 				  <ul>

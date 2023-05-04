@@ -70,7 +70,7 @@ class NavbarV3 extends Component {
 						<div className="col">
 						<div className="site-logo-wrap">
 							<div className="site-logo go-top">
-							<Link to="/"><img src={publicUrl+"assets/img/logo.png"} alt="Logo" /></Link>
+							<Link to="/"><img src={publicUrl+"assets/img/logo2.png"} alt="Logo" /></Link>
 							</div>
 							<div className="get-support clearfix d-none">
 							<div className="get-support-icon">
