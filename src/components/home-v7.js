@@ -39,6 +39,8 @@ import CategoryV3 from './section-components/category-v3';
 import VideoV2 from './section-components/video-v2';
 import BestTownhouse from './section-components/BestTownhouse';
 import BestPenthouse from './section-components/BestPenthouse';
+import PortfolioV3 from './section-components/PortfolioV3';
+import NewV2Team from './section-components/NewV2Team';
 
 
 const Home_V7 = () => {
@@ -70,8 +72,7 @@ const Home_V7 = () => {
         {/* <Aboutv2 /> */}
         {/* <Gallery /> */}
         <Carousel images={IMAGES} slidesToShow={5} />
-        <CategoryV3/>
-
+<NewV2Team/>
         {/* <HomeCrousal/> */}
         {/* <ApartmentV1 CustomClass="ltn__feature-area section-bg-3 pt-120 pb-90 mb-120---" /> */}
         <BestVilla customClass="ltn__feature-area section-bg-0 pt-120 pb-40 mb-120---"/>
