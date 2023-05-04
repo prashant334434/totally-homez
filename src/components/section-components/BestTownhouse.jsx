@@ -29,7 +29,7 @@ Live in style and comfort with our spacious townhouses in Dubai's most sought-af
               <li>Stay secure with 24/7 security and CCTV surveillance for peace of mind in your family-friendly townhouse.</li>
             
             </ul>
-            <ul className="ltn__list-item-2 ltn__list-item-2-before ltn__flat-info">
+            {/* <ul className="ltn__list-item-2 ltn__list-item-2-before ltn__flat-info">
               <li><span>3 <i className="flaticon-bed" /></span>
                 Bedrooms
               </li>
@@ -42,8 +42,8 @@ Live in style and comfort with our spacious townhouses in Dubai's most sought-af
               <li><span>3450 <i className="flaticon-square-shape-design-interface-tool-symbol" /></span>
                 square Ft
               </li>
-            </ul>
-            <ul className="ltn__list-item-2 ltn__list-item-2-before--- ltn__list-item-2-img mb-50">
+            </ul> */}
+            {/* <ul className="ltn__list-item-2 ltn__list-item-2-before--- ltn__list-item-2-img mb-50">
               <li>
                 <a href={publicUrl+"assets/img/img-slide/11.jpg"} data-rel="lightcase:myCollection">
                   <img src={publicUrl+"assets/img/img-slide/11.jpg"} alt="Image" />
@@ -59,7 +59,7 @@ Live in style and comfort with our spacious townhouses in Dubai's most sought-af
                   <img src={publicUrl+"assets/img/img-slide/13.jpg"} alt="Image" />
                 </a>
               </li>
-            </ul>
+            </ul> */}
           </div>
         </div>
        

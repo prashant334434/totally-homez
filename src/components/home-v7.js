@@ -36,6 +36,9 @@ import CarouselSwiper from './shop-components/CarouselSwiper';
 import BestVillaTabs from './section-components/BestVillaTabs';
 import TeamCarousel from './shop-components/TeamCarousel';
 import CategoryV3 from './section-components/category-v3';
+import VideoV2 from './section-components/video-v2';
+import BestTownhouse from './section-components/BestTownhouse';
+import BestPenthouse from './section-components/BestPenthouse';
 
 
 const Home_V7 = () => {
@@ -63,15 +66,15 @@ const Home_V7 = () => {
 
 
 
-    <BestProperty customClass='ltn__feature-area section-bg-1 pt-80  mb-120---' />
+    <BestProperty customClass='ltn__feature-area section-bg-1 pt-80 pb-80  mb-120---' />
         {/* <Aboutv2 /> */}
         {/* <Gallery /> */}
         <Carousel images={IMAGES} slidesToShow={5} />
         <CategoryV3/>
 
         {/* <HomeCrousal/> */}
-        <ApartmentV1 CustomClass="ltn__feature-area section-bg-3 pt-120 pb-90 mb-120---" />
-        <BestVilla customClass="ltn__feature-area section-bg-0 pt-120 pb-90 mb-120---"/>
+        {/* <ApartmentV1 CustomClass="ltn__feature-area section-bg-3 pt-120 pb-90 mb-120---" /> */}
+        <BestVilla customClass="ltn__feature-area section-bg-0 pt-120 pb-40 mb-120---"/>
        
         {/* <BestPenthouse customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---"  /> */}
         {/* <ProductSliderV1/> */}
@@ -80,13 +83,18 @@ const Home_V7 = () => {
 
  
 
-        <ProductSlider customClass="ltn__feature-area section-bg-4 pt-120 pb-90 mb-120---"/>
+        {/* <ProductSlider customClass="ltn__feature-area section-bg-4 pt-120 pb-90 mb-120---"/> */}
         <ProductGrid />
+        <VideoV2/>
+        <ProductGrid />
+<BestTownhouse/>
+<ProductGrid />
 
         {/* <Featuresv1 customClass="ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---"/> */}
         {/* <ProSlider /> */}
         {/* <Gallery /> */}
-        {/* <VideoV1 /> */}
+        <VideoV1 /> 
+        <BestPenthouse/>
         {/* <Category /> */}
         {/* <Testimonial /> */}
         <AboutV5  customClass='ltn__feature-area section-bg-8 pt-120 pb-90 mb-120---'/>

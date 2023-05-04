@@ -25,7 +25,7 @@ const Home_V1 = () => {
         <AboutV2 />
         <Featuresv1 customClass="ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---"/>
         <ProSlider />
-        <Apartment />
+        {/* <Apartment /> */}
         <VideoV1 />
         <Category />
         <Testimonial />
