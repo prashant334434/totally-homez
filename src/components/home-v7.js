@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from './global-components/navbar-v4';
-import BannerV6 from './section-components/banner-v6';
+import BannerV5 from './section-components/banner-v5';
 import Aboutv2 from './section-components/about-v2';
 import Featuresv1 from './section-components/features-v1';
 import ProSlider from './section-components/product-slider-v1';
@@ -63,7 +63,7 @@ const Home_V7 = () => {
       ];
       return <div>
     <Navbar CustomClass="ltn__header-transparent gradient-color-2" /> 
-    <BannerV6 />
+    <BannerV5 />
 
 
 

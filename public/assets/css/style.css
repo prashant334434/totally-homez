@@ -7777,7 +7777,7 @@ i {
   bottom: 50px;
   width: 100%;
   margin: 0;
-  display: ;
+  display:none ;
 }
 
 .arrow-white .slick-arrow {
@@ -9520,7 +9520,6 @@ i {
     Product Tab
 ---------------------------------------------------- */
 .ltn__tab-menu {
-  margin-bottom: 50px;
 
 }
 label{
@@ -9530,12 +9529,13 @@ label{
 
 .ltn__tab-menu .nav {
   display: inline-block;
+  text-align: center;
 }
 
 .ltn__gallery-filter-menu button,
 .ltn__tab-menu a {
   display: inline-block;
-  padding: 15px 40px;
+  padding: 18px 15px;
   
   margin-bottom: 10px;
   color: var(--ltn__heading-color);
@@ -9821,6 +9821,7 @@ label{
   border: 1px solid #e5e5e5;
   padding: 50px 50px 30px;
   background-color: var(--section-bg-1);
+  margin: 10px;
 }
 .ltn__shop-details-tab-content-inner .ltn__comment-reply-area form {
   padding: 0;
@@ -10176,15 +10177,22 @@ label{
 /* Bootstrap Tab with Slider Issue Fix Start */
 .tab-content {
   width: 100%s;
+  display: flex;
+  flex-direction:row;
+  justify-content: start;
+  align-items: center;
+  
 }
 
 .tab-content .tab-pane {
-  display: block;
-  height: 0;
+  
   min-width: 100%;
+  min-height: 30vh;
   visibility: hidden;
   overflow: hidden;
   opacity: 0;
+  align-items: center;
+
 }
 
 .tab-content .tab-pane.active {
@@ -15171,6 +15179,10 @@ body {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+.ltn__list-item-2{
+  display: flex;
+  justify-content: space-between;
+}
 
 .ltn__list-item-2 {
   padding-left: 0;
@@ -15978,7 +15990,6 @@ body {
 ---------------------------------------------------- */
 
 .ltn__car-dealer-form-tab .ltn__tab-menu {
-  margin-bottom: 0;
   background-color: white;
   opacity: 0.4;
 }
@@ -15996,6 +16007,10 @@ body {
 }
 .ltn__car-dealer-form-item{
   border-radius: 20px;
+
+}
+.ltn__car-dealer-form-box{
+  margin:0 auto;
 
 }
 
@@ -17989,7 +18004,9 @@ body {
   display: block;
   margin-top: 30px;
 }
-
+.car-dealer-form-inner{
+  margin: auto;
+}
 
 .btn {
   border-radius: 10px;
@@ -17997,7 +18014,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   font-family: var(--ltn__heading-font);
-  padding: 10px 30px;
+  padding: 10px 10px;
   text-align: center;
   cursor: pointer;
   -webkit-transition: all 0.3s ease 0s;
