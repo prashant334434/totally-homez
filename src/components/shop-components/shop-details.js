@@ -1,6 +1,7 @@
 import React, { Component, useState } from 'react';
 import { Link } from 'react-router-dom';
 import parse from 'html-react-parser';
+import NearBy from '../section-components/NearBy';
 
 const ShopDetails = () => {
 	let publicUrl = process.env.PUBLIC_URL+'/'
@@ -17,7 +18,18 @@ const ShopDetails = () => {
 	<div className='container'>
 	<div className="row">
 	<div className="col-lg-12 col-md-12">
-	<h4 className="title-2">Facts and Features</h4>
+	
+
+	</div>
+	</div>
+	</div>
+	
+	<div className="container">
+	<div className="row">
+		<div className="col-lg-9 col-md-12">
+		
+		<div className="ltn__shop-details-inner ltn__page-details-inner mb-60">
+		<h4 className="title-2">Features</h4>
 			<div className="property-detail-feature-list clearfix mb-45">                            
 			<ul>
 			<li>
@@ -31,7 +43,7 @@ const ShopDetails = () => {
 				</li>
 				<li>
 				<div className="property-detail-feature-list-item">
-					<i className="flaticon-double-bed" />
+					<i className="flaticon-clean" />
 					<div>
 					<h6>Bathroom</h6>
 					<small>20 x 16 sq feet</small>
@@ -40,7 +52,7 @@ const ShopDetails = () => {
 				</li>
 				<li>
 				<div className="property-detail-feature-list-item">
-					<i className="flaticon-double-bed" />
+					<i className="flaticon-square-shape-design-interface-tool-symbol" />
 					<div>
 					<h6>Size</h6>
 					<small>20 x 16 sq feet</small>
@@ -49,7 +61,7 @@ const ShopDetails = () => {
 				</li>
 				<li>
 				<div className="property-detail-feature-list-item">
-					<i className="flaticon-double-bed" />
+				<i className="flaticon-home-2" />
 					<div>
 					<h6>Type</h6>
 					<small>Villa</small>
@@ -58,7 +70,7 @@ const ShopDetails = () => {
 				</li>
 				<li>
 				<div className="property-detail-feature-list-item">
-					<i className="flaticon-double-bed" />
+				<i className="icon-wheel-1" />
 					<div>
 					<h6>For</h6>
 					<small>Sale</small>
@@ -68,7 +80,7 @@ const ShopDetails = () => {
 				
 				<li>
 				<div className="property-detail-feature-list-item">
-					<i className="flaticon-double-bed" />
+					<i className="fas fa-images" />
 					<div>
 					<h6>View</h6>
 					<small>Burj Khalifa</small>
@@ -78,16 +90,6 @@ const ShopDetails = () => {
 			
 			</ul>
 			</div>
-
-	</div>
-	</div>
-	</div>
-	
-	<div className="container">
-	<div className="row">
-		<div className="col-lg-8 col-md-12">
-		
-		<div className="ltn__shop-details-inner ltn__page-details-inner mb-60">
 			<div className="ltn__blog-meta">
 			
 			</div>
@@ -295,6 +297,7 @@ const ShopDetails = () => {
 				</div>
 			</div>
 			</div>
+			<NearBy/>
 			<h4 className="title-2">Location</h4>
 			<div className="property-details-google-map mb-60">
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9334.271551495209!2d-73.97198251485975!3d40.668170674982946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b0456b5a2e7%3A0x68bdf865dda0b669!2sBrooklyn%20Botanic%20Garden%20Shop!5e0!3m2!1sen!2sbd!4v1590597267201!5m2!1sen!2sbd" width="100%" height="100%" frameBorder={0} allowFullScreen aria-hidden="false" tabIndex={0} />
@@ -308,7 +311,7 @@ const ShopDetails = () => {
 	
 		</div>
 		</div>
-		<div className="col-lg-4">
+		<div className="col-lg-3">
 		<aside className="sidebar ltn__shop-sidebar ltn__right-sidebar---">
 			{/* Author Widget */}
 			<div className="widget ltn__author-widget">
@@ -327,16 +330,26 @@ const ShopDetails = () => {
 			</ul>
 			
 			</div>
+			</div>
+
+			<div className="widget ltn__author-widget">
 			<div className="ltn__author-widget-inner text-center">
+			<center>
+
 				<img src={publicUrl+"assets/img/team/4.jpg"} alt="Image" />
 				<h5>Rosalina D. Willaimson</h5>
 				<small>Traveller/Photographer</small>
+
+			</center>
+
 				<div className="product-ratting">
 				
 				</div>
+				<br/>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis distinctio, odio, eligendi suscipit reprehenderit atque.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis distinctio, odio, eligendi suscipit reprehenderit atque.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis distinctio, odio, eligendi suscipit reprehenderit atque.</p>
 				<div className="ltn__social-media">
 				<Link className="btn btn-effect-3" to="/contact">Call</Link>
+				
 					
 					<br/>
 					<br/>

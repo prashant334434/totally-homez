@@ -4037,8 +4037,8 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .ltn__breadcrumb-area {
   background-color: var(--section-bg-1);
   margin-bottom: 120px;
-  padding-top: 110px;
-  padding-bottom: 110px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .ltn__breadcrumb-list ul {
@@ -9947,7 +9947,7 @@ p{
 }
 .property-detail-feature-list ul {
   margin: 0;
-  padding: 0;
+  
 }
 .property-detail-feature-list ul li {
   display: inline-block;
@@ -11184,10 +11184,10 @@ p{
   color: var(--white);
 }
 
-.ltn__category-item-5-2 a .category-icon {
+/* .ltn__category-item-5-2 a .category-icon {
   margin-right: 0;
   margin-left: auto;
-}
+} */
 
 .ltn__category-item-5-2 a .category-number {
   -webkit-transition: all 0.3s ease 0s;
