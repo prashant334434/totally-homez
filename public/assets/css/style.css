@@ -6565,10 +6565,13 @@ label{
   background: var(--white);
   color: var(--ltn__heading-color);
 }
-
+i {
+  font-size: 24px; /* adjust the value to increase or decrease the size */
+}
 /* Sticky Background Black */
 .sticky-active.ltn__sticky-bg-black {
-  background-color:transparent;
+  background-color:#fff;
+  opacity: 0.8;
 }
 .apartmentName{
   float: left;
@@ -6662,6 +6665,7 @@ label{
   width: 100%;
   z-index: 999;
   background-color: transparent;
+  opacity: 0.8;
 }
 .ltn__header-transparent .top-area-color-white {
   background-color: transparent;
@@ -8933,6 +8937,9 @@ label{
 }
 
 .product-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   color: var(--ltn__heading-color);
   font-weight: 600;
 }
@@ -9163,12 +9170,12 @@ label{
 }
 .ltn__product-item-4 .product-title {
   font-size: 22px;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
   font-weight: 500;
 }
 .ltn__product-item-4 .product-description p {
   font-size: 14px;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 }
 .ltn__product-item-4 .product-info-bottom {
   display: -webkit-box;
@@ -15917,7 +15924,7 @@ body {
   display: none;
 }
 .input-item .nice-select::before {
-  content: "\f063";
+  content: "\f015";
   font-size: 14px;
   position: absolute;
   top: 50%;
@@ -15929,7 +15936,20 @@ body {
   font-weight: 900;
   color: var(--ltn__secondary-color);
 }
+.input-item .nice-select-bedroom{
+  content: "\f015";
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-family: "Font Awesome\ 5 Free";
+  font-weight: 900;
+  color: var(--ltn__secondary-color);
 
+}
 .input-item::after {
   display: block;
   clear: both;
@@ -16036,7 +16056,7 @@ body {
 
 
 .ltn__car-dealer-form-box .ltn__custom-icon .nice-select::before {
-  content: "\f063";
+  content: "\f236";
   font-family: "Font Awesome\ 5 Free";
   font-weight: 900;
   margin-right: 10px;
@@ -16057,7 +16077,7 @@ body {
 }
 
 .ltn__car-dealer-form-box .ltn__custom-icon.ltn__icon-car .nice-select::before {
-  content: "\f1b9";
+  content: "\f015";
 }
 
 .ltn__car-dealer-form-box

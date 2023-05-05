@@ -29,7 +29,7 @@ const ProductSliderV1 = () => {
 										<Link to="/product-details"><img src={publicUrl + "assets/img/product-3/1.jpg"} alt="#" /></Link>
 										<div className="product-badge">
 											<ul>
-												<li className="sale-badge bg-green">For Renrrrt</li>
+												<li className="sale-badge bg-green">For Rent</li>
 											</ul>
 										</div>
 										<div className="product-img-location-gallery">
