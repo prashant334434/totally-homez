@@ -6568,7 +6568,20 @@ label{
 
 /* Sticky Background Black */
 .sticky-active.ltn__sticky-bg-black {
-  background-color: #fff;
+  background-color:transparent;
+}
+.apartmentName{
+  float: left;
+  width: 50%;
+}
+.apartmentPrice{
+  width: 50%;
+  float: right;
+  text-align: right;
+}
+.appartmentAdd{
+  width: 100%;
+  float: left;
 }
 .sticky-active.ltn__sticky-bg-black .ltn__main-menu > ul > li > a,
 .sticky-active.ltn__sticky-bg-black .header-wishlist a,
@@ -15942,6 +15955,7 @@ body {
 .ltn__car-dealer-form-tab .ltn__tab-menu {
   margin-bottom: 0;
   background-color: white;
+  opacity: 0.4;
 }
 .ltn__car-dealer-form-tab .ltn__tab-menu .active {
   border-color: var(--ltn__secondary-color);

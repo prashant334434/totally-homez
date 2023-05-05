@@ -72,7 +72,7 @@ const Home_V7 = () => {
         {/* <Aboutv2 /> */}
         {/* <Gallery /> */}
         <Carousel images={IMAGES} slidesToShow={5} />
-<NewV2Team/>
+        <CategoryV3/>
         {/* <HomeCrousal/> */}
         {/* <ApartmentV1 CustomClass="ltn__feature-area section-bg-3 pt-120 pb-90 mb-120---" /> */}
         <BestVilla customClass="ltn__feature-area section-bg-0 pt-120 pb-40 mb-120---"/>
