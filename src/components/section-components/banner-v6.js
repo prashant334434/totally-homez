@@ -41,9 +41,11 @@ class BannerV6 extends Component {
 
 												</div>
 											</div>
+												<center>
 												<div className="tab-pane fade active show" id="ltn__form_tab_1_1">
 													<div className="car-dealer-form-inner">
-														<form action="#" className="ltn__car-dealer-form-box row">
+														<center>
+															<form action="#" className="ltn__car-dealer-form-box row">
 															<div className="ltn__car-dealer-form-item location-input ltn__custom-icon ltn__icon-car   col-lg-2 col-md-4">
 																<label>Location :</label>
 															
@@ -101,8 +103,10 @@ class BannerV6 extends Component {
 																</div>
 															</div>
 														</form>
+														</center>
 													</div>
 												</div>
+												</center>
 												<div className="tab-pane fade" id="ltn__form_tab_1_2">
 													<div className="car-dealer-form-inner">
 														<center>

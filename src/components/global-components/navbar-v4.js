@@ -245,7 +245,7 @@ class NavbarV3 extends Component {
 					</form>
 					</div>
 					<div className="ltn__utilize-menu">
-					<ul>
+					<ul className='navItems'>
 						<li><a href="#">Home</a>
 						<ul className="sub-menu">
 						<li><Link to="/">Home Style 01</Link></li>

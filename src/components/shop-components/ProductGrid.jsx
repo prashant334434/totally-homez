@@ -27,7 +27,187 @@ const ProductGrid = (props) => {
 				<Link to="/product-details"><img src={publicUrl+"assets/img/product-3/3.jpg"} alt="#" /></Link>
 				<div className="product-badge">
 				  <ul>
-					<li className="sale-badge bg-green">For Renttt</li>
+					<li className="sale-badge bg-green">For Rent</li>
+				  </ul>
+				</div>
+				
+			  </div>
+			  <div className="product-info">
+			<div className="product-price">
+			<h2 className="product-title go-top"><Link to="/product-details">Comfortable Apartment</Link></h2>
+
+				  <span>AED 34,000</span>
+
+				  
+				</div>
+				<div className="product-description">
+				<Link to="/contact"> Belmont Gardens, Chicago</Link><br></br>
+				<small>Ref No.LP17443</small>
+				</div>
+				<div><center>
+				<ul className="ltn__list-item-2 ltn__list-item-2-before">
+				  <li><span> <i className="flaticon-bed" />  3</span>
+				  </li>
+				  <li><span><i className="flaticon-clean" />  2 </span>
+				  </li>
+				  <li><span> <i className="flaticon-square-shape-design-interface-tool-symbol" />  3450 sqft</span>
+				  </li>
+				</ul></center>
+			  </div></div>
+			  <div className="product-info-bottom">
+				<div className="real-estate-agent">
+				  <div className="agent-img go-top">
+					<Link to="/team-details"><img src={publicUrl+"assets/img/blog/author.jpg"} alt="#" /></Link>
+				  </div>
+				  <div className="agent-brief go-top">
+					<h6><Link to="/team-details">William Seklo</Link></h6>
+					
+				  </div>
+				</div>
+				<div className="product-hover-action">
+				  <ul>
+					<li>
+					  <a href="#" title="Quick View" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
+						<i className="fab fa-whatsapp" />
+					  </a>
+					</li>
+					<li>
+					  <a href="#" title="Wishlist" data-bs-toggle="modal" data-bs-target="#liton_wishlist_modal">
+						<i className="fa fa-phone" /></a>
+					</li>
+					
+				  </ul>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div className="col-lg-12">
+			<div className="ltn__product-item ltn__product-item-4 text-center---">
+			  <div className="product-img go-top">
+				<Link to="/product-details"><img src={publicUrl+"assets/img/product-3/3.jpg"} alt="#" /></Link>
+				<div className="product-badge">
+				  <ul>
+					<li className="sale-badge bg-green">For Rent</li>
+				  </ul>
+				</div>
+				
+			  </div>
+			  <div className="product-info">
+			<div className="product-price">
+			<h2 className="product-title go-top"><Link to="/product-details">Comfortable Apartment</Link></h2>
+
+				  <span>AED 34,000</span>
+
+				  
+				</div>
+				<div className="product-description">
+				<Link to="/contact"> Belmont Gardens, Chicago</Link><br></br>
+				<small>Ref No.LP17443</small>
+				</div>
+				<div><center>
+				<ul className="ltn__list-item-2 ltn__list-item-2-before">
+				  <li><span> <i className="flaticon-bed" />  3</span>
+				  </li>
+				  <li><span><i className="flaticon-clean" />  2 </span>
+				  </li>
+				  <li><span> <i className="flaticon-square-shape-design-interface-tool-symbol" />  3450 sqft</span>
+				  </li>
+				</ul></center>
+			  </div></div>
+			  <div className="product-info-bottom">
+				<div className="real-estate-agent">
+				  <div className="agent-img go-top">
+					<Link to="/team-details"><img src={publicUrl+"assets/img/blog/author.jpg"} alt="#" /></Link>
+				  </div>
+				  <div className="agent-brief go-top">
+					<h6><Link to="/team-details">William Seklo</Link></h6>
+					
+				  </div>
+				</div>
+				<div className="product-hover-action">
+				  <ul>
+					<li>
+					  <a href="#" title="Quick View" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
+						<i className="fab fa-whatsapp" />
+					  </a>
+					</li>
+					<li>
+					  <a href="#" title="Wishlist" data-bs-toggle="modal" data-bs-target="#liton_wishlist_modal">
+						<i className="fa fa-phone" /></a>
+					</li>
+					
+				  </ul>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div className="col-lg-12">
+			<div className="ltn__product-item ltn__product-item-4 text-center---">
+			  <div className="product-img go-top">
+				<Link to="/product-details"><img src={publicUrl+"assets/img/product-3/3.jpg"} alt="#" /></Link>
+				<div className="product-badge">
+				  <ul>
+					<li className="sale-badge bg-green">For Rent</li>
+				  </ul>
+				</div>
+				
+			  </div>
+			  <div className="product-info">
+			<div className="product-price">
+			<h2 className="product-title go-top"><Link to="/product-details">Comfortable Apartment</Link></h2>
+
+				  <span>AED 34,000</span>
+
+				  
+				</div>
+				<div className="product-description">
+				<Link to="/contact"> Belmont Gardens, Chicago</Link><br></br>
+				<small>Ref No.LP17443</small>
+				</div>
+				<div><center>
+				<ul className="ltn__list-item-2 ltn__list-item-2-before">
+				  <li><span> <i className="flaticon-bed" />  3</span>
+				  </li>
+				  <li><span><i className="flaticon-clean" />  2 </span>
+				  </li>
+				  <li><span> <i className="flaticon-square-shape-design-interface-tool-symbol" />  3450 sqft</span>
+				  </li>
+				</ul></center>
+			  </div></div>
+			  <div className="product-info-bottom">
+				<div className="real-estate-agent">
+				  <div className="agent-img go-top">
+					<Link to="/team-details"><img src={publicUrl+"assets/img/blog/author.jpg"} alt="#" /></Link>
+				  </div>
+				  <div className="agent-brief go-top">
+					<h6><Link to="/team-details">William Seklo</Link></h6>
+					
+				  </div>
+				</div>
+				<div className="product-hover-action">
+				  <ul>
+					<li>
+					  <a href="#" title="Quick View" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
+						<i className="fab fa-whatsapp" />
+					  </a>
+					</li>
+					<li>
+					  <a href="#" title="Wishlist" data-bs-toggle="modal" data-bs-target="#liton_wishlist_modal">
+						<i className="fa fa-phone" /></a>
+					</li>
+					
+				  </ul>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div className="col-lg-12">
+			<div className="ltn__product-item ltn__product-item-4 text-center---">
+			  <div className="product-img go-top">
+				<Link to="/product-details"><img src={publicUrl+"assets/img/product-3/3.jpg"} alt="#" /></Link>
+				<div className="product-badge">
+				  <ul>
+					<li className="sale-badge bg-green">For Rent</li>
 				  </ul>
 				</div>
 				
@@ -95,25 +275,26 @@ const ProductGrid = (props) => {
 			  </div>
 			  <div className="product-info">
 			<div className="product-price">
-				  <span>AED 34,900</span>
-				</div>
-				<h2 className="product-title go-top"><Link to="/product-details">Comfortable Apartment</Link></h2>
-				<div className="product-description">
-				<Link to="/contact"><i className="flaticon-pin" /> Belmont Gardens, Chicago</Link>
+			<h2 className="product-title go-top"><Link to="/product-details">Comfortable Apartment</Link></h2>
 
+				  <span>AED 34,000</span>
+
+				  
 				</div>
+				<div className="product-description">
+				<Link to="/contact"> Belmont Gardens, Chicago</Link><br></br>
+				<small>Ref No.LP17443</small>
+				</div>
+				<div><center>
 				<ul className="ltn__list-item-2 ltn__list-item-2-before">
-				  <li><span>3 <i className="flaticon-bed" /></span>
-					Bedrooms
+				  <li><span> <i className="flaticon-bed" />  3</span>
 				  </li>
-				  <li><span>2 <i className="flaticon-clean" /></span>
-					Bathrooms
+				  <li><span><i className="flaticon-clean" />  2 </span>
 				  </li>
-				  <li><span>3450 <i className="flaticon-square-shape-design-interface-tool-symbol" /></span>
-					square Ft
+				  <li><span> <i className="flaticon-square-shape-design-interface-tool-symbol" />  3450 sqft</span>
 				  </li>
-				</ul>
-			  </div>
+				</ul></center>
+			  </div></div>
 			  <div className="product-info-bottom">
 				<div className="real-estate-agent">
 				  <div className="agent-img go-top">
@@ -121,127 +302,7 @@ const ProductGrid = (props) => {
 				  </div>
 				  <div className="agent-brief go-top">
 					<h6><Link to="/team-details">William Seklo</Link></h6>
-					<small>Ref No.LP17443</small>
-				  </div>
-				</div>
-				<div className="product-hover-action">
-				  <ul>
-					<li>
-					  <a href="#" title="Quick View" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
-						<i className="fab fa-whatsapp" />
-					  </a>
-					</li>
-					<li>
-					  <a href="#" title="Wishlist" data-bs-toggle="modal" data-bs-target="#liton_wishlist_modal">
-						<i className="fa fa-phone" /></a>
-					</li>
 					
-				  </ul>
-				</div>
-			  </div>
-			</div>
-		  </div>
-		  {/* ltn__product-item */}
-		  <div className="col-lg-12">
-			<div className="ltn__product-item ltn__product-item-4 text-center---">
-			  <div className="product-img go-top">
-				<Link to="/product-details"><img src={publicUrl+"assets/img/product-3/4.jpg"} alt="#" /></Link>
-				<div className="product-badge">
-				  <ul>
-					<li className="sale-badge bg-green">For Rent</li>
-				  </ul>
-				</div>
-				
-			  </div>
-			  <div className="product-info">
-			  <div className="product-price">
-				  <span>AED 34,900</span>
-				</div>
-				<h2 className="product-title go-top"><Link to="/product-details">Luxury villa in Rego Park </Link></h2>
-				<div className="product-description">
-				<Link to="/contact"><i className="flaticon-pin" /> Belmont Gardens, Chicago</Link>
-
-				</div>
-				<ul className="ltn__list-item-2 ltn__list-item-2-before">
-				  <li><span>3 <i className="flaticon-bed" /></span>
-					Bedrooms
-				  </li>
-				  <li><span>2 <i className="flaticon-clean" /></span>
-					Bathrooms
-				  </li>
-				  <li><span>3450 <i className="flaticon-square-shape-design-interface-tool-symbol" /></span>
-					square Ft
-				  </li>
-				</ul>
-			  </div>
-			  <div className="product-info-bottom">
-				<div className="real-estate-agent">
-				  <div className="agent-img go-top">
-					<Link to="/team-details"><img src={publicUrl+"assets/img/blog/author.jpg"} alt="#" /></Link>
-				  </div>
-				  <div className="agent-brief go-top">
-					<h6><Link to="/team-details">William Seklo</Link></h6>
-					<small>Ref No.LP17443</small>
-				  </div>
-				</div>
-				<div className="product-hover-action">
-				  <ul>
-					<li>
-					  <a href="#" title="Quick View" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
-						<i className="fab fa-whatsapp" />
-					  </a>
-					</li>
-					<li>
-					  <a href="#" title="Wishlist" data-bs-toggle="modal" data-bs-target="#liton_wishlist_modal">
-						<i className="fa fa-phone" /></a>
-					</li>
-					
-				  </ul>
-				</div>
-			  </div>
-			</div>
-		  </div>
-		  {/* ltn__product-item */}
-		  <div className="col-lg-12">
-			<div className="ltn__product-item ltn__product-item-4 text-center---">
-			  <div className="product-img go-top">
-				<Link to="/product-details"><img src={publicUrl+"assets/img/product-3/5.jpg"} alt="#" /></Link>
-				<div className="product-badge">
-				  <ul>
-					<li className="sale-badge bg-green">For Rent</li>
-				  </ul>
-				</div>
-				
-			  </div>
-			  <div className="product-info">
-				<div className="product-price">
-				  <span>AED 34,900</span>
-				</div>
-				<h2 className="product-title go-top"><Link to="/product-details">Beautiful Flat in Manhattan </Link></h2>
-				<div className="product-description">
-				<Link to="/contact"><i className="flaticon-pin" /> Belmont Gardens, Chicago</Link>
-
-				</div>
-				<ul className="ltn__list-item-2 ltn__list-item-2-before">
-				  <li><span>3 <i className="flaticon-bed" /></span>
-					Bedrooms
-				  </li>
-				  <li><span>2 <i className="flaticon-clean" /></span>
-					Bathrooms
-				  </li>
-				  <li><span>3450 <i className="flaticon-square-shape-design-interface-tool-symbol" /></span>
-					square Ft
-				  </li>
-				</ul>
-			  </div>
-			  <div className="product-info-bottom">
-				<div className="real-estate-agent">
-				  <div className="agent-img go-top">
-					<Link to="/team-details"><img src={publicUrl+"assets/img/blog/author.jpg"} alt="#" /></Link>
-				  </div>
-				  <div className="agent-brief go-top">
-					<h6><Link to="/team-details">William Seklo</Link></h6>
-					<small>Ref No.LP17443</small>
 				  </div>
 				</div>
 				<div className="product-hover-action">
@@ -265,69 +326,6 @@ const ProductGrid = (props) => {
 		</div>
 		<div className="row ltn__product-slider-item-four-active-full-width slick-arrow-1">
 		  {/* ltn__product-item */}
-		 
-		  {/* ltn__product-item */}
-		  <div className="col-lg-12">
-			<div className="ltn__product-item ltn__product-item-4 text-center---">
-			  <div className="product-img go-top">
-				<Link to="/product-details"><img src={publicUrl+"assets/img/product-3/2.jpg"} alt="#" /></Link>
-				<div className="product-badge">
-				  <ul>
-				  <li className="sale-badge bg-green">For Sale</li>
-
-				  </ul>
-				</div>
-			
-			  </div>
-			  <div className="product-info">
-				<div className="product-price">
-				  <span>AED 34,900</span>
-				</div>
-				<h2 className="product-title go-top"><Link to="/product-details">Modern Apartments</Link></h2>
-				<div className="product-description">
-				<Link to="/contact"><i className="flaticon-pin" /> Belmont Gardens, Chicago</Link>
-
-				</div>
-				<ul className="ltn__list-item-2 ltn__list-item-2-before">
-				  <li><span>3 <i className="flaticon-bed" /></span>
-					Bedrooms
-				  </li>
-				  <li><span>2 <i className="flaticon-clean" /></span>
-					Bathrooms
-				  </li>
-				  <li><span>3450 <i className="flaticon-square-shape-design-interface-tool-symbol" /></span>
-					square Ft
-				  </li>
-				</ul>
-			  </div>
-			  <div className="product-info-bottom">
-				<div className="real-estate-agent">
-				  <div className="agent-img go-top">
-					<Link to="/team-details"><img src={publicUrl+"assets/img/blog/author.jpg"} alt="#" /></Link>
-				  </div>
-				  <div className="agent-brief go-top">
-					<h6><Link to="/team-details">William Seklo</Link></h6>
-					<small>Ref No.LP17443</small>
-				  </div>
-				</div>
-				<div className="product-hover-action">
-				  <ul>
-					<li>
-					  <a href="#" title="Quick View" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
-						<i className="fab fa-whatsapp" />
-					  </a>
-					</li>
-					<li>
-					  <a href="#" title="Wishlist" data-bs-toggle="modal" data-bs-target="#liton_wishlist_modal">
-						<i className="fa fa-phone" /></a>
-					</li>
-					
-				  </ul>
-				</div>
-			  </div>
-			</div>
-		  </div>
-		  {/* ltn__product-item */}
 		  <div className="col-lg-12">
 			<div className="ltn__product-item ltn__product-item-4 text-center---">
 			  <div className="product-img go-top">
@@ -341,25 +339,26 @@ const ProductGrid = (props) => {
 			  </div>
 			  <div className="product-info">
 			<div className="product-price">
-				  <span>AED 34,900</span>
-				</div>
-				<h2 className="product-title go-top"><Link to="/product-details">Comfortable Apartment</Link></h2>
-				<div className="product-description">
-				<Link to="/contact"><i className="flaticon-pin" /> Belmont Gardens, Chicago</Link>
+			<h2 className="product-title go-top"><Link to="/product-details">Comfortable Apartment</Link></h2>
 
+				  <span>AED 34,000</span>
+
+				  
 				</div>
+				<div className="product-description">
+				<Link to="/contact"> Belmont Gardens, Chicago</Link><br></br>
+				<small>Ref No.LP17443</small>
+				</div>
+				<div><center>
 				<ul className="ltn__list-item-2 ltn__list-item-2-before">
-				  <li><span>3 <i className="flaticon-bed" /></span>
-					Bedrooms
+				  <li><span> <i className="flaticon-bed" />  3</span>
 				  </li>
-				  <li><span>2 <i className="flaticon-clean" /></span>
-					Bathrooms
+				  <li><span><i className="flaticon-clean" />  2 </span>
 				  </li>
-				  <li><span>3450 <i className="flaticon-square-shape-design-interface-tool-symbol" /></span>
-					square Ft
+				  <li><span> <i className="flaticon-square-shape-design-interface-tool-symbol" />  3450 sqft</span>
 				  </li>
-				</ul>
-			  </div>
+				</ul></center>
+			  </div></div>
 			  <div className="product-info-bottom">
 				<div className="real-estate-agent">
 				  <div className="agent-img go-top">
@@ -367,7 +366,7 @@ const ProductGrid = (props) => {
 				  </div>
 				  <div className="agent-brief go-top">
 					<h6><Link to="/team-details">William Seklo</Link></h6>
-					<small>Ref No.LP17443</small>
+					
 				  </div>
 				</div>
 				<div className="product-hover-action">
@@ -387,11 +386,10 @@ const ProductGrid = (props) => {
 			  </div>
 			</div>
 		  </div>
-		  {/* ltn__product-item */}
 		  <div className="col-lg-12">
 			<div className="ltn__product-item ltn__product-item-4 text-center---">
 			  <div className="product-img go-top">
-				<Link to="/product-details"><img src={publicUrl+"assets/img/product-3/4.jpg"} alt="#" /></Link>
+				<Link to="/product-details"><img src={publicUrl+"assets/img/product-3/3.jpg"} alt="#" /></Link>
 				<div className="product-badge">
 				  <ul>
 					<li className="sale-badge bg-green">For Sale</li>
@@ -400,26 +398,27 @@ const ProductGrid = (props) => {
 				
 			  </div>
 			  <div className="product-info">
-			  <div className="product-price">
-				  <span>AED 34,900</span>
-				</div>
-				<h2 className="product-title go-top"><Link to="/product-details">Luxury villa in Rego Park </Link></h2>
-				<div className="product-description">
-				<Link to="/contact"><i className="flaticon-pin" /> Belmont Gardens, Chicago</Link>
+			<div className="product-price">
+			<h2 className="product-title go-top"><Link to="/product-details">Comfortable Apartment</Link></h2>
 
+				  <span>AED 34,000</span>
+
+				  
 				</div>
+				<div className="product-description">
+				<Link to="/contact"> Belmont Gardens, Chicago</Link><br></br>
+				<small>Ref No.LP17443</small>
+				</div>
+				<div><center>
 				<ul className="ltn__list-item-2 ltn__list-item-2-before">
-				  <li><span>3 <i className="flaticon-bed" /></span>
-					Bedrooms
+				  <li><span> <i className="flaticon-bed" />  3</span>
 				  </li>
-				  <li><span>2 <i className="flaticon-clean" /></span>
-					Bathrooms
+				  <li><span><i className="flaticon-clean" />  2 </span>
 				  </li>
-				  <li><span>3450 <i className="flaticon-square-shape-design-interface-tool-symbol" /></span>
-					square Ft
+				  <li><span> <i className="flaticon-square-shape-design-interface-tool-symbol" />  3450 sqft</span>
 				  </li>
-				</ul>
-			  </div>
+				</ul></center>
+			  </div></div>
 			  <div className="product-info-bottom">
 				<div className="real-estate-agent">
 				  <div className="agent-img go-top">
@@ -427,7 +426,127 @@ const ProductGrid = (props) => {
 				  </div>
 				  <div className="agent-brief go-top">
 					<h6><Link to="/team-details">William Seklo</Link></h6>
-					<small>Ref No.LP17443</small>
+					
+				  </div>
+				</div>
+				<div className="product-hover-action">
+				  <ul>
+					<li>
+					  <a href="#" title="Quick View" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
+						<i className="fab fa-whatsapp" />
+					  </a>
+					</li>
+					<li>
+					  <a href="#" title="Wishlist" data-bs-toggle="modal" data-bs-target="#liton_wishlist_modal">
+						<i className="fa fa-phone" /></a>
+					</li>
+					
+				  </ul>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div className="col-lg-12">
+			<div className="ltn__product-item ltn__product-item-4 text-center---">
+			  <div className="product-img go-top">
+				<Link to="/product-details"><img src={publicUrl+"assets/img/product-3/3.jpg"} alt="#" /></Link>
+				<div className="product-badge">
+				  <ul>
+					<li className="sale-badge bg-green">For Sale</li>
+				  </ul>
+				</div>
+				
+			  </div>
+			  <div className="product-info">
+			<div className="product-price">
+			<h2 className="product-title go-top"><Link to="/product-details">Comfortable Apartment</Link></h2>
+
+				  <span>AED 34,000</span>
+
+				  
+				</div>
+				<div className="product-description">
+				<Link to="/contact"> Belmont Gardens, Chicago</Link><br></br>
+				<small>Ref No.LP17443</small>
+				</div>
+				<div><center>
+				<ul className="ltn__list-item-2 ltn__list-item-2-before">
+				  <li><span> <i className="flaticon-bed" />  3</span>
+				  </li>
+				  <li><span><i className="flaticon-clean" />  2 </span>
+				  </li>
+				  <li><span> <i className="flaticon-square-shape-design-interface-tool-symbol" />  3450 sqft</span>
+				  </li>
+				</ul></center>
+			  </div></div>
+			  <div className="product-info-bottom">
+				<div className="real-estate-agent">
+				  <div className="agent-img go-top">
+					<Link to="/team-details"><img src={publicUrl+"assets/img/blog/author.jpg"} alt="#" /></Link>
+				  </div>
+				  <div className="agent-brief go-top">
+					<h6><Link to="/team-details">William Seklo</Link></h6>
+					
+				  </div>
+				</div>
+				<div className="product-hover-action">
+				  <ul>
+					<li>
+					  <a href="#" title="Quick View" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
+						<i className="fab fa-whatsapp" />
+					  </a>
+					</li>
+					<li>
+					  <a href="#" title="Wishlist" data-bs-toggle="modal" data-bs-target="#liton_wishlist_modal">
+						<i className="fa fa-phone" /></a>
+					</li>
+					
+				  </ul>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div className="col-lg-12">
+			<div className="ltn__product-item ltn__product-item-4 text-center---">
+			  <div className="product-img go-top">
+				<Link to="/product-details"><img src={publicUrl+"assets/img/product-3/3.jpg"} alt="#" /></Link>
+				<div className="product-badge">
+				  <ul>
+					<li className="sale-badge bg-green">For Sale</li>
+				  </ul>
+				</div>
+				
+			  </div>
+			  <div className="product-info">
+			<div className="product-price">
+			<h2 className="product-title go-top"><Link to="/product-details">Comfortable Apartment</Link></h2>
+
+				  <span>AED 34,000</span>
+
+				  
+				</div>
+				<div className="product-description">
+				<Link to="/contact"> Belmont Gardens, Chicago</Link><br></br>
+				<small>Ref No.LP17443</small>
+				</div>
+				<div><center>
+				<ul className="ltn__list-item-2 ltn__list-item-2-before">
+				  <li><span> <i className="flaticon-bed" />  3</span>
+				  </li>
+				  <li><span><i className="flaticon-clean" />  2 </span>
+				  </li>
+				  <li><span> <i className="flaticon-square-shape-design-interface-tool-symbol" />  3450 sqft</span>
+				  </li>
+				</ul></center>
+			  </div></div>
+			  <div className="product-info-bottom">
+				<div className="real-estate-agent">
+				  <div className="agent-img go-top">
+					<Link to="/team-details"><img src={publicUrl+"assets/img/blog/author.jpg"} alt="#" /></Link>
+				  </div>
+				  <div className="agent-brief go-top">
+					<h6><Link to="/team-details">William Seklo</Link></h6>
+					
 				  </div>
 				</div>
 				<div className="product-hover-action">
@@ -448,65 +567,7 @@ const ProductGrid = (props) => {
 			</div>
 		  </div>
 		  {/* ltn__product-item */}
-		  <div className="col-lg-12">
-			<div className="ltn__product-item ltn__product-item-4 text-center---">
-			  <div className="product-img go-top">
-				<Link to="/product-details"><img src={publicUrl+"assets/img/product-3/5.jpg"} alt="#" /></Link>
-				<div className="product-badge">
-				  <ul>
-					<li className="sale-badge bg-green">For Rent</li>
-				  </ul>
-				</div>
-				
-			  </div>
-			  <div className="product-info">
-				<div className="product-price">
-				  <span>AED 34,900</span>
-				</div>
-				<h2 className="product-title go-top"><Link to="/product-details">Beautiful Flat in Manhattan </Link></h2>
-				<div className="product-description">
-				<Link to="/contact"><i className="flaticon-pin" /> Belmont Gardens, Chicago</Link>
-
-				</div>
-				<ul className="ltn__list-item-2 ltn__list-item-2-before">
-				  <li><span>3 <i className="flaticon-bed" /></span>
-					Bedrooms
-				  </li>
-				  <li><span>2 <i className="flaticon-clean" /></span>
-					Bathrooms
-				  </li>
-				  <li><span>3450 <i className="flaticon-square-shape-design-interface-tool-symbol" /></span>
-					square Ft
-				  </li>
-				</ul>
-			  </div>
-			  <div className="product-info-bottom">
-				<div className="real-estate-agent">
-				  <div className="agent-img go-top">
-					<Link to="/team-details"><img src={publicUrl+"assets/img/blog/author.jpg"} alt="#" /></Link>
-				  </div>
-				  <div className="agent-brief go-top">
-					<h6><Link to="/team-details">William Seklo</Link></h6>
-					<small>Ref No.LP17443</small>
-				  </div>
-				</div>
-				<div className="product-hover-action">
-				  <ul>
-					<li>
-					  <a href="#" title="Quick View" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
-						<i className="fab fa-whatsapp" />
-					  </a>
-					</li>
-					<li>
-					  <a href="#" title="Wishlist" data-bs-toggle="modal" data-bs-target="#liton_wishlist_modal">
-						<i className="fa fa-phone" /></a>
-					</li>
-					
-				  </ul>
-				</div>
-			  </div>
-			</div>
-		  </div>
+		  
 		  {/*  */}
 		</div>
 	  </div>

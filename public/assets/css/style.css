@@ -1598,9 +1598,10 @@ ul {
 .slick-dots {
   margin: 0 0 30px;
   padding: 0;
-  display: block;
+  display: none !important;
   text-align: center;
   line-height: 1;
+
 }
 .slick-dots li {
   display: inline-block;
@@ -6571,7 +6572,10 @@ i {
 /* Sticky Background Black */
 .sticky-active.ltn__sticky-bg-black {
   background-color:#fff;
-  opacity: 0.8;
+  opacity: 0.9;
+}
+.navItems{
+  font-weight: 400 !important;
 }
 .apartmentName{
   float: left;
@@ -7773,6 +7777,7 @@ i {
   bottom: 50px;
   width: 100%;
   margin: 0;
+  display: ;
 }
 
 .arrow-white .slick-arrow {
@@ -8268,8 +8273,8 @@ i {
   left: -10px;
 }
 .ltn__slider-11-pagination-count .slick-dots {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
+  display: none;
+  display: none;
   display: flex !important;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
