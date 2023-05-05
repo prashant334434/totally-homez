@@ -9490,10 +9490,16 @@ p{
   margin-right: 5px;
   margin-bottom: 10px;
   color: var(--ltn__heading-color);
-  background-color: var(--section-bg-1);
+
   font-weight: 700;
   border-radius: 10px;
 }
+.ltn__gallery-filter-menu button,
+.ltn__tab-menu a:hover{
+  background-color: var(--section-bg-1);
+  color:var(--ltn__secondary-color);
+}
+
 .ltn__gallery-filter-menu button:last-child,
 .ltn__tab-menu a:last-child {
   margin-right: 0;
@@ -15878,7 +15884,6 @@ body {
   margin-bottom: 0;
   background-color: hsla(0, 0%, 100%, 0.8) !important;
   padding: 1rem !important;
-  border-top-left-radius: 0.75rem !important;
   border-top-right-radius: 0.75rem !important;
 }
 .ltn__car-dealer-form-tab .ltn__tab-menu .active {
@@ -15891,7 +15896,10 @@ body {
 .ltn__car-dealer-form-tab .tab-content {
   padding: 20px 40px;
   background-color: var(--section-bg-1);
-  border-radius: 15px;
+  border-top-right-radius: 0.75rem !important;
+  border-bottom-left-radius: 0.75rem !important;
+  border-bottom-right-radius: 0.75rem !important;
+
 }
 .border-b1{
   border-bottom-width: 1px !important;
