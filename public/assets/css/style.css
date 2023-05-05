@@ -9492,6 +9492,7 @@ p{
   color: var(--ltn__heading-color);
   background-color: var(--section-bg-1);
   font-weight: 700;
+  border-radius: 10px;
 }
 .ltn__gallery-filter-menu button:last-child,
 .ltn__tab-menu a:last-child {
@@ -15875,17 +15876,27 @@ body {
 ---------------------------------------------------- */
 .ltn__car-dealer-form-tab .ltn__tab-menu {
   margin-bottom: 0;
+  background-color: hsla(0, 0%, 100%, 0.8) !important;
+  padding: 1rem !important;
+  border-top-left-radius: 0.75rem !important;
+  border-top-right-radius: 0.75rem !important;
 }
 .ltn__car-dealer-form-tab .ltn__tab-menu .active {
   border-color: var(--ltn__secondary-color);
   background-color: var(--ltn__secondary-color);
   color: var(--white);
+  border-radius: 15px;
 }
 
 .ltn__car-dealer-form-tab .tab-content {
-  padding: 40px;
+  padding: 20px 40px;
   background-color: var(--section-bg-1);
+  border-radius: 15px;
 }
+.border-b1{
+  border-bottom-width: 1px !important;
+}
+
 
 .ltn__car-dealer-form-box .ltn__car-dealer-form-item {
   position: relative;
