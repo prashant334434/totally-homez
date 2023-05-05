@@ -15642,6 +15642,9 @@ body {
   padding: 50px 0;
   margin: 50px 0;
 }
+.penthouseImage{
+  border-radius: 5px !important;
+}
 
 .elements-title-area {
   text-align: center;
@@ -15740,6 +15743,15 @@ body {
 }
 
 .ltn__service-form-color-white .ltn__service-form-box input {
+  background-color: transparent;
+  color: var(--white);
+  border-color: var(--border-color-3);
+  font-weight: 700;
+  height: 60px;
+}
+.ltn__car-dealer-form-box .ltn__car-dealer-form-item .ltn__custom-icon .nice-input::before {
+  content: "\f063";
+  font-family: "Font Awesome\ 5 Free";
   background-color: transparent;
   color: var(--white);
   border-color: var(--border-color-3);
@@ -15985,8 +15997,38 @@ body {
 .ltn__car-dealer-form-box .ltn__custom-icon::before {
   display: none;
 }
+.input-container {
+  position: relative;
+}
+
+.location-input {
+  padding-right: 30px; /* adjust the value to match the width of the icon */
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M496 465.9L362.1 332c-30.1 25.2-67.7 40.4-108.1 40.4C106.6 372.4 0 265.8 0 136.2S106.6 0 236 0s236 106.6 236 236c0 40.5-15.2 78-40.4 108.1L465.9 496c7.5 7.5 20 7.5 27.5 0l16.1-16.1c7.5-7.5 7.5-20.1 0-27.6zM236 64C132.7 64 48 148.7 48 252s84.7 188 188 188 188-84.7 188-188S339.3 64 236 64z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 100px;
+  background-size: 16px; /* adjust the value to decrease or increase the size */
+}
+
+.price-input {
+  padding-left: 30px; /* adjust the value to match the width of the icon */
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M640 192v128a64 64 0 0 1-64 64H64a64 64 0 0 1-64-64V192a64 64 0 0 1 64-64h512a64 64 0 0 1 64 64zM96 288a32 32 0 0 0 0 64h64v64a32 32 0 0 0 64 0v-64h64a32 32 0 0 0 0-64H224v-64h128v64h32a32 32 0 0 0 0-64h-32v-64H224v64h-64a32 32 0 0 0-64 0v64H96z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 50px;
+  background-size: 16px; /* adjust the value to decrease or increase the size */
+}
+
+
 
 .ltn__car-dealer-form-box .ltn__custom-icon .nice-select::before {
+  content: "\f063";
+  font-family: "Font Awesome\ 5 Free";
+  font-weight: 900;
+  margin-right: 10px;
+  color: var(--ltn__secondary-color);
+}
+.ltn__car-dealer-form-box .ltn__custom-icon .nice-input::before {
   content: "\f063";
   font-family: "Font Awesome\ 5 Free";
   font-weight: 900;
@@ -18277,6 +18319,14 @@ body {
 
 .slider-controler .slider-arrow::after {
   content: '';
+}
+.offPlanImage{
+  transition: transform 0.3s ease;
+
+}
+.offPlanImage:hover {
+   transform: scale(1.1) perspective(100px) rotateX(10deg);
+
 }
 
 .swiper-pagination {

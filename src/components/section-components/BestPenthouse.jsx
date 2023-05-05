@@ -12,7 +12,7 @@ const BestPenthouse = (props) => {
           <div className="about-us-info-wrap">
             <div className="section-title-area ltn__section-title-2--- mb-30">
               {/* <h6 className="section-subtitle section-subtitle-2 ltn__secondary-color">About Us</h6> */}
-              <h1 className="section-title">Best Penthousesss  In Dubai </h1>
+              <h1 className="section-title">Best Penthouses  In Dubai </h1>
               <p>the best off-plan projects in Dubai offer a combination of attractive payment plans, high-quality amenities, prime locations, investment opportunities, innovative design, reliable developers, and easy access to transportation.</p>
                             <p>the best off-plan projects in Dubai offer a combination of attractive payment plans, high-quality amenities, prime locations, investment opportunities, innovative design, reliable developers, and easy access to transportation.</p>
 
@@ -57,7 +57,7 @@ const BestPenthouse = (props) => {
         </div>
         <div className="col-lg-6 align-self-center">
           <div className="about-us-img-wrap about-img-right">
-            <img src="https://pic.le-cdn.com/thumbs/520x390/480/1/properties/Property-6609991517d604e29875bd9576182487-121125645.jpg" alt="About Us Image" />
+            <img className='penthouseImage' src="https://pic.le-cdn.com/thumbs/520x390/480/1/properties/Property-6609991517d604e29875bd9576182487-121125645.jpg" alt="About Us Image" />
           </div>
         </div>
       </div>

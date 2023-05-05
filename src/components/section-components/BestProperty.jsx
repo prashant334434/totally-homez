@@ -57,7 +57,7 @@ const BestProperty = (props) => {
         </div>
         <div className="col-lg-6 align-self-center">
           <div className="about-us-img-wrap about-img-right">
-            <img src="https://pic.le-cdn.com/thumbs/520x390/480/1/properties/Property-6609991517d604e29875bd9576182487-121125645.jpg" alt="About Us Image" />
+            <img className='offPlanImage' src="https://pic.le-cdn.com/thumbs/520x390/480/1/properties/Property-6609991517d604e29875bd9576182487-121125645.jpg" alt="About Us Image" />
           </div>
         </div>
       </div>

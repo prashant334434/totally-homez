@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import parse from 'html-react-parser';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { ShoppingCart } from '@material-ui/icons';
 
 class BannerV6 extends Component {
 
@@ -41,13 +44,13 @@ class BannerV6 extends Component {
 												<div className="tab-pane fade active show" id="ltn__form_tab_1_1">
 													<div className="car-dealer-form-inner">
 														<form action="#" className="ltn__car-dealer-form-box row">
-															<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-car   col-lg-2 col-md-4">
+															<div className="ltn__car-dealer-form-item location-input ltn__custom-icon ltn__icon-car   col-lg-2 col-md-4">
 																<label>Location :</label>
 															
-																<input type="text" name="ltn__name" placeholder="Location" />
+																<input className='' type="text" name="ltn__name" placeholder="Location" />
 
 															</div>
-															<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-home col-lg-2 col-md-4">
+															<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-car   col-lg-2 col-md-4">
 
 																<label>Select Category :</label>
 
@@ -60,9 +63,9 @@ class BannerV6 extends Component {
 																	<option>Residential Land</option>
 																</select>
 															</div>
-															<div className="ltn__car-dealer-form-item   col-lg-2 col-md-4">
+															<div className="ltn__car-dealer-form-item ltn__custom-icon   col-lg-2 col-md-4">
 																<label>Min Price :</label>
-																<input type="text" name="ltn__name" placeholder="Min Price " />
+																<input className='price-input' type="text" name="ltn__name" placeholder="Min Price " />
 
 															</div>
 															<div className="ltn__car-dealer-form-item   col-lg-2 col-md-4">
@@ -99,7 +102,7 @@ class BannerV6 extends Component {
 														<form action="#" className="ltn__car-dealer-form-box row">
 														<div className="ltn__car-dealer-form-item   col-lg-2 col-md-4">
 																<label>Location :</label>
-																<input type="text" name="ltn__name" placeholder="Location" />
+																<input className='nice-select' type="text" name="ltn__name" placeholder="Location" />
 
 															</div>
 															<div className="ltn__car-dealer-form-item  col-lg-2 col-md-4">
