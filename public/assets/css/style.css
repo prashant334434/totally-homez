@@ -15999,9 +15999,9 @@ body {
 
 .ltn__car-dealer-form-tab .ltn__tab-menu {
 
-  margin-bottom: 0;
   background-color: hsla(0, 0%, 100%, 0.8) !important;
   padding: 1rem !important;
+  border-top-left-radius: 0.75rem !important;
   border-top-right-radius: 0.75rem !important;
  
 }
@@ -16024,12 +16024,16 @@ body {
 .border-b1{
   border-bottom-width: 1px !important;
 }
-
+.ltn__car-dealer-form-box{
+  display: flexbox;
+  justify-content: space-between;
+  align-items:center;
+}
 
 .ltn__car-dealer-form-box .ltn__car-dealer-form-item {
   position: relative;
   /* display: flex; */
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   padding: 0;
   margin: 5px;
   width: 15.5%;
