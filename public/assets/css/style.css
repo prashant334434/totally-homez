@@ -10195,7 +10195,7 @@ label{
 .tab-content .tab-pane {
   
   min-width: 100%;
-  min-height: 30vh;
+  min-height: 92px;
   visibility: hidden;
   overflow: hidden;
   opacity: 0;
@@ -16027,7 +16027,7 @@ body {
 .ltn__car-dealer-form-box{
   display: flexbox;
   justify-content: space-between;
-  align-items:center;
+  align-items: end;
 }
 
 .ltn__car-dealer-form-box .ltn__car-dealer-form-item {
@@ -16045,7 +16045,6 @@ body {
 }
 .ltn__car-dealer-form-box .nice-select {
   margin: 0;
- 
   padding-right: 40px;
   padding-left: 20px;
   border-radius: 8px;
@@ -16054,6 +16053,8 @@ body {
   font-weight: 400;
   font-family: var(--ltn__heading-font);
   width: 100%;
+  padding-top: 10px;
+  padding-bottom: 44px;
 }
 .ltn__car-dealer-form-box .nice-select .list {
   width: 100%;
@@ -18045,7 +18046,8 @@ body {
 .theme-btn-1 {
   background-color: var(--ltn__secondary-color);
   color: var(--white);
-  border-radius: 15px;;
+  border-radius: 15px;
+  padding: 15px 40px;
 }
 .theme-btn-search {
   background-color: var(--ltn__secondary-color);
