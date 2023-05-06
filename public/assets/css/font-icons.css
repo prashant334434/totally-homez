@@ -41,6 +41,7 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
     color:red;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    margin-right: 10px;
 }
 
 .flaticon-add-to-cart:before {
