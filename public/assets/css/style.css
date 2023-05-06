@@ -9535,13 +9535,21 @@ label{
 .ltn__gallery-filter-menu button,
 .ltn__tab-menu a {
   display: inline-block;
-  padding: 18px 15px;
-  
-  margin-bottom: 10px;
+
+  padding: 15px 40px;
+  margin-right: 5px;
+
   color: var(--ltn__heading-color);
-  background-color:white;
-  font-weight: 400;
+
+  font-weight: 700;
+  border-radius: 10px;
 }
+.ltn__gallery-filter-menu button,
+.ltn__tab-menu a:hover{
+  background-color: var(--section-bg-1);
+  color:var(--ltn__secondary-color);
+}
+
 .ltn__gallery-filter-menu button:last-child,
 .ltn__tab-menu a:last-child {
   margin-right: 0;
@@ -15990,29 +15998,33 @@ body {
 ---------------------------------------------------- */
 
 .ltn__car-dealer-form-tab .ltn__tab-menu {
-  background-color: white;
-  opacity: 0.4;
+
+  margin-bottom: 0;
+  background-color: hsla(0, 0%, 100%, 0.8) !important;
+  padding: 1rem !important;
+  border-top-right-radius: 0.75rem !important;
+ 
 }
 .ltn__car-dealer-form-tab .ltn__tab-menu .active {
   border-color: var(--ltn__secondary-color);
   background-color: var(--ltn__secondary-color);
   color: var(--white);
-  border-radius: 10px;
+
+  border-radius: 15px;
 }
 
 .ltn__car-dealer-form-tab .tab-content {
-  padding: 10px 50px;
-  background-color:white;
-  border-radius: 10px;
-}
-.ltn__car-dealer-form-item{
-  border-radius: 20px;
+  padding: 20px 40px;
+  background-color: var(--section-bg-1);
+  border-top-right-radius: 0.75rem !important;
+  border-bottom-left-radius: 0.75rem !important;
+  border-bottom-right-radius: 0.75rem !important;
 
 }
-.ltn__car-dealer-form-box{
-  margin:0 auto;
-
+.border-b1{
+  border-bottom-width: 1px !important;
 }
+
 
 .ltn__car-dealer-form-box .ltn__car-dealer-form-item {
   position: relative;
@@ -18031,6 +18043,7 @@ body {
 .theme-btn-1 {
   background-color: var(--ltn__secondary-color);
   color: var(--white);
+  border-radius: 15px;;
 }
 .theme-btn-search {
   background-color: var(--ltn__secondary-color);
