@@ -95,7 +95,7 @@ class BannerV5 extends Component {
 										</div> 
 										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-cog col-lg-4 col-md-6">                                                            
 										<div className="input-item input-item-name ltn__custom-icon">
-										<button className="btn theme-btn-1 btn-effect-1 text-uppercase" type="submit"><i className="fas fa-home" />Submit</button>
+										<button className="btn theme-btn-1 btn-effect-1 text-uppercase" type="submit">Search</button>
 										</div>
 										</div> 
 										
