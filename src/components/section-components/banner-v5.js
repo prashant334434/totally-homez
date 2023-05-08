@@ -205,7 +205,7 @@ class BannerV5 extends Component {
 								<div className="tab-pane fade container-fluid" id="ltn__form_tab_1_3">
 									<div className="car-dealer-form-inner">
 									<form action="#" className="ltn__car-dealer-form-box row">
-										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-calendar col-lg-4 col-md-6">
+										<div className="ltn__car-dealer-form-item ltn__custom-icon  col-lg-4 col-md-6">
 										<label>
 											Location
 										</label>
