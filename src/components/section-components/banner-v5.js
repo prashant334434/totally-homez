@@ -31,7 +31,7 @@ class BannerV5 extends Component {
 									<form action="#" className="ltn__car-dealer-form-box row">
 										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-calendar col-lg-4 col-md-6">
 										<label>
-											dsdssssss
+											Location
 										</label>
 										<select className="nice-select">
 											<option>Property Type</option>
@@ -43,7 +43,7 @@ class BannerV5 extends Component {
 										</div> 
 										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-car col-lg-4 col-md-6">
 										<label>
-											dsds
+											Sub-location
 										</label>
 										<select className="nice-select">
 											<option>Location</option>
@@ -56,7 +56,7 @@ class BannerV5 extends Component {
 										</div> 
 										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-meter col-lg-4 col-md-6">
 										<label>
-											dsds
+											Category
 										</label>
 										<select className="nice-select">
 											<option>Sub Location</option>
@@ -71,7 +71,7 @@ class BannerV5 extends Component {
 										</div> 
 										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-ring col-lg-4 col-md-6">
 										<label>
-											dsds
+											Price
 										</label>
 										<select className="nice-select">
 											<option>Bedrooms</option>
@@ -83,7 +83,7 @@ class BannerV5 extends Component {
 										</div> 
 										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-ring col-lg-4 col-md-6">
 										<label>
-											dsds
+											Bedrooms
 										</label>
 										<select className="nice-select">
 											<option>Bedrooms</option>
@@ -117,6 +117,9 @@ class BannerV5 extends Component {
 									<div className="car-dealer-form-inner">
 									<form action="#" className="ltn__car-dealer-form-box row">
 										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-calendar col-lg-4 col-md-6">
+										<label>
+											Location
+										</label>
 										<select className="nice-select">
 											<option>Property Type</option>
 											<option>Apartment</option>
@@ -126,6 +129,9 @@ class BannerV5 extends Component {
 										</select>
 										</div> 
 										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-car col-lg-4 col-md-6">
+										<label>
+											Sub-location
+										</label>
 										<select className="nice-select">
 											<option>Location</option>
 											<option>chicago</option>
@@ -136,6 +142,9 @@ class BannerV5 extends Component {
 										</select>
 										</div> 
 										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-meter col-lg-4 col-md-6">
+										<label>
+											Category
+										</label>
 										<select className="nice-select">
 											<option>Sub Location</option>
 											<option>Bayonne</option>
@@ -148,6 +157,21 @@ class BannerV5 extends Component {
 										</select>
 										</div> 
 										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-ring col-lg-4 col-md-6">
+										<label>
+											Price
+										</label>
+										<select className="nice-select">
+											<option>Bedrooms</option>
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+										</select>
+										</div> 
+										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-ring col-lg-4 col-md-6">
+										<label>
+											Bedrooms
+										</label>
 										<select className="nice-select">
 											<option>Bedrooms</option>
 											<option>1</option>
@@ -158,27 +182,21 @@ class BannerV5 extends Component {
 										</div> 
 										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-cog col-lg-4 col-md-6">                                                            
 										<div className="input-item input-item-name ltn__custom-icon">
-											<input type="text" name="name" placeholder="Min size (in sqft)" />
+										<button className="btn theme-btn-1 btn-effect-1 text-uppercase" type="submit">Search</button>
 										</div>
 										</div> 
-										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-cog col-lg-4 col-md-6">                                                            
+										
+										{/* <div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-cog col-lg-4 col-md-6">                                                            
+										<div className="input-item input-item-name ltn__custom-icon">
+											<input type="text" name="name" placeholder="Min size (in sqft)" />
+										</div>
+										</div>  */}
+										{/* <div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-cog col-lg-4 col-md-6">                                                            
 										<div className="input-item input-item-name ltn__custom-icon">
 											<input type="text" name="name" placeholder="Max size (in sqft)" />
 										</div>
-										</div> 
-										<div className="car-price-filter-range col-lg-12">
-										<div className="price_filter">
-											<div className="price_slider_amount">
-											<input type="submit" defaultValue="Your range:" /> 
-											<input type="text" className="amount" name="price" placeholder="Add Your Price" /> 
-											</div>
-											<div className="slider-range" />
-										</div>
-										<div className="btn-wrapper text-center go-top">
-											{/* <button type="submit" class="btn theme-btn-1 btn-effect-1 text-uppercase">Search Inventory</button> */}
-											<Link to="/shop-right-sidebar" className="btn theme-btn-1 btn-effect-1 text-uppercase">Search Inventory</Link>
-										</div>
-										</div>
+										</div>  */}
+										
 									</form>
 									</div>
 								</div>
