@@ -103,6 +103,8 @@ const Home_V7 = () => {
         {/* <Gallery /> */}
         <VideoV1 /> 
         <BestPenthouse/>
+        <ProductGrid />
+
         {/* <Category /> */}
         {/* <Testimonial /> */}
         <AboutV5  customClass='ltn__feature-area section-bg-8 pt-120 pb-90 mb-120---'/>

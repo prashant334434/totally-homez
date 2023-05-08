@@ -20,8 +20,10 @@ class BannerV5 extends Component {
 							<div className="ltn__car-dealer-form-tab">
 								<div className='ltn__tab-menu'>
 								<div className="nav">
-									<a className="active show" data-bs-toggle="tab" href="#ltn__form_tab_1_1"><i className="fas fa-home" />Rent Home</a>
-									<a data-bs-toggle="tab" href="#ltn__form_tab_1_2" className><i className="fas fa-home" />Sale Home</a>
+								<a className="active show" data-bs-toggle="tab" href="#ltn__form_tab_1_1"><i className="fas fa-home" />Projects</a>
+
+									<a className="" data-bs-toggle="tab" href="#ltn__form_tab_1_2"><i className="fas fa-home" />Rent Home</a>
+									<a data-bs-toggle="tab" href="#ltn__form_tab_1_3" className><i className="fas fa-home" />Sale Home</a>
 								</div>
 								</div>
 								<center>
@@ -114,6 +116,93 @@ class BannerV5 extends Component {
 									</div>
 								</div>
 								<div className="tab-pane fade container-fluid" id="ltn__form_tab_1_2">
+									<div className="car-dealer-form-inner">
+									<form action="#" className="ltn__car-dealer-form-box row">
+										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-calendar col-lg-4 col-md-6">
+										<label>
+											Location
+										</label>
+										<select className="nice-select">
+											<option>Property Type</option>
+											<option>Apartment</option>
+											<option>Co-op</option>
+											<option>Condo</option>
+											<option>Single Family Home</option>
+										</select>
+										</div> 
+										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-car col-lg-4 col-md-6">
+										<label>
+											Sub-location
+										</label>
+										<select className="nice-select">
+											<option>Location</option>
+											<option>chicago</option>
+											<option>London</option>
+											<option>Los Angeles</option>
+											<option>New York</option>
+											<option>New Jersey</option>
+										</select>
+										</div> 
+										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-meter col-lg-4 col-md-6">
+										<label>
+											Category
+										</label>
+										<select className="nice-select">
+											<option>Sub Location</option>
+											<option>Bayonne</option>
+											<option>Greenville</option>
+											<option>Manhattan</option>
+											<option>Queens</option>
+											<option>The Heights</option>
+											<option>Upper East Side</option>
+											<option>West Side</option>
+										</select>
+										</div> 
+										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-ring col-lg-4 col-md-6">
+										<label>
+											Price
+										</label>
+										<select className="nice-select">
+											<option>Bedrooms</option>
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+										</select>
+										</div> 
+										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-ring col-lg-4 col-md-6">
+										<label>
+											Bedrooms
+										</label>
+										<select className="nice-select">
+											<option>Bedrooms</option>
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+											<option>4</option>
+										</select>
+										</div> 
+										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-cog col-lg-4 col-md-6">                                                            
+										<div className="input-item input-item-name ltn__custom-icon">
+										<button className="btn theme-btn-1 btn-effect-1 text-uppercase" type="submit">Search</button>
+										</div>
+										</div> 
+										
+										{/* <div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-cog col-lg-4 col-md-6">                                                            
+										<div className="input-item input-item-name ltn__custom-icon">
+											<input type="text" name="name" placeholder="Min size (in sqft)" />
+										</div>
+										</div>  */}
+										{/* <div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-cog col-lg-4 col-md-6">                                                            
+										<div className="input-item input-item-name ltn__custom-icon">
+											<input type="text" name="name" placeholder="Max size (in sqft)" />
+										</div>
+										</div>  */}
+										
+									</form>
+									</div>
+								</div>
+								<div className="tab-pane fade container-fluid" id="ltn__form_tab_1_3">
 									<div className="car-dealer-form-inner">
 									<form action="#" className="ltn__car-dealer-form-box row">
 										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-calendar col-lg-4 col-md-6">

@@ -87,7 +87,7 @@ class NavbarV3 extends Component {
 						<div className="header-menu d-none d-xl-block go-top">
 							<nav>
 							<div className="ltn__main-menu">
-								<ul>
+								<ul className="navbarOptions">
 								<li ><Link to="/">Home</Link>
 								{/* <ul className="sub-menu menu-pages-img-show">
 									<li>
