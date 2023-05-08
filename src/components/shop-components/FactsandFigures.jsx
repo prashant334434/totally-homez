@@ -362,7 +362,7 @@ const FactsandFigures = () => {
             <p>This upgraded villa at Sanctuary Falls in Jumeirah Golf Estates is an exceptional property that is perfect for those seeking a luxurious lifestyle. This is a rare opportunity to own a masterpiece that has been created with passion and attention to detail, ensuring a world-class living experience</p>
             <p>Contact to view today.</p> */}
             
-            <h4 className="title-2">Facts and Features</h4>
+            <h4 className="title-2">Features</h4>
             <div className="property-detail-feature-list clearfix mb-45">                            
             <ul>
             <li>
