@@ -10,37 +10,37 @@ const slideWidth = 30;
 const _items = [
     {
         player: {
-            title: 'Efren Reyes',
-            desc: 'Known as "The Magician", Efren Reyes is well regarded by many professionals as the greatest all around player of all time.',
-            image: 'https://i.postimg.cc/RhYnBf5m/er-slider.jpg',
+            title: '6.9M',
+            desc: 'Bulgari Residences & Mansions',
+            image: 'https://www.cotedazur-sothebysrealty.com/datas/biens/images/1743/1743_00-2022-08-25-1644.jpg',
         },
     },
     {
         player: {
-            title: "Ronnie O'Sullivan",
-            desc: "Ronald Antonio O'Sullivan is a six-time world champion and is the most successful player in the history of snooker.",
-            image: 'https://i.postimg.cc/qBGQNc37/ro-slider.jpg',
+            title: "14M",
+            desc: "One at Palm Jumeirah",
+            image: 'https://jbr-beach-walk-penthouse-floor-41-apartment-dubai.booked.net/data/Photos/OriginalPhoto/11500/1150011/1150011724/Dubai-Jbr-Amazing-Penthouse-With-Stunning-View-Apartment-Exterior.JPEG',
         },
     },
     {
         player: {
-            title: 'Shane Van Boening',
-            desc: 'The "South Dakota Kid" is hearing-impaired and uses a hearing aid, but it has not limited his ability.',
-            image: 'https://i.postimg.cc/cHdMJQKG/svb-slider.jpg',
+            title: '7.2M',
+            desc: 'The royal Atlantis Residences',
+            image: 'https://image.khaleejtimes.com/?uuid=2efd5ba5-175e-5d97-b0e1-b7b4221a3091&function=cropresize&type=preview&source=false&q=75&crop_w=0.99999&crop_h=0.99911&x=0&y=0&width=1200&height=675',
         },
     },
     {
         player: {
             title: 'Mike Sigel',
-            desc: 'Mike Sigel or "Captain Hook" as many like to call him is an American professional pool player with over 108 tournament wins.',
-            image: 'https://i.postimg.cc/C12h7nZn/ms-1.jpg',
+            desc: 'Bulgari Residences & Mansions',
+            image: 'https://www.tlre.ae/wp-content/uploads/2021/02/PHOTO-2021-02-03-11-49-55-4.jpg',
         },
     },
     {
         player: {
             title: 'Willie Mosconi',
-            desc: 'Nicknamed "Mr. Pocket Billiards," Willie Mosconi was among the first Billiard Congress of America Hall of Fame inductees.',
-            image: 'https://i.postimg.cc/NfzMDVHP/willie-mosconi-slider.jpg',
+            desc: 'One at Palm Jumeriah',
+            image: 'https://image.khaleejtimes.com/?uuid=70155bf4-f02b-556b-9520-687ef8a8f8dc&function=cropresize&type=preview&source=false&q=75&crop_w=0.99999&crop_h=0.86042&width=1200&height=675&x=1.0E-5&y=0.13958',
         },
     },
 ];
@@ -153,7 +153,7 @@ const Carousel = () => {
                 <button className="carousel__btn carousel__btn--next" onClick={() => nextClick()}>
                     <i className="carousel__btn-arrow carousel__btn-arrow--right" />
                 </button>
-                <div className="carousel__dots">
+                {/* <div className="carousel__dots">
                     {items.slice(0, length).map((pos, i) => (
                         <button
                             key={i}
@@ -161,7 +161,7 @@ const Carousel = () => {
                             className={i === activeIdx ? 'dot active' : 'dot'}
                         />
                     ))}
-                </div>
+                </div> */}
             </div>
         </div>
     );
