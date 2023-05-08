@@ -76,11 +76,12 @@ class BannerV5 extends Component {
 											Price
 										</label>
 										<select className="nice-select">
-											<option>Bedrooms</option>
-											<option>1</option>
-											<option>2</option>
-											<option>3</option>
-											<option>4</option>
+											<option>0-500,000</option>
+											<option>500,000-1,000,000</option>
+											<option>1,000,000-5,000,000</option>
+											<option>5,000,000-10,000,000</option>
+											<option>Above 10,000,000</option>
+
 										</select>
 										</div> 
 										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-ring col-lg-4 col-md-6">
@@ -250,7 +251,6 @@ class BannerV5 extends Component {
 											Price
 										</label>
 										<select className="nice-select">
-											<option>Bedrooms</option>
 											<option>1</option>
 											<option>2</option>
 											<option>3</option>
