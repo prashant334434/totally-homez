@@ -133,7 +133,11 @@ const Carousel = () => {
     }, [items]);
 
     return (
-        <div className="carousel__wrap">
+        <div className="ltn__img-slider-area">
+				<div className="container-fluid">
+				<div className="row ltn__image-slider-5-active slick-arrow-1 slick-arrow-1-inner ltn__no-gutter-all">
+					<div className="col-lg-12">
+                    <div className="carousel__wrap">
             <div className="carousel__inner">
                 <button className="carousel__btn carousel__btn--prev" onClick={() => prevClick()}>
                     <i className="carousel__btn-arrow carousel__btn-arrow--left" />
@@ -164,6 +168,12 @@ const Carousel = () => {
                 </div> */}
             </div>
         </div>
+					</div>
+					
+				</div>
+				</div>
+			</div>
+      
     );
 };
 export default Carousel
