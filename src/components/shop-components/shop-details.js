@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React, { Component, useState,useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import parse from 'html-react-parser';
 import NearBy from '../section-components/NearBy';
@@ -6,9 +6,19 @@ import NearBy from '../section-components/NearBy';
 const ShopDetails = () => {
 	let publicUrl = process.env.PUBLIC_URL+'/'
 
-
+	const [isSticky, setSticky] = useState(false);
 	  const [showFullDescription, setShowFullDescription] = useState(false);
+	  useEffect(() => {
+		const handleScroll = () => {
+		  setSticky(window.scrollY > 0);
+		};
 	
+		window.addEventListener('scroll', handleScroll);
+	
+		return () => {
+		  window.removeEventListener('scroll', handleScroll);
+		};
+	  }, []);
 	  function toggleDescription() {
 		setShowFullDescription(!showFullDescription);
 	  }
@@ -311,6 +321,7 @@ const ShopDetails = () => {
 	
 		</div>
 		</div>
+		
 		<div className="col-lg-3">
 		<aside className="sidebar ltn__shop-sidebar ltn__right-sidebar---">
 			{/* Author Widget */}
@@ -406,29 +417,9 @@ const ShopDetails = () => {
 			</div>
 		</aside>
 		</div>
+		
 	</div>
-	<div className="row">
-		<div className="col-lg-8 col-md-12">
-		<div className="ltn__shop-details-inner ltn__page-details-inner ">
-			
-		
-     
-			
-			
-		
-		
-			
-			{/* APARTMENTS PLAN AREA START */}
-		
-			
-			{/* APARTMENTS PLAN AREA END */}
-		
-			
-		
-		</div>
-		</div>
-	
-	</div>
+
 	</div>
 </div>
   )
