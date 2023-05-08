@@ -18393,14 +18393,14 @@ body {
 .slider-controler .slider-arrow::after {
   content: '';
 }
-.offPlanImage{
+/* .offPlanImage{
   transition: transform 0.3s ease;
 
 }
 .offPlanImage:hover {
    transform: scale(1.1) perspective(100px) rotateX(10deg);
 
-}
+} */
 
 .swiper-pagination {
   position: relative;

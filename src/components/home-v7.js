@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from './global-components/navbar-v4';
 import BannerV5 from './section-components/banner-v5';
 import Aboutv2 from './section-components/about-v2';
@@ -41,9 +41,16 @@ import BestTownhouse from './section-components/BestTownhouse';
 import BestPenthouse from './section-components/BestPenthouse';
 import PortfolioV3 from './section-components/PortfolioV3';
 import NewV2Team from './section-components/NewV2Team';
+import { useDispatch } from 'react-redux';
+import { getAllPropertiesApi } from '../actions/propertiesActions';
 
 
 const Home_V7 = () => {
+  const dispatch=useDispatch()
+  useEffect(()=>{
+    dispatch(getAllPropertiesApi())
+
+  },[dispatch])
     const slides = [
         {
           id: 1,
