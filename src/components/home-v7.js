@@ -43,6 +43,7 @@ import PortfolioV3 from './section-components/PortfolioV3';
 import NewV2Team from './section-components/NewV2Team';
 import { useDispatch } from 'react-redux';
 import { getAllPropertiesApi } from '../actions/propertiesActions';
+import CarouselComponent from './section-components/carousel/Carousel';
 
 
 const Home_V7 = () => {
@@ -78,7 +79,7 @@ const Home_V7 = () => {
     <BestProperty customClass='ltn__feature-area section-bg-1 pt-80 pb-80  mb-120---' />
         {/* <Aboutv2 /> */}
         {/* <Gallery /> */}
-        <Carousel images={IMAGES} slidesToShow={5} />
+        <CarouselComponent />
         <CategoryV3/>
         {/* <HomeCrousal/> */}
         {/* <ApartmentV1 CustomClass="ltn__feature-area section-bg-3 pt-120 pb-90 mb-120---" /> */}
