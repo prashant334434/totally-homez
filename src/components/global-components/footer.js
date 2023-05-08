@@ -47,7 +47,7 @@ class Footer_v1 extends Component {
 				  <div className="footer-top-area  section-bg-2 plr--5">
 				    <div className="container-fluid">
 				      <div className="row">
-				        <div className="col-xl-3 col-md-6 col-sm-6 col-12">
+				        <div className="col-xl-4 col-md-6 col-sm-6 col-12">
 				          <div className="footer-widget footer-about-widget">
 				            <div className="footer-logo">
 				              <div className="site-logo">
@@ -88,7 +88,7 @@ class Footer_v1 extends Component {
 				            </div>
 				          </div>
 				        </div>
-				        <div className="col-xl-3 col-md-6 col-sm-6 col-12">
+				        <div className="col-xl-2 col-md-6 col-sm-6 col-12">
 				          <div className="footer-widget footer-menu-widget clearfix">
 				            <h4 className="footer-title">Curations </h4>
 				            <div className="footer-menu go-top">
@@ -103,7 +103,7 @@ class Footer_v1 extends Component {
 				            </div>
 				          </div>
 				        </div>
-				        <div className="col-xl-3 col-md-6 col-sm-6 col-12">
+				        <div className="col-xl-2 col-md-6 col-sm-6 col-12">
 				          <div className="footer-widget footer-menu-widget clearfix">
 				            <h4 className="footer-title">Navigate </h4>
 				            <div className="footer-menu go-top">
@@ -118,9 +118,25 @@ class Footer_v1 extends Component {
 				            </div>
 				          </div>
 				        </div>
-				        <div className="col-xl-3 col-md-6 col-sm-6 col-12">
+				        <div className="col-xl-2 col-md-6 col-sm-6 col-12">
 				          <div className="footer-widget footer-menu-widget clearfix">
 				            <h4 className="footer-title">Community Guides </h4>
+				            <div className="footer-menu go-top">
+				              <ul>
+				                <li><Link to="/login">Login</Link></li>
+				                <li><Link to="/my-account">My account</Link></li>
+				                <li><Link to="/wishlist">Wish List</Link></li>
+				                <li><Link to="/add-listing">Add listing</Link></li>
+				                <li><Link to="/faq">FAQ</Link></li>
+				                <li><Link to="/contact">Contact us</Link></li>
+				              </ul>
+				            </div>
+				          </div>
+				        </div>
+
+						<div className="col-xl-2 col-md-6 col-sm-6 col-12">
+				          <div className="footer-widget footer-menu-widget clearfix">
+				            <h4 className="footer-title">Explore </h4>
 				            <div className="footer-menu go-top">
 				              <ul>
 				                <li><Link to="/login">Login</Link></li>
