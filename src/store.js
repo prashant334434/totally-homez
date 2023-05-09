@@ -2,11 +2,18 @@ import { createStore,combineReducers,applyMiddleware} from "redux"
 import thunk from "redux-thunk"
 import {composeWithDevTools} from 'redux-devtools-extension'
 import { userReducer } from "./reducers/userReducers";
-import { propertyReducer } from "./reducers/propertyReducers";
+import { propertyDetailsReducer, propertyReducer } from "./reducers/propertyReducers";
+import { carouselDetailsReducer, carouselReducer } from "./reducers/carouselReducers";
+import { teamDetailsReducer, teamReducer } from "./reducers/teamReducers";
 
 const reducer=combineReducers({
     user:userReducer,
-    properties:propertyReducer
+    properties:propertyReducer,
+    propertyDetails:propertyDetailsReducer,
+    carousels:carouselReducer,
+    carouselDetails:carouselDetailsReducer,
+    team:teamReducer,
+    teamDetails:teamDetailsReducer
     
    
 
