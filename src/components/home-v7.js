@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import Navbar from './global-components/navbar-v4';
+import Navbar from './global-components/navbar-v3';
 import BannerV5 from './section-components/banner-v5';
 import Aboutv2 from './section-components/about-v2';
 import Featuresv1 from './section-components/features-v1';
