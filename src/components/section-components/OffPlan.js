@@ -23,7 +23,6 @@ const OffPlan = () => {
         <Navbar page={"offplan"} />
         <AboutOffPlan/>
         <div className='container'>
-        <Carousel images={IMAGES} slidesToShow={5} />
       </div>
       
            
