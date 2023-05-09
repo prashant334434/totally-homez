@@ -2,6 +2,7 @@ import React, { Component, useState,useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import parse from 'html-react-parser';
 import NearBy from '../section-components/NearBy';
+import { InlineWidget, PopupButton, PopupWidget } from "react-calendly";
 
 const ShopDetails = () => {
 	let publicUrl = process.env.PUBLIC_URL+'/'
@@ -365,30 +366,30 @@ const ShopDetails = () => {
 					<br/>
 					<br/>
 	
-					<script
-    src="https://sleekflow.io/whatsapp-button.js"
-    async
-    onLoad="whatsappButton({
-    buttonName:'Message Us',
-    buttonIconSize: '22',
-    brandImageUrl:'https://sleekflow.io/static/images/sleekflow-icon.png',
-    buttonMargin:'true',
-    brandName:'SleekFlow',
-    brandSubtitleText:'Typically replies within a day',
-    buttonSize:'large',
-    callToAction:'Start Chat',
-    phoneNumber:'917015535765',
-    welcomeMessage:'Hi there 👋',
-    })"
-    > whatsapp
-</script>
+
 				
 				</div>
 				
 			</div>
 			</div>
 			{/* Search Widget */}
-		
+			{/* <InlineWidget url="https://calendly.com/rohit0101rm" /> */}
+			{/* <PopupWidget
+        url="https://calendly.com/rohit0101rm"
+      
+        rootElement={document.getElementById("root")}
+        text="Click here to schedule!"
+        textColor="#ffffff"
+        color="#00a2ff"
+      /> */}
+	        <PopupButton
+        url="https://calendly.com/prashant-vashisth/counsaltant"
+
+			className="btn theme-btn-1"
+        rootElement={document.getElementById("root")}
+        text="Click here to schedule!"
+      />
+	  <hr/>
 			{/* Form Widget */}
 			<div className="widget ltn__form-widget">
 			<h4 className="ltn__widget-title ltn__widget-title-border-2">Drop Messege For Book</h4>
@@ -396,7 +397,9 @@ const ShopDetails = () => {
 				<input type="text" name="yourname" placeholder="Your Name*" />
 				<input type="text" name="youremail" placeholder="Your e-Mail*" />
 				<textarea name="yourmessage" placeholder="Write Message..." defaultValue={""} />
-				<button type="submit" className="btn theme-btn-1">Send Messege</button>
+				<button   
+					type='submit'
+			 className="btn theme-btn-1">Send Messege</button>
 			</form>
 			</div>
 			{/* Top Rated Product Widget */}
