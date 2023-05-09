@@ -10,7 +10,7 @@ class NavbarV3 extends Component {
         let anchor = '#'
         return (
 		<div>
-           <header className="ltn__header-area ltn__header-5 ltn__header-logo-and-mobile-menu-in-mobile ltn__header-logo-and-mobile-menu ltn__header-transparent gradient-color-2">
+           <header className="ltn__header-area ltn__header-5 pb-200 ltn__header-logo-and-mobile-menu-in-mobile ltn__header-logo-and-mobile-menu ltn__header-transparent gradient-color-2">
 				{/* ltn__header-top-area start */}
 				<div className="ltn__header-top-area top-area-color-white d-none">
 					<div className="container">

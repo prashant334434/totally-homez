@@ -17374,14 +17374,14 @@ body {
 }
 .apartments-info-list > ul li label {
   padding-right: 10px;
-  background-color: var(--white);
+  color: white !important;
   position: relative;
   z-index: 2;
 }
 .apartments-info-list > ul li span {
   float: right;
   padding-left: 10px;
-  background-color: var(--white);
+  color: white;
   position: relative;
   z-index: 2;
 }
@@ -17391,11 +17391,10 @@ body {
 }
 
 .apartments-info-list-color > ul li label {
-  background-color: var(--ltn__secondary-color);
 }
 
 .apartments-info-list-color > ul li span {
-  background-color: var(--ltn__secondary-color);
+  /* background-color: var(--ltn__secondary-color); */
 }
 
 .section-bg-1 .apartments-info-list-color > ul li::before {
