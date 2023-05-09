@@ -16287,23 +16287,28 @@ body {
 .ltn__car-dealer-form-box
   .ltn__custom-icon.ltn__icon-calendar
   .nice-select::before {
-  content: "\f073";
+  content: "\f041";
 }
 
 .ltn__car-dealer-form-box .ltn__custom-icon.ltn__icon-car .nice-select::before {
-  content: "\f015";
+  content: "\f0c9";
 }
 
 .ltn__car-dealer-form-box
   .ltn__custom-icon.ltn__icon-meter
   .nice-select::before {
-  content: "\f3fd";
+  content: "\f3c5";
+}
+.ltn__car-dealer-form-box
+  .ltn__custom-icon.ltn__icon-location
+  .nice-select::before {
+  content: "\f242";
 }
 
 .ltn__car-dealer-form-box
   .ltn__custom-icon.ltn__icon-ring
   .nice-select::before {
-  content: "\f1cd";
+  content: "\f155";
 }
 
 .ltn__car-dealer-form-box .ltn__custom-icon.ltn__icon-cog .nice-select::before {

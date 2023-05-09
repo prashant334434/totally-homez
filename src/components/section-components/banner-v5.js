@@ -20,7 +20,7 @@ class BannerV5 extends Component {
 							<div className="ltn__car-dealer-form-tab">
 								<div className='ltn__tab-menu'>
 								<div className="nav">
-								<a className="active show" data-bs-toggle="tab" href="#ltn__form_tab_1_1"><i className="fas fa-home" />Projects</a>
+								<a className="active show" data-bs-toggle="tab" href="#ltn__form_tab_1_1"><i className="fas fa-clipboard-list" />Projects</a>
 
 									<a className="" data-bs-toggle="tab" href="#ltn__form_tab_1_2"><i className="fas fa-home" />Rent Home</a>
 									<a data-bs-toggle="tab" href="#ltn__form_tab_1_3" className><i className="fas fa-home" />Sale Home</a>
@@ -31,24 +31,12 @@ class BannerV5 extends Component {
 								<div className="tab-pane fade active show" id="ltn__form_tab_1_1">
 									<div className="car-dealer-form-inner">
 									<form action="#" className="ltn__car-dealer-form-box row">
-										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-calendar col-lg-4 col-md-6">
+										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-meter  col-lg-4 col-md-6">
 										<label>
 											Location
 										</label>
 										<select className="nice-select">
-											<option>Property Type</option>
-											<option>Apartment</option>
-											<option>Co-op</option>
-											<option>Condo</option>
-											<option>Single Family Home</option>
-										</select>
-										</div> 
-										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-car col-lg-4 col-md-6">
-										<label>
-											Sub-location
-										</label>
-										<select className="nice-select">
-											<option>Location</option>
+										<option>Location</option>
 											<option>chicago</option>
 											<option>London</option>
 											<option>Los Angeles</option>
@@ -56,11 +44,12 @@ class BannerV5 extends Component {
 											<option>New Jersey</option>
 										</select>
 										</div> 
-										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-meter col-lg-4 col-md-6">
+										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-calendar col-lg-4 col-md-6">
 										<label>
-											Category
+											Sub-location
 										</label>
 										<select className="nice-select">
+											
 											<option>Sub Location</option>
 											<option>Bayonne</option>
 											<option>Greenville</option>
@@ -69,6 +58,19 @@ class BannerV5 extends Component {
 											<option>The Heights</option>
 											<option>Upper East Side</option>
 											<option>West Side</option>
+										</select>
+										</div> 
+										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-car col-lg-4 col-md-6">
+										<label>
+											Category
+										</label>
+										<select className="nice-select">
+											
+											<option>Property Type</option>
+											<option>Apartment</option>
+											<option>Co-op</option>
+											<option>Condo</option>
+											<option>Single Family Home</option>
 										</select>
 										</div> 
 										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-ring col-lg-4 col-md-6">
@@ -84,7 +86,7 @@ class BannerV5 extends Component {
 
 										</select>
 										</div> 
-										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-ring col-lg-4 col-md-6">
+										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-pin col-lg-4 col-md-6">
 										<label>
 											Bedrooms
 										</label>
@@ -119,24 +121,12 @@ class BannerV5 extends Component {
 								<div className="tab-pane fade container-fluid" id="ltn__form_tab_1_2">
 									<div className="car-dealer-form-inner">
 									<form action="#" className="ltn__car-dealer-form-box row">
-										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-calendar col-lg-4 col-md-6">
+										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-meter  col-lg-4 col-md-6">
 										<label>
 											Location
 										</label>
 										<select className="nice-select">
-											<option>Property Type</option>
-											<option>Apartment</option>
-											<option>Co-op</option>
-											<option>Condo</option>
-											<option>Single Family Home</option>
-										</select>
-										</div> 
-										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-car col-lg-4 col-md-6">
-										<label>
-											Sub-location
-										</label>
-										<select className="nice-select">
-											<option>Location</option>
+										<option>Location</option>
 											<option>chicago</option>
 											<option>London</option>
 											<option>Los Angeles</option>
@@ -144,11 +134,12 @@ class BannerV5 extends Component {
 											<option>New Jersey</option>
 										</select>
 										</div> 
-										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-meter col-lg-4 col-md-6">
+										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-calendar col-lg-4 col-md-6">
 										<label>
-											Category
+											Sub-location
 										</label>
 										<select className="nice-select">
+											
 											<option>Sub Location</option>
 											<option>Bayonne</option>
 											<option>Greenville</option>
@@ -157,6 +148,19 @@ class BannerV5 extends Component {
 											<option>The Heights</option>
 											<option>Upper East Side</option>
 											<option>West Side</option>
+										</select>
+										</div> 
+										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-car col-lg-4 col-md-6">
+										<label>
+											Category
+										</label>
+										<select className="nice-select">
+											
+											<option>Property Type</option>
+											<option>Apartment</option>
+											<option>Co-op</option>
+											<option>Condo</option>
+											<option>Single Family Home</option>
 										</select>
 										</div> 
 										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-ring col-lg-4 col-md-6">
@@ -172,7 +176,7 @@ class BannerV5 extends Component {
 
 										</select>
 										</div> 
-										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-ring col-lg-4 col-md-6">
+										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-pin col-lg-4 col-md-6">
 										<label>
 											Bedrooms
 										</label>
@@ -207,24 +211,12 @@ class BannerV5 extends Component {
 								<div className="tab-pane fade container-fluid" id="ltn__form_tab_1_3">
 									<div className="car-dealer-form-inner">
 									<form action="#" className="ltn__car-dealer-form-box row">
-										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-calendar col-lg-4 col-md-6">
+										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-meter  col-lg-4 col-md-6">
 										<label>
 											Location
 										</label>
 										<select className="nice-select">
-											<option>Property Type</option>
-											<option>Apartment</option>
-											<option>Co-op</option>
-											<option>Condo</option>
-											<option>Single Family Home</option>
-										</select>
-										</div> 
-										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-car col-lg-4 col-md-6">
-										<label>
-											Sub-location
-										</label>
-										<select className="nice-select">
-											<option>Location</option>
+										<option>Location</option>
 											<option>chicago</option>
 											<option>London</option>
 											<option>Los Angeles</option>
@@ -232,11 +224,12 @@ class BannerV5 extends Component {
 											<option>New Jersey</option>
 										</select>
 										</div> 
-										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-meter col-lg-4 col-md-6">
+										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-calendar col-lg-4 col-md-6">
 										<label>
-											Category
+											Sub-location
 										</label>
 										<select className="nice-select">
+											
 											<option>Sub Location</option>
 											<option>Bayonne</option>
 											<option>Greenville</option>
@@ -245,6 +238,19 @@ class BannerV5 extends Component {
 											<option>The Heights</option>
 											<option>Upper East Side</option>
 											<option>West Side</option>
+										</select>
+										</div> 
+										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-car col-lg-4 col-md-6">
+										<label>
+											Category
+										</label>
+										<select className="nice-select">
+											
+											<option>Property Type</option>
+											<option>Apartment</option>
+											<option>Co-op</option>
+											<option>Condo</option>
+											<option>Single Family Home</option>
 										</select>
 										</div> 
 										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-ring col-lg-4 col-md-6">
@@ -260,7 +266,7 @@ class BannerV5 extends Component {
 
 										</select>
 										</div> 
-										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-ring col-lg-4 col-md-6">
+										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-pin col-lg-4 col-md-6">
 										<label>
 											Bedrooms
 										</label>
