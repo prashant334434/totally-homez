@@ -12138,7 +12138,7 @@ label{
 }
 
 .ltn__blog-brief {
-  padding: 30px 0 30px;
+  /* padding: 30px 0 30px; */
 }
 
 .ltn__blog-title {
@@ -12422,10 +12422,10 @@ label{
 
 /* ltn__blog-item-5 */
 .ltn__blog-item-5 {
-  border: 2px solid var(--border-color-11);
+  /* border: 2px solid var(--border-color-11); */
 }
 .ltn__blog-item-5 .ltn__blog-brief {
-  padding: 40px 30px 40px 30px;
+  /* padding: 40px 30px 40px 30px; */
 }
 .ltn__blog-item-5 .ltn__blog-meta-btn {
   padding-top: 10px;
