@@ -4775,6 +4775,7 @@ a{
 label{
   font-family: "League Spartan";
   font-size:17px;
+  padding-right: 83px;
 }
 
 .popular-post-widget-brief {
@@ -9715,7 +9716,7 @@ label{
 .ltn__tab-menu a {
   display: inline-block;
 
-  padding: 0.5rem 1.5rem;
+  padding: 3.8px 1.5rem;
   margin-right: 5px;
 
   color: var(--ltn__heading-color);
@@ -16230,7 +16231,7 @@ body {
 .ltn__car-dealer-form-box .nice-select {
   margin: 0;
   padding-right: 40px;
-  padding-left: 20px;
+  padding-left: 42px;
   border-radius: 8px;
   min-width: 95%;
   font-size: 13px;
