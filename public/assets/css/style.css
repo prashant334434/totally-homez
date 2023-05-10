@@ -18617,6 +18617,40 @@ body {
   display: none;
 }
 
+.wcallFlex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wcallFlex ul{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wcallFlex ul li{
+  list-style: none;
+}
+.li1{
+  margin-right: 1rem;
+}
+.rotateclass{
+  transform: rotate(180deg);
+  transform: scaleX(-1);
+  font-size: small;
+}
+
+.callclass{
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+@media (max-width: 950px) {
+  .hideclass{
+    display: none;
+  }
+}
+
 /* ----------------------------------------------------
     END
 ---------------------------------------------------- */
