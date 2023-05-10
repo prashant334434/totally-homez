@@ -44,6 +44,7 @@ import NewV2Team from './section-components/NewV2Team';
 import { useDispatch } from 'react-redux';
 import { getAllPropertiesApi } from '../actions/propertiesActions';
 import CarouselComponent from './section-components/carousel/Carousel';
+import SimpleSlider from './section-components/SimpleSlider';
 
 
 const Home_V7 = () => {
@@ -94,6 +95,7 @@ const Home_V7 = () => {
 
         {/* <ProductSlider customClass="ltn__feature-area section-bg-4 pt-120 pb-90 mb-120---"/> */}
         <ProductGrid />
+        <SimpleSlider/>
         <VideoV2/>
         <ProductGrid />
 <BestTownhouse/>
