@@ -10149,7 +10149,7 @@ label{
 }
 
 .property-detail-info-list ul {
-  padding: 30px 50px 40px;
+ 
   margin: 0;
   float: left;
   border-right: 1px solid;
@@ -11356,7 +11356,7 @@ label{
   margin-bottom: 50px;
 }
 .ltn__category-item-5 a {
-  padding: 40px 30px 35px;
+  padding: 12px 12px 12px;
   display: block;
   position: relative;
 }

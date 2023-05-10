@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import parse from 'html-react-parser';
 import NearBy from '../section-components/NearBy';
 import { InlineWidget, PopupButton, PopupWidget } from "react-calendly";
+import ShopGrid_V1 from '../shop-grid';
 
 const ShopDetails = () => {
 	let publicUrl = process.env.PUBLIC_URL+'/'
@@ -25,19 +26,12 @@ const ShopDetails = () => {
 	  }
 	  
   return (
-	<div className="ltn__shop-details-area pt-40 pb-10">
-	<div className='container'>
-	<div className="row">
-	<div className="col-lg-12 col-md-12">
+	<div className="ltn__shop-details-area pt-20 pb-10">
 	
-
-	</div>
-	</div>
-	</div>
 	
 	<div className="container">
 	<div className="row">
-		<div className="col-lg-9 col-md-12">
+		<div className="col-lg-8 col-md-12">
 		
 		<div className="ltn__shop-details-inner ltn__page-details-inner mb-60">
 		<h4 className="title-2">Features</h4>
@@ -47,8 +41,8 @@ const ShopDetails = () => {
 				<div className="property-detail-feature-list-item">
 					<i className="flaticon-double-bed" />
 					<div>
-					<h6>Bedroom</h6>
-					<small>20 x 16 sq feet</small>
+					{/* <h6>Bedroom</h6> */}
+					<p>20 x 16 sq feet</p>
 					</div>
 				</div>
 				</li>
@@ -56,8 +50,8 @@ const ShopDetails = () => {
 				<div className="property-detail-feature-list-item">
 					<i className="flaticon-clean" />
 					<div>
-					<h6>Bathroom</h6>
-					<small>20 x 16 sq feet</small>
+					{/* <h6>Bathroom</h6> */}
+					<p>20 x 16 sq feet</p>
 					</div>
 				</div>
 				</li>
@@ -65,8 +59,8 @@ const ShopDetails = () => {
 				<div className="property-detail-feature-list-item">
 					<i className="flaticon-square-shape-design-interface-tool-symbol" />
 					<div>
-					<h6>Size</h6>
-					<small>20 x 16 sq feet</small>
+					{/* <h6>Size</h6> */}
+					<p>20 x 16 sq feet</p>
 					</div>
 				</div>
 				</li>
@@ -74,8 +68,8 @@ const ShopDetails = () => {
 				<div className="property-detail-feature-list-item">
 				<i className="flaticon-home-2" />
 					<div>
-					<h6>Type</h6>
-					<small>Villa</small>
+					{/* <h6>Type</h6> */}
+					<p>Villa</p>
 					</div>
 				</div>
 				</li>
@@ -83,8 +77,8 @@ const ShopDetails = () => {
 				<div className="property-detail-feature-list-item">
 				<i className="icon-wheel-1" />
 					<div>
-					<h6>For</h6>
-					<small>Sale</small>
+					{/* <h6>For</h6> */}
+					<p>Sale</p>
 					</div>
 				</div>
 				</li>
@@ -93,8 +87,8 @@ const ShopDetails = () => {
 				<div className="property-detail-feature-list-item">
 					<i className="fas fa-images" />
 					<div>
-					<h6>View</h6>
-					<small>Burj Khalifa</small>
+					{/* <h6>View</h6> */}
+					<p>Burj Khalifa</p>
 					</div>
 				</div>
 				</li>
@@ -321,24 +315,26 @@ const ShopDetails = () => {
 			{/* APARTMENTS PLAN AREA END */}
 	
 		</div>
+        <ShopGrid_V1 />
+
 		</div>
 		
-		<div className="col-lg-3">
+		<div className="col-lg-4">
 		<aside className="sidebar ltn__shop-sidebar ltn__right-sidebar---">
 			{/* Author Widget */}
 			<div className="widget ltn__author-widget">
 			<h4 className="title-2">Property Detail</h4>  
 			<div className="property-detail-info-list section-bg-0 clearfix mb-60">                          
 			<ul>
-			<li><h4><label>Price:</label> <br/><span>AED 2,900,000 </span></h4></li>
+			<li><h4><label>Price:</label><span>AED 2,900,000 </span></h4></li>
 
-				<li><label>Property ID:</label><br/> <span>HZ29</span></li>
-				<li><label>Home Area: </label> <br/><span>120 sqft</span></li>
-				<li><label>Price: </label><br/> <span>120 sqft</span></li>
+				<li><label>Property ID:</label> <span>HZ29</span></li>
+				<li><label>Home Area: </label> <span>120 sqft</span></li>
+				<li><label>Price: </label><span>120 sqft</span></li>
 
-				<li><label>Rooms:</label><br/> <span>7</span></li>
-				<li><label>Baths:</label> <br/><span>2</span></li>
-				<li><label>Year built:</label><br/> <span>1992</span></li>
+				<li><label>Rooms:</label> <span>7</span></li>
+				<li><label>Baths:</label> <span>2</span></li>
+				<li><label>Year built:</label> <span>1992</span></li>
 			</ul>
 			
 			</div>

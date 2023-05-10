@@ -15,7 +15,6 @@ const Product_Details = () => {
 
         <PageHeader headertitle="Garden Homes Frond C" customclass="mb-0" />
         <ProductDetails />
-        <ShopGrid_V1 />
         <CallToActionV1 />
         <Footer />
     </div>
