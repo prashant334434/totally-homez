@@ -9715,13 +9715,13 @@ label{
 .ltn__tab-menu a {
   display: inline-block;
 
-  padding: 15px 40px;
+  padding: 0.5rem 1.5rem;
   margin-right: 5px;
 
   color: var(--ltn__heading-color);
 
-  font-weight: 700;
-  border-radius: 10px;
+  font-weight: 500;
+  border-radius: 0.75rem !important;
 }
 .ltn__gallery-filter-menu button,
 .ltn__tab-menu a:hover{
@@ -12363,6 +12363,7 @@ label{
 
 .ltn__blog-item-3 .ltn__blog-img {
   overflow: hidden;
+  border-radius: 5px;
 }
 .ltn__blog-item-3 .ltn__blog-img img {
   -webkit-transition: all 0.5s ease 0s;
@@ -13598,6 +13599,7 @@ blockquote::before {
   -ms-flex-pack: center;
   justify-content: center;
   text-align: center;
+  border-radius: 5px;
 }
 .ltn__banner-style-4 .ltn__banner-info {
   position: relative;
@@ -13625,6 +13627,7 @@ blockquote::before {
   transition: all 0.4s ease 0s;
   background-color: var(--ltn__primary-color);
   opacity: 0.3;
+  border-radius: 5px;
 }
 .ltn__banner-style-4:hover::before {
   opacity: 0.15;
@@ -15011,7 +15014,7 @@ body {
 }
 .about-us-img-wrap img {
   margin: 0;
-  border-radius: 22px;
+  border-radius: 5px;
 }
 
 .about-us-img-info {
@@ -15791,6 +15794,7 @@ body {
   -ms-flex-align: center;
   align-items: center;
   padding: 50px 60px;
+  border-radius: 5px;
 }
 .call-to-action-inner-6 .coll-to-info p {
   margin-bottom: 0;
