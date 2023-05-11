@@ -719,6 +719,13 @@
             nextArrow: '<a class="slick-next"><i class="fas fa-arrow-right" alt="Arrow Icon"></i></a>',
             responsive: [
                 {
+                    breakpoint: 2500,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1
+                    }
+                },
+                {
                     breakpoint: 1800,
                     settings: {
                         slidesToShow: 3,
@@ -742,7 +749,7 @@
                 {
                     breakpoint: 1200,
                     settings: {
-                        slidesToShow: 2,
+                        slidesToShow: 3,
                         slidesToScroll: 1
                     }
                 },
@@ -760,7 +767,7 @@
                     settings: {
                         arrows: false,
                         dots: true,
-                        slidesToShow: 2,
+                        slidesToShow: 3,
                         slidesToScroll: 1
                     }
                 },
@@ -769,7 +776,7 @@
                     settings: {
                         arrows: false,
                         dots: true,
-                        slidesToShow: 1,
+                        slidesToShow: 3,
                         slidesToScroll: 1
                     }
                 }

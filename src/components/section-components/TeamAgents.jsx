@@ -1,5 +1,3 @@
-
-
 import React from 'react'
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
@@ -8,16 +6,17 @@ import { getTeamsApi } from '../../actions/teamActions'
 import { TEAM_API_URL } from '../../constants/config'
 
 const TeamAgents = (props) => {
-    const {data}=useSelector((state)=>state.team.team)
-    console.log(data)
-    const dispatch=useDispatch()
+	const { data } = useSelector((state) => state.team.team)
+	console.log(data)
+	const dispatch = useDispatch()
 	let publicUrl = process.env.PUBLIC_URL + '/'
 	let customClass = props.customClass ? props.customClass : ''
+	let arr = [1, 2, 3, 4, 5];
 
+	useEffect(() => {
+		dispatch(getTeamsApi())
+	}, [dispatch])
 
-    useEffect(()=>{
-dispatch(getTeamsApi())
-    },[dispatch])
 	return (
 		<div>
 			<div>
@@ -31,31 +30,23 @@ dispatch(getTeamsApi())
 								</div>
 							</div>
 						</div>
-						<div className="row ltn__product-slider-item-three-active-full-width slick-arrow-1">
-							<div className="col-lg-3 col-sm-6">
-                            {
-                                data?.map((item,index)=>{
-                                   return (
-                                    <div key={index} className="ltn__team-item ltn__team-item-3---">
-									<div className="team-img img2 wcallFlex">
-										<img className="img2" src={`${TEAM_API_URL}/${item?.path}`} alt="Image" />
+						<div className="row ltn__product-slider-item-three-active-full-width slick-arrow-1 centerclass">
+							{
+								data && data.map((val, idx) => {
+									console.log(val);
+									return <div key={idx} className="col-lg-3 col-sm-6">
+										<div className="ltn__team-item ltn__team-item-3---">
+											<div className="team-img img2 wcallFlex">
+												<img className="img2" src={`${TEAM_API_URL}/${val.path}`} alt="Image" />
+											</div>
+											<div className="team-info">
+												<h4>{val.name}</h4>
+												<h6 className=" designnation ltn__secondary-color">{val.designation}</h6>
+											</div>
+										</div>
 									</div>
-									<div className="team-info">
-										<h4>{item?.name}</h4>
-										<h6 className=" designnation ltn__secondary-color">{item?.designation}</h6>
-									</div>
-								</div>
-                                   )
-                                    
-                                   
-
-                                })
-                            }
-								
-							</div>
-
-							
-							{/*  */}
+								})
+							}
 						</div>
 					</div>
 				</div>
