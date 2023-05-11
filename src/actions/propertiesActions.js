@@ -8,7 +8,7 @@ export const getAllPropertiesApi = () =>
 
 
 
-            const  data = await axios.get(`https://totallyhomerealestate.com/API/api/properties`);
+            const  data = await axios.get(`https://totallyhomerealestate.com/API/api/teams`);
             console.log(data)
 
             dispatch({
