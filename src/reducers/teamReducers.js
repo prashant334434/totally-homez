@@ -10,7 +10,7 @@ export const teamReducer = (state = { team: [] }, action) => {
         case GET_ALL_TEAM_SUCCESS:
             return {
                 loading: false,
-                products: action.payload.products,
+                team: action.payload.data,
               
             }
         case GET_ALL_TEAM_FAILURE: {
