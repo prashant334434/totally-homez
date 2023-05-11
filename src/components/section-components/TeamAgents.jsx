@@ -34,7 +34,7 @@ const TeamAgents = (props) => {
 							{
 								data && data.map((val, idx) => {
 									console.log(val);
-									return <div key={idx} className="col-lg-3 col-sm-6">
+									return <div key={idx} className="col-xl-3 col-xxl-3 col-lg-3 col-sm-6">
 										<div className="ltn__team-item ltn__team-item-3---">
 											<div className="team-img img2 wcallFlex">
 												<img className="img2" src={`${TEAM_API_URL}/${val.path}`} alt="Image" />
