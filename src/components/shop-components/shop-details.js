@@ -5,8 +5,11 @@ import NearBy from '../section-components/NearBy';
 import { InlineWidget, PopupButton, PopupWidget } from "react-calendly";
 import ShopGrid_V1 from '../shop-grid';
 import {useStickyBox} from "react-sticky-box";
+import { useDispatch } from 'react-redux';
+import { getSingalPropertyDetailsApi } from '../../actions/propertiesActions';
 
 const ShopDetails = () => {
+	const dispatch=useDispatch()
 	let publicUrl = process.env.PUBLIC_URL+'/'
 	const stickyRef = useStickyBox({offsetTop: 150, offsetBottom: 100})
 	const [isSticky, setSticky] = useState(false);
@@ -25,6 +28,10 @@ const ShopDetails = () => {
 	  function toggleDescription() {
 		setShowFullDescription(!showFullDescription);
 	  }
+
+	  useEffect(()=>{
+		dispatch(getSingalPropertyDetailsApi())
+	  },[dispatch])
 	  
   return (
 	<div className="ltn__shop-details-area pt-20 pb-10">
