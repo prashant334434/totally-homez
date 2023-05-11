@@ -45,6 +45,7 @@ import { useDispatch } from 'react-redux';
 import { getAllPropertiesApi } from '../actions/propertiesActions';
 import CarouselComponent from './section-components/carousel/Carousel';
 import SimpleSlider from './section-components/SimpleSlider';
+import Availability from './section-components/availability';
 
 
 const Home_V7 = () => {
@@ -95,7 +96,8 @@ const Home_V7 = () => {
 
         {/* <ProductSlider customClass="ltn__feature-area section-bg-4 pt-120 pb-90 mb-120---"/> */}
         <ProductGrid />
-        <SimpleSlider/>
+        <Availability />
+      {/*  <SimpleSlider/>*/}
         <VideoV2/>
         <ProductGrid />
 <BestTownhouse/>

@@ -18637,12 +18637,11 @@ body {
 .rotateclass{
   transform: rotate(180deg);
   transform: scaleX(-1);
-  font-size: small;
+  font-size: initial;
 }
 
 .callclass{
-  font-weight: 400;
-  font-size: 1rem;
+ 
 }
 
 @media (max-width: 950px) {
