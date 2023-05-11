@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, HashRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Switch } from "react-router-dom";
 import HomeV1 from './components/home-v1';
 import HomeV2 from './components/home-v2';
 import HomeV3 from './components/home-v3';
@@ -77,7 +77,7 @@ import TeamsNew from './components/TeamsNew';
         },
       ];
    return (
-    <HashRouter basename="/">
+    <BrowserRouter>
     <div>
     <Switch>
         <Route exact path="/" component={HomeV7} />
@@ -137,7 +137,12 @@ import TeamsNew from './components/TeamsNew';
         <Route path="/our-team" component={ TeamsNew } />
     </Switch>
     </div>
-</HashRouter>   )
+    </BrowserRouter>
+
+
+
+
+)
  }
  
  export default App

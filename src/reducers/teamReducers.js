@@ -16,7 +16,7 @@ export const teamReducer = (state = { team: [] }, action) => {
         case GET_ALL_TEAM_FAILURE: {
             return {
                 loading: false,
-                error: action.payload,
+                error:true,
             }
         }
         default:
