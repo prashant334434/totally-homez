@@ -1,7 +1,7 @@
 import React from 'react'
 // import Navbar from './global-components/navbar-v4';
 // import Navbar from './global-components/navbar-v4';
-import Navbar from '../global-components/navbar-v3';
+import Navbar from '../global-components/navbar';
 
 import PageHeader from '../global-components/page-header';
 import ShogGrid from '../shop-components/shop-grid-v1';
@@ -26,8 +26,9 @@ const OffPlan = () => {
   
   <div>
      <div>
-     <Navbar CustomClass="ltn__header-transparent gradient-color-2" /> 
 
+
+        <Navbar page={"offplan"} />
         <AboutOffPlan/>
         <div className='container'>
       </div>

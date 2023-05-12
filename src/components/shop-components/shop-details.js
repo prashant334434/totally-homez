@@ -7,9 +7,10 @@ import ShopGrid_V1 from '../shop-grid';
 import { useStickyBox } from "react-sticky-box";
 import { useDispatch } from 'react-redux';
 import { getSingalPropertyDetailsApi } from '../../actions/propertiesActions';
+import { getTeamDetailsApi } from '../../actions/teamActions';
+import AgentDetails from './AgentDetails';
 
 const ShopDetails = ({ propertyDetails }) => {
-	console.log(propertyDetails)
 	const amenitiesArray = propertyDetails?.property_amenities?.split(',');
 	console.log(amenitiesArray)
 	const maxLength = 100
@@ -24,6 +25,10 @@ const ShopDetails = ({ propertyDetails }) => {
 	const [isSticky, setSticky] = useState(false);
 	const [showFullDescription, setShowFullDescription] = useState(false);
 	useEffect(() => {
+		if(propertyDetails?.property_agent_name){
+			dispatch(getTeamDetailsApi(propertyDetails?.property_agent_name))
+
+		}
 		const handleScroll = () => {
 			setSticky(window.scrollY > 0);
 		};
@@ -33,14 +38,13 @@ const ShopDetails = ({ propertyDetails }) => {
 		return () => {
 			window.removeEventListener('scroll', handleScroll);
 		};
-	}, []);
+
+	}, [dispatch]);
 	function toggleDescription() {
 		setShowFullDescription(!showFullDescription);
 	}
 
-	useEffect(() => {
-		dispatch(getSingalPropertyDetailsApi())
-	}, [dispatch])
+	
 
 	return (
 		<div className="ltn__shop-details-area pt-20 pb-10">
@@ -272,41 +276,11 @@ const ShopDetails = ({ propertyDetails }) => {
 
 								</div>
 							</div>
+{
+	propertyDetails?.property_agent_name &&
+	<AgentDetails agentId={propertyDetails?.property_agent_name}/>
 
-							<div className="widget ltn__author-widget">
-								<div className="ltn__author-widget-inner text-center">
-									<center>
-
-										<img src={publicUrl + "assets/img/team/4.jpg"} alt="Image" />
-										<h5>{propertyDetails?.property_agent_name}</h5>
-										<small>Traveller/Photographer</small>
-
-									</center>
-
-									<div className="product-ratting">
-
-									</div>
-									<br />
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis distinctio, odio, eligendi suscipit reprehenderit atque.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis distinctio, odio, eligendi suscipit reprehenderit atque.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis distinctio, odio, eligendi suscipit reprehenderit atque.</p>
-									<div className="ltn__social-media">
-										<center>
-											{/* <Link className="btn btn-effect-3" to="/contact">Call</Link> */}
-											<PopupButton
-												url="https://calendly.com/prashant-vashisth/counsaltant"
-
-												className="btn theme-btn-1"
-												rootElement={document.getElementById("root")}
-												text="Click here to schedule!"
-											/>
-										</center>
-
-
-
-
-									</div>
-
-								</div>
-							</div>
+}
 							{/* Search Widget */}
 							{/* <InlineWidget url="https://calendly.com/rohit0101rm" /> */}
 							{/* <PopupWidget

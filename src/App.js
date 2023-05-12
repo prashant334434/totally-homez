@@ -132,7 +132,7 @@ import TeamsNew from './components/TeamsNew';
 
 
         <Route path="/listings" component={ Listings } />
-        <Route path="/property-details" component={ ProdductDetails } />
+        <Route path="/property-details/:id" component={ ProdductDetails } />
         <Route path="/contact-us" component={ NewContact } />
         <Route path="/our-team" component={ TeamsNew } />
     </Switch>

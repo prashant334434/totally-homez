@@ -9,12 +9,15 @@ import BlogGrid from './blog-components/blog-grid';
 import ShopGrid_V1 from './shop-grid';
 import { useDispatch, useSelector } from 'react-redux';
 import { getSingalPropertyDetailsApi } from '../actions/propertiesActions';
+import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
 
 const Product_Details = () => {
+    const {id}=useParams()
+    console.log(id)
     const {propertyDetails}=useSelector((state)=>state.propertyDetails);
     const dispatch=useDispatch()
     useEffect(()=>{
-        dispatch(getSingalPropertyDetailsApi())
+        dispatch(getSingalPropertyDetailsApi(id))
     },[dispatch])
     return <div>
     <Navbar CustomClass="ltn__header-transparent gradient-color-2" /> 

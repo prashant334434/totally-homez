@@ -38,7 +38,7 @@ const ProductGrid = (props) => {
 											</div>
 											<div className="product-info">
 												<div className="product-price">
-													<h2 className="product-title go-top"><Link to="/product-details">{categoryProperty?.property_name}</Link></h2>
+													<h2 className="product-title go-top"><Link to={`/property-details/${categoryProperty?.id}`}>{categoryProperty?.property_name}</Link></h2>
 
 													<span>AED {categoryProperty?.property_price}</span>
 

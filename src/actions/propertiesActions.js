@@ -25,14 +25,14 @@ export const getAllPropertiesApi = () =>
 
 
 
-    export const getSingalPropertyDetailsApi = () =>
+    export const getSingalPropertyDetailsApi = (id) =>
     async (dispatch) => {
         try {
             dispatch({ type: GET_PROPERTY_DETAILS_REQUEST });
 
 
 
-            const  {data} = await axios.get(`https://totallyhomerealestate.com/API/api/properties/13`);
+            const  {data} = await axios.get(`https://totallyhomerealestate.com/API/api/properties/${id}`);
             console.log(data)
 
             dispatch({

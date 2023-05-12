@@ -36,7 +36,7 @@ export const teamDetailsReducer = (state = { teamDetails: {} }, action) => {
         case GET_TEAM_DETAILS_SUCCESS:
             return {
                 loading: false,
-                teamDetails: action.payload.propeteamDetailsrtyDetails,
+                teamDetails: action.payload,
               
             }
         case GET_TEAM_DETAILS_FAILURE: {
