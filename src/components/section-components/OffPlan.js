@@ -1,6 +1,8 @@
 import React from 'react'
 // import Navbar from './global-components/navbar-v4';
 // import Navbar from './global-components/navbar-v4';
+import Navbar from '../global-components/navbar-v3';
+
 import PageHeader from '../global-components/page-header';
 import ShogGrid from '../shop-components/shop-grid-v1';
 import CallToActionV1 from '../section-components/call-to-action-v1';
@@ -15,7 +17,6 @@ import AboutOffPlan from './AboutOffPlan';
 import CounterFeatures from './CounterFeatures';
 import Carousel from './carousel/Carousel';
 import { IMAGES, VIDEOS, LARGE_IMAGES } from "../../data/data";
-import NavbarV3 from '../global-components/navbar-v4';
 import Footer2 from '../global-components/Footer2';
 import ArchitechturePlan from "./architecture-plan";
 import PaymentPlan from './PaymentPlan';
@@ -25,7 +26,7 @@ const OffPlan = () => {
   
   <div>
      <div>
-     <NavbarV3 CustomClass="ltn__header-transparent gradient-color-2" /> 
+     <Navbar CustomClass="ltn__header-transparent gradient-color-2" /> 
 
         <AboutOffPlan/>
         <div className='container'>
