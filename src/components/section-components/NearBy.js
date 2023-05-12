@@ -1,7 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom/cjs/react-router-dom.min'
 
-const NearBy = () => {
+const NearBy = ({propertyDetails}) => {
+	console.log("nearBy",propertyDetails)
+	const nearByArray = propertyDetails?.property_near_by_place?.split(',');
+console.log("nearByArray",nearByArray)
     let publicUrl = process.env.PUBLIC_URL+'/'
     let imagealt = 'image'
 
@@ -17,30 +20,17 @@ const NearBy = () => {
 			      </div>
 			    </div>
 			    <div className="row ltn__category-slider-active--- slick-arrow-1 justify-content-center go-top">
-			      <div className="col-lg-3 col-md-4 col-sm-6 col-6">
+			     
+				  {
+					nearByArray?.map((near)=>(
+						<div className="col-lg-3 col-md-4 col-sm-6 col-6">
 			        <div className="ltn__category-item ltn__category-item-5 ltn__category-item-5-2 text-center---">
 			          <Link to="/shop">
                       <center>
-			            <span className="category-icon"><i className="flaticon-office" /></span>
-			            {/* <span className="category-number">01</span> */}
-			            <span className="category-title"> Burj Khalifa</span>
-			            <span className="category-title"> 30 min</span>
-			            {/* <span className="category-brief">
-			              Enimad minim veniam quis no exercitation ullamco lab
-			            </span> */}
-			            <span className="category-btn d-none"><i className="flaticon-right-arrow" /></span>
-                        </center>
-			          </Link>
-			        </div>
-			      </div>
-			      <div className="col-lg-3 col-md-4 col-sm-6 col-6">
-			        <div className="ltn__category-item ltn__category-item-5 ltn__category-item-5-2 text-center---">
-			          <Link to="/shop">
-                      <center>
-			            <span className="category-icon"><i className="fas fa-plane" /></span>
+			            {/* <span className="category-icon"><i className="fas fa-plane" /></span> */}
 			            {/* <span className="category-number">02</span> */}
-			            <span className="category-title">Airport</span>
-			            <span className="category-title">5 min</span>
+			            <span className="category-title">{near.trim()}</span>
+			            {/* <span className="category-title">5 min</span> */}
 			            {/* <span className="category-brief">
 			              Enimad minim veniam quis no exercitation ullamco lab
 			            </span> */}
@@ -49,38 +39,10 @@ const NearBy = () => {
 			          </Link>
 			        </div>
 			      </div>
-			      <div className="col-lg-3 col-md-4 col-sm-6 col-6">
-			        <div className="ltn__category-item ltn__category-item-5 ltn__category-item-5-2 text-center---">
-			          <Link to="/shop">
-                      <center>
-			            <span className="category-icon"><i className="fas fa-ship" /></span>
-			            {/* <span className="category-number">03</span> */}
-			            <span className="category-title">Dubai marina</span>
-			            <span className="category-title">10 min</span>
-			            {/* <span className="category-brief">
-			              Enimad minim veniam quis no exercitation ullamco lab
-			            </span> */}
-			            <span className="category-btn d-none"><i className="flaticon-right-arrow" /></span>
-                        </center>
-			          </Link>
-			        </div>
-			      </div>
-			      <div className="col-lg-3 col-md-4 col-sm-6 col-6">
-			        <div className="ltn__category-item ltn__category-item-5 ltn__category-item-5-2 text-center---">
-			          <Link to="/shop">
-                      <center>
-			            <span className="category-icon"><i className="fa fa-school" /></span>
-			            {/* <span className="category-number">04</span> */}
-			            <span className="category-title">Schools</span>
-			            <span className="category-title">20 min</span>
-			            {/* <span className="category-brief">
-			              Enimad minim veniam quis no exercitation ullamco lab
-			            </span> */}
-			            <span className="category-btn d-none"><i className="flaticon-right-arrow" /></span>
-                        </center>
-			          </Link>
-			        </div>
-			      </div>
+					))
+				  }
+			      
+			     
 			     
 			    </div>
 			  </div>
