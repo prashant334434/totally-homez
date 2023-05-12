@@ -18362,6 +18362,9 @@ body {
   color: white;
   background-color :red;
 }
+.sizingfont{
+  font-size: 40px !important;
+}
 
 .btn-opacity-9 {
   opacity: 0.9;
