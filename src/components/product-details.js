@@ -20,7 +20,7 @@ const Product_Details = () => {
         <Navbar />
         <ProductSlider />
 
-        <PageHeader headertitle="Garden Homes Frond C" customclass="mb-0" />
+        <PageHeader propertyDetails={propertyDetails} headertitle="Garden Homes Frond C" customclass="mb-0" />
         <ProductDetails propertyDetails={propertyDetails} />
         <CallToActionV1 />
         <Footer />

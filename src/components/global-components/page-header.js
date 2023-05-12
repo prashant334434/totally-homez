@@ -19,16 +19,17 @@ const PageHead = (props) => {
 				<div className="row">
 				<div className="col-lg-12">
 					<div className="ltn__breadcrumb-inner">
-					<h1 className="page-title">{ HeaderTitle }</h1>
+					<h1 className="page-title">{ props?.propertyDetails?.property_name }</h1>
 					<div className="ltn__breadcrumb-list">
 						<ul>
 						<li><Link to="/"><span className="ltn__secondary-color"><i className="fas fa-home" /></span> Dubai</Link></li>
-						<li>{ Subheader }</li>
-						<li>{ Subheader2 }</li>
+						<li>{ props?.propertyDetails?.property_type }</li>
+						<li>{ props?.propertyDetails?.property_community }</li>
+						<li>{ props?.propertyDetails?.property_sub_community }</li>
+						
 
-						<li>{ Subheader3 }</li>
 
-						<li>{ Subheader4 }</li>
+						<li>{ props?.propertyDetails?.property_name }</li>
 
 						</ul>
 					</div>
