@@ -1,6 +1,6 @@
 import { CATEGORY_PROPERTIES_FAILURE, CATEGORY_PROPERTIES_REQUEST, CATEGORY_PROPERTIES_SUCCESS } from "../constants/categoryConstants";
 
-export const catgoryReducer = (state = { catgoryProperties: [] }, action) => {
+export const catgoryReducer = (state = { categoryProperties: [] }, action) => {
     switch (action.type) {
         case CATEGORY_PROPERTIES_REQUEST:
             return {
@@ -10,13 +10,13 @@ export const catgoryReducer = (state = { catgoryProperties: [] }, action) => {
         case CATEGORY_PROPERTIES_SUCCESS:
             return {
                 loading: false,
-                catgoryProperties: action.payload.data,
+                categoryProperties: action.payload,
               
             }
         case CATEGORY_PROPERTIES_FAILURE: {
             return {
                 loading: false,
-                error: action.payload,
+                error: true,
             }
         }
         default:

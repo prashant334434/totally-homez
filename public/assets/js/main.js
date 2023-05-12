@@ -728,6 +728,8 @@
                 {
                     breakpoint: 1800,
                     settings: {
+                        arrows: true,
+
                         slidesToShow: 3,
                         slidesToScroll: 1
                     }
@@ -735,6 +737,8 @@
                 {
                     breakpoint: 1600,
                     settings: {
+                        arrows: true,
+
                         slidesToShow: 3,
                         slidesToScroll: 1
                     }
@@ -742,6 +746,8 @@
                 {
                     breakpoint: 1400,
                     settings: {
+                        arrows: true,
+
                         slidesToShow: 3,
                         slidesToScroll: 1
                     }
@@ -749,6 +755,8 @@
                 {
                     breakpoint: 1200,
                     settings: {
+                        arrows: true,
+
                         slidesToShow: 3,
                         slidesToScroll: 1
                     }
@@ -765,7 +773,7 @@
                 {
                     breakpoint: 768,
                     settings: {
-                        arrows: false,
+                        arrows: true,
                         dots: true,
                         slidesToShow: 3,
                         slidesToScroll: 1

@@ -99,16 +99,16 @@ const Home_V7 = () => {
         <Availability />
       {/*  <SimpleSlider/>*/}
         <VideoV2/>
-        <ProductGrid />
+        {/* <ProductGrid /> */}
 <BestTownhouse/>
-<ProductGrid />
+{/* <ProductGrid /> */}
 
         {/* <Featuresv1 customClass="ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---"/> */}
         {/* <ProSlider /> */}
         {/* <Gallery /> */}
         <VideoV1 /> 
         <BestPenthouse/>
-        <ProductGrid />
+        {/* <ProductGrid /> */}
 
         {/* <Category /> */}
         {/* <Testimonial /> */}

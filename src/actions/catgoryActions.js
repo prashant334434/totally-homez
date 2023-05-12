@@ -6,9 +6,9 @@ export const getCatgoryProperties = () =>
         try {
             dispatch({ type: CATEGORY_PROPERTIES_REQUEST });
 
+            const  {data}  = await axios.get(`https://totallyhomerealestate.com/API/api/properties/type/apartment`);
 
 
-            const  data = await axios.get(`https://totallyhomerealestate.com/API/api/properties/type/apartment`);
             console.log(data)
 
             dispatch({
@@ -18,7 +18,6 @@ export const getCatgoryProperties = () =>
         } catch (error) {
             dispatch({
                 type:CATEGORY_PROPERTIES_FAILURE,
-                payload: error.response.data.message,
             });
         }
     };
