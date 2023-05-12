@@ -25,7 +25,7 @@ const ProductGrid = (props) => {
 							<div className="col-lg-12">
 								{
 								  data && data.map ((catgoryProperties,index)=>(
-									<div key={index} className="ltn__product-item ltn__product-item-4 text-center---">
+									<div  className="ltn__product-item ltn__product-item-4 text-center---">
 										<div className="product-img go-top">
 											<Link to="/product-details"><img src={publicUrl + "assets/img/product-3/3.jpg"} alt="#" /></Link>
 											<div className="product-badge">
