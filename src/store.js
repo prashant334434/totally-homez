@@ -5,7 +5,7 @@ import { userReducer } from "./reducers/userReducers";
 import { propertyDetailsReducer, propertyReducer } from "./reducers/propertyReducers";
 import { carouselDetailsReducer, carouselReducer } from "./reducers/carouselReducers";
 import { teamDetailsReducer, teamReducer } from "./reducers/teamReducers";
-import { catgoryReducer } from "./reducers/catgoryReducres";
+import { apartmentCategoryReducer, catgoryReducer, penthouseCategoryReducer, townhouseCategoryReducer } from "./reducers/catgoryReducres";
 
 const reducer=combineReducers({
     user:userReducer,
@@ -15,7 +15,10 @@ const reducer=combineReducers({
     carouselDetails:carouselDetailsReducer,
     team:teamReducer,
     teamDetails:teamDetailsReducer,
-    categoryProperties:catgoryReducer
+    categoryProperties:catgoryReducer,
+    townhouseCategoryProperties:townhouseCategoryReducer,
+    apartmentCategoryProperties:apartmentCategoryReducer,
+    penthouseCategoryProperties:penthouseCategoryReducer
     
    
 

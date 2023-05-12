@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom/cjs/react-router-dom.min'
 import { getCatgoryProperties } from '../../actions/catgoryActions'
 
 const ProductGrid = (props) => {
+	const [propertyCategory, setPropertyCategory] = useState("villa")
 	let publicUrl = process.env.PUBLIC_URL + '/'
 	let customClass = props.customClass ? props.customClass : ''
 	// console.log(data)
@@ -12,7 +13,7 @@ const ProductGrid = (props) => {
 	const dispatch = useDispatch()
 
 	useEffect(() => {
-		dispatch(getCatgoryProperties())
+		dispatch(getCatgoryProperties(propertyCategory))
 	}, [dispatch])
 
 	return (
@@ -22,16 +23,16 @@ const ProductGrid = (props) => {
 					<div className="container-fluid">
 
 						<div className="row ltn__product-slider-item-three-active-full-width slick-arrow-1">
-						{
-											categoryProperties?.map((categoryProperty)=>(
+							{
+								categoryProperties?.map((categoryProperty) => (
 									<div className="col-lg-4">
-									
-												<div key={categoryProperty?.id} className="ltn__product-item ltn__product-item-4 text-center---">
+
+										<div key={categoryProperty?.id} className="ltn__product-item ltn__product-item-4 text-center---">
 											<div className="product-img go-top">
 												<Link to="/product-details"><img src={publicUrl + "assets/img/product-3/3.jpg"} alt="#" /></Link>
 												<div className="product-badge">
 													<ul>
-														<li className="sale-badge bg-green">{categoryProperty?.property_for}</li>
+														<li className="sale-badge bg-green">{categoryProperty?.property_for}{categoryProperty?.id}</li>
 													</ul>
 												</div>
 
@@ -45,16 +46,16 @@ const ProductGrid = (props) => {
 
 												</div>
 												<div className="product-description">
-													<Link to="/contact"> Belmont Gardens, Chicago</Link><br></br>
+													<Link to="/contact"> {categoryProperty?.property_address}</Link><br></br>
 													<small>Ref No.{categoryProperty?.property_ref_no}</small>
 												</div>
 												<div><center>
 													<ul className="ltn__list-item-2 ltn__list-item-2-before">
-														<li><span> <i className="flaticon-bed" />  {categoryProperty?.no_of_bedroom}</span>
+														<li><span> <i className="flaticon-bed" />  {categoryProperty?.property_no_of_bedroom}</span>
 														</li>
-														<li><span><i className="flaticon-clean" />  2 </span>
+														<li><span><i className="flaticon-clean" />  {categoryProperty?.property_no_of_bathroom} </span>
 														</li>
-														<li><span> <i className="flaticon-square-shape-design-interface-tool-symbol" />  3450 sqft</span>
+														<li><span> <i className="flaticon-square-shape-design-interface-tool-symbol" />  {categoryProperty?.property_sq_ft} sqft</span>
 														</li>
 													</ul></center>
 												</div></div>
@@ -88,20 +89,20 @@ const ProductGrid = (props) => {
 												</div>
 											</div>
 										</div>
-										
+
 									</div>
-							
-									))
-										}
-						
+
+								))
+							}
+
 
 
 
 							{/* ltn__product-item */}
-							
+
 							{/*  */}
 						</div>
-					
+
 					</div>
 				</div>
 

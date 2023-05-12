@@ -46,86 +46,92 @@ import { getAllPropertiesApi } from '../actions/propertiesActions';
 import CarouselComponent from './section-components/carousel/Carousel';
 import SimpleSlider from './section-components/SimpleSlider';
 import Availability from './section-components/availability';
+import ApartmentProductGrid from './shop-components/ApartmentProductGrid';
+import TownhouseProductGrid from './shop-components/TownhouseProductGrid';
+import PenthouseProductGrid from './shop-components/PenthouseProductGrid';
 
 
 const Home_V7 = () => {
-  const dispatch=useDispatch()
-  useEffect(()=>{
+  const dispatch = useDispatch()
+  useEffect(() => {
     dispatch(getAllPropertiesApi())
 
-  },[dispatch])
-    const slides = [
-        {
-          id: 1,
-          title: 'Slide 1',
-          imageUrl: 'https://placeimg.com/640/480/tech',
-        },
-        {
-          id: 2,
-          title: 'Slide 2',
-          imageUrl: 'https://placeimg.com/640/480/nature',
-        },
-        {
-          id: 3,
-          title: 'Slide 3',
-          imageUrl: 'https://placeimg.com/640/480/animals',
-        },
-      ];
-      return <div>
-    <Navbar CustomClass="ltn__header-transparent gradient-color-2" /> 
+  }, [dispatch])
+  const slides = [
+    {
+      id: 1,
+      title: 'Slide 1',
+      imageUrl: 'https://placeimg.com/640/480/tech',
+    },
+    {
+      id: 2,
+      title: 'Slide 2',
+      imageUrl: 'https://placeimg.com/640/480/nature',
+    },
+    {
+      id: 3,
+      title: 'Slide 3',
+      imageUrl: 'https://placeimg.com/640/480/animals',
+    },
+  ];
+  return <div>
+    <Navbar CustomClass="ltn__header-transparent gradient-color-2" />
     <BannerV5 />
 
 
 
 
     <BestProperty customClass='ltn__feature-area section-bg-1 pt-80 pb-80  mb-120---' />
-        {/* <Aboutv2 /> */}
-        {/* <Gallery /> */}
-        <Carousel />
-        <CategoryV3/>
-        {/* <HomeCrousal/> */}
-        {/* <ApartmentV1 CustomClass="ltn__feature-area section-bg-3 pt-120 pb-90 mb-120---" /> */}
-        <BestVilla customClass="ltn__feature-area section-bg-0 pt-120 pb-40 mb-120---"/>
-       
-        {/* <BestPenthouse customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---"  /> */}
-        {/* <ProductSliderV1/> */}
-        {/* <Banner /> */}
-        {/* <Neighbour customClass="ltn__feature-area section-bg-8 pt-120 pb-90 mb-120---"/> */}
+    {/* <Aboutv2 /> */}
+    {/* <Gallery /> */}
+    <Carousel />
+    <CategoryV3 />
+    {/* <HomeCrousal/> */}
+    {/* <ApartmentV1 CustomClass="ltn__feature-area section-bg-3 pt-120 pb-90 mb-120---" /> */}
+    <BestVilla customClass="ltn__feature-area section-bg-0 pt-120 pb-40 mb-120---" />
 
- 
+    {/* <BestPenthouse customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---"  /> */}
+    {/* <ProductSliderV1/> */}
+    {/* <Banner /> */}
+    {/* <Neighbour customClass="ltn__feature-area section-bg-8 pt-120 pb-90 mb-120---"/> */}
 
-        {/* <ProductSlider customClass="ltn__feature-area section-bg-4 pt-120 pb-90 mb-120---"/> */}
-        <ProductGrid />
-        <Availability />
-      {/*  <SimpleSlider/>*/}
-        <VideoV2/>
-        {/* <ProductGrid /> */}
-<BestTownhouse/>
-{/* <ProductGrid /> */}
 
-        {/* <Featuresv1 customClass="ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---"/> */}
-        {/* <ProSlider /> */}
-        {/* <Gallery /> */}
-        <VideoV1 /> 
-        <BestPenthouse/>
-        {/* <ProductGrid /> */}
 
-        {/* <Category /> */}
-        {/* <Testimonial /> */}
-        <AboutV5  customClass='ltn__feature-area section-bg-8 pt-120 pb-90 mb-120---'/>
-        <TeamAgents customClass='ltn__feature-area section-bg-1 pt-80  mb-120---' />
-        {/* <Testimonial customClass='ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---'/> */}
+    {/* <ProductSlider customClass="ltn__feature-area section-bg-4 pt-120 pb-90 mb-120---"/> */}
+    <ProductGrid />
+    <Availability />
+    {/*  <SimpleSlider/>*/}
+    <VideoV2 />
+    <ApartmentProductGrid />
+    {/* <ProductGrid /> */}
+    <BestTownhouse />
+    <TownhouseProductGrid />
+    {/* <ProductGrid /> */}
 
-        <BlogSlider customClass="section-subtitle-2 "/>
+    {/* <Featuresv1 customClass="ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---"/> */}
+    {/* <ProSlider /> */}
+    {/* <Gallery /> */}
+    <VideoV1 />
+    <BestPenthouse />
+     <PenthouseProductGrid/>
+    {/* <ProductGrid /> */}
 
-        {/* <BlogT customClass='ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---'/> */}
-        <CallToActionV1 />
-        {/* <CarouselSwiper slides={slides} /> */}
+    {/* <Category /> */}
+    {/* <Testimonial /> */}
+    <AboutV5 customClass='ltn__feature-area section-bg-8 pt-120 pb-90 mb-120---' />
+    <TeamAgents customClass='ltn__feature-area section-bg-1 pt-80  mb-120---' />
+    {/* <Testimonial customClass='ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---'/> */}
 
-        <Footer2 customClass='ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---'/>
-        <Footer />
+    <BlogSlider customClass="section-subtitle-2 " />
 
-</div>
+    {/* <BlogT customClass='ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---'/> */}
+    <CallToActionV1 />
+    {/* <CarouselSwiper slides={slides} /> */}
+
+    <Footer2 customClass='ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---' />
+    <Footer />
+
+  </div>
 }
 
 export default Home_V7
