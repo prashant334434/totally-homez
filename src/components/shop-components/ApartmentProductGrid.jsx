@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom/cjs/react-router-dom.min'
 import { getApartmentCatgoryProperties, getCatgoryProperties, getTownhouseCatgoryProperties } from '../../actions/catgoryActions'
+import AgentName from './AgentName'
 
 const ApartmentProductGrid = (props) => {
     const [propertyCategory, setPropertyCategory] = useState("apartment")
@@ -61,15 +62,12 @@ const ApartmentProductGrid = (props) => {
                                                     </ul></center>
                                                 </div></div>
                                             <div className="product-info-bottom">
-                                                <div className="real-estate-agent wcallFlex">
-                                                    <div className="agent-img go-top">
-                                                        <Link to="/team-details"><img src={publicUrl + "assets/img/blog/author.jpg"} alt="#" /></Link>
-                                                    </div>
-                                                    <div className="agent-brief go-top">
-                                                        <h6><Link to="/team-details">William Seklo</Link></h6>
+                                            {
+                                                    categoryProperty?.property_agent_name &&
+                                                    <AgentName agentId={categoryProperty?.property_agent_name}/>
 
-                                                    </div>
-                                                </div>
+
+                                                }
                                                 <div className="wcallFlex">
                                                     <ul className='wcallFlex'>
                                                         <li className='li1'>
