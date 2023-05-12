@@ -46,11 +46,11 @@ const ProductGrid = (props) => {
 												</div>
 												<div className="product-description">
 													<Link to="/contact"> Belmont Gardens, Chicago</Link><br></br>
-													<small>Ref No.LP17443</small>
+													<small>Ref No.{categoryProperty?.property_ref_no}</small>
 												</div>
 												<div><center>
 													<ul className="ltn__list-item-2 ltn__list-item-2-before">
-														<li><span> <i className="flaticon-bed" />  3</span>
+														<li><span> <i className="flaticon-bed" />  {categoryProperty?.no_of_bedroom}</span>
 														</li>
 														<li><span><i className="flaticon-clean" />  2 </span>
 														</li>
