@@ -17,6 +17,7 @@ import Carousel from './carousel/Carousel';
 import { IMAGES, VIDEOS, LARGE_IMAGES } from "../../data/data";
 import NavbarV3 from '../global-components/navbar-v4';
 import Footer2 from '../global-components/Footer2';
+import ArchitechturePlan from "./architecture-plan";
 
 const OffPlan = () => {
   return ( 
@@ -37,6 +38,7 @@ const OffPlan = () => {
         <ShogGrid />
         <FaqV1 customClass="ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---"/>
         <BlogRightSidebarPage/>
+        <ArchitechturePlan/>
         <CounterV1 customClass="ltn__feature-area section-bg-1"/>
 
         <ApartmentV3/>
