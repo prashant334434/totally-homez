@@ -9,6 +9,7 @@ import { useDispatch } from 'react-redux';
 import { getSingalPropertyDetailsApi } from '../../actions/propertiesActions';
 
 const ShopDetails = ({ propertyDetails }) => {
+	console.log(propertyDetails)
 	const amenitiesArray = propertyDetails?.property_amenities?.split(',');
 	console.log(amenitiesArray)
 	const maxLength = 100

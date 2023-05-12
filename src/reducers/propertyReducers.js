@@ -36,7 +36,7 @@ export const propertyDetailsReducer = (state = { propertyDetails: {} }, action) 
         case GET_PROPERTY_DETAILS_SUCCESS:
             return {
                 loading: false,
-                propertyDetails: action.payload.propertyDetails,
+                propertyDetails: action.payload,
               
             }
         case GET_PROPERTY_DETAILS_FAILURE: {

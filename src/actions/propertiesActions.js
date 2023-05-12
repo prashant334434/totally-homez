@@ -32,7 +32,7 @@ export const getAllPropertiesApi = () =>
 
 
 
-            const  data = await axios.get(`https://totallyhomerealestate.com/API/api/properties/13`);
+            const  {data} = await axios.get(`https://totallyhomerealestate.com/API/api/properties/13`);
             console.log(data)
 
             dispatch({
