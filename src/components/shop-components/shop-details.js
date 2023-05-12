@@ -4,17 +4,11 @@ import parse from 'html-react-parser';
 import NearBy from '../section-components/NearBy';
 import { InlineWidget, PopupButton, PopupWidget } from "react-calendly";
 import ShopGrid_V1 from '../shop-grid';
-import { useDispatch } from 'react-redux';
-import { getSingalPropertyDetailsApi } from '../../actions/propertiesActions';
+import {useStickyBox} from "react-sticky-box";
 
 const ShopDetails = () => {
 	let publicUrl = process.env.PUBLIC_URL+'/'
-	const dispatch=useDispatch()
-
-	useEffect(()=>{
-		dispatch(getSingalPropertyDetailsApi())
-	},[dispatch])
-
+	const stickyRef = useStickyBox({offsetTop: 150, offsetBottom: 100})
 	const [isSticky, setSticky] = useState(false);
 	  const [showFullDescription, setShowFullDescription] = useState(false);
 	  useEffect(() => {
@@ -203,33 +197,38 @@ const ShopDetails = () => {
 				<div className="ltn__menu-widget">
 					<ul>
 					<li>
+					<i className="far fa-check-circle fa-1x" style={{ color: 'red' }}></i>
+
 						<label className="checkbox-item">Air Conditioning
-						<input type="checkbox" defaultChecked="checked" />
-						<span className="checkmark" />
+						
 						</label>
 					</li>
 					<li>
+					<i className="far fa-check-circle fa-1x" style={{ color: 'red' }}></i>
+
 						<label className="checkbox-item">Gym
-						<input type="checkbox" defaultChecked="checked" />
-						<span className="checkmark" />
+					
 						</label>
 					</li>
 					<li>
+					<i className="far fa-check-circle fa-1x" style={{ color: 'red' }}></i>
+
 						<label className="checkbox-item">Microwave
-						<input type="checkbox" defaultChecked="checked" />
-						<span className="checkmark" />
+					
 						</label>
 					</li>
 					<li>
+					<i className="far fa-check-circle fa-1x" style={{ color: 'red' }}></i>
+
 						<label className="checkbox-item">Swimming Pool
-						<input type="checkbox" defaultChecked="checked" />
-						<span className="checkmark" />
+						
 						</label>
 					</li>
 					<li>
+					<i className="far fa-check-circle fa-1x" style={{ color: 'red' }}></i>
+
 						<label className="checkbox-item">WiFi
-						<input type="checkbox" defaultChecked="checked" />
-						<span className="checkmark" />
+						
 						</label>
 					</li>
 					</ul>
@@ -239,33 +238,38 @@ const ShopDetails = () => {
 				<div className="ltn__menu-widget">
 					<ul>
 					<li>
+					<i className="far fa-check-circle fa-1x" style={{ color: 'red' }}></i>
+
 						<label className="checkbox-item">Barbeque
-						<input type="checkbox" defaultChecked="checked" />
-						<span className="checkmark" />
+					
 						</label>
 					</li>
 					<li>
+					<i className="far fa-check-circle fa-1x" style={{ color: 'red' }}></i>
+
 						<label className="checkbox-item">Recreation
-						<input type="checkbox" defaultChecked="checked" />
-						<span className="checkmark" />
+						
 						</label>
 					</li>
 					<li>
+					<i className="far fa-check-circle fa-1x" style={{ color: 'red' }}></i>
+
 						<label className="checkbox-item">Microwave
-						<input type="checkbox" defaultChecked="checked" />
-						<span className="checkmark" />
+						
 						</label>
 					</li>
 					<li>
+					<i className="far fa-check-circle fa-1x" style={{ color: 'red' }}></i>
+
 						<label className="checkbox-item">Basketball Cout
-						<input type="checkbox" defaultChecked="checked" />
-						<span className="checkmark" />
+						
 						</label>
 					</li>
 					<li>
+					<i className="far fa-check-circle fa-1x" style={{ color: 'red' }}></i>
+
 						<label className="checkbox-item">Fireplace
-						<input type="checkbox" defaultChecked="checked" />
-						<span className="checkmark" />
+						
 						</label>
 					</li>
 					</ul>
@@ -275,33 +279,38 @@ const ShopDetails = () => {
 				<div className="ltn__menu-widget">
 					<ul>
 					<li>
+					<i className="far fa-check-circle fa-1x" style={{ color: 'red' }}></i>
+
 						<label className="checkbox-item">Refrigerator
-						<input type="checkbox" defaultChecked="checked" />
-						<span className="checkmark" />
+						
 						</label>
 					</li>
 					<li>
+					<i className="far fa-check-circle fa-1x" style={{ color: 'red' }}></i>
+
 						<label className="checkbox-item">Window Coverings
-						<input type="checkbox" defaultChecked="checked" />
-						<span className="checkmark" />
+						
 						</label>
 					</li>
 					<li>
+					<i className="far fa-check-circle fa-1x" style={{ color: 'red' }}></i>
+
 						<label className="checkbox-item">Washer
-						<input type="checkbox" defaultChecked="checked" />
-						<span className="checkmark" />
+						
 						</label>
 					</li>
 					<li>
+					<i className="far fa-check-circle fa-1x" style={{ color: 'red' }}></i>
+
 						<label className="checkbox-item">24x7 Security
-						<input type="checkbox" defaultChecked="checked" />
-						<span className="checkmark" />
+						
 						</label>
 					</li>
 					<li>
+					<i className="far fa-check-circle fa-1x" style={{ color: 'red' }}></i>
+
 						<label className="checkbox-item">Indoor Game
-						<input type="checkbox" defaultChecked="checked" />
-						<span className="checkmark" />
+						
 						</label>
 					</li>
 					</ul>
@@ -327,7 +336,7 @@ const ShopDetails = () => {
 		</div>
 		
 		<div className="col-lg-4">
-		<aside className="sidebar ltn__shop-sidebar ltn__right-sidebar---">
+		<aside ref={stickyRef} className="sidebar ltn__shop-sidebar ltn__right-sidebar---">
 			{/* Author Widget */}
 			<div className="widget ltn__author-widget">
 			<h4 className="title-2">Property Detail</h4>  
@@ -363,11 +372,17 @@ const ShopDetails = () => {
 				<br/>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis distinctio, odio, eligendi suscipit reprehenderit atque.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis distinctio, odio, eligendi suscipit reprehenderit atque.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis distinctio, odio, eligendi suscipit reprehenderit atque.</p>
 				<div className="ltn__social-media">
-				<Link className="btn btn-effect-3" to="/contact">Call</Link>
-				
+				<center>
+				{/* <Link className="btn btn-effect-3" to="/contact">Call</Link> */}
+				<PopupButton
+        url="https://calendly.com/prashant-vashisth/counsaltant"
+
+			className="btn theme-btn-1"
+        rootElement={document.getElementById("root")}
+        text="Click here to schedule!"
+      />
+	  </center>
 					
-					<br/>
-					<br/>
 	
 
 				
@@ -385,16 +400,10 @@ const ShopDetails = () => {
         textColor="#ffffff"
         color="#00a2ff"
       /> */}
-	        <PopupButton
-        url="https://calendly.com/prashant-vashisth/counsaltant"
-
-			className="btn theme-btn-1"
-        rootElement={document.getElementById("root")}
-        text="Click here to schedule!"
-      />
-	  <hr/>
+	
+	  
 			{/* Form Widget */}
-			<div className="widget ltn__form-widget">
+			{/* <div className="widget ltn__form-widget">
 			<h4 className="ltn__widget-title ltn__widget-title-border-2">Drop Messege For Book</h4>
 			<form action="#">
 				<input type="text" name="yourname" placeholder="Your Name*" />
@@ -404,7 +413,7 @@ const ShopDetails = () => {
 					type='submit'
 			 className="btn theme-btn-1">Send Messege</button>
 			</form>
-			</div>
+			</div> */}
 			{/* Top Rated Product Widget */}
 			
 			{/* Menu Widget (Category) */}
