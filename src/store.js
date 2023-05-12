@@ -5,6 +5,7 @@ import { userReducer } from "./reducers/userReducers";
 import { propertyDetailsReducer, propertyReducer } from "./reducers/propertyReducers";
 import { carouselDetailsReducer, carouselReducer } from "./reducers/carouselReducers";
 import { teamDetailsReducer, teamReducer } from "./reducers/teamReducers";
+import { catgoryReducer } from "./reducers/catgoryReducres";
 
 const reducer=combineReducers({
     user:userReducer,
@@ -13,7 +14,8 @@ const reducer=combineReducers({
     carousels:carouselReducer,
     carouselDetails:carouselDetailsReducer,
     team:teamReducer,
-    teamDetails:teamDetailsReducer
+    teamDetails:teamDetailsReducer,
+    categoryProperties:catgoryReducer
     
    
 
