@@ -19,7 +19,7 @@ import NavbarV3 from '../global-components/navbar-v4';
 import Footer2 from '../global-components/Footer2';
 import ArchitechturePlan from "./architecture-plan";
 import PaymentPlan from './PaymentPlan';
-
+import BannerV2 from './banner-v2';
 const OffPlan = () => {
   return ( 
   
@@ -39,6 +39,7 @@ const OffPlan = () => {
         <ShogGrid />
         <FaqV1 customClass="ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---"/>
         <BlogRightSidebarPage/>
+        <BannerV2/>
         <ArchitechturePlan/>
         <CounterV1 customClass="ltn__feature-area section-bg-1"/>
 

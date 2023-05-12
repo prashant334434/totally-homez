@@ -7832,8 +7832,6 @@ i {
 .ltn__slide-animation > * {
   opacity: 0;
   visibility: hidden;
-  -webkit-animation-name: fadeOutUp;
-  animation-name: fadeOutUp;
 }
 .ltn__slide-animation > *:nth-child(1) {
   -webkit-animation-delay: 0.5s;
@@ -7900,8 +7898,6 @@ i {
 .ltn__slide-animation-active .ltn__slide-animation > * {
   opacity: 1;
   visibility: visible;
-  -webkit-animation-name: fadeInUp;
-  animation-name: fadeInUp;
 }
 
 /* Title Background Image */
