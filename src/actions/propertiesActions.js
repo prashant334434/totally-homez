@@ -1,5 +1,5 @@
 import axios from "axios";
-import { GET_ALL_PROPERTIES_FAILURE, GET_ALL_PROPERTIES_REQUEST, GET_ALL_PROPERTIES_SUCCESS } from "../constants/propertyConstants";
+import { GET_ALL_PROPERTIES_FAILURE, GET_ALL_PROPERTIES_REQUEST, GET_ALL_PROPERTIES_SUCCESS, GET_PROPERTY_DETAILS_FAILURE, GET_PROPERTY_DETAILS_REQUEST, GET_PROPERTY_DETAILS_SUCCESS } from "../constants/propertyConstants";
 
 export const getAllPropertiesApi = () =>
     async (dispatch) => {
@@ -18,6 +18,30 @@ export const getAllPropertiesApi = () =>
         } catch (error) {
             dispatch({
                 type: GET_ALL_PROPERTIES_FAILURE,
+                payload: error.response.data.message,
+            });
+        }
+    };
+
+
+
+    export const getSingalPropertyDetailsApi = () =>
+    async (dispatch) => {
+        try {
+            dispatch({ type: GET_PROPERTY_DETAILS_REQUEST });
+
+
+
+            const  data = await axios.get(`https://totallyhomerealestate.com/API/api/properties/13`);
+            console.log(data)
+
+            dispatch({
+                type: GET_PROPERTY_DETAILS_SUCCESS,
+                payload: data,
+            });
+        } catch (error) {
+            dispatch({
+                type: GET_PROPERTY_DETAILS_FAILURE,
                 payload: error.response.data.message,
             });
         }

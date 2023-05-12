@@ -4,9 +4,16 @@ import parse from 'html-react-parser';
 import NearBy from '../section-components/NearBy';
 import { InlineWidget, PopupButton, PopupWidget } from "react-calendly";
 import ShopGrid_V1 from '../shop-grid';
+import { useDispatch } from 'react-redux';
+import { getSingalPropertyDetailsApi } from '../../actions/propertiesActions';
 
 const ShopDetails = () => {
 	let publicUrl = process.env.PUBLIC_URL+'/'
+	const dispatch=useDispatch()
+
+	useEffect(()=>{
+		dispatch(getSingalPropertyDetailsApi())
+	},[dispatch])
 
 	const [isSticky, setSticky] = useState(false);
 	  const [showFullDescription, setShowFullDescription] = useState(false);
