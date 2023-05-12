@@ -216,7 +216,7 @@ const ShopDetails = ({ propertyDetails }) => {
 								<div className="row">
 								{
 									amenitiesArray?.map((amenity,index)=>(
-										<div className="col-lg-4 col-md-6">
+										<div key={index} className="col-lg-4 col-md-6">
 										<div className="ltn__menu-widget">
 											<ul>
 												<li>
@@ -259,14 +259,14 @@ const ShopDetails = ({ propertyDetails }) => {
 								<h4 className="title-2">Property Detail</h4>
 								<div className="property-detail-info-list section-bg-0 clearfix mb-60">
 									<ul>
-										<li><h4><label>Price:</label><span>AED 2,900,000 </span></h4></li>
+										<li><h4><label>Price:</label><span>AED {propertyDetails?.property_price} </span></h4></li>
 
-										<li><label>Property ID:</label> <span>HZ29</span></li>
-										<li><label>Home Area: </label> <span>120 sqft</span></li>
+										<li><label>Property ID:</label> <span>{propertyDetails?.property_ref_no}</span></li>
+										<li><label>Home Area: </label> <span>{propertyDetails?.property_sq_ft}</span></li>
 										<li><label>Price: </label><span>120 sqft</span></li>
 
-										<li><label>Rooms:</label> <span>7</span></li>
-										<li><label>Baths:</label> <span>2</span></li>
+										<li><label>Rooms:</label> <span>{propertyDetails?.property_no_of_bedroom}</span></li>
+										<li><label>Baths:</label> <span>{propertyDetails?.property_no_of_bathroom}</span></li>
 										<li><label>Year built:</label> <span>1992</span></li>
 									</ul>
 
@@ -278,7 +278,7 @@ const ShopDetails = ({ propertyDetails }) => {
 									<center>
 
 										<img src={publicUrl + "assets/img/team/4.jpg"} alt="Image" />
-										<h5>Rosalina D. Willaimson</h5>
+										<h5>{propertyDetails?.property_agent_name}</h5>
 										<small>Traveller/Photographer</small>
 
 									</center>

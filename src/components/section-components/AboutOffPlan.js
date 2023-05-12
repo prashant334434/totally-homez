@@ -6,7 +6,7 @@ const AboutOffPlan = () => {
     let publicUrl = process.env.PUBLIC_URL+'/'
 
   return (
-    <div className="ltn__about-us-area pt-120 pb-90 ">
+    <div className="ltn__about-us-area pt-120">
     <div className="container">
       <div className="row">
       <div className="col-lg-7 align-self-center">

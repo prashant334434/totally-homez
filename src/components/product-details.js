@@ -18,7 +18,7 @@ const Product_Details = () => {
     },[dispatch])
     return <div>
     <Navbar CustomClass="ltn__header-transparent gradient-color-2" /> 
-        <ProductSlider />
+        <ProductSlider propertyDetails={propertyDetails} />
 
         <PageHeader propertyDetails={propertyDetails} headertitle="Garden Homes Frond C" customclass="mb-0" />
         <ProductDetails propertyDetails={propertyDetails} />
