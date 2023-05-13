@@ -9549,6 +9549,10 @@ fieldset:disabled .btn {
 .slick-slide img {
   display: block;
 }
+.slick-slide-carousel img {
+  display: block;
+  height: 50vh;
+}
 .slick-slide.slick-loading img {
   display: none;
 }

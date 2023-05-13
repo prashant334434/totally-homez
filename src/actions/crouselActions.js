@@ -8,7 +8,7 @@ export const getCarouselsApi = () =>
 
 
 
-            const  data = await axios.get(`https://totallyhomerealestate.com/API/api/carousels`);
+            const  {data} = await axios.get(`https://totallyhomerealestate.com/API/api/carousels`);
             console.log(data)
 
             dispatch({
@@ -18,7 +18,6 @@ export const getCarouselsApi = () =>
         } catch (error) {
             dispatch({
                 type:GET_ALL_CAROUSELS_FAILURE,
-                payload: error.response.data.message,
             });
         }
     };

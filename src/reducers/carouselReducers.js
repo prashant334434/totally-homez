@@ -10,13 +10,13 @@ export const carouselReducer = (state = { carousels: [] }, action) => {
         case GET_ALL_CAROUSELS_SUCCESS:
             return {
                 loading: false,
-                products: action.payload.products,
+                carousels: action.payload.data,
               
             }
         case GET_ALL_CAROUSELS_FAILURE: {
             return {
                 loading: false,
-                error: action.payload,
+                error: true,
             }
         }
         default:

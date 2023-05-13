@@ -10,15 +10,23 @@ import ShopGrid_V1 from './shop-grid';
 import { useDispatch, useSelector } from 'react-redux';
 import { getSingalPropertyDetailsApi } from '../actions/propertiesActions';
 import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
+import Loader from './Loader/Loader';
 
 const Product_Details = () => {
     const {id}=useParams()
     console.log(id)
-    const {propertyDetails}=useSelector((state)=>state.propertyDetails);
+    const {loading,propertyDetails}=useSelector((state)=>state.propertyDetails);
     const dispatch=useDispatch()
     useEffect(()=>{
         dispatch(getSingalPropertyDetailsApi(id))
     },[dispatch])
+
+
+    if (loading){
+        return (
+            <Loader/>
+        )
+    }
     return <div>
     <Navbar CustomClass="ltn__header-transparent gradient-color-2" /> 
         <ProductSlider propertyDetails={propertyDetails} />

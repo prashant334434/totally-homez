@@ -11,48 +11,7 @@ class NavbarV3 extends Component {
         return (
 		<div>
            <header className="ltn__header-area ltn__header-5 ltn__header-logo-and-mobile-menu-in-mobile ltn__header-logo-and-mobile-menu ltn__header-transparent gradient-color-4---">
-			  <div className="ltn__header-top-area top-area-color-white">
-			    <div className="container">
-			      <div className="row">
-			        <div className="col-md-7">
-			          <div className="ltn__top-bar-menu">
-			            <ul>
-			              <li><a href="mailto:info@webmail.com?Subject=Flower%20greetings%20to%20you"><i className="icon-mail" /> info@webmail.com</a></li>
-			              <li><a href="locations.html"><i className="icon-placeholder" /> 15/A, Nest Tower, NYC</a></li>
-			            </ul>
-			          </div>
-			        </div>
-			        <div className="col-md-5">
-			          <div className="top-bar-right text-end">
-			            <div className="ltn__top-bar-menu">
-			              <ul>
-			                <li>
-			                  {/* ltn__language-menu */}
-			                  <div className="ltn__drop-menu ltn__currency-menu ltn__language-menu">
-			                    <ul>
-			                      <li><Link to="#" className="dropdown-toggle"><span className="active-currency">English</span></Link>
-			                        <ul>
-			                          <li><Link to="#">Arabic</Link></li>
-			                          <li><Link to="#">Bengali</Link></li>
-			                          <li><Link to="#">Chinese</Link></li>
-			                          <li><Link to="#">English</Link></li>
-			                          <li><Link to="#">French</Link></li>
-			                          <li><Link to="#">Hindi</Link></li>
-			                        </ul>
-			                      </li>
-			                    </ul>
-			                  </div>
-			                </li>
-			                <li>
-							<Social />
-			                </li>
-			              </ul>
-			            </div>
-			          </div>
-			        </div>
-			      </div>
-			    </div>
-			  </div>
+			
 			  <div className="ltn__header-middle-area ltn__header-sticky ltn__sticky-bg-black">
 			    <div className="container">
 			      <div className="row">

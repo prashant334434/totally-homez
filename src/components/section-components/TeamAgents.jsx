@@ -20,13 +20,13 @@ const TeamAgents = (props) => {
 	return (
 		<div>
 			<div>
-				<div className="ltn__product-slider-area ltn__product-gutter pb-90 plr--7">
+				<div className="ltn__product-slider-area ltn__product-gutter  plr--7">
 					<div className="container-fluid">
 						<div className="row">
 							<div className="col-lg-12">
 								<div className="section-title-area ltn__section-title-2--- text-center">
-									{/* <h6 className="section-subtitle section-subtitle-2 ltn__secondary-color">Properties</h6>
-			  <h1 className="section-title">Featured Listings</h1> */}
+									 <h6 className="section-subtitle section-subtitle-2 ltn__secondary-color">Team</h6>
+			  <h1 className="section-title">Our Agents</h1> *
 								</div>
 							</div>
 						</div>

@@ -12367,7 +12367,7 @@ label{
 }
 
 .ltn__blog-item-3 .ltn__blog-img {
-  overflow: hidden;
+  overflow:visible;
   border-radius: 5px;
 }
 .ltn__blog-item-3 .ltn__blog-img img {
