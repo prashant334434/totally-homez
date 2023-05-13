@@ -31,7 +31,7 @@ const ApartmentProductGridRent = (props) => {
 
                                         <div key={categoryProperty?.id} className="ltn__product-item ltn__product-item-4 text-center---">
                                             <div className="product-img go-top">
-                                                <Link to="/product-details"><img src={categoryProperty?.categoryProperty?.property_images} alt="#" /></Link>
+                                                <Link to="/product-details"><img src={`${TEAM_API_URL}/${categoryProperty?.path}`} alt="#" /></Link>
                                                 <div className="product-badge">
                                                     <ul>
                                                         <li className="sale-badge bg-green">{categoryProperty?.property_for}{categoryProperty?.id}</li>

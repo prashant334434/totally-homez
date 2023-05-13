@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom/cjs/react-router-dom.min'
 import { getCatgoryProperties, getPenthouseCatgoryProperties } from '../../actions/catgoryActions'
 import AgentName from './AgentName'
+import { TEAM_API_URL } from '../../constants/config'
 
 const PenthouseProductGrid = (props) => {
     const [propertyCategory, setPropertyCategory] = useState("penthouse")
@@ -29,7 +30,7 @@ const PenthouseProductGrid = (props) => {
 
                                         <div key={categoryProperty?.id} className="ltn__product-item ltn__product-item-4 text-center---">
                                             <div className="product-img go-top">
-                                                <Link to="/product-details"><img src={publicUrl + "assets/img/product-3/3.jpg"} alt="#" /></Link>
+                                                <Link to="/product-details"><img src={`${TEAM_API_URL}/${categoryProperty?.path}`} alt="#" /></Link>
                                                 <div className="product-badge">
                                                     <ul>
                                                         <li className="sale-badge bg-green">{categoryProperty?.property_for}{categoryProperty?.id}</li>
