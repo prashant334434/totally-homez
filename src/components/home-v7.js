@@ -49,6 +49,9 @@ import Availability from './section-components/availability';
 import ApartmentProductGrid from './shop-components/ApartmentProductGrid';
 import TownhouseProductGrid from './shop-components/TownhouseProductGrid';
 import PenthouseProductGrid from './shop-components/PenthouseProductGrid';
+import ApartmentProductGridSale from './shop-components/ApartmentProductGrid';
+import ApartmentProductGridRent from './shop-components/ApartmentProductGridRent';
+import TownhouseProductGridRent from './shop-components/TownhouseProductGridRent';
 
 
 const Home_V7 = () => {
@@ -102,10 +105,13 @@ const Home_V7 = () => {
     <Availability />
     {/*  <SimpleSlider/>*/}
     <VideoV2 />
-    <ApartmentProductGrid />
+    <ApartmentProductGridSale />
+    <ApartmentProductGridRent/>
     {/* <ProductGrid /> */}
     <BestTownhouse />
     <TownhouseProductGrid />
+
+    <TownhouseProductGridRent/>
     {/* <ProductGrid /> */}
 
     {/* <Featuresv1 customClass="ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---"/> */}

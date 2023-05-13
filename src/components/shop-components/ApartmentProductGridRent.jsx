@@ -1,21 +1,20 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom/cjs/react-router-dom.min'
-import { getApartmentCatgoryProperties, getCatgoryProperties, getTownhouseCatgoryProperties } from '../../actions/catgoryActions'
+import { getApartmentCatgoryProperties, getApartmentCatgoryRentProperties, getCatgoryProperties, getTownhouseCatgoryProperties } from '../../actions/catgoryActions'
 import AgentName from './AgentName'
 import { TEAM_API_URL } from '../../constants/config'
 
-const ApartmentProductGridSale = (props) => {
+const ApartmentProductGridRent = (props) => {
     const [propertyCategory, setPropertyCategory] = useState("apartment")
     let publicUrl = process.env.PUBLIC_URL + '/'
     let customClass = props.customClass ? props.customClass : ''
     // console.log(data)
-    const { apartmentCategoryProperties } = useSelector((state) => state.apartmentCategoryProperties)
-    console.log(apartmentCategoryProperties)
+    const { apartmentCategoryRentProperties } = useSelector((state) => state.apartmentCategoryRentProperties)
     const dispatch = useDispatch()
 
     useEffect(() => {
-        dispatch(getApartmentCatgoryProperties())
+        dispatch(getApartmentCatgoryRentProperties())
     }, [dispatch])
 
     return (
@@ -27,7 +26,7 @@ const ApartmentProductGridSale = (props) => {
 
                         <div className="row ltn__product-slider-item-three-active-full-width slick-arrow-1">
                             {
-                                apartmentCategoryProperties?.map((categoryProperty) => (
+                                apartmentCategoryRentProperties?.map((categoryProperty) => (
                                     <div className="col-lg-4">
 
                                         <div key={categoryProperty?.id} className="ltn__product-item ltn__product-item-4 text-center---">
@@ -116,4 +115,4 @@ const ApartmentProductGridSale = (props) => {
     )
 }
 
-export default ApartmentProductGridSale
+export default ApartmentProductGridRent

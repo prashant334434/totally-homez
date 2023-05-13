@@ -1,21 +1,19 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom/cjs/react-router-dom.min'
-import { getApartmentCatgoryProperties, getCatgoryProperties, getTownhouseCatgoryProperties } from '../../actions/catgoryActions'
+import { getCatgoryProperties, getTownhouseCatgoryProperties, getTownhouseCatgoryRentProperties } from '../../actions/catgoryActions'
 import AgentName from './AgentName'
-import { TEAM_API_URL } from '../../constants/config'
 
-const ApartmentProductGridSale = (props) => {
+const TownhouseProductGridRent = (props) => {
     const [propertyCategory, setPropertyCategory] = useState("apartment")
     let publicUrl = process.env.PUBLIC_URL + '/'
     let customClass = props.customClass ? props.customClass : ''
     // console.log(data)
-    const { apartmentCategoryProperties } = useSelector((state) => state.apartmentCategoryProperties)
-    console.log(apartmentCategoryProperties)
+    const { townhouseCategoryRentProperties } = useSelector((state) => state.townhouseRentProperties)
     const dispatch = useDispatch()
 
     useEffect(() => {
-        dispatch(getApartmentCatgoryProperties())
+        dispatch(getTownhouseCatgoryRentProperties())
     }, [dispatch])
 
     return (
@@ -23,16 +21,16 @@ const ApartmentProductGridSale = (props) => {
             <div>
                 <div className="ltn__product-slider-area ltn__product-gutter pt-40 pb-90 plr--7">
                     <div className="container-fluid">
-                        <h1>Apartment</h1>
+                        <h1>Townhouse</h1>
 
                         <div className="row ltn__product-slider-item-three-active-full-width slick-arrow-1">
                             {
-                                apartmentCategoryProperties?.map((categoryProperty) => (
+                                townhouseCategoryRentProperties?.map((categoryProperty) => (
                                     <div className="col-lg-4">
 
                                         <div key={categoryProperty?.id} className="ltn__product-item ltn__product-item-4 text-center---">
                                             <div className="product-img go-top">
-                                                <Link to="/product-details"><img src={categoryProperty?.categoryProperty?.property_images} alt="#" /></Link>
+                                                <Link to="/product-details"><img src={publicUrl + "assets/img/product-3/3.jpg"} alt="#" /></Link>
                                                 <div className="product-badge">
                                                     <ul>
                                                         <li className="sale-badge bg-green">{categoryProperty?.property_for}{categoryProperty?.id}</li>
@@ -63,17 +61,12 @@ const ApartmentProductGridSale = (props) => {
                                                     </ul></center>
                                                 </div></div>
                                             <div className="product-info-bottom">
-                                                <div className="real-estate-agent wcallFlex">
-                                                    <div className="agent-img go-top">
-                                                        <Link to="/team-details">
-                                                            <img src={`${TEAM_API_URL}/${categoryProperty?.path}`} alt="Image" />
-                                                        </Link>
-                                                    </div>
-                                                    <div className="agent-brief go-top">
-                                                        <h6><Link to="/team-details">{categoryProperty?.name}</Link></h6>
+                                            {
+                                                    categoryProperty?.property_agent_name &&
+                                                    <AgentName agentId={categoryProperty?.property_agent_name}/>
 
-                                                    </div>
-                                                </div>
+
+                                                }
                                                 <div className="wcallFlex">
                                                     <ul className='wcallFlex'>
                                                         <li className='li1'>
@@ -116,4 +109,4 @@ const ApartmentProductGridSale = (props) => {
     )
 }
 
-export default ApartmentProductGridSale
+export default TownhouseProductGridRent
