@@ -52,6 +52,8 @@ import PenthouseProductGrid from './shop-components/PenthouseProductGrid';
 import ApartmentProductGridSale from './shop-components/ApartmentProductGrid';
 import ApartmentProductGridRent from './shop-components/ApartmentProductGridRent';
 import TownhouseProductGridRent from './shop-components/TownhouseProductGridRent';
+import PenthouseProductGridRent from './shop-components/PenthouseProductGridRent';
+import ProductGridRent from './shop-components/ProductGridRent';
 
 
 const Home_V7 = () => {
@@ -102,6 +104,7 @@ const Home_V7 = () => {
 
     {/* <ProductSlider customClass="ltn__feature-area section-bg-4 pt-120 pb-90 mb-120---"/> */}
     <ProductGrid />
+    <ProductGridRent/>
     <Availability />
     {/*  <SimpleSlider/>*/}
     <VideoV2 />
@@ -120,6 +123,7 @@ const Home_V7 = () => {
     <VideoV1 />
     <BestPenthouse />
      <PenthouseProductGrid/>
+     <PenthouseProductGridRent/>
     {/* <ProductGrid /> */}
 
     {/* <Category /> */}

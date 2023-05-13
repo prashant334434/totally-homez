@@ -34,7 +34,7 @@ const Carousel = (props) => {
                 <div key={carousel.id} className="col-lg-3">
                 <div className="ltn__blog-item ltn__blog-item-3">
                   <div className="ltn__blog-img">
-                    <Link to="/blog-details"><img src={`${TEAM_API_URL}/public/${carousel.path}`} alt="carousel image" /></Link>
+                    <Link to="/blog-details"><img src={`${TEAM_API_URL}/${carousel.path}`} alt="carousel image" /></Link>
                   </div>
                
                 </div>
