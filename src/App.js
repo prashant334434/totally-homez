@@ -55,6 +55,7 @@ import PropertyDetails from './components/PropertyDetails';
 import NewContact from './components/NewContact';
 import TeamsNew from './components/TeamsNew';
 import PropertyType from './components/shop-components/PropertyType';
+import CarouselDetails from './components/CarouselDetails';
 
 
 
@@ -138,6 +139,11 @@ import PropertyType from './components/shop-components/PropertyType';
         <Route path="/our-team" component={ TeamsNew } />
 
         <Route path="/property/:type" component={ PropertyType } />
+        CarouselDetails
+
+        <Route path="/carousel/:id" component={ CarouselDetails } />
+
+
 
     </Switch>
     </div>

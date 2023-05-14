@@ -36,7 +36,7 @@ export const carouselDetailsReducer = (state = { carouselDetails: {} }, action) 
         case GET_CAROUSEL_DETAILS_SUCCESS:
             return {
                 loading: false,
-                carouselDetails: action.payload.carouselDetails,
+                carouselDetails: action.payload.data,
               
             }
         case GET_CAROUSEL_DETAILS_FAILURE: {
