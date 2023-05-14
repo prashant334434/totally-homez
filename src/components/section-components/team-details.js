@@ -1,13 +1,22 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import parse from 'html-react-parser';
+import Loader from '../Loader/Loader';
+import { TEAM_API_URL } from '../../constants/config';
 
 
 
 
 
-const TeamDetails = () => {
+const TeamDetails = ({loading,teamDetails}) => {
+	console.log("teamDetails",teamDetails)
     let publicUrl = process.env.PUBLIC_URL+'/'
+
+	if(loading){
+		return (
+			<Loader/>
+		)
+	}
   return (
     <div> <div className="ltn__team-details-area mb-120 pt-150">
     <div className="container">
@@ -15,12 +24,12 @@ const TeamDetails = () => {
         
         <div className="col-lg-8">
         <div className="ltn__team-details-member-info-details">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <p>{teamDetails?.description}</p>
             <div className="row">
             <div className="col-lg-6">
                 <div className="ltn__team-details-member-about">
                 <ul>
-                    <li><strong>Positions:</strong> Senior Property Seller</li>
+                    <li><strong>Positions:</strong> {teamDetails?.designation}</li>
                     <li><strong>Experience:</strong> 10+ Years</li>
                     <li><strong>Location:</strong> 13/A, NYC</li>
                     <li><strong>Practice Area:</strong> Property Seller</li>
@@ -38,7 +47,6 @@ const TeamDetails = () => {
             </div>
             </div>
             <hr />
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequu ntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
             <div className="row ltn__custom-gutter mt-50 mb-20">
             {/* <div className="col-xl-4 col-sm-6 col-12 go-top">
                 <div className="ltn__feature-item ltn__feature-item-6 text-center">
@@ -58,12 +66,12 @@ const TeamDetails = () => {
         <div className="col-lg-4">
         <div className="ltn__team-details-member-info text-center mb-40">
             <div className="team-details-img">
-            <img src={publicUrl+"assets/img/team/4.jpg"} alt="Team Member Image" />
+            <img src={`${TEAM_API_URL}/${teamDetails?.path}`} alt="Team Member Image" />
             </div>
             <center>
-            <h2>Rosalina D. William</h2>
+            <h2>{teamDetails?.name}</h2>
 
-            <h6 className="text-uppercase ltn__secondary-color">Property Seller</h6>
+            <h6 className="text-uppercase ltn__secondary-color">Property Agent</h6>
             <div className="ltn__social-media-3">
             <ul>
                 <li><a href="#" title="Facebook"><i style={{fontSize:"1.5rem"}} className="fab fa-facebook-f" /></a></li>

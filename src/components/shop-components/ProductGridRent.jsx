@@ -26,7 +26,6 @@ const ProductGridRent = (props) => {
 							{
 								categoryRentProperties?.map((categoryProperty) => (
 									<div className="col-lg-4">
-
 									<div key={categoryProperty?.id} className="ltn__product-item ltn__product-item-4 text-center---">
 										<div className="product-img go-top">
 											<Link to={`/property-details/${categoryProperty?.id}`}><img src={`${TEAM_API_URL}/${categoryProperty?.path}`} alt="#" /></Link>
@@ -67,7 +66,7 @@ const ProductGridRent = (props) => {
 													</Link>
 												</div>
 												<div className="agent-brief go-top">
-													<h6><Link to="/team-details">{categoryProperty?.name}</Link></h6>
+													<h6><Link to={`/team-details/${categoryProperty?.property_agent_name}`}>{categoryProperty?.name}</Link></h6>
 
 												</div>
 											</div>

@@ -99,7 +99,7 @@ import PropertyType from './components/shop-components/PropertyType';
         <Route path="/portfolio-v2" component={ PortfolioV2 } />
         <Route path="/portfolio-details" component={ PortfolioDetails } />
         <Route path="/team" component={ Team } />
-        <Route path="/team-details" component={ TeamDetails } />
+        <Route path="/team-details/:id" component={ TeamDetails } />
         <Route path="/faq" component={ Faq } />
         <Route path="/coming-soon" component={ ComingSoon } />
         <Route path="/404" component={ Error } />

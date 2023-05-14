@@ -67,7 +67,7 @@ const ProductGrid = (props) => {
 													</Link>
 												</div>
 												<div className="agent-brief go-top">
-													<h6><Link to="/team-details">{categoryProperty?.name}</Link></h6>
+													<h6><Link to={`/team-details/${categoryProperty?.property_agent_name}`}>{categoryProperty?.name}</Link></h6>
 
 												</div>
 											</div>
