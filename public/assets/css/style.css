@@ -9344,6 +9344,7 @@ i {
 }
 .ltn__product-item-4 .product-info {
   padding: 30px 30px 1px;
+  min-height: 242px;
 }
 .ltn__product-item-4 .product-price {
   font-size: 18px;
