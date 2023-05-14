@@ -138,7 +138,7 @@ class NavbarV3 extends Component {
 								</li>
 								<li><Link to="/blog-details">Blog</Link></li>
 
-			                  <li><Link to="/contact">Contact</Link></li>
+			                  <li><Link to="/contact-us">Contact</Link></li>
 			                  {/* <li className="special-link">
 			                    <Link to="/add-listing">Add Listing</Link>
 			                  </li> */}
@@ -249,7 +249,7 @@ class NavbarV3 extends Component {
 								<li><Link to="/coming-soon">Coming Soon</Link></li>
 							</ul>
                     	</li>
-						<li><Link to="/contact">Contact</Link></li>
+						<li><Link to="/contact-us">Contact</Link></li>
 					</ul>
 					</div>
 					<div className="ltn__utilize-buttons ltn__utilize-buttons-2">
