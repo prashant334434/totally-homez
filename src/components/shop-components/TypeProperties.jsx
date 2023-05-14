@@ -34,7 +34,7 @@ const TypeProperties = (props) => {
 												<Link to="/product-details"><img src={`${TEAM_API_URL}/${categoryProperty?.path}`} alt="#" /></Link>
 												<div className="product-badge">
 													<ul>
-														<li className="sale-badge bg-green">{categoryProperty?.property_for}{categoryProperty?.id}{categoryProperty?.property_type}</li>
+														<li className="sale-badge bg-green">{categoryProperty?.property_for}{categoryProperty?.id}</li>
 													</ul>
 												</div>
 
