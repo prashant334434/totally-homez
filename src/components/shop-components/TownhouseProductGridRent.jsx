@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom/cjs/react-router-dom.min'
 import { getCatgoryProperties, getTownhouseCatgoryProperties, getTownhouseCatgoryRentProperties } from '../../actions/catgoryActions'
-import AgentName from './AgentName'
 import { TEAM_API_URL } from '../../constants/config'
 
 const TownhouseProductGridRent = (props) => {
@@ -31,7 +30,7 @@ const TownhouseProductGridRent = (props) => {
 
                                         <div key={categoryProperty?.id} className="ltn__product-item ltn__product-item-4 text-center---">
                                             <div className="product-img go-top">
-                                                <Link to="/product-details"><img src={`${TEAM_API_URL}/${categoryProperty?.path}`} alt="#" /></Link>
+                                                <Link to={`/property-details/${categoryProperty?.id}`}><img src={`${TEAM_API_URL}/${categoryProperty?.path}`} alt="#" /></Link>
                                                 <div className="product-badge">
                                                     <ul>
                                                         <li className="sale-badge bg-green">{categoryProperty?.property_for}{categoryProperty?.id}</li>
@@ -48,7 +47,7 @@ const TownhouseProductGridRent = (props) => {
 
                                                 </div>
                                                 <div className="product-description">
-                                                    <Link to="/contact"> {categoryProperty?.property_address}</Link><br></br>
+                                                    <Link > {categoryProperty?.property_address}</Link><br></br>
                                                     <small>Ref No.{categoryProperty?.property_ref_no}</small>
                                                 </div>
                                                 <div><center>
@@ -62,12 +61,17 @@ const TownhouseProductGridRent = (props) => {
                                                     </ul></center>
                                                 </div></div>
                                             <div className="product-info-bottom">
-                                            {
-                                                    categoryProperty?.property_agent_name &&
-                                                    <AgentName agentId={categoryProperty?.property_agent_name}/>
+                                                <div className="real-estate-agent wcallFlex">
+                                                    <div className="agent-img go-top">
+                                                        <Link to="/team-details">
+                                                            <img src={`${TEAM_API_URL}/${categoryProperty?.path}`} alt="Image" />
+                                                        </Link>
+                                                    </div>
+                                                    <div className="agent-brief go-top">
+                                                        <h6><Link to="/team-details">{categoryProperty?.name}</Link></h6>
 
-
-                                                }
+                                                    </div>
+                                                </div>
                                                 <div className="wcallFlex">
                                                     <ul className='wcallFlex'>
                                                         <li className='li1'>

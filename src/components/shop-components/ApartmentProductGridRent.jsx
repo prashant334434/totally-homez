@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom/cjs/react-router-dom.min'
 import { getApartmentCatgoryProperties, getApartmentCatgoryRentProperties, getCatgoryProperties, getTownhouseCatgoryProperties } from '../../actions/catgoryActions'
-import AgentName from './AgentName'
 import { TEAM_API_URL } from '../../constants/config'
 
 const ApartmentProductGridRent = (props) => {
@@ -31,7 +30,7 @@ const ApartmentProductGridRent = (props) => {
 
                                         <div key={categoryProperty?.id} className="ltn__product-item ltn__product-item-4 text-center---">
                                             <div className="product-img go-top">
-                                                <Link to="/product-details"><img src={`${TEAM_API_URL}/${categoryProperty?.path}`} alt="#" /></Link>
+                                                <Link to={`/property-details/${categoryProperty?.id}`}><img src={`${TEAM_API_URL}/${categoryProperty?.path}`} alt="#" /></Link>
                                                 <div className="product-badge">
                                                     <ul>
                                                         <li className="sale-badge bg-green">{categoryProperty?.property_for}{categoryProperty?.id}</li>
@@ -48,7 +47,7 @@ const ApartmentProductGridRent = (props) => {
 
                                                 </div>
                                                 <div className="product-description">
-                                                    <Link to="/contact"> {categoryProperty?.property_address}</Link><br></br>
+                                                    <Link > {categoryProperty?.property_address}</Link><br></br>
                                                     <small>Ref No.{categoryProperty?.property_ref_no}</small>
                                                 </div>
                                                 <div><center>

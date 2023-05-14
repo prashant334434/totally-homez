@@ -31,7 +31,7 @@ class CategoryV3 extends Component {
 					<div className="col-lg-8 col-md-6">
 					<div className="ltn__banner-item ltn__banner-style-4 text-color-white bg-image" data-bs-bg= {"https://www.sothebysrealty.com/blog-api/wp-content/uploads/2022/03/imagereader-4-5.jpeg"} >                        
 						<div className="ltn__banner-info">
-						<h1><a className="categoryTitle" href="#aboutV4"> Villa </a></h1>
+						<h1><Link to="/property/villa" className="categoryTitle" href="#aboutV4"> Villa </Link></h1>
 						{/* <p> Great Deals Available</p> */}
 						
 						</div>
@@ -40,7 +40,7 @@ class CategoryV3 extends Component {
 					<div className="col-lg-4 col-md-6">
 					<div className="ltn__banner-item ltn__banner-style-4 text-color-white bg-image" data-bs-bg= {"https://static.propsearch.ae/dubai-locations/verdana-townhouses_g26IB_xl.jpg"} >                        
 						<div className="ltn__banner-info">
-						<h3><Link className="categoryTitle" to="/shop">  Townhouse</Link></h3>
+						<h3><Link className="categoryTitle" to="/property/townhouse">  Townhouse</Link></h3>
 						{/* <p> Great Deals Available</p> */}
 						
 						</div>
@@ -49,7 +49,7 @@ class CategoryV3 extends Component {
 					<div className="col-lg-4 col-md-6">
 					<div className="ltn__banner-item ltn__banner-style-4 text-color-white bg-image" data-bs-bg= {"https://assets.cntraveller.in/photos/60b9ed9c13fda2fd38ad7756/master/pass/Intercon%202-987142274-1366x768.jpg"} >                        
 						<div className="ltn__banner-info">
-						<h3><Link className="categoryTitle" to="/shop">  Apartment</Link></h3>
+						<h3><Link className="categoryTitle" to="/property/apartment">  Apartment</Link></h3>
 						{/* <p> Great Deals Available</p> */}
 						
 						</div>
@@ -58,7 +58,7 @@ class CategoryV3 extends Component {
 					<div className="col-lg-8 col-md-6">
 					<div className="ltn__banner-item ltn__banner-style-4 text-color-white bg-image" data-bs-bg= {"https://b.zmtcdn.com/data/pictures/2/18517832/8cac6410d980d6bcb310b7ba89d4dcf6.jpg"} >                        
 						<div className="ltn__banner-info">
-						<h3><Link className="categoryTitle" to="/shop">  Penthouse</Link></h3>
+						<h3><Link className="categoryTitle" to="/property/penthouse">  Penthouse</Link></h3>
 						{/* <p> Great Deals Available</p> */}
 						
 						</div>
