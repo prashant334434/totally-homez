@@ -6,6 +6,8 @@ import { propertyDetailsReducer, propertyReducer } from "./reducers/propertyRedu
 import { carouselDetailsReducer, carouselReducer } from "./reducers/carouselReducers";
 import { teamDetailsReducer, teamReducer } from "./reducers/teamReducers";
 import { apartmentCategoryReducer, apartmentCategoryRentReducer, catgoryReducer, catgoryRentReducer, penthouseCategoryReducer, penthouseCategoryRentReducer, townhouseCategoryReducer, townhouseCategoryRentReducer } from "./reducers/catgoryReducres";
+import { blogReducer } from "./reducers/blogReducers";
+import { propertiesByTypeReducer } from "./reducers/propertyTypeReducers";
 
 const reducer=combineReducers({
     user:userReducer,
@@ -20,10 +22,14 @@ const reducer=combineReducers({
     townhouseCategoryProperties:townhouseCategoryReducer,
     townhouseRentProperties:townhouseCategoryRentReducer,
 
+    blogs:blogReducer,
+
     apartmentCategoryProperties:apartmentCategoryReducer,
     apartmentCategoryRentProperties:apartmentCategoryRentReducer,
     penthouseCategoryProperties:penthouseCategoryReducer,
-    penthouseCategoryRentProperties:penthouseCategoryRentReducer
+    penthouseCategoryRentProperties:penthouseCategoryRentReducer,
+
+    propertiesByType:propertiesByTypeReducer
     
    
 

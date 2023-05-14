@@ -10,7 +10,7 @@ export const blogReducer = (state = { blogs: [] }, action) => {
         case GET_ALL_BLOG_SUCCESS:
             return {
                 loading: false,
-                blogs: action.payload.products,
+                blogs: action.payload,
               
             }
         case GET_ALL_BLOG_FAILURE: {

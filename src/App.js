@@ -54,6 +54,7 @@ import Listings from './components/Listings';
 import PropertyDetails from './components/PropertyDetails';
 import NewContact from './components/NewContact';
 import TeamsNew from './components/TeamsNew';
+import PropertyType from './components/shop-components/PropertyType';
 
 
 
@@ -135,6 +136,9 @@ import TeamsNew from './components/TeamsNew';
         <Route path="/property-details/:id" component={ ProdductDetails } />
         <Route path="/contact-us" component={ NewContact } />
         <Route path="/our-team" component={ TeamsNew } />
+
+        <Route path="/property/:type" component={ PropertyType } />
+
     </Switch>
     </div>
     </BrowserRouter>
