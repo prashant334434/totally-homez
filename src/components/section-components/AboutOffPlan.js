@@ -12,7 +12,7 @@ const AboutOffPlan = () => {
       <div className="col-lg-7 align-self-center">
           <div className="about-us-info-wrap">
             <div className="section-title-area ltn__section-title-2--- mb-20">
-              <h1 className="section-title">SO UPTOWN DUBAI
+              <h1 className="section-title">SO  UPTOWN DUBAI
            </h1>
 
 
@@ -42,7 +42,9 @@ duplexes and two exclusive 3-bedroom penthouses for sale
             <ul className="ltn__list-item-half clearfix pt-100">
               
               <li>
-                <i className="flaticon-cash" />
+                {/* <i className="flaticon-cash" /> */}
+                {/* <i className="flaticon-cash" /> */}
+                <img src="assets/img/marina-svg.png" style={{"width":"20%"}}/>
                 AED 1,780,000
                 <br/>
                 Starting Price
@@ -50,14 +52,18 @@ duplexes and two exclusive 3-bedroom penthouses for sale
 
               </li>
               <li>
-                <i className="flaticon-heart" />
+                {/* <i className="flaticon-heart" /> */}
+                <img src="assets/img/book-svg.png" style={{"width":"20%"}}/>
+
                 Easy 20/80 <br/> handover
                 
 
 
 </li>
               <li>
-                <i className="flaticon-secure" />
+                {/* <i className="flaticon-secure" /> */}
+                <img src="assets/img/handover-svg.png" style={{"width":"20%"}}/>
+
                 Q3 2023          
                 
                 <br/>
@@ -94,5 +100,4 @@ duplexes and two exclusive 3-bedroom penthouses for sale
 }
 
 export default AboutOffPlan
-
 
