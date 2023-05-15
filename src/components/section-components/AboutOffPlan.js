@@ -42,7 +42,7 @@ duplexes and two exclusive 3-bedroom penthouses for sale
             <ul className="ltn__list-item-half clearfix pt-100">
               
               <li>
-                <i className="flaticon-mountain" />
+                <i className="flaticon-cash" />
                 AED 1,780,000
                 <br/>
                 Starting Price

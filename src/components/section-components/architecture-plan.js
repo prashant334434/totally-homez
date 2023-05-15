@@ -15,7 +15,7 @@ const ArchitechturePlan = (props) => {
 			      <div className="col-lg-12">
 			        <div className="section-title-area ltn__section-title-2--- text-center">
 			          {/* <h6 className="section-subtitle section-subtitle-2 ltn__secondary-color">Apartment Sketch</h6> */}
-			         <center> <h1 className="section-title">An Architectural Marvel</h1></center>
+			         <center> <h1 className="section-title">An  Architectural Marvel</h1></center>
 			        </div>
 			        <div className="ltn__tab-menu ltn__tab-menu-3 ltn__tab-menu-top-right-- text-uppercase--- text-center">
 			         <center> <div className="nav">
@@ -30,7 +30,7 @@ const ArchitechturePlan = (props) => {
 			              <div className="row">
 			                <div className="col-lg-12">
 			                  <div className="apartments-plan-img">
-			                    <img src={publicUrl+"assets/img/others/10.png"} alt="#" />
+			                    <img src={publicUrl+"assets/img/others/102.jpg"} alt="#" />
 			                  </div>
 			                </div>
 			              </div>
@@ -41,7 +41,7 @@ const ArchitechturePlan = (props) => {
 			              <div className="row">
 			                <div className="col-lg-12">
 			                  <div className="apartments-plan-img">
-			                    <img src={publicUrl+"assets/img/others/10.png"} alt="#" />
+			                    <img src={publicUrl+"assets/img/others/103.jpg"} alt="#" />
 			                  </div>
 			                </div>
 			              </div>

@@ -6,7 +6,7 @@ const PaymentPlan = () => {
     let imagealt = 'image'
 
   return (
-    <div className="ltn__category-area ltn__product-gutter section-bg-1--- ">
+    <div className="ltn__category-area ltn__product-gutter section-bg-1---  pt-40">
 			  <div className="container">
 			    <div className="row">
 			      <div className="col-lg-12">

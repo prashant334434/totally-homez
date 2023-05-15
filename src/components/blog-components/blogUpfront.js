@@ -6,11 +6,12 @@ const BlogUpfrontDetails = (props) => {
 	let customClass = props.customClass ? props.customClass : ''
 	let publicUrl = process.env.PUBLIC_URL + '/'
 	return (
-		<div className="ltn__blog-area">
+		<div className="ltn__blog-area pt-50">
 			<div className="container">
 				<center>
 					<h1>SO/ Uptown Dubai Hotel & Residences
 					</h1>
+					<br />
 				</center>
 				<div className="row">
 					<div className="col-lg-7">

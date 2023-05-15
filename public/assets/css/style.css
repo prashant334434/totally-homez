@@ -584,7 +584,7 @@ html {
 
 body {
   color: var(--ltn__paragraph-color);
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
   font-size: 16px;
   font-family: var(--ltn__body-font);
@@ -17384,10 +17384,7 @@ body {
 }
 .apartments-info-list > ul li label {
   padding-right: 10px;
-<<<<<<< HEAD
   color: white !important;
-=======
->>>>>>> 8116905 (architectural plan is completed and selection section is also done)
   position: relative;
   z-index: 2;
   color: white !important;
@@ -17395,10 +17392,7 @@ body {
 .apartments-info-list > ul li span {
   float: right;
   padding-left: 10px;
-<<<<<<< HEAD
   color: white;
-=======
->>>>>>> 8116905 (architectural plan is completed and selection section is also done)
   position: relative;
   z-index: 2;
 }
@@ -17408,18 +17402,15 @@ body {
 }
 
 .apartments-info-list-color > ul li label {
-<<<<<<< HEAD
 }
 
 .apartments-info-list-color > ul li span {
   /* background-color: var(--ltn__secondary-color); */
-=======
   
 }
 
 .apartments-info-list-color > ul li span {
 
->>>>>>> 8116905 (architectural plan is completed and selection section is also done)
 }
 
 .section-bg-1 .apartments-info-list-color > ul li::before {
