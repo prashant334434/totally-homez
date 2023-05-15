@@ -20,10 +20,10 @@ class BannerV5 extends Component {
 							<div className="ltn__car-dealer-form-tab">
 								<div className='ltn__tab-menu'>
 								<div className="nav">
-								<a className="active show" data-bs-toggle="tab" href="#ltn__form_tab_1_1">Projects</a>
+								<a className="active show" data-bs-toggle="tab" href="#ltn__form_tab_1_1">Sale</a>
 
 									<a className="" data-bs-toggle="tab" href="#ltn__form_tab_1_2">Rent </a>
-									<a data-bs-toggle="tab" href="#ltn__form_tab_1_3" className>Sale </a>
+									<a data-bs-toggle="tab" href="#ltn__form_tab_1_3" className>Projects </a>
 								</div>
 								</div>
 								<center>

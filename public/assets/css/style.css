@@ -6580,8 +6580,7 @@ label{
 ---------------------------------------- */
 .ltn__header-4 .ltn__header-middle-area,
 .ltn__header-5 .ltn__header-middle-area {
-  padding-top: 22px;
-  padding-bottom: 22px;
+  
 }
 
 .ltn__header-4 .ltn__header-top-area {
@@ -6710,8 +6709,7 @@ label{
 
 .ltn__header-4 .ltn__header-middle-area.sticky-active,
 .ltn__header-5 .ltn__header-middle-area.sticky-active {
-  padding-top: 10px;
-  padding-bottom: 10px;
+ 
 }
 
 /* Sticky Background Secondary */
@@ -16207,7 +16205,6 @@ body {
 .ltn__car-dealer-form-tab .tab-content {
   padding: 20px 40px;
   background-color: var(--section-bg-1);
-  border-top-right-radius: 0.75rem !important;
   border-bottom-left-radius: 0.75rem !important;
   border-bottom-right-radius: 0.75rem !important;
 
@@ -16237,7 +16234,7 @@ body {
 .ltn__car-dealer-form-box .nice-select {
   margin: 0;
   padding-right: 40px;
-  padding-left: 42px;
+
   border-radius: 8px;
   min-width: 95%;
   font-size: 13px;
@@ -18227,7 +18224,7 @@ body {
   border-radius: 10px;
   display: inline-block;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   font-family: var(--ltn__heading-font);
   padding: 10px 10px;
   text-align: center;

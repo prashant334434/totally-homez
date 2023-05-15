@@ -89,7 +89,8 @@ const Home_V7 = () => {
     <BestProperty customClass='ltn__feature-area section-bg-1 pt-80 pb-80  mb-120---' />
     {/* <Aboutv2 /> */}
     {/* <Gallery /> */}
-    <Carousel />
+    {/*<Carousel />*/}
+    <TeamCarousel/>
     <CategoryV3 />
     {/* <HomeCrousal/> */}
     {/* <ApartmentV1 CustomClass="ltn__feature-area section-bg-3 pt-120 pb-90 mb-120---" /> */}
