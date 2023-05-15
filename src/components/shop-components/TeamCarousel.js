@@ -5,15 +5,10 @@ const TeamCarousel = (props) => {
     let customClass = props.customClass ?props.customClass :''
     let sectionClass =props.sectionClass ?props.sectionClass :''
   return (
-    <div className={ "lltn__team-area pt-120  go-top "+ sectionClass}>
+    <div className={ "lltn__team-area pt-100  go-top "+ sectionClass}>
     <div className="container">
       <div className="row">
-        <div className="col-lg-12">
-          <div className="section-title-area ltn__section-title-2--- text-center">
-            <h6 className={"section-subtitle ltn__secondary-color "+customClass}>News &amp; Blogs</h6>
-            <h1 className="section-title">Leatest News Feeds</h1>
-          </div>
-        </div>
+        
       </div>
       <div className="row  ltn__blog-slider-one-active slick-arrow-1 ltn__blog-item-3-normal">
         {/* Blog Item */}

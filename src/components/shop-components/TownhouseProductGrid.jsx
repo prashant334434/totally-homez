@@ -27,13 +27,13 @@ const TownhouseProductGrid = (props) => {
                         <div className="row ltn__product-slider-item-three-active-full-width slick-arrow-1">
                             {
                                 townhouseCategoryProperties?.map((categoryProperty) => (
-                                    <div className="col-lg-4">
+									<div className="col-lg-4">
 									<div key={categoryProperty?.id} className="ltn__product-item ltn__product-item-4 text-center---">
 										<div className="product-img go-top">
-											<Link to={`/property-details/${categoryProperty?.id}`}><img src={`${TEAM_API_URL}/${categoryProperty?.path}`} alt="#" /></Link>
+											<Link to={`/property-details/${categoryProperty?.id}`}><img src={`https://cf.bstatic.com/xdata/images/hotel/max1024x768/353355795.jpg?k=99bd4fde3c3db5c7c52c02e5427f22f7e5cd34987d1ffa49314b859048f29712&o=&hp=1`} alt="#" /></Link>
 											<div className="product-badge">
 												<ul>
-													<li className="sale-badge bg-green">{categoryProperty?.property_for}{categoryProperty?.id}</li>
+													<li className="sale-badge bg-green">{categoryProperty?.property_for}</li>
 												</ul>
 											</div>
 

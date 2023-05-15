@@ -31,7 +31,7 @@ const ProductGridRent = (props) => {
 											<Link to={`/property-details/${categoryProperty?.id}`}><img src={`${TEAM_API_URL}/${categoryProperty?.path}`} alt="#" /></Link>
 											<div className="product-badge">
 												<ul>
-													<li className="sale-badge bg-green">{categoryProperty?.property_for}{categoryProperty?.id}</li>
+													<li className="sale-badge bg-green">{categoryProperty?.property_for}</li>
 												</ul>
 											</div>
 

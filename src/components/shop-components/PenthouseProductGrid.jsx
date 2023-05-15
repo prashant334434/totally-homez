@@ -25,13 +25,13 @@ const PenthouseProductGrid = (props) => {
                         <div className="row ltn__product-slider-item-three-active-full-width slick-arrow-1">
                             {
                                 penthouseCategoryProperties?.map((categoryProperty) => (
-                                    <div className="col-lg-4">
+									<div className="col-lg-4">
 									<div key={categoryProperty?.id} className="ltn__product-item ltn__product-item-4 text-center---">
 										<div className="product-img go-top">
-											<Link to={`/property-details/${categoryProperty?.id}`}><img src={`${TEAM_API_URL}/${categoryProperty?.path}`} alt="#" /></Link>
+											<Link to={`/property-details/${categoryProperty?.id}`}><img src={`https://do84cgvgcm805.cloudfront.net/7700/1920/c48b790111843024b729ceadc276f6bdd197646b4b78cb2b053018b598c64b43.jpg`} alt="#" /></Link>
 											<div className="product-badge">
 												<ul>
-													<li className="sale-badge bg-green">{categoryProperty?.property_for}{categoryProperty?.id}</li>
+													<li className="sale-badge bg-green">{categoryProperty?.property_for}</li>
 												</ul>
 											</div>
 
