@@ -60,16 +60,22 @@ const ShopDetails = ({ propertyDetails }) => {
 								<ul>
 									<li>
 										<div className="property-detail-feature-list-item">
-											<i className="flaticon-double-bed" />
+											{/* <i className="flaticon-double-bed" /> */}
+
+											<img src="../assets/img/bedd.png" style={{"width":"20%"}}/>
+
 											<div>
 												{/* <h6>Bedroom</h6> */}
+
 												<p>{propertyDetails?.property_no_of_bedroom} bedrooms</p>
 											</div>
 										</div>
 									</li>
 									<li>
 										<div className="property-detail-feature-list-item">
-											<i className="flaticon-clean" />
+											{/* <i className="flaticon-clean" /> */}
+											<img src="../assets/img/bat.png" style={{"width":"20%"}}/>
+
 											<div>
 												{/* <h6>Bathroom</h6> */}
 												<p>{propertyDetails?.property_no_of_bathroom} bathrooms</p>
@@ -78,7 +84,9 @@ const ShopDetails = ({ propertyDetails }) => {
 									</li>
 									<li>
 										<div className="property-detail-feature-list-item">
-											<i className="flaticon-square-shape-design-interface-tool-symbol" />
+										<img src="../assets/img/12.png" style={{"width":"20%"}}/>
+
+											{/* <i className="flaticon-square-shape-design-interface-tool-symbol" /> */}
 											<div>
 												{/* <h6>Size</h6> */}
 												<p>{propertyDetails?.property_sq_ft} sq. feet</p>
@@ -87,7 +95,8 @@ const ShopDetails = ({ propertyDetails }) => {
 									</li>
 									<li>
 										<div className="property-detail-feature-list-item">
-											<i className="flaticon-home-2" />
+											<img src="../assets/img/34.png" style={{"width":"20%"}}/>
+											{/* <i className="flaticon-home-2" /> */}
 											<div>
 												{/* <h6>Type</h6> */}
 												<p>{propertyDetails?.property_type}</p>
@@ -96,7 +105,8 @@ const ShopDetails = ({ propertyDetails }) => {
 									</li>
 									<li>
 										<div className="property-detail-feature-list-item">
-											<i className="icon-wheel-1" />
+											<img src="../assets/img/123.png" style={{"width":"20%"}}/>
+											{/* <i className="icon-wheel-1" /> */}
 											<div>
 												{/* <h6>For</h6> */}
 												<p>{propertyDetails?.property_for}</p>
@@ -106,7 +116,8 @@ const ShopDetails = ({ propertyDetails }) => {
 
 									<li>
 										<div className="property-detail-feature-list-item">
-											<i className="fas fa-images" />
+											<img src="../assets/img/11.png" style={{"width":"20%"}}/>
+											{/* <i className="fas fa-images" /> */}
 											<div>
 												{/* <h6>View</h6> */}
 												<p>Burj Khalifa</p>
@@ -224,7 +235,7 @@ const ShopDetails = ({ propertyDetails }) => {
 										<div className="ltn__menu-widget">
 											<ul>
 												<li>
-													<i className="far fa-check-circle fa-1x" style={{ color: 'red' }}></i>
+													<i className="fa fa-check fa-1x" style={{ color: 'red' }}></i>
 
 													<label className="checkbox-item">{amenity.trim()}
 

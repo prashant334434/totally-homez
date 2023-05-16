@@ -4224,8 +4224,8 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .ltn__breadcrumb-area {
   background-color: var(--section-bg-1);
   margin-bottom: 120px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .ltn__breadcrumb-list ul {
