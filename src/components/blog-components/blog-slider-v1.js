@@ -202,4 +202,3 @@ const BlogSlider
 	}
 
 export default BlogSlider;
-
