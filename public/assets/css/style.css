@@ -9343,7 +9343,7 @@ i {
 }
 .ltn__product-item-4 .product-info {
   padding: 30px 30px 1px;
-  min-height: 242px;
+  min-height: 210px;
 }
 .ltn__product-item-4 .product-price {
   font-size: 18px;
@@ -9377,7 +9377,7 @@ i {
   align-items: center;
   border-top: 1px solid;
   border-color: var(--border-color-1);
-  padding: 20px 30px 30px;
+  padding: 0px 30px 30px;
 }
 .ltn__product-item-4 .product-hover-action {
   position: relative;
@@ -18305,6 +18305,9 @@ body {
   background-color: var(--ltn__secondary-color);
   color: var(--white);
 }
+.btn-red{
+
+}
 
 .btn-black {
   background-color: var(--black);
@@ -18423,6 +18426,22 @@ body {
 .btn-effect-3:hover::after {
   width: 100%;
 }
+.btn-effect-5:after {
+  width: 0%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: white;
+  border-radius: 15px;
+}
+
+.btn-effect-5:hover {
+  color: black !important;
+
+}
+.btn-effect-5:hover::after {
+  width: 100%;
+}
 
 .btn-effect-4:after {
   width: 0%;
@@ -18438,6 +18457,10 @@ body {
 .btn-effect-4:hover::after {
   width: 100%;
 }
+.btn-effect-5:hover{
+  color: white;
+}
+
 
 .btn-full-width {
   display: block;
