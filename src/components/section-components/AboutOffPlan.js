@@ -1,9 +1,11 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import { Link } from 'react-router-dom';
 import parse from 'html-react-parser';
+// import Popup from './popup';
 
 const AboutOffPlan = () => {
     let publicUrl = process.env.PUBLIC_URL+'/'
+    const [openPopup,setOpenPopup]=useState(false)
 
   return (
     <div className="ltn__about-us-area pt-120">
@@ -37,7 +39,19 @@ duplexes and two exclusive 3-bedroom penthouses for sale
             <div className="btn-wrapper animated go-top">
               <Link to="/service" className="theme-btn-1 btn btn-effect-1">DISCOVER MORE</Link>
               <Link to="/service" className="theme-btn-1 btn btn-effect-1">GET PROJECT BROCHURE</Link>
-
+              {/* <Button
+                        text="Add New"
+                        variant="outlined"
+                        startIcon={<AddIcon />}
+                        className={classes.newButton}
+                        onClick={() => { setOpenPopup(true); setRecordForEdit(null); }}
+                    /> */}
+                  {/* <Popup
+                  openPopup={openPopup}
+                  setOpenPopup={setOpenPopup}
+                  >
+                  test
+                  </Popup> */}
             </div>
             <ul className="ltn__list-item-half clearfix pt-100">
               
