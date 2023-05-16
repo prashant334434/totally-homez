@@ -19,7 +19,7 @@ console.log("nearByArray",nearByArray)
 			        </div>
 			      </div>
 			    </div>
-			    <div className="row ltn__category-slider-active--- slick-arrow-1 justify-content-center go-top">
+			    <div className="row ltn__category-slider-active--- slick-arrow-1 go-top">
 			     
 				  {
 					nearByArray?.map((near)=>(
