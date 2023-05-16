@@ -8,7 +8,10 @@ const TeamCarousel = (props) => {
     <div className={ "lltn__team-area pt-100  go-top "+ sectionClass}>
     <div className="container">
       <div className="row">
-        
+
+        <div className="col-lg-12">
+        </div>
+
       </div>
       <div className="row  ltn__blog-slider-one-active slick-arrow-1 ltn__blog-item-3-normal">
         {/* Blog Item */}

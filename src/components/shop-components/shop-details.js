@@ -263,7 +263,7 @@ const ShopDetails = ({ propertyDetails }) => {
 								<h4 className="title-2">Property Detail</h4>
 								<div className="property-detail-info-list section-bg-0 clearfix mb-60">
 									<ul>
-										<li><h4><label>Price:</label><span>AED {propertyDetails?.property_price} </span></h4></li>
+										<li><label>Price:</label><span className='bigcoloring'> AED {propertyDetails?.property_price} </span></li>
 
 										<li><label>Property ID:</label> <span>{propertyDetails?.property_ref_no}</span></li>
 										<li><label>Home Area: </label> <span>{propertyDetails?.property_sq_ft}</span></li>
