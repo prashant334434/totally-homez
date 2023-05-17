@@ -272,19 +272,22 @@ const ShopDetails = ({ propertyDetails }) => {
 							{/* Author Widget */}
 							<div className="widget ltn__author-widget">
 								<h4 className="title-2">Property Detail</h4>
-								<div className="property-detail-info-list section-bg-0 clearfix mb-60">
+								<div className="property-detail-info-list section-bg-0 clearfix ">
 									<ul>
 										<li><label>Price:</label><span className='bigcoloring'> AED {propertyDetails?.property_price} </span></li>
-
-										<li><label>Property ID:</label> <span>{propertyDetails?.property_ref_no}</span></li>
-										<li><label>Home Area: </label> <span>{propertyDetails?.property_sq_ft}</span></li>
-										<li><label>Price: </label><span>120 sqft</span></li>
-
-										<li><label>Rooms:</label> <span>{propertyDetails?.property_no_of_bedroom}</span></li>
-										<li><label>Baths:</label> <span>{propertyDetails?.property_no_of_bathroom}</span></li>
-										<li><label>Year built:</label> <span>1992</span></li>
 									</ul>
-
+								</div>
+								<div className="property-detail-info-list section-bg-0 clearfix ">
+									
+									<ul class="wcallflexx1">
+									<li><a href="#" title="Wishlist" data-bs-toggle="modal" data-bs-target="#liton_wishlist_modal" class="wcallflexx1"><i class="fa fa-phone rotateclass"></i><span class="callclass hideclass">Call</span></a></li>
+									<li><a href="#" title="Wishlist" data-bs-toggle="modal" data-bs-target="#liton_wishlist_modal" class="wcallflexx1"><i className="icon1-mail" /><span class="callclass hideclass">Mail</span></a></li>
+									
+									<li class="li1"><a href="#" title="Quick View" data-bs-toggle="modal" data-bs-target="#quick_view_modal" class="wcallflexx1"><i class="fab fa-whatsapp callclass"></i><span class="callclass hideclass">Whatsapp</span></a></li>
+									</ul>
+									
+									
+									
 								</div>
 							</div>
 {

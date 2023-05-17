@@ -10175,6 +10175,7 @@ label{
 .bigcoloring{
   font-weight: 900 !important;
   font-size: 19px;
+  color: var(--ltn__secondary-color)!important;
 }
 
 .property-detail-info-list ul li span {
@@ -18249,7 +18250,7 @@ body {
 .theme-btn-1 {
   background-color: var(--ltn__secondary-color);
   color: var(--white);
-  border-radius: 15px;
+  border-radius: 7px;
   padding: 15px 40px;
 }
 .theme-btn-search {
@@ -18388,12 +18389,12 @@ body {
 
 .btn-effect-1:hover {
  color: white;
- border-radius: 15px;
+ border-radius: 7px;
 }
 .btn-effect-1:hover::after {
   width: 100%;
   background-color: #000000;
-  border-radius: 15px;
+  border-radius: 7px;
 
 }
 
@@ -18432,7 +18433,7 @@ body {
   top: 0;
   left: 0;
   background: white;
-  border-radius: 15px;
+  border-radius: 7px;
 }
 
 .btn-effect-5:hover {
@@ -18670,6 +18671,13 @@ body {
   justify-content: center;
   align-items: center;
 }
+.wcallflexx1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px 10px 20px;
+
+}
 .wcallFlex ul{
   width: 90%;
   display: flex;
@@ -18682,6 +18690,22 @@ body {
 .li1{
   margin-right: 1rem;
 }
+
+.wcallFlex1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wcallFlex1 ul{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wcallFlex1 ul li{
+  list-style: none;
+}
+
 .rotateclass{
   transform: rotate(180deg);
   transform: scaleX(-1);
@@ -18695,6 +18719,153 @@ body {
 @media (max-width: 950px) {
   .hideclass{
     display: none;
+  }
+}
+.parentDiv {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.fitSlider{
+  height: 100%;
+  width: 100%;
+}
+
+.child1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.child2 {
+  position: absolute;
+  bottom: 31px;
+  left: 0;
+  background-color: rgba(13, 13, 13, .7);
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.leftContent {
+  display: flex;
+}
+
+.colArrow {
+  color: white;
+  font-size: large;
+}
+
+.backBtn {
+  margin-right: 4rem;
+  color: white;
+}
+
+.section-2 {
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.ml {
+  margin-left: 0.5rem;
+}
+
+.section-2a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.8rem;
+}
+
+.section-2a i {
+  font-size: medium;
+}
+
+.section-2a-align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.sideBtns {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 0.5rem;
+}
+
+.leftbtn {
+  margin-right: 1rem;
+}
+
+.centerIt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+@media (max-width: 1100px) {
+  .leftContent {
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+}
+
+@media (max-width: 870px) {
+  .sideBtns {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
+
+  .leftbtn {
+    margin-bottom: 0.4rem;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .rightbtn {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 645px) {
+  .child2{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .sideBtns {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto ;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 510px) {
+  .section-2a{
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+  .sideBtns {
+    grid-template-columns: auto ;
+    grid-template-rows: auto auto ;
+    margin-top: 1rem;
   }
 }
 
