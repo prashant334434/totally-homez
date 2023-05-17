@@ -19,8 +19,8 @@ const ApartmentV3 = (props) => {
 			        </div>
 			        <div className="ltn__tab-menu ltn__tab-menu-3 ltn__tab-menu-top-right-- text-uppercase--- text-center">
 			          <div className="nav">
-					  <a data-bs-toggle="tab" href="#liton_tab_3_1">1BR</a>
-					  <a className="active show" data-bs-toggle="tab" href="#liton_tab_3_2">2BR</a>
+			            <a data-bs-toggle="tab"  href="#liton_tab_3_1">1BR</a>
+			            <a className="active show" data-bs-toggle="tab" href="#liton_tab_3_2">2BR</a>
 			            <a data-bs-toggle="tab" href="#liton_tab_3_3" >3BR </a>
 			          
 			          </div>

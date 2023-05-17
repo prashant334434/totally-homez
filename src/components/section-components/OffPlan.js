@@ -23,7 +23,6 @@ import PaymentPlan from './PaymentPlan';
 import BannerV2 from './banner-v2';
 import TestimonialV2 from './testimonial-v2';
 import Neighbour from './neighbour';
-import ApartmentV2 from './apartment-v2';
 const OffPlan = () => {
   return ( 
   
