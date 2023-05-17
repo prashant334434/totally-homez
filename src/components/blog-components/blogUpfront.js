@@ -48,9 +48,7 @@ const BlogUpfrontDetails = (props) => {
 										The luxurious tower of SO/ Uptown Dubai will be inspired by diamonds and brilliance, and will offer 22 floors of office space, 10 floors of SO/ Uptown Hotel with 188 rooms and 28 floors with 227 apartments of SO/ Uptown Dubai Residences.
 									</p>
 
-									<p>
-										The modern residences will be provided with fascinating views of the Dubai skyline, and Ain Dubai. Among the units to choose from are 1–3 bedroom apartments, 2-bedroom duplexes and 3-bedroom penthouses. Bedrooms are provided with built-in wardrobes, while in some residences master bedrooms come with walk-in-closets. Selected units also come with a maid’s room, and 1-2 parking spaces are dedicated to each residence.
-									</p>
+									
 
 
 								</div>

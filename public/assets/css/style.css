@@ -4783,7 +4783,14 @@ a{
 label{
   font-family: "League Spartan";
   font-size:17px;
-  padding-right: 75px;
+  padding-right: 78px;
+}
+
+.label_2{
+    font-family: "League Spartan";
+    font-size:17px;
+    padding-right: 50px;
+  
 }
 
 .popular-post-widget-brief {

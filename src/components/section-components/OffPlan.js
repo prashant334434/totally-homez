@@ -29,7 +29,8 @@ const OffPlan = () => {
      <div>
 
 
-        <Navbar page={"offplan"} />
+     <Navbar CustomClass="ltn__header-transparent gradient-color-2" />
+
         <AboutOffPlan/>
         <div className='container'>
       </div>

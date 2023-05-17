@@ -33,10 +33,10 @@ class BannerV5 extends Component {
 									<form action="#" className="ltn__car-dealer-form-box row">
 										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-meter  col-lg-4 col-md-6">
 										<label>
-											Location
+											Community
 										</label>
 										<select className="nice-select">
-										<option>Location</option>
+										<option>Community</option>
 											<option>chicago</option>
 											<option>London</option>
 											<option>Los Angeles</option>
@@ -45,12 +45,13 @@ class BannerV5 extends Component {
 										</select>
 										</div> 
 										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-calendar col-lg-4 col-md-6">
-										<label>
-											Sub-location
+										<label className='label_2'>
+
+											Sub-Community
 										</label>
 										<select className="nice-select">
 											
-											<option>Sub Location</option>
+											<option>Sub Community</option>
 											<option>Bayonne</option>
 											<option>Greenville</option>
 											<option>Manhattan</option>
@@ -123,10 +124,10 @@ class BannerV5 extends Component {
 									<form action="#" className="ltn__car-dealer-form-box row">
 										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-meter  col-lg-4 col-md-6">
 										<label>
-											Location
+										Community
 										</label>
 										<select className="nice-select">
-										<option>Location</option>
+										<option>Community</option>
 											<option>chicago</option>
 											<option>London</option>
 											<option>Los Angeles</option>
@@ -135,12 +136,13 @@ class BannerV5 extends Component {
 										</select>
 										</div> 
 										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-calendar col-lg-4 col-md-6">
-										<label>
-											Sub-location
+										<label className='label_2'>
+
+											Sub-Community
 										</label>
 										<select className="nice-select">
 											
-											<option>Sub Location</option>
+											<option>Sub Community</option>
 											<option>Bayonne</option>
 											<option>Greenville</option>
 											<option>Manhattan</option>
@@ -213,10 +215,10 @@ class BannerV5 extends Component {
 									<form action="#" className="ltn__car-dealer-form-box row">
 										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-meter  col-lg-4 col-md-6">
 										<label>
-											Location
+										Community
 										</label>
 										<select className="nice-select">
-										<option>Location</option>
+										<option>Community</option>
 											<option>chicago</option>
 											<option>London</option>
 											<option>Los Angeles</option>
@@ -225,12 +227,12 @@ class BannerV5 extends Component {
 										</select>
 										</div> 
 										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-calendar col-lg-4 col-md-6">
-										<label>
-											Sub-location
+										<label className='label_2'>
+											Sub-Community
 										</label>
 										<select className="nice-select">
 											
-											<option>Sub Location</option>
+											<option>Sub Community</option>
 											<option>Bayonne</option>
 											<option>Greenville</option>
 											<option>Manhattan</option>
@@ -240,7 +242,7 @@ class BannerV5 extends Component {
 											<option>West Side</option>
 										</select>
 										</div> 
-										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-car col-lg-4 col-md-6">
+										<div className="ltn__car-dealer-form-item ltn__custom-icon fas fa-home ltn__icon-car col-lg-4 col-md-6">
 										<label>
 											Category
 										</label>

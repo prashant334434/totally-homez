@@ -45,7 +45,6 @@ Future residents of SO/ Uptown Dubai Hotel & Residences will appreciate The Beac
 
 						<p>Obtaining a residence in SO/ Uptown Dubai Hotel & Residences will provide you with an opportunity to experience a harmonious living in close proximity to Dubai Marina and Palm Jumeirah and enjoy access to endless amenities, located as on the territory of the tower, as in the surrounding areas.</p>
 
-						<p>Moreover, spending over AED 2,000,000 on a residential unit in SO/ Uptown Dubai Hotel & Residences will provide you with an opportunity to apply for a 10-year Golden Visa after the completion of the project, which is planned to be handed over in Q3 2023.</p>
 
 						
 					</div>

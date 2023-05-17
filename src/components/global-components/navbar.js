@@ -16,7 +16,7 @@ class Navbar extends Component {
 					<div className="col">
 					<div className="site-logo-wrap">
 						<div className="site-logo go-top">
-						<Link to="/"><img src={publicUrl+"assets/img/logo2.png"} alt="Logo" /></Link>
+						<Link to="/"><img src={publicUrl+"assets/img/totallyhomeznewicon.png"} alt="Logo" /></Link>
 						</div>
 						<div className="get-support clearfix d-none">
 						<div className="get-support-icon">
@@ -34,7 +34,7 @@ class Navbar extends Component {
 					<nav>
 			              <div className="ltn__main-menu">
 			                <ul>
-			                  <li className=""><a href="#">Home</a>
+			                  {/* <li className=""><a href="#">Home</a> */}
 			                    {/* <ul className="sub-menu menu-pages-img-show">
 									<li>
 										<Link to="/">Home Style 01</Link>
@@ -77,66 +77,42 @@ class Navbar extends Component {
 										<img src={publicUrl+"assets/img/home-demos/home-11.jpg"}  alt="#" />
 									</li>
 			                    </ul> */}
-			                  </li>
-			                  <li className="menu-icon"><Link to="/about">Buy</Link>
+			                  {/* </li> */}
+							  <li className="menu-icon"><Link to="#">Buy</Link>
 			                    <ul>
-									<li><Link to="/about">subchild 001</Link></li>
-									<li><Link to="/service">subchild 002</Link></li>
-									<li><Link to="/service-details">subchild 003</Link></li>
-									<li><Link to="/portfolio">subchild 004</Link></li>
-									<li><Link to="/portfolio-v2">subchild 005</Link></li>
-									<li><Link to="/portfolio-details">subchild 006</Link></li>
-									<li><Link to="/team">subchild 007</Link></li>
-									<li><Link to="/team-details">subchild 008</Link></li>
-									<li><Link to="/faq">subchild 009</Link></li>
-									<li><Link to="/location">subchild 010</Link></li>
-			                    </ul>
-			                  </li>
-			                  <li className="menu-icon"><Link to="/shop">Rent</Link>
-							  <ul>
-									<li><Link to="/about">subchild 001</Link></li>
-									<li><Link to="/service">subchild 002</Link></li>
-									<li><Link to="/service-details">subchild 003</Link></li>
-									<li><Link to="/portfolio">subchild 004</Link></li>
-									<li><Link to="/portfolio-v2">subchild 005</Link></li>
-									<li><Link to="/portfolio-details">subchild 006</Link></li>
-									<li><Link to="/team">subchild 007</Link></li>
-									<li><Link to="/team-details">subchild 008</Link></li>
-									<li><Link to="/faq">subchild 009</Link></li>
-									<li><Link to="/location">subchild 010</Link></li>
-			                    </ul>
-			                  </li>
-							  <li className="menu-icon"><Link to="/blog-grid">Commercial</Link>
-							  <ul>
-									<li><Link to="/about">subchild 001</Link></li>
-									<li><Link to="/service">subchild 002</Link></li>
-									<li><Link to="/service-details">subchild 003</Link></li>
-									<li><Link to="/portfolio">subchild 004</Link></li>
-									<li><Link to="/portfolio-v2">subchild 005</Link></li>
-									<li><Link to="/portfolio-details">subchild 006</Link></li>
-									<li><Link to="/team">subchild 007</Link></li>
-									<li><Link to="/team-details">subchild 008</Link></li>
-									<li><Link to="/faq">subchild 009</Link></li>
-									<li><Link to="/location">subchild 010</Link></li>
-			                    </ul>
-			                  </li>
-							  <li class="menu-icon"><a href="#">Luxuary</a>
-							  <ul>
-									<li><Link to="/about">subchild 001</Link></li>
-									<li><Link to="/service">subchild 002</Link></li>
-									<li><Link to="/service-details">subchild 003</Link></li>
-									<li><Link to="/portfolio">subchild 004</Link></li>
-									<li><Link to="/portfolio-v2">subchild 005</Link></li>
-									<li><Link to="/portfolio-details">subchild 006</Link></li>
-									<li><Link to="/team">subchild 007</Link></li>
-									<li><Link to="/team-details">subchild 008</Link></li>
-									<li><Link to="/faq">subchild 009</Link></li>
-									<li><Link to="/location">subchild 010</Link></li>
-			                    </ul>
-								</li>
-								<li><Link to="/blog-details">Blog</Link></li>
+									<li><Link to="#">Apartments </Link></li>
 
-			                  <li><Link to="/contact">Contact</Link></li>
+									<li><Link to="#">Villas </Link></li>
+
+									<li><Link to="#">Penthouses </Link></li>
+
+									<li><Link to="#">Townhouses </Link></li>
+
+									<li><Link to="#">Off Plan </Link></li>
+									
+			                    </ul>
+			                  </li>
+			                  <li className="menu-icon"><Link to="#">Rent</Link>
+							  <ul>
+							  <li><Link to="#">Apartments </Link></li>
+
+<li><Link to="#">Villas </Link></li>
+
+<li><Link to="#">Penthouses </Link></li>
+
+<li><Link to="#">Townhouses </Link></li>
+			                    </ul> 
+			                  </li>
+							  <li ><Link to="/blog-grid">Off Plan </Link>
+							
+							</li>
+							<li ><a href="#">Exclusive Properties </a>
+						  
+							  </li>
+							  <li><Link to="/blog-details">Explore Dubai </Link></li>
+							  <li><Link to="/blog-details">Our Mission </Link></li>
+
+							<li><Link to="/contact-us">Contact</Link></li>
 			                  {/* <li className="special-link">
 			                    <Link to="/add-listing">Add Listing</Link>
 			                  </li> */}

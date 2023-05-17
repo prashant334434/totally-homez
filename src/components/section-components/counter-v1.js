@@ -12,7 +12,7 @@ let publicUrl = process.env.PUBLIC_URL+'/'
 			  <div className="container">
 			    <div className="row">
 			      <div className="col-md-3 col-sm-6 align-self-center">
-			        <div className="ltn__counterup-item text-color-white---">
+			        <div className="ltn__counterup-item ltn__team-item text-color-white---">
 			          <div className="counter-icon">
 			            {/* <i className="flaticon-select" /> */}
 						<img src="assets/img/downtown-svg.png" style={{"width":"25%"}}/>
@@ -23,7 +23,7 @@ let publicUrl = process.env.PUBLIC_URL+'/'
 			        </div>
 			      </div>
 			      <div className="col-md-3 col-sm-6 align-self-center">
-			        <div className="ltn__counterup-item text-color-white---">
+			        <div className="ltn__counterup-item ltn__team-item text-color-white---">
 			          <div className="counter-icon">
 			            {/* <i className="flaticon-office" /> */}
 						<img src="assets/img/2.png" style={{"width":"25%"}}/>
@@ -36,7 +36,7 @@ let publicUrl = process.env.PUBLIC_URL+'/'
 			        </div>
 			      </div>
 			      <div className="col-md-3 col-sm-6 align-self-center">
-			        <div className="ltn__counterup-item text-color-white---">
+			        <div className="ltn__counterup-item ltn__team-item text-color-white---">
 			          <div className="counter-icon">
 			            {/* <i className="flaticon-excavator" /> */}
 						<img src="assets/img/3.png" style={{"width":"25%"}}/>
@@ -49,7 +49,7 @@ let publicUrl = process.env.PUBLIC_URL+'/'
 			        </div>
 			      </div>
 			      <div className="col-md-3 col-sm-6 align-self-center">
-			        <div className="ltn__counterup-item text-color-white---">
+			        <div className="ltn__counterup-item ltn__team-item text-color-white---">
 			          <div className="counter-icon">
 			            {/* <i className="flaticon-armchair" /> */}
 						<img src="assets/img/dwc-svg.png" style={{"width":"25%"}}/>
