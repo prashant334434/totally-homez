@@ -18868,6 +18868,10 @@ body {
     margin-top: 1rem;
   }
 }
+.textbold{
+  font-weight: bold;
+  padding-left: 5px;
+}
 
 /* ----------------------------------------------------
     END

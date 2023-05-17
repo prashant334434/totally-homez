@@ -62,65 +62,65 @@ const ShopDetails = ({ propertyDetails }) => {
 										<div className="property-detail-feature-list-item">
 											{/* <i className="flaticon-double-bed" /> */}
 
-											<img src="../assets/img/bedd.png" style={{"width":"20%"}}/>
+											<img src="../assets/img/55.png" style={{"width":"20%"}}/>
 
 											<div>
 												{/* <h6>Bedroom</h6> */}
 
-												<p>{propertyDetails?.property_no_of_bedroom} bedrooms</p>
+												<p className='textbold'>{propertyDetails?.property_no_of_bedroom} bedrooms</p>
 											</div>
 										</div>
 									</li>
 									<li>
 										<div className="property-detail-feature-list-item">
 											{/* <i className="flaticon-clean" /> */}
-											<img src="../assets/img/bat.png" style={{"width":"20%"}}/>
+											<img src="../assets/img/33.png" style={{"width":"20%"}}/>
 
 											<div>
 												{/* <h6>Bathroom</h6> */}
-												<p>{propertyDetails?.property_no_of_bathroom} bathrooms</p>
+												<p className='textbold'>{propertyDetails?.property_no_of_bathroom} bathrooms</p>
 											</div>
 										</div>
 									</li>
 									<li>
 										<div className="property-detail-feature-list-item">
-										<img src="../assets/img/12.png" style={{"width":"20%"}}/>
+										<img src="../assets/img/44.png" style={{"width":"20%"}}/>
 
 											{/* <i className="flaticon-square-shape-design-interface-tool-symbol" /> */}
 											<div>
 												{/* <h6>Size</h6> */}
-												<p>{propertyDetails?.property_sq_ft} sq. feet</p>
+												<p className='textbold'>{propertyDetails?.property_sq_ft} sq. feet</p>
 											</div>
 										</div>
 									</li>
 									<li>
 										<div className="property-detail-feature-list-item">
-											<img src="../assets/img/34.png" style={{"width":"20%"}}/>
+											<img src="../assets/img/22.png" style={{"width":"20%"}}/>
 											{/* <i className="flaticon-home-2" /> */}
 											<div>
 												{/* <h6>Type</h6> */}
-												<p>{propertyDetails?.property_type}</p>
+												<p className='textbold'>{propertyDetails?.property_type}</p>
 											</div>
 										</div>
 									</li>
 									<li>
 										<div className="property-detail-feature-list-item">
-											<img src="../assets/img/123.png" style={{"width":"20%"}}/>
+											<img src="../assets/img/99.png" style={{"width":"20%"}}/>
 											{/* <i className="icon-wheel-1" /> */}
 											<div>
 												{/* <h6>For</h6> */}
-												<p>{propertyDetails?.property_for}</p>
+												<p className='textbold'>{propertyDetails?.property_for}</p>
 											</div>
 										</div>
 									</li>
 
 									<li>
 										<div className="property-detail-feature-list-item">
-											<img src="../assets/img/11.png" style={{"width":"20%"}}/>
+											<img src="../assets/img/66.png" style={{"width":"20%"}}/>
 											{/* <i className="fas fa-images" /> */}
 											<div>
 												{/* <h6>View</h6> */}
-												<p>Burj Khalifa</p>
+												<p className='textbold'>Burj Khalifa</p>
 											</div>
 										</div>
 									</li>
