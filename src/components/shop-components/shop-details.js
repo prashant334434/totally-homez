@@ -235,9 +235,9 @@ const ShopDetails = ({ propertyDetails }) => {
 										<div className="ltn__menu-widget">
 											<ul>
 												<li>
-													<i className="fa fa-check fa-1x" style={{ color: 'red' }}></i>
+													<i className="fa fa-check fa-2x" style={{ color: 'red' }}></i>
 
-													<label className="checkbox-item">{amenity.trim()}
+													<label className="checkbox-item sizing420">{amenity.trim()}
 
 													</label>
 												</li>

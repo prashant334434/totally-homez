@@ -18870,9 +18870,12 @@ body {
 }
 .textbold{
   font-weight: bold;
-  padding-left: 5px;
+  padding-left: 9px;
 }
-
+.sizing420{
+  font-size: 17px!important;
+  padding-left: 10px !important;
+}
 /* ----------------------------------------------------
     END
 ---------------------------------------------------- */
