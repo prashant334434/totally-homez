@@ -44,10 +44,10 @@ const BestVilla = (props) => {
                 square Ft
               </li>
             </ul> */}
-           <div className="read-more">
+     {/*      <div className="read-more">
 	  <button className="btn theme-btn-1" >LEARN MORE</button>
 
-      </div>
+      </div>*/}
          
           </div>
         </div>

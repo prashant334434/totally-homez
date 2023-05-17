@@ -20,7 +20,7 @@ const ProductGrid = (props) => {
 	return (
 		<div>
 			<div>
-				<div className="ltn__product-slider-area ltn__product-gutter pt-40 pb-90 plr--7">
+				<div className="ltn__product-slider-area ltn__product-gutter pt-40 pb-30 plr--7">
 					<div className="container-fluid">
 
 						<div className="row ltn__product-slider-item-three-active-full-width slick-arrow-1">
@@ -29,7 +29,7 @@ const ProductGrid = (props) => {
 									<div className="col-lg-4">
 									<div key={categoryProperty?.id} className="ltn__product-item ltn__product-item-4 text-center---">
 										<div className="product-img go-top">
-											<Link to={`/property-details/${categoryProperty?.id}`}><img src={`https://www.arabianbusiness.com/cloud/2021/09/14/GczvHPLj-arabianranches-2.jpg`} alt="#" /></Link>
+											<Link to={`/property-details/${categoryProperty?.id}`}><img src={`${TEAM_API_URL}/${categoryProperty?.path}`} alt="#" /></Link>
 											<div className="product-badge">
 												<ul>
 													<li className="sale-badge bg-green">{categoryProperty?.property_for}</li>
