@@ -5,6 +5,8 @@ import { getTeamDetailsApi } from '../../actions/teamActions';
 import { TEAM_API_URL } from '../../constants/config';
 
 const AgentDetails = ({agentId}) => {
+	let publicUrl = process.env.PUBLIC_URL + '/'
+
     const {data}=useSelector((state)=>state?.teamDetails?.teamDetails)
     console.log(agentId)
 
@@ -18,9 +20,10 @@ const AgentDetails = ({agentId}) => {
 								<div className="ltn__author-widget-inner text-center">
 									<center>
 
-										<img src={`${TEAM_API_URL}/${data?.path}`} alt="Image" />
-										<h5>{data?.name}</h5>
-										<small>AGENT</small>
+									<img src={publicUrl + "assets/img/team/Aditi.jpg"} alt="#" />
+
+										<h5>Aditi Khadka</h5>
+										<small>Property Adviser</small>
 
 									</center>
 

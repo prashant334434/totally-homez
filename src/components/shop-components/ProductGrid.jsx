@@ -29,7 +29,7 @@ const ProductGrid = (props) => {
 									<div className="col-lg-4">
 									<div key={categoryProperty?.id} className="ltn__product-item ltn__product-item-4 text-center---">
 										<div className="product-img go-top">
-											<Link to={`/property-details/${categoryProperty?.id}`}><img src={`${TEAM_API_URL}/${categoryProperty?.path}`} alt="#" /></Link>
+											<Link to={`/property-details/${categoryProperty?.id}`}><img src={'https://dubaitourpro.com/wp-content/uploads/2021/06/Dubai-Villa-for-Rent-1024x654.jpg'} alt="#" /></Link>
 											<div className="product-badge">
 												<ul>
 													<li className="sale-badge bg-green">{categoryProperty?.property_for}</li>
