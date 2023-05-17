@@ -8,7 +8,7 @@ const CounterV1 = (props) => {
 let publicUrl = process.env.PUBLIC_URL+'/'
   return (
 	<div className={customClass}>
-	<div className="ltn__counterup-area section-bg-1 pt-120 pb-70">
+	<div className="ltn__counterup-area pt-120 pb-70">
 			  <div className="container">
 			    <div className="row">
 			      <div className="col-md-3 col-sm-6 align-self-center">

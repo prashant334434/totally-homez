@@ -22,6 +22,7 @@ import ArchitechturePlan from "./architecture-plan";
 import PaymentPlan from './PaymentPlan';
 import BannerV2 from './banner-v2';
 import TestimonialV2 from './testimonial-v2';
+import Neighbour from './neighbour';
 const OffPlan = () => {
   return ( 
   
@@ -44,10 +45,12 @@ const OffPlan = () => {
         <CounterV1 customClass="ltn__feature-area section-bg-1"/>
         <ApartmentV3/>
         <TestimonialV2 />
+        {/* <Neighbour /> */}
+
         <PaymentPlan/>
         <FaqV1 customClass="ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---"/>
 
-        <BannerV2/>
+        {/* <BannerV2/> */}
 
         <ShogGrid />
 

@@ -6,7 +6,7 @@ const BlogList = (props) => {
 	let customClass = props.customClass ? props.customClass :''
 	let publicUrl = process.env.PUBLIC_URL+'/'
   return (
-	<div className="ltn__blog-area pt-100 mb-120">
+	<div className="ltn__blog-area  mb-120">
 			<div className="container">
 				<center>
 					<h1>A New Architectural Icon by DMCC in
@@ -18,7 +18,7 @@ Uptown Dubai</h1>
 					{/* Blog Item */}
 					<div className="ltn__blog-item ltn__blog-item-5 go-top">
 					<div className="ltn__blog-img">
-						<Link to="/blog-details"><img src={publicUrl+"assets/img/service/uptownDubai.jpeg"} alt="Image" /></Link>
+						<Link to="/blog-details"><img src={publicUrl+"assets/img/service/g.png"} alt="Image" /></Link>
 					</div>
 				
 					</div>

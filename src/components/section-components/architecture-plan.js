@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import parse from 'html-react-parser';
+import Neighbour from './neighbour';
+import Interior from './Interior';
 
 
 
@@ -30,7 +32,9 @@ const ArchitechturePlan = (props) => {
 			              <div className="row">
 			                <div className="col-lg-12">
 			                  <div className="apartments-plan-img">
-			                    <img src={publicUrl+"assets/img/others/102.jpg"} alt="#" />
+			                    {/* <img src={publicUrl+"assets/img/others/102.jpg"} alt="#" /> */}
+								<Neighbour />
+
 			                  </div>
 			                </div>
 			              </div>
@@ -41,7 +45,8 @@ const ArchitechturePlan = (props) => {
 			              <div className="row">
 			                <div className="col-lg-12">
 			                  <div className="apartments-plan-img">
-			                    <img src={publicUrl+"assets/img/others/103.jpg"} alt="#" />
+			                    {/* <img src={publicUrl+"assets/img/others/103.jpg"} alt="#" /> */}
+								<Interior />
 			                  </div>
 			                </div>
 			              </div>

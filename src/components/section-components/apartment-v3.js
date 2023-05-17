@@ -19,7 +19,7 @@ const ApartmentV3 = (props) => {
 			        </div>
 			        <div className="ltn__tab-menu ltn__tab-menu-3 ltn__tab-menu-top-right-- text-uppercase--- text-center">
 			          <div className="nav">
-			            <a data-bs-toggle="tab" href="#liton_tab_3_1">1BR</a>
+			            <a data-bs-toggle="tab"  href="#liton_tab_3_1">1BR</a>
 			            <a className="active show" data-bs-toggle="tab" href="#liton_tab_3_2">2BR</a>
 			            <a data-bs-toggle="tab" href="#liton_tab_3_3" >3BR </a>
 			          
@@ -31,7 +31,7 @@ const ApartmentV3 = (props) => {
 			              <div className="row">
 			                <div className="col-lg-6">
 			                  <div className="apartments-plan-info ltn__secondary-bg text-color-white">
-			                    <h2>Coastal Charm Lounge</h2>
+			                    <h2>1BR</h2>
 			                    <p>This stunning luxury apartment is located in the heart of Downtown Dubai, just steps away from the Burj Khalifa and Dubai Mall. With high-end finishes, top-notch amenities, and breathtaking views of the city, this apartment is the epitome of luxury living.</p>
 			                    <div className="apartments-info-list apartments-info-list-color mt-40">
 			                      <ul>
@@ -102,7 +102,7 @@ const ApartmentV3 = (props) => {
 			              <div className="row">
 			                <div className="col-lg-6">
 			                  <div className="apartments-plan-info ltn__secondary-bg text-color-white">
-			                    <h2>The Crown Building</h2>
+			                    <h2> 3 BR</h2>
 			                    <p>This spacious commercial space is located in the bustling area of Downtown Dubai, perfect for businesses looking to establish a presence in a prime location.</p>
 			                    <div className="apartments-info-list apartments-info-list-color mt-40">
 			                      <ul>

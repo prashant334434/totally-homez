@@ -4,7 +4,7 @@ import parse from 'html-react-parser';
 
 
 
-const Neighbour = (props) => {
+const Interior = (props) => {
 	let publicUrl = process.env.PUBLIC_URL+'/'
 	let imagealt = 'image'
     let customClass = props.customClass ? props.customClass :''
@@ -27,8 +27,8 @@ const Neighbour = (props) => {
 			        <div className="ltn__neighbour-tab-wrap">
 			          <div className="ltn__tab-menu ltn__tab-menu-3--- ltn__tab-menu-4 ltn__tab-menu-top-right-- text-uppercase--- text-center">
 			            <div className="nav">
-			              <a className="active show" data-bs-toggle="tab" href="#liton_tab_4_1"><img src={publicUrl+"assets/img/neighbour/2.png"} alt="#" /></a>
-			              <a data-bs-toggle="tab" href="#liton_tab_4_2" ><img src={publicUrl+"assets/img/neighbour/3.jpg"} alt="#" /></a>
+			              <a className="active show" data-bs-toggle="tab" href="#liton_tab_4_1"><img src={publicUrl+"assets/img/neighbour/p.jpg"} alt="#" /></a>
+			              <a data-bs-toggle="tab" href="#liton_tab_4_2" ><img src={publicUrl+"assets/img/neighbour/2.png"} alt="#" /></a>
 			              <a data-bs-toggle="tab" href="#liton_tab_4_3" ><img src={publicUrl+"assets/img/neighbour/3.jpg"} alt="#" /></a>
 			              <a data-bs-toggle="tab" href="#liton_tab_4_3" ><img src={publicUrl+"assets/img/neighbour/3.jpg"} alt="#" /></a>
 			              <a data-bs-toggle="tab" href="#liton_tab_4_3" ><img src={publicUrl+"assets/img/neighbour/3.jpg"} alt="#" /></a>
@@ -43,7 +43,7 @@ const Neighbour = (props) => {
 			                <div className="row">
 			                  <div className="col-lg-12">
 			                    <div className="neighbour-apartments-img">
-			                      <img src={publicUrl+"assets/img/neighbour/2.png"} alt="#" />
+			                      <img src={publicUrl+"assets/img/neighbour/p.jpg"} alt="#" />
 			                    </div>
 			                  </div>
 			                 
@@ -55,7 +55,7 @@ const Neighbour = (props) => {
 			                <div className="row">
 			                  <div className="col-lg-12">
 			                    <div className="neighbour-apartments-img">
-			                      <img src={publicUrl+"assets/img/neighbour/1.jpg"} alt="#" />
+			                      <img src={publicUrl+"assets/img/neighbour/2.png"} alt="#" />
 			                    </div>
 			                  </div>
 			                 
@@ -87,4 +87,4 @@ const Neighbour = (props) => {
 
 
 
-export default Neighbour
+export default Interior
