@@ -105,7 +105,7 @@ class NavbarV3 extends Component {
 <li><Link to="#">Townhouses </Link></li>
 			                    </ul> 
 			                  </li>
-							  <li ><Link to="/blog-grid">Off Plan </Link>
+							  <li ><Link to="/off-plan">Off Plan </Link>
 							
 			                  </li>
 							  <li ><a href="#">Exclusive Properties </a>
