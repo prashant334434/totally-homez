@@ -31,9 +31,10 @@ class MobileNav extends Component {
 			            </div>
 			          </div>
 			        </div>
+			       
 			        <div className="col--- ltn__header-options ltn__header-options-2 ">
 			          {/* Mobile Menu Button */}
-			          <div className="mobile-menu-toggle d-xl-none">
+			          <div className="mobile-menu-toggle showItem">
 			            <a href="#ltn__utilize-mobile-menu" className="ltn__utilize-toggle">
 			              <svg viewBox="0 0 800 600">
 			                <path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200" id="top" />

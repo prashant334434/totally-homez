@@ -15,6 +15,7 @@ import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
 import Loader from './Loader/Loader';
 import { useHistory } from "react-router-dom";
 import PageForm from './section-components/page-form';
+import MobileNav from './global-components/Mobile-nav';
 
 const Product_Details = () => {
     const { id } = useParams()
@@ -33,7 +34,7 @@ const Product_Details = () => {
         )
     }
     return <div>
-        <Navbar CustomClass="ltn__header-transparent gradient-color-2" />
+        <MobileNav />
         <div className='parentDiv'>
             <div className='fitSlider'>
                 <ProductSlider propertyDetails={propertyDetails} className="child1" />
