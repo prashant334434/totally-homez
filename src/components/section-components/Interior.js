@@ -30,11 +30,11 @@ const Interior = (props) => {
 			              <a className="active show" data-bs-toggle="tab" href="#liton_tab_4_1"><img src={publicUrl+"assets/img/neighbour/p.jpg"} alt="#" /></a>
 			              <a data-bs-toggle="tab" href="#liton_tab_4_2" ><img src={publicUrl+"assets/img/neighbour/2.png"} alt="#" /></a>
 			              <a data-bs-toggle="tab" href="#liton_tab_4_3" ><img src={publicUrl+"assets/img/neighbour/3.jpg"} alt="#" /></a>
-			              <a data-bs-toggle="tab" href="#liton_tab_4_3" ><img src={publicUrl+"assets/img/neighbour/3.jpg"} alt="#" /></a>
-			              <a data-bs-toggle="tab" href="#liton_tab_4_3" ><img src={publicUrl+"assets/img/neighbour/3.jpg"} alt="#" /></a>
-			              <a data-bs-toggle="tab" href="#liton_tab_4_3" ><img src={publicUrl+"assets/img/neighbour/3.jpg"} alt="#" /></a>
-			              <a data-bs-toggle="tab" href="#liton_tab_4_3" ><img src={publicUrl+"assets/img/neighbour/3.jpg"} alt="#" /></a>
-			              <a data-bs-toggle="tab" href="#liton_tab_4_3" ><img src={publicUrl+"assets/img/neighbour/3.jpg"} alt="#" /></a>
+			              <a data-bs-toggle="tab" href="#liton_tab_4_4" ><img src={publicUrl+"assets/img/neighbour/3.jpg"} alt="#" /></a>
+			              <a data-bs-toggle="tab" href="#liton_tab_4_5" ><img src={publicUrl+"assets/img/neighbour/3.jpg"} alt="#" /></a>
+			              <a data-bs-toggle="tab" href="#liton_tab_4_6" ><img src={publicUrl+"assets/img/neighbour/3.jpg"} alt="#" /></a>
+			              <a data-bs-toggle="tab" href="#liton_tab_4_7" ><img src={publicUrl+"assets/img/neighbour/3.jpg"} alt="#" /></a>
+			              <a data-bs-toggle="tab" href="#liton_tab_4_8" ><img src={publicUrl+"assets/img/neighbour/3.jpg"} alt="#" /></a>
 			            </div>
 			          </div>
 			          <div className="tab-content">
@@ -74,6 +74,73 @@ const Interior = (props) => {
 			                </div>
 			              </div>
 			            </div>
+
+						<div className="tab-pane fade" id="liton_tab_4_4">
+			              <div className="ltn__neighbour-tab-content-inner">
+			                <div className="row">
+			                  <div className="col-lg-12">
+			                    <div className="neighbour-apartments-img">
+			                      <img src={publicUrl+"assets/img/neighbour/3.jpg"} alt="#" />
+			                    </div>
+			                  </div>
+			                
+			                </div>
+			              </div>
+			            </div>
+
+						<div className="tab-pane fade" id="liton_tab_4_5">
+			              <div className="ltn__neighbour-tab-content-inner">
+			                <div className="row">
+			                  <div className="col-lg-12">
+			                    <div className="neighbour-apartments-img">
+			                      <img src={publicUrl+"assets/img/neighbour/3.jpg"} alt="#" />
+			                    </div>
+			                  </div>
+			                
+			                </div>
+			              </div>
+			            </div>
+
+						<div className="tab-pane fade" id="liton_tab_4_6">
+			              <div className="ltn__neighbour-tab-content-inner">
+			                <div className="row">
+			                  <div className="col-lg-12">
+			                    <div className="neighbour-apartments-img">
+			                      <img src={publicUrl+"assets/img/neighbour/3.jpg"} alt="#" />
+			                    </div>
+			                  </div>
+			                
+			                </div>
+			              </div>
+			            </div>
+
+						<div className="tab-pane fade" id="liton_tab_4_7">
+			              <div className="ltn__neighbour-tab-content-inner">
+			                <div className="row">
+			                  <div className="col-lg-12">
+			                    <div className="neighbour-apartments-img">
+			                      <img src={publicUrl+"assets/img/neighbour/3.jpg"} alt="#" />
+			                    </div>
+			                  </div>
+			                
+			                </div>
+			              </div>
+			            </div>
+
+						<div className="tab-pane fade" id="liton_tab_4_8">
+			              <div className="ltn__neighbour-tab-content-inner">
+			                <div className="row">
+			                  <div className="col-lg-12">
+			                    <div className="neighbour-apartments-img">
+			                      <img src={publicUrl+"assets/img/neighbour/3.jpg"} alt="#" />
+			                    </div>
+			                  </div>
+			                
+			                </div>
+			              </div>
+			            </div>
+
+					
 			          </div>
 			        </div>
 			    

@@ -18,7 +18,7 @@ const PaymentPlan = () => {
 			    </div>
 			    <div className="row ltn__category-slider-active--- slick-arrow-1 justify-content-center go-top">
 			      <div className="col-lg-3 col-md-4 col-sm-6 col-6">
-			        <div className="ltn__category-item ltn__category-item-5 ltn__category-item-5-2 text-center---">
+			        <div className="ltn__category-item ltn__category-item-5 ltn__team-item  ltn__category-item-5-2 text-center---">
 			          <Link to="/shop">
                       <center>
 			           
@@ -33,7 +33,7 @@ const PaymentPlan = () => {
 			        </div>
 			      </div>
 			      <div className="col-lg-3 col-md-4 col-sm-6 col-6">
-			        <div className="ltn__category-item ltn__category-item-5 ltn__category-item-5-2 text-center---">
+			        <div className="ltn__category-item ltn__category-item-5 ltn__team-item  ltn__category-item-5-2 text-center---">
 			          <Link to="/shop">
                       <center>
 			            <span className="category-title">On Handover</span>

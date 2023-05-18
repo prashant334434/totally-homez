@@ -41,6 +41,8 @@ const OffPlan = () => {
       
          <BlogUpfront/>
         <CounterFeatures/>
+        <PaymentPlan/>
+
         <ArchitechturePlan/>
         <BlogRightSidebarPage/>
         <CounterV1 customClass="ltn__feature-area section-bg-1"/>
@@ -49,7 +51,6 @@ const OffPlan = () => {
         <TestimonialV2 />
         {/* <Neighbour /> */}
 
-        <PaymentPlan/>
         <FaqV1 customClass="ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---"/>
 
         {/* <BannerV2/> */}
