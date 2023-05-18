@@ -76,7 +76,7 @@ const Home_V7 = () => {
     {/* <ProductSlider customClass="ltn__feature-area section-bg-4 pt-120 pb-90 mb-120---"/> */}
     <ProductGrid />
     <ProductGridRent/>
-    {/* <Availability /> */}
+   {/* <Availability />*/}
     {/*  <SimpleSlider/>*/}
     <VideoV2 />
     <ApartmentProductGridSale />

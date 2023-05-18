@@ -1214,7 +1214,7 @@ input[type="submit"],
 textarea {
   background-color: #F9FAFB;
   border: 2px solid;
-  border-color: #fff;
+  border-color: var(--black-2);
   height: 45px;
   border-radius:8px;
   -webkit-box-shadow: none;
@@ -17449,10 +17449,9 @@ body {
     Upcoming Project Area
 ---------------------------------------------------- */
 .ltn__upcoming-project-item {
-  padding: 30px 45px 30px 30px;
+  padding: 30px 45px 0px 30px;
   -webkit-box-shadow: var(--ltn__box-shadow-4);
   box-shadow: var(--ltn__box-shadow-4);
-  margin-top: 15px;
   margin-bottom: 50px;
   background-color: var(--white);
 }
@@ -17460,7 +17459,7 @@ body {
   margin-top: 0;
 }
 .ltn__upcoming-project-item .ltn__upcoming-project-info {
-  padding: 50px 20px;
+  padding: 15px 20px;
 }
 
 @media (max-width: 991px) {
@@ -18883,6 +18882,15 @@ body {
   font-size: 17px!important;
   padding-left: 10px !important;
 }
+.positioning1{
+  display: flex;
+  justify-content: space-between;
+}
+.textsizingsmall{
+  font-size: 20px !important;
+}
+
+
 /* ----------------------------------------------------
     END
 ---------------------------------------------------- */
