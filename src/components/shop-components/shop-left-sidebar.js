@@ -1,15 +1,21 @@
-import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import parse from 'html-react-parser';
 import Sidebar from './shop-sidebar';
+import React, { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux';
+import { getPenthouseCatgoryRentProperties } from '../../actions/catgoryActions';
+import { TEAM_API_URL } from '../../constants/config';
 
-class ShopGridV1 extends Component {
-
-    render() {
-
-        let publicUrl = process.env.PUBLIC_URL+'/'
-
-    return <div>
+const ShopGridV1 = () => {
+	let publicUrl = process.env.PUBLIC_URL+'/'
+	const { penthouseCategoryRentProperties } = useSelector((state) => state.penthouseCategoryRentProperties)
+    const dispatch = useDispatch()
+	useEffect(() => {
+        dispatch(getPenthouseCatgoryRentProperties())
+    }, [dispatch])
+  return (
+	<div>
+		<div>
 			<div className="ltn__product-area ltn__product-gutter">
 				<div className="container">
 					<div className="row">
@@ -68,68 +74,81 @@ class ShopGridV1 extends Component {
 									</div>
 									{/* ltn__product-item */}
 									<div className="col-xl-6 col-sm-6 col-12">
-									<div className="ltn__product-item ltn__product-item-4 ltn__product-item-5 text-center---">
+									{
+                                penthouseCategoryRentProperties?.map((categoryProperty) => (
+									// <div className="col-lg-4">
+									<div key={categoryProperty?.id} className="ltn__product-item ltn__product-item-4 text-center---">
 										<div className="product-img go-top">
-										<Link to="/product-details"><img src={publicUrl+"assets/img/product-3/1.jpg"} alt="#" /></Link>
-										<div className="real-estate-agent">
-											<div className="agent-img">
-											<Link to="/shop"><img src={publicUrl+"assets/img/blog/author.jpg"} alt="#" /></Link>
+											<Link to={`/property-details/${categoryProperty?.id}`}><img src={`https://img.etimg.com/photo/msid-69342073/the-20000-square-foot-apartment-offers-stunning-views-of-dubai-marinas-skyline-and-the-arabian-gulf-.jpg`} alt="#" /></Link>
+											<div className="product-badge">
+												<ul>
+													<li className="sale-badge bg-green">{categoryProperty?.property_for}</li>
+												</ul>
 											</div>
-										</div>
+
 										</div>
 										<div className="product-info">
-										<div className="product-badge">
-											<ul>
-											<li className="sale-badg">For Rent</li>
-											</ul>
-										</div>
-										<h2 className="product-title go-top"><Link to="/product-details">New Apartment Nice View</Link></h2>
-										<div className="product-img-location go-top">
-											<ul>
-											<li>
-												<Link to="/contact"><i className="flaticon-pin" /> Belmont Gardens, Chicago</Link>
-											</li>
-											</ul>
-										</div>
-										<ul className="ltn__list-item-2--- ltn__list-item-2-before--- ltn__plot-brief">
-											<li><span>3 </span>
-											Bed
-											</li>
-											<li><span>2 </span>
-											Bath
-											</li>
-											<li><span>3450 </span>
-											Square Ft
-											</li>
-										</ul>
-										<div className="product-hover-action">
-											<ul>
-											<li>
-												<a href="#" title="Quick View" data-bs-toggle="modal" data-bs-target="#quick_view_modal">
-												<i className="flaticon-expand" />
-												</a>
-											</li>
-											<li>
-												<a href="#" title="Wishlist" data-bs-toggle="modal" data-bs-target="#liton_wishlist_modal">
-												<i className="flaticon-heart-1" /></a>
-											</li>
-											<li className="go-top">
-												<Link to="/product-details" title="Product Details">
-												<i className="flaticon-add" />
-												</Link>
-											</li>
-											</ul>
-										</div>
-										</div>
+											<div className="product-price">
+												<h2 className="product-title go-top"><Link to={`/property-details/${categoryProperty?.id}`}>{categoryProperty?.property_name}</Link></h2>
+
+												<span>AED {categoryProperty?.property_price}</span>
+
+
+											</div>
+											<div className="product-description">
+												<Link > {categoryProperty?.property_address}</Link><br></br>
+												<small>Ref No.{categoryProperty?.property_ref_no}</small>
+											</div>
+											<div><center>
+												<ul className="ltn__list-item-2 ltn__list-item-2-before">
+													<li><span> <i className="flaticon-bed" />  {categoryProperty?.property_no_of_bedroom}</span>
+													</li>
+													<li><span><i className="flaticon-clean" />  {categoryProperty?.property_no_of_bathroom} </span>
+													</li>
+													<li><span> <i className="flaticon-square-shape-design-interface-tool-symbol" />  {categoryProperty?.property_sq_ft} sqft</span>
+													</li>
+												</ul></center>
+											</div></div>
 										<div className="product-info-bottom">
-										<div className="product-price">
-											<span>$34,900<label>/Month</label></span>
+											<div className="real-estate-agent wcallFlex">
+												<div className="agent-img go-top">
+													<Link to="/team-details">
+														<img src={`${TEAM_API_URL}/${categoryProperty?.path}`} alt="Image" />
+													</Link>
+												</div>
+												<div className="agent-brief go-top">
+													<h6><Link to={`/team-details/${categoryProperty?.property_agent_name}`}>{categoryProperty?.name}</Link></h6>
+
+												</div>
+											</div>
+											<div className="wcallFlex">
+												<ul className='wcallFlex'>
+													<li className='li1'>
+														<a href="#" title="Quick View" data-bs-toggle="modal" data-bs-target="#quick_view_modal" className='wcallFlex'>
+															<i className="fab fa-whatsapp callclass" ></i>
+															<span className='callclass hideclass'>Whatsapp</span>
+														</a>
+													</li>
+													<li>
+														<a href="#" title="Wishlist" data-bs-toggle="modal" data-bs-target="#liton_wishlist_modal" className='wcallFlex'>
+															<i className="fa fa-phone rotateclass"></i>
+															<span className='callclass hideclass'>Call</span>
+														</a>
+
+													</li>
+
+												</ul>
+											</div>
 										</div>
-										</div>
-									</div>
+									{/* </div> */}
+
+								</div>
+
+                                ))
+                            }
 									</div>
 									{/* ltn__product-item */}
-									<div className="col-xl-6 col-sm-6 col-12">
+									{/* <div className="col-xl-6 col-sm-6 col-12">
 									<div className="ltn__product-item ltn__product-item-4 ltn__product-item-5 text-center---">
 										<div className="product-img go-top">
 										<Link to="/product-details"><img src={publicUrl+"assets/img/product-3/2.jpg"} alt="#" /></Link>
@@ -189,9 +208,9 @@ class ShopGridV1 extends Component {
 										</div>
 										</div>
 									</div>
-									</div>
+									</div> */}
 									{/* ltn__product-item */}
-									<div className="col-xl-6 col-sm-6 col-12">
+									{/* <div className="col-xl-6 col-sm-6 col-12">
 									<div className="ltn__product-item ltn__product-item-4 ltn__product-item-5 text-center---">
 										<div className="product-img go-top">
 										<Link to="/product-details"><img src={publicUrl+"assets/img/product-3/3.jpg"} alt="#" /></Link>
@@ -251,9 +270,9 @@ class ShopGridV1 extends Component {
 										</div>
 										</div>
 									</div>
-									</div>
+									</div> */}
 									{/* ltn__product-item */}
-									<div className="col-xl-6 col-sm-6 col-12">
+									{/* <div className="col-xl-6 col-sm-6 col-12">
 									<div className="ltn__product-item ltn__product-item-4 ltn__product-item-5 text-center---">
 										<div className="product-img go-top">
 										<Link to="/product-details"><img src={publicUrl+"assets/img/product-3/4.jpg"} alt="#" /></Link>
@@ -313,9 +332,9 @@ class ShopGridV1 extends Component {
 										</div>
 										</div>
 									</div>
-									</div>
+									</div> */}
 									{/* ltn__product-item */}
-									<div className="col-xl-6 col-sm-6 col-12">
+									{/* <div className="col-xl-6 col-sm-6 col-12">
 									<div className="ltn__product-item ltn__product-item-4 ltn__product-item-5 text-center---">
 										<div className="product-img go-top">
 										<Link to="/product-details"><img src={publicUrl+"assets/img/product-3/5.jpg"} alt="#" /></Link>
@@ -375,9 +394,9 @@ class ShopGridV1 extends Component {
 										</div>
 										</div>
 									</div>
-									</div>
+									</div> */}
 									{/* ltn__product-item */}
-									<div className="col-xl-6 col-sm-6 col-12">
+									{/* <div className="col-xl-6 col-sm-6 col-12">
 									<div className="ltn__product-item ltn__product-item-4 ltn__product-item-5 text-center---">
 										<div className="product-img go-top">
 										<Link to="/product-details"><img src={publicUrl+"assets/img/product-3/6.jpg"} alt="#" /></Link>
@@ -437,7 +456,7 @@ class ShopGridV1 extends Component {
 										</div>
 										</div>
 									</div>
-									</div>
+									</div> */}
 									{/*  */}
 								</div>
 								</div>
@@ -988,8 +1007,8 @@ class ShopGridV1 extends Component {
 
 
 			</div>
-
-        }
+	</div>
+  )
 }
 
 export default ShopGridV1

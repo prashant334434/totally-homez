@@ -105,16 +105,17 @@ import CarouselDetails from './components/CarouselDetails';
         <Route path="/coming-soon" component={ ComingSoon } />
         <Route path="/404" component={ Error } />
         <Route path="/location" component={ Location } />
-        <Route path="/shop" component={ Shop } />
-        <Route path="/shop-grid" component={ ShopGrid } />
-        <Route path="/shop-left-sidebar" component={ ShopLeftSidebar } />
-        <Route path="/shop-right-sidebar" component={ ShopRightSidebar } />
+        {/* <Route path="/" component={ Shop } /> */}
+        {/* <Route path="/shop-grid" component={ ShopGrid } /> */}
+        {/* <Route path="/shop" component={ ShopLeftSidebar } /> */}
+        <Route path="/shop" component={ ShopLeftSidebar } />
+        {/* <Route path="/shopjhfe" component={ ShopRightSidebar } /> */}
 
         <Route path="/product-details" component={ ProdductDetails } />
         {/* blog */}
-        <Route path="/blog-grid" component={ BlogGrid } />
+        <Route path="/blogs" component={ BlogGrid } />
         <Route path="/blog-left-sidebar" component={ BlogLeftSidebar } />
-        <Route path="/blog-right-sidebar" component={ BlogRightSidebar } />
+        {/* <Route path="/blog-right-sidebar" component={ BlogRightSidebar } /> */}
         <Route path="/blog" component={ Blog } />
 
 

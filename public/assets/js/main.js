@@ -757,7 +757,7 @@
                     settings: {
                         arrows: true,
 
-                        slidesToShow: 3,
+                        slidesToShow: 4,
                         slidesToScroll: 1
                     }
                 },
@@ -766,7 +766,7 @@
                     settings: {
                         arrows: true,
                         dots: true,
-                        slidesToShow: 10,
+                        slidesToShow: 4,
                         slidesToScroll: 1
                     }
                 },
