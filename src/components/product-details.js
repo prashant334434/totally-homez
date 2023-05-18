@@ -16,6 +16,7 @@ import Loader from './Loader/Loader';
 import { useHistory } from "react-router-dom";
 import PageForm from './section-components/page-form';
 import MobileNav from './global-components/Mobile-nav';
+import TownhouseProductGrid from './shop-components/TownhouseProductGrid';
 
 const Product_Details = () => {
     const { id } = useParams()
@@ -75,6 +76,8 @@ const Product_Details = () => {
         </div>
         <PageHeader propertyDetails={propertyDetails} headertitle="Garden Homes Frond C" customclass="mb-0" />
         <ProductDetails propertyDetails={propertyDetails} />
+        <ShopGrid_V1/>
+        <TownhouseProductGrid />
         <PageForm/>
         <CallToActionV1 />
         <Footer />
