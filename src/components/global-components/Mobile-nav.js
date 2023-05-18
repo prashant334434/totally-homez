@@ -67,9 +67,9 @@ class MobileNav extends Component {
 						<li><a href="#">Home</a>
 				
 						</li>
-						<li><Link to="/about">Buy</Link>
+						<li><Link to="/shop">Buy</Link>
 						<ul className="sub-menu">
-							<li><Link to="/about">Apartments</Link></li>
+							<li><Link to="/shop">Apartments</Link></li>
 							<li><Link to="/service">Villas</Link></li>
 							<li><Link to="/service-details">Penthouse</Link></li>
 							<li><Link to="/portfolio">Townhouse</Link></li>
