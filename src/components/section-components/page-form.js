@@ -39,7 +39,7 @@ const Pageform= () => {
 
   return (
 	<div>
-		<div className="ltn__upcoming-project-area section-bg-1--- bg-image-top pt-40 " data-bs-bg={publicUrl+"assets/img/bg/22.jpg"}>
+		<div className="ltn__upcoming-project-area section-bg-1--- bg-image-top pt-40 pb-40" data-bs-bg={publicUrl+"assets/img/bg/22.jpg"}>
 			  <div className="container positioning1 col-lg-12">
 			    
 			     
@@ -59,7 +59,7 @@ const Pageform= () => {
 			      <div className="col-lg-6">
 			        <div className="ltn__upcoming-project-item">
 			          <div className="row">
-			            <div className="section-bg-1">
+			            <div className=" ">
 			              <div className="ltn__upcoming-project-info ltn__menu-widget">
 			            
 	                      <form className="contact-form" onSubmit={handleSubmit}>
@@ -73,7 +73,7 @@ const Pageform= () => {
           value={formData.name}
           onChange={handleChange}
           required
-          
+
         />
       </div>
       <div className="form-group">
@@ -90,7 +90,7 @@ const Pageform= () => {
       <div className="form-group">
         <label htmlFor="phone">Phone Number</label>
         <input
-          type="tel"
+          type="email"
           id="phone"
           name="phone"
           value={formData.phone}
