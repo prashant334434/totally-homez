@@ -18,7 +18,7 @@ class MobileNav extends Component {
 			        <div className="col">
 			          <div className="site-logo-wrap">
 			            <div className="site-logo go-top">
-			              <Link to="/"><img src={publicUrl+"assets/img/totallyhomeznewicon.png"} alt="Logo" /></Link>
+			              <Link to="/"><img src={publicUrl+"assets/img/logo2.png"} alt="Logo" /></Link>
 			            </div>
 			            <div className="get-support clearfix d-none">
 			              <div className="get-support-icon">
@@ -52,7 +52,7 @@ class MobileNav extends Component {
 				<div className="ltn__utilize-menu-inner ltn__scrollbar">
 					<div className="ltn__utilize-menu-head">
 					<div className="site-logo">
-						<Link to="/"><img src={publicUrl+"assets/img/logo.png"} alt="Logo" /></Link>
+						<Link to="/"><img src={publicUrl+"assets/img/logo2.png"} alt="Logo" /></Link>
 					</div>
 					<button className="ltn__utilize-close">×</button>
 					</div>
