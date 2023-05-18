@@ -40,13 +40,15 @@ const ArchitechturePlan = (props) => {
 			              </div>
 			            </div>
 			          </div>
-			          <div className="tab-pane fade active show" id="liton_tab_3_2">
+			          <div className="tab-pane fade active " id="liton_tab_3_2">
 			            <div className="ltn__product-tab-content-inner">
 			              <div className="row">
 			                <div className="col-lg-12">
 			                  <div className="apartments-plan-img">
 			                    {/* <img src={publicUrl+"assets/img/others/103.jpg"} alt="#" /> */}
-								<Interior />
+								{/* <Interior /> */}
+								<Neighbour />
+
 			                  </div>
 			                </div>
 			              </div>
