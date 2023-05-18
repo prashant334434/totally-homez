@@ -10,7 +10,7 @@ import Footer from './global-components/footer';
 const Service_V1 = () => {
     return <div>
         <Navbar />
-        <PageHeader headertitle="What We Do" subheader="Service" />
+        {/* <PageHeader headertitle="What We Do" subheader="Service" /> */}
         <AboutV5 />
         <ServiceV1 />
         <BlogSlider sectionClass="pt-120" />

@@ -70,22 +70,22 @@ class MobileNav extends Component {
 						<li><Link to="/shop">Buy</Link>
 						<ul className="sub-menu">
 							<li><Link to="/shop">Apartments</Link></li>
-							<li><Link to="/service">Villas</Link></li>
-							<li><Link to="/service-details">Penthouse</Link></li>
-							<li><Link to="/portfolio">Townhouse</Link></li>
-							<li><Link to="/portfolio-v2"> Off Plan</Link></li>
+							<li><Link to="/shop">Villas</Link></li>
+							<li><Link to="/shop">Penthouse</Link></li>
+							<li><Link to="/shop">Townhouse</Link></li>
+							<li><Link to="/shop"> Off Plan</Link></li>
 						
 						</ul>
 						</li>
 						<li><Link to="/shop">Rent</Link>
 						<ul className="sub-menu">
-							<li><Link to="/about">Apartments</Link></li>
-							<li><Link to="/service">Villas</Link></li>
-							<li><Link to="/service-details">Penthouse</Link></li>
-							<li><Link to="/portfolio">Townhouse</Link></li>
+							<li><Link to="/shop">Apartments</Link></li>
+							<li><Link to="/shop">Villas</Link></li>
+							<li><Link to="/shop">Penthouse</Link></li>
+							<li><Link to="/shop">Townhouse</Link></li>
 						
 						</ul></li>
-						<li><Link to="/blog-grid">Off Plan</Link>
+						<li><Link to="/off-plan">Off Plan</Link>
 					
 						</li>
 						<li><Link to="#">Exclusive Properties</Link>

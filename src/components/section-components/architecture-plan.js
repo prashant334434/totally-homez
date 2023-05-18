@@ -17,7 +17,7 @@ const ArchitechturePlan = (props) => {
 			      <div className="col-lg-12">
 			        <div className="section-title-area ltn__section-title-2--- text-center">
 			          {/* <h6 className="section-subtitle section-subtitle-2 ltn__secondary-color">Apartment Sketch</h6> */}
-			         <center> <h1 className="section-title">An  Architectural Marvel</h1></center>
+			         <center> <h1 className="section-title">An  Architecturaldd Marvel</h1></center>
 			        </div>
 			        <div className="ltn__tab-menu ltn__tab-menu-3 ltn__tab-menu-top-right-- text-uppercase--- text-center">
 			         <center> <div className="nav">
@@ -40,7 +40,7 @@ const ArchitechturePlan = (props) => {
 			              </div>
 			            </div>
 			          </div>
-			          <div className="tab-pane fade active " id="liton_tab_3_2">
+			          <div className="tab-pane fade  " id="liton_tab_3_2">
 			            <div className="ltn__product-tab-content-inner">
 			              <div className="row">
 			                <div className="col-lg-12">

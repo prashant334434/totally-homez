@@ -10,7 +10,7 @@ const AboutV5 = (props) => {
 
   return (
 	<div className={customClass}>
-		<div className="ltn__about-us-area  go-top">
+		<div className="ltn__about-us-area pt-100 go-top">
 				<div className="container">
 				<div className="row">
 					<div className="col-lg-5 align-self-center">
