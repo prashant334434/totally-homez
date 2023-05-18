@@ -275,10 +275,17 @@ const ShopDetails = ({ propertyDetails }) => {
 								<div className="property-detail-info-list section-bg-0 clearfix ">
 									
 									<ul class="wcallflexx1">
-									<li><a href="#" title="Wishlist" data-bs-toggle="modal" data-bs-target="#liton_wishlist_modal" class="wcallflexx1"><i class="fa fa-phone rotateclass"></i><span class="callclass hideclass">Call</span></a></li>
-									<li><a href="#" title="Wishlist" data-bs-toggle="modal" data-bs-target="#liton_wishlist_modal" class="wcallflexx1"><i className="icon1-mail" /><span class="callclass hideclass">Mail</span></a></li>
+									<li><a href="tel:+9710542897686" title="Wishlist"  class="wcallflexx1"><i class="fa fa-phone rotateclass"></i><span class="callclass hideclass">
 									
-									<li class="li1"><a href="#" title="Quick View" data-bs-toggle="modal" data-bs-target="#quick_view_modal" class="wcallflexx1"><i class="fab fa-whatsapp callclass"></i><span class="callclass hideclass">Whatsapp</span></a></li>
+									Call
+									
+									
+									
+									
+									</span></a></li>
+									<li><a href="mailto:sales@totallyhomerealestate.com" title="Wishlist"  class="wcallflexx1"><i className="icon1-mail" /><span class="callclass hideclass">Mail</span></a></li>
+									
+									<li class="li1"><a href="http://wa.me/+9710542897686"  title="Quick View" class="wcallflexx1"><i class="fab fa-whatsapp callclass"></i><span class="callclass hideclass">Whatsapp</span></a></li>
 									</ul>
 									
 									
