@@ -21,7 +21,7 @@ const ShopDetails = ({ propertyDetails }) => {
 		setIsTruncated(!isTruncated);
 	};
 	let publicUrl = process.env.PUBLIC_URL + '/'
-	const stickyRef = useStickyBox({ offsetTop: 150, offsetBottom: 100 })
+	const stickyRef = useStickyBox({ offsetTop: 150, offsetBottom: 100 });
 	const [isSticky, setSticky] = useState(false);
 	const [showFullDescription, setShowFullDescription] = useState(false);
 	useEffect(() => {
