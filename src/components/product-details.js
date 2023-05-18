@@ -14,6 +14,7 @@ import { getSingalPropertyDetailsApi } from '../actions/propertiesActions';
 import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
 import Loader from './Loader/Loader';
 import { useHistory } from "react-router-dom";
+import PageForm from './section-components/page-form';
 
 const Product_Details = () => {
     const { id } = useParams()
@@ -73,6 +74,7 @@ const Product_Details = () => {
         </div>
         <PageHeader propertyDetails={propertyDetails} headertitle="Garden Homes Frond C" customclass="mb-0" />
         <ProductDetails propertyDetails={propertyDetails} />
+        <PageForm/>
         <CallToActionV1 />
         <Footer />
     </div>
