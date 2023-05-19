@@ -7987,8 +7987,8 @@ i {
 
 /* slide-item-2 */
 .ltn__slide-item-2 {
-  height: calc(100vh - 0px);
-  padding-top: 200px;
+  /* height: calc(100vh - 0px);
+  padding-top: 200px; */
 }
 .ltn__slide-item-2 .slide-item-info {
   max-width: 650px;
@@ -8226,7 +8226,7 @@ i {
 
 /* slide-item-4 */
 .ltn__slide-item-4 {
-  padding-bottom: 0;
+  /* padding-bottom: 0; */
 }
 .ltn__slide-item-4 .slide-item-img {
   margin-top: 100px;
@@ -8913,7 +8913,7 @@ i {
   }
   .ltn__slide-item-2 {
     height: auto;
-    padding-top: 300px;
+    padding-top: 150px;
   }
   .ltn__slide-item-2 .slide-title {
     font-size: 30px;
@@ -9974,6 +9974,9 @@ label{
 .ltn__shop-details-small-img .single-small-img.slick-current img {
   border: 1px solid var(--ltn__secondary-color);
   margin-bottom: 10px;
+}
+input::placeholder {
+  font-weight: bold !important;
 }
 
 .ltn__shop-details-small-img.slick-arrow-2 {
@@ -15982,6 +15985,7 @@ body {
 .ltn__service-form-color-white .ltn__service-form-box .nice-select .current {
   color: var(--white);
   text-transform: uppercase;
+  font-weight: bolder;
 }
 .ltn__service-form-color-white .ltn__service-form-box .nice-select::after {
   border-bottom: 2px solid;
@@ -16251,7 +16255,8 @@ body {
   border-radius: 8px;
   min-width: 95%;
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 700;
+  filter: blur(1px);
   font-family: var(--ltn__heading-font);
   width: 100%;
   padding-top: 10px;
