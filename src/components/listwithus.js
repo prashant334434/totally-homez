@@ -20,6 +20,7 @@ import SellWithUs from './section-components/sellwithus';
 import MarketingProperty from './section-components/marketing-property';
 import PropertyWorth from './section-components/property-worth';
 import PropertyPrepration from './section-components/property-preparation';
+import UniqueProperty from './section-components/unique-property';
 
 const ListWithUs = () => {
     return <div>
@@ -28,7 +29,7 @@ const ListWithUs = () => {
         <MarketingProperty/>
         <PropertyWorth/>
         <PropertyPrepration/>
-        <JoinUs/>
+        <UniqueProperty/>
         
         <RightFit  customClass="ltn__feature-area  pt-120 pb-90 mb-120---"/>
 
