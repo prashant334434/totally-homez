@@ -33,9 +33,6 @@ const BlogDetails = () => {
 						<li className="ltn__blog-date">
 							<i className="far fa-calendar-alt" />June 22, 2020
 						</li>
-						<li>
-							<Link to="#"><i className="far fa-comments" />35 Comments</Link>
-						</li>
 						</ul>
 					</div>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
@@ -79,7 +76,7 @@ const BlogDetails = () => {
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, amet, fuga omnis eligendi sed cupiditate molestias enim autem animi est tempore ipsa corporis. Recusandae, quia.</p>
 					</div>
 					{/* blog-tags-social-media */}
-					<div className="ltn__blog-tags-social-media mt-80 row">
+				{/*	<div className="ltn__blog-tags-social-media mt-80 row">
 					<div className="ltn__tagcloud-widget col-lg-8 go-top">
 						<h4>Releted Tags</h4>
 						<ul>
@@ -103,7 +100,7 @@ const BlogDetails = () => {
 						<li><a href="#" title="Youtube"><i className="fab fa-youtube" /></a></li>
 						</ul>
 					</div>
-					</div>
+					</div>*/}
 					<hr />
 					{/* prev-next-btn */}
 					<div className="ltn__prev-next-btn row mb-50">
@@ -118,22 +115,21 @@ const BlogDetails = () => {
 					</div>
 					<hr />
 					{/* related-post */}
-					<div className="related-post-area mb-50">
+					{/*<div className="related-post-area mb-50">
 					<h4 className="title-2">Related Post</h4>
 					<div className="row">
 						<div className="col-md-6">
-						{/* Blog Item */}
 						<div className="ltn__blog-item ltn__blog-item-6">
 							<div className="ltn__blog-img">
 							<Link to="/blog-details"><img src={publicUrl+"assets/img/blog/blog-details/11.jpg"} alt="Image" /></Link>
 							</div>
 							<div className="ltn__blog-brief">
 							<div className="ltn__blog-meta">
-								{/* <ul>
+							<ul>
 								<li className="ltn__blog-date ltn__secondary-color">
 									<i className="far fa-calendar-alt" />June 22, 2020
 								</li>
-								</ul> */}
+								</ul> 
 							</div>
 							<h3 className="ltn__blog-title"><Link to="/blog-details">A series of iOS 7 inspire
 								vector icons sense.</Link></h3>
@@ -142,7 +138,7 @@ const BlogDetails = () => {
 						</div>
 						</div>
 						<div className="col-md-6">
-						{/* Blog Item */}
+						
 						<div className="ltn__blog-item ltn__blog-item-6">
 							<div className="ltn__blog-img">
 							<Link to="/blog-details"><img src={publicUrl+"assets/img/blog/blog-details/12.jpg"} alt="Image" /></Link>
@@ -150,9 +146,9 @@ const BlogDetails = () => {
 							<div className="ltn__blog-brief">
 							<div className="ltn__blog-meta">
 								<ul>
-								{/* <li className="ltn__blog-date ltn__secondary-color">
-									<i className="far fa-calendar-alt" />June 22, 2020
-								</li> */}
+								<li className="ltn__blog-date ltn__secondary-color">
+								<i className="far fa-calendar-alt" />June 22, 2020
+							</li>
 								</ul>
 							</div>
 							<h3 className="ltn__blog-title"><Link to="/blog-details">A series of iOS 7 inspire
@@ -162,7 +158,7 @@ const BlogDetails = () => {
 						</div>
 						</div>
 					</div>
-					</div>
+					</div>*/}
 					{/* <Comments/> */}
 				</div>
 				</div>
