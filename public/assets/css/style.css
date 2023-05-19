@@ -18258,6 +18258,13 @@ body {
   border-radius: 7px;
   padding: 15px 40px;
 }
+.theme-btn-prop {
+  /* background-color: var(--ltn__secondary-color); */
+  color: var(--white);
+  border-radius: 7px;
+  padding: 15px 40px;
+  border:2px solid;
+}
 .theme-btn-search {
   background-color: var(--ltn__secondary-color);
   color: var(--white);
@@ -18748,11 +18755,11 @@ body {
   position: absolute;
   bottom: 31px;
   left: 0;
-  background-color: rgba(13, 13, 13, .7);
+  background-color:none;
   z-index: 10;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
   padding-left: 2rem;
   padding-right: 2rem;

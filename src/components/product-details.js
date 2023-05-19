@@ -41,7 +41,7 @@ const Product_Details = () => {
                 <ProductSlider propertyDetails={propertyDetails} className="child1" />
             </div>
             <div className='child2'>
-                <div className='leftContent'>
+                {/* <div className='leftContent'>
                     <div className='backBtn centerIt' onClick={()=>history.goBack()}>
                         <i class="fas fa-arrow-left colArrow" alt="Arrow Icon"></i>
                         <span className='ml'>Back</span>
@@ -63,13 +63,13 @@ const Product_Details = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
                 <div className='sideBtns'>
                     <div className="btn-wrapper go-top leftbtn mt-0 ">
-                        <div className="btn btn-effect-5 theme-btn-1" to="/">Book A Viewing </div>
+                        <div className="btn btn-effect-5 theme-btn-prop" to="/">Book A Viewing </div>
                     </div>
                     <div className="btn-wrapper go-top rightBtn mt-0">
-                        <div className="btn btn-effect-5 theme-btn-1" to="/">Contact Agent</div>
+                        <div className="btn btn-effect-5 theme-btn-prop" to="/">Contact Agent</div>
                     </div>
                 </div>
             </div>
