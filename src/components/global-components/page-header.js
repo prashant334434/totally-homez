@@ -14,7 +14,7 @@ const PageHead = (props) => {
     let CustomClass = props.customclass ? props.customclass : ''
   return (
     <div>
-        	<div className={"ltn__breadcrumb-area text-left bg-overlay-white-30 bg-image "+CustomClass} data-bs-bg={publicUrl+"assets/img/bg/14.jpg"}>
+        	<div className={"ltn__breadcrumb-area text-left   "+CustomClass} >
 			<div className="container">
 				<div className="row">
 				<div className="col-lg-12">
@@ -22,7 +22,7 @@ const PageHead = (props) => {
 					<h1 className="page-title">{ props?.propertyDetails?.property_name }</h1>
 					<div className="ltn__breadcrumb-list">
 						<ul>
-						<li><Link to="/"><span className="ltn__secondary-color"><i className="fas fa-home" /></span> Dubai</Link></li>
+						<li><Link to="/"><span className="ltn__secondary-color"><i className="fas fa-home" style={{fontSize:'16px'}} /></span> Dubai</Link></li>
 						<li>{ props?.propertyDetails?.property_type }</li>
 						<li>{ props?.propertyDetails?.property_community }</li>
 						<li>{ props?.propertyDetails?.property_sub_community }</li>
