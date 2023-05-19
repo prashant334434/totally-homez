@@ -58,6 +58,7 @@ import PropertyType from './components/shop-components/PropertyType';
 import CarouselDetails from './components/CarouselDetails';
 import aboutUs from './components/about-uss';
 import CareerV1 from './components/careerV1';
+import ListWithUs from './components/listwithus';
 
 
 
@@ -97,6 +98,7 @@ import CareerV1 from './components/careerV1';
 
         <Route path="/about" component={About} />
         <Route path="/career" component={CareerV1} />
+        <Route path="/list-with-us" component={ListWithUs} />
         <Route path="/service" component={Service} />
         <Route path="/service-details" component={ ServiceDetails } />
         <Route path="/portfolio" component={ Portfolio } />
