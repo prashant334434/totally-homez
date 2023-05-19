@@ -49,7 +49,7 @@ const Pageform = () => {
               <p className=" white-color textsizingsmall">Dubai Hills Estate is an extensive residential and lifestyle development comprising villas, low-rise apartments and townhouses. It is a key part of the growing MBR City. The very finest properties and leisure destinations can be found in Dubai Hills, including a championship golf course.
               </p>
               <div className="btn-wrapper animated go-top">
-                <Link to="/contact" className="theme-btn-1 btn btn-effect-1">Learn More</Link>
+                <Link to="/contact" className="theme-btn-1 btn btn-effect-1">Learn Moree</Link>
               </div>
             </div>
 
