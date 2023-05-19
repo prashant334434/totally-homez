@@ -27,7 +27,7 @@ console.log("nearByArray",nearByArray)
 			        <div className="ltn__category-item ltn__category-item-5 ltn__category-item-5-2 text-center---">
 			          <Link to="/shop">
                       <center>
-			            {/* <span className="category-icon"><i className="fas fa-plane" /></span> */}
+			            <span className="category-icon"><i className="fas fa-plane" /></span>
 			            {/* <span className="category-number">02</span> */}
 			            <span className="category-title">{near.trim()}</span>
 			            {/* <span className="category-title">5 min</span> */}

@@ -9,8 +9,46 @@ import { useDispatch } from 'react-redux';
 import { getSingalPropertyDetailsApi } from '../../actions/propertiesActions';
 import { getTeamDetailsApi } from '../../actions/teamActions';
 import AgentDetails from './AgentDetails';
+import IconButton from '@material-ui/core/IconButton';
+
+import WhatsAppIcon from '@material-ui/icons/WhatsApp';
+import { Typography } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
+import { text } from '@fortawesome/fontawesome-svg-core';
+import EmailIcon from '@material-ui/icons/Email';
+import PhoneIcon from '@material-ui/icons/Phone';
+
+const useStyles = makeStyles((theme) => ({
+	container: {
+		display: 'flex',
+		justifyContent: 'space-between',
+		gap: theme.spacing(1),
+		padding:'10px',
+		
+		// Adjust the spacing between the buttons as needed
+	},
+	button: {
+		borderRadius:'10px',
+		border:'1px solid whitesmoke',
+		width: '120px', // Set the desired fixed width
+		color:'#eb2027',
+		backgroundColor:'transparent',
+		'&:hover': {
+			color: 'white',
+			backgroundColor: '#eb2027',
+		}// Adjust the spacing between the buttons as needed
+	},
+
+
+	typographyText: {
+		paddingLeft:'2px',
+		textTransform:'capitalize',
+	},
+}));
 
 const ShopDetails = ({ propertyDetails }) => {
+	const classes = useStyles();
+
 	const amenitiesArray = propertyDetails?.property_amenities?.split(',');
 	console.log(amenitiesArray)
 	const maxLength = 100
@@ -25,7 +63,7 @@ const ShopDetails = ({ propertyDetails }) => {
 	const [isSticky, setSticky] = useState(false);
 	const [showFullDescription, setShowFullDescription] = useState(false);
 	useEffect(() => {
-		if(propertyDetails?.property_agent_name){
+		if (propertyDetails?.property_agent_name) {
 			dispatch(getTeamDetailsApi(propertyDetails?.property_agent_name))
 
 		}
@@ -44,7 +82,7 @@ const ShopDetails = ({ propertyDetails }) => {
 		setShowFullDescription(!showFullDescription);
 	}
 
-	
+
 
 	return (
 		<div className="ltn__shop-details-area pt-20 pb-10">
@@ -52,17 +90,18 @@ const ShopDetails = ({ propertyDetails }) => {
 
 			<div className="container">
 				<div className="row">
-					<div className="col-lg-8 col-md-12">
+					<div className="col-lg-7 col-md-12">
 
 						<div className="ltn__shop-details-inner ltn__page-details-inner mb-60">
 							<h4 className="title-2">Features</h4>
+						{/* <hr/> */}
 							<div className="property-detail-feature-list clearfix mb-45">
 								<ul>
 									<li>
 										<div className="property-detail-feature-list-item">
 											{/* <i className="flaticon-double-bed" /> */}
 
-											<img src="../assets/img/bd.png" style={{"width":"13%"}}/>
+											<img src="../assets/img/bd.png" style={{ "width": "13%" }} />
 
 											<div>
 												{/* <h6>Bedroom</h6> */}
@@ -74,7 +113,7 @@ const ShopDetails = ({ propertyDetails }) => {
 									<li>
 										<div className="property-detail-feature-list-item">
 											{/* <i className="flaticon-clean" /> */}
-											<img src="../assets/img/bb.png" style={{"width":"13%"}}/>
+											<img src="../assets/img/bb.png" style={{ "width": "13%" }} />
 
 											<div>
 												{/* <h6>Bathroom</h6> */}
@@ -84,7 +123,7 @@ const ShopDetails = ({ propertyDetails }) => {
 									</li>
 									<li>
 										<div className="property-detail-feature-list-item">
-										<img src="../assets/img/gg.png" style={{"width":"13%"}}/>
+											<img src="../assets/img/gg.png" style={{ "width": "13%" }} />
 
 											{/* <i className="flaticon-square-shape-design-interface-tool-symbol" /> */}
 											<div>
@@ -95,7 +134,7 @@ const ShopDetails = ({ propertyDetails }) => {
 									</li>
 									<li>
 										<div className="property-detail-feature-list-item">
-											<img src="../assets/img/ii.png" style={{"width":"13%"}}/>
+											<img src="../assets/img/ii.png" style={{ "width": "13%" }} />
 											{/* <i className="flaticon-home-2" /> */}
 											<div>
 												{/* <h6>Type</h6> */}
@@ -105,7 +144,7 @@ const ShopDetails = ({ propertyDetails }) => {
 									</li>
 									<li>
 										<div className="property-detail-feature-list-item">
-											<img src="../assets/img/1.png" style={{"width":"13%"}}/>
+											<img src="../assets/img/1.png" style={{ "width": "13%" }} />
 											{/* <i className="icon-wheel-1" /> */}
 											<div>
 												{/* <h6>For</h6> */}
@@ -116,7 +155,7 @@ const ShopDetails = ({ propertyDetails }) => {
 
 									<li>
 										<div className="property-detail-feature-list-item">
-											<img src="../assets/img/ee.png" style={{"width":"13%"}}/>
+											<img src="../assets/img/ee.png" style={{ "width": "13%" }} />
 											{/* <i className="fas fa-images" /> */}
 											<div>
 												{/* <h6>View</h6> */}
@@ -229,25 +268,25 @@ const ShopDetails = ({ propertyDetails }) => {
 							<h4 className="title-2 mb-10">Amenities</h4>
 							<div className="property-details-amenities mb-60">
 								<div className="row">
-								{
-									amenitiesArray?.map((amenity,index)=>(
-										<div key={index} className="col-lg-4 col-md-6">
-										<div className="ltn__menu-widget">
-											<ul>
-												<li>
-													<i className="fa fa-check fa-2x" style={{ color: 'red' }}></i>
+									{
+										amenitiesArray?.map((amenity, index) => (
+											<div key={index} className="col-lg-4 col-md-6">
+												<div className="ltn__menu-widget">
+													<ul>
+														<li>
+															<i className="fas fa-check fa-2x" style={{ color: 'red',}}></i>
 
-													<label className="checkbox-item sizing420">{amenity.trim()}
+															<label className="checkbox-item sizing420">{amenity.trim()}
 
-													</label>
-												</li>
-											
-											</ul>
-										</div>
-									</div>
-									))
-								}
-									
+															</label>
+														</li>
+
+													</ul>
+												</div>
+											</div>
+										))
+									}
+
 								</div>
 							</div>
 							<NearBy propertyDetails={propertyDetails} />
@@ -262,41 +301,47 @@ const ShopDetails = ({ propertyDetails }) => {
 
 					</div>
 
-					<div className="col-lg-4">
+					<div className="col-lg-5">
 						<aside ref={stickyRef} className="sidebar ltn__shop-sidebar ltn__right-sidebar---">
 							{/* Author Widget */}
 							<div className="widget ltn__author-widget">
 								<h4 className="title-2">Property Detail</h4>
 								<div className="property-detail-info-list section-bg-0 clearfix ">
 									<ul>
-										<li><label>Price:</label><span className='bigcoloring'> AED {propertyDetails?.property_price} </span></li>
+										<li><label className='bigcoloring1'>Price:</label><span className='bigcoloring'> AED {propertyDetails?.property_price} </span></li>
 									</ul>
 								</div>
 								<div className="property-detail-info-list section-bg-0 clearfix ">
-									
-									<ul class="wcallflexx1">
-									<li><a href="tel:+9710542897686" title="Wishlist"  class="wcallflexx1"><i class="fa fa-phone rotateclass"></i><span class="callclass hideclass">
-									
-									Call
-									
-									
-									
-									
-									</span></a></li>
-									<li><a href="mailto:sales@totallyhomerealestate.com" title="Wishlist"  class="wcallflexx1"><i className="icon1-mail" /><span class="callclass hideclass">Mail</span></a></li>
-									
-									<li class="li1"><a href="http://wa.me/+9710542897686"  title="Quick View" class="wcallflexx1"><i class="fab fa-whatsapp callclass"></i><span class="callclass hideclass">Whatsapp</span></a></li>
-									</ul>
-									
-									
-									
+
+									<div className={classes.container}>
+										<IconButton className={classes.button}  aria-label="Delete">
+											<PhoneIcon />
+											        <Typography className={classes.typographyText} variant="button">Call</Typography>
+
+										</IconButton>
+
+										<IconButton className={classes.button} aria-label="Edit">
+											<EmailIcon />
+											        <Typography className={classes.typographyText} variant="button">Email</Typography>
+
+										</IconButton>
+
+										<IconButton className={classes.button} aria-label="Whatsapp">
+											<WhatsAppIcon />
+											        <Typography className={classes.typographyText} variant="button">Whatsapp</Typography>
+
+										</IconButton>
+									</div>
+
+
+
 								</div>
 							</div>
-{
-	propertyDetails?.property_agent_name &&
-	<AgentDetails agentId={propertyDetails?.property_agent_name}/>
+							{
+								propertyDetails?.property_agent_name &&
+								<AgentDetails agentId={propertyDetails?.property_agent_name} />
 
-}
+							}
 							{/* Search Widget */}
 							{/* <InlineWidget url="https://calendly.com/rohit0101rm" /> */}
 							{/* <PopupWidget
