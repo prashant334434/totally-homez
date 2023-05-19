@@ -18,8 +18,8 @@ class OurTeam extends Component {
                         <h1 className="section-title"><span>OUR TEAM </span> </h1>
                         <p>What makes Totally Home Real Estate exceptional is our team of passionate and dedicated personnel. </p>
                         <p>Our team is a unique blend of  </p>
-                        <h1 className="section-title">a) A network of local real estate experts &  </h1>
-                        <h1 className="section-title">b) A diverse team of international consultants with a big vision.</h1>
+                        <h1 className="section-title"> A network of local real estate experts &  </h1>
+                        <h1 className="section-title"> A diverse team of international consultants with a big vision.</h1>
                         <p>With such a unique blend, we will be able to bring together the best talent in the industry and provide our clients with exceptional services to help them live their dream home.   </p>
                         <h1 className="section-title"><span>Our Team Members Are </span> </h1>
 
