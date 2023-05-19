@@ -11806,7 +11806,6 @@ label{
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  color: var(--ltn__color-1);
   font-weight: 700;
   font-size: 14px;
   display: -webkit-box;
@@ -11815,7 +11814,7 @@ label{
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 25px;
+  min-height: 76px;
 }
 .ltn__feature-item-6 .ltn__feature-info .ltn__service-btn i {
   display: -webkit-box;
@@ -13368,7 +13367,7 @@ blockquote::before {
 /* testimonial-item-7 */
 .ltn__testimonial-item-7 {
   background-color: var(--white);
-  padding: 30px 35px 40px;
+  padding: 30px 35px 0px;
   max-width: 100%;
   border-radius: 10px;
   -webkit-box-shadow: var(--ltn__box-shadow-4);
@@ -13382,6 +13381,7 @@ blockquote::before {
 }
 .ltn__testimonial-item-7 .ltn__testimoni-info p {
   font-size: 18px;
+  min-height: 292px;
 }
 .ltn__testimonial-item-7 .ltn__testimoni-info p i {
   font-size: 30px;
@@ -13665,6 +13665,7 @@ blockquote::before {
 
 .team-info {
   padding: 25px 15px;
+  min-height: 159px;
 }
 
 /* team-item-2 */
@@ -18876,6 +18877,10 @@ body {
 .sizing420{
   font-size: 17px!important;
   padding-left: 10px !important;
+}
+.reddcoloringg{
+  color :#eb2027;
+  font-weight: 800;
 }
 /* ----------------------------------------------------
     END

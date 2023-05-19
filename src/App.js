@@ -57,6 +57,7 @@ import TeamsNew from './components/TeamsNew';
 import PropertyType from './components/shop-components/PropertyType';
 import CarouselDetails from './components/CarouselDetails';
 import aboutUs from './components/about-uss';
+import CareerV1 from './components/careerV1';
 
 
 
@@ -95,6 +96,7 @@ import aboutUs from './components/about-uss';
         <Route path="/home-v10" component={HomeV10} />
 
         <Route path="/about" component={About} />
+        <Route path="/career" component={CareerV1} />
         <Route path="/service" component={Service} />
         <Route path="/service-details" component={ ServiceDetails } />
         <Route path="/portfolio" component={ Portfolio } />
