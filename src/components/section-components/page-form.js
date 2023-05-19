@@ -57,7 +57,7 @@ const Pageform = () => {
 
 <div className="ltn__upcoming-project-info ltn__menu-widget">
 
-  <form className="contact-form" onSubmit={handleSubmit}>
+  <form className="contact-form whitecoloringbg" onSubmit={handleSubmit}>
     <h2>Contact Form</h2>
     <div className="form-group">
       <label htmlFor="name">Name</label>
