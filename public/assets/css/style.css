@@ -16255,8 +16255,8 @@ body {
   border-radius: 8px;
   min-width: 95%;
   font-size: 13px;
-  font-weight: 700;
-  filter: blur(1px);
+  font-weight: 600;
+  /* filter: blur(1px); */
   font-family: var(--ltn__heading-font);
   width: 100%;
   padding-top: 10px;
@@ -16318,7 +16318,7 @@ body {
 }
 
 .ltn__car-dealer-form-box .ltn__custom-icon.ltn__icon-car .nice-select::before {
-  content: "\f0c9";
+  content: "\f015";
 }
 
 .ltn__car-dealer-form-box

@@ -20,9 +20,8 @@ const ApartmentProductGridSale = (props) => {
     return (
         <div>
             <div>
-                <div className="ltn__product-slider-area ltn__product-gutter pt-40 pb-90 plr--7">
+                <div className="ltn__product-slider-area ltn__product-gutter pt-40 pb-40 plr--7">
                     <div className="container-fluid">
-                        <h1>Apartment</h1>
 
                         <div className="row ltn__product-slider-item-three-active-full-width slick-arrow-1">
                             {
