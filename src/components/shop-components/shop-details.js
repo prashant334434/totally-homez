@@ -47,6 +47,12 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const ShopDetails = ({ propertyDetails }) => {
+	const hrStyle = {
+		border: 'none', // Remove the default border
+		borderTop: '1px solid black', // Set the style of the horizontal rule
+		margin: '-25px 0 7px', // Adjust the margin as needed
+	  };
+	
 	const classes = useStyles();
 
 	const amenitiesArray = propertyDetails?.property_amenities?.split(',');
@@ -94,6 +100,7 @@ const ShopDetails = ({ propertyDetails }) => {
 
 						<div className="ltn__shop-details-inner ltn__page-details-inner mb-60">
 							<h4 className="title-2">Features</h4>
+							<hr style={hrStyle} />
 						{/* <hr/> */}
 							<div className="property-detail-feature-list clearfix mb-45">
 								<ul>
@@ -170,6 +177,8 @@ const ShopDetails = ({ propertyDetails }) => {
 
 							</div>
 							<h4 className="title-2">Description</h4>
+							<hr style={hrStyle} />
+
 							{isTruncated ? (
 								<p className="description">
 									{propertyDetails?.property_content?.slice(0, maxLength)}...
@@ -265,7 +274,9 @@ const ShopDetails = ({ propertyDetails }) => {
 			</ul>
 			</div> */}
 
-							<h4 className="title-2 mb-10">Amenities</h4>
+							<h4 className="title-2 ">Amenities</h4>
+							<hr style={hrStyle} />
+
 							<div className="property-details-amenities mb-60">
 								<div className="row">
 									{
