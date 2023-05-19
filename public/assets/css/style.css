@@ -644,7 +644,7 @@ h6,
 }
 
 p {
-  color: var(--ltn__paragraph-color);
+  color: black;
   margin-bottom: 1.5em;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
@@ -4773,7 +4773,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 p{
   font-family: "League Spartan";
-  font-size:17px;
+  font-size:16px;
 }
 a{
   font-family: "League Spartan";
@@ -18881,7 +18881,7 @@ body {
   }
 }
 .textbold{
-  font-weight: bold;
+  font-weight: 500;
   padding-left: 9px;
 }
 .sizing420{

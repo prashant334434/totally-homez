@@ -62,7 +62,7 @@ const ShopDetails = ({ propertyDetails }) => {
 										<div className="property-detail-feature-list-item">
 											{/* <i className="flaticon-double-bed" /> */}
 
-											<img src="../assets/img/55.png" style={{"width":"20%"}}/>
+											<img src="../assets/img/bd.png" style={{"width":"13%"}}/>
 
 											<div>
 												{/* <h6>Bedroom</h6> */}
@@ -74,7 +74,7 @@ const ShopDetails = ({ propertyDetails }) => {
 									<li>
 										<div className="property-detail-feature-list-item">
 											{/* <i className="flaticon-clean" /> */}
-											<img src="../assets/img/33.png" style={{"width":"20%"}}/>
+											<img src="../assets/img/bb.png" style={{"width":"13%"}}/>
 
 											<div>
 												{/* <h6>Bathroom</h6> */}
@@ -84,7 +84,7 @@ const ShopDetails = ({ propertyDetails }) => {
 									</li>
 									<li>
 										<div className="property-detail-feature-list-item">
-										<img src="../assets/img/44.png" style={{"width":"20%"}}/>
+										<img src="../assets/img/gg.png" style={{"width":"13%"}}/>
 
 											{/* <i className="flaticon-square-shape-design-interface-tool-symbol" /> */}
 											<div>
@@ -95,7 +95,7 @@ const ShopDetails = ({ propertyDetails }) => {
 									</li>
 									<li>
 										<div className="property-detail-feature-list-item">
-											<img src="../assets/img/22.png" style={{"width":"20%"}}/>
+											<img src="../assets/img/ii.png" style={{"width":"13%"}}/>
 											{/* <i className="flaticon-home-2" /> */}
 											<div>
 												{/* <h6>Type</h6> */}
@@ -105,7 +105,7 @@ const ShopDetails = ({ propertyDetails }) => {
 									</li>
 									<li>
 										<div className="property-detail-feature-list-item">
-											<img src="../assets/img/99.png" style={{"width":"20%"}}/>
+											<img src="../assets/img/1.png" style={{"width":"13%"}}/>
 											{/* <i className="icon-wheel-1" /> */}
 											<div>
 												{/* <h6>For</h6> */}
@@ -116,7 +116,7 @@ const ShopDetails = ({ propertyDetails }) => {
 
 									<li>
 										<div className="property-detail-feature-list-item">
-											<img src="../assets/img/66.png" style={{"width":"20%"}}/>
+											<img src="../assets/img/ee.png" style={{"width":"13%"}}/>
 											{/* <i className="fas fa-images" /> */}
 											<div>
 												{/* <h6>View</h6> */}
