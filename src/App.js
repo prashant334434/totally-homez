@@ -56,6 +56,7 @@ import NewContact from './components/NewContact';
 import TeamsNew from './components/TeamsNew';
 import PropertyType from './components/shop-components/PropertyType';
 import CarouselDetails from './components/CarouselDetails';
+import aboutUs from './components/about-uss';
 
 
 
@@ -143,6 +144,8 @@ import CarouselDetails from './components/CarouselDetails';
         CarouselDetails
 
         <Route path="/carousel/:id" component={ CarouselDetails } />
+        <Route path="/about-us" component={ aboutUs } />
+        
 
 
 
