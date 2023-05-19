@@ -18449,7 +18449,7 @@ body {
 }
 
 .btn-effect-5:hover {
-  color: black !important;
+  color: red !important;
 
 }
 .btn-effect-5:hover::after {

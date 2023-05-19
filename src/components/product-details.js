@@ -66,10 +66,10 @@ const Product_Details = () => {
                 </div> */}
                 <div className='sideBtns'>
                     <div className="btn-wrapper go-top leftbtn mt-0 ">
-                        <div className="btn btn-effect-5 theme-btn-prop" to="/">Book A Viewing </div>
+                        <div className="btn btn-effect-5 theme-btn-1" to="/">Book A Viewing </div>
                     </div>
                     <div className="btn-wrapper go-top rightBtn mt-0">
-                        <div className="btn btn-effect-5 theme-btn-prop" to="/">Contact Agent</div>
+                        <div className="btn btn-effect-5 theme-btn-1" to="/">Contact Agent</div>
                     </div>
                 </div>
             </div>
