@@ -10,7 +10,7 @@ const AboutV5 = (props) => {
 
   return (
 	<div className={customClass}>
-		<div className="ltn__about-us-area  go-top">
+		<div className="ltn__about-us-area  go-top  pt-100">
 				<div className="container">
 				<div className="row">
 					<div className="col-lg-5 align-self-center">
@@ -24,11 +24,10 @@ const AboutV5 = (props) => {
 						<h6 className="section-subtitle section-subtitle-2 ltn__secondary-color">About Us</h6>
 						<h1 className="section-title">The Leading Real Estate
 							Rental Marketplace<span>.</span></h1>
-						<p>Over 39,000 people work for us in more than 70 countries all over the
-							This breadth of global coverage, combined with specialist services</p>
+						<p>Totally Home Realtors are a group of independent and professional property consultants that have a wealth of experience in providing real estate advice and guidance to their clients</p>
 						</div>
 						<div className="about-us-info-wrap-inner about-us-info-devide---">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						<p>They strive to continue to develop their real estate expertise by working hard to stay on top of local real estate trends and business developments, while also making sure they are up to date with the latest industry knowledge worldwide. </p>
 						</div>
 						<div className="btn-wrapper animated">
 						<Link to="/about" className="theme-btn-1 btn btn-effect-1 text-uppercase">About Us</Link>
