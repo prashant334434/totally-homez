@@ -9,7 +9,7 @@ const OurCulture = (props) => {
   return (
 
   <div className={customClass}>
-  <div className="ltn__about-us-area pb-50  mt-50">
+  <div className="ltn__about-us-area pb-50 pt-20 mt-50 section-bg-1">
     <div className="container">
       <div className="row">
       <div className="col-lg-6 align-self-center">
