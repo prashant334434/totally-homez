@@ -7,7 +7,6 @@ import { TEAM_API_URL } from '../../constants/config'
 
 const TeamAgents = (props) => {
 	const { data } = useSelector((state) => state.team.team)
-	console.log(data)
 	const dispatch = useDispatch()
 	let publicUrl = process.env.PUBLIC_URL + '/'
 	let customClass = props.customClass ? props.customClass : ''
@@ -33,7 +32,6 @@ const TeamAgents = (props) => {
 						<div className="row ltn__product-slider-item-three-active-full-width slick-arrow-1 centerclass">
 							{
 								data && data.map((val, idx) => {
-									console.log(val);
 									return <div key={val?.id} className="col-xl-3 col-xxl-3 col-lg-3 col-sm-6">
 										<div className="ltn__team-item ltn__team-item-3---">
 											<div className="team-img img2 wcallFlex">

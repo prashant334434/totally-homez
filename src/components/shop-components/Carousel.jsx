@@ -1,37 +1,19 @@
-import React, { useEffect, useState } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import { Link } from 'react-router-dom/cjs/react-router-dom.min'
-import { getCatgoryProperties } from '../../actions/catgoryActions'
-import { TEAM_API_URL } from '../../constants/config'
+import React from 'react'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-
-const ProductGrid = (props) => {
-	let carouselItems = [
-		{ id: 1, content: 'https://www.timeoutdubai.com/cloud/timeoutdubai/2021/09/13/Damx3DMM-The-Penthouse-1200x800.jpg' },
-		{ id: 2, content: 'https://www.timeoutdubai.com/cloud/timeoutdubai/2021/09/13/Damx3DMM-The-Penthouse-1200x800.jpg' },
-		{ id: 3, content: 'https://www.timeoutdubai.com/cloud/timeoutdubai/2021/09/13/Damx3DMM-The-Penthouse-1200x800.jpg' },
-		{ id: 4, content: 'https://www.timeoutdubai.com/cloud/timeoutdubai/2021/11/08/The-Penthouse.jpg' },
-		{ id: 5, content: 'https://www.timeoutdubai.com/cloud/timeoutdubai/2021/11/08/The-Penthouse.jpg' },
-		{ id: 6, content: 'https://www.timeoutdubai.com/cloud/timeoutdubai/2021/11/08/The-Penthouse.jpg' },
-		// Add more items as needed
-	  ];
-	const [propertyCategory, setPropertyCategory] = useState("villa")
-	let publicUrl = process.env.PUBLIC_URL + '/'
-	let customClass = props.customClass ? props.customClass : ''
-	// console.log(data)
-	const { categoryProperties } = useSelector((state) => state.categoryProperties)
-	console.log(categoryProperties)
-	const dispatch = useDispatch()
-
-	useEffect(() => {
-		dispatch(getCatgoryProperties(propertyCategory))
-	}, [dispatch])
-if(categoryProperties?.length>0){
-	carouselItems=categoryProperties
-}
-	return (
-	 <Carousel
+import {Link} from 'react-router-dom'
+const carouselItems = [
+    { id: 1, content: 'https://www.timeoutdubai.com/cloud/timeoutdubai/2021/09/13/Damx3DMM-The-Penthouse-1200x800.jpg' },
+    { id: 2, content: 'https://www.timeoutdubai.com/cloud/timeoutdubai/2021/09/13/Damx3DMM-The-Penthouse-1200x800.jpg' },
+    { id: 3, content: 'https://www.timeoutdubai.com/cloud/timeoutdubai/2021/09/13/Damx3DMM-The-Penthouse-1200x800.jpg' },
+    { id: 4, content: 'https://www.timeoutdubai.com/cloud/timeoutdubai/2021/11/08/The-Penthouse.jpg' },
+    { id: 5, content: 'https://www.timeoutdubai.com/cloud/timeoutdubai/2021/11/08/The-Penthouse.jpg' },
+    { id: 6, content: 'https://www.timeoutdubai.com/cloud/timeoutdubai/2021/11/08/The-Penthouse.jpg' },
+    // Add more items as needed
+  ];
+const CarouselSlider = () => {
+    return (
+        <Carousel
         additionalTransfrom={0}
         arrows
         autoPlay
@@ -50,7 +32,7 @@ if(categoryProperties?.length>0){
         responsive={{
           desktop: {
             breakpoint: { max: 3000, min: 1024 },
-            items: 3,
+            items: 5,
           },
           tablet: {
             breakpoint: { max: 1024, min: 464 },
@@ -70,7 +52,7 @@ if(categoryProperties?.length>0){
        	<div className="col-lg-12">
            <div key={item?.id} className="ltn__product-item ltn__product-item-4 text-center---">
                <div className="product-img go-top">
-                   <Link to={`/property-details/${item?.id}`}><img src={item?.property_imges} alt="#" /></Link>
+                   <Link to={`/property-details/${item?.id}`}><img src={item?.content} alt="#" /></Link>
                    <div className="product-badge">
                        <ul>
                            <li className="sale-badge bg-green">{"rent"}</li>
@@ -78,25 +60,25 @@ if(categoryProperties?.length>0){
                    </div>
 
                </div>
-                <div className="product-info">
+               {/* <div className="product-info">
                    <div className="product-price">
-                       <h2 className="product-title go-top"><Link to={`/property-details/${item?.id}`}>{item?.property_name}</Link></h2>
+                       <h2 className="product-title go-top"><Link to={`/property-details/${categoryProperty?.id}`}>{categoryProperty?.property_name}</Link></h2>
 
-                       <span>AED {item?.property_price}</span>
+                       <span>AED {categoryProperty?.property_price}</span>
 
 
                    </div>
                    <div className="product-description">
-                       <Link > {item?.property_address}</Link><br></br>
-                       <small>Ref No.{item?.property_ref_no}</small>
+                       <Link > {categoryProperty?.property_address}</Link><br></br>
+                       <small>Ref No.{categoryProperty?.property_ref_no}</small>
                    </div>
                    <div><center>
                        <ul className="ltn__list-item-2 ltn__list-item-2-before">
-                           <li><span> <i className="flaticon-bed" />  {item?.property_no_of_bedroom}</span>
+                           <li><span> <i className="flaticon-bed" />  {categoryProperty?.property_no_of_bedroom}</span>
                            </li>
-                           <li><span><i className="flaticon-clean" />  {item?.property_no_of_bathroom} </span>
+                           <li><span><i className="flaticon-clean" />  {categoryProperty?.property_no_of_bathroom} </span>
                            </li>
-                           <li><span> <i className="flaticon-square-shape-design-interface-tool-symbol" />  {item?.property_sq_ft} sqft</span>
+                           <li><span> <i className="flaticon-square-shape-design-interface-tool-symbol" />  {categoryProperty?.property_sq_ft} sqft</span>
                            </li>
                        </ul></center>
                    </div></div>
@@ -104,11 +86,11 @@ if(categoryProperties?.length>0){
                    <div className="real-estate-agent wcallFlex">
                        <div className="agent-img go-top">
                            <Link to="/team-details">
-                               <img src={`${TEAM_API_URL}/${item?.path}`} alt="Image" />
+                               <img src={`${TEAM_API_URL}/${categoryProperty?.path}`} alt="Image" />
                            </Link>
                        </div>
                        <div className="agent-brief go-top">
-                           <h6><Link to={`/team-details/${item?.property_agent_name}`}>{item?.name}</Link></h6>
+                           <h6><Link to={`/team-details/${categoryProperty?.property_agent_name}`}>{categoryProperty?.name}</Link></h6>
 
                        </div>
                    </div>
@@ -130,13 +112,14 @@ if(categoryProperties?.length>0){
 
                        </ul>
                    </div>
-               </div>
+               </div> */}
            </div>
 
        </div>
         ))}
       </Carousel>
-	)
+    );
+  
 }
 
-export default ProductGrid
+export default CarouselSlider

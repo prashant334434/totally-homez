@@ -24,6 +24,7 @@ import ApartmentProductGridRent from './shop-components/ApartmentProductGridRent
 import TownhouseProductGridRent from './shop-components/TownhouseProductGridRent';
 import PenthouseProductGridRent from './shop-components/PenthouseProductGridRent';
 import ProductGridRent from './shop-components/ProductGridRent';
+import CarouselSlider from './shop-components/Carousel';
 
 
 const Home_V7 = () => {
@@ -59,7 +60,7 @@ const Home_V7 = () => {
     <BestProperty customClass='ltn__feature-area section-bg-1 pt-80 pb-80  mb-120---' />
     {/* <Aboutv2 /> */}
     {/* <Gallery /> */}
-    {/*<Carousel />*/}
+    <CarouselSlider />
     {/* <TeamCarousel/> */}
     <CategoryV3 />
     {/* <HomeCrousal/> */}
