@@ -66,6 +66,7 @@ if(categoryProperties?.length>0){
         slidesToSlide={1}
         swipeable
       >
+        
         {carouselItems.map((item) => (
        	<div className="col-lg-12">
            <div key={item?.id} className="ltn__product-item ltn__product-item-4 text-center---">
@@ -82,7 +83,7 @@ if(categoryProperties?.length>0){
                    <div className="product-price">
                        <h2 className="product-title go-top"><Link to={`/property-details/${item?.id}`}>{item?.property_name}</Link></h2>
 
-                       <span>AED {item?.property_price}</span>
+                       <span>AEDD {item?.property_price}</span>
 
 
                    </div>

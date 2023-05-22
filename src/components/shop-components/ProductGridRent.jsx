@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom/cjs/react-router-dom.min'
-import { getApartmentCatgoryRentProperties, getCatgoryProperties } from '../../actions/catgoryActions'
+import { getApartmentCatgoryRentProperties, getCatgoryProperties, getCatgoryPropertiesRentApi } from '../../actions/catgoryActions'
 import { TEAM_API_URL } from '../../constants/config'
 
 const ProductGridRent = (props) => {
@@ -13,7 +13,7 @@ const ProductGridRent = (props) => {
 	const dispatch = useDispatch()
 
 	useEffect(() => {
-		dispatch(getApartmentCatgoryRentProperties())
+		dispatch(getCatgoryPropertiesRentApi())
 	}, [dispatch])
 
 	return (
