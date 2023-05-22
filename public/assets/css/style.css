@@ -16227,7 +16227,7 @@ body {
 }
 
 .ltn__car-dealer-form-tab .tab-content {
-  padding: 20px 40px;
+  padding: 20px 12px;
   background-color: var(--section-bg-1);
   border-bottom-left-radius: 0.75rem !important;
   border-bottom-right-radius: 0.75rem !important;
@@ -18834,7 +18834,10 @@ body {
   grid-template-columns: auto auto;
   gap: 0.5rem;
 }
-
+/* .ltn__image-slider-5-active {
+  height:700px;
+  width: 100vw;
+} */
 .leftbtn {
   margin-right: 1rem;
 }

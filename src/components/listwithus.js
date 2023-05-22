@@ -21,10 +21,11 @@ import MarketingProperty from './section-components/marketing-property';
 import PropertyWorth from './section-components/property-worth';
 import PropertyPrepration from './section-components/property-preparation';
 import UniqueProperty from './section-components/unique-property';
+import MobileNav from './global-components/Mobile-nav';
 
 const ListWithUs = () => {
     return <div>
-        <Navbar />
+    <MobileNav />
         <SellWithUs />
         <MarketingProperty/>
         <PropertyWorth/>

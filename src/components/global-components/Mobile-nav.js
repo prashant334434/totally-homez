@@ -19,7 +19,9 @@ class MobileNav extends Component {
 			          <div className="site-logo-wrap">
 			            <div className="site-logo go-top">
 			              <Link to="/"><img src={publicUrl+"assets/img/logo2.png"} alt="Logo" /></Link>
+						  
 			            </div>
+						
 			            <div className="get-support clearfix d-none">
 			              <div className="get-support-icon">
 			                <i className="icon-call" />
@@ -30,9 +32,7 @@ class MobileNav extends Component {
 			              </div>
 			            </div>
 			          </div>
-			        </div>
-			       
-			        <div className="col--- ltn__header-options ltn__header-options-2 ">
+					  <div className="col--- ltn__header-options ltn__header-options-2 ">
 			          {/* Mobile Menu Button */}
 			          <div className="mobile-menu-toggle showItem ">
 			            <a href="#ltn__utilize-mobile-menu" className="ltn__utilize-toggle ">
@@ -44,6 +44,9 @@ class MobileNav extends Component {
 			            </a>
 			          </div>
 			        </div>
+			        </div>
+			       
+			       
 			      </div>
 			    </div>
 			  </div>
