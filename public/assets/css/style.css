@@ -1212,7 +1212,6 @@ input[type="email"],
 input[type="password"],
 input[type="submit"],
 textarea {
-  background-color: #F9FAFB;
   border: 2px solid;
   border-color: var(--black-2);
   height: 45px;
@@ -1224,6 +1223,7 @@ textarea {
   color: var(--ltn__paragraph-color);
   width: 100%;
   padding-right: 40px;
+  margin-bottom: 20px;
 }
 
 input[type="text"]::-webkit-input-placeholder,
@@ -13968,6 +13968,8 @@ blockquote::before {
   padding: 40px 50px 50px;
   position: relative;
   z-index: 1;
+  border: 2px solid var(--black-2);
+  border-radius: 7px;
 }
 .contact-form-box input::-webkit-input-placeholder {
   color: var(--ltn__color-1);
@@ -16184,11 +16186,10 @@ body {
 
 .input-item .nice-select {
   border: 2px solid;
-  border-color: var(--border-color-1);
-  border-radius: 0;
+  border-color: var(--black-2);
+  border-radius: 7px;
   font-size: 14px;
   font-weight: 400;
-  height: 65px;
   line-height: 60px;
   width: 100%;
   margin-bottom: 30px;

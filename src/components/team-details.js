@@ -22,10 +22,8 @@ const {loading,teamDetails}=useSelector((state)=>state.teamDetails)
     return <div>
         <Navbar />
         
-        {/* <PageHeader headertitle="Agent Details" /> */}
+ 
         <TeamDetails loading={loading} teamDetails={teamDetails} />
-        <VideoV1 />
-
         {/* <CallToActionV1 /> */}
         <Footer />
     </div>
