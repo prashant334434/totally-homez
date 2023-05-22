@@ -5,12 +5,17 @@ import BlogDetails from './blog-components/blog-details';
 import CallToActionV1 from './section-components/call-to-action-v1';
 import Footer from './global-components/footer';
 import ContactDetails from './blog-components/ContactDetails';
+import ContactInfo from './section-components/contact-info';
+import PhotoContact from './section-components/photocontact';
 
 const NewContact = () => {
     return <div>
         <Navbar />
         {/* <BlogDetails /> */}
-        <ContactDetails/>
+        <PhotoContact/>
+        <ContactInfo/>
+       {/* 
+        <ContactDetails/>*/}
 
         {/* <PageHeader headertitle="Contact us" /> */}
         {/* <BlogDetails /> */}

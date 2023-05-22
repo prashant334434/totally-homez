@@ -10885,6 +10885,7 @@ input::placeholder {
   background-size: auto;
   background-position: top center;
   background-repeat: repeat;
+  min-height: 725px;
 }
 
 .bg-image-right-before {
@@ -18954,6 +18955,9 @@ body {
 .whitecoloringbg{
   background-color: white !important;
  padding: 20px 32px;
+}
+.sizingofp{
+  min-height: 86px;
 }
 /* ----------------------------------------------------
     END
