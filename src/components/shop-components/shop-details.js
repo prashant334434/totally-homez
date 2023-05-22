@@ -285,7 +285,8 @@ const ShopDetails = ({ propertyDetails }) => {
 												<div className="ltn__menu-widget">
 													<ul>
 														<li>
-															<i className="fas fa-check fa-2x" style={{ color: 'red',}}></i>
+															{/* <i className="fas fa-check fa-2x" style={{ color: 'red',}}></i> */}
+															<img src="../assets/img/tick.png" style={{ "width": "9%"}} />
 
 															<label className="checkbox-item sizing420">{amenity.trim()}
 
@@ -300,18 +301,39 @@ const ShopDetails = ({ propertyDetails }) => {
 
 								</div>
 							</div>
-							<NearBy propertyDetails={propertyDetails} />
-							{/* APARTMENTS PLAN AREA START */}
-							<div className="ltn__apartments-plan-area product-details-apartments-plan mb-60">
+							<h4 className="title-2 ">NearBy</h4>
+							<hr style={hrStyle} />
 
+							<div className="property-details-amenities mb-60">
+								<div className="row">
+									{
+										amenitiesArray?.map((amenity, index) => (
+											<div key={index} className="col-lg-4 col-md-6">
+												<div className="ltn__menu-widget">
+													<ul>
+														<li>
+															{/* <i className="fas fa-check fa-2x" style={{ color: 'red',}}></i> */}
+															{/* <img src="../assets/img/tick.png" style={{ "width": "9%"}} /> */}
+															<i className=' fa fa-bank ' style={{ "color": "red"}}></i>
+															<label className="checkbox-item sizing420">{'Bank  -  5 m'}
 
+															</label>
+														</li>
+
+													</ul>
+												</div>
+											</div>
+										))
+									}
+
+								</div>
 							</div>
-							{/* APARTMENTS PLAN AREA END */}
-
+							{/* <NearBy propertyDetails={propertyDetails} /> */}
+						
 						</div>
 
 					</div>
-
+					
 					<div className="col-lg-5">
 						<aside ref={stickyRef} className="sidebar ltn__shop-sidebar ltn__right-sidebar---">
 							{/* Author Widget */}

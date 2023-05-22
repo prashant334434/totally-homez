@@ -23,9 +23,9 @@ const PageHead = (props) => {
 					<div className="ltn__breadcrumb-list">
 						<ul>
 						<li><Link to="/"><span className="ltn__secondary-color"><i className="fas fa-home" style={{fontSize:'16px'}} /></span> Dubai</Link></li>
-						<li>{ props?.propertyDetails?.property_type }</li>
-						<li>{ props?.propertyDetails?.property_community }</li>
-						<li>{ props?.propertyDetails?.property_sub_community }</li>
+						<li><Link to="/">{ props?.propertyDetails?.property_type }</Link></li>
+						<li><Link to="/">{ props?.propertyDetails?.property_community }</Link></li>
+						<li><Link to="/">{ props?.propertyDetails?.property_sub_community }</Link></li>
 						
 
 

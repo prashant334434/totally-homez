@@ -4370,7 +4370,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 -------------------------------------------------------------- */
 .widget {
   margin-bottom: 20px;
-  padding: 20px 0px 0px 0px;
+  padding:20px 20px 20px 20px;
   border: 2px solid var(--border-color-11);
 }
 .widget:last-child {
@@ -6078,8 +6078,8 @@ label{
 }
 
 .ltn__header-options-2 .mobile-menu-toggle > a {
-  width: 50px;
-  height: 50px;
+  /* width: 50px;
+  height: 50px; */
   /* background: var(--white); */
   /* -webkit-box-shadow: var(--ltn__box-shadow-1);
   box-shadow: var(--ltn__box-shadow-1); */
@@ -7056,8 +7056,8 @@ i {
 }
 
 .mobile-menu-toggle > a {
-  width: 24px;
-  height: 32px;
+  /* width: 24px;
+  height: 32px; */
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -7071,9 +7071,9 @@ i {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 80px;
-  height: 70px;
-  margin-top: -2px;
+  width: 100px;
+  height: 100px;
+  margin-top: -45px;
   margin-left: -2px;
   cursor: pointer;
   -webkit-transform: translate3d(-50%, -50%, 0);
@@ -10315,6 +10315,7 @@ input::placeholder {
   margin-right: 0;
 }
 .ltn__shop-options .short-by .nice-select {
+  margin-left: 160%;
   border-radius: 0;
   border: 2px solid #ededed;
   height: 50px;
