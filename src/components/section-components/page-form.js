@@ -39,7 +39,7 @@ const Pageform = () => {
 
   return (
     <div>
-      <div className="ltn__upcoming-project-area section-bg-1--- bg-image-top pt-40 pb-40" data-bs-bg={publicUrl + "assets/img/bg/22.jpg"}>
+      <div className="ltn__upcoming-project-area section-bg-1--- bg-image-top pt-40 pb-150" data-bs-bg={publicUrl + "assets/img/bg/22.jpg"}>
         <div className="container positioning1 col-lg-12">
 
           <div className='row'>
@@ -49,7 +49,7 @@ const Pageform = () => {
               <p className=" white-color textsizingsmall">Dubai Hills Estate is an extensive residential and lifestyle development comprising villas, low-rise apartments and townhouses. It is a key part of the growing MBR City. The very finest properties and leisure destinations can be found in Dubai Hills, including a championship golf course.
               </p>
               <div className="btn-wrapper animated go-top">
-                <Link to="/contact" className="theme-btn-1 btn btn-effect-1">Learn Moree</Link>
+                <Link to="/contact" className="theme-btn-1 btn btn-effect-1">Learn More</Link>
               </div>
             </div>
 

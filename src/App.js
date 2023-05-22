@@ -59,6 +59,7 @@ import CarouselDetails from './components/CarouselDetails';
 import aboutUs from './components/about-uss';
 import CareerV1 from './components/careerV1';
 import ListWithUs from './components/listwithus';
+import GridPage from './components/shop-components/GridPage';
 
 
 
@@ -149,6 +150,7 @@ import ListWithUs from './components/listwithus';
 
         <Route path="/carousel/:id" component={ CarouselDetails } />
         <Route path="/about-us" component={ aboutUs } />
+        <Route path="/shop-page" component={ GridPage } />
         
 
 
