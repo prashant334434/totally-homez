@@ -1,129 +1,61 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import parse from 'html-react-parser';
+import { useDispatch, useSelector } from 'react-redux';
+import { getTeamsApi } from '../../actions/teamActions';
+import { TEAM_API_URL } from '../../constants/config';
 
-class TeamV2 extends Component {
 
-    render() {
 
-        let publicUrl = process.env.PUBLIC_URL+'/'
-        let imagealt = 'image'
 
-    return <div className="ltn__team-area pt-110--- pb-90">
+const TeamV2 = () => {
+	let publicUrl = process.env.PUBLIC_URL+'/'
+    let imagealt = 'image'
+	const dispatch=useDispatch()
+	const {data} =useSelector((state)=>state.team)
+	
+	useEffect(() => {
+		dispatch(getTeamsApi())
+	}, [dispatch])
+	
+  return (
+	<div className="ltn__team-area pt-110--- pb-90">
 				<div className="container">
 				<div className="row justify-content-center go-top">
 					<div className="col-lg-3 col-sm-6">
-					<div className="ltn__team-item ltn__team-item-3---">
-						<div className="team-img">
-						<img src={publicUrl+"assets/img/team/4.jpg"} alt="Image" />
-						</div>
-						<div className="team-info">
-						<h4><Link to="/team-details">Rosalina D. William</Link></h4>
-						<h6 className="ltn__secondary-color">Real Estate Broker</h6>
-						<div className="ltn__social-media">
-							<ul>
-							<li><a href="#"><i className="fab fa-facebook-f" /></a></li>
-							<li><a href="#"><i className="fab fa-twitter" /></a></li>
-							<li><a href="#"><i className="fab fa-linkedin" /></a></li>
-							</ul>
-						</div>
-						</div>
+							{
+							data?.map((item)=>(
+					<div key={item.id} className="ltn__team-item ltn__team-item-3---">
+
+								<div className="team-img">
+								<img src={`${TEAM_API_URL}/${item.path}`} alt="Image" />
+								</div>
+								<div className="team-info">
+								<h4><Link to="/team-details">{item.name}</Link></h4>
+								<h6 className="ltn__secondary-color">{item.designation}</h6>
+								<div className="ltn__social-media">
+									<ul>
+									<li><a href="#"><i className="fab fa-facebook-f" /></a></li>
+									<li><a href="#"><i className="fab fa-twitter" /></a></li>
+									<li><a href="#"><i className="fab fa-linkedin" /></a></li>
+									</ul>
+								</div>
+								</div>
 					</div>
+
+								
+							))
+							}
+						
+						
 					</div>
-					<div className="col-lg-3 col-sm-6">
-					<div className="ltn__team-item ltn__team-item-3---">
-						<div className="team-img">
-						<img src={publicUrl+"assets/img/team/2.jpg"} alt="Image" />
-						</div>
-						<div className="team-info">
-						<h4><Link to="/team-details">Kelian Anderson</Link></h4>
-						<h6 className="ltn__secondary-color">Selling Agents</h6>
-						<div className="ltn__social-media">
-							<ul>
-							<li><a href="#"><i className="fab fa-facebook-f" /></a></li>
-							<li><a href="#"><i className="fab fa-twitter" /></a></li>
-							<li><a href="#"><i className="fab fa-linkedin" /></a></li>
-							</ul>
-						</div>
-						</div>
-					</div>
-					</div>
-					<div className="col-lg-3 col-sm-6">
-					<div className="ltn__team-item ltn__team-item-3---">
-						<div className="team-img">
-						<img src={publicUrl+"assets/img/team/3.jpg"} alt="Image" />
-						</div>
-						<div className="team-info">
-						<h4><Link to="/team-details">Miranda H. Halim</Link></h4>
-						<h6 className="ltn__secondary-color">Property Seller</h6>
-						<div className="ltn__social-media">
-							<ul>
-							<li><a href="#"><i className="fab fa-facebook-f" /></a></li>
-							<li><a href="#"><i className="fab fa-twitter" /></a></li>
-							<li><a href="#"><i className="fab fa-linkedin" /></a></li>
-							</ul>
-						</div>
-						</div>
-					</div>
-					</div>
-					<div className="col-lg-3 col-sm-6">
-					<div className="ltn__team-item ltn__team-item-3---">
-						<div className="team-img">
-						<img src={publicUrl+"assets/img/team/1.jpg"} alt="Image" />
-						</div>
-						<div className="team-info">
-						<h4><Link to="/team-details">Damble D. Browni.</Link></h4>
-						<h6 className="ltn__secondary-color">Property Seller</h6>
-						<div className="ltn__social-media">
-							<ul>
-							<li><a href="#"><i className="fab fa-facebook-f" /></a></li>
-							<li><a href="#"><i className="fab fa-twitter" /></a></li>
-							<li><a href="#"><i className="fab fa-linkedin" /></a></li>
-							</ul>
-						</div>
-						</div>
-					</div>
-					</div>
-					<div className="col-lg-3 col-sm-6">
-					<div className="ltn__team-item ltn__team-item-3---">
-						<div className="team-img">
-						<img src={publicUrl+"assets/img/team/5.jpg"} alt="Image" />
-						</div>
-						<div className="team-info">
-						<h4><Link to="/team-details">Aiden Benjamin</Link></h4>
-						<h6 className="ltn__secondary-color">Real Estate Broker</h6>
-						<div className="ltn__social-media">
-							<ul>
-							<li><a href="#"><i className="fab fa-facebook-f" /></a></li>
-							<li><a href="#"><i className="fab fa-twitter" /></a></li>
-							<li><a href="#"><i className="fab fa-linkedin" /></a></li>
-							</ul>
-						</div>
-						</div>
-					</div>
-					</div>
-					<div className="col-lg-3 col-sm-6">
-					<div className="ltn__team-item ltn__team-item-3---">
-						<div className="team-img">
-						<img src={publicUrl+"assets/img/team/6.jpg"} alt="Image" />
-						</div>
-						<div className="team-info">
-						<h4><Link to="/team-details">James Carter</Link></h4>
-						<h6 className="ltn__secondary-color">Selling Agents</h6>
-						<div className="ltn__social-media">
-							<ul>
-							<li><a href="#"><i className="fab fa-facebook-f" /></a></li>
-							<li><a href="#"><i className="fab fa-twitter" /></a></li>
-							<li><a href="#"><i className="fab fa-linkedin" /></a></li>
-							</ul>
-						</div>
-						</div>
-					</div>
-					</div>
+					
 				</div>
 				</div>
 			</div>
-        }
+  )
 }
+
+
 
 export default TeamV2
