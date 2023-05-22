@@ -11,7 +11,7 @@ const SellWithUs = (props) => {
 
   return (
 	<div className={customClass}>
-		<div className="ltn__about-us-area go-top">
+		<div className="ltn__about-us-area go-top pt-70">
 				<div className="container">
 				<div className="row">
 				<div className="col-lg-6 align-self-center">

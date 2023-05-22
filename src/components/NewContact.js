@@ -7,10 +7,11 @@ import Footer from './global-components/footer';
 import ContactDetails from './blog-components/ContactDetails';
 import ContactInfo from './section-components/contact-info';
 import PhotoContact from './section-components/photocontact';
+import MobileNav from './global-components/Mobile-nav';
 
 const NewContact = () => {
     return <div>
-        <Navbar />
+        <MobileNav/>
         {/* <BlogDetails /> */}
         <PhotoContact/>
         <ContactInfo/>

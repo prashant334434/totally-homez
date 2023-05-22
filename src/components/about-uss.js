@@ -13,10 +13,11 @@ import OurVision from './section-components/our-vision';
 import OurValues from './section-components/Our-values';
 import OurApproach from './section-components/our-approach';
 import OurTeam from './section-components/our-team';
+import MobileNav from './global-components/Mobile-nav';
 
 const aboutUs = () => {
     return <div>
-        <Navbar />
+        <MobileNav />
         <AboutV5 />
         <OurStory/>
         <OurMission/>

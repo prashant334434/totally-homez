@@ -28,10 +28,11 @@ import HighContent from './section-components/highContent';
 import InternetAlone from './section-components/internetalone';
 import TakeCareEverything from './section-components/takecareeverything';
 import ReadyToSell from './section-components/readytosell';
+import MobileNav from './global-components/Mobile-nav';
 
 const ListWithUs = () => {
     return <div>
-        <Navbar />
+     <MobileNav />
         <SellWithUs />
         <MarketingProperty/>
         <PropertyWorth/>

@@ -16,10 +16,11 @@ import OurPhilosophy from './section-components/our-philosophy';
 import ThePerks from './section-components/the-perks';
 import RecruitmentProcess from './section-components/recuirtment';
 import EmployeeEvent from './section-components/employe-event';
+import MobileNav from './global-components/Mobile-nav';
 
 const CareerV1 = () => {
     return <div>
-        <Navbar />
+        <MobileNav/>
         <WorkWithUs />
         <JoinUs/>
         <RightFit  customClass="ltn__feature-area  pt-120 pb-90 mb-120---"/>

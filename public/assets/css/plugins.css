@@ -9485,6 +9485,9 @@ fieldset:disabled .btn {
   touch-action: pan-y;
   -webkit-tap-highlight-color: transparent;
 }
+.menu-icon.active #middle {
+  display: none;
+}
 .slick-slider-team {
   position: relative;
    display: block; 

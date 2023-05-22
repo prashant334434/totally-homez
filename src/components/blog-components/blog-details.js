@@ -9,7 +9,7 @@ import Sidebar from './sidebar';
 
 const BlogDetails = () => {
 	return (
-		<div className="ltn__page-details-area ltn__blog-details-area mb-120">
+		<div className="ltn__page-details-area ltn__blog-details-area mb-120 pt-70">
 			<div className="container">
 			<div className="row">
 				<div className="col-lg-12">
