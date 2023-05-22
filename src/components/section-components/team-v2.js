@@ -32,7 +32,7 @@ const TeamV2 = () => {
 										<img src={`${TEAM_API_URL}/${item.path}`} alt="Image" />
 									</div>
 									<div className="team-info">
-										<h4><Link to="/team-details">{item.name}</Link></h4>
+										<h4><Link to={`/team-details/${item?.id}`}>{item.name}</Link></h4>
 										<h6 className="ltn__secondary-color">{item.designation}</h6>
 										{/* <div className="ltn__social-media">
 											<ul>
