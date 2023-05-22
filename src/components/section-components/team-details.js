@@ -38,21 +38,13 @@ const TeamDetails = ({loading,teamDetails}) => {
 				<div className="ltn__team-details-member-about">
 				<ul>
 					<li><strong>Positions:</strong> Senior Property Seller</li>
-					<li><strong>Experience:</strong> 10+ Years</li>
-					<li><strong>Location:</strong> 13/A, NYC</li>
-					<li><strong>Practice Area:</strong> Property Seller</li>
+					<li><strong>Email:</strong> {teamDetails?.email}</li>
+											{/* <li><strong>Fax:</strong> +0123-456 789</li> */}
+											<li><strong>Phone:</strong> +0123-456 789</li>
 				</ul>
 				</div>
 			</div>
-			<div className="col-lg-6">
-				<div className="ltn__team-details-member-about">
-				<ul>
-					<li><strong>Email:</strong> example@example.com</li>
-					<li><strong>Fax:</strong> +0123-456 789</li>
-					<li><strong>Phone:</strong> +0123-456 789</li>
-				</ul>
-				</div>
-			</div>
+			
 			</div>
 			<hr />
 			
