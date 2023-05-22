@@ -21,6 +21,13 @@ import MarketingProperty from './section-components/marketing-property';
 import PropertyWorth from './section-components/property-worth';
 import PropertyPrepration from './section-components/property-preparation';
 import UniqueProperty from './section-components/unique-property';
+import BenefitsofListing from './section-components/benefits';
+import InnovativeApproach from './section-components/innovativeapproach';
+import QualityFocusedCreation from './section-components/qualityfocused';
+import HighContent from './section-components/highContent';
+import InternetAlone from './section-components/internetalone';
+import TakeCareEverything from './section-components/takecareeverything';
+import ReadyToSell from './section-components/readytosell';
 
 const ListWithUs = () => {
     return <div>
@@ -31,16 +38,18 @@ const ListWithUs = () => {
         <PropertyPrepration/>
         <UniqueProperty/>
         
-        <RightFit  customClass="ltn__feature-area  pt-120 pb-90 mb-120---"/>
+        <BenefitsofListing  customClass="ltn__feature-area  pt-120 pb-90 mb-120---"/>
 
         <OurCulture/>
         <OurPhilosophy/>
         <ThePerks />
-        <Testimonial />
+        <InnovativeApproach />
+        <QualityFocusedCreation  customClass="ltn__feature-area  pt-120 pb-90 mb-120---"/>
        {/* <BlogSlider />*/}
-        <RecruitmentProcess/>
-        <EmployeeEvent/>
-        <CallToActionV1 />
+        <HighContent/>
+        <InternetAlone/>
+        <TakeCareEverything/>
+        <ReadyToSell />
         <Footer />
     </div>
 }
