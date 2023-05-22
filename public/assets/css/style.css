@@ -10830,6 +10830,8 @@ input::placeholder {
   height: 40px;
   line-height: 40px;
   text-align: center;
+  padding-top: 7px;
+  padding-bottom: 38px;;
 }
 .ltn__social-media-2 ul li a i {
   color: inherit;
