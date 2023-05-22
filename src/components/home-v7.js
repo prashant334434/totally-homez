@@ -60,7 +60,7 @@ const Home_V7 = () => {
     <BestProperty customClass='ltn__feature-area section-bg-1 pt-80 pb-80  mb-120---' />
     {/* <Aboutv2 /> */}
     {/* <Gallery /> */}
-    <CarouselSlider />
+    {/* <CarouselSlider /> */}
     {/* <TeamCarousel/> */}
     <CategoryV3 />
     {/* <HomeCrousal/> */}
@@ -76,7 +76,7 @@ const Home_V7 = () => {
 
     {/* <ProductSlider customClass="ltn__feature-area section-bg-4 pt-120 pb-90 mb-120---"/> */}
     <ProductGrid />
-    <ProductGridRent/>
+     <ProductGridRent/>
    {/* <Availability />*/}
     {/*  <SimpleSlider/>*/}
     <VideoV2 />

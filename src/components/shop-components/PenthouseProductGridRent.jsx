@@ -34,7 +34,7 @@ const PenthouseProductGridRent = (props) => {
                 <div className="ltn__product-slider-area ltn__product-gutter pt-2	0  plr--7">
                     <div className="container-fluid">
 
-                        <div className="row  slick-arrow-1">
+                        <div className="row">
 						<Carousel
 								additionalTransfrom={0}
 								arrows

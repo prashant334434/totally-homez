@@ -23,12 +23,12 @@ export const getCatgoryProperties = (propertyCategory) =>
     };
 
 
-    export const getCatgoryPropertiesRentApi = (propertyCategory) =>
+    export const getCatgoryPropertiesRentApi = () =>
     async (dispatch) => {
         try {
             dispatch({ type: CATEGORY_PROPERTIES_REQUEST_RENT });
 
-            const  {data}  = await axios.get(`https://totallyhomerealestate.com/API/api/properties/typefor/${propertyCategory}/rent`);
+            const  {data}  = await axios.get(`https://totallyhomerealestate.com/API/api/properties/typefor/villa/rent`);
 
 
             console.log(data)
