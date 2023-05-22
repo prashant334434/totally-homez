@@ -21,7 +21,7 @@ const NearBy = ({ propertyDetails }) => {
 					<div className="col-lg-12">
 						<div className="section-title-area ltn__section-title-2--- text-center">
 							{/* <h6 className="section-subtitle section-subtitle-2--- ltn__secondary-color">Our Aminities</h6> */}
-							<h4 className="title-2">NearBy</h4>
+							<h4 className="title-2">NearBmy</h4>
 							<hr style={hrStyle} />
 						</div>
 					</div>
