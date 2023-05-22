@@ -9,51 +9,53 @@ import { TEAM_API_URL } from '../../constants/config';
 
 
 const TeamV2 = () => {
-	let publicUrl = process.env.PUBLIC_URL+'/'
-    let imagealt = 'image'
-	const dispatch=useDispatch()
-	const {data} =useSelector((state)=>state.team)
-	
+	let publicUrl = process.env.PUBLIC_URL + '/'
+	let imagealt = 'image'
+	const dispatch = useDispatch()
+	const { data } = useSelector((state) => state?.team?.team)
+
 	useEffect(() => {
 		dispatch(getTeamsApi())
 	}, [dispatch])
-	
-  return (
-	<div className="ltn__team-area pt-110--- pb-90">
-				<div className="container">
+
+	return (
+		<div className="ltn__team-area pt-110--- pb-90">
+			<div className="container">
 				<div className="row justify-content-center go-top">
-					<div className="col-lg-3 col-sm-6">
-							{
-							data?.map((item)=>(
-					<div key={item.id} className="ltn__team-item ltn__team-item-3---">
-
-								<div className="team-img">
-								<img src={`${TEAM_API_URL}/${item.path}`} alt="Image" />
-								</div>
-								<div className="team-info">
-								<h4><Link to="/team-details">{item.name}</Link></h4>
-								<h6 className="ltn__secondary-color">{item.designation}</h6>
-								<div className="ltn__social-media">
-									<ul>
-									<li><a href="#"><i className="fab fa-facebook-f" /></a></li>
-									<li><a href="#"><i className="fab fa-twitter" /></a></li>
-									<li><a href="#"><i className="fab fa-linkedin" /></a></li>
-									</ul>
-								</div>
-								</div>
-					</div>
-
-								
-							))
-							}
-						
-						
-					</div>
 					
-				</div>
+						{
+							data?.map((item) => (
+								<div className="col-lg-3 col-sm-6">
+								<div key={item.id} className="ltn__team-item ltn__team-item-3---">
+
+									<div className="team-img">
+										<img src={`${TEAM_API_URL}/${item.path}`} alt="Image" />
+									</div>
+									<div className="team-info">
+										<h4><Link to="/team-details">{item.name}</Link></h4>
+										<h6 className="ltn__secondary-color">{item.designation}</h6>
+										{/* <div className="ltn__social-media">
+											<ul>
+												<li><a href="#"><i className="fab fa-facebook-f" /></a></li>
+												<li><a href="#"><i className="fab fa-twitter" /></a></li>
+												<li><a href="#"><i className="fab fa-linkedin" /></a></li>
+											</ul>
+										</div> */}
+									</div>
+								</div>
+								</div>
+
+
+
+							))
+						}
+
+
+
 				</div>
 			</div>
-  )
+		</div>
+	)
 }
 
 
