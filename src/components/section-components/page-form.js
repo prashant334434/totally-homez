@@ -39,7 +39,7 @@ const Pageform = () => {
 
   return (
     <div>
-      <div className="ltn__upcoming-project-area section-bg-1--- bg-image-top pt-40 pb-150" data-bs-bg={publicUrl + "assets/img/bg/22.jpg"}>
+      <div className="ltn__upcoming-project-area section-bg-1--- bg-image-top pt-40 " data-bs-bg={publicUrl + "assets/img/bg/22.jpg"}>
         <div className="container positioning1 col-lg-12">
 
           <div className='row'>

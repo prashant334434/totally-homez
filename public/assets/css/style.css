@@ -10886,6 +10886,12 @@ input::placeholder {
   background-size: auto;
   background-position: top center;
   background-repeat: repeat;
+  min-height: 724px;
+}
+.bg-image-top11 {
+  background-size: auto;
+  background-position: top center;
+  background-repeat: repeat;
   min-height: 725px;
 }
 
@@ -10930,6 +10936,15 @@ input::placeholder {
 /* Responsive Device under :991px. */
 @media (max-width: 991px) {
   .bg-image-top {
+    background-size: inherit;
+  }
+  .bg-image-right-before::before,
+  .bg-image-left-before::before {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  .bg-image-top11 {
     background-size: inherit;
   }
   .bg-image-right-before::before,

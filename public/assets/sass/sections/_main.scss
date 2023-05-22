@@ -146,6 +146,11 @@
     background-position: top center;
     background-repeat: no-repeat;
 }
+.bg-image-top11 {
+    background-size: auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
 .bg-image-right-before {
     position: relative;
     &::before {
@@ -169,6 +174,16 @@
 /* Responsive Device under :991px. */
 @media (max-width: 991px) {
     .bg-image-top {
+        background-size: inherit;
+    }
+    .bg-image-right-before {
+        &::before {
+            display: none;
+        }
+    }
+}
+@media (max-width: 991px) {
+    .bg-image-top11 {
         background-size: inherit;
     }
     .bg-image-right-before {
