@@ -80,6 +80,8 @@ class NavbarV3 extends Component {
 									</li>
 			                    </ul> */}
 													{/* </li> */}
+													<li><Link to="#">Home</Link>
+													</li>
 													<li className="menu-icon"><Link to="#">Buy</Link>
 														<ul>
 															<li><Link to="/shop">Apartments </Link></li>
