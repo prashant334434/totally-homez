@@ -14,6 +14,7 @@ import OurValues from './section-components/Our-values';
 import OurApproach from './section-components/our-approach';
 import OurTeam from './section-components/our-team';
 import MobileNav from './global-components/Mobile-nav';
+import TeamAgents from './section-components/TeamAgents';
 
 const aboutUs = () => {
     return <div>
@@ -26,7 +27,7 @@ const aboutUs = () => {
         <OurValues/>
         <ServiceV1 />
         <OurApproach/>
-        <OurTeam/>
+        <TeamAgents showThree={true}/>
        {/* <BlogSlider sectionClass="pt-120" />*/}
         <CallToActionV1 />
         <Footer />

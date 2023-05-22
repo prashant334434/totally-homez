@@ -27,7 +27,11 @@ const TeamAgents = (props) => {
 	}, [dispatch])
 
 	if (data?.length > 0) {
-		carouselItems = data
+
+		
+			carouselItems = data
+
+		
 	}
 
 	return (
