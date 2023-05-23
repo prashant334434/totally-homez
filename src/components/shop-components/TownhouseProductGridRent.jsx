@@ -34,7 +34,7 @@ const TownhouseProductGridRent = (props) => {
     return (
         <div>
             <div>
-                <div className="ltn__product-slider-area ltn__product-gutter pt-40 pb-40 plr--7">
+                <div className="ltn__product-slider-area ltn__product-gutter  pb-40 plr--7">
                     <div className="container-fluid">
 
                         <div className="row  slick-arrow-1">

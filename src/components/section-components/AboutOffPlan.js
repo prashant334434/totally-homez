@@ -11,11 +11,11 @@ const AboutOffPlan = () => {
     const [open,setOpen]=useState(false)
 
   return (
-    <div className="ltn__about-us-area pt-120">
+    <div className="ltn__about-us-area ">
     <div className="container">
       <div className="row">
       <div className="col-lg-7 align-self-center">
-          <div className="about-us-info-wrap">
+          <div className="about-us-info-wrap mt-100 pt-120">
             <div className="section-title-area ltn__section-title-2--- mb-20">
               <h1 className="section-title">SO  UPTOWN DUBAI
            </h1>

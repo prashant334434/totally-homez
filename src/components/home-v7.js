@@ -83,24 +83,25 @@ const Home_V7 = () => {
     <ApartmentProductGridSale />
     <ApartmentProductGridRent/>
     {/* <ProductGrid /> */}
-    <BestTownhouse />
-    <TownhouseProductGrid />
-
-    <TownhouseProductGridRent/>
+    <BestPenthouse />
+     <PenthouseProductGrid/>
+     <PenthouseProductGridRent/>
+    
     {/* <ProductGrid /> */}
 
     {/* <Featuresv1 customClass="ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---"/> */}
     {/* <ProSlider /> */}
     {/* <Gallery /> */}
     <VideoV1 />
-    <BestPenthouse />
-     <PenthouseProductGrid/>
-     <PenthouseProductGridRent/>
+    <BestTownhouse />
+    <TownhouseProductGrid />
+
+    <TownhouseProductGridRent/>
     {/* <ProductGrid /> */}
 
     {/* <Category /> */}
     {/* <Testimonial /> */}
-    <AboutV5 customClass='ltn__feature-area section-bg-8 pt-120 pb-90 mb-120---' />
+    <AboutV5 customClass='ltn__feature-area section-bg-8 pt-40 pb-90 mb-120---' />
     <TeamAgents customClass='ltn__feature-area section-bg-1 pt-80  mb-120---' />
     {/* <Testimonial customClass='ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---'/> */}
 

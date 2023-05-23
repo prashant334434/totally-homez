@@ -19,9 +19,9 @@ const TeamV2 = () => {
 	}, [dispatch])
 
 	return (
-		<div className="ltn__team-area pt-110--- pb-90">
+		<div className="ltn__team-area ">
 			<div className="container">
-				<div className="row justify-content-center go-top">
+				<div className="row justify-content-center go-top pt-110 pb-90">
 					
 						{
 							data?.map((item) => (

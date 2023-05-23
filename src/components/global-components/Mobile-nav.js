@@ -4,12 +4,14 @@ import Social from '../section-components/social';
 
 
 const MobileNav = () => {
-	const [showHamburger, setShowHamburger] = useState(true)
-
+	const [isCrossDisabled,setIsCrossDisabled]=useState(false)
+console.log("isCrossDisabled",isCrossDisabled)
 	let publicUrl = process.env.PUBLIC_URL + '/'
 	let imgattr = 'logo'
 	let anchor = '#'
-
+	const handelCrossIconClick=()=>{
+		setIsCrossDisabled(true)
+	}
 	return (
 		<div>
 			<header className="ltn__header-area ltn__header-5 ltn__header-logo-and-mobile-menu-in-mobile ltn__header-logo-and-mobile-menu ltn__header-transparent gradient-color-4---">
@@ -38,7 +40,7 @@ const MobileNav = () => {
 								{/* Mobile Menu Button */}
 								
 								<div className="mobile-menu-toggle showItem ">
-									<a href="#ltn__utilize-mobile-menu" className="ltn__utilize-toggle ">
+									<a href="#ltn__utilize-mobile-menu" className="ltn__utilize-toggle " onClick={handelCrossIconClick} disabled={isCrossDisabled}>
 										<svg viewBox="0 0 800 600">
 											<path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200" id="top" />
 											<path d="M300,320 L540,320" id="middle" />

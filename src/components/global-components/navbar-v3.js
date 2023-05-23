@@ -121,7 +121,7 @@ const NavbarV3 = () => {
 															<li className="menu-icon a-inactive-child"><Link to="/shop">Townhouses </Link></li>
 														</ul>
 													</li>
-													<li className={activeMenuItem === '/off-plan' ? 'active' :"menu-icon a-inactive"}><Link to="/">OffPlan</Link></li>
+													<li className={activeMenuItem === '/off-plan' ? 'active' :"menu-icon a-inactive"}><Link to="/off-plan">OffPlan</Link></li>
 
 													<li className="menu-icon a-inactive" ><a href="#">Exclusive Properties </a>
 

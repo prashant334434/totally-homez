@@ -76,14 +76,19 @@
                   $ltn__utilizeOverlay.fadeIn();
                   if ($this.parent().hasClass('mobile-menu-toggle')) {
                       $this.addClass('close');
+                      $body.removeClass('ltn__utilize-open');
+
                   }
               });
               $('.ltn__utilize-close, .ltn__utilize-overlay').on('click', function (e) {
                   e.preventDefault();
                   $body.removeClass('ltn__utilize-open');
                   $ltn__utilize.removeClass('ltn__utilize-open');
+                  
                   $ltn__utilizeOverlay.fadeOut();
                   $mobileMenuToggle.find('a').removeClass('close');
+                  $ltn__utilize.removeClass('ltn__utilize-close');
+
               });
           })();
   

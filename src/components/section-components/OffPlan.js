@@ -24,6 +24,7 @@ import BannerV2 from './banner-v2';
 import TestimonialV2 from './testimonial-v2';
 import Neighbour from './neighbour';
 import ApartmentV2 from './apartment-v2';
+import MobileNav from '../global-components/Mobile-nav';
 const OffPlan = () => {
   return ( 
   
@@ -31,8 +32,8 @@ const OffPlan = () => {
      <div>
 
 
-     <Navbar CustomClass="ltn__header-transparent gradient-color-2" />
-
+     {/* <Navbar CustomClass="ltn__header-transparent gradient-color-2" /> */}
+        <MobileNav/>
         <AboutOffPlan/>
         <div className='container'>
       </div>
