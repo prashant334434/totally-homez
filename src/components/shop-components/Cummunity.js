@@ -102,7 +102,7 @@ const Cummunity = () => {
 						
 											</ul>
                                             <div>
-                                            <a onClick={toggleShowMore}>{showMore ? <i class="fa fa-caret-up" aria-hidden="true"></i> : <i class="fa fa-caret-down" aria-hidden="true"></i>}</a>
+                                            <a onClick={toggleShowMore}>{showMore ? <i class="fa fa-angle-up" aria-hidden="true"></i> : <i class="fa fa-angle-down" aria-hidden="true"></i>}</a>
                                             </div>
                                         </div>
                         </div>
