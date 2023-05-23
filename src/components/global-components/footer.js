@@ -108,12 +108,12 @@ class Footer_v1 extends Component {
 				            <h4 className="footer-title">Navigate </h4>
 				            <div className="footer-menu go-top">
 				              <ul>
-							  <li><Link to="/about">About</Link></li>
-				                <li><Link to="/blog-grid">Team </Link></li>
+							  <li><Link to="/about-us">About</Link></li>
+				                <li><Link to="/team">Team </Link></li>
 				                <li><Link to="/shop">Blogs</Link></li>
 				                <li><Link to="/contact">Gallery</Link></li>
-				                <li><Link to="/faq"> Sell with us</Link></li>
-				                <li><Link to="/contact">Careers</Link></li>
+				                <li><Link to="/list-with-us"> Sell with us</Link></li>
+				                <li><Link to="/career">Careers</Link></li>
 				              </ul>
 				            </div>
 				          </div>

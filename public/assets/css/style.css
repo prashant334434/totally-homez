@@ -5564,9 +5564,28 @@ label{
   padding: 20px 15px;
   display: inline-block;
   white-space: nowrap;
-  color: var(--ltn__heading-color);
+  /* color: var(--ltn__heading-color); */
   font-weight: 600;
   font-family: var(--ltn__body-font);
+}
+
+.a-inactive {
+  font-size: 18px;
+  display: inline-block;
+  white-space: nowrap;
+   color: #fff !important;
+  font-weight: 600;
+  font-family: var(--ltn__body-font);
+}
+/* Define styles for the active menu item */
+li.active {
+  /* Apply your desired styles, for example: */
+  color: #EB2027 !important;
+  /* Add more styles as needed */
+}
+.menu-icon a-inactive-child{
+  color: #000 !important;
+
 }
 
 .ltn__main-menu li:hover > a {
@@ -5589,7 +5608,7 @@ label{
   padding: 15px 0;
   -webkit-box-shadow: var(--ltn__box-shadow-4);
   box-shadow: var(--ltn__box-shadow-4);
-  background-color: #fff;
+  background-color: #000;
   left: inherit;
   right: inherit;
   opacity: 0;
@@ -6671,9 +6690,9 @@ label{
   color: var(--ltn__primary-color) !important;
 }
 
-.menu-color-white .ltn__main-menu > ul > li > a {
+/* .menu-color-white .ltn__main-menu > ul > li > a {
   color: var(--white);
-}
+} */
 
 .menu-color-white .ltn__main-menu > ul > li > a:hover {
   color: red !important;

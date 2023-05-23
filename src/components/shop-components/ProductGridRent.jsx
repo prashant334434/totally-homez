@@ -20,7 +20,7 @@ const ProductGridRent = (props) => {
 	let publicUrl = process.env.PUBLIC_URL + '/'
 	let customClass = props.customClass ? props.customClass : ''
 	// console.log(data)
-	const { categoryRentProperties } = useSelector((state) => state.categoryRentProperties)
+	const { categoryRentProperties } = useSelector((state) => state.categoryPropertiesRent)
 	const dispatch = useDispatch()
 
 	useEffect(() => {
@@ -31,6 +31,7 @@ const ProductGridRent = (props) => {
 	if (categoryRentProperties?.length > 0) {
 		carouselItems = categoryRentProperties
 	}
+	console.log("categoryPropertiesSale2",categoryRentProperties)
 
 	return (
 		<div>

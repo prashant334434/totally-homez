@@ -1,15 +1,30 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Social from '../section-components/social';
 
-class NavbarV3 extends Component {
 
-	render() {
-		let publicUrl = process.env.PUBLIC_URL + '/'
+const NavbarV3 = () => {
+	const [activeMenuItem, setActiveMenuItem] = useState('');
+
+	let publicUrl = process.env.PUBLIC_URL + '/'
 		let imgattr = 'logo'
 		let anchor = '#'
-		return (
-			<div>
+		useEffect(() => {
+			const currentPath = window.location.pathname;
+			if (currentPath === '/') {
+			  setActiveMenuItem('Home');
+			} else if (currentPath === '/off-plan') {
+			  setActiveMenuItem('off-plan');
+			} else if (currentPath === '/rent') {
+			  setActiveMenuItem('rent');
+			}
+
+			
+		  }, []);
+
+		  
+  return (
+	<div>
 				<header className="ltn__header-area ltn__header-5 ltn__header-logo-and-mobile-menu-in-mobile ltn__header-logo-and-mobile-menu ltn__header-transparent gradient-color-4---">
 
 					<div className="ltn__header-middle-area ltn__header-sticky ltn__sticky-bg-black">
@@ -80,9 +95,8 @@ class NavbarV3 extends Component {
 									</li>
 			                    </ul> */}
 													{/* </li> */}
-													<li><Link to="#">Home</Link>
-													</li>
-													<li className="menu-icon"><Link to="#">Buy</Link>
+													<li className={activeMenuItem === 'Home' ? 'active' : ''}><Link to="/">Home</Link></li>
+													<li className="menu-icon a-inactive"><Link to="#">Buy</Link>
 														<ul>
 															<li><Link to="/shop">Apartments </Link></li>
 
@@ -96,27 +110,26 @@ class NavbarV3 extends Component {
 
 														</ul>
 													</li>
-													<li className="menu-icon"><Link to="#">Rent</Link>
+													<li className="menu-icon a-inactive"><Link to="#">Rent</Link>
 														<ul>
-															<li><Link to="/shop">Apartments </Link></li>
+															<li className="menu-icon a-inactive-child"><Link to="/shop">Apartments </Link></li>
 
-															<li><Link to="/shop">Villas </Link></li>
+															<li className="menu-icon a-inactive-child"><Link to="/shop">Villas </Link></li>
 
-															<li><Link to="/shop">Penthouses </Link></li>
+															<li className="menu-icon a-inactive-child"><Link to="/shop">Penthouses </Link></li>
 
-															<li><Link to="/shop">Townhouses </Link></li>
+															<li className="menu-icon a-inactive-child"><Link to="/shop">Townhouses </Link></li>
 														</ul>
 													</li>
-													<li ><Link to="/off-plan">Off Plan </Link>
+													<li className={activeMenuItem === '/off-plan' ? 'active' :"menu-icon a-inactive"}><Link to="/">OffPlan</Link></li>
+
+													<li className="menu-icon a-inactive" ><a href="#">Exclusive Properties </a>
 
 													</li>
-													<li ><a href="#">Exclusive Properties </a>
+													<li className="menu-icon a-inactive"><Link to="/blog-details">Explore Dubai </Link></li>
+													<li className="menu-icon a-inactive"><Link to="/service">Our Mission </Link></li>
 
-													</li>
-													<li><Link to="/blog-details">Explore Dubai </Link></li>
-													<li><Link to="/service">Our Mission </Link></li>
-
-													<li><Link to="/contact-us">Contact</Link></li>
+													<li className="menu-icon a-inactive"><Link to="/contact-us">Contact</Link></li>
 													{/* <li className="special-link">
 			                    <Link to="/add-listing">Add Listing</Link>
 			                  </li> */}
@@ -242,9 +255,9 @@ class NavbarV3 extends Component {
 					</div>
 				</div>
 			</div>
-		)
-	}
+  )
 }
 
-
 export default NavbarV3
+
+

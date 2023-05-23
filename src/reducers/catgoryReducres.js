@@ -28,7 +28,7 @@ export const catgoryReducer = (state = { categoryProperties: [] }, action) => {
 
 
 
-export const catgoryRentReducer = (state = { categoryRentProperties: [] }, action) => {
+export const catgoryPropertiesRentReducer = (state = { categoryRentProperties: [] }, action) => {
     switch (action.type) {
         case CATEGORY_PROPERTIES_REQUEST_RENT:
             return {

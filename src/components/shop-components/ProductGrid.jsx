@@ -29,6 +29,9 @@ const ProductGrid = (props) => {
     }, [dispatch])
     if (categoryProperties?.length > 0) {
         carouselItems = categoryProperties
+
+
+        console.log("categoryPropertiesSale",categoryProperties)
     }
     return (
         <div>
