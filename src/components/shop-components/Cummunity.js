@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React, { Component, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import parse from 'html-react-parser';
 
@@ -7,6 +7,10 @@ import parse from 'html-react-parser';
 const Cummunity = () => {
     let publicUrl = process.env.PUBLIC_URL+'/'
     const [content, setContent] = useState()
+    const [showMore, setShowMore] = useState(false);
+    const toggleShowMore = () => {
+        setShowMore(!showMore);
+      };
     const handleOptionClick = (option) => {
         // Update the content based on the selected option
         if (option === 'option1') {
@@ -40,7 +44,10 @@ const Cummunity = () => {
           }
 
       };
-
+      useEffect(() => {
+        // Scroll to the top of the page when the content changes
+        window.scrollTo(0, 0);
+      }, [content]);
   return (
     <div className="ltn__team-details-area mb-120 pt-150" >
                 <div className="container">
@@ -68,7 +75,9 @@ const Cummunity = () => {
 												<li onClick={() => handleOptionClick('option6')}><Link >General Crime</Link></li>
 												<li onClick={() => handleOptionClick('option7')}><Link >Intellectual Property</Link></li>
 												<li onClick={() => handleOptionClick('option8')}><Link >Media & Entertainment</Link></li>
-												<li onClick={() => handleOptionClick('option9')}><Link >Private Client & Family Business</Link></li>
+                                                {showMore && (
+                                                    <>
+                                                    <li onClick={() => handleOptionClick('option9')}><Link >Private Client & Family Business</Link></li>
 												<li onClick={() => handleOptionClick('option10')}><Link >Cross Border Investments & Trade</Link></li>
 												<li onClick={() => handleOptionClick('option11')}><Link >Insurance</Link></li>
 												<li onClick={() => handleOptionClick('option12')}><Link >Transport</Link></li>
@@ -88,8 +97,14 @@ const Cummunity = () => {
 												<li><Link to="/contact-us">Corporation Services</Link></li>
 												<li><Link to="/contact-us">Family & Matrimonial Disputes</Link></li>
 												<li><Link to="/contact-us">Pro-Bono & CSR</Link></li>
+                                                    </>
+                                                    )}
+						
 											</ul>
-										</div>
+                                            <div>
+                                            <a onClick={toggleShowMore}>{showMore ? <i class="fa fa-caret-up" aria-hidden="true"></i> : <i class="fa fa-caret-down" aria-hidden="true"></i>}</a>
+                                            </div>
+                                        </div>
                         </div>
                       
                     </div>
