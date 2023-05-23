@@ -7108,7 +7108,7 @@ i {
   transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25),
     stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
   fill: none;
-  stroke: #333;
+  stroke:#eb2027;
   stroke-dashoffset: 0;
   stroke-linecap: round;
   stroke-width: 30px;
@@ -7413,6 +7413,7 @@ i {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 30%;
     flex: 0 0 30%;
+    padding-top: 9px;
   }
   .header-top-btn a {
     padding: 0 15px;
@@ -16459,7 +16460,7 @@ body {
 
 @media (max-width: 767px) {
   .ltn__car-dealer-form-tab .tab-content {
-    padding: 40px 25px;
+    padding: 25px 25px;
   }
   .ltn__car-dealer-form-box .nice-select .list {
     max-height: 200px;

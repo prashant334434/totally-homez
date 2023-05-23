@@ -104,9 +104,9 @@
         width: 100%!important;
         display: block!important;
     }
-    .ltn__car-dealer-form-box .nice-select{
+ {/*   .ltn__car-dealer-form-box .nice-select{
         height: 70%;
-    }
+    }*/}
     input[type="text"], input[type="email"], input[type="password"], input[type="submit"], textarea{
         margin-bottom: 0px;
     }
