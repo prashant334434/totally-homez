@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
 	button: {
 		borderRadius:'10px',
 		border:'1px solid whitesmoke',
-		width: '120px', // Set the desired fixed width
+		width: '107px', // Set the desired fixed width
 		color:'#eb2027',
 		backgroundColor:'transparent',
 		'&:hover': {

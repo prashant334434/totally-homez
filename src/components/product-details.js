@@ -17,6 +17,7 @@ import { useHistory } from "react-router-dom";
 import PageForm from './section-components/page-form';
 import MobileNav from './global-components/Mobile-nav';
 import TownhouseProductGrid from './shop-components/TownhouseProductGrid';
+import StickyBarIcon from './shop-components/sticky-iconbar';
 
 const Product_Details = () => {
     const { id } = useParams()
@@ -81,6 +82,8 @@ const Product_Details = () => {
         <PageForm/>
         <CallToActionV1 />
         <Footer />
+        <StickyBarIcon/>
+
     </div>
 }
 
