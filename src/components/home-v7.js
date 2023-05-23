@@ -84,6 +84,8 @@ const Home_V7 = () => {
     <ApartmentProductGridRent/>
     {/* <ProductGrid /> */}
     <BestPenthouse />
+    <VideoV1 />
+
      <PenthouseProductGrid/>
      <PenthouseProductGridRent/>
     
@@ -92,7 +94,6 @@ const Home_V7 = () => {
     {/* <Featuresv1 customClass="ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---"/> */}
     {/* <ProSlider /> */}
     {/* <Gallery /> */}
-    <VideoV1 />
     <BestTownhouse />
     <TownhouseProductGrid />
 

@@ -36,7 +36,7 @@ const ListWithUs = () => {
         <SellWithUs />
         <MarketingProperty/>
         <PropertyWorth/>
-        <PropertyPrepration/>
+        {/* <PropertyPrepration/> */}
         <UniqueProperty/>
         
         <BenefitsofListing  customClass="ltn__feature-area  pt-120 pb-90 mb-120---"/>
