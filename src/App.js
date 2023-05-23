@@ -149,7 +149,7 @@ import GuideLine from './components/shop-components/GuideLine';
         <Route path="/our-team" component={ TeamsNew } />
 
         <Route path="/property/:type" component={ PropertyType } />
-        CarouselDetails
+     
 
         <Route path="/carousel/:id" component={ CarouselDetails } />
         <Route path="/about-us" component={ aboutUs } />
