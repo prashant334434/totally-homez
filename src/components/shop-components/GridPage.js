@@ -20,7 +20,7 @@ const GridPage = (props) => {
   return (
     <div>
         <div>
-			<div className="ltn__product-area ltn__product-gutter mb-100">
+			<div className="ltn__product-area ltn__product-gutter mb-100 pt-100">
 				<div className="container">
 						<div className="row">
 							<div className="col-lg-12">
@@ -56,6 +56,7 @@ const GridPage = (props) => {
 						
 							</div>
 						</div>
+						
                         <div className="tab-content ">
 								<div className="tab-pane fade active show" id="liton_product_grid">
 								<div className="ltn__product-tab-content-inner ltn__product-grid-view">
