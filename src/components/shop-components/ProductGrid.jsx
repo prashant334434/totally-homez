@@ -31,7 +31,7 @@ const ProductGrid = (props) => {
         carouselItems = categoryProperties
 
 
-        console.log("categoryPropertiesSale",categoryProperties)
+        console.log("categoryPropertiesSale", categoryProperties)
     }
     return (
         <div>
@@ -60,7 +60,7 @@ const ProductGrid = (props) => {
                                 responsive={{
                                     desktop: {
                                         breakpoint: { max: 3000, min: 1024 },
-                                        items: 3,
+                                        items: 2,
                                     },
                                     tablet: {
                                         breakpoint: { max: 1024, min: 464 },
@@ -91,9 +91,14 @@ const ProductGrid = (props) => {
                                             </div>
                                             <div className="product-info">
                                                 <div className="product-price">
-                                                    <h2 className="product-title go-top"><Link to={`/property-details/${item?.id}`}>{item?.property_name}</Link></h2>
+                                                    <div className="title_div">
+                                                        <h2 className="product-title go-top"><Link to={`/property-details/${item?.id}`}>{item?.property_name}testAmit</Link></h2>
 
-                                                    <span>AEDD {item?.property_price}</span>
+                                                    </div>
+                                                    <div className='price_div'>
+                                                        <span>AED {item?.property_price}</span>
+
+                                                    </div>
 
 
                                                 </div>
