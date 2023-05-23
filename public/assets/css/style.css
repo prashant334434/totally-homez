@@ -18865,6 +18865,7 @@ body {
   .sideBtns {
     grid-template-columns: auto;
     grid-template-rows: auto auto;
+    display: none;
   }
 
   .leftbtn {
@@ -18885,6 +18886,7 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
+    display: none;
   }
   .sideBtns {
     grid-template-columns: auto auto;
