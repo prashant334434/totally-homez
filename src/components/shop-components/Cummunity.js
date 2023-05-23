@@ -15,7 +15,30 @@ const Cummunity = () => {
           setContent('Finance & Banking');
         } else if (option === 'option3') {
           setContent('Property & Construction');
-        }
+        }else if (option === 'option4') {
+            setContent('Litigation');
+        }else if (option === 'option5') {
+            setContent('Arbitration & Mediation');
+        }else if (option === 'option6') {
+            setContent('General Crime');
+        }else if (option === 'option7') {
+            setContent('Intellectual Property');
+        }else if (option === 'option8') {
+            setContent('Media & Entertainment');
+        }else if (option === 'option9') {
+            setContent('Private Client & Family Business');
+        }else if (option === 'option10') {
+            setContent('Cross Border Investments & Trade');
+        }else if (option === 'option11') {
+            setContent('Insurance');
+        }else if (option === 'option12') {
+            setContent('Transport');
+        }else if (option === 'option13') {
+            setContent('Cyber');
+        }else if (option === 'option14') {
+            setContent('Property & Construction');
+          }
+
       };
 
   return (
@@ -36,20 +59,20 @@ const Cummunity = () => {
 												</li>
 												<li onClick={() => handleOptionClick('option3')}><Link >Property & Construction</Link>
 												</li>
-												<li><Link to="/off-plan">Litigation</Link>
+												<li onClick={() => handleOptionClick('option4')}><Link >Litigation</Link>
 
 												</li>
-												<li><Link to="#">Arbitration & Mediation</Link>
+												<li onClick={() => handleOptionClick('option5')}><Link>Arbitration & Mediation</Link>
 
 												</li>
-												<li><Link to="/contact-us">General Crime</Link></li>
-												<li><Link to="/contact-us">Intellectual Property</Link></li>
-												<li><Link to="/contact-us">Media & Entertainment</Link></li>
-												<li><Link to="/contact-us">Private Client & Family Business</Link></li>
-												<li><Link to="/contact-us">Cross Border Investments & Trade</Link></li>
-												<li><Link to="/contact-us">Insurance</Link></li>
-												<li><Link to="/contact-us">Transport</Link></li>
-												<li><Link to="/contact-us">Cyber</Link></li>
+												<li onClick={() => handleOptionClick('option6')}><Link >General Crime</Link></li>
+												<li onClick={() => handleOptionClick('option7')}><Link >Intellectual Property</Link></li>
+												<li onClick={() => handleOptionClick('option8')}><Link >Media & Entertainment</Link></li>
+												<li onClick={() => handleOptionClick('option9')}><Link >Private Client & Family Business</Link></li>
+												<li onClick={() => handleOptionClick('option10')}><Link >Cross Border Investments & Trade</Link></li>
+												<li onClick={() => handleOptionClick('option11')}><Link >Insurance</Link></li>
+												<li onClick={() => handleOptionClick('option12')}><Link >Transport</Link></li>
+												<li onClick={() => handleOptionClick('option13')}><Link>Cyber</Link></li>
 												<li><Link to="/contact-us">Regulatory Approvals</Link></li>
 												<li><Link to="/contact-us">Joint Ventures</Link></li>
 												<li><Link to="/contact-us">Mergers & Acquisitions</Link></li>
