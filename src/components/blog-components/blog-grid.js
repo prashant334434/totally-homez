@@ -5,7 +5,7 @@ class BlogGrid extends Component {
     let publicUrl = process.env.PUBLIC_URL+'/'
     let imagealt = 'image'
     return (
-		<div className="ltn__blog-area ltn__blog-item-3-normal mb-100 go-top">
+		<div className="ltn__blog-area ltn__blog-item-3-normal pt-150 mb-100 go-top">
 			<div className="container">
 			<div className="row">
 				{/* Blog Item */}
@@ -21,7 +21,6 @@ class BlogGrid extends Component {
 							<Link to="/team-details"><i className="far fa-user" />by: Admin</Link>
 						</li>
 						<li className="ltn__blog-tags go-top">
-							<Link to="/service"><i className="fas fa-tags" />Services</Link>
 						</li>
 						</ul>
 					</div>
@@ -52,7 +51,6 @@ class BlogGrid extends Component {
 							<Link to="/team-details"><i className="far fa-user" />by: Admin</Link>
 						</li>
 						<li className="ltn__blog-tags go-top">
-							<Link to="/service"><i className="fas fa-tags" />Services</Link>
 						</li>
 						</ul>
 					</div>
@@ -83,7 +81,6 @@ class BlogGrid extends Component {
 							<Link to="/team-details"><i className="far fa-user" />by: Admin</Link>
 						</li>
 						<li className="ltn__blog-tags go-top">
-							<Link to="/service"><i className="fas fa-tags" />Services</Link>
 						</li>
 						</ul>
 					</div>
@@ -114,7 +111,6 @@ class BlogGrid extends Component {
 							<Link to="/team-details"><i className="far fa-user" />by: Admin</Link>
 						</li>
 						<li className="ltn__blog-tags go-top">
-							<Link to="/service"><i className="fas fa-tags" />Services</Link>
 						</li>
 						</ul>
 					</div>
@@ -145,7 +141,6 @@ class BlogGrid extends Component {
 							<Link to="/team-details"><i className="far fa-user" />by: Admin</Link>
 						</li>
 						<li className="ltn__blog-tags go-top">
-							<Link to="/service"><i className="fas fa-tags" />Services</Link>
 						</li>
 						</ul>
 					</div>
@@ -176,7 +171,6 @@ class BlogGrid extends Component {
 							<Link to="/team-details"><i className="far fa-user" />by: Admin</Link>
 						</li>
 						<li className="ltn__blog-tags go-top">
-							<Link to="/service"><i className="fas fa-tags" />Services</Link>
 						</li>
 						</ul>
 					</div>
@@ -207,7 +201,6 @@ class BlogGrid extends Component {
 							<Link to="/team-details"><i className="far fa-user" />by: Admin</Link>
 						</li>
 						<li className="ltn__blog-tags go-top">
-							<Link to="/service"><i className="fas fa-tags" />Services</Link>
 						</li>
 						</ul>
 					</div>
@@ -238,7 +231,6 @@ class BlogGrid extends Component {
 							<Link to="/team-details"><i className="far fa-user" />by: Admin</Link>
 						</li>
 						<li className="ltn__blog-tags go-top">
-							<Link to="/service"><i className="fas fa-tags" />Services</Link>
 						</li>
 						</ul>
 					</div>
@@ -269,7 +261,6 @@ class BlogGrid extends Component {
 							<Link to="/team-details"><i className="far fa-user" />by: Admin</Link>
 						</li>
 						<li className="ltn__blog-tags go-top">
-							<Link to="/service"><i className="fas fa-tags" />Services</Link>
 						</li>
 						</ul>
 					</div>
@@ -289,7 +280,7 @@ class BlogGrid extends Component {
 				</div>
 				{/*  */}
 			</div>
-			<div className="row">
+			{/* <div className="row">
 				<div className="col-lg-12">
 				<div className="ltn__pagination-area text-center">
 					<div className="ltn__pagination">
@@ -305,7 +296,7 @@ class BlogGrid extends Component {
 					</div>
 				</div>
 				</div>
-			</div>
+			</div> */}
 			</div>
 		</div>
 	  

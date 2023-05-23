@@ -110,7 +110,7 @@ class Footer_v1 extends Component {
 				              <ul>
 							  <li><Link to="/about-us">About</Link></li>
 				                <li><Link to="/team">Team </Link></li>
-				                <li><Link to="/shop">Blogs</Link></li>
+				                <li><Link to="/blogs">Blogs</Link></li>
 				                <li><Link to="/contact">Gallery</Link></li>
 				                <li><Link to="/list-with-us"> Sell with us</Link></li>
 				                <li><Link to="/career">Careers</Link></li>
