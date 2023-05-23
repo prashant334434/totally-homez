@@ -4373,6 +4373,11 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   padding:20px 20px 20px 20px;
   border: 2px solid var(--border-color-11);
 }
+.widget11 {
+ 
+  padding:0px 0px 0px 0px;
+ 
+}
 .widget:last-child {
   margin-bottom: 0;
 }
@@ -19005,10 +19010,21 @@ a.ltn__utilize-toggle.close {
    display: none;
   
   }
-  .ltn__product-item-4 .product-info111 {
-    padding: 30px 15px 1px;
-    min-height: 210px;
-}
+  .stickyclassbar{
+   bottom: 0;
+   left: 0;
+   position: sticky;
+   background-color: beige;
+  }
+  .hidde{
+    display: none;
+  }
+  @media only screen and (max-width: 768px) {
+  .hidde{
+    display: block;
+  }
+  
+  }
 /* ----------------------------------------------------
     END
 ---------------------------------------------------- */

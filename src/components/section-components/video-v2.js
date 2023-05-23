@@ -10,7 +10,7 @@ class VideoV2 extends Component {
         let publicUrl = process.env.PUBLIC_URL+'/'
         let imagealt = 'image'
 
-    return <div className="ltn__about-us-area section-bg-1 bg-image-right-before pt-120 pb-90">
+    return <div className="ltn__about-us-area section-bg-1 bg-image-right-before pt-120">
 			  <div className="container">
 			    <div className="row">
 			      <div className="col-lg-6 align-self-center">
