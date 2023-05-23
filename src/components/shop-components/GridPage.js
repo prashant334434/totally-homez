@@ -26,14 +26,14 @@ const GridPage = (props) => {
 							<div className="col-lg-12">
 							<div className="ltn__shop-options">
 								<ul>
-								<li>
+								{/* <li>
 									<div className="ltn__grid-list-tab-menu ">
 									<div className="nav">
 										<a className="active show" data-bs-toggle="tab" href="#liton_product_grid"><i className="fas fa-th-large" /></a>
 										<a data-bs-toggle="tab" href="#liton_product_list"><i className="fas fa-list" /></a>
 									</div>
 									</div>
-								</li>
+								</li> */}
 								<li>
 									<div className="short-by text-center">
 									<select className="nice-select">
@@ -63,12 +63,12 @@ const GridPage = (props) => {
 									<div className="row">
 									<div className="col-lg-12">
 										{/* Search Widget */}
-										<div className="ltn__search-widget mb-30">
+										{/* <div className="ltn__search-widget mb-30">
 										<form action="#">
 											<input type="text" name="search" placeholder="Search your keyword..." />
 											<button type="submit"><i className="fas fa-search" /></button>
 										</form>
-										</div>
+										</div> */}
 									</div>
 									{/* ltn__product-item */}
 									{/* <div className="col-lg-4 col-sm-6 col-12">
@@ -408,6 +408,7 @@ const GridPage = (props) => {
 					</div>
 				</div>
 			</div>
+			
 
 
 			</div>
