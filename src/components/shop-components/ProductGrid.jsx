@@ -84,7 +84,7 @@ const ProductGrid = (props) => {
                                                 <Link to={`/property-details/${item?.id}`}><img src={item?.property_imges} alt="#" /></Link>
                                                 <div className="product-badge">
                                                     <ul>
-                                                        <li className="sale-badge bg-green">{"rent"}</li>
+                                                        <li className="sale-badge bg-green">{item?.property_for}</li>
                                                     </ul>
                                                 </div>
 
