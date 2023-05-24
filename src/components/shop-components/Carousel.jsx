@@ -64,10 +64,10 @@ const {carousels}=useSelector((state)=>state.carousels)
                 <div className="col-lg-12">
                     <div key={item?.id} className="ltn__product-item ltn__product-item-4 text-center---">
                         <div className="product-img go-top">
-                            <Link to={`/carousel/${item?.id}`}><img className='carouselImages' src={`${TEAM_API_URL}/${item?.path}`} alt="#" /></Link>
+                            <img className='carouselImages' src={`${TEAM_API_URL}/${item?.path}`} alt="#" />
                             <div className="product-badge">
                                 <ul>
-                                    <li className="sale-badge bg-green">{"rent"}</li>
+                                    <div class="flag-plan">40 / 60 Payment Plan</div>
                                 </ul>
                             </div>
 

@@ -19043,3 +19043,29 @@ a.ltn__utilize-toggle.close {
 .carouselImages{
   min-height: 300px;
 }
+.flag-plan {
+  position: absolute;
+  top: 00px;
+  padding: 5px 5px 5px 15px;
+  background: #e9222f;
+  color: #fff;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  left: -250px;
+  border-top-left-radius: 5px;
+}
+.flag-plan:before,
+.flag-plan:before {
+  border-style: solid;
+  content: "";
+  display: block;
+  height: 0;
+  left: 0;
+  position: absolute;
+  width: 0;
+}
+.flag-plan:before {
+  border-color: #101010 #101010 transparent transparent;
+  border-width: 0 10px 10px 0;
+  top: 100%;
+}
