@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from './global-components/navbar';
 import PageHeader from './global-components/page-header';
 import AboutV5 from './section-components/about-v5';
@@ -15,18 +15,27 @@ import OurApproach from './section-components/our-approach';
 import OurTeam from './section-components/our-team';
 import MobileNav from './global-components/Mobile-nav';
 import TeamAgents from './section-components/TeamAgents';
+import { useDispatch, useSelector } from 'react-redux';
+import { getAboutUsApi } from '../actions/aboutUsActions';
 
-const aboutUs = () => {
+const AboutUs = () => {
+    const {loading,about}=useSelector((state)=>state.about)
+
+    const dispatch=useDispatch()
+
+    useEffect(()=>{
+        dispatch(getAboutUsApi())
+    },[dispatch])
     return <div>
         <MobileNav />
-        <AboutV5 />
-        <OurStory/>
-        <OurMission/>
-        <OurPassion/>
-        <OurVision/>
-        <OurValues/>
+        <AboutV5 loading={loading} aboutUsData={about} />
+        <OurStory loading={loading} aboutUsData={about}/>
+        <OurMission loading={loading} aboutUsData={about}/>
+        <OurPassion loading={loading} aboutUsData={about}/>
+        <OurVision loading={loading} aboutUsData={about}/>
+        <OurValues loading={loading} aboutUsData={about}/>
         <ServiceV1 />
-        <OurApproach/>
+        <OurApproach loading={loading} aboutUsData={about}/>
         <TeamAgents showThree={true}/>
        {/* <BlogSlider sectionClass="pt-120" />*/}
         <CallToActionV1 />
@@ -34,4 +43,4 @@ const aboutUs = () => {
     </div>
 }
 
-export default aboutUs
+export default AboutUs
