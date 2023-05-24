@@ -2,13 +2,13 @@ import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom/cjs/react-router-dom.min'
 import { getApartmentCatgoryRentProperties, getCatgoryProperties } from '../../actions/catgoryActions'
-import { TEAM_API_URL } from '../../constants/config'
+import { API_URL, TEAM_API_URL } from '../../constants/config'
 import Loader from '../Loader/Loader'
 
 const TypeProperties = (props) => {
 	let publicUrl = process.env.PUBLIC_URL + '/'
 	let customClass = props.customClass ? props.customClass : ''
-	// console.log(data)
+	console.log(props?.properties)
 
 
 	if(props?.loading){
@@ -30,7 +30,7 @@ const TypeProperties = (props) => {
 
 									<div key={categoryProperty?.id} className="ltn__product-item ltn__product-item-4 text-center---">
 										<div className="product-img go-top">
-											<Link to={`/property-details/${categoryProperty?.id}`}><img src={`${TEAM_API_URL}/${categoryProperty?.path}`} alt="#" /></Link>
+											<Link to={`/property-details/${categoryProperty?.id}`}><img src={`${API_URL}/${categoryProperty?.property_imgs}`} alt="#" /></Link>
 											<div className="product-badge">
 												<ul>
 													<li className="sale-badge bg-green">{categoryProperty?.property_for}{categoryProperty?.id}</li>
