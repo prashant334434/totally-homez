@@ -10204,7 +10204,7 @@ input::placeholder {
 .property-detail-info-list ul li label {
   margin-right: 5px;
   font-weight: 600;
-  min-width: 160px;
+  min-width: 60px;
   display: inline-block;
 }
 .bigcoloring{
@@ -19069,4 +19069,11 @@ a.ltn__utilize-toggle.close {
   border-color: #101010 #101010 transparent transparent;
   border-width: 0 10px 10px 0;
   top: 100%;
+.sizingimage{
+  width: 9%;
+}
+@media only screen and (max-width: 992px){
+  .sizingimage{
+    width: 5% !important;
+  }
 }

@@ -9,7 +9,7 @@ const BestVilla = (props) => {
   return (
 
   <div className={customClass}>
-  <div className="ltn__about-us-area pb-50 ">
+  <div className="ltn__about-us-area  ">
     <div className="container">
       <div className="row">
       <div className="col-lg-6 align-self-center">

@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
 	button: {
 		borderRadius:'10px',
 		border:'1px solid whitesmoke',
-		width: '107px', // Set the desired fixed width
+		 // Set the desired fixed width
 		color:'#eb2027',
 		backgroundColor:'transparent',
 		'&:hover': {
@@ -180,17 +180,17 @@ const ShopDetails = ({ propertyDetails }) => {
 							<hr style={hrStyle} />
 
 							{isTruncated ? (
-								<p className="description">
+								<p className="description ">
 									{propertyDetails?.property_content?.slice(0, maxLength)}...
-									<div className="read-more">
+									<div className="read-more pt-10">
 										<button className="btn theme-btn-1" onClick={toggleTruncate}> Read more</button>
 
 									</div>        </p>
 							) : (
 								<p className="description">
 									{propertyDetails?.property_content}
-									<div className="read-more">
-										<button className="btn theme-btn-1" onClick={toggleTruncate}>Read More</button>
+									<div className="read-more pt-10">
+										<button className="btn theme-btn-1 " onClick={toggleTruncate}>Read More</button>
 
 									</div>        </p>
 							)}
@@ -286,7 +286,7 @@ const ShopDetails = ({ propertyDetails }) => {
 													<ul>
 														<li>
 															{/* <i className="fas fa-check fa-2x" style={{ color: 'red',}}></i> */}
-															<img src="../assets/img/tick.png" style={{ "width": "9%"}} />
+															<img src="../assets/img/tick.png" className='sizingimage' />
 
 															<label className="checkbox-item sizing420">{amenity.trim()}
 
