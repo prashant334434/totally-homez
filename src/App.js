@@ -154,7 +154,7 @@ import GuideLine from './components/shop-components/GuideLine';
         <Route path="/carousel/:id" component={ CarouselDetails } />
         <Route path="/about-us" component={ aboutUs } />
         <Route path="/shop-page" component={ ShopNew } />
-        <Route path="/cummunity" component={ GuideLine } />
+        <Route path="/community" component={ GuideLine } />
         
 
 
