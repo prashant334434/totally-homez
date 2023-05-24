@@ -55,7 +55,7 @@ const Pageform = () => {
 
             <div className="col-lg-6">
 
-<div className="ltn__upcoming-project-info ltn__menu-widget">
+<div className="ltn__upcoming-project-info ltn__menu-widget pt-20">
 
   <form className="contact-form whitecoloringbg" onSubmit={handleSubmit}>
     <h2>Contact Form</h2>
