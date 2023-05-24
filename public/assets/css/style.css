@@ -12800,6 +12800,10 @@ input::placeholder {
   padding: 50px;
 }
 
+.ltn__blog-details-wrap {
+  padding: 50px;
+}
+
 blockquote {
   font-size: 18px;
   font-family: var(--ltn__heading-font);
@@ -19035,4 +19039,7 @@ a.ltn__utilize-toggle.close {
 }
 .price_div{
   width: 30%;
+}
+.carouselImages{
+  min-height: 300px;
 }

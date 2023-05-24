@@ -8,6 +8,7 @@ import { useDispatch,useSelector } from 'react-redux';
 import { getCarouselDetailsApi } from '../actions/crouselActions';
 import {useParams} from 'react-router-dom'
 import CarouselDetailsCard from './blog-components/CarouselDetails';
+import MobileNav from './global-components/Mobile-nav';
 
 const CarouselDetails = ({caro}) => {
     const dispatch=useDispatch()
@@ -18,8 +19,9 @@ const {carouselDetails}=useSelector((state)=>state.carouselDetails)
         dispatch(getCarouselDetailsApi(id))
 
     },[dispatch])
+
     return <div>
-        <Navbar />
+        <MobileNav />
         {/* <PageHeader headertitle="News Details" /> */}
         <CarouselDetailsCard carouselDetails={carouselDetails}/>
         <CallToActionV1 />

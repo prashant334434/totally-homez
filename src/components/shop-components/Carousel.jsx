@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import {Link} from 'react-router-dom'
-const carouselItems = [
+import { useDispatch, useSelector } from 'react-redux';
+import { Link } from 'react-router-dom'
+import { getCarouselsApi } from '../../actions/crouselActions';
+import { TEAM_API_URL } from '../../constants/config';
+let carouselItems = [
     { id: 1, content: 'https://www.timeoutdubai.com/cloud/timeoutdubai/2021/09/13/Damx3DMM-The-Penthouse-1200x800.jpg' },
     { id: 2, content: 'https://www.timeoutdubai.com/cloud/timeoutdubai/2021/09/13/Damx3DMM-The-Penthouse-1200x800.jpg' },
     { id: 3, content: 'https://www.timeoutdubai.com/cloud/timeoutdubai/2021/09/13/Damx3DMM-The-Penthouse-1200x800.jpg' },
@@ -10,57 +13,66 @@ const carouselItems = [
     { id: 5, content: 'https://www.timeoutdubai.com/cloud/timeoutdubai/2021/11/08/The-Penthouse.jpg' },
     { id: 6, content: 'https://www.timeoutdubai.com/cloud/timeoutdubai/2021/11/08/The-Penthouse.jpg' },
     // Add more items as needed
-  ];
+];
 const CarouselSlider = () => {
+const {carousels}=useSelector((state)=>state.carousels)
+    const dispatch = useDispatch()
+    useEffect(() => {
+        dispatch(getCarouselsApi())
+    }, [])
+
+    if(carousels?.length>0){
+        carouselItems=carousels
+    }
     return (
         <Carousel
-        additionalTransfrom={0}
-        arrows
-        autoPlay
-        autoPlaySpeed={3000}
-        centerMode={false}
-        containerClass="carousel-container"
-        dotListClass=""
-        draggable
-        focusOnSelect={false}
-        infinite
-        itemClass=""
-        keyBoardControl
-        minimumTouchDrag={80}
-        renderButtonGroupOutside={false}
-        renderDotsOutside={false}
-        responsive={{
-          desktop: {
-            breakpoint: { max: 3000, min: 1024 },
-            items: 5,
-          },
-          tablet: {
-            breakpoint: { max: 1024, min: 464 },
-            items: 2,
-          },
-          mobile: {
-            breakpoint: { max: 464, min: 0 },
-            items: 1,
-          },
-        }}
-        showDots={false}
-        sliderClass=""
-        slidesToSlide={1}
-        swipeable
-      >
-        {carouselItems.map((item) => (
-       	<div className="col-lg-12">
-           <div key={item?.id} className="ltn__product-item ltn__product-item-4 text-center---">
-               <div className="product-img go-top">
-                   <Link to={`/property-details/${item?.id}`}><img src={item?.content} alt="#" /></Link>
-                   <div className="product-badge">
-                       <ul>
-                           <li className="sale-badge bg-green">{"rent"}</li>
-                       </ul>
-                   </div>
+            additionalTransfrom={0}
+            arrows
+            autoPlay
+            autoPlaySpeed={3000}
+            centerMode={false}
+            containerClass="carousel-container"
+            dotListClass=""
+            draggable
+            focusOnSelect={false}
+            infinite
+            itemClass=""
+            keyBoardControl
+            minimumTouchDrag={80}
+            renderButtonGroupOutside={false}
+            renderDotsOutside={false}
+            responsive={{
+                desktop: {
+                    breakpoint: { max: 3000, min: 1024 },
+                    items: 5,
+                },
+                tablet: {
+                    breakpoint: { max: 1024, min: 464 },
+                    items: 2,
+                },
+                mobile: {
+                    breakpoint: { max: 464, min: 0 },
+                    items: 1,
+                },
+            }}
+            showDots={false}
+            sliderClass=""
+            slidesToSlide={1}
+            swipeable
+        >
+            {carouselItems.map((item) => (
+                <div className="col-lg-12">
+                    <div key={item?.id} className="ltn__product-item ltn__product-item-4 text-center---">
+                        <div className="product-img go-top">
+                            <Link to={`/carousel/${item?.id}`}><img className='carouselImages' src={`${TEAM_API_URL}/${item?.path}`} alt="#" /></Link>
+                            <div className="product-badge">
+                                <ul>
+                                    <li className="sale-badge bg-green">{"rent"}</li>
+                                </ul>
+                            </div>
 
-               </div>
-               {/* <div className="product-info">
+                        </div>
+                        {/* <div className="product-info">
                    <div className="product-price">
                        <h2 className="product-title go-top"><Link to={`/property-details/${categoryProperty?.id}`}>{categoryProperty?.property_name}</Link></h2>
 
@@ -113,13 +125,13 @@ const CarouselSlider = () => {
                        </ul>
                    </div>
                </div> */}
-           </div>
+                    </div>
 
-       </div>
-        ))}
-      </Carousel>
+                </div>
+            ))}
+        </Carousel>
     );
-  
+
 }
 
 export default CarouselSlider
