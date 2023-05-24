@@ -4787,8 +4787,9 @@ a{
 label{
   font-family: "League Spartan";
   font-size:17px;
-  padding-right: 78px;
+
 }
+{/*  padding-right: 78px;   padding removed from label class*/}
 
 .label_2{
     font-family: "League Spartan";
