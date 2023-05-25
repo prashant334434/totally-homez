@@ -29,7 +29,7 @@ const CareerV1 = () => {
     }, [dispatch])
     return <div>
         <MobileNav />
-        <WorkWithUs />
+        <WorkWithUs careerData={career} />
         <JoinUs />
         <RightFit customClass="ltn__feature-area  pt-120 pb-90 mb-120---" />
 
