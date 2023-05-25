@@ -49,7 +49,6 @@ class ColumnProperty extends Component {
 				      <div className="row">
 				        <div className="col-xl-3 col-md-6 col-sm-6 col-12">
 				          <div className="footer-widget footer-menu-widget clearfix">
-				            <h4 className="footer-title">Curations </h4>
 				            <div className="footer-menu go-top">
 				              <ul>
 				                <li><Link to="/about">Akoya Oxygen</Link></li>
@@ -64,7 +63,7 @@ class ColumnProperty extends Component {
 				        </div>
 				        <div className="col-xl-3 col-md-6 col-sm-6 col-12">
 				          <div className="footer-widget footer-menu-widget clearfix">
-				            <h4 className="footer-title">Navigate </h4>
+	
 				            <div className="footer-menu go-top">
 				              <ul>
 							  <li><Link to="/about-us">About</Link></li>
@@ -79,7 +78,7 @@ class ColumnProperty extends Component {
 				        </div>
 				        <div className="col-xl-3 col-md-6 col-sm-6 col-12">
 				          <div className="footer-widget footer-menu-widget clearfix">
-				            <h4 className="footer-title">Community Guides </h4>
+				           
 				            <div className="footer-menu go-top">
 				              <ul>
 				                <li><Link to="/login">Login</Link></li>
@@ -95,7 +94,7 @@ class ColumnProperty extends Component {
 
 						<div className="col-xl-3 col-md-6 col-sm-6 col-12">
 				          <div className="footer-widget footer-menu-widget clearfix">
-				            <h4 className="footer-title">Explore </h4>
+				          
 				            <div className="footer-menu go-top">
 				              <ul>
 				                <li><Link to="/login">Login</Link></li>

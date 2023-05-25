@@ -19030,6 +19030,9 @@ a.ltn__utilize-toggle.close {
   }
   
   }
+  .indexing{
+    z-index: 1000!important;
+  }
 /* ----------------------------------------------------
     END
 ---------------------------------------------------- */
@@ -19069,9 +19072,12 @@ a.ltn__utilize-toggle.close {
   border-color: #101010 #101010 transparent transparent;
   border-width: 0 10px 10px 0;
   top: 100%;
+
+}
 .sizingimage{
   width: 9%;
 }
+
 @media only screen and (max-width: 992px){
   .sizingimage{
     width: 5% !important;

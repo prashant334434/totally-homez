@@ -61,7 +61,7 @@ const StickyBarIcon = ({ propertyDetails }) => {
       const classesMui = useStyles();
 
       return (
-		<div className="ltn__shop-details-area stickyclassbar hidde">
+		<div className="ltn__shop-details-area stickyclassbar hidde indexing">
 
 
 			<div className="container">
