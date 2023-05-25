@@ -12,9 +12,14 @@ const AboutOffPlan = () => {
     let publicUrl = process.env.PUBLIC_URL+'/'
     const [open,setOpen]=useState(false)
     
+    const { offPlan }=useSelector(state=>state.offPlan)
+    const dispatch = useDispatch()
 
-
-
+    useEffect(() => {
+  
+     dispatch(getOffPlanApi())
+    }, [dispatch])
+    
   
 
   return (

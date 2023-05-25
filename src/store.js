@@ -32,7 +32,7 @@ const reducer=combineReducers({
 
     propertiesByType:propertiesByTypeReducer,
 
-
+    offPlan:getOffPlanReducer
   
     
    
