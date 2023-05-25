@@ -17,7 +17,7 @@ const NewContact = () => {
     const dispatch=useDispatch()
     useEffect(()=>{
         dispatch(getContactUsApi())
-    })
+    },[dispatch])
     return <div>
         <MobileNav/>
         {/* <BlogDetails /> */}

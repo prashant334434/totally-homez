@@ -7,7 +7,8 @@ export const getContactUsApi = () => async (dispatch) => {
   
       const  {data}  = await axios.get(`https://totallyhomerealestate.com/API/api/contacts`);
 
-  
+
+console.log(data)
       dispatch({
         type: GET_CONTACT_SUCCESS,
         payload: data,
