@@ -20,27 +20,14 @@ import TownhouseProductGrid from './shop-components/TownhouseProductGrid';
 import StickyBarIcon from './shop-components/sticky-iconbar';
 import VillaforSale from './global-components/villaforsale';
 import ColumnProperty from './global-components/columnproperty';
+import ProductSliderV1 from './shop-components/product-slider-v1';
 
 const BreadCrumbs = () => {
-    const { id } = useParams()
-    console.log(id)
-    const { loading, propertyDetails } = useSelector((state) => state.propertyDetails);
-    const dispatch = useDispatch()
-    let history = useHistory();
-    useEffect(() => {
-        dispatch(getSingalPropertyDetailsApi(id))
-    }, [dispatch])
-
-
-    if (loading) {
-        return (
-            <Loader />
-        )
-    }
+    
     return <div>
         <MobileNav />
-        <VillaforSale propertyDetails={propertyDetails} headertitle="Garden Homes Frond C" customclass="mb-0 pt-100" />
-        <ColumnProperty/>
+        <VillaforSale  headertitle="Garden Homes Frond C" customclass="mb-0 pt-100" />
+        <ProductSliderV1/>
         <TownhouseProductGrid />
         <CallToActionV1 />
        
