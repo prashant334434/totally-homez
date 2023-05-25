@@ -63,6 +63,7 @@ import GridPage from './components/shop-components/GridPage';
 import ShopNew from './components/shop-components/ShopNew';
 import Cummunity from './components/shop-components/Cummunity';
 import GuideLine from './components/shop-components/GuideLine';
+import BreadCrumbs from './components/breadcrums';
 
 
 
@@ -155,7 +156,7 @@ import GuideLine from './components/shop-components/GuideLine';
         <Route path="/about-us" component={ aboutUs } />
         <Route path="/shop-page" component={ ShopNew } />
         <Route path="/community" component={ GuideLine } />
-        
+        <Route path="/bread-crums" component={ BreadCrumbs } />
 
 
 
