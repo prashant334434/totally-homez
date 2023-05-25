@@ -12,6 +12,7 @@ import { contactReducer } from "./reducers/contactReducer";
 import { listWithUsReducer } from "./reducers/listWithUsReducer";
 import { careerReducer } from "./reducers/careerReducer";
 import { aboutReducer } from "./reducers/aboutReducer";
+import { communityReducer } from "./reducers/communityReducer";
 
 const reducer=combineReducers({
     user:userReducer,
@@ -29,6 +30,7 @@ const reducer=combineReducers({
     listWithUs:listWithUsReducer,
     career:careerReducer,
     about:aboutReducer ,
+    community:communityReducer, 
 
 
     blogs:blogReducer,
