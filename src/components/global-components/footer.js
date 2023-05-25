@@ -128,7 +128,7 @@ class Footer_v1 extends Component {
 				                <li><Link to="/wishlist">Wish List</Link></li>
 				                <li><Link to="/add-listing">Add listing</Link></li>
 				                <li><Link to="/faq">FAQ</Link></li>
-				                <li><Link to="/contact">Contact us</Link></li>
+				                <li><Link to="/contact-us">Contact us</Link></li>
 				              </ul>
 				            </div>
 				          </div>
@@ -144,7 +144,7 @@ class Footer_v1 extends Component {
 				                <li><Link to="/wishlist">Wish List</Link></li>
 				                <li><Link to="/add-listing">Add listing</Link></li>
 				                <li><Link to="/faq">FAQ</Link></li>
-				                <li><Link to="/contact">Contact us</Link></li>
+				                <li><Link to="/contact-us">Contact us</Link></li>
 				              </ul>
 				            </div>
 				          </div>

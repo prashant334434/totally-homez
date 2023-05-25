@@ -134,7 +134,7 @@ const Dnavbar = () => {
 											<li><Link to="/add-listing">Add Listing</Link></li>
 											<li><Link to="/location">Google Map Locations</Link></li>
 											<li><Link to="/404">404</Link></li>
-											<li><Link to="/contact">Contact</Link></li>
+											<li><Link to="/contact-us">Contact</Link></li>
 											<li><Link to="/coming-soon">Coming Soon</Link></li>
 										</ul>
 									</li>

@@ -130,7 +130,7 @@ import BreadCrumbs from './components/breadcrums';
 
 
         <Route path="/blog-details" component={ BlogDetails } />
-        <Route path="/contact" component={ Contact } />
+        {/* <Route path="/contact" component={ Contact } /> */}
         <Route path="/cart" component={ Cart } />
         <Route path="/checkout" component={ Checkout } />
         <Route path="/my-account" component={ MyAccount } />
