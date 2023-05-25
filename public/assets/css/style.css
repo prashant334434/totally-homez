@@ -19088,8 +19088,10 @@ a.ltn__utilize-toggle.close {
   }
 }
 .columncss{
-  color:#5c727d;
+  color:#eb2027;
   font-size: 17px;
   font-weight: 600;
   font-family: "League Spartan";
+ cursor: pointer;
+
 }

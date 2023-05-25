@@ -2,13 +2,13 @@ import React, { useEffect ,useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const ColumnProperty = ({community}) => {
-  const [itemsToShow, setItemsToShow] = useState(16);
+  const [itemsToShow, setItemsToShow] = useState(18);
   const showmore = () => {
     setItemsToShow(community.length)
 }
 
 const showless = () => {
-    setItemsToShow(3)
+    setItemsToShow(18)
 }
 	
   useEffect(() => {
@@ -35,11 +35,7 @@ const showless = () => {
       $('body').attr("style", "");
     });
   }, []);
-   const [showAll, setShowAll] = useState(false);
-   
-   const toggleShowAll = ()=>{
-    setShowAll(!showAll)
-   }
+  
 
   let publicUrl = process.env.PUBLIC_URL + '/';
   let imgattr = "Footer logo";
@@ -66,10 +62,7 @@ const showless = () => {
             ))
 
           }
-                     {(itemsToShow === 16) ? <button onClick={showmore}>Show More</button>: <button onClick={showless}>Show Less</button>}
-
-          
-
+          {(itemsToShow === 18) ? <div className='columncss' onClick={showmore}>Show More</div>: <div  className ="columncss" onClick={showless}>Show Less</div>}
           </div>
         </div>
       </div>
