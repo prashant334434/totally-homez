@@ -7,14 +7,15 @@ const MarketingProperty = (props) => {
   return (
     <div className={"ltn__about-us-area section-bg-1 pt-20"+customClass}>
     <div className="container">
-      <div className="row">
+     {
+      props?.listWithUs?.map((item,index)=>(
+        <div className="row">
         <div className="col-lg-6 align-self-center">
           <div className="about-us-info-wrap">
             <div className="section-title-area ltn__section-title-2--- mb-30">
               {/* <h6 className="section-subtitle section-subtitle-2 ltn__secondary-color">About Us</h6> */}
-              <h1 className="section-title"><span>THE MARKETING YOUR PROPERTY DESERVES  </span> </h1>
-              <p>We at Totally Home offer you the support you need in order to showcase your property in the best light possible. Our website’s technology, combined with our marketing strategies, will help you make your listing stand out among the sea of competition, helping generate more traffic & interest  </p>
-              <p>We are committed to creating professional-quality listings that showcase your home’s best features and offer a complete overview of its benefits without bias. Our listings include high-resolution photos, detailed property descriptions, user location information, community links, custom maps, video tours, and much more. They are easily shareable on social media for maximum exposure  </p>
+              <h1 className="section-title"><span>{item?.sec2_h}  </span> </h1>
+              <p>{item?.sec2_dsc} </p>
 
             </div>
             {/* <ul className="ltn__list-item-1 ltn__list-item-1-before clearfix">
@@ -57,10 +58,12 @@ const MarketingProperty = (props) => {
         </div>
         <div className="col-lg-6 align-self-center">
           <div className="about-us-img-wrap about-img-right">
-            <img className='offPlanImage' src="https://pic.le-cdn.com/thumbs/520x390/480/1/properties/Property-6609991517d604e29875bd9576182487-121125645.jpg" alt="About Us Image" />
+            <img className='offPlanImage' src={item?.sec2_img} alt="About Us Image" />
           </div>
         </div>
       </div>
+      ))
+     }
     </div>
   </div>
   )

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from './global-components/navbar';
 import PageHeader from './global-components/page-header';
 import AboutV4 from './section-components/about-v4';
@@ -29,26 +29,37 @@ import InternetAlone from './section-components/internetalone';
 import TakeCareEverything from './section-components/takecareeverything';
 import ReadyToSell from './section-components/readytosell';
 import MobileNav from './global-components/Mobile-nav';
+import { useDispatch, useSelector } from 'react-redux';
+import { getListWithUsUsApi } from '../actions/listWithUsActions';
+import CultureListWithUs from './section-components/cultureListWithUs';
 
 const ListWithUs = () => {
+
+
+    const {loading,listWithUs}=useSelector((state)=>state.listWithUs)
+    const dispatch=useDispatch()
+
+    useEffect(()=>(
+        dispatch(getListWithUsUsApi())
+    ),[dispatch])
     return <div>
      <MobileNav />
-        <SellWithUs />
-        <MarketingProperty/>
-        <PropertyWorth/>
+        <SellWithUs loading={loading} listWithUs={listWithUs} />
+        <MarketingProperty loading={loading} listWithUs={listWithUs}/>
+        <PropertyWorth loading={loading} listWithUs={listWithUs}/>
         {/* <PropertyPrepration/> */}
-        <UniqueProperty/>
+        <UniqueProperty loading={loading} listWithUs={listWithUs}/>
         
-        <BenefitsofListing  customClass="ltn__feature-area  pt-120 pb-90 mb-120---"/>
+        <BenefitsofListing loading={loading} listWithUs={listWithUs}   customClass="ltn__feature-area  pt-120 pb-90 mb-120---"/>
 
-        <OurCulture/>
+        <CultureListWithUs loading={loading} listWithUs={listWithUs}/>
         <OurPhilosophy/>
         <ThePerks />
         <InnovativeApproach />
-        <QualityFocusedCreation  customClass="ltn__feature-area  pt-120 pb-90 mb-120---"/>
+        <QualityFocusedCreation loading={loading} listWithUs={listWithUs}  customClass="ltn__feature-area  pt-120 pb-90 mb-120---"/>
        {/* <BlogSlider />*/}
-        <HighContent/>
-        <InternetAlone/>
+        <HighContent loading={loading} listWithUs={listWithUs}/>
+        <InternetAlone loading={loading} listWithUs={listWithUs}/>
         <TakeCareEverything/>
         <ReadyToSell />
         <Footer />
