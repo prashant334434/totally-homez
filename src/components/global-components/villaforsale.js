@@ -19,13 +19,13 @@ const VillaforSale = (props) => {
 				<div className="row">
 				<div className="col-lg-12">
 					<div className="ltn__breadcrumb-inner">
-					<h1 className="page-title">{ props?.propertyDetails?.property_name }</h1>
+					<h1 className="page-title">Villas For Sale In Jumeirah Golf Estates</h1>
 					<div className="ltn__breadcrumb-list">
 						<ul>
 						<li><Link to="/"><span className="ltn__secondary-color"><i className="fas fa-home" style={{fontSize:'16px'}} /></span> Dubai</Link></li>
-						<li><Link to="/">{ props?.propertyDetails?.property_type }</Link></li>
-						<li><Link to="/">{ props?.propertyDetails?.property_community }</Link></li>
-						<li><Link to="/">{ props?.propertyDetails?.property_sub_community }</Link></li>
+						<li><Link to="/">Dubai</Link></li>
+						<li><Link to="/">Villa</Link></li>
+						<li><Link to="/">Jumeirah Golf Estates</Link></li>
 						
 
 
