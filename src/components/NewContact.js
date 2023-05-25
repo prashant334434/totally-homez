@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from './global-components/navbar';
 import PageHeader from './global-components/page-header';
 import BlogDetails from './blog-components/blog-details';
@@ -8,13 +8,21 @@ import ContactDetails from './blog-components/ContactDetails';
 import ContactInfo from './section-components/contact-info';
 import PhotoContact from './section-components/photocontact';
 import MobileNav from './global-components/Mobile-nav';
+import { getContactUsApi } from '../actions/contactActions';
+import { useDispatch, useSelector } from 'react-redux';
 
 const NewContact = () => {
+
+    const {contact,loading}=useSelector((state)=>state.contact)
+    const dispatch=useDispatch()
+    useEffect(()=>{
+        dispatch(getContactUsApi())
+    })
     return <div>
         <MobileNav/>
         {/* <BlogDetails /> */}
-        <PhotoContact/>
-        <ContactInfo/>
+        <PhotoContact contactData={contact}/>
+        <ContactInfo contactData={contact}/>
        {/* 
         <ContactDetails/>*/}
 
