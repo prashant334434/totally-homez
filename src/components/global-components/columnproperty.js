@@ -27,8 +27,9 @@ const ColumnProperty = ({community}) => {
     });
   }, []);
    const [showAll, setShowAll] = useState(false);
+   const itemsToshow =showAll? community.length :4;
    
-   const toggleShowAll = ()=>{
+   const handleToggleShow = ()=>{
     setShowAll(!showAll)
    }
 
@@ -57,12 +58,11 @@ const ColumnProperty = ({community}) => {
             ))
 
           }
-          <div className='columncss'>Read More</div>
-
-          <div className='columncss'>Read Less</div>
-          
-
+          <div onClick={handleToggleShow} className='columncss'>
+             {showAll ? 'Read Less' : 'Read More'}
           </div>
+
+    </div>
         </div>
       </div>
     </footer>
