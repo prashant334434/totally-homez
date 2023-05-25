@@ -3001,6 +3001,10 @@ ul {
   padding-left: 12%;
   padding-right: 12%;
 }
+.plr--18 {
+  padding-left: 18%;
+  padding-right: 18%;
+}
 
 @media (max-width: 1399px) {
   .plr--2,
@@ -19082,4 +19086,10 @@ a.ltn__utilize-toggle.close {
   .sizingimage{
     width: 5% !important;
   }
+}
+.columncss{
+  color:#5c727d;
+  font-size: 17px;
+  font-weight: 600;
+  font-family: "League Spartan";
 }

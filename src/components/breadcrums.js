@@ -20,15 +20,15 @@ import TownhouseProductGrid from './shop-components/TownhouseProductGrid';
 import StickyBarIcon from './shop-components/sticky-iconbar';
 import VillaforSale from './global-components/villaforsale';
 import ColumnProperty from './global-components/columnproperty';
+import { getcommunityApi } from '../actions/communityAction';
 
 const BreadCrumbs = () => {
-    const { id } = useParams()
-    console.log(id)
-    const { loading, propertyDetails } = useSelector((state) => state.propertyDetails);
+   
+    const { loading, community } = useSelector((state) => state.community);
     const dispatch = useDispatch()
     let history = useHistory();
     useEffect(() => {
-        dispatch(getSingalPropertyDetailsApi(id))
+        dispatch(getcommunityApi())
     }, [dispatch])
 
 
@@ -39,8 +39,8 @@ const BreadCrumbs = () => {
     }
     return <div>
         <MobileNav />
-        <VillaforSale propertyDetails={propertyDetails} headertitle="Garden Homes Frond C" customclass="mb-0 pt-100" />
-        <ColumnProperty/>
+        <VillaforSale  headertitle="Garden Homes Frond C" customclass="mb-0 pt-100 " />
+        <ColumnProperty loading={loading} community={community}/>
         <TownhouseProductGrid />
         <CallToActionV1 />
        
