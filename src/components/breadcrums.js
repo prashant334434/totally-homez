@@ -1,5 +1,3 @@
-//src>components>product-deatils.js
-
 import React, { useEffect } from 'react';
 import Navbar from './global-components/navbar-v3';
 import PageHeader from './global-components/page-header';
@@ -20,14 +18,27 @@ import TownhouseProductGrid from './shop-components/TownhouseProductGrid';
 import StickyBarIcon from './shop-components/sticky-iconbar';
 import VillaforSale from './global-components/villaforsale';
 import ColumnProperty from './global-components/columnproperty';
-import ProductSliderV1 from './shop-components/product-slider-v1';
+import { getcommunityApi } from '../actions/communityAction';
 
 const BreadCrumbs = () => {
-    
+   
+    const { loading, community } = useSelector((state) => state.community);
+    const dispatch = useDispatch()
+    let history = useHistory();
+    useEffect(() => {
+        dispatch(getcommunityApi())
+    }, [dispatch])
+
+
+    if (loading) {
+        return (
+            <Loader />
+        )
+    }
     return <div>
         <MobileNav />
-        <VillaforSale  headertitle="Garden Homes Frond C" customclass="mb-0 pt-100" />
-        <ProductSliderV1/>
+        <VillaforSale  headertitle="Garden Homes Frond C" customclass="mb-0 pt-100 " />
+        <ColumnProperty loading={loading} community={community}/>
         <TownhouseProductGrid />
         <CallToActionV1 />
        
