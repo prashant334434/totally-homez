@@ -21,7 +21,9 @@ const NewContact = () => {
     return <div>
         <MobileNav/>
         {/* <BlogDetails /> */}
-        <PhotoContact contactData={contact}/>
+                <PhotoContact contactData={contact}/>
+
+        
         <ContactInfo contactData={contact}/>
        {/* 
         <ContactDetails/>*/}

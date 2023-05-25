@@ -2,22 +2,19 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import parse from 'html-react-parser';
 import { useState } from 'react';
-import { ABOUT_IMAGE_URL } from '../../constants/config';
    
 
 
 
 
-const PhotoContact= ({contactData}) => {
+const PhotoContact= () => {
 	let publicUrl = process.env.PUBLIC_URL+'/'
     
 
 
   return (
 	<div>
-		{
-			contactData?.map((item,index)=>(
-				<div className="ltn__upcoming-project-area section-bg-1--- bg-image-top " data-bs-bg={`${ABOUT_IMAGE_URL}/contact}/${item?.c_img}`}>
+		<div className="ltn__upcoming-project-area section-bg-1--- bg-image-top " data-bs-bg={publicUrl+"assets/img/bg/22.jpg"}>
 			  <div className="container positioning1 col-lg-12">
 			    
 			     
@@ -28,10 +25,6 @@ const PhotoContact= ({contactData}) => {
 			        </div>
 			    </div>
 			  </div>
-
-			))
-		}
-		
 			</div>
 
   )
