@@ -2,6 +2,15 @@ import React, { useEffect ,useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const ColumnProperty = ({community}) => {
+  const [itemsToShow, setItemsToShow] = useState(16);
+  const showmore = () => {
+    setItemsToShow(community.length)
+}
+
+const showless = () => {
+    setItemsToShow(3)
+}
+	
   useEffect(() => {
     const $ = window.$;
     let publicUrl = process.env.PUBLIC_URL + '/';
@@ -27,9 +36,8 @@ const ColumnProperty = ({community}) => {
     });
   }, []);
    const [showAll, setShowAll] = useState(false);
-   const itemsToshow =showAll? community.length :4;
    
-   const handleToggleShow = ()=>{
+   const toggleShowAll = ()=>{
     setShowAll(!showAll)
    }
 
@@ -43,7 +51,7 @@ const ColumnProperty = ({community}) => {
           <div className="row">
           {
    
-            community?.map((item,index)=>(
+            community?.slice(0,itemsToShow).map((item,index)=>(
               <div className="col-xl-2 col-md-6 col-sm-6 col-12">
               <div className="footer-widget footer-menu-widget clearfix">
                 <div className="footer-menu go-top">
@@ -58,11 +66,11 @@ const ColumnProperty = ({community}) => {
             ))
 
           }
-          <div onClick={handleToggleShow} className='columncss'>
-             {showAll ? 'Read Less' : 'Read More'}
-          </div>
+                     {(itemsToShow === 16) ? <button onClick={showmore}>Show More</button>: <button onClick={showless}>Show Less</button>}
 
-    </div>
+          
+
+          </div>
         </div>
       </div>
     </footer>
