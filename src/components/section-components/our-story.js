@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import parse from 'html-react-parser';
+import { ABOUT_IMAGE_URL } from '../../constants/config';
 let publicUrl = process.env.PUBLIC_URL+'/'
 let imagealt = 'image'
 
@@ -36,7 +37,7 @@ const OurStory = (props) => {
 							</div>
 						  </div>
 						  <div className="slide-item-img">
-							<img src={about?.story_img} alt="#" />
+							<img src={`${ABOUT_IMAGE_URL}/${about?.story_img}`} alt="#" />
 						  </div>
 						</div>
 					  </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { ABOUT_IMAGE_URL } from '../../constants/config'
 
 const OurPassion = (props) => {
     let publicUrl = process.env.PUBLIC_URL+'/'
@@ -58,7 +59,7 @@ const OurPassion = (props) => {
           </div>
           <div className="col-lg-6 align-self-center">
             <div className="about-us-img-wrap about-img-right">
-              <img className='offPlanImage' src={about?.passion_img} alt="About Us Image" />
+              <img className='offPlanImage' src={`${ABOUT_IMAGE_URL}/${about?.passion_img}`}alt="About Us Image" />
             </div>
           </div>
         </div>

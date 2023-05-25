@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import ApartmentV1 from './apartment-v1'
+import { ABOUT_IMAGE_URL } from '../../constants/config'
 
 const OurApproach = (props) => {
     let publicUrl = process.env.PUBLIC_URL+'/'
@@ -16,7 +17,7 @@ const OurApproach = (props) => {
           <div className="row">
           <div className="col-lg-6 align-self-center">
               <div className="about-us-img-wrap about-img-right">
-                <img src={about?.appro_img} alt="About Us Image" />
+                <img src={`${ABOUT_IMAGE_URL}/${about?.appro_img}`} alt="About Us Image" />
               </div>
             </div>
             <div className="col-lg-6 align-self-center">
@@ -24,7 +25,7 @@ const OurApproach = (props) => {
                 <div className="section-title-area ltn__section-title-2--- mb-30 ">
                   {/* <h6 className="section-subtitle section-subtitle-2 ltn__secondary-color">About Us</h6> */}
                   <h1 className="section-title"><span>Our Approach</span>  </h1>
-                  <p>{about?.appro_img}  </p>
+                  <p>{about?.appro_dsc}  </p>
     
                 </div>
                 {/* <ul className="ltn__list-item-1 ltn__list-item-1-before clearfix">

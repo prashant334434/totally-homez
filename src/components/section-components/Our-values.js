@@ -1,4 +1,5 @@
 import React from 'react'
+import { ABOUT_IMAGE_URL } from '../../constants/config'
 
 const OurValues = (props) => {
     let publicUrl = process.env.PUBLIC_URL+'/'
@@ -15,7 +16,7 @@ const OurValues = (props) => {
               <div className="section-title-area ltn__section-title-2--- mb-30">
                 {/* <h6 className="section-subtitle section-subtitle-2 ltn__secondary-color">About Us</h6> */}
                 <h1 className="section-title"><span>Our Values </span> </h1>
-                <p>{about?.value_dsc} </p>
+                <p>{about?.valu_dsc} </p>
                 {/* <p>Therefore, we will always strive to provide these things to all our clients so that they can have an elevated experience with us.  </p> */}
   
               </div>
@@ -59,7 +60,7 @@ const OurValues = (props) => {
           </div>
           <div className="col-lg-6 align-self-center">
             <div className="about-us-img-wrap about-img-right">
-              <img className='offPlanImage' src={about?.value_img} alt="About Us Image" />
+              <img className='offPlanImage' src={`${ABOUT_IMAGE_URL}/${about?.valu_img}`} alt="About Us Image" />
             </div>
           </div>
         </div>
