@@ -49,7 +49,7 @@ const Cummunity = () => {
         window.scrollTo(0, 0);
       }, [content]);
   return (
-    <div className="ltn__team-details-area mb-120 pt-150" >
+    <div className="ltn__team-details-area mb-50 pt-40" >
                 <div className="container">
                 <div className="row">
                     <div className="col-lg-4">

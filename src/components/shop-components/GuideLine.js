@@ -5,6 +5,8 @@ import CallToActionV1 from '../section-components/call-to-action-v1';
 import Cummunity from './Cummunity';
 import CommunityGrid from './CommunityGrid';
 import CarouselSlider from './Carousel';
+import CommunityCarousel from './communityCarousel';
+import CommunityGrid2 from './CommunityGrid2';
 
 
 const GuideLine = () => {
@@ -15,9 +17,9 @@ const GuideLine = () => {
       
 
         <Cummunity/>
-        <h1>Investment Opportunities 
-        </h1>
-        <CarouselSlider/>
+        
+        <CommunityCarousel/>
+        <CommunityGrid2/>
         <CallToActionV1 />
         <Footer_v1 />
     </div>

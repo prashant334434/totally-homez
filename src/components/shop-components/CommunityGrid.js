@@ -106,7 +106,7 @@ const CommunityGrid = () => {
             <div className="col-lg-4">
                 <div key={categoryProperty?.id} className="ltn__product-item ltn__product-item-4 text-center---">
                     <div className="product-img go-top">
-                        <Link to={`/property-details/${categoryProperty?.id}`}><img src={`https://media.istockphoto.com/id/490348444/photo/house-in-dubai.jpg?s=612x612&w=0&k=20&c=W78UOukoUuGNhTDHA0Sl4GY5cpiHkoJ3bBvmxBERWQg=`} alt="#" /></Link>
+                        <Link to={`/property-details/${categoryProperty?.id}`}><img src={`https://oneinvestments.com/wp-content/uploads/2019/07/Golf-Place-Villa-emaar-3-800x507.jpg`} alt="#" /></Link>
                         <div className="product-badge">
                             <ul>
                                 <li className="sale-badge bg-green">{categoryProperty?.property_for}</li>
