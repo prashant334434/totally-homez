@@ -32,6 +32,8 @@ import MobileNav from './global-components/Mobile-nav';
 import { useDispatch, useSelector } from 'react-redux';
 import { getListWithUsUsApi } from '../actions/listWithUsActions';
 import CultureListWithUs from './section-components/cultureListWithUs';
+import PhilosphyListWithus from './section-components/philosphyListWithUs';
+import PerksListWithUs from './section-components/perksListWithUs';
 
 const ListWithUs = () => {
 
@@ -53,8 +55,8 @@ const ListWithUs = () => {
         <BenefitsofListing loading={loading} listWithUs={listWithUs}   customClass="ltn__feature-area  pt-120 pb-90 mb-120---"/>
 
         <CultureListWithUs loading={loading} listWithUs={listWithUs}/>
-        <OurPhilosophy/>
-        <ThePerks />
+        <PhilosphyListWithus loading={loading} listWithUs={listWithUs} />
+        <PerksListWithUs loading={loading} listWithUs={listWithUs} />
         <InnovativeApproach />
         <QualityFocusedCreation loading={loading} listWithUs={listWithUs}  customClass="ltn__feature-area  pt-120 pb-90 mb-120---"/>
        {/* <BlogSlider />*/}
