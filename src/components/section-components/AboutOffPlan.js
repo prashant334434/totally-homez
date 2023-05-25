@@ -1,14 +1,26 @@
-import React, { Component, useState } from 'react';
+import React, { Component, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import parse from 'html-react-parser';
 import Popup from '../Popup';
 import { Button } from '@material-ui/core';
 import PopForm from './PopForm';
+import { useDispatch, useSelector } from 'react-redux';
+import { getOffPlanApi } from '../../actions/offPlanActions';
 // import Popup from './popup';
 
 const AboutOffPlan = () => {
     let publicUrl = process.env.PUBLIC_URL+'/'
     const [open,setOpen]=useState(false)
+    
+    const { offPlan }=useSelector(state=>state.offPlan)
+    const dispatch = useDispatch()
+
+    useEffect(() => {
+  
+     dispatch(getOffPlanApi())
+    }, [dispatch])
+    
+  
 
   return (
     <div className="ltn__about-us-area ">

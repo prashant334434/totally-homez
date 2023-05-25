@@ -13,6 +13,7 @@ import { listWithUsReducer } from "./reducers/listWithUsReducer";
 import { careerReducer } from "./reducers/careerReducer";
 import { aboutReducer } from "./reducers/aboutReducer";
 import { communityReducer } from "./reducers/communityReducer";
+import { getOffPlanReducer } from "./reducers/offPlanReducers";
 
 const reducer=combineReducers({
     user:userReducer,
@@ -40,7 +41,10 @@ const reducer=combineReducers({
     penthouseCategoryProperties:penthouseCategoryReducer,
     penthouseCategoryRentProperties:penthouseCategoryRentReducer,
 
-    propertiesByType:propertiesByTypeReducer
+    propertiesByType:propertiesByTypeReducer,
+
+    offPlan:getOffPlanReducer
+  
     
    
 
