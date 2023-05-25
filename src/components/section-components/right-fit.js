@@ -11,11 +11,15 @@ const RightFit = (props) => {
     let customClass = props.customClass ? props.customClass :''
   return (
 	<div><div className={ customClass } >
-	<div className="container">
+		{
+			props?.careerData?.map((item,index)=>(
+
+				<div className="container">
+		
 	  <div className="row">
 		<div className="col-lg-12">
 		  <div className="section-title-area ltn__section-title-2--- text-center">
-			<h1 className="section-title"><span>You’re the right fit for Totally Home Real Estate, if:</span></h1>
+			<h1 className="section-title"><span>{item?.sec3_h}</span></h1>
 		  </div>
 		</div>
 	  </div>
@@ -23,7 +27,7 @@ const RightFit = (props) => {
 		<div className="col-lg-4 col-sm-6 col-12">
 		  <div className="ltn__feature-item ltn__feature-item-6 text-center bg-white  box-shadow-1">
 			<div className="ltn__feature-info">
-			 < Link  className="ltn__service-btn" to="/service-details">You want to work with successful mentors who are your role models</Link>
+			 < Link  className="ltn__service-btn" >{item?.sec3_b1_dec}</Link>
 			</div>
 		  </div>
 		</div>
@@ -31,7 +35,7 @@ const RightFit = (props) => {
 		  <div className="ltn__feature-item ltn__feature-item-6 text-center bg-white  box-shadow-1 active">
 		
 			<div className="ltn__feature-info">
-			  <Link className="ltn__service-btn" to="/service-details">You want to work at an innovative, new age real estate company that has designed trusted relationships with all its clients. </Link>
+			< Link  className="ltn__service-btn" >{item?.sec3_b2_dec}</Link>
 			</div>
 		  </div>
 		</div>
@@ -39,7 +43,7 @@ const RightFit = (props) => {
 		  <div className="ltn__feature-item ltn__feature-item-6 text-center bg-white  box-shadow-1">
 		
 			<div className="ltn__feature-info">
-			  <Link className="ltn__service-btn" to="/service-details">You want to work in an environment that is fun, creative, and challenging. </Link>
+			< Link  className="ltn__service-btn" >{item?.sec3_b3_dec}</Link>
 			</div>
 		  </div>
 		</div>
@@ -47,7 +51,7 @@ const RightFit = (props) => {
 		  <div className="ltn__feature-item ltn__feature-item-6 text-center bg-white  box-shadow-1">
 		
 			<div className="ltn__feature-info">
-			  <Link className="ltn__service-btn" to="/service-details">You want to be on a team of young, energetic and vibrant colleagues who are eternally furious and ready to achieve success. </Link>
+			< Link  className="ltn__service-btn" >{item?.sec3_b4_dec}</Link>
 			</div>
 		  </div>
 		</div>
@@ -55,7 +59,7 @@ const RightFit = (props) => {
 		  <div className="ltn__feature-item ltn__feature-item-6 text-center bg-white  box-shadow-1">
 		
 			<div className="ltn__feature-info">
-			  <Link className="ltn__service-btn" to="/service-details">You want to be on a team of young, energetic and vibrant colleagues who are eternally furious and ready to achieve success.  </Link>
+			< Link  className="ltn__service-btn" >{item?.sec3_b5_dec}</Link>
 			</div>
 		  </div>
 		</div>
@@ -63,13 +67,16 @@ const RightFit = (props) => {
 		  <div className="ltn__feature-item ltn__feature-item-6 text-center bg-white  box-shadow-1">
 		
 			<div className="ltn__feature-info">
-			  <Link className="ltn__service-btn" to="/service-details">You want to work in a team where you can grow at an expotential rate </Link>
+			< Link  className="ltn__service-btn" >{item?.sec3_b6_dec}</Link>
 			</div>
 		  </div>
 		</div>
         
 	  </div>
 	</div>
+			))
+		}
+	
   </div></div>
   )
 }

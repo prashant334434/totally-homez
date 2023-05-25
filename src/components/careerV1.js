@@ -21,7 +21,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getCarrerApi } from '../actions/careerActions';
 
 const CareerV1 = () => {
-    const {career}=useSelector((state)=>state.career)
+    const {loading,career}=useSelector((state)=>state.career)
 
     const dispatch = useDispatch()
     useEffect(() => {
@@ -29,17 +29,17 @@ const CareerV1 = () => {
     }, [dispatch])
     return <div>
         <MobileNav />
-        <WorkWithUs careerData={career} />
-        <JoinUs />
-        <RightFit customClass="ltn__feature-area  pt-120 pb-90 mb-120---" />
+        <WorkWithUs loading={loading} careerData={career} />
+        <JoinUs loading={loading} careerData={career} />
+        <RightFit loading={loading} careerData={career} customClass="ltn__feature-area  pt-120 pb-90 mb-120---" />
 
-        <OurCulture />
-        <OurPhilosophy />
-        <ThePerks />
+        <OurCulture loading={loading} careerData={career} />
+        <OurPhilosophy loading={loading} careerData={career} />
+        <ThePerks loading={loading} careerData={career} />
         <Testimonial />
         {/* <BlogSlider />*/}
-        <RecruitmentProcess />
-        <EmployeeEvent />
+        <RecruitmentProcess loading={loading} careerData={career} />
+        <EmployeeEvent loading={loading} careerData={career} />
         <CallToActionV1 />
         <Footer />
     </div>
