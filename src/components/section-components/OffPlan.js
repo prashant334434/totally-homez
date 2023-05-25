@@ -36,8 +36,7 @@ const OffPlan = () => {
      {/* <Navbar CustomClass="ltn__header-transparent gradient-color-2" /> */}
         <MobileNav/>
         <AboutOffPlan/>
-        <div className='container'>
-      </div>
+        
       
            
       
