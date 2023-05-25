@@ -35,6 +35,7 @@ const VillaforSale = (props) => {
 					</div>
 					</div>
 					
+					
 				</div>
 				</div>
 			</div>
