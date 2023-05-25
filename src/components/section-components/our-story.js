@@ -29,9 +29,9 @@ const OurStory = (props) => {
 							  <h1 className="slide-title animated "> <br /><span>OUR STORY</span></h1>
 							  <div className="slide-brief animated">
 								<p>{about?.story_dsc} </p>
-								<p>Founded in 2021, Totally Home Real Estate has rapidly become one of the best real estate companies. Leading Property investment advisory.In the UAE. We are dedicated to providing the highest level of service possible with an eye for customer satisfaction, which is why we have grown to become one of the most trusted names in real estate and property investment advisory services. Our expertise spans across commercial and residential sales, investment and its management and leasing advisory services. </p>
+								{/* <p>Founded in 2021, Totally Home Real Estate has rapidly become one of the best real estate companies. Leading Property investment advisory.In the UAE. We are dedicated to providing the highest level of service possible with an eye for customer satisfaction, which is why we have grown to become one of the most trusted names in real estate and property investment advisory services. Our expertise spans across commercial and residential sales, investment and its management and leasing advisory services. </p> */}
 		
-								<p>Through our company, our clients will be able to discover Dubai from a local perspective; our agents as well will be able to provide our international clients with a view of this magnificent city through different lenses. </p>
+								{/* <p>Through our company, our clients will be able to discover Dubai from a local perspective; our agents as well will be able to provide our international clients with a view of this magnificent city through different lenses. </p> */}
 							  </div>
 							</div>
 						  </div>

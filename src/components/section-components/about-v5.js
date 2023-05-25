@@ -28,9 +28,9 @@ const AboutV5 = (props) => {
 											<h1 className="section-title">{about?.about_hed}<span>.</span></h1>
 											<p>{about?.about_dse}</p>
 										</div>
-										<div className="about-us-info-wrap-inner about-us-info-devide---">
+										{/* <div className="about-us-info-wrap-inner about-us-info-devide---">
 											<p>They strive to continue to develop their real estate expertise by working hard to stay on top of local real estate trends and business developments, while also making sure they are up to date with the latest industry knowledge worldwide. </p>
-										</div>
+										</div> */}
 										<div className="btn-wrapper animated">
 											<Link to="/about" className="theme-btn-1 btn btn-effect-1 text-uppercase">About Us</Link>
 										</div>

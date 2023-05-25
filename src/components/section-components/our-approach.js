@@ -26,7 +26,6 @@ const OurApproach = (props) => {
                   <h1 className="section-title"><span>Our Approach</span>  </h1>
                   <p>{about?.appro_img}  </p>
     
-                  <p>We are a boutique real estate agency which means that we have the right staff to client ratio and we do not work with non professionals. We understand that our clients are the most important part of our company and thus devote enough time to them to make sure they get the best out of their experience with us. We always strive to provide them with the information they need in an accurate, transparent way.  </p>
                 </div>
                 {/* <ul className="ltn__list-item-1 ltn__list-item-1-before clearfix">
                   <li> Experience the ultimate in luxury with 24-hour concierge service</li>

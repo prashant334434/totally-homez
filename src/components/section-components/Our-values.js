@@ -16,7 +16,7 @@ const OurValues = (props) => {
                 {/* <h6 className="section-subtitle section-subtitle-2 ltn__secondary-color">About Us</h6> */}
                 <h1 className="section-title"><span>Our Values </span> </h1>
                 <p>{about?.value_dsc} </p>
-                <p>Therefore, we will always strive to provide these things to all our clients so that they can have an elevated experience with us.  </p>
+                {/* <p>Therefore, we will always strive to provide these things to all our clients so that they can have an elevated experience with us.  </p> */}
   
               </div>
               {/* <ul className="ltn__list-item-1 ltn__list-item-1-before clearfix">

@@ -26,7 +26,7 @@ const OurVision = (props) => {
                   <h1 className="section-title"><span>Our Vision</span>  </h1>
                   <p>{about?.vision_dsc} </p>
     
-                  <p>We aspire towards becoming a market leader, driven by an enormous passion for real estate which sets us apart from our competitors. </p>
+                  {/* <p>We aspire towards becoming a market leader, driven by an enormous passion for real estate which sets us apart from our competitors. </p> */}
                 </div>
                 {/* <ul className="ltn__list-item-1 ltn__list-item-1-before clearfix">
                   <li> Experience the ultimate in luxury with 24-hour concierge service</li>
