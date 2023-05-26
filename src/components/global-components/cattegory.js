@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import ColumnProperty from './columnproperty';
 
-const VillaforSale = (props) => {
+const CategoryBreadCrumss = (props) => {
     let HeaderTitle = props.headertitle;
     let publicUrl = process.env.PUBLIC_URL+'/'
     let Subheader = props.subheader ? props.subheader : "Villa"
@@ -23,19 +23,12 @@ const VillaforSale = (props) => {
 					<h1 className="page-title">Villas For Sale In Jumeirah Golf Estates</h1>
 					<div className="ltn__breadcrumb-list">
 						<ul>
-						<li><Link to="/"><span className="ltn__secondary-color"><i className="fas fa-home" style={{fontSize:'16px'}} /></span> Dubai</Link></li>
-						<li><Link to="/">Dubai</Link></li>
-						<li><Link to="/">Villa</Link></li>
-						<li><Link to="/">Jumeirah Golf Estates</Link></li>
-						
-
-
-						<li>{ props?.propertyDetails?.property_name }</li>
+						<li><Link to="/"><span className="ltn__secondary-color"><i className="fas fa-home" style={{fontSize:'16px'}} /></span> Home</Link></li>
+						<li><Link to="/">Category</Link></li>
 
 						</ul>
 					</div>
 					</div>
-					
 					
 				</div>
 		
@@ -47,4 +40,4 @@ const VillaforSale = (props) => {
   )
 }
 
-export default VillaforSale
+export default CategoryBreadCrumss

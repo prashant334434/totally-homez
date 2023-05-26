@@ -41,29 +41,33 @@ const showless = () => {
   let imgattr = "Footer logo";
 
   return (
-    <footer className="ltn__footer-area">
-      <div className="footer-top-area plr--18">
-        <div className="container-fluid">
-          <div className="row">
-          {
-   
-            community?.slice(0,itemsToShow).map((item,index)=>(
-              <div className="col-xl-4 col-md-6 col-sm-6 col-12">
-              <div className="footer-widget footer-menu-widget clearfix">
-                <div className="footer-menu go-top">
-                  <ul>
-                    <li><Link to="/about">{item?.community_name}</Link></li>
-                  
-                  </ul>
-                </div>
-              
-              </div>
-            </div>
-            ))
+    <footer className="ltn__footer-area ">
+      <div className="footer-top-area ">
+        <div className="container section-bg-1 pt-30 shadowboxing">
+         <div className='col-lg-12 '>
+         <div className="row">
+         {
+  
+           community?.slice(0,itemsToShow).map((item,index)=>(
+             <div className="col-xl-3 col-md-4 col-sm-4 col-12">
+             <div className="footer-widget footer-menu-widget clearfix">
+               <div className="footer-menu go-top">
+                 <ul>
+                   <li><Link to="/about">{item?.community_name}</Link></li>
+                 
+                 </ul>
+               </div>
+             
+             </div>
+           </div>
+           ))
 
-          }
-          {(itemsToShow === 8) ? <div className='columncss' onClick={showmore}>Show More</div>: <div  className ="columncss" onClick={showless}>Show Less</div>}
-          </div>
+         }
+         {(itemsToShow === 8) ? <div className='columncss' onClick={showmore}>Show More</div>: <div  className ="columncss" onClick={showless}>Show Less</div>}
+         </div>
+         
+         
+         </div>
         </div>
       </div>
     </footer>

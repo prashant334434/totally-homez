@@ -19093,5 +19093,14 @@ a.ltn__utilize-toggle.close {
   font-weight: 600;
   font-family: "League Spartan";
  cursor: pointer;
+ padding-bottom: 30px;
 
+
+}
+.shadowboxing:hover{
+  box-shadow: var(--ltn__box-shadow-1);
+  transition: 0.3s;
+}
+.redcoloringgg44{
+  color: red;
 }
