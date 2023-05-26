@@ -81,7 +81,7 @@ const OffPlanCategoryProductGrid = (props) => {
                                     <div className="col-lg-12">
                                         <div key={item?.id} className="ltn__product-item ltn__product-item-4 text-center---">
                                             <div className="product-img go-top">
-                                                <Link to={`/property-details/${item?.id}`}><img src={item?.property_imges} alt="#" /></Link>
+                                                <Link to={`/property-details/${item?.id}`}><img src="/assets/img/blog/3.jpg" alt="#" /></Link>
                                                 <div className="product-badge">
                                                     <ul>
                                                         <li className="sale-badge bg-green">Ready</li>
@@ -89,38 +89,29 @@ const OffPlanCategoryProductGrid = (props) => {
                                                 </div>
 
                                             </div>
-                                            <div className="product-info">
+                                            <div className="product-info666">
                                                 <div className="product-price">
                                                     <div className="title_div">
-                                                        <h2 className="product-title go-top"><Link to={`/property-details/${item?.id}`}>{item?.property_name}testAmit</Link></h2>
-
-                                                    </div>
-                                                    <div className='price_div'>
-                                                        <span>AED {item?.property_price}</span>
+                                                        <h2 className="product-title go-top">Project Name</h2>
 
                                                     </div>
 
 
                                                 </div>
-                                                <div className="product-description">
-                                                    <Link > {item?.property_address}</Link><br></br>
-                                                    <small>Ref No.{item?.property_ref_no}</small>
+                                                <div className="price_div">
+                                                <span className="changesfont">AED 3600000</span>
                                                 </div>
-                                                <div><center>
-                                                    <ul className="ltn__list-item-2 ltn__list-item-2-before">
-                                                        <li><span> <i className="flaticon-bed" />  {item?.property_no_of_bedroom}</span>
-                                                        </li>
-                                                        <li><span><i className="flaticon-clean" />  {item?.property_no_of_bathroom} </span>
-                                                        </li>
-                                                        <li><span> <i className="flaticon-square-shape-design-interface-tool-symbol" />  {item?.property_sq_ft} sqft</span>
-                                                        </li>
-                                                    </ul></center>
+                                                <div>
+                                                <div className="price_div">
+                                                <span className="changesfont">26/6/2023</span>
+                                                </div>
+                                                    
                                                 </div></div>
                                             <div className="product-info-bottom">
                                                 <div className="real-estate-agent wcallFlex">
                                                     <div className="agent-img go-top">
                                                         <Link to="/team-details">
-                                                            <img src={`${TEAM_API_URL}/${item?.path}`} alt="Image" />
+                                                            <img src="https://totallyhomerealestate.com/API/public/Teams/hit.jpg" alt="Image" />
                                                         </Link>
                                                     </div>
                                                     <div className="agent-brief go-top">
