@@ -35,7 +35,7 @@ console.log(contactData)
 					<img src={publicUrl+"assets/img/icons/12.png"} alt="Icon Image" />
 					</div>
 					<h3>Office Address</h3>
-					<p className='sizingofp'>{contact?.c_address}</p>
+					<p dangerouslySetInnerHTML={{ __html:contact?.c_address }} />
 				</div>
 				</div>
 			</div>

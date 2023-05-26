@@ -22,7 +22,7 @@ import { getcommunityApi } from '../actions/communityAction';
 
 const BreadCrumbs = () => {
    
-    const { loading, community } = useSelector((state) => state.community);
+    const { loading,  community } = useSelector((state) => state.community);
     const dispatch = useDispatch()
     let history = useHistory();
     useEffect(() => {
@@ -39,6 +39,7 @@ const BreadCrumbs = () => {
         <MobileNav />
         <VillaforSale  headertitle="Garden Homes Frond C" customclass="mb-0 pt-100 " />
         <ColumnProperty loading={loading} community={community}/>
+       
         <TownhouseProductGrid />
         <CallToActionV1 />
        

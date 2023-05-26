@@ -28,8 +28,6 @@ const {carousels}=useSelector((state)=>state.carousels)
         <Carousel
             additionalTransfrom={0}
             arrows
-            autoPlay
-            autoPlaySpeed={3000}
             centerMode={false}
             containerClass="carousel-container"
             dotListClass=""
@@ -39,12 +37,12 @@ const {carousels}=useSelector((state)=>state.carousels)
             itemClass=""
             keyBoardControl
             minimumTouchDrag={80}
-            renderButtonGroupOutside={false}
-            renderDotsOutside={false}
+            renderButtonGroupOutside={true}
+            renderDotsOutside={true}
             responsive={{
                 desktop: {
                     breakpoint: { max: 3000, min: 1024 },
-                    items: 5,
+                    items: 3,
                 },
                 tablet: {
                     breakpoint: { max: 1024, min: 464 },

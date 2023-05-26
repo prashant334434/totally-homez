@@ -44,8 +44,7 @@ const ProductGrid = (props) => {
                             <Carousel
                                 additionalTransfrom={0}
                                 arrows
-                                autoPlay
-                                autoPlaySpeed={3000}
+                              
                                 centerMode={false}
                                 containerClass="carousel-container"
                                 dotListClass=""

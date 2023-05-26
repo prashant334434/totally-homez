@@ -44,8 +44,7 @@ const ProductGridRent = (props) => {
 							<Carousel
 								additionalTransfrom={0}
 								arrows
-								autoPlay
-								autoPlaySpeed={3000}
+							
 								centerMode={false}
 								containerClass="carousel-container"
 								dotListClass=""
@@ -71,7 +70,7 @@ const ProductGridRent = (props) => {
 										items: 1,
 									},
 								}}
-								showDots={false}
+								showDots={true}
 								sliderClass=""
 								slidesToSlide={1}
 								swipeable
