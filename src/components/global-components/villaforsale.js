@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import ColumnProperty from './columnproperty';
 
 const VillaforSale = (props) => {
     let HeaderTitle = props.headertitle;
@@ -36,6 +37,7 @@ const VillaforSale = (props) => {
 					</div>
 					
 				</div>
+		
 				</div>
 			</div>
 		</div>

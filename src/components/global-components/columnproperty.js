@@ -2,13 +2,13 @@ import React, { useEffect ,useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const ColumnProperty = ({community}) => {
-  const [itemsToShow, setItemsToShow] = useState(18);
+  const [itemsToShow, setItemsToShow] = useState(8);
   const showmore = () => {
     setItemsToShow(community.length)
 }
 
 const showless = () => {
-    setItemsToShow(18)
+    setItemsToShow(8)
 }
 	
   useEffect(() => {
@@ -41,29 +41,33 @@ const showless = () => {
   let imgattr = "Footer logo";
 
   return (
-    <footer className="ltn__footer-area">
-      <div className="footer-top-area plr--18">
-        <div className="container-fluid">
-          <div className="row">
-          {
-   
-            community?.slice(0,itemsToShow).map((item,index)=>(
-              <div className="col-xl-2 col-md-6 col-sm-6 col-12">
-              <div className="footer-widget footer-menu-widget clearfix">
-                <div className="footer-menu go-top">
-                  <ul>
-                    <li><Link to="/about">{item?.community_name}</Link></li>
-                  
-                  </ul>
-                </div>
-              
-              </div>
-            </div>
-            ))
+    <footer className="ltn__footer-area section-bg-1 mt-20">
+      <div className="footer-top-area ">
+        <div className="container">
+         <div className='col-lg-12'>
+         <div className="row">
+         {
+  
+           community?.slice(0,itemsToShow).map((item,index)=>(
+             <div className="col-xl-3 col-md-4 col-sm-4 col-12">
+             <div className="footer-widget footer-menu-widget clearfix">
+               <div className="footer-menu go-top">
+                 <ul>
+                   <li><Link to="/about">{item?.community_name}</Link></li>
+                 
+                 </ul>
+               </div>
+             
+             </div>
+           </div>
+           ))
 
-          }
-          {(itemsToShow === 18) ? <div className='columncss' onClick={showmore}>Show More</div>: <div  className ="columncss" onClick={showless}>Show Less</div>}
-          </div>
+         }
+         {(itemsToShow === 8) ? <div className='columncss' onClick={showmore}>Show More</div>: <div  className ="columncss" onClick={showless}>Show Less</div>}
+         </div>
+         
+         
+         </div>
         </div>
       </div>
     </footer>
