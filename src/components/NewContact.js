@@ -10,6 +10,7 @@ import PhotoContact from './section-components/photocontact';
 import MobileNav from './global-components/Mobile-nav';
 import { getContactUsApi } from '../actions/contactActions';
 import { useDispatch, useSelector } from 'react-redux';
+import GoogleMap from './section-components/GoogleMap';
 
 const NewContact = () => {
 
@@ -23,7 +24,8 @@ const NewContact = () => {
         {/* <BlogDetails /> */}
                 <PhotoContact contactData={contact}/>
 
-        
+                <GoogleMap/>
+
         <ContactInfo contactData={contact}/>
        {/* 
         <ContactDetails/>*/}

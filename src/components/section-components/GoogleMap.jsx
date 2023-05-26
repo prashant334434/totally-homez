@@ -7,21 +7,23 @@ const GoogleMap = (props) => {
     height: '400px',
   };
 
-  const latitude = 37.7749; // Replace with the latitude from your map link
-  const longitude = -122.4194;
+  const latitude = 26.000517; // Replace with the latitude from your map link
+  const longitude = 83.5670363;
   return (
-    <Map
-      google={google}
+    <div className="mt-100 property-details-google-map mb-100 pb-90">
+ <Map
+      google={props?.google}
       zoom={14}
       style={mapStyles}
       initialCenter={{
         lat: latitude, // Replace with the latitude from your map link
         lng: longitude, // Replace with the longitude from your map link
       }}
-    />
+    /></div>
+   
   );
 };
 
 export default GoogleApiWrapper({
-  apiKey: 'YOUR_API_KEY', // Replace with your actual API key
+  apiKey: 'AIzaSyCsEaI7E7GZukUahbG-ZNhcBdWUsrEcf9c', // Replace with your actual API key
 })(GoogleMap);
