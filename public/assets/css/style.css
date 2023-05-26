@@ -19097,3 +19097,7 @@ a.ltn__utilize-toggle.close {
 
 
 }
+.shadowboxing:hover{
+  box-shadow: var(--ltn__box-shadow-1);
+  transition: 0.3s;
+}

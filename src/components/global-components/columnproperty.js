@@ -41,10 +41,10 @@ const showless = () => {
   let imgattr = "Footer logo";
 
   return (
-    <footer className="ltn__footer-area section-bg-1 mt-20">
+    <footer className="ltn__footer-area ">
       <div className="footer-top-area ">
-        <div className="container">
-         <div className='col-lg-12'>
+        <div className="container section-bg-1 pt-30 shadowboxing">
+         <div className='col-lg-12 '>
          <div className="row">
          {
   
