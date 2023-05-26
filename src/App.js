@@ -64,7 +64,9 @@ import ShopNew from './components/shop-components/ShopNew';
 import Cummunity from './components/shop-components/Cummunity';
 import GuideLine from './components/shop-components/GuideLine';
 import BreadCrumbs from './components/breadcrums';
-import CommunityGrid from './components/community-grid';
+import CommunityGrid from './components/categoryyyy-grid';
+import CategoryGrid from './components/categoryyyy-grid';
+import CategoryGrid11 from './components/categoryyyy-grid';
 
 
 
@@ -125,7 +127,7 @@ import CommunityGrid from './components/community-grid';
         <Route path="/product-details" component={ ProdductDetails } />
         {/* blog */}
         <Route path="/blogs" component={ BlogGrid } />
-        <Route path="/community-v11" component={ CommunityGrid } />
+        <Route path="/category-v11" component={ CategoryGrid11 } />
         <Route path="/blog-left-sidebar" component={ BlogLeftSidebar } />
         {/* <Route path="/blog-right-sidebar" component={ BlogRightSidebar } /> */}
         <Route path="/blog" component={ Blog } />

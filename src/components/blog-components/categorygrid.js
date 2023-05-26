@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-class CommunityyGrid extends Component {
+class CategoryGrid12 extends Component {
   render() {
     let publicUrl = process.env.PUBLIC_URL+'/'
     let imagealt = 'image'
@@ -149,4 +149,4 @@ class CommunityyGrid extends Component {
   }
 }
 
-export default CommunityyGrid;
+export default CategoryGrid12;
