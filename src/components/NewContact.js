@@ -25,10 +25,11 @@ const NewContact = () => {
         <MobileNav/>
         {/* <BlogDetails /> */}
         <NewBreadCrums headertitle="Garden Homes Frond C" customclass="mb-0 pt-100 "/>
-                <NewLocation/>
+                
 
         
         <ContactInfo contactData={contact}/>
+        <NewLocation/>
        {/* 
         <ContactDetails/>*/}
 
