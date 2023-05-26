@@ -9381,6 +9381,10 @@ i {
   padding: 30px 30px 1px;
   min-height: 210px;
 }
+.ltn__product-item-4 .product-info666 {
+  padding: 30px 30px 1px;
+  min-height: 150px;
+}
 .ltn__product-item-4 .product-price {
   font-size: 18px;
   font-family: var(--ltn__heading-font);
@@ -19060,7 +19064,7 @@ a.ltn__utilize-toggle.close {
   width: 70%;
 }
 .price_div{
-  width: 30%;
+  width: 35%;
 }
 .carouselImages{
   min-height: 300px;

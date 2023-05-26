@@ -81,7 +81,7 @@ const OffPlanCategoryProductGrid = (props) => {
                                     <div className="col-lg-12">
                                         <div key={item?.id} className="ltn__product-item ltn__product-item-4 text-center---">
                                             <div className="product-img go-top">
-                                                <Link to={`/property-details/${item?.id}`}><img src={item?.property_imges} alt="#" /></Link>
+                                                <Link to={`/property-details/${item?.id}`}><img src="/assets/img/blog/3.jpg" alt="#" /></Link>
                                                 <div className="product-badge">
                                                     <ul>
                                                         <li className="sale-badge bg-green">Ready</li>
@@ -89,21 +89,21 @@ const OffPlanCategoryProductGrid = (props) => {
                                                 </div>
 
                                             </div>
-                                            <div className="product-info">
+                                            <div className="product-info666">
                                                 <div className="product-price">
                                                     <div className="title_div">
-                                                        <h2 className="product-title go-top"><Link to={`/property-details/${item?.id}`}>{item?.property_name}testAmit</Link></h2>
+                                                        <h2 className="product-title go-top">Project Name</h2>
 
                                                     </div>
 
 
                                                 </div>
                                                 <div className="price_div">
-                                                <span className="changesfont">AED {item?.property_price}</span>
+                                                <span className="changesfont">AED 3600000</span>
                                                 </div>
                                                 <div>
                                                 <div className="price_div">
-                                                <span className="changesfont66">26/6/2023</span>
+                                                <span className="changesfont">26/6/2023</span>
                                                 </div>
                                                     
                                                 </div></div>
@@ -111,7 +111,7 @@ const OffPlanCategoryProductGrid = (props) => {
                                                 <div className="real-estate-agent wcallFlex">
                                                     <div className="agent-img go-top">
                                                         <Link to="/team-details">
-                                                            <img src={`${TEAM_API_URL}/${item?.path}`} alt="Image" />
+                                                            <img src="https://totallyhomerealestate.com/API/public/Teams/hit.jpg" alt="Image" />
                                                         </Link>
                                                     </div>
                                                     <div className="agent-brief go-top">
