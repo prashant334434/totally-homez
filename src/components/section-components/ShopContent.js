@@ -6,7 +6,7 @@ const ShopContent = () => {
     let publicUrl = process.env.PUBLIC_URL+'/'
 
   return (
-    <div className="ltn__about-us-area pt-200">
+    <div className="ltn__about-us-area pt-20">
     <div className="container">
     <div className="row">
     <div className="col-lg-4 align-self-center pb-200">

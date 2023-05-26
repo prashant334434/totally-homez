@@ -10426,6 +10426,14 @@ input::placeholder {
   align-items: center;
   
 }
+.tab-content1111 {
+  width: 100%s;
+  display: flex;
+  flex-direction:row;
+  justify-content: start;
+  align-items: center;
+  
+}
 
 .tab-content .tab-pane {
   
@@ -16312,8 +16320,7 @@ body {
   border-color: var(--ltn__secondary-color);
   background-color: var(--ltn__secondary-color);
   color: var(--white);
-
-  border-radius: 15px;
+ border-radius: 15px;
 }
 
 .ltn__car-dealer-form-tab .tab-content {
@@ -16321,6 +16328,13 @@ body {
   background-color: var(--section-bg-1);
   border-bottom-left-radius: 0.75rem !important;
   border-bottom-right-radius: 0.75rem !important;
+
+}
+
+.tab-content1111 {
+  padding: 10px 12px !important;
+  background-color: var(--section-bg-1);
+  border-radius: 0.75rem !important;
 
 }
 .border-b1{
@@ -19103,4 +19117,7 @@ a.ltn__utilize-toggle.close {
 }
 .redcoloringgg44{
   color: red;
+}
+.minheight{
+  min-height: 58px !important;
 }
