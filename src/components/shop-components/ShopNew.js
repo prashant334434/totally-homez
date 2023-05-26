@@ -5,11 +5,13 @@ import CallToActionV1 from '../section-components/call-to-action-v1';
 import Footer from '../global-components/footer';
 import Footer_v1 from '../global-components/footer';
 import ShopContent from '../section-components/ShopContent';
+import SearchBarV1 from '../section-components/search-banner';
 
 const ShopNew = () => {
   return (
     <div>
       <MobileNav/>
+      <SearchBarV1/>
       <ShopContent/>
       <GridPage/>
       <CallToActionV1 />
