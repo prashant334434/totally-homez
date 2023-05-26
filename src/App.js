@@ -67,6 +67,7 @@ import BreadCrumbs from './components/breadcrums';
 import CommunityGrid from './components/categoryyyy-grid';
 import CategoryGrid from './components/categoryyyy-grid';
 import CategoryGrid11 from './components/categoryyyy-grid';
+import OffPlanCategory from './components/offplan-category';
 
 
 
@@ -128,6 +129,7 @@ import CategoryGrid11 from './components/categoryyyy-grid';
         {/* blog */}
         <Route path="/blogs" component={ BlogGrid } />
         <Route path="/category-v11" component={ CategoryGrid11 } />
+        <Route path="/offplan-category" component={ OffPlanCategory } />
         <Route path="/blog-left-sidebar" component={ BlogLeftSidebar } />
         {/* <Route path="/blog-right-sidebar" component={ BlogRightSidebar } /> */}
         <Route path="/blog" component={ Blog } />

@@ -26,6 +26,7 @@ import Neighbour from './neighbour';
 import ApartmentV2 from './apartment-v2';
 import MobileNav from '../global-components/Mobile-nav';
 import ShopGirdV1 from '../shop-components/shop-grid-v1';
+import OffPlanCategoryProductGrid from '../shop-components/offplan-categoryProductGrid';
 const OffPlan = () => {
   return ( 
   
@@ -48,6 +49,7 @@ const OffPlan = () => {
         <BlogRightSidebarPage/>
         <CounterV1 customClass="ltn__feature-area section-bg-1"/>
         <ApartmentV3/>
+        <OffPlanCategoryProductGrid/>
         <ShopGirdV1/>
         {/* <ApartmentV2/> */}
         <TestimonialV2 />
