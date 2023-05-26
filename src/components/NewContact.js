@@ -14,6 +14,7 @@ import ShopGrid_V1 from './shop-grid';
 import NewLocation from './new-location';
 import NewBreadCrums from './global-components/newbreadcrum';
 import GoogleMap from './section-components/GoogleMap';
+import MetaData from './Layout/MetaData';
 
 const NewContact = () => {
 
@@ -24,6 +25,10 @@ const NewContact = () => {
     },[dispatch])
     return <div>
         <MobileNav/>
+        {contact?.length>0 &&
+                <MetaData title={contact[0]?.seo_titel} metaKeyword={contact[0]?.seo_teg} metaDesription={contact[0]?.seo_des} />
+            
+        }
         {/* <BlogDetails /> */}
         <NewBreadCrums headertitle="Garden Homes Frond C" customclass="mb-0 pt-100 "/>
                 
@@ -31,7 +36,6 @@ const NewContact = () => {
                 <GoogleMap/>
 
         <ContactInfo contactData={contact}/>
-        <NewLocation/>
        {/* 
         <ContactDetails/>*/}
 

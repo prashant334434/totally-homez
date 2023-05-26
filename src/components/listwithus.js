@@ -34,35 +34,41 @@ import { getListWithUsUsApi } from '../actions/listWithUsActions';
 import CultureListWithUs from './section-components/cultureListWithUs';
 import PhilosphyListWithus from './section-components/philosphyListWithUs';
 import PerksListWithUs from './section-components/perksListWithUs';
+import MetaData from './Layout/MetaData';
 
 const ListWithUs = () => {
 
 
-    const {loading,listWithUs}=useSelector((state)=>state.listWithUs)
-    const dispatch=useDispatch()
-
-    useEffect(()=>(
+    const { loading, listWithUs } = useSelector((state) => state.listWithUs)
+    const dispatch = useDispatch()
+    console.log("listWithUs", listWithUs)
+    useEffect(() => (
         dispatch(getListWithUsUsApi())
-    ),[dispatch])
+    ), [dispatch])
     return <div>
-     <MobileNav />
-        <SellWithUs loading={loading} listWithUs={listWithUs} />
-        <MarketingProperty loading={loading} listWithUs={listWithUs}/>
-        <PropertyWorth loading={loading} listWithUs={listWithUs}/>
-        {/* <PropertyPrepration/> */}
-        <UniqueProperty loading={loading} listWithUs={listWithUs}/>
-        
-        <BenefitsofListing loading={loading} listWithUs={listWithUs}   customClass="ltn__feature-area  pt-120 pb-90 mb-120---"/>
+        {listWithUs?.length > 0 &&
+            <MetaData title={listWithUs[0]?.seo_titel} metaKeyword={listWithUs[0]?.seo_teg} metaDesription={listWithUs[0]?.seo_des} />
 
-        <CultureListWithUs loading={loading} listWithUs={listWithUs}/>
+        }
+        <MobileNav />
+
+        <SellWithUs loading={loading} listWithUs={listWithUs} />
+        <MarketingProperty loading={loading} listWithUs={listWithUs} />
+        <PropertyWorth loading={loading} listWithUs={listWithUs} />
+        {/* <PropertyPrepration/> */}
+        <UniqueProperty loading={loading} listWithUs={listWithUs} />
+
+        <BenefitsofListing loading={loading} listWithUs={listWithUs} customClass="ltn__feature-area  pt-120 pb-90 mb-120---" />
+
+        <CultureListWithUs loading={loading} listWithUs={listWithUs} />
         <PhilosphyListWithus loading={loading} listWithUs={listWithUs} />
         <PerksListWithUs loading={loading} listWithUs={listWithUs} />
         <InnovativeApproach />
-        <QualityFocusedCreation loading={loading} listWithUs={listWithUs}  customClass="ltn__feature-area  pt-120 pb-90 mb-120---"/>
-       {/* <BlogSlider />*/}
-        <HighContent loading={loading} listWithUs={listWithUs}/>
-        <InternetAlone loading={loading} listWithUs={listWithUs}/>
-        <TakeCareEverything/>
+        <QualityFocusedCreation loading={loading} listWithUs={listWithUs} customClass="ltn__feature-area  pt-120 pb-90 mb-120---" />
+        {/* <BlogSlider />*/}
+        <HighContent loading={loading} listWithUs={listWithUs} />
+        <InternetAlone loading={loading} listWithUs={listWithUs} />
+        <TakeCareEverything />
         <ReadyToSell />
         <Footer />
     </div>

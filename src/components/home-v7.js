@@ -25,6 +25,7 @@ import TownhouseProductGridRent from './shop-components/TownhouseProductGridRent
 import PenthouseProductGridRent from './shop-components/PenthouseProductGridRent';
 import ProductGridRent from './shop-components/ProductGridRent';
 import CarouselSlider from './shop-components/Carousel';
+import MetaData from './Layout/MetaData';
 
 
 const Home_V7 = () => {
@@ -51,6 +52,8 @@ const Home_V7 = () => {
     },
   ];
   return <div>
+    <MetaData metaKeyword="meta keyword test" title="Totally Homez" />
+
     <Navbar CustomClass="ltn__header-transparent gradient-color-2" />
     <BannerV5 />
 
@@ -60,7 +63,7 @@ const Home_V7 = () => {
     <BestProperty customClass='ltn__feature-area section-bg-1 pt-80 pb-80  mb-120---' />
     {/* <Aboutv2 /> */}
     {/* <Gallery /> */}
-     <CarouselSlider/>
+    <CarouselSlider />
     {/* <TeamCarousel/> */}
     <CategoryV3 />
     {/* <HomeCrousal/> */}
@@ -76,19 +79,19 @@ const Home_V7 = () => {
 
     {/* <ProductSlider customClass="ltn__feature-area section-bg-4 pt-120 pb-90 mb-120---"/> */}
     <ProductGrid />
-     <ProductGridRent/>
-   {/* <Availability />*/}
+    <ProductGridRent />
+    {/* <Availability />*/}
     {/*  <SimpleSlider/>*/}
     <VideoV2 />
     <ApartmentProductGridSale />
-    <ApartmentProductGridRent/>
+    <ApartmentProductGridRent />
     {/* <ProductGrid /> */}
     <BestPenthouse />
     <VideoV1 />
 
-     <PenthouseProductGrid/>
-     <PenthouseProductGridRent/>
-    
+    <PenthouseProductGrid />
+    <PenthouseProductGridRent />
+
     {/* <ProductGrid /> */}
 
     {/* <Featuresv1 customClass="ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---"/> */}
@@ -97,7 +100,7 @@ const Home_V7 = () => {
     <BestTownhouse />
     <TownhouseProductGrid />
 
-    <TownhouseProductGridRent/>
+    <TownhouseProductGridRent />
     {/* <ProductGrid /> */}
 
     {/* <Category /> */}

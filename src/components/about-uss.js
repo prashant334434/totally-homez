@@ -17,6 +17,7 @@ import MobileNav from './global-components/Mobile-nav';
 import TeamAgents from './section-components/TeamAgents';
 import { useDispatch, useSelector } from 'react-redux';
 import { getAboutUsApi } from '../actions/aboutUsActions';
+import MetaData from './Layout/MetaData';
 
 const AboutUs = () => {
     const {loading,about}=useSelector((state)=>state.about)
@@ -28,6 +29,10 @@ const AboutUs = () => {
     },[dispatch])
     return <div>
         <MobileNav />
+        {about?.length>0 &&
+                <MetaData title={about[0]?.seo_titel} metaKeyword={about[0]?.seo_teg} metaDesription={about[0]?.seo_des} />
+            
+        }
         <AboutV5 loading={loading} aboutUsData={about} />
         <OurStory loading={loading} aboutUsData={about}/>
         <OurMission loading={loading} aboutUsData={about}/>

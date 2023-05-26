@@ -19,15 +19,20 @@ import EmployeeEvent from './section-components/employe-event';
 import MobileNav from './global-components/Mobile-nav';
 import { useDispatch, useSelector } from 'react-redux';
 import { getCarrerApi } from '../actions/careerActions';
+import MetaData from './Layout/MetaData';
 
 const CareerV1 = () => {
-    const {loading,career}=useSelector((state)=>state.career)
+    const { loading, career } = useSelector((state) => state.career)
 
     const dispatch = useDispatch()
     useEffect(() => {
         dispatch(getCarrerApi())
     }, [dispatch])
     return <div>
+        {career?.length > 0 &&
+            <MetaData title={career[0]?.seo_titel} metaKeyword={career[0]?.seo_teg} metaDesription={career[0]?.seo_des} />
+
+        }
         <MobileNav />
         <WorkWithUs loading={loading} careerData={career} />
         <JoinUs loading={loading} careerData={career} />

@@ -107,7 +107,6 @@ import CategoryGrid11 from './components/categoryyyy-grid';
         <Route path="/home-v9" component={HomeV9} />
         <Route path="/home-v10" component={HomeV10} />
 
-        <Route path="/about" component={About} />
         <Route path="/career" component={CareerV1} />
         <Route path="/list-with-us" component={ListWithUs} />
         <Route path="/service" component={Service} />
