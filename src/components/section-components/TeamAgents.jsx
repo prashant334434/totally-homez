@@ -51,8 +51,7 @@ const TeamAgents = (props) => {
 							<Carousel
 								additionalTransfrom={0}
 								arrows
-								autoPlay
-								autoPlaySpeed={3000}
+							
 								centerMode={false}
 								containerClass="carousel-container"
 								dotListClass=""
@@ -93,7 +92,8 @@ const TeamAgents = (props) => {
 													<img className="img2" src={`${TEAM_API_URL}/${item.path}`} alt="Image" />
 												</div>
 												<div className="team-info">
-													<h4>{item.name}</h4>
+													<Link to={`/team-details/${item?.id}`}><h4>{item.name}</h4></Link>
+													
 													<h6 className=" designnation ltn__secondary-color">{item.designation}</h6>
 												</div>
 											</div>

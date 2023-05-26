@@ -18,7 +18,6 @@ const PenthouseProductGridRent = (props) => {
     const [propertyCategory, setPropertyCategory] = useState("penthouse")
     let publicUrl = process.env.PUBLIC_URL + '/'
     let customClass = props.customClass ? props.customClass : ''
-    // console.log(data)
     const { penthouseCategoryRentProperties } = useSelector((state) => state.penthouseCategoryRentProperties)
     const dispatch = useDispatch()
 
@@ -38,8 +37,7 @@ const PenthouseProductGridRent = (props) => {
 						<Carousel
 								additionalTransfrom={0}
 								arrows
-								autoPlay
-								autoPlaySpeed={3000}
+							
 								centerMode={false}
 								containerClass="carousel-container"
 								dotListClass=""

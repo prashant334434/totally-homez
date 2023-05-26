@@ -5,7 +5,6 @@ import Social from '../section-components/social';
 
 const MobileNav = () => {
 	const [isCrossDisabled,setIsCrossDisabled]=useState(false)
-console.log("isCrossDisabled",isCrossDisabled)
 	let publicUrl = process.env.PUBLIC_URL + '/'
 	let imgattr = 'logo'
 	let anchor = '#'

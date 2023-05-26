@@ -19,9 +19,7 @@ const ProductGrid = (props) => {
     const [propertyCategory, setPropertyCategory] = useState("villa")
     let publicUrl = process.env.PUBLIC_URL + '/'
     let customClass = props.customClass ? props.customClass : ''
-    // console.log(data)
     const { categoryProperties } = useSelector((state) => state.categoryProperties)
-    console.log(categoryProperties)
     const dispatch = useDispatch()
 
     useEffect(() => {
@@ -31,7 +29,6 @@ const ProductGrid = (props) => {
         carouselItems = categoryProperties
 
 
-        console.log("categoryPropertiesSale", categoryProperties)
     }
     return (
         <div>

@@ -10,7 +10,6 @@ const BlogSlider
 
 		const {blogs}=useSelector((state)=>(state.blogs))
 
-		console.log(blogs)
 		const dispatch = useDispatch()
 		useEffect(() => {
 			dispatch(getBlogsApi())

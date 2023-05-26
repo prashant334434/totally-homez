@@ -4,7 +4,6 @@ import parse from 'html-react-parser';
 
 const ContactInfo = ({contactData}) => {
 	let publicUrl = process.env.PUBLIC_URL+'/'
-console.log(contactData)
   return (
 	<div className="ltn__contact-address-area mb-90 mt-100">
 	<div className="container">
@@ -35,7 +34,8 @@ console.log(contactData)
 					<img src={publicUrl+"assets/img/icons/12.png"} alt="Icon Image" />
 					</div>
 					<h3>Office Address</h3>
-					<p dangerouslySetInnerHTML={{ __html:contact?.c_address }} />
+					<div></div>
+					<div dangerouslySetInnerHTML={{ __html:contact?.c_address }} />
 				</div>
 				</div>
 			</div>

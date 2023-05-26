@@ -21,6 +21,7 @@
     "html-react-parser": "^0.10.1",
     "install": "^0.13.0",
     "jquery": "^3.7.0",
+    "loglevel": "^1.8.1",
     "npm": "^9.6.5",
     "owl.carousel": "^2.3.4",
     "react": "^16.12.0",

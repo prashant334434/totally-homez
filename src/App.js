@@ -11,6 +11,7 @@ import HomeV7 from './components/home-v7';
 import HomeV8 from './components/home-v8';
 import HomeV9 from './components/home-v9';
 import HomeV10 from './components/home-v11';
+import log from 'loglevel';
 
 import About from './components/about';
 import Service from './components/service';
@@ -69,6 +70,8 @@ import BreadCrumbs from './components/breadcrums';
 
  
  const App = () => {
+  log.setLevel(log.levels.DEBUG);
+
     const slides = [
         {
           id: 1,

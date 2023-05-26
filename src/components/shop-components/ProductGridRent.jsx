@@ -19,7 +19,6 @@ const ProductGridRent = (props) => {
 	const [propertyCategory, setPropertyCategory] = useState("villa")
 	let publicUrl = process.env.PUBLIC_URL + '/'
 	let customClass = props.customClass ? props.customClass : ''
-	// console.log(data)
 	const { categoryRentProperties } = useSelector((state) => state.categoryPropertiesRent)
 	const dispatch = useDispatch()
 
@@ -31,7 +30,6 @@ const ProductGridRent = (props) => {
 	if (categoryRentProperties?.length > 0) {
 		carouselItems = categoryRentProperties
 	}
-	console.log("categoryPropertiesSale2",categoryRentProperties)
 
 	return (
 		<div>

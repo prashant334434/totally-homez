@@ -9,7 +9,6 @@ import { TEAM_API_URL } from '../../constants/config';
 
 
 const TeamDetails = ({loading,teamDetails}) => {
-	console.log("teamDetails",teamDetails)
     let publicUrl = process.env.PUBLIC_URL+'/'
 
 	if(loading){
@@ -40,7 +39,12 @@ const TeamDetails = ({loading,teamDetails}) => {
 					<li><strong>Positions:</strong> Senior Property Seller</li>
 					<li><strong>Email:</strong> {teamDetails?.email}</li>
 											{/* <li><strong>Fax:</strong> +0123-456 789</li> */}
-											<li><strong>Phone:</strong> +0123-456 789</li>
+											<li><strong>Phone:</strong> {teamDetails?.mobile_no}</li>
+
+											<li><strong>Whatsapp:</strong> {teamDetails?.whatsapp}</li>
+											<li> {teamDetails?.description}</li>
+
+
 				</ul>
 				</div>
 			</div>

@@ -18,9 +18,7 @@ const TownhouseProductGrid = (props) => {
     const [propertyCategory, setPropertyCategory] = useState("apartment")
     let publicUrl = process.env.PUBLIC_URL + '/'
     let customClass = props.customClass ? props.customClass : ''
-    // console.log(data)
     const { townhouseCategoryProperties } = useSelector((state) => state.townhouseCategoryProperties)
-    console.log(townhouseCategoryProperties)
     const dispatch = useDispatch()
 
     useEffect(() => {
@@ -39,8 +37,7 @@ const TownhouseProductGrid = (props) => {
 						<Carousel
 								additionalTransfrom={0}
 								arrows
-								autoPlay
-								autoPlaySpeed={3000}
+								
 								centerMode={false}
 								containerClass="carousel-container"
 								dotListClass=""
