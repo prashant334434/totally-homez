@@ -19121,3 +19121,15 @@ a.ltn__utilize-toggle.close {
 .minheight{
   min-height: 58px !important;
 }
+.changesfont{
+  font-size: 18px !important;
+  font-family: var(--ltn__heading-font);
+    font-weight: 600;
+    color: var(--ltn__secondary-color);
+}
+.changesfont66{
+  font-size: 18px !important;
+  font-family: var(--ltn__heading-font);
+    font-weight: 600;
+    color: var(--ltn__heading-color);
+}

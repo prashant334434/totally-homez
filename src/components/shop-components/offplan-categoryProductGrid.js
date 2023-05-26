@@ -95,26 +95,17 @@ const OffPlanCategoryProductGrid = (props) => {
                                                         <h2 className="product-title go-top"><Link to={`/property-details/${item?.id}`}>{item?.property_name}testAmit</Link></h2>
 
                                                     </div>
-                                                    <div className='price_div'>
-                                                        <span>AED {item?.property_price}</span>
-
-                                                    </div>
 
 
                                                 </div>
-                                                <div className="product-description">
-                                                    <Link > {item?.property_address}</Link><br></br>
-                                                    <small>Ref No.{item?.property_ref_no}</small>
+                                                <div className="price_div">
+                                                <span className="changesfont">AED {item?.property_price}</span>
                                                 </div>
-                                                <div><center>
-                                                    <ul className="ltn__list-item-2 ltn__list-item-2-before">
-                                                        <li><span> <i className="flaticon-bed" />  {item?.property_no_of_bedroom}</span>
-                                                        </li>
-                                                        <li><span><i className="flaticon-clean" />  {item?.property_no_of_bathroom} </span>
-                                                        </li>
-                                                        <li><span> <i className="flaticon-square-shape-design-interface-tool-symbol" />  {item?.property_sq_ft} sqft</span>
-                                                        </li>
-                                                    </ul></center>
+                                                <div>
+                                                <div className="price_div">
+                                                <span className="changesfont66">26/6/2023</span>
+                                                </div>
+                                                    
                                                 </div></div>
                                             <div className="product-info-bottom">
                                                 <div className="real-estate-agent wcallFlex">
