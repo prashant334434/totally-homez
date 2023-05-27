@@ -1,0 +1,2 @@
+.loading{width:100vw;height:100vh;background-color:#fff;display:grid;place-items:center;max-width:100%}.loading>div{width:10vmax;height:10vmax;border-bottom:5px solid rgba(0,0,0,.719);border-radius:50%;-webkit-animation:loadingRotate .8s linear infinite;animation:loadingRotate .8s linear infinite}@-webkit-keyframes loadingRotate{to{-webkit-transform:rotate(-1turn);transform:rotate(-1turn)}}@keyframes loadingRotate{to{-webkit-transform:rotate(-1turn);transform:rotate(-1turn)}}
+/*# sourceMappingURL=main.0bf1b218.chunk.css.map */
