@@ -19,8 +19,17 @@ import StickyBarIcon from './shop-components/sticky-iconbar';
 import VillaforSale from './global-components/villaforsale';
 import ColumnProperty from './global-components/columnproperty';
 import { getcommunityApi } from '../actions/communityAction';
+import PaginationComponent from './PaginationComponent';
+import BreadCrumProperties from './BreadCrumProperties';
 
 const BreadCrumbs = () => {
+    const data = [
+        { id: 1, name: 'Item 1' },
+        { id: 2, name: 'Item 2' },
+        { id: 3, name: 'Item 3' },
+        // ... more data
+      ];
+      const itemsPerPage = 5;
    
     const { loading,  community } = useSelector((state) => state.community);
     const dispatch = useDispatch()
@@ -40,7 +49,7 @@ const BreadCrumbs = () => {
         <VillaforSale  headertitle="Garden Homes Frond C" customclass="mb-0 pt-100 " />
         <ColumnProperty loading={loading} community={community}/>
        
-        <TownhouseProductGrid />
+        <BreadCrumProperties/>
         <CallToActionV1 />
        
         <Footer />

@@ -1,16 +1,16 @@
-import React, { useEffect ,useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const ColumnProperty = ({community}) => {
+const ColumnProperty = ({ community }) => {
   const [itemsToShow, setItemsToShow] = useState(8);
   const showmore = () => {
     setItemsToShow(community.length)
-}
+  }
 
-const showless = () => {
+  const showless = () => {
     setItemsToShow(8)
-}
-	
+  }
+
   useEffect(() => {
     const $ = window.$;
     let publicUrl = process.env.PUBLIC_URL + '/';
@@ -35,7 +35,7 @@ const showless = () => {
       $('body').attr("style", "");
     });
   }, []);
-  
+
 
   let publicUrl = process.env.PUBLIC_URL + '/';
   let imgattr = "Footer logo";
@@ -44,30 +44,30 @@ const showless = () => {
     <footer className="ltn__footer-area ">
       <div className="footer-top-area ">
         <div className="container section-bg-1 pt-30 shadowboxing">
-         <div className='col-lg-12 '>
-         <div className="row">
-         {
-  
-           community?.slice(0,itemsToShow).map((item,index)=>(
-             <div className="col-xl-3 col-md-4 col-sm-4 col-12">
-             <div className="footer-widget footer-menu-widget clearfix">
-               <div className="footer-menu go-top">
-                 <ul>
-                   <li><Link to="/about">{item?.community_name}</Link></li>
-                 
-                 </ul>
-               </div>
-             
-             </div>
-           </div>
-           ))
+          <div className='col-lg-12 '>
+            <div className="row">
+              {
 
-         }
-         {(itemsToShow === 8) ? <div className='columncss' onClick={showmore}>Show More</div>: <div  className ="columncss" onClick={showless}>Show Less</div>}
-         </div>
-         
-         
-         </div>
+                community?.slice(0, itemsToShow).map((item, index) => (
+                  <div className="col-xl-3 col-md-4 col-sm-4 col-12">
+                    <div className="footer-widget-breadcrum footer-menu-widget clearfix">
+                      <div className="footer-menu go-top">
+                        <ul>
+                          <li><Link to="/about">{item?.community_name}</Link></li>
+
+                        </ul>
+                      </div>
+
+                    </div>
+                  </div>
+                ))
+
+              }
+              {(itemsToShow === 8) ? <div className='columncss' onClick={showmore}>Show More</div> : <div className="columncss" onClick={showless}>Show Less</div>}
+            </div>
+
+
+          </div>
         </div>
       </div>
     </footer>

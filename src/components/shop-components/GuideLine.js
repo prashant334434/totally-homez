@@ -7,6 +7,7 @@ import CommunityGrid from './CommunityGrid';
 import CarouselSlider from './Carousel';
 import CommunityCarousel from './communityCarousel';
 import CommunityGrid2 from './CommunityGrid2';
+import ProductGrid from './ProductGrid';
 
 
 const GuideLine = () => {
@@ -19,7 +20,7 @@ const GuideLine = () => {
         <Cummunity/>
         
         <CommunityCarousel/>
-        <CommunityGrid2/>
+        <ProductGrid />
         <CallToActionV1 />
         <Footer_v1 />
     </div>

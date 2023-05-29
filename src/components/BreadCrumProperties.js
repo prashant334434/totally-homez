@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom/cjs/react-router-dom.min'
-import { getCatgoryProperties, getTownhouseCatgoryProperties, getTownhouseCatgoryRentProperties } from '../../actions/catgoryActions'
-import { TEAM_API_URL } from '../../constants/config'
+import { getCatgoryProperties, getTownhouseCatgoryProperties, getTownhouseCatgoryRentProperties } from '../actions/catgoryActions'
+import { TEAM_API_URL } from '../constants/config'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-const TownhouseProductGridRent = (props) => {
+const BreadCrumProperties = (props) => {
 	let carouselItems = [
 		{ id: 1, content: 'https://www.timeoutdubai.com/cloud/timeoutdubai/2021/09/13/Damx3DMM-The-Penthouse-1200x800.jpg' },
 		{ id: 2, content: 'https://www.timeoutdubai.com/cloud/timeoutdubai/2021/09/13/Damx3DMM-The-Penthouse-1200x800.jpg' },
@@ -34,47 +34,14 @@ const TownhouseProductGridRent = (props) => {
     return (
         <div>
             <div>
-                <div className="ltn__product-slider-area ltn__product-gutter  pb-40 plr--7">
+                <div className="ltn__product-slider-area ltn__product-gutter pt-40  pb-40 plr--7">
                     <div className="container-fluid">
 
                         <div className="row  slick-arrow-1">
-						<Carousel
-								additionalTransfrom={0}
-								arrows
-							
-								centerMode={false}
-								containerClass="carousel-container"
-								dotListClass=""
-								draggable
-								focusOnSelect={false}
-								infinite
-								itemClass=""
-								keyBoardControl
-								minimumTouchDrag={80}
-								renderButtonGroupOutside={false}
-								renderDotsOutside={false}
-								responsive={{
-									desktop: {
-										breakpoint: { max: 3000, min: 1024 },
-										items: 3,
-									},
-									tablet: {
-										breakpoint: { max: 1024, min: 464 },
-										items: 2,
-									},
-									mobile: {
-										breakpoint: { max: 464, min: 0 },
-										items: 1,
-									},
-								}}
-								showDots={false}
-								sliderClass=""
-								slidesToSlide={1}
-								swipeable
-							>
+						
 
 								{carouselItems.map((item) => (
-									<div className="col-lg-12">
+									<div className="col-lg-4">
 										<div key={item?.id} className="ltn__product-item ltn__product-item-4 text-center---">
 											<div className="product-img go-top">
 												<Link to={`/property-details/${item?.id}`}><img src={`https://cf.bstatic.com/xdata/images/xphoto/max1440/48387083.jpg?k=71de1d7fb5c115ccc436261c89c33780c052bc99fcb26cc40101f35b33226fbf&o=`} alt="#" /></Link>
@@ -142,7 +109,6 @@ const TownhouseProductGridRent = (props) => {
 
 									</div>
 								))}
-							</Carousel>
 
 
 
@@ -160,4 +126,4 @@ const TownhouseProductGridRent = (props) => {
     )
 }
 
-export default TownhouseProductGridRent
+export default BreadCrumProperties
