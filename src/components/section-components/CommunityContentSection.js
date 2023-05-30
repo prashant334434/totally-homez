@@ -1,60 +1,73 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import parse from 'html-react-parser';
-import { ABOUT_IMAGE_URL } from '../../constants/config';
-let publicUrl = process.env.PUBLIC_URL+'/'
-let imagealt = 'image'
+import React from 'react'
+import { Link } from 'react-router-dom'
+import ApartmentV1 from './apartment-v1'
+import { ABOUT_IMAGE_URL } from '../../constants/config'
 
+const  CommunityContentSection= (props) => {
+    let publicUrl = process.env.PUBLIC_URL+'/'
+    let customClass = props.customClass ? props.customClass :''
 
-const CommunityContentSection = (props) => {
   return (
-	<div className="ltn__slider-area ltn__slider-11  ltn__slider-11-slide-item-count-show--- ltn__slider-11-pagination-count-show--- section-bg-1 mt-100">
-	<div className="ltn__slider-11-inner">
-	  <div className="ltn__slider-11-active">
-		{/* slide-item */}
-		<div className="ltn__slide-item ltn__slide-item-2 ltn__slide-item-3-normal ltn__slide-item-3 ltn__slide-item-11">
-		  <div className="ltn__slide-item-inner">
-			<div className="container">
-				{
-					props?.aboutUsData?.map((about)=>(
-						<div className="row">
-						<div className="col-lg-12 align-self-center">
-						  <div className="slide-item-info">
-							<div className="slide-item-info-inner ltn__slide-animation">
-							  <div className="slide-video mb-50 d-none">
-								<a className="ltn__video-icon-2 ltn__video-icon-2-border" href="https://www.youtube.com/embed/tlThdr3O5Qo" data-rel="lightcase:myCollection">
-								  <i className="fa fa-play" />
-								</a>
-							  </div>
-							{/*  <h6 className="slide-sub-title white-color--- animated"><span><i className="fas fa-home" /></span> Real Estate Agency</h6>*/}
-							  {/* <h1 className="slide-title animated "> <br /><span>OUR STORY</span></h1> */}
-							  <div className="slide-brief animated">
-								<p>{about?.story_dsc} </p>
-								{/* <p>Founded in 2021, Totally Home Real Estate has rapidly become one of the best real estate companies. Leading Property investment advisory.In the UAE. We are dedicated to providing the highest level of service possible with an eye for customer satisfaction, which is why we have grown to become one of the most trusted names in real estate and property investment advisory services. Our expertise spans across commercial and residential sales, investment and its management and leasing advisory services. </p> */}
-		
-								{/* <p>Through our company, our clients will be able to discover Dubai from a local perspective; our agents as well will be able to provide our international clients with a view of this magnificent city through different lenses. </p> */}
-							  </div>
-							</div>
-						  </div>
-						  <div className="slide-item-img">
-							<img src={`${ABOUT_IMAGE_URL}/${about?.story_img}`} alt="#" />
-						  </div>
-						</div>
-					  </div>
-					))
-				}
-			
-			</div>
-		  </div>
-		</div>
-	  
-	  
-	  </div>
-	 
-	</div>
+
+  <div className={customClass}>
+  <div className="ltn__about-us-area pb-50  mt-50">
+    <div className="container">
+      {
+        props?.aboutUsData?.map((about)=>(
+          <div className="row">
+          <div className="col-lg-6 align-self-center">
+              <div className="about-us-info-wrap">
+                <div className="section-title-area ltn__section-title-2--- mb-30 ">
+                  {/* <h6 className="section-subtitle section-subtitle-2 ltn__secondary-color">About Us</h6> */}
+                  {/* <h1 className="section-title"><span>Our Vision</span>  </h1> */}
+                  <p>{about?.vision_dsc} </p>
+    
+                  {/* <p>We aspire towards becoming a market leader, driven by an enormous passion for real estate which sets us apart from our competitors. </p> */}
+                </div>
+                {/* <ul className="ltn__list-item-1 ltn__list-item-1-before clearfix">
+                  <li> Experience the ultimate in luxury with 24-hour concierge service</li>
+                  <li>Stay active with sports facilities, including tennis and golf courses</li>
+                  <li>Stay entertained with state-of-the-art entertainment facilities</li>
+                  
+                </ul> */}
+                {/* <ul className="ltn__list-item-2 ltn__list-item-2-before ltn__flat-info">
+                  <li><span>3 <i className="flaticon-bed" /></span>
+                    Bedrooms
+                  </li>
+                  <li><span>2 <i className="flaticon-clean" /></span>
+                    Bathrooms
+                  </li>
+                  <li><span>2 <i className="flaticon-car" /></span>
+                    Car parking
+                  </li>
+                  <li><span>3450 <i className="flaticon-square-shape-design-interface-tool-symbol" /></span>
+                    square Ft
+                  </li>
+                </ul> */}
+         {/*      <div className="read-more">
+        <button className="btn theme-btn-1" >LEARN MORE</button>
+    
+          </div>*/}
+             
+              </div>
+            </div>
+          <div className="col-lg-6 align-self-center">
+              <div className="about-us-img-wrap about-img-right">
+                <img src={`https://www.timeoutdubai.com/cloud/timeoutdubai/2022/12/30/image.png`} alt="About Us Image" />
+              </div>
+            </div>
+         
+            
+          </div>
+        ))
+      }
+   
+    </div>
+    {/* <ApartmentV1/> */}
+  </div>
+  
   </div>
   )
 }
 
 export default CommunityContentSection
-
