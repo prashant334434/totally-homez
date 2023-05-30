@@ -36,7 +36,7 @@ const Curousal1 = (props) => {
     return (
         <div>
             <div>
-                <div className="ltn__product-slider-area ltn__product-gutter  plr--7">
+                <div className="ltn__product-slider-area ltn__product-gutter mt-40  plr--7">
                     <div className="container-fluid">
 
 
