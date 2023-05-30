@@ -28,6 +28,7 @@ import CarouselSlider from './shop-components/Carousel';
 import MetaData from './Layout/MetaData';
 import AboutUs from './about-uss';
 import AboutUsHome from './shop-components/AboutUsHome';
+import Curousal1 from './shop-components/curosal-1';
 
 
 const Home_V7 = () => {
@@ -63,14 +64,16 @@ const Home_V7 = () => {
 
 
     <BestProperty customClass='ltn__feature-area section-bg-1 pt-80 pb-80  mb-120---' />
+    <Curousal1/>
     {/* <Aboutv2 /> */}
     {/* <Gallery /> */}
-    <CarouselSlider />
+  {/*<CarouselSlider />*/}
     {/* <TeamCarousel/> */}
     <CategoryV3 />
     {/* <HomeCrousal/> */}
     {/* <ApartmentV1 CustomClass="ltn__feature-area section-bg-3 pt-120 pb-90 mb-120---" /> */}
     <BestVilla customClass="ltn__feature-area section-bg-0 pt-120 pb-40 mb-120---" />
+    
 
     {/* <BestPenthouse customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---"  /> */}
     {/* <ProductSliderV1/> */}
