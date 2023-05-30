@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import parse from 'html-react-parser';
+const BannerV5 = () => {
+	let publicUrl = process.env.PUBLIC_URL+'/'
 
-class BannerV5 extends Component {
-
-    render() {
-
-        let publicUrl = process.env.PUBLIC_URL+'/'
-
-    return  <div className="ltn__slider-area ltn__slider-4">
+  return (
+<div className="ltn__slider-area ltn__slider-4">
 				<div className="ltn__slide-one-active----- slick-slide-arrow-1----- slick-slide-dots-1----- arrow-white----- ltn__slide-animation-active">
 				{/* ltn__slide-item */}
 				<div className="ltn__slide-item ltn__slide-item-2 ltn__slide-item-4 bg-image bg-overlay-theme-black-60" data-bs-bg={"https://cf.bstatic.com/xdata/images/hotel/max1024x768/348215261.jpg?k=cd2d1b2d866cc8e88c12b9d5b5bfd9d01c1445205412093a7fbc0479fcbb191c&o=&hp=1"}>
@@ -86,6 +83,8 @@ class BannerV5 extends Component {
 											<option>2</option>
 											<option>3</option>
 											<option>4</option>
+											<option>5</option>
+
 										</select>
 										</div> 
 										<div className="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-cog col-lg-4 col-md-6">                                                            
@@ -251,8 +250,7 @@ class BannerV5 extends Component {
 					</div>
 				</div>
 				</div>
-			</div>
-        }
+			</div>  )
 }
 
 export default BannerV5
