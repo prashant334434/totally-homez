@@ -26,6 +26,8 @@ import PenthouseProductGridRent from './shop-components/PenthouseProductGridRent
 import ProductGridRent from './shop-components/ProductGridRent';
 import CarouselSlider from './shop-components/Carousel';
 import MetaData from './Layout/MetaData';
+import AboutUs from './about-uss';
+import AboutUsHome from './shop-components/AboutUsHome';
 
 
 const Home_V7 = () => {
@@ -105,6 +107,7 @@ const Home_V7 = () => {
 
     {/* <Category /> */}
     {/* <Testimonial /> */}
+    <AboutUsHome/>
     <AboutV5 customClass='ltn__feature-area section-bg-8 pt-40 pb-90 mb-120---' />
     <TeamAgents customClass='ltn__feature-area section-bg-1 pt-80  mb-120---' />
     {/* <Testimonial customClass='ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---'/> */}
