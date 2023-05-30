@@ -9123,7 +9123,7 @@ i {
 }
 .product-badge420 {
   position: absolute;
-  top: 1px;
+  top: 16px;
  
 }
 
@@ -9512,6 +9512,8 @@ i {
 
 .ltn__product-item-44 .product-img {
   position: relative;
+  border-top-left-radius:  14px;
+  border-top-right-radius: 14px;
 }
 .ltn__product-item-44 .product-img a {
   display: block;
@@ -9582,7 +9584,7 @@ i {
   min-height: 210px;
 }
 .ltn__product-item-44 .product-info666 {
-  padding: 30px 30px 1px;
+  padding: 30px 30px 30px;
   min-height: 150px;
 }
 .ltn__product-item-44 .product-price {

@@ -99,11 +99,14 @@ const Curousal1 = (props) => {
 
                                                 </div>
                                                 <div className="price_div">
-                                                <span className="changesfont">AED 3600000</span>
+                                                <span className="changesfont"> Starting Price</span>
+                                                </div>
+                                                <div className="price_div">
+                                                <span className="changesfont"> Hand Over</span>
                                                 </div>
                                                 <div>
                                                 <div className="price_div">
-                                                <span className="changesfont">26/6/2023</span>
+                                                <span className="changesfont">June 2023</span>
                                                 </div>
                                                     
                                                 </div></div>
