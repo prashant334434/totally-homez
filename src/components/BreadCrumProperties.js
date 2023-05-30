@@ -41,8 +41,8 @@ const BreadCrumProperties = (props) => {
 						
 
 								{carouselItems.map((item) => (
-									<div className="col-lg-4">
-										<div key={item?.id} className="ltn__product-item ltn__product-item-4 text-center---">
+									<div key={item?.id} className="col-lg-4">
+										<div  className="ltn__product-item ltn__product-item-4 text-center---">
 											<div className="product-img go-top">
 												<Link to={`/property-details/${item?.id}`}><img src={`https://cf.bstatic.com/xdata/images/xphoto/max1440/48387083.jpg?k=71de1d7fb5c115ccc436261c89c33780c052bc99fcb26cc40101f35b33226fbf&o=`} alt="#" /></Link>
 												<div className="product-badge">

@@ -8,6 +8,7 @@ import VideoV1 from './section-components/video-v1';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { getTeamDetailsApi } from '../actions/teamActions';
+import MobileNav from './global-components/Mobile-nav';
 
 
 const Team_Details = () => {
@@ -20,7 +21,7 @@ const {loading,teamDetails}=useSelector((state)=>state.teamDetails)
 
     },[dispatch])
     return <div>
-        <Navbar />
+        <MobileNav />
         
  
         <TeamDetails loading={loading} teamDetails={teamDetails} />

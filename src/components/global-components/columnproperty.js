@@ -49,7 +49,7 @@ const ColumnProperty = ({ community }) => {
               {
 
                 community?.slice(0, itemsToShow).map((item, index) => (
-                  <div className="col-xl-3 col-md-4 col-sm-4 col-12">
+                  <div key={index} className="col-xl-3 col-md-4 col-sm-4 col-12">
                     <div className="footer-widget-breadcrum footer-menu-widget clearfix">
                       <div className="footer-menu go-top">
                         <ul>
