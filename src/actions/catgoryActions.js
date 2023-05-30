@@ -177,8 +177,3 @@ console.log("penthouse rent",data)
             });
         }
     };
-
-
-
-
-    
