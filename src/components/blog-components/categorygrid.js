@@ -5,7 +5,7 @@ class CategoryGrid12 extends Component {
     let publicUrl = process.env.PUBLIC_URL+'/'
     let imagealt = 'image'
     return (
-		<div className="ltn__blog-area ltn__blog-item-3-normal pt-150 mb-100 go-top">
+		<div className="ltn__blog-area ltn__blog-item-3-normal pt-40 mb-100 go-top">
 			<div className="container">
 			<div className="row">
 				{/* Blog Item */}
