@@ -14,6 +14,7 @@ const CommunityGrid = () => {
   return (
     <div className="ltn__product-slider-area ltn__product-gutter pt-100 pb-40 plr--12">
     <div className="container-fluid">
+					<h1 className="page-title">Community Guideline</h1>
 
         <div className="row ltn__product-slider-item-three-active-full-width slick-arrow-1">
             {
