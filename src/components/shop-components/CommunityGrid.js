@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom/cjs/react-router-dom.min'
 import { getCatgoryProperties, getTownhouseCatgoryProperties, getTownhouseCatgoryRentProperties } from '../../actions/catgoryActions'
 import { TEAM_API_URL } from '../../constants/config'
+import CommunityContentSection from '../section-components/CommunityContentSection'
 
 const CommunityGrid = () => {
     const { townhouseCategoryRentProperties } = useSelector((state) => state.townhouseRentProperties)

@@ -27,11 +27,12 @@ const GuideLine = () => {
   return (
     <div>
         <MobileNav />
+        <CommunityContentSection loading={loading} aboutUsData={about}/>
+
         <CommunityGrid/>
       
         {/* <AboutV5 loading={loading} aboutUsData={about} /> */}
         {/* <OurMission loading={loading} aboutUsData={about}/> */}
-        <CommunityContentSection loading={loading} aboutUsData={about}/>
 
         <Cummunity/>
         
