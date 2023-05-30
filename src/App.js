@@ -69,6 +69,7 @@ import CommunityGrid from './components/categoryyyy-grid';
 import CategoryGrid from './components/categoryyyy-grid';
 import CategoryGrid11 from './components/categoryyyy-grid';
 import OffPlanCategory from './components/offplan-category';
+import CurousalTypes from './components/curousalTypes';
 
 
 
@@ -165,6 +166,7 @@ import OffPlanCategory from './components/offplan-category';
         <Route path="/shop-page" component={ ShopNew } />
         <Route path="/community" component={ GuideLine } />
         <Route path="/bread-crums" component={ BreadCrumbs } />
+        <Route path="/curousals-types" component={ CurousalTypes } />
 
 
 
