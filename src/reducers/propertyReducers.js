@@ -1,4 +1,4 @@
-import { GET_ALL_PROPERTIES_FAILURE, GET_ALL_PROPERTIES_REQUEST, GET_ALL_PROPERTIES_SUCCESS, GET_PROPERTY_DETAILS_FAILURE, GET_PROPERTY_DETAILS_REQUEST, GET_PROPERTY_DETAILS_SUCCESS, GET_PROPERTY_IMAGES_FAILURE, GET_PROPERTY_IMAGES_REQUEST, GET_PROPERTY_IMAGES_SUCCESS } from "../constants/propertyConstants";
+import { GET_ALL_PROPERTIES_FAILURE, GET_ALL_PROPERTIES_REQUEST, GET_ALL_PROPERTIES_SUCCESS, GET_PROPERTY_AMENITIES_FAILURE, GET_PROPERTY_AMENITIES_REQUEST, GET_PROPERTY_AMENITIES_SUCCESS, GET_PROPERTY_DETAILS_FAILURE, GET_PROPERTY_DETAILS_REQUEST, GET_PROPERTY_DETAILS_SUCCESS, GET_PROPERTY_IMAGES_FAILURE, GET_PROPERTY_IMAGES_REQUEST, GET_PROPERTY_IMAGES_SUCCESS, GET_PROPERTY_NEAR_BY_FAILURE, GET_PROPERTY_NEAR_BY_REQUEST, GET_PROPERTY_NEAR_BY_SUCCESS } from "../constants/propertyConstants";
 
 export const propertyReducer = (state = { properties: [] }, action) => {
     switch (action.type) {
@@ -77,5 +77,61 @@ export const propertyImagesReducer = (state = { propertyImages: [] }, action) =>
 
     }
 }
+
+
+
+export const propertyAmenitiesReducer = (state = { propertyAmenities: [] }, action) => {
+    switch (action.type) {
+        case GET_PROPERTY_AMENITIES_REQUEST:
+            return {
+                loading: true,
+                propertyAmenities: [],
+            }
+        case GET_PROPERTY_AMENITIES_SUCCESS:
+            return {
+                loading: false,
+                propertyAmenities: action.payload,
+              
+            }
+        case GET_PROPERTY_AMENITIES_FAILURE: {
+            return {
+                loading: false,
+                error: action.payload,
+            }
+        }
+        default:
+            return state;
+
+    }
+}
+
+
+export const propertyNearByReducer = (state = { propertiesNearBy: [] }, action) => {
+    switch (action.type) {
+        case GET_PROPERTY_NEAR_BY_REQUEST:
+            return {
+                loading: true,
+                propertiesNearBy: [],
+            }
+        case GET_PROPERTY_NEAR_BY_SUCCESS:
+            return {
+                loading: false,
+                propertiesNearBy: action.payload,
+              
+            }
+        case GET_PROPERTY_NEAR_BY_FAILURE: {
+            return {
+                loading: false,
+                error: action.payload,
+            }
+        }
+        default:
+            return state;
+
+    }
+}
+
+
+
 
 

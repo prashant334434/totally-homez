@@ -1,5 +1,5 @@
 import axios from "axios";
-import { GET_ALL_PROPERTIES_FAILURE, GET_ALL_PROPERTIES_REQUEST, GET_ALL_PROPERTIES_SUCCESS, GET_PROPERTY_DETAILS_FAILURE, GET_PROPERTY_DETAILS_REQUEST, GET_PROPERTY_DETAILS_SUCCESS, GET_PROPERTY_IMAGES_FAILURE, GET_PROPERTY_IMAGES_REQUEST, GET_PROPERTY_IMAGES_SUCCESS } from "../constants/propertyConstants";
+import { GET_ALL_PROPERTIES_FAILURE, GET_ALL_PROPERTIES_REQUEST, GET_ALL_PROPERTIES_SUCCESS, GET_PROPERTY_AMENITIES_FAILURE, GET_PROPERTY_AMENITIES_REQUEST, GET_PROPERTY_AMENITIES_SUCCESS, GET_PROPERTY_DETAILS_FAILURE, GET_PROPERTY_DETAILS_REQUEST, GET_PROPERTY_DETAILS_SUCCESS, GET_PROPERTY_IMAGES_FAILURE, GET_PROPERTY_IMAGES_REQUEST, GET_PROPERTY_IMAGES_SUCCESS, GET_PROPERTY_NEAR_BY_FAILURE, GET_PROPERTY_NEAR_BY_REQUEST, GET_PROPERTY_NEAR_BY_SUCCESS } from "../constants/propertyConstants";
 import { GET_PROPERTIES_BY_TYPE_FAILURE, GET_PROPERTIES_BY_TYPE_REQUEST, GET_PROPERTIES_BY_TYPE_SUCCESS } from "../constants/propertyyTypeConstants";
 
 export const getAllPropertiesApi = () =>
@@ -92,4 +92,49 @@ export const getAllPropertiesApi = () =>
         }
     };
 
+
+
+
+    export const getPropertiesNearByApi = (id) =>
+    async (dispatch) => {
+        try {
+            dispatch({ type: GET_PROPERTY_NEAR_BY_REQUEST});
+
+
+
+            const  {data} = await axios.get(`https://totallyhomerealestate.com/API/api/properties/nearplace/${id}`);
+
+            dispatch({
+                type: GET_PROPERTY_NEAR_BY_SUCCESS,
+                payload: data,
+            });
+        } catch (error) {
+            dispatch({
+                type: GET_PROPERTY_NEAR_BY_FAILURE,
+            });
+        }
+    };
+
+
+
+
+    export const getPropertiesAmenitiesApi = (id) =>
+    async (dispatch) => {
+        try {
+            dispatch({ type: GET_PROPERTY_AMENITIES_REQUEST});
+
+
+
+            const  {data} = await axios.get(`https://totallyhomerealestate.com/API/api/properties/ani/${id}`);
+
+            dispatch({
+                type: GET_PROPERTY_AMENITIES_SUCCESS,
+                payload: data,
+            });
+        } catch (error) {
+            dispatch({
+                type: GET_PROPERTY_AMENITIES_FAILURE,
+            });
+        }
+    };
 

@@ -1,11 +1,11 @@
 import React, { Component, useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link,useParams } from 'react-router-dom';
 import parse from 'html-react-parser';
 import NearBy from '../section-components/NearBy';
 import { InlineWidget, PopupButton, PopupWidget } from "react-calendly";
 import { useStickyBox } from "react-sticky-box";
-import { useDispatch } from 'react-redux';
-import { getSingalPropertyDetailsApi } from '../../actions/propertiesActions';
+import { useDispatch, useSelector } from 'react-redux';
+import { getPropertiesAmenitiesApi, getPropertiesNearByApi, getSingalPropertyDetailsApi } from '../../actions/propertiesActions';
 import { getTeamDetailsApi } from '../../actions/teamActions';
 import AgentDetails from './AgentDetails';
 import IconButton from '@material-ui/core/IconButton';
@@ -46,6 +46,10 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const ShopDetails = ({ propertyDetails }) => {
+	const {laoding,propertiesNearBy}=useSelector((state)=>state.propertiesNearBy)
+
+	const {loading,propertyAmenities}=useSelector((state)=>state.propertyAmenities)
+	const {id}=useParams()
 	const hrStyle = {
 		border: 'none', // Remove the default border
 		borderTop: '1px solid black', // Set the style of the horizontal rule
@@ -68,10 +72,15 @@ const ShopDetails = ({ propertyDetails }) => {
 	const [isSticky, setSticky] = useState(false);
 	const [showFullDescription, setShowFullDescription] = useState(false);
 	useEffect(() => {
+		dispatch(getPropertiesAmenitiesApi(id))
+		dispatch(getPropertiesNearByApi(id))
+
+
 		if (propertyDetails?.property_agent_name) {
 			dispatch(getTeamDetailsApi(propertyDetails?.property_agent_name))
 
 		}
+
 		const handleScroll = () => {
 			setSticky(window.scrollY > 0);
 		};
@@ -279,7 +288,7 @@ const ShopDetails = ({ propertyDetails }) => {
 							<div className="property-details-amenities mb-60">
 								<div className="row">
 									{
-										amenitiesArray?.map((amenity, index) => (
+										propertyAmenities?.map((amenity, index) => (
 											<div key={index} className="col-lg-4 col-md-6">
 												<div className="ltn__menu-widget">
 													<ul>
@@ -287,7 +296,7 @@ const ShopDetails = ({ propertyDetails }) => {
 															{/* <i className="fas fa-check fa-2x" style={{ color: 'red',}}></i> */}
 															<img src="../assets/img/tick.png" className='sizingimage' />
 
-															<label className="checkbox-item sizing420">{amenity.trim()}
+															<label className="checkbox-item sizing420">{amenity?.anmi_name}
 
 															</label>
 														</li>
@@ -306,7 +315,7 @@ const ShopDetails = ({ propertyDetails }) => {
 							<div className="property-details-amenities mb-60">
 								<div className="row">
 									{
-										amenitiesArray?.map((amenity, index) => (
+										propertiesNearBy?.map((amenity, index) => (
 											<div key={index} className="col-lg-4 col-md-6">
 												<div className="ltn__menu-widget">
 													<ul>
@@ -314,7 +323,7 @@ const ShopDetails = ({ propertyDetails }) => {
 															{/* <i className="fas fa-check fa-2x" style={{ color: 'red',}}></i> */}
 															{/* <img src="../assets/img/tick.png" style={{ "width": "9%"}} /> */}
 															<i className=' fa fa-bank ' style={{ "color": "red"}}></i>
-															<label className="checkbox-item sizing420">{'Bank  -  5 m'}
+															<label className="checkbox-item sizing420">{amenity?.near_by_place}
 
 															</label>
 														</li>
