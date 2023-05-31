@@ -14952,6 +14952,11 @@ input.cart-plus-minus-box {
 .ltn__img-slide-item-4 {
   position: relative;
   margin-bottom: 0px;
+  
+}
+.propertyDetailsImageCsrousel{
+  height: 530px;
+  width: 1003px;
 }
 .ltn__img-slide-item-4 .ltn__img-slide-info {
   display: -webkit-box;
@@ -14972,7 +14977,6 @@ input.cart-plus-minus-box {
   transition: all 0.3s ease 0s;
   background: var(--gradient-color-3);
   opacity: 0;
-  visibility: hidden;
 }
 .ltn__img-slide-item-4 .ltn__img-slide-info-brief {
   padding-right: 20px;
@@ -19341,4 +19345,8 @@ a.ltn__utilize-toggle.close {
   font-family: var(--ltn__heading-font);
     font-weight: 600;
     color: var(--ltn__heading-color);
+}
+
+.react-multi-carousel-item--active {
+  width: 1003px !important;
 }
