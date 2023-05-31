@@ -57,6 +57,7 @@ const ShopDetails = ({ propertyDetails }) => {
 	  };
 	
 	const classes = useStyles();
+	const htmlContent = propertyDetails?.property_content;
 
 	const amenitiesArray = propertyDetails?.property_amenities?.split(',');
 	console.log(amenitiesArray)
@@ -71,6 +72,15 @@ const ShopDetails = ({ propertyDetails }) => {
 	const stickyRef = useStickyBox({ offsetTop: 150, offsetBottom: 100 });
 	const [isSticky, setSticky] = useState(false);
 	const [showFullDescription, setShowFullDescription] = useState(false);
+
+
+	const getTruncatedContent = () => {
+		const maxLength = 100;
+		if (htmlContent?.length <= maxLength) {
+		  return htmlContent;
+		}
+		return isTruncated ? htmlContent : htmlContent.slice(0, maxLength) + '...';
+	  };
 	useEffect(() => {
 		dispatch(getPropertiesAmenitiesApi(id))
 		dispatch(getPropertiesNearByApi(id))
@@ -187,21 +197,16 @@ const ShopDetails = ({ propertyDetails }) => {
 							<h4 className="title-2">Description</h4>
 							<hr style={hrStyle} />
 
-							{isTruncated ? (
-								<p  className="description ">
-									{propertyDetails?.property_content?.slice(0, maxLength)}...
-									<div className="read-more pt-10">
-										<button className="btn theme-btn-1" onClick={toggleTruncate}> Read more</button>
+						
+								<p  dangerouslySetInnerHTML={{ __html: getTruncatedContent() }}   className="description "/>
+								{htmlContent?.length > 30 && (
+									<button className="btn theme-btn-1 " onClick={toggleTruncate}>
+									  {isTruncated ? 'Read Less' : 'Read More'}
+									</button>
+								  )}
+								   
+						
 
-									</div>        </p>
-							) : (
-								<p className="description">
-									{propertyDetails?.property_content}
-									<div className="read-more pt-10">
-										<button className="btn theme-btn-1 " onClick={toggleTruncate}>Read More</button>
-
-									</div>        </p>
-							)}
 
 							{/* <h4 className="title-2">Property Detail</h4>  
 			<div className="property-detail-info-list section-bg-1 clearfix mb-60">                          
