@@ -14956,7 +14956,7 @@ input.cart-plus-minus-box {
 }
 .propertyDetailsImageCsrousel{
   height: 530px;
-  width: 1003px;
+  width: 9003px;
 }
 .ltn__img-slide-item-4 .ltn__img-slide-info {
   display: -webkit-box;
@@ -19347,6 +19347,6 @@ a.ltn__utilize-toggle.close {
     color: var(--ltn__heading-color);
 }
 
-.react-multi-carousel-item--active {
+/* .react-multi-carousel-item--active {
   width: 1003px !important;
-}
+} */
