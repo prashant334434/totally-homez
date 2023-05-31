@@ -38,7 +38,7 @@ const Product_Details = () => {
     return <div>
         <MobileNav />
         <div className='parentDiv'>
-            <div className='fitSlider'>
+            <div className=''>
                 <ProductSlider propertyDetails={propertyDetails} className="child1" />
             </div>
             <div className='child2'>

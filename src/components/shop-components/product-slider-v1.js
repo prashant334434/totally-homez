@@ -80,7 +80,7 @@ const ProductSliderV1 = ({ propertyDetails }) => {
             {carouselItems.map((item) => (
                <div className="col-lg-12">
 			   <div className="ltn__img-slide-item-4">
-					   <img src={`${PROPERTY_IMAGES_URL}/${item?.img_name}`} alt="Image" />
+					   <img className='propertyDetailsImageCsrousel' src={`${PROPERTY_IMAGES_URL}/${item?.img_name}`} alt="Image" />
 				   
 			   </div>
 		   </div>
