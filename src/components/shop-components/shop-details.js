@@ -188,7 +188,7 @@ const ShopDetails = ({ propertyDetails }) => {
 							<hr style={hrStyle} />
 
 							{isTruncated ? (
-								<p className="description ">
+								<p  className="description ">
 									{propertyDetails?.property_content?.slice(0, maxLength)}...
 									<div className="read-more pt-10">
 										<button className="btn theme-btn-1" onClick={toggleTruncate}> Read more</button>
