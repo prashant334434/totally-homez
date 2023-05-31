@@ -7,7 +7,7 @@ import { TEAM_API_URL } from '../../constants/config';
 const AgentDetails = ({agentId}) => {
 	let publicUrl = process.env.PUBLIC_URL + '/'
 
-    const {data}=useSelector((state)=>state?.teamDetails?.teamDetails)
+    const {teamDetails}=useSelector((state)=>state?.teamDetails)
     console.log(agentId)
 
     const dispatch=useDispatch()
@@ -20,10 +20,11 @@ const AgentDetails = ({agentId}) => {
 								<div className="ltn__author-widget-inner text-center">
 									<center>
 
-									<img src={publicUrl + "assets/img/team/Aditi.jpg"} alt="#" />
+									<img src={`${TEAM_API_URL}/${teamDetails?.path}`} alt="#" />
 
-										<h5>Aditi Khadka</h5>
-										<small>Property Adviser</small>
+										<h5>{teamDetails?.name}</h5>
+										
+										<small>{teamDetails?.designation}</small>
 
 									</center>
 
@@ -31,7 +32,7 @@ const AgentDetails = ({agentId}) => {
 
 									</div>
 									<br />
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis distinctio, odio, eligendi suscipit reprehenderit atque.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis distinctio, odio, eligendi suscipit reprehenderit atque.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis distinctio, odio, eligendi suscipit reprehenderit atque.</p>
+									<p>{teamDetails?.description}</p>
 									<div className="ltn__social-media">
 										<center>
 											{/* <Link className="btn btn-effect-3" to="/contact">Call</Link> */}

@@ -1,4 +1,4 @@
-import { GET_ALL_PROPERTIES_FAILURE, GET_ALL_PROPERTIES_REQUEST, GET_ALL_PROPERTIES_SUCCESS, GET_PROPERTY_DETAILS_FAILURE, GET_PROPERTY_DETAILS_REQUEST, GET_PROPERTY_DETAILS_SUCCESS } from "../constants/propertyConstants";
+import { GET_ALL_PROPERTIES_FAILURE, GET_ALL_PROPERTIES_REQUEST, GET_ALL_PROPERTIES_SUCCESS, GET_PROPERTY_DETAILS_FAILURE, GET_PROPERTY_DETAILS_REQUEST, GET_PROPERTY_DETAILS_SUCCESS, GET_PROPERTY_IMAGES_FAILURE, GET_PROPERTY_IMAGES_REQUEST, GET_PROPERTY_IMAGES_SUCCESS } from "../constants/propertyConstants";
 
 export const propertyReducer = (state = { properties: [] }, action) => {
     switch (action.type) {
@@ -50,3 +50,32 @@ export const propertyDetailsReducer = (state = { propertyDetails: {} }, action) 
 
     }
 }
+
+
+
+export const propertyImagesReducer = (state = { propertyImages: [] }, action) => {
+    switch (action.type) {
+        case GET_PROPERTY_IMAGES_REQUEST:
+            return {
+                loading: true,
+                properties: {},
+            }
+        case GET_PROPERTY_IMAGES_SUCCESS:
+            return {
+                loading: false,
+                propertyImages: action.payload,
+              
+            }
+        case GET_PROPERTY_IMAGES_FAILURE: {
+            return {
+                loading: false,
+                error: action.payload,
+            }
+        }
+        default:
+            return state;
+
+    }
+}
+
+

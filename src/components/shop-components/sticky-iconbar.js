@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import parse from 'html-react-parser';
 import NearBy from '../section-components/NearBy';
 import { InlineWidget, PopupButton, PopupWidget } from "react-calendly";
-import ShopGrid_V1 from '../shop-grid';
 import { useStickyBox } from "react-sticky-box";
 import { useDispatch } from 'react-redux';
 import { getSingalPropertyDetailsApi } from '../../actions/propertiesActions';

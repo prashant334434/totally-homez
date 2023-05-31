@@ -2,7 +2,7 @@ import { createStore,combineReducers,applyMiddleware} from "redux"
 import thunk from "redux-thunk"
 import {composeWithDevTools} from 'redux-devtools-extension'
 import { userReducer } from "./reducers/userReducers";
-import { propertyDetailsReducer, propertyReducer } from "./reducers/propertyReducers";
+import { propertyDetailsReducer, propertyImagesReducer, propertyReducer } from "./reducers/propertyReducers";
 import { carouselDetailsReducer, carouselReducer } from "./reducers/carouselReducers";
 import { teamDetailsReducer, teamReducer } from "./reducers/teamReducers";
 import { apartmentCategoryReducer, apartmentCategoryRentReducer, catgoryPropertiesRentReducer, catgoryReducer, catgoryRentReducer, penthouseCategoryReducer, penthouseCategoryRentReducer, townhouseCategoryReducer, townhouseCategoryRentReducer } from "./reducers/catgoryReducres";
@@ -43,7 +43,8 @@ const reducer=combineReducers({
 
     propertiesByType:propertiesByTypeReducer,
 
-    offPlan:getOffPlanReducer
+    offPlan:getOffPlanReducer,
+    propertyImages:propertyImagesReducer
   
     
    

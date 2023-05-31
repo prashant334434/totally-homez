@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import parse from 'html-react-parser';
 import NearBy from '../section-components/NearBy';
 import { InlineWidget, PopupButton, PopupWidget } from "react-calendly";
-import ShopGrid_V1 from '../shop-grid';
 import { useStickyBox } from "react-sticky-box";
 import { useDispatch } from 'react-redux';
 import { getSingalPropertyDetailsApi } from '../../actions/propertiesActions';
@@ -341,7 +340,7 @@ const ShopDetails = ({ propertyDetails }) => {
 								<h4 className="title-2">Property Detail</h4>
 								<div className="property-detail-info-list section-bg-0 clearfix ">
 									<ul>
-										<li><label className='bigcoloring1'>Price:</label><span className='bigcoloring'> AED {propertyDetails?.property_price_on_application=="Yes"?propertyDetails?.property_price:"Price on Application"} </span></li>
+										<li><label className='bigcoloring1'>Price:</label><span className='bigcoloring'> {propertyDetails?.property_price_on_application=="Yes"?"AED":null} {propertyDetails?.property_price_on_application=="Yes"?propertyDetails?.property_price:"Price on Application"} </span></li>
 									</ul>
 								</div>
 								<div className="property-detail-info-list section-bg-0 clearfix ">
