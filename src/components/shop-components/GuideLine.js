@@ -14,6 +14,7 @@ import { getAboutUsApi } from '../../actions/aboutUsActions';
 import OurMission from '../section-components/our-mission';
 import OurStory from '../section-components/our-story';
 import CommunityContentSection from '../section-components/CommunityContentSection';
+import Curousal1 from './curosal-1';
 
 
 const GuideLine = () => {
@@ -36,7 +37,7 @@ const GuideLine = () => {
 
         <Cummunity/>
         
-        <CommunityCarousel/>
+        <Curousal1/>
         <ProductGrid />
         <CallToActionV1 />
         <Footer_v1 />

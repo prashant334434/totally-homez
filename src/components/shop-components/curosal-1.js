@@ -84,7 +84,7 @@ const Curousal1 = (props) => {
                                                 <Link to={`/property-details/${item?.id}`}><img src="https://famproperties.s3.ap-southeast-1.amazonaws.com/project-medium-banners/royal.jpg" alt="#" /></Link>
                                                 <div className="product-badge420">
                                                     <ul>
-                                                        <li className="sale-badge bg-green">Ready</li>
+                                                        <li className="sale-badge bg-red">Ready</li>
                                                     </ul>
                                                 </div>
 
