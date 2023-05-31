@@ -85,8 +85,10 @@ const ApartmentProductGridRent = (props) => {
 											</div>
 											<div className="product-info">
 												<div className="product-price">
-													<h2 className="product-title go-top"><Link to={`/property-details/${item?.id}`}>{item?.property_name}</Link></h2>
+												<Link to={`/property-details/${item?.id}`}>
+                                                        <h2  dangerouslySetInnerHTML={{ __html: item?.property_name }}  className="product-title go-top"/>
 
+                                                        </Link>
 													<span>AED {item?.property_price}</span>
 
 

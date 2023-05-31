@@ -88,7 +88,10 @@ const ProductGrid = (props) => {
                                             <div className="product-info">
                                                 <div className="product-price">
                                                     <div className="title_div">
-                                                        <h2 className="product-title go-top"><Link to={`/property-details/${item?.id}`}>{item?.property_name}testAmit</Link></h2>
+                                                        <Link to={`/property-details/${item?.id}`}>
+                                                        <h2  dangerouslySetInnerHTML={{ __html: item?.property_name }}  className="product-title go-top"/>
+
+                                                        </Link>
 
                                                     </div>
                                                     <div className='price_div'>
