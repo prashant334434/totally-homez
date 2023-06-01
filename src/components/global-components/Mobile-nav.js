@@ -66,22 +66,22 @@ const MobileNav = () => {
 												<li><a href="#">Home</a>
 
 												</li>
-												<li><Link to="/shop">Buy</Link>
+												<li><Link>Buy</Link>
 													<ul className="sub-menu">
-														<li><Link to="/shop">Apartments</Link></li>
-														<li><Link to="/shop">Villas</Link></li>
-														<li><Link to="/shop">Penthouse</Link></li>
-														<li><Link to="/shop">Townhouse</Link></li>
-														<li><Link to="/shop"> Off Plan</Link></li>
+														<li><Link >Apartments</Link></li>
+														<li><Link >Villas</Link></li>
+														<li><Link >Penthouse</Link></li>
+														<li><Link >Townhouse</Link></li>
+														<li><Link > Off Plan</Link></li>
 
 													</ul>
 												</li>
-												<li><Link to="/shop">Rent</Link>
+												<li><Link >Rent</Link>
 													<ul className="sub-menu">
-														<li><Link to="/shop">Apartments</Link></li>
-														<li><Link to="/shop">Villas</Link></li>
-														<li><Link to="/shop">Penthouse</Link></li>
-														<li><Link to="/shop">Townhouse</Link></li>
+														<li><Link >Apartments</Link></li>
+														<li><Link >Villas</Link></li>
+														<li><Link >Penthouse</Link></li>
+														<li><Link >Townhouse</Link></li>
 
 													</ul></li>
 												<li><Link to="/off-plan">Off Plan</Link>
@@ -90,8 +90,8 @@ const MobileNav = () => {
 												<li><Link to="#">Exclusive Properties</Link>
 
 												</li>
-												<li><Link to="/contact-us">Explore Dubai</Link></li>
-												<li><Link to="/contact-us">Our Mission</Link></li>
+												<li><Link to="">Explore Dubai</Link></li>
+												<li><Link >Our Mission</Link></li>
 												<li><Link to="/contact-us">Contact</Link></li>
 											</ul>
 										</div>

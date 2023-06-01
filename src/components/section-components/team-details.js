@@ -17,7 +17,7 @@ const TeamDetails = ({loading,teamDetails}) => {
 		)
 	}
   return (
-	<div className="ltn__team-details-area mt-100 mb-120">
+	<div className="ltn__team-details-area pt-100 mb-120">
 	<div className="container">
 	<div className="row">
 		<div className="col-lg-3">
@@ -33,7 +33,7 @@ const TeamDetails = ({loading,teamDetails}) => {
 		<div className="col-lg-8">
 		<div className="ltn__team-details-member-info-details">
 			<div className="row">
-			<div className="col-lg-6">
+			<div className="col-lg-12">
 				<div className="ltn__team-details-member-about">
 				<ul>
 					<li><strong>Positions:</strong> Senior Property Seller</li>

@@ -47,7 +47,7 @@ const OffPlan = () => {
         <PaymentPlan/>
 
         <ArchitechturePlan/>
-        <BlogRightSidebarPage/>
+        {/* <BlogRightSidebarPage/> */}
         <CounterV1 customClass="ltn__feature-area section-bg-1"/>
         <ApartmentV3/>
         <Curousal1/>
