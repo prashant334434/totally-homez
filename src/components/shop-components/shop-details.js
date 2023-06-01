@@ -9,7 +9,9 @@ import { getPropertiesAmenitiesApi, getPropertiesNearByApi, getSingalPropertyDet
 import { getTeamDetailsApi } from '../../actions/teamActions';
 import AgentDetails from './AgentDetails';
 import IconButton from '@material-ui/core/IconButton';
-
+import { FaHospital, FaSchool } from 'react-icons/fa';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHospital } from '@fortawesome/free-solid-svg-icons';
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import { Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
@@ -72,7 +74,16 @@ const ShopDetails = ({ propertyDetails }) => {
 	const stickyRef = useStickyBox({ offsetTop: 150, offsetBottom: 100 });
 	const [isSticky, setSticky] = useState(false);
 	const [showFullDescription, setShowFullDescription] = useState(false);
+    let iconsToshow;
+	switch(propertiesNearBy){
+		case 'hospital':
+			iconsToshow=faHospital;
+			break;
+		case 'school':
+			
 
+	}
+	
 
 	const getTruncatedContent = () => {
 		const maxLength = 100;
@@ -328,7 +339,7 @@ const ShopDetails = ({ propertyDetails }) => {
 															{/* <i className="fas fa-check fa-2x" style={{ color: 'red',}}></i> */}
 															{/* <img src="../assets/img/tick.png" style={{ "width": "9%"}} /> */}
 															<i className=' fa fa-bank ' style={{ "color": "red"}}></i>
-															<label className="checkbox-item sizing420">{amenity?.near_by_place}
+															<label className="checkbox-item sizing420">{amenity?.near_by_place} -{amenity?.dist}M
 
 															</label>
 														</li>
