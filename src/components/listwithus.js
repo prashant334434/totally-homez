@@ -61,17 +61,15 @@ const ListWithUs = () => {
         {/* <PropertyPrepration/> */}
         <UniqueProperty loading={loading} listWithUs={listWithUs} />
 
-        <BenefitsofListing loading={loading} listWithUs={listWithUs} customClass="ltn__feature-area  pt-120 pb-90 mb-120---" />
+     <BenefitsofListing loading={loading} listWithUs={listWithUs} customClass="ltn__feature-area  pt-120 pb-90 mb-120---" />
 
-        <CultureListWithUs loading={loading} listWithUs={listWithUs} />
-        <PhilosphyListWithus loading={loading} listWithUs={listWithUs} />
         <PerksListWithUs loading={loading} listWithUs={listWithUs} />
-        <InnovativeApproach />
+        {/* <InnovativeApproach /> */}
         <QualityFocusedCreation loading={loading} listWithUs={listWithUs} customClass="ltn__feature-area  pt-120 pb-90 mb-120---" />
         {/* <BlogSlider />*/}
         <HighContent loading={loading} listWithUs={listWithUs} />
-        <InternetAlone loading={loading} listWithUs={listWithUs} />
-        <TakeCareEverything />
+        {/* <InternetAlone loading={loading} listWithUs={listWithUs} /> */}
+        <TakeCareEverything listWithUs={listWithUs} />
         <ReadyToSell />
         <Footer />
     </div>

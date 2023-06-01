@@ -24,51 +24,40 @@ let imagealt = 'image'
 				</div>
 				<div className="row justify-content-center">
 					<div className="col-lg-4 col-sm-6">
-					<div className="ltn__team-item ltn__team-item-3---">
-						<div className="team-info">
+						<div className="ltn__feature-item-6">
 						<h4><Link>{item?.sec9_b1} </Link></h4>
 					
-						</div>
 					</div>
 					</div>
                     <div className="col-lg-4 col-sm-6">
-					<div className="ltn__team-item ltn__team-item-3---">
-						<div className="team-info">
+						<div className=" ltn__feature-item-6">
 						<h4><Link>{item?.sec9_b2} </Link></h4>
 					
-						</div>
 					</div>
 					</div>
                     <div className="col-lg-4 col-sm-6">
-					<div className="ltn__team-item ltn__team-item-3---">
-						<div className="team-info">
+						<div className="ltn__feature-item-6">
 						<h4><Link>{item?.sec9_b3} </Link></h4>
 					
-						</div>
 					</div>
 					</div>
                     <div className="col-lg-4 col-sm-6">
-					<div className="ltn__team-item ltn__team-item-3---">
-						<div className="team-info">
+						<div className="ltn__feature-item-6">
 						<h4><Link>{item?.sec9_b4} </Link></h4>
 					
-						</div>
 					</div>
 					</div>
                     <div className="col-lg-4 col-sm-6">
-					<div className="ltn__team-item ltn__team-item-3---">
-						<div className="team-info">
+						<div className="ltn__feature-item-6">
 						<h4><Link>{item?.sec9_b5} </Link></h4>
 					
-						</div>
 					</div>
 					</div>
                     <div className="col-lg-4 col-sm-6">
-					<div className="ltn__team-item ltn__team-item-3---">
-						<div className="team-info">
+						<div className="ltn__feature-item-6">
 						<h4><Link>{item?.sec9_b6} </Link></h4>
 					
-						</div>
+					
 					</div>
 					</div>
 				</div>
