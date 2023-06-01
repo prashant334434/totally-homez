@@ -70,7 +70,8 @@ class Footer_v1 extends Component {
 				                    <i className="icon-call" />
 				                  </div>
 				                  <div className="footer-address-info">
-				                    <p><a href="+971 45 54 8620">+971 54 289 7686</a></p>
+								 
+				                    <p><a  href="tel:+97145548620">+971 54 289 7686</a></p>
 				                  </div>
 				                </li>
 				                <li>
@@ -78,7 +79,7 @@ class Footer_v1 extends Component {
 				                    <i className="icon-mail" />
 				                  </div>
 				                  <div className="footer-address-info">
-				                    <p><a href="support@totallyhomerealestate.ae">sales@totallyhomerealestate.com</a></p>
+				                    <p><a href="mailto:support@totallyhomerealestate.ae">sales@totallyhomerealestate.com</a></p>
 				                  </div>
 				                </li>
 				              </ul>
@@ -111,7 +112,6 @@ class Footer_v1 extends Component {
 							  <li><Link >Best Property In Dubai</Link></li>
 				                <li><Link >Off Plan Apartments </Link></li>
 				                <li><Link >Off Plan Villas</Link></li>
-				                <li><Link >Gallery</Link></li>
 				                <li><Link > Off Plan Townhouses</Link></li>
 				                <li><Link >Brand New Apartments</Link></li>
 
@@ -144,7 +144,7 @@ class Footer_v1 extends Component {
 				              <ul>
 				                <li><Link >Waterfront Properties for Sale</Link></li>
 				                <li><Link >Waterfront Properties for Rent</Link></li>
-				                <li><Link >Waterfront Properties for Sale</Link></li>
+				                <li><Link >Seaview Properties for Sale</Link></li>
 				                <li><Link >Seaview Properties for Rent</Link></li>
 				                <li><Link >Oceanview Properties for Sale</Link></li>
 				                <li><Link >Oceanview Properties for Rent</Link></li>

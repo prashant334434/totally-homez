@@ -12,7 +12,7 @@ class Social extends Component {
 			<ul>
 				<li><a href="https://www.facebook.com/totallyhomes" title="Facebook"><i className="fab fa-facebook-f" /></a></li>
 				<li><a href="https://www.instagram.com/totallyhomerealestate" title="Instagram"><i className="fab fa-instagram" /></a></li>
-				<li><a href="https://www.facebook.com/totallyhomes" title="Dribbble"><i className="fab fa-linkedin" /></a></li>
+				<li><a href="https://www.linkedin.com/company/totally-home-real-estate-llc/" title="Dribbble"><i className="fab fa-linkedin" /></a></li>
 			</ul>
 		</div>
         }

@@ -98,27 +98,27 @@ const NavbarV3 = () => {
 													<li className={activeMenuItem === 'Home' ? 'active' : ''} ><Link to="/">Home</Link></li>
 													<li className="menu-icon a-inactive"><Link to="#">Buy</Link>
 														<ul>
-															<li><Link to="/shop">Apartments </Link></li>
+															<li><Link>Apartments </Link></li>
 
-															<li><Link to="/shop">Villas </Link></li>
+															<li><Link >Villas </Link></li>
 
-															<li><Link to="/shop">Penthouses </Link></li>
+															<li><Link >Penthouses </Link></li>
 
-															<li><Link to="/shop">Townhouses </Link></li>
+															<li><Link >Townhouses </Link></li>
 
-															<li><Link to="/shop">Off Plan </Link></li>
+															<li><Link >Off Plan </Link></li>
 
 														</ul>
 													</li>
 													<li className="menu-icon a-inactive"><Link to="#">Rent</Link>
 														<ul>
-															<li className="menu-icon a-inactive-child"><Link to="/shop">Apartments </Link></li>
+															<li className="menu-icon a-inactive-child"><Link >Apartments </Link></li>
 
-															<li className="menu-icon a-inactive-child"><Link to="/shop">Villas </Link></li>
+															<li className="menu-icon a-inactive-child"><Link >Villas </Link></li>
 
-															<li className="menu-icon a-inactive-child"><Link to="/shop">Penthouses </Link></li>
+															<li className="menu-icon a-inactive-child"><Link >Penthouses </Link></li>
 
-															<li className="menu-icon a-inactive-child"><Link to="/shop">Townhouses </Link></li>
+															<li className="menu-icon a-inactive-child"><Link>Townhouses </Link></li>
 														</ul>
 													</li>
 													<li className={activeMenuItem === '/off-plan' ? 'active' :"menu-icon a-inactive"}><Link to="/off-plan">OffPlan</Link></li>
@@ -126,8 +126,8 @@ const NavbarV3 = () => {
 													<li className="menu-icon a-inactive" ><a href="#">Exclusive Properties </a>
 
 													</li>
-													<li className="menu-icon a-inactive"><Link to="/blog-details">Explore Dubai </Link></li>
-													<li className="menu-icon a-inactive"><Link to="/service">Our Mission </Link></li>
+													<li className="menu-icon a-inactive"><Link >Explore Dubai </Link></li>
+													<li className="menu-icon a-inactive"><Link to="/about-us">Our Mission </Link></li>
 
 													<li className="menu-icon a-inactive"><Link to="/contact-us">Contact</Link></li>
 													{/* <li className="special-link">

@@ -54,12 +54,12 @@ class Footer2 extends Component {
 									<h4 className="footer-title">Best Neighborhood </h4>
 									<div className="footer-menu go-top">
 										<ul>
-											<li><Link to="/about">Downtown Dubai</Link></li>
-											<li><Link to="/blog-grid">Palm Jumeirah</Link></li>
-											<li><Link to="/shop">Emaar Beachfront</Link></li>
-											<li><Link to="/contact">Dubai Hills Estate</Link></li>
-											<li><Link to="/faq">Dubai Marina</Link></li>
-											<li><Link to="/contact">Jumeirah Beach Residence</Link></li>
+											<li><Link >Downtown Dubai</Link></li>
+											<li><Link >Palm Jumeirah</Link></li>
+											<li><Link >Emaar Beachfront</Link></li>
+											<li><Link >Dubai Hills Estate</Link></li>
+											<li><Link >Dubai Marina</Link></li>
+											<li><Link >Jumeirah Beach Residence</Link></li>
 										</ul>
 									</div>
 								</div>
@@ -69,12 +69,12 @@ class Footer2 extends Component {
 									<h4 className="footer-title">Luxury </h4>
 									<div className="footer-menu go-top">
 										<ul>
-											<li><Link to="/about">Luxury Properties For Sale</Link></li>
-											<li><Link to="/blog-grid">Luxury Properties For Rent</Link></li>
-											<li><Link to="/shop">Luxury Penthouses For Sale</Link></li>
-											<li><Link to="/contact">Luxury Penthouses For Rent</Link></li>
-											<li><Link to="/faq">Luxury Villas For Sale</Link></li>
-											<li><Link to="/contact">Luxury Villas For Rent</Link></li>
+											<li><Link >Luxury Properties For Sale</Link></li>
+											<li><Link >Luxury Properties For Rent</Link></li>
+											<li><Link >Luxury Penthouses For Sale</Link></li>
+											<li><Link >Luxury Penthouses For Rent</Link></li>
+											<li><Link >Luxury Villas For Sale</Link></li>
+											<li><Link >Luxury Villas For Rent</Link></li>
 										</ul>
 									</div>
 								</div>
@@ -84,13 +84,12 @@ class Footer2 extends Component {
 									<h4 className="footer-title">Trending </h4>
 									<div className="footer-menu go-top">
 										<ul>
-											<li><Link to="/cart">Exclusive Properties</Link></li>
-											<li><Link to="/wishlist">Investment Property</Link></li>
-											<li><Link to="/login">Investment Opportunities</Link></li>
-											<li><Link to="/checkout">Off plan Villa Projects</Link></li>
-											<li><Link to="/about">Plot in Dubai</Link></li>
-											<li><Link to="/shop">Luxury Properties For Sale</Link></li>
-											<li><Link to="/shop">Luxury Properties For Rent</Link></li>
+											<li><Link >Exclusive Properties</Link></li>
+											<li><Link >Investment Property</Link></li>
+											<li><Link >Investment Opportunities</Link></li>
+											<li><Link >Off plan Villa Projects</Link></li>
+											<li><Link >Off Plan Apartment Projects</Link></li>
+											<li><Link>Off Plan Townhouse Projects</Link></li>
 											{/* <li><Link to="/shop">Buy Ready Villas in Dubai</Link></li>
 				                <li><Link to="/shop">Townhouse for Sale in Dubai</Link></li>
 				                <li><Link to="/shop">Buy Ready Townhouses in Dubai</Link></li>
@@ -104,7 +103,7 @@ class Footer2 extends Component {
 									<h4 className="footer-title">Furnished </h4>
 									<div className="footer-menu go-top">
 										<ul>
-											<li><Link to="/login">
+											<li><Link >
 
 
 
@@ -114,12 +113,12 @@ class Footer2 extends Component {
 
 
 											</Link></li>
-											<li><Link to="/my-account">Furnished Villas For Sale</Link></li>
-											<li><Link to="/wishlist">Furnished Villas For Rent</Link></li>
-											<li><Link to="/add-listing">Furnished Apartments For Sale</Link></li>
-											<li><Link to="/faq">Furnished Apartments For Rent</Link></li>
-											<li><Link to="/contact">Furnished Townhouses For Sale</Link></li>
-											<li><Link to="/faq">Furnished Townhouses For Rent</Link></li>
+											<li><Link>Furnished Villas For Sale</Link></li>
+											<li><Link >Furnished Villas For Rent</Link></li>
+											<li><Link >Furnished Apartments For Sale</Link></li>
+											<li><Link >Furnished Apartments For Rent</Link></li>
+											<li><Link >Furnished Townhouses For Sale</Link></li>
+											<li><Link >Furnished Townhouses For Rent</Link></li>
 											{/* <li><Link to="/faq">Furnished Villas for Rent</Link></li>
 				                <li><Link to="/faq">Furnished Townhouses for Rent</Link></li> */}
 

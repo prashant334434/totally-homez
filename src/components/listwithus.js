@@ -35,6 +35,7 @@ import CultureListWithUs from './section-components/cultureListWithUs';
 import PhilosphyListWithus from './section-components/philosphyListWithUs';
 import PerksListWithUs from './section-components/perksListWithUs';
 import MetaData from './Layout/MetaData';
+import PropertyWorth2 from './section-components/property-worth2';
 
 const ListWithUs = () => {
 
@@ -55,6 +56,8 @@ const ListWithUs = () => {
         <SellWithUs loading={loading} listWithUs={listWithUs} />
         <MarketingProperty loading={loading} listWithUs={listWithUs} />
         <PropertyWorth loading={loading} listWithUs={listWithUs} />
+        <PropertyWorth2 loading={loading} listWithUs={listWithUs} />
+
         {/* <PropertyPrepration/> */}
         <UniqueProperty loading={loading} listWithUs={listWithUs} />
 

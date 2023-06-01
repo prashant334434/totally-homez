@@ -11,7 +11,7 @@ const AboutV5 = (props) => {
 
 	return (
 		<div className={customClass}>
-			<div className="ltn__about-us-area pt-100  go-top  ">
+			<div className="ltn__about-us-area pt-40   go-top  ">
 				<div className="container">
 					{
 						props?.homePage?.map((homePage) => (
@@ -19,7 +19,7 @@ const AboutV5 = (props) => {
 
 								<div className="col-lg-5 align-self-center">
 									<div className="about-us-img-wrap ltn__img-shape-left  about-img-left">
-										<img src={`https://www.arabnews.com/sites/default/files/styles/n_670_395/public/main-image/2022/08/04/3372656-574895850.jpg?itok=06dTZC_n`} alt="Image" />
+										<img src={"/assets/img/mission.png"} alt="Image" />
 									</div>
 								</div>
 								<div className="col-lg-7 align-self-center">

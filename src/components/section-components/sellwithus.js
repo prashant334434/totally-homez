@@ -28,7 +28,6 @@ const SellWithUs = (props) => {
 								<div className="col-lg-6 align-self-center">
 									<div className="about-us-info-wrap">
 										<div className="section-title-area ltn__section-title-2--- mb-20">
-											<h6 className="section-subtitle section-subtitle-2 ltn__secondary-color">SELL WITH US </h6>
 											<h1 className="section-title">{item?.sec1_h} </h1>
 											<p>{item?.sec1_dsc}  </p>
 											
