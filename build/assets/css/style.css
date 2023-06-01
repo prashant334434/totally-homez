@@ -12047,6 +12047,7 @@ input::placeholder {
   border: 1px solid var(--border-color-8);
   margin-bottom: 30px;
   padding: 40px 30px 35px;
+  min-height: 400px;
 }
 .ltn__feature-item-6::before {
   position: absolute;
@@ -13689,7 +13690,7 @@ blockquote::before {
 }
 .ltn__testimonial-item-7 .ltn__testimoni-info p {
   font-size: 18px;
-  min-height: 292px;
+  min-height: 492px;
 }
 .ltn__testimonial-item-7 .ltn__testimoni-info .fixingsizing {
   font-size: 18px;
