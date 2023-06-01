@@ -15,7 +15,7 @@ const AboutV5 = (props) => {
 				<div className="container">
 					{
 						props?.aboutUsData?.map((about) => (
-							<div className="row">
+							<div key={about?.id}className="row">
 
 								<div className="col-lg-5 align-self-center">
 									<div className="about-us-img-wrap ltn__img-shape-left  about-img-left">

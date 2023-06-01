@@ -15,7 +15,7 @@ import CategoryV3 from './section-components/category-v3';
 import VideoV2 from './section-components/video-v2';
 import BestTownhouse from './section-components/BestTownhouse';
 import BestPenthouse from './section-components/BestPenthouse';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { getAllPropertiesApi } from '../actions/propertiesActions';
 import TownhouseProductGrid from './shop-components/TownhouseProductGrid';
 import PenthouseProductGrid from './shop-components/PenthouseProductGrid';
@@ -29,12 +29,15 @@ import MetaData from './Layout/MetaData';
 import AboutUs from './about-uss';
 import AboutUsHome from './shop-components/AboutUsHome';
 import Curousal1 from './shop-components/curosal-1';
+import { getHomePageApi } from '../actions/homePageActions';
 
 
 const Home_V7 = () => {
+  const {loading,homePage}=useSelector((state)=>state.homePage)
   const dispatch = useDispatch()
   useEffect(() => {
     dispatch(getAllPropertiesApi())
+    dispatch(getHomePageApi())
 
   }, [dispatch])
   const slides = [
@@ -55,7 +58,10 @@ const Home_V7 = () => {
     },
   ];
   return <div>
-    <MetaData metaKeyword="meta keyword test" title="Totally Homez" />
+     {homePage?.length > 0 &&
+            <MetaData title={homePage[0]?.seo_titel} metaKeyword={homePage[0]?.seo_teg} metaDesription={homePage[0]?.seo_des} />
+
+        }
 
     <Navbar CustomClass="ltn__header-transparent gradient-color-2" />
     <BannerV5 />

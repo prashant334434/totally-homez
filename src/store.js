@@ -14,6 +14,7 @@ import { careerReducer } from "./reducers/careerReducer";
 import { aboutReducer } from "./reducers/aboutReducer";
 import { communityReducer } from "./reducers/communityReducer";
 import { getOffPlanReducer } from "./reducers/offPlanReducers";
+import { homePageReducer } from "./reducers/homePageReducer";
 
 const reducer=combineReducers({
     user:userReducer,
@@ -46,7 +47,8 @@ const reducer=combineReducers({
     offPlan:getOffPlanReducer,
     propertyImages:propertyImagesReducer,
     propertiesNearBy:propertyNearByReducer,
-    propertyAmenities:propertyAmenitiesReducer
+    propertyAmenities:propertyAmenitiesReducer,
+    homePage:homePageReducer
 
   
     

@@ -74,8 +74,8 @@ const ProductGrid = (props) => {
                             >
 
                                 {carouselItems.map((item) => (
-                                    <div className="col-lg-12">
-                                        <div key={item?.id} className="ltn__product-item ltn__product-item-4 text-center---">
+                                    <div key={item?.id} className="col-lg-12">
+                                        <div  className="ltn__product-item ltn__product-item-4 text-center---">
                                             <div className="product-img go-top">
                                                 <Link to={`/property-details/${item?.id}`}><img src={item?.property_imges} alt="#" /></Link>
                                                 <div className="product-badge">
