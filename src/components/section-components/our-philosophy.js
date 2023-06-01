@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import parse from 'html-react-parser';
+import { ABOUT_IMAGE_URL } from '../../constants/config';
 
 
 
@@ -37,7 +38,7 @@ const OurPhilosophy = ({ careerData }) => {
                                                                                                         </div>
                                                                                                 </div>
                                                                                                 <div className="slide-item-img">
-                                                                                                        <img src={career?.sec5_img} alt="#" />
+                                                                                                        <img  src={`${ABOUT_IMAGE_URL}/${career?.sec5_img}`} alt="#" />
                                                                                                 </div>
                                                                                         </div>
                                                                                 </div>

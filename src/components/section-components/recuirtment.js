@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import parse from 'html-react-parser';
+import { ABOUT_IMAGE_URL } from '../../constants/config';
 
 
 
@@ -30,7 +31,7 @@ let imagealt = 'image'
 						{/*  <h6 className="slide-sub-title white-color--- animated"><span><i className="fas fa-home" /></span> Real Estate Agency</h6>*/}
 						  <h1 className="slide-title animated "> <br /><span>{item?.sec8_h} </span></h1>
 						  <div className="slide-brief animated">
-							<p>{item?.sec8_dsc}  </p>
+							<p>{item?.make_us_dsc}  </p>
 	
 							
 	
@@ -38,7 +39,7 @@ let imagealt = 'image'
 						</div>
 					  </div>
 					  <div className="slide-item-img">
-						<img src={item?.sec8_img} alt="#" />
+						<img  src={`${ABOUT_IMAGE_URL}/${item?.sec8_img}`} alt="#" />
 					  </div>
 					</div>
 				  </div>

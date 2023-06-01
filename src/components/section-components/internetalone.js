@@ -18,7 +18,7 @@ const InternetAlone = (props) => {
 						<div className="row">
 					<div className="col-lg-5 align-self-center">
 					<div className="about-us-img-wrap ltn__img-shape-left  about-img-left">
-					<img src={`${ABOUT_IMAGE_URL}/${item?.sec14_img}`} alt="#" />
+						<img  src={`${ABOUT_IMAGE_URL}/${item?.sec13_img}`} alt="Image" />
 					</div>
 					</div>
 					<div className="col-lg-7 align-self-center">

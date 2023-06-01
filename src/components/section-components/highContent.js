@@ -42,6 +42,9 @@ const HighContent = ({ listWithUs }) => {
 											</div>
 										</div>
 										
+										<div className="slide-item-img">
+											<img  src={`${ABOUT_IMAGE_URL}/${item?.sec12_img}`} alt="#" />
+										</div>
 									</div>
 								</div>
 									))

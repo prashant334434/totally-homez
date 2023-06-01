@@ -41,10 +41,11 @@ const CareerV1 = () => {
         <OurCulture loading={loading} careerData={career} />
         <OurPhilosophy loading={loading} careerData={career} />
         <ThePerks loading={loading} careerData={career} />
-        <Testimonial />
+        <Testimonial  loading={loading} careerData={career} />
         {/* <BlogSlider />*/}
-        <RecruitmentProcess loading={loading} careerData={career} />
         <EmployeeEvent loading={loading} careerData={career} />
+        <RecruitmentProcess loading={loading} careerData={career} />
+
         <CallToActionV1 />
         <Footer />
     </div>
