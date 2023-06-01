@@ -20,6 +20,9 @@ const HighContent = ({ listWithUs }) => {
 									listWithUs?.map((item,index)=>(
 										<div className="row">
 									<div className="col-lg-12 align-self-center">
+									<div className="slide-item-img">
+											<img src={`${ABOUT_IMAGE_URL}/${item?.sec12_img}`} alt="#" />
+										</div>
 										<div className="slide-item-info">
 											<div className="slide-item-info-inner ltn__slide-animation">
 												<div className="slide-video mb-50 d-none">
@@ -38,9 +41,7 @@ const HighContent = ({ listWithUs }) => {
 												</div>
 											</div>
 										</div>
-										<div className="slide-item-img">
-											<img src={`${ABOUT_IMAGE_URL}/${item?.sec12_img}`} alt="#" />
-										</div>
+										
 									</div>
 								</div>
 									))

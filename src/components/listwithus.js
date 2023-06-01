@@ -36,6 +36,7 @@ import PhilosphyListWithus from './section-components/philosphyListWithUs';
 import PerksListWithUs from './section-components/perksListWithUs';
 import MetaData from './Layout/MetaData';
 import PropertyWorth2 from './section-components/property-worth2';
+import HighContent2 from './section-components/high-content2';
 
 const ListWithUs = () => {
 
@@ -68,6 +69,8 @@ const ListWithUs = () => {
         <QualityFocusedCreation loading={loading} listWithUs={listWithUs} customClass="ltn__feature-area  pt-120 pb-90 mb-120---" />
         {/* <BlogSlider />*/}
         <HighContent loading={loading} listWithUs={listWithUs} />
+        <HighContent2 loading={loading} listWithUs={listWithUs} />
+
         {/* <InternetAlone loading={loading} listWithUs={listWithUs} /> */}
         <TakeCareEverything listWithUs={listWithUs} />
         <ReadyToSell />
