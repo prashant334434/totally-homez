@@ -36,12 +36,7 @@ const TeamDetails = ({loading,teamDetails}) => {
 			<div className="col-lg-12">
 				<div className="ltn__team-details-member-about">
 				<ul>
-					<li><strong>Positions:</strong> Senior Property Seller</li>
-					<li><strong>Email:</strong> {teamDetails?.email}</li>
-											{/* <li><strong>Fax:</strong> +0123-456 789</li> */}
-											<li><strong>Phone:</strong> {teamDetails?.mobile_no}</li>
-
-											<li><strong>Whatsapp:</strong> {teamDetails?.whatsapp}</li>
+rm -rf build				
 											<li> {teamDetails?.description}</li>
 
 
