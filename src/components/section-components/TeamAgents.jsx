@@ -42,8 +42,7 @@ const TeamAgents = (props) => {
 						<div className="row">
 							<div className="col-lg-12">
 								<div className="section-title-area ltn__section-title-2--- text-center">
-									<h6 className="section-subtitle section-subtitle-2 ltn__secondary-color">Team</h6>
-									<h1 className="section-title">Our Agents</h1>
+									<h1 className="section-title">{props?.homePage[0]?.sec19_h}</h1>
 								</div>
 							</div>
 						</div>

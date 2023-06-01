@@ -24,8 +24,7 @@ const BlogSlider
 					<div className="row">
 						<div className="col-lg-12">
 							<div className="section-title-area ltn__section-title-2--- text-center">
-								<h6 className={"section-subtitle ltn__secondary-color " + customClass}>News &amp; Blogs</h6>
-								<h1 className="section-title">Latest News Feeds</h1>
+								<h1 className="section-title">{props?.homePage[0]?.sec20_h}</h1>
 							</div>
 						</div>
 					</div>

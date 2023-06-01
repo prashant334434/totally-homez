@@ -7,15 +7,15 @@ const BestPenthouse = (props) => {
   return (
     <div className={"ltn__about-us-area pt-40 pb-40"+customClass}>
     <div className="container">
-      <div className="row">
+      {props?.homePage?.map((item,index)=>(
+        <div className="row">
         <div className="col-lg-6 align-self-center">
           <div className="about-us-info-wrap">
             <div className="section-title-area ltn__section-title-2--- mb-30">
               {/* <h6 className="section-subtitle section-subtitle-2 ltn__secondary-color">About Us</h6> */}
-              <h1 className="section-title">Best Penthouses  In Dubai </h1>
-              <p>the best off-plan projects in Dubai offer a combination of attractive payment plans, high-quality amenities, prime locations, investment opportunities, innovative design, reliable developers, and easy access to transportation.</p>
-                            <p>the best off-plan projects in Dubai offer a combination of attractive payment plans, high-quality amenities, prime locations, investment opportunities, innovative design, reliable developers, and easy access to transportation.</p>
-
+              <h1 className="section-title" dangerouslySetInnerHTML={{ __html: item?.sec11_h }}/>
+                  <p dangerouslySetInnerHTML={{ __html: item?.sec11_dsc }}/>
+            
             </div>
             {/* <ul className="ltn__list-item-1 ltn__list-item-1-before clearfix">
               <li>High-quality amenities</li>
@@ -61,6 +61,8 @@ const BestPenthouse = (props) => {
           </div>
         </div>
       </div>
+      ))}
+      
     </div>
   </div>
   )

@@ -69,7 +69,7 @@ const Home_V7 = () => {
 
 
 
-    <BestProperty customClass='ltn__feature-area section-bg-1 pt-80 pb-80  mb-120---' />
+    <BestProperty homePage={homePage} customClass='ltn__feature-area section-bg-1 pt-80 pb-80  mb-120---' />
     <Curousal1/>
     {/* <Aboutv2 /> */}
     {/* <Gallery /> */}
@@ -78,7 +78,7 @@ const Home_V7 = () => {
     <CategoryV3 />
     {/* <HomeCrousal/> */}
     {/* <ApartmentV1 CustomClass="ltn__feature-area section-bg-3 pt-120 pb-90 mb-120---" /> */}
-    <BestVilla customClass="ltn__feature-area section-bg-0 pt-120 pb-40 mb-120---" />
+    <BestVilla homePage={homePage} customClass="ltn__feature-area section-bg-0 pt-120 pb-40 mb-120---" />
     
 
     {/* <BestPenthouse customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---"  /> */}
@@ -93,11 +93,11 @@ const Home_V7 = () => {
     <ProductGridRent />
     {/* <Availability />*/}
     {/*  <SimpleSlider/>*/}
-    <VideoV2 />
+    <VideoV2 homePage={homePage} />
     <ApartmentProductGridSale />
     <ApartmentProductGridRent />
     {/* <ProductGrid /> */}
-    <BestPenthouse />
+    <BestPenthouse homePage={homePage} />
     <VideoV1 />
 
     <PenthouseProductGrid />
@@ -108,7 +108,7 @@ const Home_V7 = () => {
     {/* <Featuresv1 customClass="ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---"/> */}
     {/* <ProSlider /> */}
     {/* <Gallery /> */}
-    <BestTownhouse />
+    <BestTownhouse homePage={homePage} />
     <TownhouseProductGrid />
 
     <TownhouseProductGridRent />
@@ -117,11 +117,11 @@ const Home_V7 = () => {
     {/* <Category /> */}
     {/* <Testimonial /> */}
     <AboutUsHome/>
-    <AboutV5 customClass='ltn__feature-area section-bg-8 pt-40 pb-90 mb-120---' />
-    <TeamAgents customClass='ltn__feature-area section-bg-1 pt-80  mb-120---' />
+    <AboutV5 homePage={homePage} customClass='ltn__feature-area section-bg-8 pt-40 pb-90 mb-120---' />
+    <TeamAgents homePage={homePage} customClass='ltn__feature-area section-bg-1 pt-80  mb-120---' />
     {/* <Testimonial customClass='ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---'/> */}
 
-    <BlogSlider customClass="section-subtitle-2 " />
+    <BlogSlider homePage={homePage} customClass="section-subtitle-2 " />
 
     {/* <BlogT customClass='ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---'/> */}
     <CallToActionV1 />
