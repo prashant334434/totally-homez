@@ -70,7 +70,7 @@ class Footer_v1 extends Component {
 				                    <i className="icon-call" />
 				                  </div>
 				                  <div className="footer-address-info">
-				                    <p><a href="+971 45 54 8620">+971 45 54 8620</a></p>
+				                    <p><a href="+971 45 54 8620">+971 54 289 7686</a></p>
 				                  </div>
 				                </li>
 				                <li>
@@ -78,7 +78,7 @@ class Footer_v1 extends Component {
 				                    <i className="icon-mail" />
 				                  </div>
 				                  <div className="footer-address-info">
-				                    <p><a href="support@totallyhomerealestate.ae">support@totallyhomerealestate.ae</a></p>
+				                    <p><a href="support@totallyhomerealestate.ae">sales@totallyhomerealestate.com</a></p>
 				                  </div>
 				                </li>
 				              </ul>
@@ -90,15 +90,15 @@ class Footer_v1 extends Component {
 				        </div>
 				        <div className="col-xl-2 col-md-6 col-sm-6 col-12">
 				          <div className="footer-widget footer-menu-widget clearfix">
-				            <h4 className="footer-title">Curations </h4>
+				            <h4 className="footer-title">Living LifeStyle </h4>
 				            <div className="footer-menu go-top">
 				              <ul>
-				                <li><Link to="/about">Akoya Oxygen</Link></li>
-				                <li><Link to="/blog-grid">Al Barari</Link></li>
-				                <li><Link to="/shop">Al Satwa</Link></li>
-				                <li><Link to="/contact">Al Warqaa</Link></li>
-				                <li><Link to="/faq">Culture Village</Link></li>
-				                <li><Link to="/contact">Deira</Link></li>
+				                <li><Link >Beachfront Properties</Link></li>
+				                <li><Link >Waterfront Properties</Link></li>
+				                <li><Link >Downtown Properties</Link></li>
+				                <li><Link >Golf Course Properties</Link></li>
+				                <li><Link >Island Living Properties</Link></li>
+				                <li><Link >Green Nature Living Properties</Link></li>
 				              </ul>
 				            </div>
 				          </div>
@@ -108,12 +108,15 @@ class Footer_v1 extends Component {
 				            <h4 className="footer-title">Navigate </h4>
 				            <div className="footer-menu go-top">
 				              <ul>
-							  <li><Link to="/about-us">About</Link></li>
-				                <li><Link to="/team">Team </Link></li>
-				                <li><Link to="/blogs">Blogs</Link></li>
-				                <li><Link to="/contact">Gallery</Link></li>
-				                <li><Link to="/list-with-us"> Sell with us</Link></li>
-				                <li><Link to="/career">Careers</Link></li>
+							  <li><Link >Best Property In Dubai</Link></li>
+				                <li><Link >Off Plan Apartments </Link></li>
+				                <li><Link >Off Plan Villas</Link></li>
+				                <li><Link >Gallery</Link></li>
+				                <li><Link > Off Plan Townhouses</Link></li>
+				                <li><Link >Brand New Apartments</Link></li>
+
+								<li><Link >Brand New Villas</Link></li>
+
 				              </ul>
 				            </div>
 				          </div>
@@ -123,12 +126,12 @@ class Footer_v1 extends Component {
 				            <h4 className="footer-title">Community Guides </h4>
 				            <div className="footer-menu go-top">
 				              <ul>
-				                <li><Link to="/login">Login</Link></li>
-				                <li><Link to="/my-account">My account</Link></li>
-				                <li><Link to="/wishlist">Wish List</Link></li>
-				                <li><Link to="/add-listing">Add listing</Link></li>
-				                <li><Link to="/faq">FAQ</Link></li>
-				                <li><Link to="/contact-us">Contact us</Link></li>
+				                <li><Link >Business Bay</Link></li>
+				                <li><Link >Creek Harbour</Link></li>
+				                <li><Link >Til Al Ghaf</Link></li>
+				                <li><Link >La Mer</Link></li>
+				                <li><Link >Bluewaters</Link></li>
+				                <li><Link >Madinat Jumeirah Living </Link></li>
 				              </ul>
 				            </div>
 				          </div>
@@ -139,12 +142,12 @@ class Footer_v1 extends Component {
 				            <h4 className="footer-title">Explore </h4>
 				            <div className="footer-menu go-top">
 				              <ul>
-				                <li><Link to="/login">Login</Link></li>
-				                <li><Link to="/my-account">My account</Link></li>
-				                <li><Link to="/wishlist">Wish List</Link></li>
-				                <li><Link to="/add-listing">Add listing</Link></li>
-				                <li><Link to="/faq">FAQ</Link></li>
-				                <li><Link to="/contact-us">Contact us</Link></li>
+				                <li><Link >Waterfront Properties for Sale</Link></li>
+				                <li><Link >Waterfront Properties for Rent</Link></li>
+				                <li><Link >Waterfront Properties for Sale</Link></li>
+				                <li><Link >Seaview Properties for Rent</Link></li>
+				                <li><Link >Oceanview Properties for Sale</Link></li>
+				                <li><Link >Oceanview Properties for Rent</Link></li>
 				              </ul>
 				            </div>
 				          </div>
