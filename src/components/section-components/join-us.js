@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import parse from 'html-react-parser';
+import { ABOUT_IMAGE_URL } from '../../constants/config';
 let publicUrl = process.env.PUBLIC_URL+'/'
 let imagealt = 'image'
 
@@ -33,7 +34,7 @@ const JoinUs = ({careerData}) => {
 							</div>
 						  </div>
 						  <div className="slide-item-img">
-							<img src={career?.join_img} alt="#" />
+							<img   src={`${ABOUT_IMAGE_URL}/${career?.join_img}`} alt="#" />
 						  </div>
 						</div>
 					  </div>
