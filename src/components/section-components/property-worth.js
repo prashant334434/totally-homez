@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import ApartmentV1 from './apartment-v1'
+import { ABOUT_IMAGE_URL } from '../../constants/config'
 const PropertyWorth = (props) => {
     let publicUrl = process.env.PUBLIC_URL+'/'
     let customClass = props.customClass ? props.customClass :''
@@ -15,7 +16,7 @@ const PropertyWorth = (props) => {
           <div className="row">
           <div className="col-lg-6 align-self-center">
               <div className="about-us-img-wrap about-img-right">
-                <img src={item?.sec3_img} alt="About Us Image" />
+                <img src={`${ABOUT_IMAGE_URL}/${item?.sec3_img} `} alt="About Us Image" />
               </div>
             </div>
             <div className="col-lg-6 align-self-center">
