@@ -18,6 +18,7 @@ import TeamAgents from './section-components/TeamAgents';
 import { useDispatch, useSelector } from 'react-redux';
 import { getAboutUsApi } from '../actions/aboutUsActions';
 import MetaData from './Layout/MetaData';
+import AboutTeams from './section-components/AboutTeams';
 
 const AboutUs = () => {
     const {loading,about}=useSelector((state)=>state.about)
@@ -39,9 +40,10 @@ const AboutUs = () => {
         <OurPassion loading={loading} aboutUsData={about}/>
         <OurVision loading={loading} aboutUsData={about}/>
         <OurValues loading={loading} aboutUsData={about}/>
-        <ServiceV1 />
+        <ServiceV1 loading={loading} aboutUsData={about}/>
         <OurApproach loading={loading} aboutUsData={about}/>
-        <TeamAgents showThree={true}/>
+      
+        <AboutTeams showThree={true} loading={loading} aboutUsData={about}/>
        {/* <BlogSlider sectionClass="pt-120" />*/}
         <CallToActionV1 />
         <Footer />
