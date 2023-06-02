@@ -33,7 +33,7 @@ import { getHomePageApi } from '../actions/homePageActions';
 
 
 const Home_V7 = () => {
-  const {loading,homePage}=useSelector((state)=>state.homePage)
+  const { loading, homePage } = useSelector((state) => state.homePage)
   const dispatch = useDispatch()
   useEffect(() => {
     dispatch(getAllPropertiesApi())
@@ -58,10 +58,10 @@ const Home_V7 = () => {
     },
   ];
   return <div>
-     {homePage?.length > 0 &&
-            <MetaData title={homePage[0]?.seo_titel} metaKeyword={homePage[0]?.seo_teg} metaDesription={homePage[0]?.seo_des} />
+    {homePage?.length > 0 &&
+      <MetaData title={homePage[0]?.seo_titel} metaKeyword={homePage[0]?.seo_teg} metaDesription={homePage[0]?.seo_des} />
 
-        }
+    }
 
     <Navbar CustomClass="ltn__header-transparent gradient-color-2" />
     <BannerV5 />
@@ -70,16 +70,16 @@ const Home_V7 = () => {
 
 
     <BestProperty homePage={homePage} customClass='ltn__feature-area section-bg-1 pt-80 pb-80  mb-120---' />
-    <Curousal1/>
+    <Curousal1 />
     {/* <Aboutv2 /> */}
     {/* <Gallery /> */}
-  {/*<CarouselSlider />*/}
+    {/*<CarouselSlider />*/}
     {/* <TeamCarousel/> */}
     <CategoryV3 />
     {/* <HomeCrousal/> */}
     {/* <ApartmentV1 CustomClass="ltn__feature-area section-bg-3 pt-120 pb-90 mb-120---" /> */}
     <BestVilla homePage={homePage} customClass="ltn__feature-area section-bg-0 pt-120 pb-40 mb-120---" />
-    
+
 
     {/* <BestPenthouse customClass="ltn__feature-area section-bg-6 pt-120 pb-90 mb-120---"  /> */}
     {/* <ProductSliderV1/> */}
@@ -116,7 +116,7 @@ const Home_V7 = () => {
 
     {/* <Category /> */}
     {/* <Testimonial /> */}
-    <AboutUsHome/>
+    <AboutUsHome />
     <AboutV5 homePage={homePage} customClass='ltn__feature-area section-bg-8 pt-40 pb-90 mb-120---' />
     <TeamAgents homePage={homePage} customClass='ltn__feature-area section-bg-1 pt-80  mb-120---' />
     {/* <Testimonial customClass='ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---'/> */}
