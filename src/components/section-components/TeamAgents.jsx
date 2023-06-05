@@ -28,10 +28,14 @@ const TeamAgents = (props) => {
 
 	if (data?.length > 0) {
 
-		
-			carouselItems = data
 
-		
+		carouselItems = data
+
+
+	}
+
+	const handleLinkClick = (id) => {
+		console.log(id)
 	}
 
 	return (
@@ -39,7 +43,7 @@ const TeamAgents = (props) => {
 			<div>
 				<div className="ltn__product-slider-area ltn__product-gutter  plr--7">
 					<div className="container-fluid">
-					
+
 						<div className="row">
 							<div className="col-lg-12">
 								<div className="section-title-area ltn__section-title-2--- text-center">
@@ -51,7 +55,7 @@ const TeamAgents = (props) => {
 							<Carousel
 								additionalTransfrom={0}
 								arrows
-							
+
 								centerMode={false}
 								containerClass="carousel-container"
 								dotListClass=""
@@ -92,8 +96,8 @@ const TeamAgents = (props) => {
 													<img className="img2" src={`${TEAM_API_URL}/${item.path}`} alt="Image" />
 												</div>
 												<div className="team-info">
-													<Link to={`/team-details/${item?.id}`}><h4>{item.name}</h4></Link>
-													
+													<Link onClick={() => handleLinkClick(item?.id)} to={`/team-details/${item?.id}`}><h4>{item.name}</h4></Link>
+
 													<h6 className=" designnation ltn__secondary-color">{item.designation}</h6>
 												</div>
 											</div>

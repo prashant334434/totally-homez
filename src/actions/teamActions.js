@@ -41,3 +41,24 @@ export const getTeamsApi = () => async (dispatch) => {
       });
     }
   };
+
+
+  export const currentTeamMemberId = (id) => async (dispatch) => {
+    console.log(typeof(id))
+    try {
+      dispatch({ type: GET_TEAM_DETAILS_REQUEST });
+  
+      const  {data}  = await axios.get(`https://totallyhomerealestate.com/API/api/teams/${id}`);
+
+      console.log("action",data)
+  
+      dispatch({
+        type:GET_TEAM_DETAILS_SUCCESS,
+        payload: data,
+      });
+    } catch (error) {
+      dispatch({
+        type:GET_TEAM_DETAILS_FAILURE,
+      });
+    }
+  };

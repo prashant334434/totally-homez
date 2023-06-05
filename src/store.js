@@ -4,7 +4,7 @@ import {composeWithDevTools} from 'redux-devtools-extension'
 import { userReducer } from "./reducers/userReducers";
 import { propertyAmenitiesReducer, propertyDetailsReducer, propertyImagesReducer, propertyNearByReducer, propertyReducer } from "./reducers/propertyReducers";
 import { carouselDetailsReducer, carouselReducer } from "./reducers/carouselReducers";
-import { teamDetailsReducer, teamReducer } from "./reducers/teamReducers";
+import { getCurrentTeamMemberReducer, teamDetailsReducer, teamReducer } from "./reducers/teamReducers";
 import { apartmentCategoryReducer, apartmentCategoryRentReducer, catgoryPropertiesRentReducer, catgoryReducer, catgoryRentReducer, penthouseCategoryReducer, penthouseCategoryRentReducer, townhouseCategoryReducer, townhouseCategoryRentReducer } from "./reducers/catgoryReducres";
 import { blogReducer } from "./reducers/blogReducers";
 import { propertiesByTypeReducer } from "./reducers/propertyTypeReducers";
@@ -48,7 +48,8 @@ const reducer=combineReducers({
     propertyImages:propertyImagesReducer,
     propertiesNearBy:propertyNearByReducer,
     propertyAmenities:propertyAmenitiesReducer,
-    homePage:homePageReducer
+    homePage:homePageReducer,
+    currentTeamMember:getCurrentTeamMemberReducer
 
   
     
