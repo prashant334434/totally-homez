@@ -88,11 +88,10 @@ import OffPlanCategory from './components/offplan-category';
         {/* <Route path="/blog-right-sidebar" component={ BlogRightSidebar } /> */}
         <Route path="/blog" component={ Blog } />
 
-
         <Route path="/blog-details" component={ BlogDetails } />
         {/* <Route path="/contact" component={ Contact } /> */}
 
-        <Route path="/off-plan" component={ OffPlan } />
+        <Route path="/offplan-projects-in-dubai/:offPlanCategoryName" component={ OffPlan } />
 
 
         <Route path="/property-details/:id" component={ ProdductDetails } />
@@ -104,7 +103,7 @@ import OffPlanCategory from './components/offplan-category';
 
         <Route path="/about-us" component={ aboutUs } />
         <Route path="/shop-page" component={ ShopNew } />
-        <Route path="/community" component={ GuideLine } />
+        <Route path="/best-communites-in-dubai/:communityName" component={ GuideLine } />
         <Route path="/bread-crums" component={ BreadCrumbs } />
 
 

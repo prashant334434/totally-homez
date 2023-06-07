@@ -4,6 +4,7 @@ import { getOffPlanCategoryApi } from '../../actions/offPlanActions';
 import { useDispatch, useSelector } from 'react-redux';
 import { getCommunityCategoryApi } from '../../actions/communityAction';
 import { ADMIN_PROPERTY_IMAGES_URL } from '../../constants/config';
+import Loader from '../Loader/Loader';
 
 let publicUrl = process.env.PUBLIC_URL + '/'
 let imagealt = 'image'
@@ -22,6 +23,10 @@ const CategoryGrid33 = () => {
 		dispatch(getCommunityCategoryApi())
 
 	}, [dispatch])
+
+	if(loading){
+		return <Loader/>
+	}
 	return (
 		<div className="ltn__blog-area ltn__blog-item-3-normal pt-40 mb-100 go-top">
 			<div className="container">
@@ -32,11 +37,11 @@ const CategoryGrid33 = () => {
 							<div className="col-lg-4 col-sm-6 col-12">
 								<div className="ltn__blog-item ltn__blog-item-3">
 									<div className="ltn__blog-img">
-										<Link to="/blog-details"><img src={`${ADMIN_PROPERTY_IMAGES_URL}/${CommunityCat.img}`} alt="#" /></Link>
+										<Link ><img src={`${ADMIN_PROPERTY_IMAGES_URL}/${CommunityCat.img}`} alt="#" /></Link>
 									</div>
 									<div className="ltn__blog-brief">
 
-										<h3 className="ltn__blog-title"><Link to="/blog-details">{CommunityCat.titel_name}</Link></h3>
+										<h3 className="ltn__blog-title"><Link to={`/best-communites-in-dubai/${CommunityCat?.titel_name}`}>{CommunityCat.titel_name}</Link></h3>
 
 									</div>
 								</div>
