@@ -11124,6 +11124,15 @@ input::placeholder {
   background-position: center center;
   background-repeat: no-repeat;
 }
+.bg-image2 {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100px;
+}
+.shop-page-image{
+  height: 150px;
+}
 
 .bg-image-top {
   background-size: auto;
