@@ -12,8 +12,8 @@ import { contactReducer } from "./reducers/contactReducer";
 import { listWithUsReducer } from "./reducers/listWithUsReducer";
 import { careerReducer } from "./reducers/careerReducer";
 import { aboutReducer } from "./reducers/aboutReducer";
-import { communityReducer } from "./reducers/communityReducer";
-import { getOffPlanReducer } from "./reducers/offPlanReducers";
+import { communityCategoryReducer, communityReducer } from "./reducers/communityReducer";
+import { getOffPlanReducer, offPlanCategoryReducer } from "./reducers/offPlanReducers";
 import { homePageReducer } from "./reducers/homePageReducer";
 
 const reducer=combineReducers({
@@ -49,7 +49,10 @@ const reducer=combineReducers({
     propertiesNearBy:propertyNearByReducer,
     propertyAmenities:propertyAmenitiesReducer,
     homePage:homePageReducer,
-    currentTeamMember:getCurrentTeamMemberReducer
+    currentTeamMember:getCurrentTeamMemberReducer,
+    offPlanCategory:offPlanCategoryReducer,
+    communityCategory:communityCategoryReducer
+
 
   
     

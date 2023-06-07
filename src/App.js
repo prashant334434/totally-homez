@@ -83,8 +83,8 @@ import OffPlanCategory from './components/offplan-category';
         <Route path="/product-details" component={ ProdductDetails } />
         {/* blog */}
         <Route path="/blogs" component={ BlogGrid } />
-        <Route path="/category-v11" component={ CategoryGrid11 } />
-        <Route path="/offplan-category" component={ OffPlanCategory } />
+        <Route path="/best-communites-in-dubai" component={ CategoryGrid11 } />
+        <Route path="/offplan-projects-in-dubai" component={ OffPlanCategory } />
         {/* <Route path="/blog-right-sidebar" component={ BlogRightSidebar } /> */}
         <Route path="/blog" component={ Blog } />
 
