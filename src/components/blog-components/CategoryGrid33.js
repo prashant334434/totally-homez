@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { getOffPlanCategoryApi } from '../../actions/offPlanActions';
 import { useDispatch, useSelector } from 'react-redux';
 import { getCommunityCategoryApi } from '../../actions/communityAction';
+import { ADMIN_PROPERTY_IMAGES_URL } from '../../constants/config';
 
 let publicUrl = process.env.PUBLIC_URL + '/'
 let imagealt = 'image'
@@ -11,7 +12,7 @@ let imagealt = 'image'
 
 
 
-const CategoryGrid12 = () => {
+const CategoryGrid33 = () => {
 
 	const { communityCategory, loading } = useSelector((state)=>state.communityCategory)
 	const dispatch = useDispatch()
@@ -31,7 +32,7 @@ const CategoryGrid12 = () => {
 							<div className="col-lg-4 col-sm-6 col-12">
 								<div className="ltn__blog-item ltn__blog-item-3">
 									<div className="ltn__blog-img">
-										<Link to="/blog-details"><img src={publicUrl + "assets/img/blog/8.jpg"} alt="#" /></Link>
+										<Link to="/blog-details"><img src={`${ADMIN_PROPERTY_IMAGES_URL}/${CommunityCat.img}`} alt="#" /></Link>
 									</div>
 									<div className="ltn__blog-brief">
 
@@ -87,4 +88,4 @@ const CategoryGrid12 = () => {
 	)
 }
 
-export default CategoryGrid12
+export default CategoryGrid33
