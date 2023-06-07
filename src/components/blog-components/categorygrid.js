@@ -25,6 +25,11 @@ const CategoryGrid12 = () => {
 	if(loading){
 		return <Loader/>
 	}
+
+
+	const getCategoryName=(titleName)=>{
+		return titleName.split(" ").join("-")
+	}
 	return (
 		<div className="ltn__blog-area ltn__blog-item-3-normal pt-40 mb-100 go-top">
 			<div className="container">
@@ -39,7 +44,7 @@ const CategoryGrid12 = () => {
 									</div>
 									<div className="ltn__blog-brief">
 
-										<h3 className="ltn__blog-title"><Link to={`/offplan-projects-in-dubai/${offPlanCat?.name}`}>{offPlanCat?.name}</Link></h3>
+										<h3 className="ltn__blog-title"><Link to={`/offplan-projects-in-dubai/${getCategoryName(offPlanCat?.name)}`}>{offPlanCat?.name}</Link></h3>
 
 									</div>
 								</div>

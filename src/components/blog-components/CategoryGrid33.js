@@ -27,6 +27,10 @@ const CategoryGrid33 = () => {
 	if(loading){
 		return <Loader/>
 	}
+
+	const getCommunityName=(titleName)=>{
+		return titleName.split(" ").join("-")
+	}
 	return (
 		<div className="ltn__blog-area ltn__blog-item-3-normal pt-40 mb-100 go-top">
 			<div className="container">
@@ -41,7 +45,7 @@ const CategoryGrid33 = () => {
 									</div>
 									<div className="ltn__blog-brief">
 
-										<h3 className="ltn__blog-title"><Link to={`/best-communites-in-dubai/${CommunityCat?.titel_name}`}>{CommunityCat.titel_name}</Link></h3>
+										<h3 className="ltn__blog-title"><Link to={`/best-communites-in-dubai/${getCommunityName(CommunityCat.titel_name)}`}>{CommunityCat.titel_name}</Link></h3>
 
 									</div>
 								</div>

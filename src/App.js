@@ -83,15 +83,15 @@ import OffPlanCategory from './components/offplan-category';
         <Route path="/product-details" component={ ProdductDetails } />
         {/* blog */}
         <Route path="/blogs" component={ BlogGrid } />
-        <Route path="/best-communites-in-dubai" component={ CategoryGrid11 } />
-        <Route path="/offplan-projects-in-dubai" component={ OffPlanCategory } />
+        <Route exact path="/best-communites-in-dubai" component={ CategoryGrid11 } />
+        <Route exact path="/offplan-projects-in-dubai" component={ OffPlanCategory } />
         {/* <Route path="/blog-right-sidebar" component={ BlogRightSidebar } /> */}
         <Route path="/blog" component={ Blog } />
 
         <Route path="/blog-details" component={ BlogDetails } />
         {/* <Route path="/contact" component={ Contact } /> */}
 
-        <Route path="/offplan-projects-in-dubai/:offPlanCategoryName" component={ OffPlan } />
+        <Route exact path="/offplan-projects-in-dubai/:offPlanCategoryName" component={ OffPlan } />
 
 
         <Route path="/property-details/:id" component={ ProdductDetails } />
@@ -103,7 +103,7 @@ import OffPlanCategory from './components/offplan-category';
 
         <Route path="/about-us" component={ aboutUs } />
         <Route path="/shop-page" component={ ShopNew } />
-        <Route path="/best-communites-in-dubai/:communityName" component={ GuideLine } />
+        <Route  exact path="/best-communites-in-dubai/:communityName" component={ GuideLine } />
         <Route path="/bread-crums" component={ BreadCrumbs } />
 
 
