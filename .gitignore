@@ -21,3 +21,6 @@ buid.zip
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+build
+
+buid.zip
