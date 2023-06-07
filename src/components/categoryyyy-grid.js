@@ -9,12 +9,13 @@ import CommunityyGrid from './blog-components/categorygrid';
 import CategoryGrid from './blog-components/categorygrid';
 import CategoryGrid12 from './blog-components/categorygrid';
 import CategoryBreadCrumss from './global-components/cattegory';
+import CategoryGrid33 from './blog-components/CategoryGrid33';
 
 const CategoryGrid11 = () => {
     return <div>
         <MobileNav />
         <CategoryBreadCrumss headertitle="Garden Homes Frond C" customclass="mb-0 pt-100 " />
-        <CategoryGrid12/>
+        <CategoryGrid33/>
         <CallToActionV1 />
         <Footer />
     </div>
