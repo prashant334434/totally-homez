@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { getOffPlanCategoryApi } from '../../actions/offPlanActions';
 import { useDispatch, useSelector } from 'react-redux';
 import { ADMIN_PROPERTY_IMAGES_URL } from '../../constants/config';
+import { getCommunityCategoryApi } from '../../actions/communityAction';
 
 let publicUrl = process.env.PUBLIC_URL + '/'
 let imagealt = 'image'
@@ -13,7 +14,7 @@ let imagealt = 'image'
 
 const CategoryGrid12 = () => {
 
-	const { communityCategory, loading } = useSelector((state)=>state.communityCategory)
+	const { offPlanCategory, loading } = useSelector((state)=>state.offPlanCategory)
 	const dispatch = useDispatch()
 
 	useEffect(() => {
