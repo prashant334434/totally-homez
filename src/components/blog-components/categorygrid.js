@@ -2,6 +2,7 @@ import React, { Component, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { getOffPlanCategoryApi } from '../../actions/offPlanActions';
 import { useDispatch, useSelector } from 'react-redux';
+import { ADMIN_PROPERTY_IMAGES_URL } from '../../constants/config';
 
 let publicUrl = process.env.PUBLIC_URL + '/'
 let imagealt = 'image'
@@ -27,14 +28,14 @@ const CategoryGrid12 = () => {
 				<div className="row">
 					{
 						offPlanCategory?.map((offPlanCat) => (
-							<div className="col-lg-4 col-sm-6 col-12">
+							<div key={offPlanCat?.id} className="col-lg-4 col-sm-6 col-12">
 								<div className="ltn__blog-item ltn__blog-item-3">
 									<div className="ltn__blog-img">
-										<Link to="/blog-details"><img src={publicUrl + "assets/img/blog/8.jpg"} alt="#" /></Link>
+										<Link to="/blog-details"><img src={`${ADMIN_PROPERTY_IMAGES_URL}/${offPlanCat?.img}`} alt="#" /></Link>
 									</div>
 									<div className="ltn__blog-brief">
 
-										<h3 className="ltn__blog-title"><Link to="/blog-details">Electric Car Maintenance, Servicing &amp; Repairs</Link></h3>
+										<h3 className="ltn__blog-title"><Link to="/blog-details">{offPlanCat?.name}</Link></h3>
 
 									</div>
 								</div>
