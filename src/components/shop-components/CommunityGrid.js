@@ -33,7 +33,11 @@ const CommunityGrid = () => {
                             </div>
                             <div className="product-info">
                                 <div className="product-price">
-                                    <h2 className="product-title go-top"><Link to={`/property-details/${categoryProperty?.id}`}>{categoryProperty?.property_name}</Link></h2>
+
+                                <Link to={`/property-details/${categoryProperty?.id}`}>
+                                                        <h2  dangerouslySetInnerHTML={{ __html: categoryProperty?.property_name }}  className="product-title go-top"/>
+
+                                                        </Link>
 
                                     <span>AED {categoryProperty?.property_price}</span>
 
@@ -118,7 +122,10 @@ const CommunityGrid = () => {
                     </div>
                     <div className="product-info">
                         <div className="product-price">
-                            <h2 className="product-title go-top"><Link to={`/property-details/${categoryProperty?.id}`}>{categoryProperty?.property_name}</Link></h2>
+                        <Link to={`/property-details/${categoryProperty?.id}`}>
+                                                        <h2  dangerouslySetInnerHTML={{ __html: categoryProperty?.property_name }}  className="product-title go-top"/>
+
+                                                        </Link>
 
                             <span>AED {categoryProperty?.property_price}</span>
 

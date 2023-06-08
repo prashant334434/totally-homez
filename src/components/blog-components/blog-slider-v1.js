@@ -24,7 +24,7 @@ const BlogSlider
 					<div className="row">
 						<div className="col-lg-12">
 							<div className="section-title-area ltn__section-title-2--- text-center">
-								<h1 className="section-title">{props?.homePage[0]?.sec20_h}</h1>
+								<h1 className="section-title">{"Related Blog"}</h1>
 							</div>
 						</div>
 					</div>
