@@ -1,5 +1,5 @@
 import React, { Component, useState, useEffect } from 'react';
-import { Link,useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import parse from 'html-react-parser';
 import NearBy from '../section-components/NearBy';
 import { InlineWidget, PopupButton, PopupWidget } from "react-calendly";
@@ -24,16 +24,16 @@ const useStyles = makeStyles((theme) => ({
 		display: 'flex',
 		justifyContent: 'space-between',
 		gap: theme.spacing(1),
-		padding:'10px',
-		
+		padding: '10px',
+
 		// Adjust the spacing between the buttons as needed
 	},
 	button: {
-		borderRadius:'10px',
-		border:'1px solid whitesmoke',
-		 // Set the desired fixed width
-		color:'#eb2027',
-		backgroundColor:'transparent',
+		borderRadius: '10px',
+		border: '1px solid whitesmoke',
+		// Set the desired fixed width
+		color: '#eb2027',
+		backgroundColor: 'transparent',
 		'&:hover': {
 			color: 'white',
 			backgroundColor: '#eb2027',
@@ -42,22 +42,22 @@ const useStyles = makeStyles((theme) => ({
 
 
 	typographyText: {
-		paddingLeft:'2px',
-		textTransform:'capitalize',
+		paddingLeft: '2px',
+		textTransform: 'capitalize',
 	},
 }));
 
 const ShopDetails = ({ propertyDetails }) => {
-	const {laoding,propertiesNearBy}=useSelector((state)=>state.propertiesNearBy)
+	const { laoding, propertiesNearBy } = useSelector((state) => state.propertiesNearBy)
 
-	const {loading,propertyAmenities}=useSelector((state)=>state.propertyAmenities)
-	const {id}=useParams()
+	const { loading, propertyAmenities } = useSelector((state) => state.propertyAmenities)
+	const { id } = useParams()
 	const hrStyle = {
 		border: 'none', // Remove the default border
 		borderTop: '1px solid black', // Set the style of the horizontal rule
 		margin: '-25px 0 7px', // Adjust the margin as needed
-	  };
-	
+	};
+
 	const classes = useStyles();
 	const htmlContent = propertyDetails?.property_content;
 
@@ -74,24 +74,24 @@ const ShopDetails = ({ propertyDetails }) => {
 	const stickyRef = useStickyBox({ offsetTop: 150, offsetBottom: 100 });
 	const [isSticky, setSticky] = useState(false);
 	const [showFullDescription, setShowFullDescription] = useState(false);
-    let iconsToshow;
-	switch(propertiesNearBy){
+	let iconsToshow;
+	switch (propertiesNearBy) {
 		case 'hospital':
-			iconsToshow=faHospital;
+			iconsToshow = faHospital;
 			break;
 		case 'school':
-			
+
 
 	}
-	
+
 
 	const getTruncatedContent = () => {
 		const maxLength = 100;
 		if (htmlContent?.length <= maxLength) {
-		  return htmlContent;
+			return htmlContent;
 		}
 		return isTruncated ? htmlContent : htmlContent.slice(0, maxLength) + '...';
-	  };
+	};
 	useEffect(() => {
 		dispatch(getPropertiesAmenitiesApi(id))
 		dispatch(getPropertiesNearByApi(id))
@@ -118,7 +118,47 @@ const ShopDetails = ({ propertyDetails }) => {
 	}
 
 
+	const getIcon = (placeName) => {
 
+
+		switch (placeName) {
+			case "Hospital":
+				return "fa fa-hospital"
+			case "Bank":
+				return "fa fa-bank"
+
+			case "ATM":
+				return " fa fa-credit-card-alt"
+
+			case "School":
+
+				return "fa fa-school"
+
+			case "Burj Khalifa":
+				return "fa fa-building"
+
+			case "Beach":
+				return "fa fa-water"
+
+			case "Super Market":
+				return "fa fa-shopping-basket"
+
+			case "Burj Al Arab":
+
+				return "fa fa-building"
+			case "Pharmacy":
+				return " fa fa-plus-square "
+
+			case "Airport":
+				return "fa fa-plane"
+
+			case "Metro Station":
+				return "fa fa-train"
+
+
+
+		}
+	}
 	return (
 		<div className="ltn__shop-details-area pt-20 pb-10">
 
@@ -130,7 +170,7 @@ const ShopDetails = ({ propertyDetails }) => {
 						<div className="ltn__shop-details-inner ltn__page-details-inner mb-60">
 							<h4 className="title-2">Features</h4>
 							<hr style={hrStyle} />
-						{/* <hr/> */}
+							{/* <hr/> */}
 							<div className="property-detail-feature-list clearfix mb-45">
 								<ul>
 									<li>
@@ -208,15 +248,15 @@ const ShopDetails = ({ propertyDetails }) => {
 							<h4 className="title-2">Description</h4>
 							<hr style={hrStyle} />
 
-						
-								<p  dangerouslySetInnerHTML={{ __html: getTruncatedContent() }}   className="description "/>
-								{htmlContent?.length > 30 && (
-									<button className="btn theme-btn-1 " onClick={toggleTruncate}>
-									  {isTruncated ? 'Read Less' : 'Read More'}
-									</button>
-								  )}
-								   
-						
+
+							<p dangerouslySetInnerHTML={{ __html: getTruncatedContent() }} className="description " />
+							{htmlContent?.length > 30 && (
+								<button className="btn theme-btn-1 " onClick={toggleTruncate}>
+									{isTruncated ? 'Read Less' : 'Read More'}
+								</button>
+							)}
+
+
 
 
 							{/* <h4 className="title-2">Property Detail</h4>  
@@ -338,7 +378,7 @@ const ShopDetails = ({ propertyDetails }) => {
 														<li>
 															{/* <i className="fas fa-check fa-2x" style={{ color: 'red',}}></i> */}
 															{/* <img src="../assets/img/tick.png" style={{ "width": "9%"}} /> */}
-															<i className=' fa fa-bank ' style={{ "color": "red"}}></i>
+															<i className={getIcon(amenity?.near_by_place)} style={{ "color": "red" }}></i>
 															<label className="checkbox-item sizing420">{amenity?.near_by_place} -{amenity?.dist}M
 
 															</label>
@@ -353,11 +393,11 @@ const ShopDetails = ({ propertyDetails }) => {
 								</div>
 							</div>
 							{/* <NearBy propertyDetails={propertyDetails} /> */}
-						
+
 						</div>
 
 					</div>
-					
+
 					<div className="col-lg-5">
 						<aside ref={stickyRef} className="sidebar ltn__shop-sidebar ltn__right-sidebar---">
 							{/* Author Widget */}
@@ -365,27 +405,27 @@ const ShopDetails = ({ propertyDetails }) => {
 								<h4 className="title-2">Property Detail</h4>
 								<div className="property-detail-info-list section-bg-0 clearfix ">
 									<ul>
-										<li><label className='bigcoloring1'>Price:</label><span className='bigcoloring'> {propertyDetails?.property_price_on_application=="Yes"?"AED":null} {propertyDetails?.property_price_on_application=="Yes"?propertyDetails?.property_price:"Price on Application"} </span></li>
+										<li><label className='bigcoloring1'>Price:</label><span className='bigcoloring'> {propertyDetails?.property_price_on_application == "Yes" ? "AED" : null} {propertyDetails?.property_price_on_application == "Yes" ? propertyDetails?.property_price : "Price on Application"} </span></li>
 									</ul>
 								</div>
 								<div className="property-detail-info-list section-bg-0 clearfix ">
 
 									<div className={classes.container}>
-										<IconButton className={classes.button}  aria-label="Delete">
+										<IconButton className={classes.button} aria-label="Delete">
 											<PhoneIcon />
-											        <Typography className={classes.typographyText} variant="button">Call</Typography>
+											<Typography className={classes.typographyText} variant="button">Call</Typography>
 
 										</IconButton>
 
 										<IconButton className={classes.button} aria-label="Edit">
 											<EmailIcon />
-											        <Typography className={classes.typographyText} variant="button">Email</Typography>
+											<Typography className={classes.typographyText} variant="button">Email</Typography>
 
 										</IconButton>
 
 										<IconButton className={classes.button} aria-label="Whatsapp">
 											<WhatsAppIcon />
-											        <Typography className={classes.typographyText} variant="button">Whatsapp</Typography>
+											<Typography className={classes.typographyText} variant="button">Whatsapp</Typography>
 
 										</IconButton>
 									</div>
