@@ -182,7 +182,7 @@ const ShopDetails = ({ propertyDetails }) => {
 											<div>
 												{/* <h6>Bedroom</h6> */}
 
-												<p className='textbold'>{propertyDetails?.property_no_of_bedroom} bedrooms</p>
+												<p className='textbold'>{propertyDetails?.property_no_of_bedroom} Bedrooms</p>
 											</div>
 										</div>
 									</li>
@@ -193,7 +193,7 @@ const ShopDetails = ({ propertyDetails }) => {
 
 											<div>
 												{/* <h6>Bathroom</h6> */}
-												<p className='textbold'>{propertyDetails?.property_no_of_bathroom} bathrooms</p>
+												<p className='textbold'>{propertyDetails?.property_no_of_bathroom} Bathrooms</p>
 											</div>
 										</div>
 									</li>
@@ -204,7 +204,7 @@ const ShopDetails = ({ propertyDetails }) => {
 											{/* <i className="flaticon-square-shape-design-interface-tool-symbol" /> */}
 											<div>
 												{/* <h6>Size</h6> */}
-												<p className='textbold'>{propertyDetails?.property_sq_ft} sq. feet</p>
+												<p className='textbold'>{propertyDetails?.property_sq_ft} Sqft</p>
 											</div>
 										</div>
 									</li>
@@ -365,7 +365,7 @@ const ShopDetails = ({ propertyDetails }) => {
 
 								</div>
 							</div>
-							<h4 className="title-2 ">NearBy</h4>
+							<h4 className="title-2 ">Nearby</h4>
 							<hr style={hrStyle} />
 
 							<div className="property-details-amenities mb-60">
