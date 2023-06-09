@@ -84,7 +84,7 @@ const ApartmentProductGridSale = (props) => {
                               item?.property_type
                             )}-for-${url(item?.property_for)}-${url(
                               item?.property_level
-                            )}/th${item?.id}`}
+                            )}/TH${item?.id}`}
                           >
                             <img src={`https://cf.bstatic.com/xdata/images/xphoto/max1440/48387083.jpg?k=71de1d7fb5c115ccc436261c89c33780c052bc99fcb26cc40101f35b33226fbf&o=`} alt="#" />
                           </Link>
@@ -94,7 +94,7 @@ const ApartmentProductGridSale = (props) => {
                               item?.property_community
                             )}/${url(item?.property_sub_community)}/${url(
                               item?.property_type
-                            )}-for-${url(item?.property_for)}/th${item?.id}`}
+                            )}-for-${url(item?.property_for)}/TH${item?.id}`}
                           >
                             <img src={`https://cf.bstatic.com/xdata/images/xphoto/max1440/48387083.jpg?k=71de1d7fb5c115ccc436261c89c33780c052bc99fcb26cc40101f35b33226fbf&o=`} alt="#" />
                           </Link>
@@ -118,7 +118,7 @@ const ApartmentProductGridSale = (props) => {
                               item?.property_type
                             )}-for-${url(item?.property_for)}-${url(
                               item?.property_level
-                            )}/th${item?.id}`}
+                            )}/TH${item?.id}`}
                           >
                                 <h2
                                   dangerouslySetInnerHTML={{
@@ -133,7 +133,7 @@ const ApartmentProductGridSale = (props) => {
                               item?.property_community
                             )}/${url(item?.property_sub_community)}/${url(
                               item?.property_type
-                            )}-for-${url(item?.property_for)}/th${item?.id}`}
+                            )}-for-${url(item?.property_for)}/TH${item?.id}`}
                           >
                                 <h2
                                   dangerouslySetInnerHTML={{

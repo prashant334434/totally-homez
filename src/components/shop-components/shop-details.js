@@ -235,7 +235,7 @@ const ShopDetails = ({ propertyDetails }) => {
 											{/* <i className="fas fa-images" /> */}
 											<div>
 												{/* <h6>View</h6> */}
-												<p className='textbold'>Burj Khalifa</p>
+												<p className='textbold'>{propertyDetails?.property_view}</p>
 											</div>
 										</div>
 									</li>
@@ -379,7 +379,7 @@ const ShopDetails = ({ propertyDetails }) => {
 															{/* <i className="fas fa-check fa-2x" style={{ color: 'red',}}></i> */}
 															{/* <img src="../assets/img/tick.png" style={{ "width": "9%"}} /> */}
 															<i className={getIcon(amenity?.near_by_place)} style={{ "color": "red" }}></i>
-															<label className="checkbox-item sizing420">{amenity?.near_by_place} -{amenity?.dist}M
+															<label className="checkbox-item sizing420">{amenity?.near_by_place} - {amenity?.dist} Minutes
 
 															</label>
 														</li>

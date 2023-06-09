@@ -89,7 +89,7 @@ const ProductGridRent = (props) => {
                               item?.property_type
                             )}-for-${url(item?.property_for)}-${url(
                               item?.property_level
-                            )}/th${item?.id}`}
+                            )}/TH${item?.id}`}
                           >
                             <img src={item?.property_imges} alt="#" />
                           </Link>
@@ -99,7 +99,7 @@ const ProductGridRent = (props) => {
                               item?.property_community
                             )}/${url(item?.property_sub_community)}/${url(
                               item?.property_type
-                            )}-for-${url(item?.property_for)}/th${item?.id}`}
+                            )}-for-${url(item?.property_for)}/TH${item?.id}`}
                           >
                             <img src={item?.property_imges} alt="#" />
                           </Link>
@@ -123,7 +123,7 @@ const ProductGridRent = (props) => {
                               item?.property_type
                             )}-for-${url(item?.property_for)}-${url(
                               item?.property_level
-                            )}/th${item?.id}`}
+                            )}/TH${item?.id}`}
                           >
                                 <h2
                                   dangerouslySetInnerHTML={{
@@ -138,7 +138,7 @@ const ProductGridRent = (props) => {
                               item?.property_community
                             )}/${url(item?.property_sub_community)}/${url(
                               item?.property_type
-                            )}-for-${url(item?.property_for)}/th${item?.id}`}
+                            )}-for-${url(item?.property_for)}/TH${item?.id}`}
                           >
                                 <h2
                                   dangerouslySetInnerHTML={{
