@@ -55,10 +55,10 @@ const ProductGrid = (props) => {
     carouselItems = categoryProperties;
   }
   const url=(titleName)=>{
-    return titleName?.split(" ")?.join("-")
+    return titleName?.split(" ")?.join("-")?.toLowerCase()
 }
 const url2=(titleName)=>{
-  return titleName?.split(" ")?.join("-")
+  return titleName?.split(" ")?.join("-")?.toLowerCase()
 }
   return (
     <div>
@@ -111,7 +111,7 @@ const url2=(titleName)=>{
                               item?.property_type
                             )}-for-${url(item?.property_for)}-${url(
                               item?.property_level
-                            )}/TH${item?.id}`}
+                            )}/th${item?.id}`}
                           >
                             <img src={item?.property_imges} alt="#" />
                           </Link>
@@ -123,7 +123,7 @@ const url2=(titleName)=>{
                               item?.property_type
                             )}-for-${url(item?.property_for)}
                              
-                            /TH${item?.id}`}
+                            /th${item?.id}`}
                           >
                             <img src={item?.property_imges} alt="#" />
                           </Link>
@@ -147,7 +147,7 @@ const url2=(titleName)=>{
                               item?.property_type
                             )}-for-${url(item?.property_for)}-${url(
                               item?.property_level
-                            )}/TH${item?.id}`}
+                            )}/th${item?.id}`}
                           >
                                 <h2
                                   dangerouslySetInnerHTML={{
@@ -164,7 +164,7 @@ const url2=(titleName)=>{
                               item?.property_type
                             )}-for-${url(item?.property_for)}
                              
-                            /TH${item?.id}`}
+                            /th${item?.id}`}
                           >
                                 <h2
                                   dangerouslySetInnerHTML={{
