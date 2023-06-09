@@ -95,6 +95,8 @@ import OffPlanCategory from './components/offplan-category';
 
 
         <Route path="/property-details/:id" component={ ProdductDetails } />
+        <Route path="/:property_city/:property_community/:property_sub_community/:property_type-for-:property_for/th:id" component={ ProdductDetails } />
+        <Route path="/:property_city/:property_community/:property_sub_community/:property_type-for-:property_for-:property_level/th:id" component={ ProdductDetails } />
         <Route path="/contact-us" component={ NewContact } />
         <Route path="/our-team" component={ TeamsNew } />
 

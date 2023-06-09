@@ -76,72 +76,89 @@ const ProductGridRent = (props) => {
 
 								{carouselItems.map((item) => (
 									<div key={item?.id} className="col-lg-12">
-										<div  className="ltn__product-item ltn__product-item-4 text-center---">
-											<div className="product-img go-top">
-												<Link to={`/property-details/${item?.id}`}><img src={item?.property_imges} alt="#" /></Link>
-												<div className="product-badge">
-													<ul>
-														<li className="sale-badge bg-green">{"rent"}</li>
-													</ul>
-												</div>
+									<div  className="ltn__product-item ltn__product-item-4 text-center---">
+                                            <div className="product-img go-top">
+                                               
+                                                {item.property_level?(
+                                                    <Link to={`/${item.property_city}/${item.property_community}/${item.property_sub_community}/${item.property_type}-for-${item.property_for}-${item.property_level}/th${item.id}`}><img src={item?.property_imges} alt="#" /></Link>
+                                                ):( <Link to={`/${item.property_city}/${item.property_community}/${item.property_sub_community}/${item.property_type}-for-${item.property_for}/th${item.id}`}><img src={item?.property_imges} alt="#" /></Link>)}
+                                                <div className="product-badge">
+                                                    <ul>
+                                                        <li className="sale-badge bg-green">{item?.property_for}</li>
+                                                    </ul>
+                                                </div>
 
-											</div>
-											<div className="product-info">
-												<div className="product-price">
-												<Link to={`/property-details/${item?.id}`}>
-                                                        <h2  dangerouslySetInnerHTML={{ __html: item?.property_name }}  className="product-title go-top"/>
+                                            </div>
+                                            <div className="product-info">
+                                                <div className="product-price">
+                                                    <div className="title_div">
+                                                        <Link to={`/${item.property_city}/${item.property_community}/${item.property_sub_community}/${item.property_for}/th${item.id}`}>
 
                                                         </Link>
-													<span>AEDD {item?.property_price}</span>
+                                                        {item.property_level?(
+                                                    <Link to={`/${item.property_city}/${item.property_community}/${item.property_sub_community}/${item.property_type}-for-${item.property_for}-${item.property_level}/th${item.id}`}>
+                                                    <h2  dangerouslySetInnerHTML={{ __html: item?.property_name }}  className="product-title go-top"/>
+                                                    
+                                                    </Link>
+                                                ):( <Link to={`/${item.property_city}/${item.property_community}/${item.property_sub_community}/${item.property_type}-for-${item.property_for}/th${item.id}`}>
+                                                <h2  dangerouslySetInnerHTML={{ __html: item?.property_name }}  className="product-title go-top"/>
+
+                                                </Link>)}
+
+                                                    </div>
+                                                    <div className='price_div'>
+                                                        <span>AED {item?.property_price}</span>
+
+                                                    </div>
 
 
-												</div>
-												<div className="product-description">
-													<Link > {item?.property_address}</Link><br></br>
-													<small>Ref No.{item?.property_ref_no}</small>
-												</div>
-												<div><center>
-													<ul className="ltn__list-item-2 ltn__list-item-2-before">
-														<li><span> <i className="flaticon-bed" />  {item?.property_no_of_bedroom}</span>
-														</li>
-														<li><span><i className="flaticon-clean" />  {item?.property_no_of_bathroom} </span>
-														</li>
-														<li><span> <i className="flaticon-square-shape-design-interface-tool-symbol" />  {item?.property_sq_ft} sqft</span>
-														</li>
-													</ul></center>
-												</div></div>
-											<div className="product-info-bottom">
-												<div className="real-estate-agent wcallFlex">
-													<div className="agent-img go-top">
-														<Link to="/team-details">
-															<img src={`${TEAM_API_URL}/${item?.path}`} alt="Image" />
-														</Link>
-													</div>
-													<div className="agent-brief go-top">
-														<h6><Link to={`/team-details/${item?.property_agent_name}`}>{item?.name}</Link></h6>
+                                                </div>
+                                                <div className="product-description">
+                                                    <Link > {item?.property_address}</Link><br></br>
+                                                    <small>Ref No.{item?.property_ref_no}</small>
+                                                </div>
+                                                <div><center>
+                                                    <ul className="ltn__list-item-2 ltn__list-item-2-before">
+                                                        <li><span> <i className="flaticon-bed" />  {item?.property_no_of_bedroom}</span>
+                                                        </li>
+                                                        <li><span><i className="flaticon-clean" />  {item?.property_no_of_bathroom} </span>
+                                                        </li>
+                                                        <li><span> <i className="flaticon-square-shape-design-interface-tool-symbol" />  {item?.property_sq_ft} sqft</span>
+                                                        </li>
+                                                    </ul></center>
+                                                </div></div>
+                                            <div className="product-info-bottom">
+                                                <div className="real-estate-agent wcallFlex">
+                                                    <div className="agent-img go-top">
+                                                        <Link to="/team-details">
+                                                            <img src={`${TEAM_API_URL}/${item?.path}`} alt="Image" />
+                                                        </Link>
+                                                    </div>
+                                                    <div className="agent-brief go-top">
+                                                        <h6><Link to={`/team-details/${item?.property_agent_name}`}>{item?.name}</Link></h6>
 
-													</div>
-												</div>
-												<div className="wcallFlex">
-													<ul className='wcallFlex'>
-														<li className='li1'>
-															<a href="#" title="Quick View" data-bs-toggle="modal" data-bs-target="#quick_view_modal" className='wcallFlex'>
-																<i className="fab fa-whatsapp callclass" ></i>
-																<span className='callclass hideclass'>Whatsapp</span>
-															</a>
-														</li>
-														<li>
-															<a href="#" title="Wishlist" data-bs-toggle="modal" data-bs-target="#liton_wishlist_modal" className='wcallFlex'>
-																<i className="fa fa-phone rotateclass"></i>
-																<span className='callclass hideclass'>Call</span>
-															</a>
+                                                    </div>
+                                                </div>
+                                                <div className="wcallFlex">
+                                                    <ul className='wcallFlex'>
+                                                        <li className='li1'>
+                                                            <a href="#" title="Quick View" data-bs-toggle="modal" data-bs-target="#quick_view_modal" className='wcallFlex'>
+                                                                <i className="fab fa-whatsapp callclass" ></i>
+                                                                <span className='callclass hideclass'>Whatsapp</span>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" title="Wishlist" data-bs-toggle="modal" data-bs-target="#liton_wishlist_modal" className='wcallFlex'>
+                                                                <i className="fa fa-phone rotateclass"></i>
+                                                                <span className='callclass hideclass'>Call</span>
+                                                            </a>
 
-														</li>
+                                                        </li>
 
-													</ul>
-												</div>
-											</div>
-										</div>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
 
 									</div>
 								))}

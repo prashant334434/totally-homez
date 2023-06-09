@@ -6,6 +6,7 @@ import { TEAM_API_URL } from '../../constants/config'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 const ApartmentProductGridRent = (props) => {
+	
 	let carouselItems = [
 		{ id: 1, content: 'https://www.timeoutdubai.com/cloud/timeoutdubai/2021/09/13/Damx3DMM-The-Penthouse-1200x800.jpg' },
 		{ id: 2, content: 'https://www.timeoutdubai.com/cloud/timeoutdubai/2021/09/13/Damx3DMM-The-Penthouse-1200x800.jpg' },
@@ -20,6 +21,10 @@ const ApartmentProductGridRent = (props) => {
     let customClass = props.customClass ? props.customClass : ''
     const { apartmentCategoryRentProperties } = useSelector((state) => state.apartmentCategoryRentProperties)
     const dispatch = useDispatch()
+
+	const url=(titleName)=>{
+		return titleName?.split(" ")?.join("-")
+	}
 
     useEffect(() => {
         dispatch(getApartmentCatgoryRentProperties())
@@ -75,7 +80,7 @@ const ApartmentProductGridRent = (props) => {
 									<div  key={item?.id} className="col-lg-12">
 										<div className="ltn__product-item ltn__product-item-4 text-center---">
 											<div className="product-img go-top">
-												<Link to={`/property-details/${item?.id}`}><img src={`https://cf.bstatic.com/xdata/images/xphoto/max1440/48387083.jpg?k=71de1d7fb5c115ccc436261c89c33780c052bc99fcb26cc40101f35b33226fbf&o=`} alt="#" /></Link>
+											<Link to={`/${url(item.property_city)}/${url(item.property_community)}/${url(item.property_sub_community)}/${url(item.property_for)}/th${item.id}`}><img src={`https://cf.bstatic.com/xdata/images/xphoto/max1440/48387083.jpg?k=71de1d7fb5c115ccc436261c89c33780c052bc99fcb26cc40101f35b33226fbf&o=`} alt="#" /></Link>
 												<div className="product-badge">
 													<ul>
 														<li className="sale-badge bg-green">{item?.property_for}</li>
@@ -85,7 +90,7 @@ const ApartmentProductGridRent = (props) => {
 											</div>
 											<div className="product-info">
 												<div className="product-price">
-												<Link to={`/property-details/${item?.id}`}>
+												<Link to={`/${item.property_city}/${item.property_community}/${item.property_sub_community}/${item.property_for}/th${item.id}`}>
                                                         <h2  dangerouslySetInnerHTML={{ __html: item?.property_name }}  className="product-title go-top"/>
 
                                                         </Link>

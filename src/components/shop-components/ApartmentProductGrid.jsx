@@ -73,7 +73,7 @@ const ApartmentProductGridSale = (props) => {
 									<div key={item?.id} className="col-lg-12">
 										<div  className="ltn__product-item ltn__product-item-4 text-center---">
 											<div className="product-img go-top">
-												<Link to={`/property-details/${item?.id}`}><img src={`https://cf.bstatic.com/xdata/images/xphoto/max1440/48387083.jpg?k=71de1d7fb5c115ccc436261c89c33780c052bc99fcb26cc40101f35b33226fbf&o=`} alt="#" /></Link>
+											<Link to={`/${item.property_city}/${item.property_community}/${item.property_sub_community}/${item.property_for}/th${item.id}`}><img src={`https://cf.bstatic.com/xdata/images/xphoto/max1440/48387083.jpg?k=71de1d7fb5c115ccc436261c89c33780c052bc99fcb26cc40101f35b33226fbf&o=`} alt="#" /></Link>
 												<div className="product-badge">
 													<ul>
 														<li className="sale-badge bg-green">{item?.property_for}</li>
@@ -83,7 +83,7 @@ const ApartmentProductGridSale = (props) => {
 											</div>
 											<div className="product-info">
 												<div className="product-price">
-												<Link to={`/property-details/${item?.id}`}>
+												<Link to={`/${item.property_city}/${item.property_community}/${item.property_sub_community}/${item.property_for}/th${item.id}`}>
                                                         <h2  dangerouslySetInnerHTML={{ __html: item?.property_name }}  className="product-title go-top"/>
 
                                                         </Link>
