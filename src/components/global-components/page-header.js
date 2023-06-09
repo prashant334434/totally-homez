@@ -30,9 +30,9 @@ const PageHead = (props) => {
 						<li><Link to="/">{ props?.propertyDetails?.property_type }</Link></li>
 						<li><Link to="/">{ props?.propertyDetails?.property_community }</Link></li>
 						<li><Link to="/">{ props?.propertyDetails?.property_sub_community }</Link></li>
-						<li><Link to="/">{ props?.propertyDetails?.property_level }</Link></li>
+						<li><Link to="/level-page">{ props?.propertyDetails?.property_level }</Link></li>
 						
-						<li><Link to="/">{"TH"}{ props?.propertyDetails?.id }</Link></li>
+						<li>{"TH"}{ props?.propertyDetails?.id }</li>
 
 
 
@@ -46,7 +46,7 @@ const PageHead = (props) => {
 						<li><Link to="/">{ props?.propertyDetails?.property_sub_community }</Link></li>
 					
 						
-						<li><Link to="/">{"TH"}{ props?.propertyDetails?.id }</Link></li>
+						<li>{"TH"}{ props?.propertyDetails?.id }</li>
 
 
 

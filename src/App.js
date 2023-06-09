@@ -38,6 +38,10 @@ import CommunityGrid from './components/categoryyyy-grid';
 import CategoryGrid from './components/categoryyyy-grid';
 import CategoryGrid11 from './components/categoryyyy-grid';
 import OffPlanCategory from './components/offplan-category';
+import LevelPage from './components/LevelPage';
+import CommunityPage from './components/SubCommunityPage';
+import SubCommunityPage from './components/SubCommunityPage';
+import TypePage from './components/TypePage';
 
 
 
@@ -107,6 +111,10 @@ import OffPlanCategory from './components/offplan-category';
         <Route path="/shop-page" component={ ShopNew } />
         <Route  exact path="/best-communites-in-dubai/:communityName" component={ GuideLine } />
         <Route path="/bread-crums" component={ BreadCrumbs } />
+        <Route path="/level-page" component={ LevelPage } />
+        <Route path="/sub-community-page" component={ SubCommunityPage } />
+        <Route path="/community-page" component={ CommunityPage } />
+        <Route path="/type-page" component={ TypePage } />
 
 
 
