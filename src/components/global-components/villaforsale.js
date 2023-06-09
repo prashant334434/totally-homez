@@ -21,21 +21,7 @@ const VillaforSale = (props) => {
 				<div className="col-lg-12">
 					<div className="ltn__breadcrumb-inner">
 					<h1 className="page-title">{ props?.propertyDetails?.property_type } For { props?.propertyDetails?.property_for } In Jumeirah Golf Estates</h1>
-					<div className="ltn__breadcrumb-list">
-					<ul>
-						<li><Link to="/"><span className="ltn__secondary-color"><i className="fas fa-home" style={{fontSize:'16px'}} /></span> { props?.propertyDetails?.property_city }</Link></li>
-						<li><Link to="/">{ props?.propertyDetails?.property_for }</Link></li>
-						<li><Link to="/">{ props?.propertyDetails?.property_type }</Link></li>
-						<li><Link to="/">{ props?.propertyDetails?.property_community }</Link></li>
-						<li><Link to="/">{ props?.propertyDetails?.property_sub_community }</Link></li>
-						<li><Link to="/">{ props?.propertyDetails?.property_level }</Link></li>
-						
-						<li><Link to="/">{"TH"}{ props?.propertyDetails?.id }</Link></li>
-
-
-
-						</ul>
-					</div>
+					
 					</div>
 					
 					
