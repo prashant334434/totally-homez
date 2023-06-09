@@ -57,6 +57,9 @@ const ProductGrid = (props) => {
   const url=(titleName)=>{
     return titleName?.split(" ")?.join("-")
 }
+const url2=(titleName)=>{
+  return titleName?.split(" ")?.join("-")
+}
   return (
     <div>
       <div>
@@ -102,11 +105,11 @@ const ProductGrid = (props) => {
                       <div className="product-img go-top">
                         {item.property_level ? (
                           <Link
-                            to={`/${(item?.property_city)}/${(
+                            to={`/${url(item?.property_city)}/${url(
                               item?.property_community
-                            )}/${(item?.property_sub_community)}/${(
+                            )}/${url(item?.property_sub_community)}/${url(
                               item?.property_type
-                            )}-for-${(item?.property_for)}-${(
+                            )}-for-${url(item?.property_for)}-${url(
                               item?.property_level
                             )}/th${item?.id}`}
                           >
@@ -114,13 +117,13 @@ const ProductGrid = (props) => {
                           </Link>
                         ) : (
                           <Link
-                            to={`/${(item?.property_city)}/${(
+                            to={`/${url(item?.property_city)}/${url(
                               item?.property_community
-                            )}/${(item?.property_sub_community)}/${(
+                            )}/${url(item?.property_sub_community)}/${url(
                               item?.property_type
-                            )}-for-${(item?.property_for)}/th${(
-                              item?.id
-                            )}`}
+                            )}-for-${url(item?.property_for)}
+                             
+                            /th${item?.id}`}
                           >
                             <img src={item?.property_imges} alt="#" />
                           </Link>
@@ -138,8 +141,14 @@ const ProductGrid = (props) => {
                           <div className="title_div">
                             {item.property_level ? (
                               <Link
-                                to={`/${item.property_city}/${item.property_community}/${item.property_sub_community}/${item.property_type}-for-${item.property_for}-${item.property_level}/th${item.id}`}
-                              >
+                            to={`/${url(item?.property_city)}/${url(
+                              item?.property_community
+                            )}/${url(item?.property_sub_community)}/${url(
+                              item?.property_type
+                            )}-for-${url(item?.property_for)}-${url(
+                              item?.property_level
+                            )}/th${item?.id}`}
+                          >
                                 <h2
                                   dangerouslySetInnerHTML={{
                                     __html: item?.property_name,
@@ -149,8 +158,14 @@ const ProductGrid = (props) => {
                               </Link>
                             ) : (
                               <Link
-                                to={`/${item.property_city}/${item.property_community}/${item.property_sub_community}/${item.property_type}-for-${item.property_for}/th${item.id}`}
-                              >
+                            to={`/${url(item?.property_city)}/${url(
+                              item?.property_community
+                            )}/${url(item?.property_sub_community)}/${url(
+                              item?.property_type
+                            )}-for-${url(item?.property_for)}
+                             
+                            /th${item?.id}`}
+                          >
                                 <h2
                                   dangerouslySetInnerHTML={{
                                     __html: item?.property_name,

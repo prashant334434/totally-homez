@@ -177,7 +177,7 @@ const ShopDetails = ({ propertyDetails }) => {
 										<div className="property-detail-feature-list-item">
 											{/* <i className="flaticon-double-bed" /> */}
 
-											<img src="../assets/img/bd.png" style={{ "width": "13%" }} />
+											<img src="/assets/img/bd.png" style={{ "width": "13%" }} />
 
 											<div>
 												{/* <h6>Bedroom</h6> */}
@@ -189,7 +189,7 @@ const ShopDetails = ({ propertyDetails }) => {
 									<li>
 										<div className="property-detail-feature-list-item">
 											{/* <i className="flaticon-clean" /> */}
-											<img src="../assets/img/bb.png" style={{ "width": "13%" }} />
+											<img src="/assets/img/bb.png" style={{ "width": "13%" }} />
 
 											<div>
 												{/* <h6>Bathroom</h6> */}
@@ -199,7 +199,7 @@ const ShopDetails = ({ propertyDetails }) => {
 									</li>
 									<li>
 										<div className="property-detail-feature-list-item">
-											<img src="../assets/img/gg.png" style={{ "width": "13%" }} />
+											<img src="/assets/img/gg.png" style={{ "width": "13%" }} />
 
 											{/* <i className="flaticon-square-shape-design-interface-tool-symbol" /> */}
 											<div>
@@ -210,7 +210,7 @@ const ShopDetails = ({ propertyDetails }) => {
 									</li>
 									<li>
 										<div className="property-detail-feature-list-item">
-											<img src="../assets/img/ii.png" style={{ "width": "13%" }} />
+											<img src="/assets/img/ii.png" style={{ "width": "13%" }} />
 											{/* <i className="flaticon-home-2" /> */}
 											<div>
 												{/* <h6>Type</h6> */}
@@ -220,7 +220,7 @@ const ShopDetails = ({ propertyDetails }) => {
 									</li>
 									<li>
 										<div className="property-detail-feature-list-item">
-											<img src="../assets/img/1.png" style={{ "width": "13%" }} />
+											<img src="/assets/img/1.png" style={{ "width": "13%" }} />
 											{/* <i className="icon-wheel-1" /> */}
 											<div>
 												{/* <h6>For</h6> */}
@@ -231,7 +231,7 @@ const ShopDetails = ({ propertyDetails }) => {
 
 									<li>
 										<div className="property-detail-feature-list-item">
-											<img src="../assets/img/ee.png" style={{ "width": "13%" }} />
+											<img src="/assets/img/ee.png" style={{ "width": "13%" }} />
 											{/* <i className="fas fa-images" /> */}
 											<div>
 												{/* <h6>View</h6> */}
@@ -350,7 +350,7 @@ const ShopDetails = ({ propertyDetails }) => {
 													<ul>
 														<li>
 															{/* <i className="fas fa-check fa-2x" style={{ color: 'red',}}></i> */}
-															<img src="../assets/img/tick.png" className='sizingimage' />
+															<img src="/assets/img/tick.png" className='sizingimage' />
 
 															<label className="checkbox-item sizing420">{amenity?.anmi_name}
 

@@ -32,7 +32,7 @@ const AgentDetails = ({agentId}) => {
 
 									</div>
 									<br />
-									<p>{teamDetails?.description}</p>
+									<p>{teamDetails?.description?.slice(0, 200)}................</p>
 									<div className="ltn__social-media">
 										<center>
 											{/* <Link className="btn btn-effect-3" to="/contact">Call</Link> */}
