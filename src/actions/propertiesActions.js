@@ -166,14 +166,14 @@ export const getAllPropertiesApi = () =>
 
 
 
-export const getPropertySubCommunityApi = () =>
+export const getPropertySubCommunityApi = (property_type,property_for,property_sub_community,) =>
     async (dispatch) => {
         try {
             dispatch({ type: GET_PROPERTY_SUB_COMMUNIY_REQUEST });
 
 
 
-            const  data = await axios.get(`https://totallyhomerealestate.com/API/api/properties/typeforsubcomm/Apartment/Rent/Property Sub Community`);
+            const  data = await axios.get(`https://totallyhomerealestate.com/API/api/properties/typeforsubcomm/${property_type}/${property_for}/ ${property_sub_community}`);
             console.log("",data)
 
             dispatch({

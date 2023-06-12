@@ -32,14 +32,18 @@ const SubCommunityPage = () => {
         // ... more data
       ];
       const itemsPerPage = 5;
-   
+   const sub =useParams()
+   const {property_for ,property_city,property_community,property_type,property_sub_community} =useParams()
+   const {}=useParams()
+   const {}=useParams()
+   const { }=useParams()
     const { loading,  community } = useSelector((state) => state.community);
     const { loading :loadingSubCom,  propertySubCommunity } = useSelector((state) => state.propertySubCommunity);
     const dispatch = useDispatch()
     let history = useHistory();
     useEffect(() => {
         dispatch(getcommunityApi())
-        dispatch(getPropertySubCommunityApi())
+        dispatch(getPropertySubCommunityApi(property_for,property_city,property_community,property_type,property_sub_community))
 
 
     }, [dispatch])
