@@ -12,6 +12,10 @@ const PageHead = (props) => {
 
 
     let CustomClass = props.customclass ? props.customclass : ''
+
+	const url=(titleName)=>{
+		return titleName?.split(" ")?.join("-")?.toLowerCase()
+	}
   return (
     <div>
         	<div className={"ltn__breadcrumb-area text-left   "+CustomClass} >
@@ -25,12 +29,28 @@ const PageHead = (props) => {
 
 						{ props?.propertyDetails?.property_level ? (
 							<ul>
-						<li><Link to={`/${property_city}/${property_community}/${property_sub_community}/${property_type}-for-${property_for}-${property_level}`}><span className="ltn__secondary-color"><i className="fas fa-home" style={{fontSize:'16px'}} /></span> { props?.propertyDetails?.property_city }</Link></li>
-						<li><Link to="/">{ props?.propertyDetails?.property_for }</Link></li>
-						<li><Link to="/">{ props?.propertyDetails?.property_type }</Link></li>
-						<li><Link to="/">{ props?.propertyDetails?.property_community }</Link></li>
-						<li><Link to="/">{ props?.propertyDetails?.property_sub_community }</Link></li>
-						<li><Link to="/level-page">{ props?.propertyDetails?.property_level }</Link></li>
+						<li><Link to='/'><span className="ltn__secondary-color"><i className="fas fa-home" style={{fontSize:'16px'}} /></span> { props?.propertyDetails?.property_city }</Link></li>
+						{/* <li><Link to="/">{ props?.propertyDetails?.property_for }</Link></li> */}
+						<li><Link to={`/${url(
+								props?.propertyDetails?.property_type
+                            )}-for-${url(props?.propertyDetails?.property_for)}/${url(props?.propertyDetails?.property_city)}`}>{ props?.propertyDetails?.property_type }</Link></li>
+						<li><Link to={`/${url(props?.propertyDetails?.property_city)}/${url(
+								props?.propertyDetails?.property_type
+                            )}-for-${url(props?.propertyDetails?.property_for)}/${url(
+								props?.propertyDetails?.property_community
+							  )}`}>{ props?.propertyDetails?.property_community }</Link></li>
+						<li><Link to={`/${url(props?.propertyDetails?.property_city)}/${url(
+                              props?.propertyDetails?.property_community
+                            )}/${url(
+								props?.propertyDetails?.property_type
+                            )}-for-${url(props?.propertyDetails?.property_for)}/${url(props?.propertyDetails?.property_sub_community)}`}>{ props?.propertyDetails?.property_sub_community }</Link></li>
+						<li><Link to={`/${url(props?.propertyDetails?.property_city)}/${url(
+                              props?.propertyDetails?.property_community
+                            )}/${url(props?.propertyDetails?.property_sub_community)}/${url(
+								props?.propertyDetails?.property_type
+                            )}-for-${url(props?.propertyDetails?.property_for)}-${url(
+								props?.propertyDetails?.property_level
+                            )}`}>{ props?.propertyDetails?.property_level }</Link></li>
 						
 						<li>{"TH"}{ props?.propertyDetails?.id }</li>
 
@@ -40,10 +60,20 @@ const PageHead = (props) => {
 						):(
 							<ul>
 						<li><Link to="/"><span className="ltn__secondary-color"><i className="fas fa-home" style={{fontSize:'16px'}} /></span> { props?.propertyDetails?.property_city }</Link></li>
-						<li><Link to="/">{ props?.propertyDetails?.property_for }</Link></li>
-						<li><Link to="/">{ props?.propertyDetails?.property_type }</Link></li>
-						<li><Link to="/">{ props?.propertyDetails?.property_community }</Link></li>
-						<li><Link to="/">{ props?.propertyDetails?.property_sub_community }</Link></li>
+						{/* <li><Link to="/">{ props?.propertyDetails?.property_for }</Link></li> */}
+						<li><Link to={`/${url(
+								props?.propertyDetails?.property_type
+                            )}-for-${url(props?.propertyDetails?.property_for)}/${url(props?.propertyDetails?.property_city)}`}>{ props?.propertyDetails?.property_type }</Link></li>
+						<li><Link to={`/${url(props?.propertyDetails?.property_city)}/${url(
+								props?.propertyDetails?.property_type
+                            )}-for-${url(props?.propertyDetails?.property_for)}/${url(
+								props?.propertyDetails?.property_community
+							  )}`}>{ props?.propertyDetails?.property_community }</Link></li>
+						<li><Link to={`/${url(props?.propertyDetails?.property_city)}/${url(
+                              props?.propertyDetails?.property_community
+                            )}/${url(
+								props?.propertyDetails?.property_type
+                            )}-for-${url(props?.propertyDetails?.property_for)}/${url(props?.propertyDetails?.property_sub_community)}`}>{ props?.propertyDetails?.property_sub_community }</Link></li>
 					
 						
 						<li>{"TH"}{ props?.propertyDetails?.id }</li>
