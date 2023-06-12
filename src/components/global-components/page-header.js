@@ -33,17 +33,17 @@ const PageHead = (props) => {
 						{/* <li><Link to="/">{ props?.propertyDetails?.property_for }</Link></li> */}
 						<li><Link to={`/${url(
 								props?.propertyDetails?.property_type
-                            )}-for-${url(props?.propertyDetails?.property_for)}/${url(props?.propertyDetails?.property_city)}`}>{ props?.propertyDetails?.property_type }</Link></li>
+                            )}-for-${url(props?.propertyDetails?.property_for)}-${url(props?.propertyDetails?.property_city)}`}>{ props?.propertyDetails?.property_type }</Link></li>
 						<li><Link to={`/${url(props?.propertyDetails?.property_city)}/${url(
 								props?.propertyDetails?.property_type
-                            )}-for-${url(props?.propertyDetails?.property_for)}/${url(
+                            )}-for-${url(props?.propertyDetails?.property_for)}-${url(
 								props?.propertyDetails?.property_community
 							  )}`}>{ props?.propertyDetails?.property_community }</Link></li>
 						<li><Link to={`/${url(props?.propertyDetails?.property_city)}/${url(
                               props?.propertyDetails?.property_community
                             )}/${url(
 								props?.propertyDetails?.property_type
-                            )}-for-${url(props?.propertyDetails?.property_for)}/${url(props?.propertyDetails?.property_sub_community)}`}>{ props?.propertyDetails?.property_sub_community }</Link></li>
+                            )}-for-${url(props?.propertyDetails?.property_for)}-${url(props?.propertyDetails?.property_sub_community)}`}>{ props?.propertyDetails?.property_sub_community }</Link></li>
 						<li><Link to={`/${url(props?.propertyDetails?.property_city)}/${url(
                               props?.propertyDetails?.property_community
                             )}/${url(props?.propertyDetails?.property_sub_community)}/${url(
@@ -63,17 +63,17 @@ const PageHead = (props) => {
 						{/* <li><Link to="/">{ props?.propertyDetails?.property_for }</Link></li> */}
 						<li><Link to={`/${url(
 								props?.propertyDetails?.property_type
-                            )}-for-${url(props?.propertyDetails?.property_for)}/${url(props?.propertyDetails?.property_city)}`}>{ props?.propertyDetails?.property_type }</Link></li>
+                            )}-for-${url(props?.propertyDetails?.property_for)}-${url(props?.propertyDetails?.property_city)}`}>{ props?.propertyDetails?.property_type }</Link></li>
 						<li><Link to={`/${url(props?.propertyDetails?.property_city)}/${url(
 								props?.propertyDetails?.property_type
-                            )}-for-${url(props?.propertyDetails?.property_for)}/${url(
+                            )}-for-${url(props?.propertyDetails?.property_for)}-${url(
 								props?.propertyDetails?.property_community
 							  )}`}>{ props?.propertyDetails?.property_community }</Link></li>
 						<li><Link to={`/${url(props?.propertyDetails?.property_city)}/${url(
                               props?.propertyDetails?.property_community
                             )}/${url(
 								props?.propertyDetails?.property_type
-                            )}-for-${url(props?.propertyDetails?.property_for)}/${url(props?.propertyDetails?.property_sub_community)}`}>{ props?.propertyDetails?.property_sub_community }</Link></li>
+                            )}-for-${url(props?.propertyDetails?.property_for)}-${url(props?.propertyDetails?.property_sub_community)}`}>{ props?.propertyDetails?.property_sub_community }</Link></li>
 					
 						
 						<li>{"TH"}{ props?.propertyDetails?.id }</li>

@@ -39,9 +39,11 @@ import CategoryGrid from './components/categoryyyy-grid';
 import CategoryGrid11 from './components/categoryyyy-grid';
 import OffPlanCategory from './components/offplan-category';
 import LevelPage from './components/LevelPage';
-import CommunityPage from './components/SubCommunityPage';
-import SubCommunityPage from './components/SubCommunityPage';
+
+
 import TypePage from './components/TypePage';
+import SubCommunityPage from './components/SubCommunityPage';
+import CommunityPage from './components/CommunityPage';
 
 
 
@@ -113,9 +115,9 @@ import TypePage from './components/TypePage';
         <Route path="/bread-crums" component={ BreadCrumbs } />
         <Route path="/:property_city/:property_community/:property_sub_community/:property_type-for-:property_for" component={ LevelPage } />
         {/* <Route path="/:property_city/:property_community/:property_sub_community/:property_type-for-:property_for-:property_level" component={ LevelPage } /> */}
-        <Route path="/:property_city/:property_community/:property_type-for-:property_for/:property_sub_community"  component={ SubCommunityPage } />
-        <Route path="/:property_city/:property_type-for-:property_for/:property_community" component={ CommunityPage } />
-        <Route path="/:property_type-for-:property_for/:property_city" component={ ShopNew } />
+        <Route path="/:property_city/:property_community/:property_type-for-:property_for-:property_sub_community"  component={ SubCommunityPage } />
+        <Route path="/:property_city/:property_type-for-:property_for-:property_community" component={ CommunityPage } />
+        <Route path="/:property_type-for-:property_for-:property_city" component={ ShopNew } />
 
 
 
