@@ -1,4 +1,4 @@
-import { GET_ALL_PROPERTIES_FAILURE, GET_ALL_PROPERTIES_REQUEST, GET_ALL_PROPERTIES_SUCCESS, GET_PROPERTY_AMENITIES_FAILURE, GET_PROPERTY_AMENITIES_REQUEST, GET_PROPERTY_AMENITIES_SUCCESS, GET_PROPERTY_DETAILS_FAILURE, GET_PROPERTY_DETAILS_REQUEST, GET_PROPERTY_DETAILS_SUCCESS, GET_PROPERTY_IMAGES_FAILURE, GET_PROPERTY_IMAGES_REQUEST, GET_PROPERTY_IMAGES_SUCCESS, GET_PROPERTY_NEAR_BY_FAILURE, GET_PROPERTY_NEAR_BY_REQUEST, GET_PROPERTY_NEAR_BY_SUCCESS } from "../constants/propertyConstants";
+import { GET_ALL_PROPERTIES_FAILURE, GET_ALL_PROPERTIES_REQUEST, GET_ALL_PROPERTIES_SUCCESS, GET_PROPERTY_AMENITIES_FAILURE, GET_PROPERTY_AMENITIES_REQUEST, GET_PROPERTY_AMENITIES_SUCCESS, GET_PROPERTY_DETAILS_FAILURE, GET_PROPERTY_DETAILS_REQUEST, GET_PROPERTY_DETAILS_SUCCESS, GET_PROPERTY_IMAGES_FAILURE, GET_PROPERTY_IMAGES_REQUEST, GET_PROPERTY_IMAGES_SUCCESS, GET_PROPERTY_LEVEL_FAILURE, GET_PROPERTY_LEVEL_REQUEST, GET_PROPERTY_LEVEL_SUCCESS, GET_PROPERTY_NEAR_BY_FAILURE, GET_PROPERTY_NEAR_BY_REQUEST, GET_PROPERTY_NEAR_BY_SUCCESS, GET_PROPERTY_SUB_COMMUNIY_FAILURE, GET_PROPERTY_SUB_COMMUNIY_REQUEST, GET_PROPERTY_SUB_COMMUNIY_SUCCESS } from "../constants/propertyConstants";
 
 export const propertyReducer = (state = { properties: [] }, action) => {
     switch (action.type) {
@@ -132,6 +132,59 @@ export const propertyNearByReducer = (state = { propertiesNearBy: [] }, action) 
 }
 
 
+
+export const propertyLevelReducer = (state ={ propertyLevel :[]}, action) => {
+    switch (action.type) {
+        case GET_PROPERTY_LEVEL_REQUEST:
+            return {
+                loading: true,
+                propertyLevel:[]
+            }
+        case GET_PROPERTY_LEVEL_SUCCESS:
+            return {
+                loading: false,
+                propertyLevel: action.payload,
+              
+            }
+        case GET_PROPERTY_LEVEL_FAILURE: {
+            return {
+                loading: false,
+                error: action.payload,
+            }
+        }
+        default:
+            return state;
+
+    }
+}
+
+
+
+
+export const propertySubCommunityReducer = (state ={ propertySubCommunity :[]}, action) => {
+    switch (action.type) {
+        case GET_PROPERTY_SUB_COMMUNIY_REQUEST:
+            return {
+                loading: true,
+                propertySubCommunity:[]
+            }
+        case GET_PROPERTY_SUB_COMMUNIY_SUCCESS:
+            return {
+                loading: false,
+                propertySubCommunity: action.payload,
+              
+            }
+        case GET_PROPERTY_SUB_COMMUNIY_FAILURE: {
+            return {
+                loading: false,
+                error: action.payload,
+            }
+        }
+        default:
+            return state;
+
+    }
+}
 
 
 
