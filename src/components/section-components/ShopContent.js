@@ -1,10 +1,17 @@
 // import { Link } from '@material-ui/core'
-import React from 'react'
-import { Link } from 'react-router-dom/cjs/react-router-dom.min'
+import React, { useEffect } from 'react'
+import { useDispatch } from 'react-redux'
+import { Link, useParams } from 'react-router-dom/cjs/react-router-dom.min'
+import { getPropertiesType } from '../../actions/propertiesActions2'
 
 const ShopContent = () => {
     let publicUrl = process.env.PUBLIC_URL+'/'
-
+	const dispatch=useDispatch()
+	const {property_type,property_for,property_city}=useParams()
+  
+	useEffect(()=>{
+	  dispatch(getPropertiesType(property_type,property_for,property_city))
+	},[dispatch])
   return (
     <div className="ltn__about-us-area pt-20">
     <div className="container">

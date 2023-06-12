@@ -1,6 +1,7 @@
 import axios from "axios";
 import { GET_ALL_PROPERTIES_FAILURE, GET_ALL_PROPERTIES_REQUEST, GET_ALL_PROPERTIES_SUCCESS, GET_PROPERTY_AMENITIES_FAILURE, GET_PROPERTY_AMENITIES_REQUEST, GET_PROPERTY_AMENITIES_SUCCESS, GET_PROPERTY_DETAILS_FAILURE, GET_PROPERTY_DETAILS_REQUEST, GET_PROPERTY_DETAILS_SUCCESS, GET_PROPERTY_IMAGES_FAILURE, GET_PROPERTY_IMAGES_REQUEST, GET_PROPERTY_IMAGES_SUCCESS, GET_PROPERTY_LEVEL_FAILURE, GET_PROPERTY_LEVEL_REQUEST, GET_PROPERTY_LEVEL_SUCCESS, GET_PROPERTY_NEAR_BY_FAILURE, GET_PROPERTY_NEAR_BY_REQUEST, GET_PROPERTY_NEAR_BY_SUCCESS, GET_PROPERTY_SUB_COMMUNIY_FAILURE, GET_PROPERTY_SUB_COMMUNIY_REQUEST, GET_PROPERTY_SUB_COMMUNIY_SUCCESS } from "../constants/propertyConstants";
 import { GET_PROPERTIES_BY_TYPE_FAILURE, GET_PROPERTIES_BY_TYPE_REQUEST, GET_PROPERTIES_BY_TYPE_SUCCESS } from "../constants/propertyyTypeConstants";
+import { GET_PROPERTY_COMMUNIY_FAILURE, GET_PROPERTY_COMMUNIY_REQUEST, GET_PROPERTY_COMMUNIY_SUCCESS } from "../constants/propertyConstants2";
 
 export const getAllPropertiesApi = () =>
     async (dispatch) => {
@@ -9,7 +10,7 @@ export const getAllPropertiesApi = () =>
 
 
 
-            const  data = await axios.get(`https://totallyhomerealestate.com/API/api/properties`);
+            const data = await axios.get(`https://totallyhomerealestate.com/API/api/properties`);
             console.log(data)
 
             dispatch({
@@ -26,14 +27,14 @@ export const getAllPropertiesApi = () =>
 
 
 
-    export const getSingalPropertyDetailsApi = (id) =>
+export const getSingalPropertyDetailsApi = (id) =>
     async (dispatch) => {
         try {
             dispatch({ type: GET_PROPERTY_DETAILS_REQUEST });
 
 
 
-            const  {data} = await axios.get(`https://totallyhomerealestate.com/API/api/properties/${id}`);
+            const { data } = await axios.get(`https://totallyhomerealestate.com/API/api/properties/${id}`);
             console.log(data)
 
             dispatch({
@@ -51,14 +52,14 @@ export const getAllPropertiesApi = () =>
 
 
 
-    export const getPropertiesByTypeApi = (type) =>
+export const getPropertiesByTypeApi = (type) =>
     async (dispatch) => {
         try {
-            dispatch({ type: GET_PROPERTIES_BY_TYPE_REQUEST});
+            dispatch({ type: GET_PROPERTIES_BY_TYPE_REQUEST });
 
 
 
-            const  {data} = await axios.get(`https://totallyhomerealestate.com/API/api/properties/type/${type}`);
+            const { data } = await axios.get(`https://totallyhomerealestate.com/API/api/properties/type/${type}`);
 
             dispatch({
                 type: GET_PROPERTIES_BY_TYPE_SUCCESS,
@@ -72,14 +73,14 @@ export const getAllPropertiesApi = () =>
     };
 
 
-    export const getPropertiesImagesApi = (id) =>
+export const getPropertiesImagesApi = (id) =>
     async (dispatch) => {
         try {
-            dispatch({ type: GET_PROPERTY_IMAGES_REQUEST});
+            dispatch({ type: GET_PROPERTY_IMAGES_REQUEST });
 
 
 
-            const  {data} = await axios.get(`https://totallyhomerealestate.com/API/api/properties/img/${id}`);
+            const { data } = await axios.get(`https://totallyhomerealestate.com/API/api/properties/img/${id}`);
 
             dispatch({
                 type: GET_PROPERTY_IMAGES_SUCCESS,
@@ -95,14 +96,14 @@ export const getAllPropertiesApi = () =>
 
 
 
-    export const getPropertiesNearByApi = (id) =>
+export const getPropertiesNearByApi = (id) =>
     async (dispatch) => {
         try {
-            dispatch({ type: GET_PROPERTY_NEAR_BY_REQUEST});
+            dispatch({ type: GET_PROPERTY_NEAR_BY_REQUEST });
 
 
 
-            const  {data} = await axios.get(`https://totallyhomerealestate.com/API/api/properties/nearplace/${id}`);
+            const { data } = await axios.get(`https://totallyhomerealestate.com/API/api/properties/nearplace/${id}`);
 
             dispatch({
                 type: GET_PROPERTY_NEAR_BY_SUCCESS,
@@ -118,14 +119,14 @@ export const getAllPropertiesApi = () =>
 
 
 
-    export const getPropertiesAmenitiesApi = (id) =>
+export const getPropertiesAmenitiesApi = (id) =>
     async (dispatch) => {
         try {
-            dispatch({ type: GET_PROPERTY_AMENITIES_REQUEST});
+            dispatch({ type: GET_PROPERTY_AMENITIES_REQUEST });
 
 
 
-            const  {data} = await axios.get(`https://totallyhomerealestate.com/API/api/properties/ani/${id}`);
+            const { data } = await axios.get(`https://totallyhomerealestate.com/API/api/properties/ani/${id}`);
 
             dispatch({
                 type: GET_PROPERTY_AMENITIES_SUCCESS,
@@ -141,14 +142,14 @@ export const getAllPropertiesApi = () =>
 
 
 
-    export const getPropertyLevelApi = () =>
+export const getPropertyLevelApi = () =>
     async (dispatch) => {
         try {
             dispatch({ type: GET_PROPERTY_LEVEL_REQUEST });
 
 
 
-            const  data = await axios.get(`https://totallyhomerealestate.com/API/api/properties/typeforlevel/Villa/Sale/LEVEL123`);
+            const data = await axios.get(`https://totallyhomerealestate.com/API/api/properties/typeforlevel/Villa/Sale/LEVEL123`);
             console.log(data)
 
             dispatch({
@@ -166,15 +167,15 @@ export const getAllPropertiesApi = () =>
 
 
 
-export const getPropertySubCommunityApi = (property_type,property_for,property_sub_community,) =>
+export const getPropertySubCommunityApi = (property_for, property_city, property_community, property_type, orignalSubCommunity) =>
     async (dispatch) => {
         try {
             dispatch({ type: GET_PROPERTY_SUB_COMMUNIY_REQUEST });
 
 
 
-            const  data = await axios.get(`https://totallyhomerealestate.com/API/api/properties/typeforsubcomm/${property_type}/${property_for}/ ${property_sub_community}`);
-            console.log("",data)
+            const { data } = await axios.get(`https://totallyhomerealestate.com/API/api/properties/typeforsubcomm/${property_type}/${property_for}/${orignalSubCommunity}`);
+            console.log("subCommData", data)
 
             dispatch({
                 type: GET_PROPERTY_SUB_COMMUNIY_SUCCESS,
@@ -184,6 +185,28 @@ export const getPropertySubCommunityApi = (property_type,property_for,property_s
             dispatch({
                 type: GET_PROPERTY_SUB_COMMUNIY_FAILURE,
                 payload: error.response.data.message,
+            });
+        }
+    };
+
+
+
+export const getPropertiesCommunity = (id) =>
+    async (dispatch) => {
+        try {
+            dispatch({ type: GET_PROPERTY_COMMUNIY_REQUEST });
+
+
+
+            const { data } = await axios.get(`https://totallyhomerealestate.com/API/api/properties/typeforcomm/Apartment/Rent/Property Community`);
+
+            dispatch({
+                type: GET_PROPERTY_COMMUNIY_SUCCESS,
+                payload: data,
+            });
+        } catch (error) {
+            dispatch({
+                type: GET_PROPERTY_COMMUNIY_FAILURE,
             });
         }
     };
