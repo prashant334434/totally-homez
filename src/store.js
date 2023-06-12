@@ -15,6 +15,7 @@ import { aboutReducer } from "./reducers/aboutReducer";
 import { communityCategoryReducer, communityReducer } from "./reducers/communityReducer";
 import { getOffPlanReducer, offPlanCategoryReducer } from "./reducers/offPlanReducers";
 import { homePageReducer } from "./reducers/homePageReducer";
+import { propertyCommunityReducer, propertyTypeReducer } from "./reducers/propertiesReducers2";
 
 const reducer=combineReducers({
     user:userReducer,
@@ -56,6 +57,8 @@ const reducer=combineReducers({
 
     propertyLevel:propertyLevelReducer,
     propertySubCommunity:propertySubCommunityReducer,
+    propertyCommunity:propertyCommunityReducer,
+    propertyType:propertyTypeReducer
 
 
   
