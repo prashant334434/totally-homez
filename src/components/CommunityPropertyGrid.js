@@ -5,6 +5,7 @@ import { getCatgoryProperties, getTownhouseCatgoryProperties, getTownhouseCatgor
 import { TEAM_API_URL } from '../constants/config'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import { getPropertiesCommunity } from '../actions/propertiesActions'
 const CommunityPropertyGrid = (props) => {
 	let carouselItems = [
 		{ id: 1, content: 'https://www.timeoutdubai.com/cloud/timeoutdubai/2021/09/13/Damx3DMM-The-Penthouse-1200x800.jpg' },
@@ -18,18 +19,15 @@ const CommunityPropertyGrid = (props) => {
     const [propertyCategory, setPropertyCategory] = useState("apartment")
     let publicUrl = process.env.PUBLIC_URL + '/'
     let customClass = props.customClass ? props.customClass : ''
-    const { townhouseCategoryRentProperties } = useSelector((state) => state.townhouseRentProperties)
 
     const dispatch = useDispatch()
 
     useEffect(() => {
-        dispatch(getTownhouseCatgoryRentProperties())
-    }, [dispatch])
+        dispatch(getPropertiesCommunity(props?.type, props?.propertyFor,props?.comm))
+    }, [dispatch]) 
 
 
-	if (townhouseCategoryRentProperties?.length > 0) {
-		carouselItems = townhouseCategoryRentProperties
-	}
+	
 
     return (
         <div>

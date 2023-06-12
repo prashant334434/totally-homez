@@ -18,17 +18,13 @@ const SubCommunityPropertyGrid = (props) => {
     const [propertyCategory, setPropertyCategory] = useState("apartment")
     let publicUrl = process.env.PUBLIC_URL + '/'
     let customClass = props.customClass ? props.customClass : ''
-    const { townhouseCategoryRentProperties } = useSelector((state) => state.townhouseRentProperties)
-
-    const dispatch = useDispatch()
-
-    useEffect(() => {
-        dispatch(getTownhouseCatgoryRentProperties())
-    }, [dispatch])
 
 
-	if (townhouseCategoryRentProperties?.length > 0) {
-		carouselItems = townhouseCategoryRentProperties
+ 
+
+
+	if (props?.propertySubcom?.length > 0) {
+		carouselItems = props?.propertySubcom
 	}
 
     return (

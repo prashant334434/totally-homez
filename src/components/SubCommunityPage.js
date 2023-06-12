@@ -40,8 +40,9 @@ console.log("orignalSubCommunity",orignalSubCommunity)
     const dispatch = useDispatch()
     let history = useHistory();
     useEffect(() => {
-        dispatch(getcommunityApi())
         dispatch(getPropertySubCommunityApi(property_for,property_city,property_community,property_type,orignalSubCommunity))
+
+        dispatch(getcommunityApi())
 
 
     }, [dispatch])

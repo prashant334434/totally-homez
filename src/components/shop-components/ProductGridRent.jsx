@@ -5,6 +5,7 @@ import { getApartmentCatgoryRentProperties, getCatgoryProperties, getCatgoryProp
 import { API_URL, TEAM_API_URL } from '../../constants/config'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import PropertyImage from './PropertyImage'
 
 const ProductGridRent = (props) => {
 	let carouselItems = [
@@ -91,7 +92,7 @@ const ProductGridRent = (props) => {
                               item?.property_level
                             )}/th${item?.id}`}
                           >
-                            <img src={item?.property_imges} alt="#" />
+                            <PropertyImage id={item?.id} />
                           </Link>
                         ) : (
                           <Link
@@ -101,7 +102,7 @@ const ProductGridRent = (props) => {
                               item?.property_type
                             )}-for-${url(item?.property_for)}/th${item?.id}`}
                           >
-                            <img src={item?.property_imges} alt="#" />
+                            <PropertyImage id={item?.id} />
                           </Link>
                         )}
                         <div className="product-badge">
@@ -150,7 +151,7 @@ const ProductGridRent = (props) => {
                             )}
                           </div>
                           <div className="price_div">
-                            <span>AED {item?.property_price}</span>
+                            <span>AED <br/> {item?.property_price}</span>
                           </div>
                         </div>
                         <div className="product-description">

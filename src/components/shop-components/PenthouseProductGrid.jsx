@@ -5,6 +5,7 @@ import { getCatgoryProperties, getPenthouseCatgoryProperties } from '../../actio
 import { TEAM_API_URL } from '../../constants/config'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import PropertyImage from './PropertyImage'
 const PenthouseProductGrid = (props) => {
 	let carouselItems = [
 		{ id: 1, content: 'https://www.timeoutdubai.com/cloud/timeoutdubai/2021/09/13/Damx3DMM-The-Penthouse-1200x800.jpg' },
@@ -89,7 +90,7 @@ const PenthouseProductGrid = (props) => {
                               item?.property_level
                             )}/th${item?.id}`}
                           >
-                            <img src={`https://cf.bstatic.com/xdata/images/xphoto/max1440/48387083.jpg?k=71de1d7fb5c115ccc436261c89c33780c052bc99fcb26cc40101f35b33226fbf&o=`} alt="#" />
+                            <PropertyImage id={item?.id} />
                           </Link>
                         ) : (
                           <Link

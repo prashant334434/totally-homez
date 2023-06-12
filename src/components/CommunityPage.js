@@ -8,8 +8,8 @@ import Footer from './global-components/footer';
 import BlogGrid from './blog-components/blog-grid';
 import ShopGrid_V1 from './shop-grid';
 import { useDispatch, useSelector } from 'react-redux';
-import { getSingalPropertyDetailsApi } from '../actions/propertiesActions';
-import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
+import { getPropertiesCommunity, getSingalPropertyDetailsApi } from '../actions/propertiesActions';
+import { useParams } from 'react-router-dom';
 import Loader from './Loader/Loader';
 import { useHistory } from "react-router-dom";
 import PageForm from './section-components/page-form';
@@ -27,6 +27,10 @@ import CommunityColumnProperty from './global-components/CommunityColumn';
 import CommunityPropertyGrid from './CommunityPropertyGrid';
 
 const CommunityPage = () => {
+    const {property_city,property_type,property_for,property_community}=useParams()
+    console.log(property_city,property_type,property_for,property_community)
+    const orignalCommunity=property_community?.split("-").join(" ")
+
     const data = [
         { id: 1, name: 'Item 1' },
         { id: 2, name: 'Item 2' },
@@ -53,7 +57,7 @@ const CommunityPage = () => {
         <VillaforSale  headertitle="Garden Homes Frond C" customclass="mb-0 pt-100 " />
         <CommunityColumnProperty loading={loading} community={community}/>
        
-        <CommunityPropertyGrid/>
+        <CommunityPropertyGrid type={property_type} propertyFor={property_for} comm={orignalCommunity}/>
         <CallToActionV1 />
        
         <Footer />

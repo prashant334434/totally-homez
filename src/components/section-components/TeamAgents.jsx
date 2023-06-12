@@ -6,6 +6,7 @@ import { getTeamsApi } from '../../actions/teamActions'
 import { TEAM_API_URL } from '../../constants/config'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import Loader from '../Loader/Loader'
 const TeamAgents = (props) => {
 	let carouselItems = [
 		{ id: 1, content: 'https://www.timeoutdubai.com/cloud/timeoutdubai/2021/09/13/Damx3DMM-The-Penthouse-1200x800.jpg' },
@@ -16,7 +17,7 @@ const TeamAgents = (props) => {
 		{ id: 6, content: 'https://www.timeoutdubai.com/cloud/timeoutdubai/2021/11/08/The-Penthouse.jpg' },
 		// Add more items as needed
 	];
-	const { data } = useSelector((state) => state.team.team)
+	const { loading,team } = useSelector((state) => state.team)
 	const dispatch = useDispatch()
 	let publicUrl = process.env.PUBLIC_URL + '/'
 	let customClass = props.customClass ? props.customClass : ''
@@ -26,10 +27,10 @@ const TeamAgents = (props) => {
 		dispatch(getTeamsApi())
 	}, [dispatch])
 
-	if (data?.length > 0) {
+	if (team?.length > 0) {
 
 
-		carouselItems = data
+		carouselItems = team
 
 
 	}
@@ -37,7 +38,9 @@ const TeamAgents = (props) => {
 	const handleLinkClick = (id) => {
 		console.log(id)
 	}
-
+if(loading){
+	return <Loader/>
+}
 	return (
 		<div>
 			<div>

@@ -5,6 +5,7 @@ import { getCatgoryProperties } from "../../actions/catgoryActions";
 import { TEAM_API_URL } from "../../constants/config";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import PropertyImage from "./PropertyImage";
 
 const ProductGrid = (props) => {
   let carouselItems = [
@@ -54,12 +55,12 @@ const ProductGrid = (props) => {
   if (categoryProperties?.length > 0) {
     carouselItems = categoryProperties;
   }
-  const url=(titleName)=>{
+  const url = (titleName) => {
     return titleName?.split(" ")?.join("-")?.toLowerCase()
-}
-const url2=(titleName)=>{
-  return titleName?.split(" ")?.join("-")?.toLowerCase()
-}
+  }
+  const url2 = (titleName) => {
+    return titleName?.split(" ")?.join("-")?.toLowerCase()
+  }
   return (
     <div>
       <div>
@@ -113,7 +114,7 @@ const url2=(titleName)=>{
                               item?.property_level
                             )}/th${item?.id}`}
                           >
-                            <img src={item?.property_imges} alt="#" />
+                            <PropertyImage id={item?.id} />
                           </Link>
                         ) : (
                           <Link
@@ -125,7 +126,7 @@ const url2=(titleName)=>{
                              
                             /th${item?.id}`}
                           >
-                            <img src={item?.property_imges} alt="#" />
+                            <PropertyImage id={item?.id} />
                           </Link>
                         )}
                         <div className="product-badge">
@@ -141,14 +142,14 @@ const url2=(titleName)=>{
                           <div className="title_div">
                             {item.property_level ? (
                               <Link
-                            to={`/${url(item?.property_city)}/${url(
-                              item?.property_community
-                            )}/${url(item?.property_sub_community)}/${url(
-                              item?.property_type
-                            )}-for-${url(item?.property_for)}-${url(
-                              item?.property_level
-                            )}/th${item?.id}`}
-                          >
+                                to={`/${url(item?.property_city)}/${url(
+                                  item?.property_community
+                                )}/${url(item?.property_sub_community)}/${url(
+                                  item?.property_type
+                                )}-for-${url(item?.property_for)}-${url(
+                                  item?.property_level
+                                )}/th${item?.id}`}
+                              >
                                 <h2
                                   dangerouslySetInnerHTML={{
                                     __html: item?.property_name,
@@ -158,14 +159,14 @@ const url2=(titleName)=>{
                               </Link>
                             ) : (
                               <Link
-                            to={`/${url(item?.property_city)}/${url(
-                              item?.property_community
-                            )}/${url(item?.property_sub_community)}/${url(
-                              item?.property_type
-                            )}-for-${url(item?.property_for)}
+                                to={`/${url(item?.property_city)}/${url(
+                                  item?.property_community
+                                )}/${url(item?.property_sub_community)}/${url(
+                                  item?.property_type
+                                )}-for-${url(item?.property_for)}
                              
                             /th${item?.id}`}
-                          >
+                              >
                                 <h2
                                   dangerouslySetInnerHTML={{
                                     __html: item?.property_name,
@@ -176,7 +177,7 @@ const url2=(titleName)=>{
                             )}
                           </div>
                           <div className="price_div">
-                            <span>AED {item?.property_price}</span>
+                            <span>AED <br/>{item?.property_price}</span>
                           </div>
                         </div>
                         <div className="product-description">
