@@ -25,7 +25,7 @@ const PageHead = (props) => {
 
 						{ props?.propertyDetails?.property_level ? (
 							<ul>
-						<li><Link to={`/property`}><span className="ltn__secondary-color"><i className="fas fa-home" style={{fontSize:'16px'}} /></span> { props?.propertyDetails?.property_city }</Link></li>
+						<li><Link to={`/${property_city}/${property_community}/${property_sub_community}/${property_type}-for-${property_for}-${property_level}`}><span className="ltn__secondary-color"><i className="fas fa-home" style={{fontSize:'16px'}} /></span> { props?.propertyDetails?.property_city }</Link></li>
 						<li><Link to="/">{ props?.propertyDetails?.property_for }</Link></li>
 						<li><Link to="/">{ props?.propertyDetails?.property_type }</Link></li>
 						<li><Link to="/">{ props?.propertyDetails?.property_community }</Link></li>
