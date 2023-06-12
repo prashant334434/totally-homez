@@ -2,7 +2,7 @@ import { createStore,combineReducers,applyMiddleware} from "redux"
 import thunk from "redux-thunk"
 import {composeWithDevTools} from 'redux-devtools-extension'
 import { userReducer } from "./reducers/userReducers";
-import { propertyAmenitiesReducer, propertyDetailsReducer, propertyImagesReducer, propertyNearByReducer, propertyReducer } from "./reducers/propertyReducers";
+import { propertyAmenitiesReducer, propertyDetailsReducer, propertyImagesReducer, propertyLevelReducer, propertyNearByReducer, propertyReducer, propertySubCommunityReducer } from "./reducers/propertyReducers";
 import { carouselDetailsReducer, carouselReducer } from "./reducers/carouselReducers";
 import { getCurrentTeamMemberReducer, teamDetailsReducer, teamReducer } from "./reducers/teamReducers";
 import { apartmentCategoryReducer, apartmentCategoryRentReducer, catgoryPropertiesRentReducer, catgoryReducer, catgoryRentReducer, penthouseCategoryReducer, penthouseCategoryRentReducer, townhouseCategoryReducer, townhouseCategoryRentReducer } from "./reducers/catgoryReducres";
@@ -51,7 +51,11 @@ const reducer=combineReducers({
     homePage:homePageReducer,
     currentTeamMember:getCurrentTeamMemberReducer,
     offPlanCategory:offPlanCategoryReducer,
-    communityCategory:communityCategoryReducer
+    communityCategory:communityCategoryReducer,
+
+
+    propertyLevel:propertyLevelReducer,
+    propertySubCommunity:propertySubCommunityReducer,
 
 
   

@@ -8,7 +8,7 @@ import Footer from './global-components/footer';
 import BlogGrid from './blog-components/blog-grid';
 import ShopGrid_V1 from './shop-grid';
 import { useDispatch, useSelector } from 'react-redux';
-import { getSingalPropertyDetailsApi } from '../actions/propertiesActions';
+import { getPropertyLevelApi, getSingalPropertyDetailsApi } from '../actions/propertiesActions';
 import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
 import Loader from './Loader/Loader';
 import { useHistory } from "react-router-dom";
@@ -33,12 +33,12 @@ const LevelPage = () => {
       ];
       const itemsPerPage = 5;
    
-    const { loading,  community } = useSelector((state) => state.community);
+    const { loading,  propertyLevel } = useSelector((state) => state.propertyLevel);
 
     const dispatch = useDispatch()
     let history = useHistory();
     useEffect(() => {
-        dispatch(getcommunityApi())
+        dispatch(getPropertyLevelApi())
         
         
     }, [dispatch])
@@ -55,7 +55,7 @@ const LevelPage = () => {
         {/* <PageHeader/> */}
         {/* <ColumnProperty loading={loading} community={community}/> */}
        
-        <LevelProperties/>
+        <LevelProperties loading ={loading} propertyLevel={propertyLevel}/>
         <CallToActionV1 />
        
         <Footer />

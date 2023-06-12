@@ -8,7 +8,7 @@ import Footer from './global-components/footer';
 import BlogGrid from './blog-components/blog-grid';
 import ShopGrid_V1 from './shop-grid';
 import { useDispatch, useSelector } from 'react-redux';
-import { getSingalPropertyDetailsApi } from '../actions/propertiesActions';
+import { getPropertySubCommunityApi, getSingalPropertyDetailsApi } from '../actions/propertiesActions';
 import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
 import Loader from './Loader/Loader';
 import { useHistory } from "react-router-dom";
@@ -34,10 +34,14 @@ const SubCommunityPage = () => {
       const itemsPerPage = 5;
    
     const { loading,  community } = useSelector((state) => state.community);
+    const { loading :loadingSubCom,  propertySubCommunity } = useSelector((state) => state.propertySubCommunity);
     const dispatch = useDispatch()
     let history = useHistory();
     useEffect(() => {
         dispatch(getcommunityApi())
+        dispatch(getPropertySubCommunityApi())
+
+
     }, [dispatch])
 
 
@@ -51,7 +55,7 @@ const SubCommunityPage = () => {
         <VillaforSale  headertitle="Garden Homes Frond C" customclass="mb-0 pt-100 " />
         <SubCommunityColumnProperty loading={loading} community={community}/>
        
-        <SubCommunityPropertyGrid/>
+        <SubCommunityPropertyGrid loading={loadingSubCom} propertySubcom={propertySubCommunity}/>
         <CallToActionV1 />
        
         <Footer />
