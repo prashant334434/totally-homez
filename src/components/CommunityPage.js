@@ -26,6 +26,7 @@ import SubCommunityPropertyGrid from './subCommunityPropertyGrid';
 import CommunityColumnProperty from './global-components/CommunityColumn';
 import CommunityPropertyGrid from './CommunityPropertyGrid';
 import { getPropertiesCategoryUtils, getSubCommunitiesInaCommunityUtils } from '../utils/propertyUtils';
+import MetaData from './Layout/MetaData';
 
 const CommunityPage = () => {
     const {property_city,property_type,property_for,property_community}=useParams()
@@ -89,8 +90,10 @@ const CommunityPage = () => {
         )
     }
     return <div>
+        <MetaData title={` ${property_type} For ${property_for} In ${orignalCommunity}`} metaDesription={`Check Our Verified Listing Of Dubai ${property_type} For ${property_for} In ${orignalCommunity} With World Class Amenities, Amazing Views And Attractive Lifestyle`}/>
+
         <MobileNav />
-        <VillaforSale  headertitle="Garden Homes Frond C" customclass="mb-0 pt-100 " />
+        <VillaforSale city={property_city} type={property_type} for={property_for} comm={orignalCommunity}  headertitle="Garden Homes Frond C" customclass="mb-0 " />
         <CommunityColumnProperty loading={ld} getSubCommunitiesInaCommunity={getSubCommunitiesInaCommunity}/>
        
         <CommunityPropertyGrid  propertyCategory={propertyCategory}/>

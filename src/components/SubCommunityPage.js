@@ -24,6 +24,8 @@ import BreadCrumProperties from './BreadCrumProperties';
 import SubCommunityColumnProperty from './global-components/SubCommunityColumn';
 import SubCommunityPropertyGrid from './subCommunityPropertyGrid';
 import { getLevelsInASubCommunityUtils, getPropertiesSubCommunityUtils } from '../utils/propertyUtils';
+import VillaforSaleSub from './global-components/villaForSaleSub';
+import MetaData from './Layout/MetaData';
 
 const SubCommunityPage = () => {
     const data = [
@@ -84,8 +86,10 @@ const [getLevelsInASubCommunity, setGetLevelsInASubCommunity] = useState([])
         )
     }
     return <div>
+                <MetaData title={` ${property_type} For ${property_for} In ${orignalSubCommunity}`} metaDesription={`Check Our Verified Listing Of Dubai ${property_type} For ${property_for} In ${orignalSubCommunity} With World Class Amenities, Amazing Views And Attractive Lifestyle.`}/>
+
         <MobileNav />
-        <VillaforSale headertitle="Garden Homes Frond C" customclass="mb-0 pt-100 " />
+        <VillaforSaleSub city={property_city} type={property_type} for={property_for} subComm={orignalSubCommunity} headertitle="Garden Homes Frond C" customclass="mb-0 pt-100 " />
         <SubCommunityColumnProperty getLevelsInASubCommunity={getLevelsInASubCommunity} />
 
         <SubCommunityPropertyGrid propertySubcom={propertySubCategory} />
