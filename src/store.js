@@ -59,7 +59,8 @@ const reducer=combineReducers({
     propertySubCommunity:propertySubCommunityReducer,
     propertyCommunity:propertyCommunityReducer,
     propertyTypeDetails:propertyTypeReducerDetails,
-    propertyImage:propertyImageReducer
+    propertyImage:propertyImageReducer,
+    propertyCommunityData:propertyCommunityReducer
 
 
   
