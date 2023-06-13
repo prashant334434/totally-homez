@@ -26,6 +26,7 @@ import SubCommunityPropertyGrid from './subCommunityPropertyGrid';
 import CommunityColumnProperty from './global-components/CommunityColumn';
 import CommunityPropertyGrid from './CommunityPropertyGrid';
 import { getPropertiesCategoryUtils, getSubCommunitiesInaCommunityUtils } from '../utils/propertyUtils';
+import CommunityBreadcrum from './global-components/CommunityBreadcrum';
 
 const CommunityPage = () => {
     const {property_city,property_type,property_for,property_community}=useParams()
@@ -90,7 +91,7 @@ const CommunityPage = () => {
     }
     return <div>
         <MobileNav />
-        <VillaforSale  headertitle="Garden Homes Frond C" customclass="mb-0 pt-100 " />
+      <CommunityBreadcrum/>
         <CommunityColumnProperty loading={ld} getSubCommunitiesInaCommunity={getSubCommunitiesInaCommunity}/>
        
         <CommunityPropertyGrid  propertyCategory={propertyCategory}/>
