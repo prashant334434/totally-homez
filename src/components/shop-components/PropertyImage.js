@@ -11,10 +11,10 @@ const PropertyImage = ({ id }) => {
     // }, [dispatch])
    
     return (
-        <h1>image goes here </h1>
+        // <h1>image goes here </h1>
         
         
-        // <img src={`${PROPERTY_IMAGES_URL}/${propertyImage[0]?.img_name}`} alt="#" />
+        <img src={`${PROPERTY_IMAGES_URL}/${propertyImage[0]?.img_name}`} alt="#" />
     )
 }
 

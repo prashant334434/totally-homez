@@ -15,12 +15,12 @@ const BestVilla = (props) => {
         props?.homePage?.map((item,index)=>(
           <div key={item?.id} className="row">
         
-          <div className="col-lg-6 align-self-center">
+          <div className="col-lg-6">
               <div className="about-us-img-wrap about-img-right">
-                <img src={"/assets/img/02june/02june002.png"} alt="About Us Image" />
+                <img src={"/assets/img/02june/02june002.png"} alt="About Us Image"  height="500px" width="500px"/>
               </div>
             </div>
-            <div className="col-lg-6 align-self-center">
+            <div className="col-lg-6">
               <div className="about-us-info-wrap">
                 <div className="section-title-area ltn__section-title-2--- mb-30">
                   {/* <h6 className="section-subtitle section-subtitle-2 ltn__secondary-color">About Us</h6> */}

@@ -5,11 +5,11 @@ const BestPenthouse = (props) => {
     let customClass = props.customClass ? props.customClass :''
 
   return (
-    <div className={"ltn__about-us-area pt-40 pb-40"+customClass}>
+    <div className={"ltn__about-us-area pt-80 pb-40"+customClass}>
     <div className="container">
       {props?.homePage?.map((item,index)=>(
         <div className="row">
-        <div className="col-lg-6 align-self-center">
+        <div className="col-lg-6">
           <div className="about-us-info-wrap">
             <div className="section-title-area ltn__section-title-2--- mb-30">
               {/* <h6 className="section-subtitle section-subtitle-2 ltn__secondary-color">About Us</h6> */}
@@ -55,9 +55,9 @@ const BestPenthouse = (props) => {
             </ul> */}
           </div>
         </div>
-        <div className="col-lg-6 align-self-center">
+        <div className="col-lg-6">
           <div className="about-us-img-wrap about-img-right">
-            <img className='penthouseImage' src="/assets/img/02june/02june003.png" alt="About Us Image" />
+            <img className='penthouseImage' src="/assets/img/02june/02june003.png" alt="About Us Image"  height="500px" width="500px"/>
           </div>
         </div>
       </div>

@@ -35,9 +35,8 @@ const TeamDetails = ({loading,teamDetails}) => {
 			<div className="row">
 			<div className="col-lg-12">
 				<div className="ltn__team-details-member-about">
-				<ul>
-rm -rf build				
-											<li> {teamDetails?.description}</li>
+				<ul>			
+											<li> <p>{teamDetails?.description}</p></li>
 
 
 				</ul>

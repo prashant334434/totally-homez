@@ -11,12 +11,12 @@ const BestTownhouse = (props) => {
           {
             props?.homePage?.map((item, index) => (
               <div className="row">
-                <div className="col-lg-6 align-self-center">
+                <div className="col-lg-6">
                   <div className="about-us-img-wrap about-img-right">
-                    <img src={publicUrl + "assets/img/others/9.png"} alt="About Us Image" />
+                    <img src={publicUrl + "assets/img/others/9.png"} alt="About Us Image"  height="500px" width="500px"/>
                   </div>
                 </div>
-                <div className="col-lg-6 align-self-center">
+                <div className="col-lg-6">
                   <div className="about-us-info-wrap">
                     <div className="section-title-area ltn__section-title-2--- mb-30">
                       {/* <h6 className="section-subtitle section-subtitle-2 ltn__secondary-color">About Us</h6> */}
