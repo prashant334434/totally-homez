@@ -16210,6 +16210,21 @@ body {
     font-size: 24px;
   }
 }
+@media (max-width: 1200px) {
+  .mobile-menu-toggle svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    margin-top: -18px;
+    margin-left: -27px;
+    cursor: pointer;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+  }
+  
+}
 
 /* ----------------------------------------------------
     Elements Area
@@ -19361,3 +19376,6 @@ a.ltn__utilize-toggle.close {
 /* .react-multi-carousel-item--active {
   width: 1003px !important;
 } */
+.sticky-active li.active a{
+  color:#EB2027!important;
+}

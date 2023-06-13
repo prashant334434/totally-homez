@@ -41,6 +41,9 @@ const TeamAgents = (props) => {
 if(loading){
 	return <Loader/>
 }
+const url = (titleName) => {
+    return titleName?.split(" ")?.join("-")?.toLowerCase()
+  }
 	return (
 		<div>
 			<div>
@@ -99,7 +102,7 @@ if(loading){
 													<img className="img2" src={`${TEAM_API_URL}/${item.path}`} alt="Image" />
 												</div>
 												<div className="team-info">
-													<Link onClick={() => handleLinkClick(item?.id)} to={`/team-details/${item?.id}`}><h4>{item.name}</h4></Link>
+													<Link onClick={() => handleLinkClick(item?.id)} to={`/team-details/${url(item?.name)}`}><h4>{item.name}</h4></Link>
 
 													<h6 className=" designnation ltn__secondary-color">{item.designation}</h6>
 												</div>
