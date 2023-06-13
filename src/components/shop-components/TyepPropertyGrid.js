@@ -132,7 +132,7 @@ const TyepPropertyGrid = (props) => {
 										<div className="ltn__product-slider-area ltn__product-gutter pt-40 pb-40">
 											<div className="container-fluid">
 
-												<div className="row ltn__product-slider-item-three-active-full-width slick-arrow-1">
+												<div className="row ltn__product slick-arrow-1">
 													{
 														props?.propertyTypes?.map((categoryProperty) => (
 															<div className="col-lg-4">

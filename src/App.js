@@ -8,7 +8,7 @@ import log from 'loglevel';
 
 import Team from './components/team';
 import TeamDetails from './components/team-details';
-import Error  from './components/404';
+import Error from './components/404';
 
 import ProdductDetails from './components/product-details';
 
@@ -48,88 +48,88 @@ import TypePropertyPage from './components/shop-components/TypePropertyPage';
 
 
 
- 
- const App = () => {
+
+const App = () => {
   log.setLevel(log.levels.DEBUG);
 
-    const slides = [
-        {
-          id: 1,
-          title: 'Slide 1',
-          imageUrl: 'https://placeimg.com/640/480/tech',
-        },
-        {
-          id: 2,
-          title: 'Slide 2',
-          imageUrl: 'https://placeimg.com/640/480/nature',
-        },
-        {
-          id: 3,
-          title: 'Slide 3',
-          imageUrl: 'https://placeimg.com/640/480/animals',
-        },
-      ];
-   return (
+  const slides = [
+    {
+      id: 1,
+      title: 'Slide 1',
+      imageUrl: 'https://placeimg.com/640/480/tech',
+    },
+    {
+      id: 2,
+      title: 'Slide 2',
+      imageUrl: 'https://placeimg.com/640/480/nature',
+    },
+    {
+      id: 3,
+      title: 'Slide 3',
+      imageUrl: 'https://placeimg.com/640/480/animals',
+    },
+  ];
+  return (
     <BrowserRouter>
-    <div>
-    <Switch>
-        <Route exact path="/" component={HomeV7} />
-       
-
-        <Route path="/career" component={CareerV1} />
-        <Route path="/list-with-us" component={ListWithUs} />
-       
-        <Route path="/team" component={ Team } />
-        <Route path="/team-details/:id" component={ TeamDetails } />
-        <Route path="/404" component={ Error } />
-        {/* <Route path="/" component={ Shop } /> */}
-        {/* <Route path="/shop-grid" component={ ShopGrid } /> */}
-        {/* <Route path="/shop" component={ ShopLeftSidebar } /> */}
-        {/* <Route path="/shopjhfe" component={ ShopRightSidebar } /> */}
-
-        <Route path="/product-details" component={ ProdductDetails } />
-        {/* blog */}
-        <Route path="/blogs" component={ BlogGrid } />
-        <Route exact path="/best-communites-in-dubai" component={ CategoryGrid11 } />
-        <Route exact path="/offplan-projects-in-dubai" component={ OffPlanCategory } />
-        {/* <Route path="/blog-right-sidebar" component={ BlogRightSidebar } /> */}
-        <Route path="/blog" component={ Blog } />
-
-        <Route path="/blog-details" component={ BlogDetails } />
-        {/* <Route path="/contact" component={ Contact } /> */}
-
-        <Route exact path="/offplan-projects-in-dubai/:offPlanCategoryName" component={ OffPlan } />
+      <div>
+        <Switch>
+          <Route exact path="/" component={HomeV7} />
 
 
-        <Route path="/property-details/:id" component={ ProdductDetails } />
-        <Route path="/:property_city/:property_community/:property_sub_community/:property_type-for-:property_for/TH:id" component={ ProdductDetails } />
-        <Route path="/:property_city/:property_community/:property_sub_community/:property_type-for-:property_for-:property_level/TH:id" component={ ProdductDetails } />
-        <Route path="/contact-us" component={ NewContact } />
-        <Route path="/our-team" component={ TeamsNew } />
+          <Route path="/career" component={CareerV1} />
+          <Route path="/list-with-us" component={ListWithUs} />
 
-        <Route path="/property/:type" component={ PropertyType } />
-     
+          <Route path="/team" component={Team} />
+          <Route path="/team-details/:id" component={TeamDetails} />
+          <Route path="/404" component={Error} />
+          {/* <Route path="/" component={ Shop } /> */}
+          {/* <Route path="/shop-grid" component={ ShopGrid } /> */}
+          {/* <Route path="/shop" component={ ShopLeftSidebar } /> */}
+          {/* <Route path="/shopjhfe" component={ ShopRightSidebar } /> */}
 
-        <Route path="/about-us" component={ aboutUs } />
-        <Route path="/shop-page" component={ ShopNew } />
-        <Route  exact path="/best-communites-in-dubai/:communityName" component={ GuideLine } />
-        <Route exact path="/bread-crums" component={ BreadCrumbs } />
-        {/* <Route exact path="/:property_city/:property_community/:property_sub_community/:property_type-for-:property_for" component={ LevelPage } /> */}
-        {/* <Route path="/:property_city/:property_community/:property_sub_community/:property_type-for-:property_for-:property_level" component={ LevelPage } /> */}
-        {/* <Route exact path="/:property_city/:property_community/:property_type-for-:property_for-:property_sub_community"  component={ SubCommunityPage } />
-        <Route exact path="/:property_city/:property_type-for-:property_for-:property_community" component={ CommunityPage } /> */}
-        <Route exact path="/:property_type-for-:property_for-:property_city" component={ TypePropertyPage } />
+          <Route path="/product-details" component={ProdductDetails} />
+          {/* blog */}
+          <Route path="/blogs" component={BlogGrid} />
+          <Route exact path="/best-communites-in-dubai" component={CategoryGrid11} />
+          <Route exact path="/offplan-projects-in-dubai" component={OffPlanCategory} />
+          {/* <Route path="/blog-right-sidebar" component={ BlogRightSidebar } /> */}
+          <Route path="/blog" component={Blog} />
+
+          <Route path="/blog-details" component={BlogDetails} />
+          {/* <Route path="/contact" component={ Contact } /> */}
+
+          <Route exact path="/offplan-projects-in-dubai/:offPlanCategoryName" component={OffPlan} />
+
+
+          <Route path="/property-details/:id" component={ProdductDetails} />
+          <Route path="/:property_city/:property_community/:property_sub_community/:property_type-for-:property_for/TH:id" component={ProdductDetails} />
+          <Route path="/:property_city/:property_community/:property_sub_community/:property_type-for-:property_for-:property_level/TH:id" component={ProdductDetails} />
+          <Route path="/contact-us" component={NewContact} />
+          <Route path="/our-team" component={TeamsNew} />
+
+          <Route path="/property/:type" component={PropertyType} />
+
+
+          <Route path="/about-us" component={aboutUs} />
+          <Route path="/shop-page" component={ShopNew} />
+          <Route exact path="/best-communites-in-dubai/:communityName" component={GuideLine} />
+          <Route exact path="/bread-crums" component={BreadCrumbs} />
+          {/* <Route exact path="/:property_city/:property_community/:property_sub_community/:property_type-for-:property_for" component={ LevelPage } /> */}
+           <Route path="/:property_city/:property_community/:property_sub_community/:property_type-for-:property_for-:property_level" component={ LevelPage } /> 
+          <Route exact path="/:property_city/:property_community/:property_type-for-:property_for-:property_sub_community" component={SubCommunityPage} />
+          <Route exact path="/:property_city/:property_type-for-:property_for-:property_community" component={CommunityPage} />
+          <Route exact path="/:property_type-for-:property_for-:property_city" component={TypePropertyPage} />
 
 
 
-    </Switch>
-    </div>
+        </Switch>
+      </div>
     </BrowserRouter>
 
 
 
 
-)
- }
- 
- export default App
+  )
+}
+
+export default App

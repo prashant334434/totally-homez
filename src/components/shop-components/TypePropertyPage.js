@@ -12,6 +12,7 @@ import { useParams } from 'react-router-dom';
 import TypePropertyContent from '../section-components/TypePropertyContent';
 import { getPropertiesTypeUtils } from '../../utils/propertyUtils';
 import TyepPropertyGrid from './TyepPropertyGrid';
+import Loader from '../Loader/Loader';
 
 const TypePropertyPage = () => {
     const { property_type, property_for, property_city } = useParams()
@@ -34,7 +35,9 @@ const TypePropertyPage = () => {
 
         fetchData();
     }, []);
-
+if(loading){
+    return <Loader/>
+}
   return (
     <div>
       <MobileNav/>

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Navbar from './global-components/navbar-v3';
 import PageHeader from './global-components/page-header';
 import ProductSlider from './shop-components/product-slider-v1';
@@ -22,26 +22,48 @@ import { getcommunityApi } from '../actions/communityAction';
 import PaginationComponent from './PaginationComponent';
 import BreadCrumProperties from './BreadCrumProperties';
 import LevelProperties from './LevelProperties';
+import { getPropertiesLevelUtils } from '../utils/propertyUtils';
 
 const LevelPage = () => {
-    const id =useParams()
-    const data = [
+    const id = useParams()
+    const { loading:communityloading,  community } = useSelector((state) => state.community);
+
+const {property_type,property_for,property_level}=useParams()
+const orignalLevel=property_level?.split("-").join(" ")
+const data = [
         { id: 1, name: 'Item 1' },
         { id: 2, name: 'Item 2' },
         { id: 3, name: 'Item 3' },
         // ... more data
-      ];
-      const itemsPerPage = 5;
-   
-    const { loading,  propertyLevel } = useSelector((state) => state.propertyLevel);
+    ];
+    const itemsPerPage = 5;
 
+    const [loading, setLoading] = useState(false);
+    const [propertyLevel, setPropertyLevel] = useState([])
     const dispatch = useDispatch()
     let history = useHistory();
     useEffect(() => {
-        dispatch(getPropertyLevelApi())
-        
-        
+
+        dispatch(getcommunityApi())
+
+
     }, [dispatch])
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                setLoading(true);
+                const data = await getPropertiesLevelUtils(property_type,property_for,orignalLevel);
+                setPropertyLevel(data);
+                setLoading(false);
+            } catch (error) {
+                console.error(error);
+                setLoading(false);
+            }
+        };
+
+        fetchData();
+    }, []);
+
 
 
     if (loading) {
@@ -52,14 +74,14 @@ const LevelPage = () => {
     return <div>
         <MobileNav />
         <VillaforSale />
-        {/* <PageHeader/> */}
-        {/* <ColumnProperty loading={loading} community={community}/> */}
        
-        <LevelProperties loading ={loading} propertyLevel={propertyLevel}/>
+         <ColumnProperty loading={loading} community={community}/> 
+
+        <LevelProperties loading={loading} propertyLevel={propertyLevel} />
         <CallToActionV1 />
-       
+
         <Footer />
-       
+
 
     </div>
 }

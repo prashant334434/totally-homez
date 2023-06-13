@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Navbar from './global-components/navbar-v3';
 import PageHeader from './global-components/page-header';
 import ProductSlider from './shop-components/product-slider-v1';
@@ -25,6 +25,7 @@ import SubCommunityColumnProperty from './global-components/SubCommunityColumn';
 import SubCommunityPropertyGrid from './subCommunityPropertyGrid';
 import CommunityColumnProperty from './global-components/CommunityColumn';
 import CommunityPropertyGrid from './CommunityPropertyGrid';
+import { getPropertiesCategoryUtils } from '../utils/propertyUtils';
 
 const CommunityPage = () => {
     const {property_city,property_type,property_for,property_community}=useParams()
@@ -39,15 +40,32 @@ const CommunityPage = () => {
       ];
       const itemsPerPage = 5;
    
-    const { loading,  community } = useSelector((state) => state.community);
+    const { loading:ld,  community } = useSelector((state) => state.community);
+    const [propertyTypes, setPropertyTypes] = useState([]);
+    const [propertyCategory, setpropertyCategory] = useState([])
+    const [loading, setLoading] = useState(false);
     const dispatch = useDispatch()
     let history = useHistory();
     useEffect(() => {
         dispatch(getcommunityApi())
     }, [dispatch])
 
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                setLoading(true);
+                const data = await getPropertiesCategoryUtils(property_city,property_type,property_for,orignalCommunity);
+                setpropertyCategory(data);
+                setLoading(false);
+            } catch (error) {
+                console.error(error);
+                setLoading(false);
+            }
+        };
 
-    if (loading) {
+        fetchData();
+    }, []);
+    if (ld) {
         return (
             <Loader />
         )
@@ -55,9 +73,9 @@ const CommunityPage = () => {
     return <div>
         <MobileNav />
         <VillaforSale  headertitle="Garden Homes Frond C" customclass="mb-0 pt-100 " />
-        <CommunityColumnProperty loading={loading} community={community}/>
+        <CommunityColumnProperty loading={ld} community={community}/>
        
-        <CommunityPropertyGrid type={property_type} propertyFor={property_for} comm={orignalCommunity}/>
+        <CommunityPropertyGrid  propertyCategory={propertyCategory}/>
         <CallToActionV1 />
        
         <Footer />
