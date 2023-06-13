@@ -22,9 +22,10 @@ import { getcommunityApi } from '../actions/communityAction';
 import PaginationComponent from './PaginationComponent';
 import BreadCrumProperties from './BreadCrumProperties';
 import LevelProperties from './LevelProperties';
-import { getPropertiesLevelUtils } from '../utils/propertyUtils';
+import { getPropertiesCategoryUtils, getPropertiesLevelUtils } from '../utils/propertyUtils';
 import VillaforSaleLevel from './global-components/villaForSaleLevel';
 import MetaData from './Layout/MetaData';
+import LevelBreadcrum from './global-components/LevelBreadcrum';
 
 const LevelPage = () => {
     const capitalizeFirstLetter=(string)=> {
@@ -33,8 +34,9 @@ const LevelPage = () => {
     const id = useParams()
     const { loading:communityloading,  community } = useSelector((state) => state.community);
 
-const {property_city,property_type,property_for,property_level}=useParams()
+const {property_city,property_type,property_for,property_level,property_community}=useParams()
 const orignalLevel=property_level?.split("-").join(" ")
+const orignalCommunity=property_community?.split("-").join(" ")
 const data = [
         { id: 1, name: 'Item 1' },
         { id: 2, name: 'Item 2' },
@@ -45,6 +47,11 @@ const data = [
 
     const [loading, setLoading] = useState(false);
     const [propertyLevel, setPropertyLevel] = useState([])
+    const [propertyTypes, setPropertyTypes] = useState([]);
+    const [propertyCategory, setpropertyCategory] = useState([])
+    // const [loading, setLoading] = useState(false);
+    const [loading2, setLoading2] = useState(false);
+    const [getSubCommunitiesInaCommunity, setGetSubCommunitiesInaCommunity] = useState([])
     const dispatch = useDispatch()
     let history = useHistory();
     useEffect(() => {
@@ -69,6 +76,22 @@ const data = [
         fetchData();
     }, []);
 
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                setLoading(true);
+                const data = await getPropertiesCategoryUtils(property_city,property_type,property_for,orignalCommunity);
+                setpropertyCategory(data);
+                setLoading(false);
+            } catch (error) {
+                console.error(error);
+                setLoading(false);
+            }
+        };
+
+        fetchData();
+    }, []);
+
 
 
     if (loading) {
@@ -79,8 +102,8 @@ const data = [
     return <div>
         <MetaData title={` ${capitalizeFirstLetter(property_type)} For ${capitalizeFirstLetter(property_for)} In ${capitalizeFirstLetter(property_level)}`} metaDesription={`Check Our Verified Listing Of Dubai ${capitalizeFirstLetter(property_type)} For ${capitalizeFirstLetter(property_for)} In level With World Class Amenities, Amazing Views And Attractive Lifestyle`}/>
         <MobileNav />
-        <VillaforSaleLevel city={capitalizeFirstLetter(property_city)} type={capitalizeFirstLetter(capitalizeFirstLetter(property_type))} for={capitalizeFirstLetter(property_for)} level={capitalizeFirstLetter(property_level)} headertitle="Garden Homes Frond C" customclass="mb-0 pt-100 " />
-       
+        {/* <VillaforSaleLevel city={capitalizeFirstLetter(property_city)} type={capitalizeFirstLetter(capitalizeFirstLetter(property_type))} for={capitalizeFirstLetter(property_for)} level={capitalizeFirstLetter(property_level)} headertitle="Garden Homes Frond C" customclass="mb-0 pt-100 " /> */}
+       <LevelBreadcrum city={capitalizeFirstLetter(property_city)} type={capitalizeFirstLetter(capitalizeFirstLetter(property_type))} for={capitalizeFirstLetter(property_for)} level={capitalizeFirstLetter(property_level)} comm={capitalizeFirstLetter(orignalCommunity)} />
          <ColumnProperty loading={loading} community={community}/> 
 
         <LevelProperties loading={loading} propertyLevel={propertyLevel} />

@@ -97,8 +97,8 @@ const CommunityPage = () => {
         <MetaData title={` ${capitalizeFirstLetter(property_type)} For ${capitalizeFirstLetter(property_for)} In ${capitalizeFirstLetter(orignalCommunity)}`} metaDesription={`Check Our Verified Listing Of Dubai ${capitalizeFirstLetter(property_type)} For ${capitalizeFirstLetter(property_for)} In ${capitalizeFirstLetter(orignalCommunity)} With World Class Amenities, Amazing Views And Attractive Lifestyle`}/>
 
         <MobileNav />
-      <CommunityBreadcrum/>
-        <VillaforSale city={capitalizeFirstLetter(property_city)} type={capitalizeFirstLetter(property_type)} for={capitalizeFirstLetter(property_for)} comm={capitalizeFirstLetter(orignalCommunity)}  headertitle="Garden Homes Frond C" customclass="mb-0 " />
+      <CommunityBreadcrum city={capitalizeFirstLetter(property_city)} type={capitalizeFirstLetter(property_type)} for={capitalizeFirstLetter(property_for)} comm={capitalizeFirstLetter(orignalCommunity)}/>
+        {/* <VillaforSale city={capitalizeFirstLetter(property_city)} type={capitalizeFirstLetter(property_type)} for={capitalizeFirstLetter(property_for)} comm={capitalizeFirstLetter(orignalCommunity)}  headertitle="Garden Homes Frond C" customclass="mb-0 " /> */}
         <CommunityColumnProperty loading={ld} getSubCommunitiesInaCommunity={getSubCommunitiesInaCommunity}/>
        
         <CommunityPropertyGrid  propertyCategory={propertyCategory}/>

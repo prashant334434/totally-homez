@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import ColumnProperty from './columnproperty';
 
-const CommunityBreadcrum = (props) => {
+const LevelBreadcrum = (props) => {
     let HeaderTitle = props.headertitle;
     let publicUrl = process.env.PUBLIC_URL+'/'
     let Subheader = props.subheader ? props.subheader : "Villa"
@@ -20,7 +20,7 @@ const CommunityBreadcrum = (props) => {
 				<div className="row">
 				<div className="col-lg-12">
 					<div className="ltn__breadcrumb-inner">
-					<h1 className="page-title">{ props?.type } For { props?.for } In {props?.comm}</h1>
+					<h1 className="page-title">{ props?.type } For { props?.for } In {props?.level}</h1>
 					
 					</div>
 					<div className="ltn__breadcrumb-list">
@@ -28,6 +28,7 @@ const CommunityBreadcrum = (props) => {
 						<li><Link to="/"><span className="ltn__secondary-color"><i className="fas fa-home" style={{fontSize:'16px'}} /></span> {props?.city}</Link></li>
 						<li><Link to="/">{ props?.type } </Link></li>
 						<li><Link to="/">{ props?.comm } </Link></li>
+						<li><Link to="/">{ props?.level } </Link></li>
 
 					
 						
@@ -47,4 +48,4 @@ const CommunityBreadcrum = (props) => {
   )
 }
 
-export default CommunityBreadcrum
+export default LevelBreadcrum
