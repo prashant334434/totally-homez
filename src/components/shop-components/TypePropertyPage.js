@@ -13,6 +13,7 @@ import TypePropertyContent from '../section-components/TypePropertyContent';
 import { getPropertiesTypeUtils } from '../../utils/propertyUtils';
 import TyepPropertyGrid from './TyepPropertyGrid';
 import Loader from '../Loader/Loader';
+import TypeBreadcrums from '../global-components/typeBreadcrums';
 
 const TypePropertyPage = () => {
     const { property_type, property_for, property_city } = useParams()
@@ -41,6 +42,8 @@ if(loading){
   return (
     <div>
       <MobileNav/>
+      <TypeBreadcrums/>
+
       <SearchBarV1/>
       <TypePropertyContent/>
       <TyepPropertyGrid propertyTypes={propertyTypes}/>
