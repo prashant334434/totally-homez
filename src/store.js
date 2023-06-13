@@ -60,7 +60,6 @@ const reducer=combineReducers({
     propertyCommunity:propertyCommunityReducer,
     propertyTypeDetails:propertyTypeReducerDetails,
     propertyImage:propertyImageReducer,
-    propertyCommunityData:propertyCommunityReducer
 
 
   

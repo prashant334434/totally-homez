@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const CommunityColumnProperty = ({ community }) => {
+const CommunityColumnProperty = ({ getSubCommunitiesInaCommunity }) => {
   const [itemsToShow, setItemsToShow] = useState(8);
   const showmore = () => {
-    setItemsToShow(community.length)
+    setItemsToShow(getSubCommunitiesInaCommunity.length)
   }
 
   const showless = () => {
@@ -48,12 +48,13 @@ const CommunityColumnProperty = ({ community }) => {
             <div className="row">
               {
 
-                community?.slice(0, itemsToShow).map((item, index) => (
+getSubCommunitiesInaCommunity?.slice(0, itemsToShow).map((item, index) => (
                   <div key={index} className="col-xl-3 col-md-4 col-sm-4 col-12">
                     <div className="footer-widget-breadcrum footer-menu-widget clearfix">
                       <div className="footer-menu go-top">
                         <ul>
-                          <li><Link to="/about">{item?.community_name}</Link></li>
+                          <li><Link to="/about">{item?.property_sub_community
+}</Link></li>
 
                         </ul>
                       </div>

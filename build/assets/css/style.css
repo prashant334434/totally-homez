@@ -7101,7 +7101,7 @@ i {
   left: 50%;
   width: 100px;
   height: 100px;
-  margin-top: -27px;
+  margin-top: -38px;
   margin-left: -27px;
   cursor: pointer;
   -webkit-transform: translate3d(-50%, -50%, 0);
@@ -12056,7 +12056,7 @@ input::placeholder {
   border: 1px solid var(--border-color-8);
   margin-bottom: 30px;
   padding: 40px 30px 35px;
-  min-height: 400px;
+  min-height: 180px;
 }
 .ltn__feature-item-6::before {
   position: absolute;
@@ -15361,7 +15361,7 @@ body {
 .about-us-img-wrap img {
   margin: 0;
   border-radius: 5px;
-  padding: 34px;
+  /* padding: 34px; */
 }
 
 .about-us-img-info {

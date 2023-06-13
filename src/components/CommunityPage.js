@@ -18,14 +18,14 @@ import TownhouseProductGrid from './shop-components/TownhouseProductGrid';
 import StickyBarIcon from './shop-components/sticky-iconbar';
 import VillaforSale from './global-components/villaforsale';
 import ColumnProperty from './global-components/columnproperty';
-import { getcommunityApi } from '../actions/communityAction';
+import { getSubCommunitiesInACommunityApi, getcommunityApi } from '../actions/communityAction';
 import PaginationComponent from './PaginationComponent';
 import BreadCrumProperties from './BreadCrumProperties';
 import SubCommunityColumnProperty from './global-components/SubCommunityColumn';
 import SubCommunityPropertyGrid from './subCommunityPropertyGrid';
 import CommunityColumnProperty from './global-components/CommunityColumn';
 import CommunityPropertyGrid from './CommunityPropertyGrid';
-import { getPropertiesCategoryUtils } from '../utils/propertyUtils';
+import { getPropertiesCategoryUtils, getSubCommunitiesInaCommunityUtils } from '../utils/propertyUtils';
 
 const CommunityPage = () => {
     const {property_city,property_type,property_for,property_community}=useParams()
@@ -44,11 +44,12 @@ const CommunityPage = () => {
     const [propertyTypes, setPropertyTypes] = useState([]);
     const [propertyCategory, setpropertyCategory] = useState([])
     const [loading, setLoading] = useState(false);
+    const [loading2, setLoading2] = useState(false);
+    const [getSubCommunitiesInaCommunity, setGetSubCommunitiesInaCommunity] = useState([])
+
     const dispatch = useDispatch()
     let history = useHistory();
-    useEffect(() => {
-        dispatch(getcommunityApi())
-    }, [dispatch])
+   
 
     useEffect(() => {
         const fetchData = async () => {
@@ -65,6 +66,23 @@ const CommunityPage = () => {
 
         fetchData();
     }, []);
+
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                setLoading(true);
+                const data = await getSubCommunitiesInaCommunityUtils(property_type,property_for,orignalCommunity);
+                setGetSubCommunitiesInaCommunity(data);
+                setLoading2(false);
+            } catch (error) {
+                console.error(error);
+                setLoading2(false);
+            }
+        };
+
+        fetchData();
+    }, []);
     if (ld) {
         return (
             <Loader />
@@ -73,7 +91,7 @@ const CommunityPage = () => {
     return <div>
         <MobileNav />
         <VillaforSale  headertitle="Garden Homes Frond C" customclass="mb-0 pt-100 " />
-        <CommunityColumnProperty loading={ld} community={community}/>
+        <CommunityColumnProperty loading={ld} getSubCommunitiesInaCommunity={getSubCommunitiesInaCommunity}/>
        
         <CommunityPropertyGrid  propertyCategory={propertyCategory}/>
         <CallToActionV1 />

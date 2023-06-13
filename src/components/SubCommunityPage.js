@@ -23,7 +23,7 @@ import PaginationComponent from './PaginationComponent';
 import BreadCrumProperties from './BreadCrumProperties';
 import SubCommunityColumnProperty from './global-components/SubCommunityColumn';
 import SubCommunityPropertyGrid from './subCommunityPropertyGrid';
-import { getPropertiesSubCommunityUtils } from '../utils/propertyUtils';
+import { getLevelsInASubCommunityUtils, getPropertiesSubCommunityUtils } from '../utils/propertyUtils';
 
 const SubCommunityPage = () => {
     const data = [
@@ -31,29 +31,42 @@ const SubCommunityPage = () => {
         { id: 2, name: 'Item 2' },
         { id: 3, name: 'Item 3' },
         // ... more data
-      ];
-      const itemsPerPage = 5;
+    ];
+    const itemsPerPage = 5;
 
-      const [loading, setLoading] = useState(false);
-      const [propertySubCategory, setPropertySubCategory] = useState([])
-   const {property_for ,property_city,property_community,property_type,property_sub_community} =useParams()
-   const orignalSubCommunity=property_sub_community?.split("-").join(" ")
-console.log("orignalSubCommunity",orignalSubCommunity)
-    const { loading:communityloading,  community } = useSelector((state) => state.community);
+    const [loading, setLoading] = useState(false);
+
+    const [loading2, setLoading2] = useState(false);
+
+    const [propertySubCategory, setPropertySubCategory] = useState([])
+const [getLevelsInASubCommunity, setGetLevelsInASubCommunity] = useState([])
+    const { property_for, property_city, property_community, property_type, property_sub_community } = useParams()
+    const orignalSubCommunity = property_sub_community?.split("-").join(" ")
+    console.log("orignalSubCommunity", orignalSubCommunity)
+    const { loading: communityloading, community } = useSelector((state) => state.community);
     const dispatch = useDispatch()
     let history = useHistory();
     useEffect(() => {
+        const fetchData = async () => {
+            try {
+                setLoading(true);
+                const data = await getPropertiesSubCommunityUtils(property_city, property_type, property_for, orignalSubCommunity);
+                setGetLevelsInASubCommunity(data);
+                setLoading2(false);
+            } catch (error) {
+                console.error(error);
+                setLoading(false);
+            }
+        };
 
-        dispatch(getcommunityApi())
-
-
-    }, [dispatch])
+        fetchData();
+    }, []);
 
     useEffect(() => {
         const fetchData = async () => {
             try {
                 setLoading(true);
-                const data = await getPropertiesSubCommunityUtils(property_city,property_type,property_for,orignalSubCommunity);
+                const data = await getPropertiesSubCommunityUtils(property_city, property_type, property_for, orignalSubCommunity);
                 setPropertySubCategory(data);
                 setLoading(false);
             } catch (error) {
@@ -65,21 +78,21 @@ console.log("orignalSubCommunity",orignalSubCommunity)
         fetchData();
     }, []);
 
-    if (communityloading||loading) {
+    if (communityloading || loading) {
         return (
             <Loader />
         )
     }
     return <div>
         <MobileNav />
-        <VillaforSale  headertitle="Garden Homes Frond C" customclass="mb-0 pt-100 " />
-        <SubCommunityColumnProperty loading={loading} community={community}/>
-       
-        <SubCommunityPropertyGrid  propertySubcom={propertySubCategory}/>
+        <VillaforSale headertitle="Garden Homes Frond C" customclass="mb-0 pt-100 " />
+        <SubCommunityColumnProperty getLevelsInASubCommunity={getLevelsInASubCommunity} />
+
+        <SubCommunityPropertyGrid propertySubcom={propertySubCategory} />
         <CallToActionV1 />
-       
+
         <Footer />
-       
+
 
     </div>
 }
