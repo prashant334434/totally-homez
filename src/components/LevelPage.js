@@ -104,7 +104,6 @@ const data = [
         <MobileNav />
         {/* <VillaforSaleLevel city={capitalizeFirstLetter(property_city)} type={capitalizeFirstLetter(capitalizeFirstLetter(property_type))} for={capitalizeFirstLetter(property_for)} level={capitalizeFirstLetter(property_level)} headertitle="Garden Homes Frond C" customclass="mb-0 pt-100 " /> */}
        <LevelBreadcrum city={capitalizeFirstLetter(property_city)} type={capitalizeFirstLetter(capitalizeFirstLetter(property_type))} for={capitalizeFirstLetter(property_for)} level={capitalizeFirstLetter(property_level)} comm={capitalizeFirstLetter(orignalCommunity)} />
-         <ColumnProperty loading={loading} community={community}/> 
 
         <LevelProperties loading={loading} propertyLevel={propertyLevel} />
         <CallToActionV1 />

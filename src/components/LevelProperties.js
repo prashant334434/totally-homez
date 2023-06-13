@@ -34,7 +34,7 @@ const LevelProperties = (props) => {
     return (
 		<div>
 		<div>
-			<div className="ltn__product-area ltn__product-gutter mb-100 ">
+			<div className="ltn__product-area ltn__product-gutter mb-100 pt-20 ">
 				<div className="container">
 					<div className="row">
 						<div className="col-lg-12">
