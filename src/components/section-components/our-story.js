@@ -8,7 +8,7 @@ let imagealt = 'image'
 
 const OurStory = (props) => {
   return (
-	<div className="ltn__slider-area ltn__slider-11  ltn__slider-11-slide-item-count-show--- ltn__slider-11-pagination-count-show--- section-bg-1 mt-100">
+	<div className="ltn__slider-area ltn__slider-11  ltn__slider-11-slide-item-count-show--- ltn__slider-11-pagination-count-show--- section-bg-1 mt-50">
 	<div className="ltn__slider-11-inner">
 	  <div className="ltn__slider-11-active">
 		{/* slide-item */}

@@ -97,8 +97,9 @@ const Home_V7 = () => {
     <ApartmentProductGridSale />
     <ApartmentProductGridRent />
     {/* <ProductGrid /> */}
-    <BestPenthouse homePage={homePage} />
     <VideoV1 />
+
+    <BestPenthouse homePage={homePage} />
 
     <PenthouseProductGrid />
     <PenthouseProductGridRent />
