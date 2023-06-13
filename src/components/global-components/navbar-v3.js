@@ -170,7 +170,7 @@ const NavbarV3 = () => {
 						</div>
 						<div className="ltn__utilize-menu">
 							<ul>
-								<li><a href="#">Home</a>
+								<li className='active'><a href="#">Home</a>
 									<ul className="sub-menu">
 										<li><Link to="/">Home Style 01</Link></li>
 										<li><Link to="/home-v2">Home Style 02</Link></li>

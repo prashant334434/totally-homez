@@ -14,10 +14,10 @@ import MobileNav from './global-components/Mobile-nav';
 const Team_Details = () => {
 const {loading,teamDetails}=useSelector((state)=>state.teamDetails)
     const dispatch=useDispatch()
-    const {id}=useParams()
+    const {name}=useParams()
 
     useEffect(()=>{
-        dispatch(getTeamDetailsApi(id))
+        dispatch(getTeamDetailsApi(name))
 
     },[dispatch])
     return <div>
