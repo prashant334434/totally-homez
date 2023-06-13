@@ -6,10 +6,10 @@ import { PROPERTY_IMAGES_URL } from '../../constants/config'
 const PropertyImage = ({ id }) => {
     const { loading, propertyImage } = useSelector((state) => state.propertyImage)
     const dispatch = useDispatch()
-    useEffect(() => {
-        dispatch(getPropertiesImage(id))
-    }, [dispatch])
-    
+    // useEffect(() => {
+    //     dispatch(getPropertiesImage(id))
+    // }, [dispatch])
+   
     return (
         <h1>image goes here </h1>
         

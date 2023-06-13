@@ -20,7 +20,6 @@ export const getAllPropertiesApi = () =>
         } catch (error) {
             dispatch({
                 type: GET_ALL_PROPERTIES_FAILURE,
-                payload: error.response.data.message,
             });
         }
     };

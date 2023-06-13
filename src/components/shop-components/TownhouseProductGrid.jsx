@@ -146,7 +146,7 @@ const TownhouseProductGrid = (props) => {
                             )}
                           </div>
                           <div className="price_div">
-                            <span>AED {item?.property_price}</span>
+                            <span>AED <br/> {item?.property_price}</span>
                           </div>
                         </div>
                         <div className="product-description">

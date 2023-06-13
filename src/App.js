@@ -44,6 +44,7 @@ import LevelPage from './components/LevelPage';
 import TypePage from './components/TypePage';
 import SubCommunityPage from './components/SubCommunityPage';
 import CommunityPage from './components/CommunityPage';
+import TypePropertyPage from './components/shop-components/TypePropertyPage';
 
 
 
@@ -113,11 +114,11 @@ import CommunityPage from './components/CommunityPage';
         <Route path="/shop-page" component={ ShopNew } />
         <Route  exact path="/best-communites-in-dubai/:communityName" component={ GuideLine } />
         <Route exact path="/bread-crums" component={ BreadCrumbs } />
-        <Route exact path="/:property_city/:property_community/:property_sub_community/:property_type-for-:property_for" component={ LevelPage } />
+        {/* <Route exact path="/:property_city/:property_community/:property_sub_community/:property_type-for-:property_for" component={ LevelPage } /> */}
         {/* <Route path="/:property_city/:property_community/:property_sub_community/:property_type-for-:property_for-:property_level" component={ LevelPage } /> */}
-        <Route exact path="/:property_city/:property_community/:property_type-for-:property_for-:property_sub_community"  component={ SubCommunityPage } />
-        <Route exact path="/:property_city/:property_type-for-:property_for-:property_community" component={ CommunityPage } />
-        <Route exact path="/:property_type-for-:property_for-:property_city" component={ ShopNew } />
+        {/* <Route exact path="/:property_city/:property_community/:property_type-for-:property_for-:property_sub_community"  component={ SubCommunityPage } />
+        <Route exact path="/:property_city/:property_type-for-:property_for-:property_community" component={ CommunityPage } /> */}
+        <Route exact path="/:property_type-for-:property_for-:property_city" component={ TypePropertyPage } />
 
 
 

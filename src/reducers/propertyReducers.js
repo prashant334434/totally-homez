@@ -205,7 +205,7 @@ export const propertyImageReducer = (state ={ propertyImage :[]}, action) => {
         case GET_PROPERTY_IMAGE_FAILURE: {
             return {
                 loading: false,
-                error: action.payload,
+                error: true,
             }
         }
         default:
