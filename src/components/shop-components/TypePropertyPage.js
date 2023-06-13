@@ -14,8 +14,12 @@ import { getPropertiesTypeUtils } from '../../utils/propertyUtils';
 import TyepPropertyGrid from './TyepPropertyGrid';
 import Loader from '../Loader/Loader';
 import TypeBreadcrums from '../global-components/typeBreadcrums';
+import MetaData from '../Layout/MetaData';
 
 const TypePropertyPage = () => {
+    const capitalizeFirstLetter=(string)=> {
+        return string.replace(/^\w/, (firstLetter) => firstLetter.toUpperCase());
+      }
     const { property_type, property_for, property_city } = useParams()
     console.log(property_type, property_for, property_city)
     const [propertyTypes, setPropertyTypes] = useState([]);
@@ -41,6 +45,8 @@ if(loading){
 }
   return (
     <div>
+        <MetaData title={` ${capitalizeFirstLetter(property_type)} For ${capitalizeFirstLetter(property_for)} In ${capitalizeFirstLetter(property_city)}`} metaDesription={`Check Our Verified Listing Of Dubai ${capitalizeFirstLetter(property_type)} For ${capitalizeFirstLetter(property_for)} In Dubai With World Class Amenities, Amazing Views And Attractive Lifestyle.`}/>
+        
       <MobileNav/>
       <TypeBreadcrums/>
 

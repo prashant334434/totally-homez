@@ -31,7 +31,7 @@ const CommunityPropertyGrid = (props) => {
 			<div className="ltn__product-area ltn__product-gutter mb-100 ">
 				<div className="container">
 					<div className="row">
-						<div className="col-lg-12">
+						<div className="col-lg-12 pt-20">
 							<div className="ltn__shop-options">
 								<ul>
 									{/* <li>

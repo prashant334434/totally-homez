@@ -24,8 +24,13 @@ import BreadCrumProperties from './BreadCrumProperties';
 import SubCommunityColumnProperty from './global-components/SubCommunityColumn';
 import SubCommunityPropertyGrid from './subCommunityPropertyGrid';
 import { getLevelsInASubCommunityUtils, getPropertiesSubCommunityUtils } from '../utils/propertyUtils';
+import VillaforSaleSub from './global-components/villaForSaleSub';
+import MetaData from './Layout/MetaData';
 
 const SubCommunityPage = () => {
+    const capitalizeFirstLetter=(string)=> {
+        return string.replace(/^\w/, (firstLetter) => firstLetter.toUpperCase());
+      }
     const data = [
         { id: 1, name: 'Item 1' },
         { id: 2, name: 'Item 2' },
@@ -84,8 +89,10 @@ const [getLevelsInASubCommunity, setGetLevelsInASubCommunity] = useState([])
         )
     }
     return <div>
+                <MetaData title={` ${capitalizeFirstLetter(property_type)} For ${capitalizeFirstLetter(property_for)} In ${capitalizeFirstLetter(orignalSubCommunity)}`} metaDesription={`Check Our Verified Listing Of Dubai ${capitalizeFirstLetter(property_type)} For ${capitalizeFirstLetter(property_for)} In ${capitalizeFirstLetter(orignalSubCommunity)} With World Class Amenities, Amazing Views And Attractive Lifestyle.`}/>
+
         <MobileNav />
-        <VillaforSale headertitle="Garden Homes Frond C" customclass="mb-0 pt-100 " />
+        <VillaforSaleSub city={capitalizeFirstLetter(property_city)} type={capitalizeFirstLetter(property_type)} for={capitalizeFirstLetter(property_for)} subComm={capitalizeFirstLetter(orignalSubCommunity)} headertitle="Garden Homes Frond C" customclass="mb-0 pt-100 " />
         <SubCommunityColumnProperty getLevelsInASubCommunity={getLevelsInASubCommunity} />
 
         <SubCommunityPropertyGrid propertySubcom={propertySubCategory} />

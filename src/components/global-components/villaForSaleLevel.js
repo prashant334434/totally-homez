@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import ColumnProperty from './columnproperty';
 
-const VillaforSale = (props) => {
+const VillaforSaleLevel = (props) => {
     let HeaderTitle = props.headertitle;
     let publicUrl = process.env.PUBLIC_URL+'/'
     let Subheader = props.subheader ? props.subheader : "Villa"
@@ -20,22 +20,10 @@ const VillaforSale = (props) => {
 				<div className="row">
 				<div className="col-lg-12">
 					<div className="ltn__breadcrumb-inner">
-					<h1 className="page-title">{ props?.type } For { props?.for } In {props?.comm}</h1>
+					<h1 className="page-title">{ props?.type } For { props?.for } In {props?.level}</h1>
 					
 					</div>
-					<div className="ltn__breadcrumb-list">
-						<ul>
-						<li><Link to="/"><span className="ltn__secondary-color"><i className="fas fa-home" style={{fontSize:'16px'}} /></span> Dubai</Link></li>
-						<li><Link to="/">Dubai</Link></li>
-						<li><Link to="/">Villa</Link></li>
-						<li><Link to="/">Jumeirah Golf Estates</Link></li>
-						
-
-
-						<li>{ props?.propertyDetails?.property_name }</li>
-
-						</ul>
-					</div>
+					
 					
 				</div>
 		
@@ -47,4 +35,4 @@ const VillaforSale = (props) => {
   )
 }
 
-export default VillaforSale
+export default VillaforSaleLevel
