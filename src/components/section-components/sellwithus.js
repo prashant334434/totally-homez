@@ -12,7 +12,7 @@ const SellWithUs = (props) => {
 
 	return (
 		<div className={customClass}>
-			<div className="ltn__about-us-area go-top pt-70">
+			<div className="ltn__about-us-area go-top pt-100">
 				<div className="container">
 					{
 						props?.listWithUs?.map((item, index) => (

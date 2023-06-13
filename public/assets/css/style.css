@@ -12056,7 +12056,7 @@ input::placeholder {
   border: 1px solid var(--border-color-8);
   margin-bottom: 30px;
   padding: 40px 30px 35px;
-  min-height: 400px;
+  min-height: 180px;
 }
 .ltn__feature-item-6::before {
   position: absolute;
