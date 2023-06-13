@@ -27,6 +27,9 @@ import VillaforSaleLevel from './global-components/villaForSaleLevel';
 import MetaData from './Layout/MetaData';
 
 const LevelPage = () => {
+    const capitalizeFirstLetter=(string)=> {
+        return string.replace(/^\w/, (firstLetter) => firstLetter.toUpperCase());
+      }
     const id = useParams()
     const { loading:communityloading,  community } = useSelector((state) => state.community);
 
@@ -74,9 +77,9 @@ const data = [
         )
     }
     return <div>
-        <MetaData title={` ${property_type} For ${property_for} In ${property_level}`} metaDesription={`Check Our Verified Listing Of Dubai ${property_type} For ${property_for} In level With World Class Amenities, Amazing Views And Attractive Lifestyle`}/>
+        <MetaData title={` ${capitalizeFirstLetter(property_type)} For ${capitalizeFirstLetter(property_for)} In ${capitalizeFirstLetter(property_level)}`} metaDesription={`Check Our Verified Listing Of Dubai ${capitalizeFirstLetter(property_type)} For ${capitalizeFirstLetter(property_for)} In level With World Class Amenities, Amazing Views And Attractive Lifestyle`}/>
         <MobileNav />
-        <VillaforSaleLevel city={property_city} type={property_type} for={property_for} level={property_level} headertitle="Garden Homes Frond C" customclass="mb-0 pt-100 " />
+        <VillaforSaleLevel city={capitalizeFirstLetter(property_city)} type={capitalizeFirstLetter(capitalizeFirstLetter(property_type))} for={capitalizeFirstLetter(property_for)} level={capitalizeFirstLetter(property_level)} headertitle="Garden Homes Frond C" customclass="mb-0 pt-100 " />
        
          <ColumnProperty loading={loading} community={community}/> 
 
