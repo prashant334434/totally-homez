@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom/cjs/react-router-dom.min'
 import { getApartmentCatgoryProperties, getApartmentCatgoryRentProperties, getCatgoryProperties, getTownhouseCatgoryProperties } from '../../actions/catgoryActions'
-import { TEAM_API_URL } from '../../constants/config'
+import { PROPERTY_IMAGES_URL, TEAM_API_URL } from '../../constants/config'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import PropertyImage from './PropertyImage'
@@ -91,7 +91,7 @@ const ApartmentProductGridRent = (props) => {
                               item?.property_level
                             )}/th${item?.id}`}
                           >
-                            <PropertyImage id={item?.id} />
+                            <img src={`${PROPERTY_IMAGES_URL}/${item?.img_name}`} alt="#" />
                           </Link>
                         ) : (
                           <Link
@@ -101,7 +101,7 @@ const ApartmentProductGridRent = (props) => {
                               item?.property_type
                             )}-for-${url(item?.property_for)}/th${item?.id}`}
                           >
-                            <img src={`https://cf.bstatic.com/xdata/images/xphoto/max1440/48387083.jpg?k=71de1d7fb5c115ccc436261c89c33780c052bc99fcb26cc40101f35b33226fbf&o=`} alt="#" />
+                            <img src={`${PROPERTY_IMAGES_URL}/${item?.img_name}`} alt="#" />
                           </Link>
                         )}
                         <div className="product-badge">

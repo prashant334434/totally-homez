@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom/cjs/react-router-dom.min'
 import { getCatgoryProperties, getTownhouseCatgoryProperties } from '../../actions/catgoryActions'
-import { TEAM_API_URL } from '../../constants/config'
+import { PROPERTY_IMAGES_URL, TEAM_API_URL } from '../../constants/config'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import PropertyImage from './PropertyImage'
@@ -87,7 +87,7 @@ const TownhouseProductGrid = (props) => {
                               item?.property_level
                             )}/th${item?.id}`}
                           >
-                            <PropertyImage id={item?.id} />
+                            <img src={`${PROPERTY_IMAGES_URL}/${item?.img_name}`} alt="#" />
                           </Link>
                         ) : (
                           <Link
@@ -97,7 +97,7 @@ const TownhouseProductGrid = (props) => {
                               item?.property_type
                             )}-for-${url(item?.property_for)}/th${item?.id}`}
                           >
-                            <PropertyImage id={item?.id} />
+                            <img src={`${PROPERTY_IMAGES_URL}/${item?.img_name}`} alt="#" />
                           </Link>
                         )}
                         <div className="product-badge">

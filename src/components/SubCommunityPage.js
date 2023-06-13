@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Navbar from './global-components/navbar-v3';
 import PageHeader from './global-components/page-header';
 import ProductSlider from './shop-components/product-slider-v1';
@@ -23,6 +23,7 @@ import PaginationComponent from './PaginationComponent';
 import BreadCrumProperties from './BreadCrumProperties';
 import SubCommunityColumnProperty from './global-components/SubCommunityColumn';
 import SubCommunityPropertyGrid from './subCommunityPropertyGrid';
+import { getPropertiesSubCommunityUtils } from '../utils/propertyUtils';
 
 const SubCommunityPage = () => {
     const data = [
@@ -32,22 +33,39 @@ const SubCommunityPage = () => {
         // ... more data
       ];
       const itemsPerPage = 5;
+
+      const [loading, setLoading] = useState(false);
+      const [propertySubCategory, setPropertySubCategory] = useState([])
    const {property_for ,property_city,property_community,property_type,property_sub_community} =useParams()
    const orignalSubCommunity=property_sub_community?.split("-").join(" ")
 console.log("orignalSubCommunity",orignalSubCommunity)
-    const { loading,  community } = useSelector((state) => state.community);
-    const { loading :loadingSubCom,  propertySubCommunity } = useSelector((state) => state.propertySubCommunity);
+    const { loading:communityloading,  community } = useSelector((state) => state.community);
     const dispatch = useDispatch()
     let history = useHistory();
     useEffect(() => {
-        dispatch(getPropertySubCommunityApi(property_for,property_city,property_community,property_type,orignalSubCommunity))
 
         dispatch(getcommunityApi())
 
 
     }, [dispatch])
 
-    if (loading) {
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                setLoading(true);
+                const data = await getPropertiesSubCommunityUtils(property_city,property_type,property_for,orignalSubCommunity);
+                setPropertySubCategory(data);
+                setLoading(false);
+            } catch (error) {
+                console.error(error);
+                setLoading(false);
+            }
+        };
+
+        fetchData();
+    }, []);
+
+    if (communityloading||loading) {
         return (
             <Loader />
         )
@@ -57,7 +75,7 @@ console.log("orignalSubCommunity",orignalSubCommunity)
         <VillaforSale  headertitle="Garden Homes Frond C" customclass="mb-0 pt-100 " />
         <SubCommunityColumnProperty loading={loading} community={community}/>
        
-        <SubCommunityPropertyGrid loading={loadingSubCom} propertySubcom={propertySubCommunity}/>
+        <SubCommunityPropertyGrid  propertySubcom={propertySubCategory}/>
         <CallToActionV1 />
        
         <Footer />
