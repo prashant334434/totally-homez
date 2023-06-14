@@ -15,7 +15,7 @@ const SubCommunityBreadcrum = (props) => {
     let CustomClass = props.customclass ? props.customclass : ''
   return (
     <div>
-        	<div className={"ltn__breadcrumb-area text-left pt-200  "+CustomClass}  >
+        	<div className={"ltn__breadcrumb-area text-left pt-100  "+CustomClass}  >
 			<div className="container">
 				<div className="row">
 				<div className="col-lg-12">
@@ -27,6 +27,8 @@ const SubCommunityBreadcrum = (props) => {
 						<ul>
 						<li><Link to="/"><span className="ltn__secondary-color"><i className="fas fa-home" style={{fontSize:'16px'}} /></span> {props?.city}</Link></li>
 						<li><Link to="/">{ props?.type } </Link></li>
+						<li><Link to="/">{ props?.comm } </Link></li>
+
 						<li><Link to="/">{ props?.subComm } </Link></li>
 
 					

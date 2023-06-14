@@ -52,8 +52,7 @@ const LevelProperties = (props) => {
 										<div className="short-by text-center">
 											<select className="nice-select">
 												<option>Default sorting</option>
-												<option>Sort by popularity</option>
-												<option>Sort by new arrivals</option>
+											
 												<option>Sort by price: low to high</option>
 												<option>Sort by price: high to low</option>
 											</select>
@@ -148,7 +147,7 @@ const LevelProperties = (props) => {
 									</div>
 									</div>
 								</div> */}
-									<div className="ltn__product-slider-area ltn__product-gutter pt-40 pb-40">
+									<div className="ltn__product-slider-area ltn__product-gutter pt-20 pb-40">
 										<div className="container-fluid">
 
 											<div className="row ltn__product slick-arrow-1">

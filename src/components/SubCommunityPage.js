@@ -23,7 +23,7 @@ import PaginationComponent from './PaginationComponent';
 import BreadCrumProperties from './BreadCrumProperties';
 import SubCommunityColumnProperty from './global-components/SubCommunityColumn';
 import SubCommunityPropertyGrid from './subCommunityPropertyGrid';
-import { getLevelsInASubCommunityUtils, getPropertiesSubCommunityUtils } from '../utils/propertyUtils';
+import { getLevelsInASubCommunityUtils, getPropertiesSubCommunityUtils, getSubCommunitiesInaCommunityUtils } from '../utils/propertyUtils';
 import VillaforSaleSub from './global-components/villaForSaleSub';
 import MetaData from './Layout/MetaData';
 import SubCommunityBreadcrum from './global-components/SubCommunityBreadcrum';
@@ -48,15 +48,19 @@ const SubCommunityPage = () => {
 const [getLevelsInASubCommunity, setGetLevelsInASubCommunity] = useState([])
     const { property_for, property_city, property_community, property_type, property_sub_community } = useParams()
     const orignalSubCommunity = property_sub_community?.split("-").join(" ")
+    const orignalCommunity=property_community?.split("-").join(" ")
     console.log("orignalSubCommunity", orignalSubCommunity)
     const { loading: communityloading, community } = useSelector((state) => state.community);
+    const [propertyCategory, setpropertyCategory] = useState([])
+    
+    const [getSubCommunitiesInaCommunity, setGetSubCommunitiesInaCommunity] = useState([])
     const dispatch = useDispatch()
     let history = useHistory();
     useEffect(() => {
         const fetchData = async () => {
             try {
                 setLoading(true);
-                const data = await getPropertiesSubCommunityUtils(property_city, property_type, property_for, orignalSubCommunity);
+                const data = await getPropertiesSubCommunityUtils(property_city, property_type, property_for, orignalSubCommunity,orignalCommunity);
                 setGetLevelsInASubCommunity(data);
                 setLoading2(false);
             } catch (error) {
@@ -67,12 +71,13 @@ const [getLevelsInASubCommunity, setGetLevelsInASubCommunity] = useState([])
 
         fetchData();
     }, []);
+    
 
     useEffect(() => {
         const fetchData = async () => {
             try {
                 setLoading(true);
-                const data = await getPropertiesSubCommunityUtils(property_city, property_type, property_for, orignalSubCommunity);
+                const data = await getPropertiesSubCommunityUtils(property_city, property_type, property_for, orignalSubCommunity ,orignalCommunity);
                 setPropertySubCategory(data);
                 setLoading(false);
             } catch (error) {
@@ -93,7 +98,7 @@ const [getLevelsInASubCommunity, setGetLevelsInASubCommunity] = useState([])
                 <MetaData title={` ${capitalizeFirstLetter(property_type)} For ${capitalizeFirstLetter(property_for)} In ${capitalizeFirstLetter(orignalSubCommunity)}`} metaDesription={`Check Our Verified Listing Of Dubai ${capitalizeFirstLetter(property_type)} For ${capitalizeFirstLetter(property_for)} In ${capitalizeFirstLetter(orignalSubCommunity)} With World Class Amenities, Amazing Views And Attractive Lifestyle.`}/>
 
         <MobileNav />
-        <SubCommunityBreadcrum city={capitalizeFirstLetter(property_city)} type={capitalizeFirstLetter(property_type)} for={capitalizeFirstLetter(property_for)} subComm={capitalizeFirstLetter(orignalSubCommunity)}  />
+        <SubCommunityBreadcrum city={capitalizeFirstLetter(property_city)} type={capitalizeFirstLetter(property_type)} for={capitalizeFirstLetter(property_for)} subComm={capitalizeFirstLetter(orignalSubCommunity)}  comm={capitalizeFirstLetter(orignalCommunity)} />
         {/* <VillaforSaleSub city={capitalizeFirstLetter(property_city)} type={capitalizeFirstLetter(property_type)} for={capitalizeFirstLetter(property_for)} subComm={capitalizeFirstLetter(orignalSubCommunity)} headertitle="Garden Homes Frond C" customclass="mb-0 pt-100 " /> */}
         <SubCommunityColumnProperty getLevelsInASubCommunity={getLevelsInASubCommunity} />
 

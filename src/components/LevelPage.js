@@ -34,9 +34,10 @@ const LevelPage = () => {
     const id = useParams()
     const { loading:communityloading,  community } = useSelector((state) => state.community);
 
-const {property_city,property_type,property_for,property_level,property_community}=useParams()
+const {property_city,property_type,property_for,property_level,property_community,property_sub_community}=useParams()
 const orignalLevel=property_level?.split("-").join(" ")
 const orignalCommunity=property_community?.split("-").join(" ")
+const orignalSubCommunity =property_sub_community?.split("-").join(" ")
 const data = [
         { id: 1, name: 'Item 1' },
         { id: 2, name: 'Item 2' },
@@ -80,7 +81,7 @@ const data = [
         const fetchData = async () => {
             try {
                 setLoading(true);
-                const data = await getPropertiesCategoryUtils(property_city,property_type,property_for,orignalCommunity);
+                const data = await getPropertiesCategoryUtils(property_city,property_type,property_for,orignalCommunity,orignalSubCommunity);
                 setpropertyCategory(data);
                 setLoading(false);
             } catch (error) {
@@ -103,7 +104,7 @@ const data = [
         <MetaData title={` ${capitalizeFirstLetter(property_type)} For ${capitalizeFirstLetter(property_for)} In ${capitalizeFirstLetter(property_level)}`} metaDesription={`Check Our Verified Listing Of Dubai ${capitalizeFirstLetter(property_type)} For ${capitalizeFirstLetter(property_for)} In level With World Class Amenities, Amazing Views And Attractive Lifestyle`}/>
         <MobileNav />
         {/* <VillaforSaleLevel city={capitalizeFirstLetter(property_city)} type={capitalizeFirstLetter(capitalizeFirstLetter(property_type))} for={capitalizeFirstLetter(property_for)} level={capitalizeFirstLetter(property_level)} headertitle="Garden Homes Frond C" customclass="mb-0 pt-100 " /> */}
-       <LevelBreadcrum city={capitalizeFirstLetter(property_city)} type={capitalizeFirstLetter(capitalizeFirstLetter(property_type))} for={capitalizeFirstLetter(property_for)} level={capitalizeFirstLetter(property_level)} comm={capitalizeFirstLetter(orignalCommunity)} />
+       <LevelBreadcrum city={capitalizeFirstLetter(property_city)} type={capitalizeFirstLetter(capitalizeFirstLetter(property_type))} for={capitalizeFirstLetter(property_for)} level={capitalizeFirstLetter(property_level)} comm={capitalizeFirstLetter(orignalCommunity)} subComm={capitalizeFirstLetter(orignalSubCommunity)} />
 
         <LevelProperties loading={loading} propertyLevel={propertyLevel} />
         <CallToActionV1 />
