@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link } from 'react-router-dom/cjs/react-router-dom.min'
 import { getCatgoryProperties, getTownhouseCatgoryProperties, getTownhouseCatgoryRentProperties } from '../actions/catgoryActions'
-import { TEAM_API_URL } from '../constants/config'
+import { PROPERTY_IMAGES_URL, TEAM_API_URL } from '../constants/config'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 const LevelProperties = (props) => {
@@ -157,7 +157,11 @@ const LevelProperties = (props) => {
 														<div className="col-lg-4">
 															<div key={categoryProperty?.id} className="ltn__product-item ltn__product-item-4 text-center---">
 																<div className="product-img go-top">
-																	<Link to={`/property-details/${categoryProperty?.id}`}><img src={`https://media.istockphoto.com/id/490348444/photo/house-in-dubai.jpg?s=612x612&w=0&k=20&c=W78UOukoUuGNhTDHA0Sl4GY5cpiHkoJ3bBvmxBERWQg=`} alt="#" /></Link>
+																	<Link to={`/property-details/${categoryProperty?.id}`}>
+																		
+																	<img src={`${PROPERTY_IMAGES_URL}/${categoryProperty?.img_name}`} alt="#" />
+																		
+																		</Link>
 																	<div className="product-badge">
 																		<ul>
 																			<li className="sale-badge bg-green">{categoryProperty?.property_for}</li>
