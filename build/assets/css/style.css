@@ -9000,6 +9000,13 @@ i {
 
   
 }
+.ltn__product-item-carousel{
+  position: relative;
+  margin-bottom: 50px;
+  max-height: 620px;
+  min-height: 620px;
+
+}
 
 .product-img {
   position: relative;
@@ -9011,7 +9018,8 @@ i {
   -webkit-transition: all 3.5s ease 0s;
   -o-transition: all 3.5s ease 0s;
   transition: all 3.5s ease 0s;
-  min-height: 397px;
+  min-height: 337px;
+  
 }
 
 .product-img:before {
@@ -19387,4 +19395,14 @@ a.ltn__utilize-toggle.close {
 }
 .liveinStyleTitle:hover{
   color: white;
+}
+.pr{
+  padding-right: 5px;
+}
+.mrrr{
+  margin: 20px;
+}
+
+.homePageGridImages{
+  height: 100px !important;
 }
