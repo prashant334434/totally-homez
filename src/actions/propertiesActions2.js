@@ -9,7 +9,6 @@ export const getPropertiesType = (property_type, property_for, property_city) =>
 
 
             const { data } = await axios.get(`https://totallyhomerealestate.com/API/api/properties/typefor/${property_type}/${property_for}`);
-            console.log("typeData", data)
             dispatch({
                 type: GET_PROPERTY_TYPE2_SUCCESS,
                 payload: data,

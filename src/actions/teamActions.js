@@ -23,13 +23,11 @@ export const getTeamsApi = () => async (dispatch) => {
 
 
   export const getTeamDetailsApi = (id) => async (dispatch) => {
-    console.log(typeof(id))
     try {
       dispatch({ type: GET_TEAM_DETAILS_REQUEST });
   
       const  {data}  = await axios.get(`https://totallyhomerealestate.com/API/api/teams/${id}`);
 
-      console.log("action",data)
   
       dispatch({
         type:GET_TEAM_DETAILS_SUCCESS,
@@ -44,13 +42,11 @@ export const getTeamsApi = () => async (dispatch) => {
 
 
   export const currentTeamMemberId = (id) => async (dispatch) => {
-    console.log(typeof(id))
     try {
       dispatch({ type: GET_TEAM_DETAILS_REQUEST });
   
       const  {data}  = await axios.get(`https://totallyhomerealestate.com/API/api/teams/${id}`);
 
-      console.log("action",data)
   
       dispatch({
         type:GET_TEAM_DETAILS_SUCCESS,
@@ -68,7 +64,6 @@ export const getTeamsApi = () => async (dispatch) => {
   export const currentTeamMember = (id) => async (dispatch) => {
   
 
-      console.log("agentId",id)
   
       dispatch({
         type:GET_CURRENT_TEAM_MEMBER_ID,
