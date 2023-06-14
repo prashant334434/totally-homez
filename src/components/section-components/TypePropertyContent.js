@@ -46,7 +46,7 @@ const TypePropertyContent = () => {
 					<div className="col-lg-6 col-md-6">
 					<div className="ltn__banner-item ltn__banner-style-shop-page-images text-color-white bg-image shop-page-image" data-bs-bg= {"https://dq5r178u4t83b.cloudfront.net/wp-content/uploads/sites/15/2019/03/17114621/Beach-Villa-swimming-pool.jpg"} >                        
 						<div className="ltn__banner-info">
-						<h1><Link to="/property/villa" className="categoryTitle" href="#aboutV4"> Villa </Link></h1>
+						<center><h3 style={{'paddingTop':'65px'}}><Link to="/property/villa" className="categoryTitle" href="#aboutV4" > Villas</Link></h3></center>
 						{/* <p> Great Deals Available</p> */}
 						
 						</div>
@@ -55,7 +55,7 @@ const TypePropertyContent = () => {
 					<div className="col-lg-6 col-md-6">
 					<div className="ltn__banner-item ltn__banner-style-shop-page-images text-color-white bg-image shop-page-image" data-bs-bg= {"https://static.propsearch.ae/dubai-locations/verdana-townhouses_g26IB_xl.jpg"} >                        
 						<div className="ltn__banner-info">
-						<h3><Link className="categoryTitle" to="/property/townhouse">  Townhouse</Link></h3>
+						<center><h3 style={{'paddingTop':'65px'}}><Link className="categoryTitle" to="/property/townhouse">  Townhouses</Link></h3></center>
 						{/* <p> Great Deals Available</p> */}
 						
 						</div>
@@ -64,7 +64,7 @@ const TypePropertyContent = () => {
 					<div className="col-lg-6 col-md-6">
 					<div className="ltn__banner-item ltn__banner-style-shop-page-images text-color-white bg-image shop-page-image" data-bs-bg= {"https://assets.cntraveller.in/photos/60b9ed9c13fda2fd38ad7756/master/pass/Intercon%202-987142274-1366x768.jpg"} >                        
 						<div className="ltn__banner-info">
-						<h3><Link className="categoryTitle" to="/property/apartment">  Apartment</Link></h3>
+						<center><h3 style={{'paddingTop':'65px'}}><Link className="categoryTitle" to="/property/apartment">  Apartments</Link></h3></center>
 						{/* <p> Great Deals Available</p> */}
 						
 						</div>
@@ -73,7 +73,7 @@ const TypePropertyContent = () => {
 					<div className="col-lg-6 col-md-6">
 					<div className="ltn__banner-item ltn__banner-style-shop-page-images text-color-white bg-image shop-page-image" data-bs-bg= {"https://thepenthouse.co/wp-content/uploads/2022/05/dubai-1.jpg"} >                        
 						<div className="ltn__banner-info">
-						<h3><Link className="categoryTitle" to="/property/penthouse">  Penthouse</Link></h3>
+						<center><h3 style={{'paddingTop':'65px'}}><Link className="categoryTitle" to="/property/penthouse">  Penthouses</Link></h3></center>
 						{/* <p> Great Deals Available</p> */}
 						
 						</div>

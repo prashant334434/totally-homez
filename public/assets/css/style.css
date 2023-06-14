@@ -19379,3 +19379,9 @@ a.ltn__utilize-toggle.close {
 .sticky-active li.active a{
   color:#EB2027!important;
 }
+.liveinStyleTitle{
+  color: #EB2027;
+}
+.liveinStyleTitle:hover{
+  color: white;
+}

@@ -11,7 +11,9 @@ const TyepPropertyGrid = (props) => {
 	let customClass = props.customClass ? props.customClass : ''
 	// console.log(data)
 
-
+	const url = (titleName) => {
+		return titleName?.split(" ")?.join("-")?.toLowerCase()
+	  }
 	return (
 		<div>
 			<div>
@@ -33,8 +35,7 @@ const TyepPropertyGrid = (props) => {
 											<div className="short-by text-center">
 												<select className="nice-select">
 													<option>Default sorting</option>
-													<option>Sort by popularity</option>
-													<option>Sort by new arrivals</option>
+													
 													<option>Sort by price: low to high</option>
 													<option>Sort by price: high to low</option>
 												</select>
@@ -138,13 +139,36 @@ const TyepPropertyGrid = (props) => {
 															<div className="col-lg-4">
 																<div key={categoryProperty?.id} className="ltn__product-item ltn__product-item-4 text-center---">
 																	<div className="product-img go-top">
-																		<Link to={`/property-details/${categoryProperty?.id}`}>
+																		{categoryProperty?.property_level ?(
+																			<Link  to={`/${url(categoryProperty?.property_city)}/${url(
+																				categoryProperty?.property_community
+																			  )}/${url(categoryProperty?.property_sub_community)}/${url(
+																				categoryProperty?.property_type
+																			  )}-for-${url(categoryProperty?.property_for)}-${url(
+																				categoryProperty?.property_level
+																			  )}/th${categoryProperty?.id}`}>
+																			
+																			
+																			<img src={`${PROPERTY_IMAGES_URL}/${categoryProperty?.img_name}`} alt="#" />
+																				
+																				
+																				</Link>
+																		):(
+																			<Link  to={`/${url(categoryProperty?.property_city)}/${url(
+																				categoryProperty?.property_community
+																			  )}/${url(categoryProperty?.property_sub_community)}/${url(
+																				categoryProperty?.property_type
+																			  )}-for-${url(categoryProperty?.property_for)}
+																			   
+																			  /th${categoryProperty?.id}`}>
 																			
 																			
 																		<img src={`${PROPERTY_IMAGES_URL}/${categoryProperty?.img_name}`} alt="#" />
 																			
 																			
 																			</Link>
+																		)}
+																		
 																		<div className="product-badge">
 																			<ul>
 																				<li className="sale-badge bg-green">{categoryProperty?.property_for}</li>
@@ -154,14 +178,46 @@ const TyepPropertyGrid = (props) => {
 																	</div>
 																	<div className="product-info">
 																		<div className="product-price">
-																			<h2
+																			{categoryProperty.property_level ? (
+																						  <Link
+																						  to={`/${url(categoryProperty?.property_city)}/${url(
+																							categoryProperty?.property_community
+																						  )}/${url(categoryProperty?.property_sub_community)}/${url(
+																							categoryProperty?.property_type
+																						  )}-for-${url(categoryProperty?.property_for)}-${url(
+																							categoryProperty?.property_level
+																						  )}/th${categoryProperty?.id}`}
+																						>
+																						<h3
+																							dangerouslySetInnerHTML={{
+																								__html: categoryProperty?.property_name,
+																							}}
+																							className="product-title go-top"
+																						/>
+																						</Link>
+			
+																			):(
+																				<Link
+																				to={`/${url(categoryProperty?.property_city)}/${url(
+																				  categoryProperty?.property_community
+																				)}/${url(categoryProperty?.property_sub_community)}/${url(
+																				  categoryProperty?.property_type
+																				)}-for-${url(categoryProperty?.property_for)}
+																			 
+																			/th${categoryProperty?.id}`}
+																			  >
+																				<h3
 																				dangerouslySetInnerHTML={{
 																					__html: categoryProperty?.property_name,
 																				}}
 																				className="product-title go-top"
 																			/>
-																			<span>AED {categoryProperty?.property_price}</span>
+																			</Link>
+																			)}
+																			
+																			
 
+																			<span>AED {categoryProperty?.property_price}</span>
 
 																		</div>
 																		<div className="product-description">
@@ -186,7 +242,7 @@ const TyepPropertyGrid = (props) => {
 																				</Link>
 																			</div>
 																			<div className="agent-brief go-top">
-																				<h6><Link to={`/team-details/${categoryProperty?.property_agent_name}`}>{categoryProperty?.name}</Link></h6>
+																				<p><Link to={`/team-details/${categoryProperty?.property_agent_name}`}>{categoryProperty?.name}</Link></p>
 
 																			</div>
 																		</div>

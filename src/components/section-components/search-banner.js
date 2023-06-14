@@ -8,7 +8,7 @@ class SearchBarV1 extends Component {
 
         let publicUrl = process.env.PUBLIC_URL+'/'
 
-    return  <div className="ltn__slider-area ltn__slider-4 pt-100 ">
+    return  <div className="ltn__slider-area ltn__slider-4 pt-30 ">
     <div className="container">
     <div className="row">
     <div className="col-lg-12 align-self-center">

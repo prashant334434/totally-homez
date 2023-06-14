@@ -48,7 +48,7 @@ if(loading){
         <MetaData title={` ${capitalizeFirstLetter(property_type)} For ${capitalizeFirstLetter(property_for)} In ${capitalizeFirstLetter(property_city)}`} metaDesription={`Check Our Verified Listing Of Dubai ${capitalizeFirstLetter(property_type)} For ${capitalizeFirstLetter(property_for)} In Dubai With World Class Amenities, Amazing Views And Attractive Lifestyle.`}/>
         
       <MobileNav/>
-      <TypeBreadcrums/>
+      <TypeBreadcrums property_type={capitalizeFirstLetter(property_type)} property_city={capitalizeFirstLetter(property_city)} property_for={capitalizeFirstLetter(property_for)}/>
 
       <SearchBarV1/>
       <TypePropertyContent/>

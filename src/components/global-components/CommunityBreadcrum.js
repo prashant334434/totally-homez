@@ -15,7 +15,7 @@ const CommunityBreadcrum = (props) => {
     let CustomClass = props.customclass ? props.customclass : ''
   return (
     <div>
-        	<div className={"ltn__breadcrumb-area text-left pt-200  "+CustomClass}  >
+        	<div className={"ltn__breadcrumb-area text-left pt-100  "+CustomClass}  >
 			<div className="container">
 				<div className="row">
 				<div className="col-lg-12">
