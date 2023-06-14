@@ -1,4 +1,4 @@
-import { GET_ALL_TEAM_FAILURE, GET_ALL_TEAM_REQUEST, GET_ALL_TEAM_SUCCESS, GET_CURRENT_TEAM_MEMBER_FAILURE, GET_CURRENT_TEAM_MEMBER_REQUEST, GET_CURRENT_TEAM_MEMBER_SUCCESS, GET_TEAM_DETAILS_FAILURE, GET_TEAM_DETAILS_REQUEST, GET_TEAM_DETAILS_SUCCESS } from "../constants/teamConstants";
+import { GET_ALL_TEAM_FAILURE, GET_ALL_TEAM_REQUEST, GET_ALL_TEAM_SUCCESS, GET_CURRENT_TEAM_MEMBER_FAILURE, GET_CURRENT_TEAM_MEMBER_ID, GET_CURRENT_TEAM_MEMBER_REQUEST, GET_CURRENT_TEAM_MEMBER_SUCCESS, GET_TEAM_DETAILS_FAILURE, GET_TEAM_DETAILS_REQUEST, GET_TEAM_DETAILS_SUCCESS } from "../constants/teamConstants";
 
 export const teamReducer = (state = { team: [] }, action) => {
     switch (action.type) {
@@ -71,6 +71,23 @@ export const getCurrentTeamMemberReducer = (state = { currentTeamMember: {} }, a
                 error: action.payload,
             }
         }
+        default:
+            return state;
+
+    }
+}
+
+
+export const getCurrentTeamMemberIdReducer = (state = { currentTeamMemberId: {} }, action) => {
+    switch (action.type) {
+       
+        case GET_CURRENT_TEAM_MEMBER_ID:
+            return {
+                loading: false,
+                currentTeamMemberId: action.payload,
+              
+            }
+      
         default:
             return state;
 

@@ -56,11 +56,11 @@ const ProductGrid = (props) => {
     carouselItems = categoryProperties;
   }
   const url = (titleName) => {
-    return titleName?.split(" ")?.join("-")?.toLowerCase()
-  }
+    return titleName?.split(" ")?.join("-")?.toLowerCase();
+  };
   const url2 = (titleName) => {
-    return titleName?.split(" ")?.join("-")?.toLowerCase()
-  }
+    return titleName?.split(" ")?.join("-")?.toLowerCase();
+  };
   return (
     <div>
       <div>
@@ -114,7 +114,10 @@ const ProductGrid = (props) => {
                               item?.property_level
                             )}/th${item?.id}`}
                           >
-                            <img src={`${PROPERTY_IMAGES_URL}/${item?.img_name}`} alt="#" />
+                            <img
+                              src={`${PROPERTY_IMAGES_URL}/${item?.img_name}`}
+                              alt="#"
+                            />
                           </Link>
                         ) : (
                           <Link
@@ -126,7 +129,10 @@ const ProductGrid = (props) => {
                              
                             /th${item?.id}`}
                           >
-                            <img src={`${PROPERTY_IMAGES_URL}/${item?.img_name}`} alt="#" />
+                            <img
+                              src={`${PROPERTY_IMAGES_URL}/${item?.img_name}`}
+                              alt="#"
+                            />
                           </Link>
                         )}
                         <div className="product-badge">
@@ -150,7 +156,7 @@ const ProductGrid = (props) => {
                                   item?.property_level
                                 )}/th${item?.id}`}
                               >
-                                <h2
+                                <h3
                                   dangerouslySetInnerHTML={{
                                     __html: item?.property_name,
                                   }}
@@ -167,17 +173,16 @@ const ProductGrid = (props) => {
                              
                             /th${item?.id}`}
                               >
-                                <h2
-                                  dangerouslySetInnerHTML={{
-                                    __html: item?.property_name,
-                                  }}
-                                  className="product-title go-top"
-                                />
+                                <h3 className="product-title go-top">{item?.property_name}</h3>
+                               
                               </Link>
                             )}
                           </div>
                           <div className="price_div">
-                            <span>AED <br/>{item?.property_price}</span>
+                            <span>
+                              AED <br />
+                              {item?.property_price}
+                            </span>
                           </div>
                         </div>
                         <div className="product-description">
@@ -223,13 +228,13 @@ const ProductGrid = (props) => {
                             </Link>
                           </div>
                           <div className="agent-brief go-top">
-                            <h6>
+                            <p>
                               <Link
                                 to={`/team-details/${item?.property_agent_name}`}
                               >
                                 {item?.name}
                               </Link>
-                            </h6>
+                            </p>
                           </div>
                         </div>
                         <div className="wcallFlex">
