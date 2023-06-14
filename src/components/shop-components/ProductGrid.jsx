@@ -76,7 +76,7 @@ const ProductGrid = (props) => {
         <div className="ltn__product-slider-area ltn__product-gutter  plr--7">
           <div className="container-fluid">
             <div className="row  slick-arrow-1">
-              <Carousel
+            <Carousel
                 additionalTransfrom={0}
                 arrows
                 centerMode={false}
@@ -134,9 +134,7 @@ const ProductGrid = (props) => {
                               item?.property_community
                             )}/${url(item?.property_sub_community)}/${url(
                               item?.property_type
-                            )}-for-${url(item?.property_for)}
-                             
-                            /th${item?.id}`}
+                            )}-for-${url(item?.property_for)}/th${item?.id}`}
                           >
                             <img
                               src={`${PROPERTY_IMAGES_URL}/${item?.img_name}`}
@@ -165,7 +163,7 @@ const ProductGrid = (props) => {
                                   item?.property_level
                                 )}/th${item?.id}`}
                               >
-                                <h3
+                                <h2
                                   dangerouslySetInnerHTML={{
                                     __html: item?.property_name,
                                   }}
@@ -178,20 +176,22 @@ const ProductGrid = (props) => {
                                   item?.property_community
                                 )}/${url(item?.property_sub_community)}/${url(
                                   item?.property_type
-                                )}-for-${url(item?.property_for)}
-                             
-                            /th${item?.id}`}
+                                )}-for-${url(item?.property_for)}/th${
+                                  item?.id
+                                }`}
                               >
-                                <h3 className="product-title go-top">
-                                  {item?.property_name}
-                                </h3>
+                                <h2
+                                  dangerouslySetInnerHTML={{
+                                    __html: item?.property_name,
+                                  }}
+                                  className="product-title go-top"
+                                />
                               </Link>
                             )}
                           </div>
                           <div className="price_div">
                             <span>
-                              AED <br />
-                              {item?.property_price}
+                              AED <br /> {item?.property_price}
                             </span>
                           </div>
                         </div>
@@ -228,7 +228,7 @@ const ProductGrid = (props) => {
                         </div>
                       </div>
                       <div className="product-info-bottom">
-                        <div className="real-estate-agent wcallFlex">
+                        <div className="real-estate-agent wcallFlex mt-10">
                           <div className="agent-img go-top">
                             <Link to="/team-details">
                               <img
@@ -238,15 +238,18 @@ const ProductGrid = (props) => {
                             </Link>
                           </div>
                           <div className="agent-brief go-top">
-                            <p className="pt-10">
+                            <h6>
                               <Link
                                 onClick={() =>
-                                  handleLinkClick(item?.property_agent_name, item?.name)
+                                  handleLinkClick(
+                                    item?.property_agent_name,
+                                    item?.name
+                                  )
                                 }
                               >
                                 {item?.name}
                               </Link>
-                            </p>
+                            </h6>
                           </div>
                         </div>
                         <div className="wcallFlex">

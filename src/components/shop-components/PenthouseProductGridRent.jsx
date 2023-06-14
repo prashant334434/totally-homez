@@ -228,7 +228,7 @@ const PenthouseProductGridRent = (props) => {
                         </div>
                       </div>
                       <div className="product-info-bottom">
-                        <div className="real-estate-agent wcallFlex">
+                        <div className="real-estate-agent wcallFlex mt-10">
                           <div className="agent-img go-top">
                             <Link to="/team-details">
                               <img

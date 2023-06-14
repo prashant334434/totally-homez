@@ -13,6 +13,9 @@ const CommunityBreadcrum = (props) => {
 
 
     let CustomClass = props.customclass ? props.customclass : ''
+	const url=(titleName)=>{
+		return titleName?.split(" ")?.join("-")?.toLowerCase()
+	}
   return (
     <div>
         	<div className={"ltn__breadcrumb-area text-left pt-100  "+CustomClass}  >
@@ -26,9 +29,11 @@ const CommunityBreadcrum = (props) => {
 					<div className="ltn__breadcrumb-list">
 						<ul>
 						<li><Link to="/"><span className="ltn__secondary-color"><i className="fas fa-home" style={{fontSize:'16px'}} /></span> {props?.city}</Link></li>
-						<li><Link to="/">{ props?.type } </Link></li>
-						<li><Link to="/">{ props?.comm } </Link></li>
-
+						<li><Link to={`/${url(
+								props?.type
+                            )}-for-${url(props?.for)}-${url(props?.city)}`}> { props?.type }</Link></li>
+						<li><Link >{ props?.comm } </Link></li>
+						
 					
 						
 

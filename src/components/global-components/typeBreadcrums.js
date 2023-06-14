@@ -26,7 +26,7 @@ const TypeBreadcrums = (props) => {
 					<div className="ltn__breadcrumb-list">
 						<ul>
 						<li><Link to="/"><span className="ltn__secondary-color"><i className="fas fa-home" style={{fontSize:'16px'}} /></span> {props?.property_city}</Link></li>
-						<li><Link to="/">{ props?.property_type } </Link></li>
+						<li> { props?.property_type }</li>
 					
 						
 
