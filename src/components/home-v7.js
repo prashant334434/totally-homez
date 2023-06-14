@@ -64,7 +64,7 @@ const Home_V7 = () => {
     }
 
     <Navbar CustomClass="ltn__header-transparent gradient-color-2" />
-    <BannerV5 />
+    <BannerV5 homePage={homePage} />
 
 
 

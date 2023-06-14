@@ -2,6 +2,7 @@ import axios from "axios";
 import { GET_HOME_PAGE_DETAILS_FAILURE, GET_HOME_PAGE_DETAILS_REQUEST, GET_HOME_PAGE_DETAILS_SUCCESS } from "../constants/homePageConstants";
 
 export const getHomePageApi = () => async (dispatch) => {
+
     try {
       dispatch({ type: GET_HOME_PAGE_DETAILS_REQUEST });
   

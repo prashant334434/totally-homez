@@ -2,18 +2,24 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import parse from 'html-react-parser';
 import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
-const BannerV5 = () => {
+import { ADMIN_PROPERTY_IMAGES_URL } from '../../constants/config';
+const BannerV5 = (props) => {
 	const history=useHistory()
+	
 	let publicUrl = process.env.PUBLIC_URL+'/'
 	const handleClick=(e)=>{
-history.push("/abc")
+history.push('/dubai/mohammed-bin-rashid-city/district-one/villa-for-sale-district-one-villas/th244')
 	}
-
+	const url = (titleName) => {
+		return titleName?.split(" ")?.join("-")?.toLowerCase()
+	  }
   return (
 <div className="ltn__slider-area ltn__slider-4">
 				<div className="ltn__slide-one-active----- slick-slide-arrow-1----- slick-slide-dots-1----- arrow-white----- ltn__slide-animation-active">
 				{/* ltn__slide-item */}
-				<div onClick={(e)=>handleClick()} className="ltn__slide-item ltn__slide-item-2 ltn__slide-item-4 bg-image " data-bs-bg={"/assets/img/totallyHomezBanner.jpeg"}>
+				{
+                props?.homePage?.map((item, index) => (
+<div onClick={(e)=>handleClick()} className="ltn__slide-item ltn__slide-item-2 ltn__slide-item-4 bg-image " data-bs-bg={`${ADMIN_PROPERTY_IMAGES_URL}${item.fetch_pro_img}`}>
 					<div className="ltn__slide-item-inner text-left">
 					<div className="container">
 						<div className="row">
@@ -254,6 +260,8 @@ history.push("/abc")
 					</div>
 					</div>
 				</div>
+				))}
+				
 				</div>
 			</div>  )
 }
