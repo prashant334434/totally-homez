@@ -22,13 +22,11 @@ export const getBlogsApi = () => async (dispatch) => {
 
 
   export const getBlogDetailsApi = (id) => async (dispatch) => {
-    console.log(typeof(id))
     try {
       dispatch({ type: GET_BLOG_DETAILS_REQUEST });
   
       const  {data}  = await axios.get(`https://totallyhomerealestate.com/API/api/blogs/{id}`);
 
-      console.log("action",data)
   
       dispatch({
         type:GET_BLOG_DETAILS_SUCCESS,
