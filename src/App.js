@@ -46,6 +46,8 @@ import SubCommunityPage from './components/SubCommunityPage';
 import CommunityPage from './components/CommunityPage';
 import TypePropertyPage from './components/shop-components/TypePropertyPage';
 import TeamV2 from './components/section-components/team-v2';
+import Team_Details from './components/team-details';
+import OurTeam from './components/section-components/ourTeam';
 
 
 
@@ -80,7 +82,7 @@ const App = () => {
           <Route path="/career" component={CareerV1} />
           <Route path="/list-with-us" component={ListWithUs} />
 
-          <Route exact path="/team" component={TeamV2} />
+          {/* <Route exact path="/team" component={TeamV2} /> */}
           <Route exact path="/team/:name" component={TeamDetails} />
           <Route path="/404" component={Error} />
           {/* <Route path="/" component={ Shop } /> */}
@@ -106,7 +108,7 @@ const App = () => {
           <Route path="/:property_city/:property_community/:property_sub_community/:property_type-for-:property_for/TH:id" component={ProdductDetails} />
           <Route path="/:property_city/:property_community/:property_sub_community/:property_type-for-:property_for-:property_level/TH:id" component={ProdductDetails} />
           <Route path="/contact-us" component={NewContact} />
-          <Route exact path="/our-team" component={TeamV2} />
+          <Route exact path="/our-team" component={OurTeam} />
 
           <Route path="/property/:type" component={PropertyType} />
 
