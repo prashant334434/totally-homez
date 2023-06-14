@@ -9011,7 +9011,8 @@ i {
   -webkit-transition: all 3.5s ease 0s;
   -o-transition: all 3.5s ease 0s;
   transition: all 3.5s ease 0s;
-  min-height: 397px;
+  min-height: 337px;
+  
 }
 
 .product-img:before {
