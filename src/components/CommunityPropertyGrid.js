@@ -143,7 +143,7 @@ const CommunityPropertyGrid = (props) => {
 									</div>
 									</div>
 								</div> */}
-									<div className="ltn__product-slider-area ltn__product-gutter pt-40 pb-40">
+									<div className="ltn__product-slider-area ltn__product-gutter pt-20 pb-40">
 										<div className="container-fluid">
 
 											<div className="row ltn__product slick-arrow-1">
