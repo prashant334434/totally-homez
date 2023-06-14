@@ -8,7 +8,7 @@ const BestProperty = (props) => {
     <div className={"ltn__about-us-area" + customClass}>
       <div className="container">
         <div className="row">
-          <div className="col-lg-6 align-self-center">
+          <div className="col-lg-6">
             <div className="about-us-info-wrap">
               {
                 props?.homePage?.map((item, index) => (

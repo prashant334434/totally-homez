@@ -34,6 +34,7 @@ import { getHomePageApi } from '../actions/homePageActions';
 
 const Home_V7 = () => {
   const { loading, homePage } = useSelector((state) => state.homePage)
+  console.log("homePage77",homePage)
   const dispatch = useDispatch()
   useEffect(() => {
     dispatch(getAllPropertiesApi())
@@ -64,12 +65,14 @@ const Home_V7 = () => {
     }
 
     <Navbar CustomClass="ltn__header-transparent gradient-color-2" />
-    <BannerV5 homePage={homePage} />
+   
+      <BannerV5 homePage={homePage[0]?.fetch_pro_img} />
+    
 
 
 
 
-    <BestProperty homePage={homePage} customClass='ltn__feature-area section-bg-1 pt-80 pb-80  mb-120---' />
+    <BestProperty homePage={homePage} customClass='ltn__feature-area section-bg-1 pt-40 pb-80  mb-120---' />
     <Curousal1 />
     {/* <Aboutv2 /> */}
     {/* <Gallery /> */}
