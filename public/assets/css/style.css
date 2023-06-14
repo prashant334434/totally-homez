@@ -9000,6 +9000,13 @@ i {
 
   
 }
+.ltn__product-item-carousel{
+  position: relative;
+  margin-bottom: 50px;
+  max-height: 620px;
+  min-height: 620px;
+
+}
 
 .product-img {
   position: relative;

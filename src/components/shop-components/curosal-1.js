@@ -78,7 +78,7 @@ const Curousal1 = (props) => {
 
                                 {carouselItems.map((item) => (
                                     <div key={item?.id} className="col-lg-12">
-                                        <div  className="ltn__product-item ltn__product-item-44 text-center---">
+                                        <div  className="ltn__product-item-carousel ltn__product-item-44 text-center---">
                                             <div className="product-img go-top">
                                                 <Link to={`/property-details/${item?.id}`}><img src="https://famproperties.s3.ap-southeast-1.amazonaws.com/project-medium-banners/royal.jpg" alt="#" /></Link>
                                                 <div className="product-badge420">
