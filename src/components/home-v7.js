@@ -118,7 +118,7 @@ const Home_V7 = () => {
     {/* <Category /> */}
     {/* <Testimonial /> */}
     <AboutUsHome />
-    <AboutV5 homePage={homePage} customClass='ltn__feature-area section-bg-8 pt-40 pb-90 mb-120---' />
+    <AboutV5 homePage={homePage} customClass='ltn__feature-area section-bg-8  pb-90 mb-120---' />
     <TeamAgents homePage={homePage} customClass='ltn__feature-area section-bg-1 pt-80  mb-120---' />
     {/* <Testimonial customClass='ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---'/> */}
 

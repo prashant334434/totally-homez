@@ -10,7 +10,7 @@ const OurMission = (props) => {
   return (
 
   <div className={customClass}>
-  <div className="ltn__about-us-area pb-50  mt-50">
+  <div className="ltn__about-us-area pb-50">
     <div className="container">
       {
         props?.aboutUsData.map((about)=>(
