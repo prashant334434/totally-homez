@@ -40,7 +40,7 @@ const TeamAgents = (props) => {
 		console.log("agentIdHome",id)
 
 		dispatch(currentTeamMember(id))
-		history.push(`/team-details/${name.toLowerCase().split(" ").join("-")}`) 
+		history.push(`/team/${name.toLowerCase().split(" ").join("-")}`) 
 
 	}
 	

@@ -1,78 +1,86 @@
-import React, { useEffect, useState } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import { Link } from 'react-router-dom/cjs/react-router-dom.min'
-import { getCatgoryProperties, getTownhouseCatgoryProperties, getTownhouseCatgoryRentProperties } from '../../actions/catgoryActions'
-import { PROPERTY_IMAGES_URL, TEAM_API_URL } from '../../constants/config'
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
+import React, { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { Link, useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import {
+  getCatgoryProperties,
+  getTownhouseCatgoryProperties,
+  getTownhouseCatgoryRentProperties,
+} from "../../actions/catgoryActions";
+import { PROPERTY_IMAGES_URL, TEAM_API_URL } from "../../constants/config";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import { currentTeamMember } from "../../actions/teamActions";
 const TownhouseProductGridRent = (props) => {
-	let carouselItems = [
-		
-		// Add more items as needed
-	];
-    const [propertyCategory, setPropertyCategory] = useState("apartment")
-    let publicUrl = process.env.PUBLIC_URL + '/'
-    let customClass = props.customClass ? props.customClass : ''
-    const { townhouseCategoryRentProperties } = useSelector((state) => state.townhouseRentProperties)
+  const history = useHistory();
+  let carouselItems = [
+    // Add more items as needed
+  ];
+  const [propertyCategory, setPropertyCategory] = useState("apartment");
+  let publicUrl = process.env.PUBLIC_URL + "/";
+  let customClass = props.customClass ? props.customClass : "";
+  const { townhouseCategoryRentProperties } = useSelector(
+    (state) => state.townhouseRentProperties
+  );
 
-    const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
-    useEffect(() => {
-        dispatch(getTownhouseCatgoryRentProperties())
-    }, [dispatch])
+  useEffect(() => {
+    dispatch(getTownhouseCatgoryRentProperties());
+  }, [dispatch]);
 
+  if (townhouseCategoryRentProperties?.length > 0) {
+    carouselItems = townhouseCategoryRentProperties;
+  }
+  const url = (titleName) => {
+    return titleName?.split(" ")?.join("-")?.toLowerCase()?.toLowerCase();
+  };
+  const handleLinkClick = (id, name) => {
+    console.log("agentIdHome", id);
 
-	if (townhouseCategoryRentProperties?.length > 0) {
-		carouselItems = townhouseCategoryRentProperties
-	}
-	const url=(titleName)=>{
-		return titleName?.split(" ")?.join("-")?.toLowerCase()?.toLowerCase()
-	}
-
-    return (
-        <div>
-            <div>
-                <div className="ltn__product-slider-area ltn__product-gutter plr--7">
-                    <div className="container-fluid">
-
-                        <div className="row  slick-arrow-1">
-						<Carousel
-								additionalTransfrom={0}
-								arrows
-							
-								centerMode={false}
-								containerClass="carousel-container"
-								dotListClass=""
-								draggable
-								focusOnSelect={false}
-								infinite
-								itemClass=""
-								keyBoardControl
-								minimumTouchDrag={80}
-								renderButtonGroupOutside={false}
-								renderDotsOutside={false}
-								responsive={{
-									desktop: {
-										breakpoint: { max: 3000, min: 1024 },
-										items: 3,
-									},
-									tablet: {
-										breakpoint: { max: 1024, min: 464 },
-										items: 2,
-									},
-									mobile: {
-										breakpoint: { max: 464, min: 0 },
-										items: 1,
-									},
-								}}
-								showDots={false}
-								sliderClass=""
-								slidesToSlide={1}
-								swipeable
-							>
-
-								{carouselItems.map((item) => (
-									<div key={item?.id} className="col-lg-12">
+    dispatch(currentTeamMember(id));
+    history.push(`/team/${name.toLowerCase().split(" ").join("-")}`);
+  };
+  return (
+    <div>
+      <div>
+        <div className="ltn__product-slider-area ltn__product-gutter plr--7">
+          <div className="container-fluid">
+            <div className="row  slick-arrow-1">
+              <Carousel
+                additionalTransfrom={0}
+                arrows
+                centerMode={false}
+                containerClass="carousel-container"
+                dotListClass=""
+                draggable
+                focusOnSelect={false}
+                infinite
+                itemClass=""
+                keyBoardControl
+                minimumTouchDrag={80}
+                renderButtonGroupOutside={false}
+                renderDotsOutside={false}
+                responsive={{
+                  desktop: {
+                    breakpoint: { max: 3000, min: 1024 },
+                    items: 3,
+                  },
+                  tablet: {
+                    breakpoint: { max: 1024, min: 464 },
+                    items: 2,
+                  },
+                  mobile: {
+                    breakpoint: { max: 464, min: 0 },
+                    items: 1,
+                  },
+                }}
+                showDots={false}
+                sliderClass=""
+                slidesToSlide={1}
+                swipeable
+              >
+                {carouselItems.map((item) => (
+                  <div key={item?.id} className="col-lg-12">
                     <div className="ltn__product-item ltn__product-item-4 text-center---">
                       <div className="product-img go-top">
                         {item.property_level ? (
@@ -85,7 +93,10 @@ const TownhouseProductGridRent = (props) => {
                               item?.property_level
                             )}/th${item?.id}`}
                           >
-                            <img src={`${PROPERTY_IMAGES_URL}/${item?.img_name}`} alt="#" />
+                            <img
+                              src={`${PROPERTY_IMAGES_URL}/${item?.img_name}`}
+                              alt="#"
+                            />
                           </Link>
                         ) : (
                           <Link
@@ -95,7 +106,10 @@ const TownhouseProductGridRent = (props) => {
                               item?.property_type
                             )}-for-${url(item?.property_for)}/th${item?.id}`}
                           >
-                            <img src={`${PROPERTY_IMAGES_URL}/${item?.img_name}`} alt="#" />
+                            <img
+                              src={`${PROPERTY_IMAGES_URL}/${item?.img_name}`}
+                              alt="#"
+                            />
                           </Link>
                         )}
                         <div className="product-badge">
@@ -111,14 +125,14 @@ const TownhouseProductGridRent = (props) => {
                           <div className="title_div">
                             {item.property_level ? (
                               <Link
-                            to={`/${url(item?.property_city)}/${url(
-                              item?.property_community
-                            )}/${url(item?.property_sub_community)}/${url(
-                              item?.property_type
-                            )}-for-${url(item?.property_for)}-${url(
-                              item?.property_level
-                            )}/th${item?.id}`}
-                          >
+                                to={`/${url(item?.property_city)}/${url(
+                                  item?.property_community
+                                )}/${url(item?.property_sub_community)}/${url(
+                                  item?.property_type
+                                )}-for-${url(item?.property_for)}-${url(
+                                  item?.property_level
+                                )}/th${item?.id}`}
+                              >
                                 <h2
                                   dangerouslySetInnerHTML={{
                                     __html: item?.property_name,
@@ -128,12 +142,14 @@ const TownhouseProductGridRent = (props) => {
                               </Link>
                             ) : (
                               <Link
-                            to={`/${url(item?.property_city)}/${url(
-                              item?.property_community
-                            )}/${url(item?.property_sub_community)}/${url(
-                              item?.property_type
-                            )}-for-${url(item?.property_for)}/th${item?.id}`}
-                          >
+                                to={`/${url(item?.property_city)}/${url(
+                                  item?.property_community
+                                )}/${url(item?.property_sub_community)}/${url(
+                                  item?.property_type
+                                )}-for-${url(item?.property_for)}/th${
+                                  item?.id
+                                }`}
+                              >
                                 <h2
                                   dangerouslySetInnerHTML={{
                                     __html: item?.property_name,
@@ -144,7 +160,9 @@ const TownhouseProductGridRent = (props) => {
                             )}
                           </div>
                           <div className="price_div">
-                            <span>AED <br/> {item?.property_price}</span>
+                            <span>
+                              AED <br /> {item?.property_price}
+                            </span>
                           </div>
                         </div>
                         <div className="product-description">
@@ -192,7 +210,12 @@ const TownhouseProductGridRent = (props) => {
                           <div className="agent-brief go-top">
                             <h6>
                               <Link
-                                to={`/team-details/${item?.property_agent_name}`}
+                                onClick={() =>
+                                  handleLinkClick(
+                                    item?.property_agent_name,
+                                    item?.name
+                                  )
+                                }
                               >
                                 {item?.name}
                               </Link>
@@ -234,23 +257,18 @@ const TownhouseProductGridRent = (props) => {
                       </div>
                     </div>
                   </div>
-								))}
-							</Carousel>
+                ))}
+              </Carousel>
 
+              {/* ltn__product-item */}
 
-
-
-                            {/* ltn__product-item */}
-
-                            {/*  */}
-                        </div>
-
-                    </div>
-                </div>
-
+              {/*  */}
             </div>
+          </div>
         </div>
-    )
-}
+      </div>
+    </div>
+  );
+};
 
-export default TownhouseProductGridRent
+export default TownhouseProductGridRent;
