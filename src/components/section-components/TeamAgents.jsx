@@ -1,13 +1,14 @@
 import React from 'react'
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { Link } from 'react-router-dom/cjs/react-router-dom.min'
-import { getTeamsApi } from '../../actions/teamActions'
+import { Link, useHistory } from 'react-router-dom/cjs/react-router-dom.min'
+import { currentTeamMember, getTeamsApi } from '../../actions/teamActions'
 import { TEAM_API_URL } from '../../constants/config'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import Loader from '../Loader/Loader'
 const TeamAgents = (props) => {
+	const history=useHistory()
 	let carouselItems = [
 		{ id: 1, content: 'https://www.timeoutdubai.com/cloud/timeoutdubai/2021/09/13/Damx3DMM-The-Penthouse-1200x800.jpg' },
 		{ id: 2, content: 'https://www.timeoutdubai.com/cloud/timeoutdubai/2021/09/13/Damx3DMM-The-Penthouse-1200x800.jpg' },
@@ -35,9 +36,14 @@ const TeamAgents = (props) => {
 
 	}
 
-	const handleLinkClick = (id) => {
-		console.log(id)
+	const handleLinkClick = (id,name) => {
+		console.log("agentIdHome",id)
+
+		dispatch(currentTeamMember(id))
+		history.push(`/team-details/${name.toLowerCase().split(" ").join("-")}`) 
+
 	}
+	
 if(loading){
 	return <Loader/>
 }
@@ -102,7 +108,7 @@ const url = (titleName) => {
 													<img className="img2" src={`${TEAM_API_URL}/${item.path}`} alt="Image" />
 												</div>
 												<div className="team-info">
-													<Link onClick={() => handleLinkClick(item?.id)} to={`/team-details/${item?.id}`}><h4>{item.name}</h4></Link>
+													<Link onClick={() => handleLinkClick(item?.id,item?.name)} ><h4>{item.name}</h4></Link>
 
 													<h6 className=" designnation ltn__secondary-color">{item.designation}</h6>
 												</div>

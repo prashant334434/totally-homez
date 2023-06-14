@@ -57,7 +57,7 @@ const BestPenthouse = (props) => {
         </div>
         <div className="col-lg-6">
           <div className="about-us-img-wrap about-img-right">
-            <img className='penthouseImage' src="/assets/img/02june/02june003.png" alt="About Us Image"  height="500px" width="500px"/>
+            <img className='penthouseImage' src="/assets/img/02june/02june003.png" alt="About Us Image"  height="600px" width="500px"/>
           </div>
         </div>
       </div>

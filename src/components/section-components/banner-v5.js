@@ -1,14 +1,19 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import parse from 'html-react-parser';
+import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 const BannerV5 = () => {
+	const history=useHistory()
 	let publicUrl = process.env.PUBLIC_URL+'/'
+	const handleClick=(e)=>{
+history.push("/abc")
+	}
 
   return (
 <div className="ltn__slider-area ltn__slider-4">
 				<div className="ltn__slide-one-active----- slick-slide-arrow-1----- slick-slide-dots-1----- arrow-white----- ltn__slide-animation-active">
 				{/* ltn__slide-item */}
-				<div className="ltn__slide-item ltn__slide-item-2 ltn__slide-item-4 bg-image bg-overlay-theme-black-60" data-bs-bg={"/assets/img/bannerImage.jpeg"}>
+				<div onClick={(e)=>handleClick()} className="ltn__slide-item ltn__slide-item-2 ltn__slide-item-4 bg-image " data-bs-bg={"/assets/img/totallyHomezBanner.jpeg"}>
 					<div className="ltn__slide-item-inner text-left">
 					<div className="container">
 						<div className="row">

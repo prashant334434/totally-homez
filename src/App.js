@@ -80,7 +80,7 @@ const App = () => {
           <Route path="/list-with-us" component={ListWithUs} />
 
           <Route path="/team" component={Team} />
-          <Route path="/team-details/:id" component={TeamDetails} />
+          <Route path="/team-details/:name" component={TeamDetails} />
           <Route path="/404" component={Error} />
           {/* <Route path="/" component={ Shop } /> */}
           {/* <Route path="/shop-grid" component={ ShopGrid } /> */}

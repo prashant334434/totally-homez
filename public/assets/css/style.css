@@ -8995,6 +8995,9 @@ i {
 .ltn__product-item {
   position: relative;
   margin-bottom: 50px;
+  max-height: 720px;
+  min-height: 720px;
+
   
 }
 

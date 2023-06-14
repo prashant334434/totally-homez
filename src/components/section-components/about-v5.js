@@ -11,7 +11,7 @@ const AboutV5 = (props) => {
 
 	return (
 		<div className={customClass}>
-			<div className="ltn__about-us-area pt-40   go-top  ">
+			<div className="ltn__about-us-area   go-top  ">
 				<div className="container">
 					{
 						props?.homePage?.map((homePage) => (

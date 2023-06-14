@@ -1,5 +1,5 @@
 import axios from "axios";
-import { GET_ALL_TEAM_FAILURE, GET_ALL_TEAM_REQUEST, GET_ALL_TEAM_SUCCESS, GET_TEAM_DETAILS_FAILURE, GET_TEAM_DETAILS_REQUEST, GET_TEAM_DETAILS_SUCCESS } from "../constants/teamConstants";
+import { GET_ALL_TEAM_FAILURE, GET_ALL_TEAM_REQUEST, GET_ALL_TEAM_SUCCESS, GET_CURRENT_TEAM_MEMBER_ID, GET_TEAM_DETAILS_FAILURE, GET_TEAM_DETAILS_REQUEST, GET_TEAM_DETAILS_SUCCESS } from "../constants/teamConstants";
 import { API_URL } from "../constants/config";
 
 export const getTeamsApi = () => async (dispatch) => {
@@ -61,4 +61,18 @@ export const getTeamsApi = () => async (dispatch) => {
         type:GET_TEAM_DETAILS_FAILURE,
       });
     }
+  };
+
+
+
+  export const currentTeamMember = (id) => async (dispatch) => {
+  
+
+      console.log("agentId",id)
+  
+      dispatch({
+        type:GET_CURRENT_TEAM_MEMBER_ID,
+        payload: id,
+      });
+  
   };
