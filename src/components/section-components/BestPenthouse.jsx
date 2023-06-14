@@ -8,7 +8,7 @@ const BestPenthouse = (props) => {
     <div className={"ltn__about-us-area pt-80 pb-40"+customClass}>
     <div className="container">
       {props?.homePage?.map((item,index)=>(
-        <div className="row">
+        <div className="row" key={item.id}>
         <div className="col-lg-6">
           <div className="about-us-info-wrap">
             <div className="section-title-area ltn__section-title-2--- mb-30">

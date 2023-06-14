@@ -94,12 +94,12 @@ class Footer_v1 extends Component {
 				            <h2 className="footer-title">Living LifeStyle </h2>
 				            <div className="footer-menu go-top">
 				              <ul>
-				                <li><Link >Beachfront Properties</Link></li>
-				                <li><Link >Waterfront Properties</Link></li>
-				                <li><Link >Downtown Properties</Link></li>
-				                <li><Link >Golf Course Properties</Link></li>
-				                <li><Link >Island Living Properties</Link></li>
-				                <li><Link >Green Nature Living Properties</Link></li>
+				                <li><Link to="#">Beachfront Properties</Link></li>
+				                <li><Link to="#">Waterfront Properties</Link></li>
+				                <li><Link to="#">Downtown Properties</Link></li>
+				                <li><Link to="#">Golf Course Properties</Link></li>
+				                <li><Link to="#">Island Living Properties</Link></li>
+				                <li><Link to="#">Green Nature Living Properties</Link></li>
 				              </ul>
 				            </div>
 				          </div>
@@ -109,13 +109,13 @@ class Footer_v1 extends Component {
 				            <h2 className="footer-title">Navigate </h2>
 				            <div className="footer-menu go-top">
 				              <ul>
-							  <li><Link >Best Property In Dubai</Link></li>
-				                <li><Link >Off Plan Apartments </Link></li>
-				                <li><Link >Off Plan Villas</Link></li>
-				                <li><Link > Off Plan Townhouses</Link></li>
-				                <li><Link >Brand New Apartments</Link></li>
+							  <li><Link to="#">Best Property In Dubai</Link></li>
+				                <li><Link to="#">Off Plan Apartments </Link></li>
+				                <li><Link to="#">Off Plan Villas</Link></li>
+				                <li><Link to="#"> Off Plan Townhouses</Link></li>
+				                <li><Link to="#">Brand New Apartments</Link></li>
 
-								<li><Link >Brand New Villas</Link></li>
+								<li><Link to="#">Brand New Villas</Link></li>
 
 				              </ul>
 				            </div>
@@ -126,12 +126,12 @@ class Footer_v1 extends Component {
 				            <h2 className="footer-title">Community Guides </h2>
 				            <div className="footer-menu go-top">
 				              <ul>
-				                <li><Link >Business Bay</Link></li>
-				                <li><Link >Creek Harbour</Link></li>
-				                <li><Link >Til Al Ghaf</Link></li>
-				                <li><Link >La Mer</Link></li>
-				                <li><Link >Bluewaters</Link></li>
-				                <li><Link >Madinat Jumeirah Living </Link></li>
+				                <li><Link to="#">Business Bay</Link></li>
+				                <li><Link to="#">Creek Harbour</Link></li>
+				                <li><Link to="#">Til Al Ghaf</Link></li>
+				                <li><Link to="#">La Mer</Link></li>
+				                <li><Link to="#">Bluewaters</Link></li>
+				                <li><Link to="#">Madinat Jumeirah Living </Link></li>
 				              </ul>
 				            </div>
 				          </div>
@@ -142,12 +142,12 @@ class Footer_v1 extends Component {
 				            <h2 className="footer-title">Explore </h2>
 				            <div className="footer-menu go-top">
 				              <ul>
-				                <li><Link >Waterfront Properties for Sale</Link></li>
-				                <li><Link >Waterfront Properties for Rent</Link></li>
-				                <li><Link >Seaview Properties for Sale</Link></li>
-				                <li><Link >Seaview Properties for Rent</Link></li>
-				                <li><Link >Oceanview Properties for Sale</Link></li>
-				                <li><Link >Oceanview Properties for Rent</Link></li>
+				                <li><Link to="#">Waterfront Properties for Sale</Link></li>
+				                <li><Link to="#">Waterfront Properties for Rent</Link></li>
+				                <li><Link to="#">Seaview Properties for Sale</Link></li>
+				                <li><Link to="#">Seaview Properties for Rent</Link></li>
+				                <li><Link to="#">Oceanview Properties for Sale</Link></li>
+				                <li><Link to="#" >Oceanview Properties for Rent</Link></li>
 				              </ul>
 				            </div>
 				          </div>

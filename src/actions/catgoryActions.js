@@ -9,7 +9,7 @@ export const getCatgoryProperties = (propertyCategory) =>
             const  {data}  = await axios.get(`https://totallyhomerealestate.com/API/api/properties/typefor/${propertyCategory}/sale`);
 
 
-            console.log(data)
+      
 
             dispatch({
                 type: CATEGORY_PROPERTIES_SUCCESS,
@@ -31,7 +31,7 @@ export const getCatgoryProperties = (propertyCategory) =>
             const  {data}  = await axios.get(`https://totallyhomerealestate.com/API/api/properties/typefor/villa/rent`);
 
 
-            console.log(data)
+            
 
             dispatch({
                 type: CATEGORY_PROPERTIES_SUCCESS_RENT,
@@ -52,7 +52,7 @@ export const getCatgoryProperties = (propertyCategory) =>
             const  {data}  = await axios.get(`https://totallyhomerealestate.com/API/api/properties/typefor/townhouse/sale`);
 
 
-            console.log(data)
+          
 
             dispatch({
                 type: CATEGORY_PROPERTIES_TOWNHOUSE_SUCCESS,
@@ -73,7 +73,7 @@ export const getCatgoryProperties = (propertyCategory) =>
             const  {data}  = await axios.get(`https://totallyhomerealestate.com/API/api/properties/typefor/townhouse/rent`);
 
 
-            console.log(data)
+          
 
             dispatch({
                 type: CATEGORY_PROPERTIES_TOWNHOUSE_SUCCESS_RENT,
@@ -96,7 +96,7 @@ export const getCatgoryProperties = (propertyCategory) =>
             const  {data}  = await axios.get(`https://totallyhomerealestate.com/API/api/properties/typefor/apartment/sale`);
 
 
-            console.log(data)
+            
 
             dispatch({
                 type: CATEGORY_PROPERTIES_APARTMENT_SUCCESS,
@@ -118,7 +118,6 @@ export const getCatgoryProperties = (propertyCategory) =>
             const  {data}  = await axios.get(`https://totallyhomerealestate.com/API/api/properties/typefor/apartment/rent`);
 
 
-            console.log(data)
 
             dispatch({
                 type: CATEGORY_PROPERTIES_APARTMENT_SUCCESS_RENT,
@@ -143,7 +142,7 @@ export const getCatgoryProperties = (propertyCategory) =>
             const  {data}  = await axios.get(`https://totallyhomerealestate.com/API/api/properties/typefor/penthouse/sale`);
 
 
-            console.log(data)
+          
 
             dispatch({
                 type: CATEGORY_PROPERTIES_PENTHOUSE_SUCCESS,
@@ -164,8 +163,7 @@ export const getCatgoryProperties = (propertyCategory) =>
 
             const  {data}  = await axios.get(`https://totallyhomerealestate.com/API/api/properties/typefor/penthouse/rent`);
 
-console.log("penthouse rent",data)
-            console.log(data)
+
 
             dispatch({
                 type: CATEGORY_PROPERTIES_PENTHOUSE_SUCCESS_RENT,

@@ -21,7 +21,7 @@ const Curousal1 = (props) => {
     let customClass = props.customClass ? props.customClass : ''
     // console.log(data)
     const { categoryProperties } = useSelector((state) => state.categoryProperties)
-    console.log(categoryProperties)
+ 
     const dispatch = useDispatch()
 
     useEffect(() => {
@@ -31,7 +31,6 @@ const Curousal1 = (props) => {
         carouselItems = categoryProperties
 
 
-        console.log("categoryPropertiesSale", categoryProperties)
     }
     return (
         <div>

@@ -11,8 +11,7 @@ export const getAllPropertiesApi = () =>
 
 
             const data = await axios.get(`https://totallyhomerealestate.com/API/api/properties`);
-            console.log(data)
-
+         
             dispatch({
                 type: GET_ALL_PROPERTIES_SUCCESS,
                 payload: data,
@@ -34,8 +33,7 @@ export const getSingalPropertyDetailsApi = (id) =>
 
 
             const { data } = await axios.get(`https://totallyhomerealestate.com/API/api/properties/${id}`);
-            console.log(data)
-
+           
             dispatch({
                 type: GET_PROPERTY_DETAILS_SUCCESS,
                 payload: data,
@@ -149,8 +147,7 @@ export const getPropertyLevelApi = () =>
 
 
             const {data} = await axios.get(`https://totallyhomerealestate.com/API/api/properties/typeforlevel/Villa/Sale/LEVEL123`);
-            console.log(data)
-
+            
             dispatch({
                 type: GET_PROPERTY_LEVEL_SUCCESS,
                 payload: data,
@@ -174,7 +171,7 @@ export const getPropertySubCommunityApi = (property_for, property_city, property
 
 
             const { data } = await axios.get(`https://totallyhomerealestate.com/API/api/properties/typeforsubcomm/${property_type}/${property_for}/${orignalSubCommunity}`);
-            console.log("subCommData", data)
+         
 
             dispatch({
                 type: GET_PROPERTY_SUB_COMMUNIY_SUCCESS,

@@ -10,7 +10,7 @@ const VideoV2 = ({ homePage }) => {
 			<div className="container">
 				{
 					homePage?.map((item, index) => (
-						<div className="row">
+						<div className="row" key={item.id}>
 							<div className="col-lg-6 align-self-center">
 								<div className="about-us-info-wrap">
 									<div className="section-title-area ltn__section-title-2--- mb-20">
