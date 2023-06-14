@@ -24,7 +24,7 @@ const BlogSlider
 					<div className="row">
 						<div className="col-lg-12">
 							<div className="section-title-area ltn__section-title-2--- text-center">
-								<h1 className="section-title">{"Related Blog"}</h1>
+								<h2 className="section-title">{"Explore Dubai"}</h2>
 							</div>
 						</div>
 					</div>
@@ -47,7 +47,7 @@ const BlogSlider
 				  </li>
 				</ul> */}
 									</div>
-									<h3 className="ltn__blog-title"><Link to="/blog-details">The Most Inspiring Interior Design Of 2021</Link></h3>
+									<p className="ltn__blog-title"><Link to="/blog-details">The Most Inspiring Interior Design Of 2021</Link></p>
 									<div className="ltn__blog-meta-btn">
 										{/*<div className="ltn__blog-meta">
 											<ul>
@@ -82,7 +82,7 @@ const BlogSlider
 				  </li>
 				</ul> */}
 									</div>
-									<h3 className="ltn__blog-title"><Link to="/blog-details">The Most Inspiring Interior Design Of 2021</Link></h3>
+									<p className="ltn__blog-title"><Link to="/blog-details">The Most Inspiring Interior Design Of 2021</Link></p>
 									<div className="ltn__blog-meta-btn">
 									{/*	<div className="ltn__blog-meta">
 										<ul>
@@ -114,7 +114,7 @@ const BlogSlider
 				  </li>
 				</ul> */}
 									</div>
-									<h3 className="ltn__blog-title"><Link to="/blog-details">Recent Commercial Real Estate Transactions</Link></h3>
+									<p className="ltn__blog-title"><Link to="/blog-details">Recent Commercial Real Estate Transactions</Link></p>
 									<div className="ltn__blog-meta-btn">
 										{/*<div className="ltn__blog-meta">
 										<ul>

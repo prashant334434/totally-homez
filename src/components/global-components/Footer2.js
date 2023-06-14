@@ -51,7 +51,7 @@ class Footer2 extends Component {
 						<div className="row">
 							<div className="col-xl-3 col-md-6 col-sm-8 col-12">
 								<div className="footer-widget footer-menu-widget clearfix">
-									<h4 className="footer-title">Best Neighborhood </h4>
+									<h2 className="footer-title">Best Neighborhood </h2>
 									<div className="footer-menu go-top">
 										<ul>
 											<li><Link >Downtown Dubai</Link></li>
@@ -66,7 +66,7 @@ class Footer2 extends Component {
 							</div>
 							<div className="col-xl-3 col-md-6 col-sm-8 col-12">
 								<div className="footer-widget footer-menu-widget clearfix">
-									<h4 className="footer-title">Luxury </h4>
+									<h2 className="footer-title">Luxury </h2>
 									<div className="footer-menu go-top">
 										<ul>
 											<li><Link >Luxury Properties For Sale</Link></li>
@@ -81,7 +81,7 @@ class Footer2 extends Component {
 							</div>
 							<div className="col-xl-3 col-md-6 col-sm-8 col-12">
 								<div className="footer-widget footer-menu-widget clearfix">
-									<h4 className="footer-title">Trending </h4>
+									<h2 className="footer-title">Trending </h2>
 									<div className="footer-menu go-top">
 										<ul>
 											<li><Link >Exclusive Properties</Link></li>
@@ -100,7 +100,7 @@ class Footer2 extends Component {
 							</div>
 							<div className="col-xl-2 col-md-6 col-sm-8 col-12">
 								<div className="footer-widget footer-menu-widget clearfix">
-									<h4 className="footer-title">Furnished </h4>
+									<h2 className="footer-title">Furnished </h2>
 									<div className="footer-menu go-top">
 										<ul>
 											<li><Link >

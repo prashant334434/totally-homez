@@ -14,7 +14,7 @@ const BestProperty = (props) => {
                 props?.homePage?.map((item, index) => (
                   <div key={item?.id} className="section-title-area ltn__section-title-2--- mb-30">
                     {/* <h6 className="section-subtitle section-subtitle-2 ltn__secondary-color">About Us</h6> */}
-                    <h1 className="section-title" dangerouslySetInnerHTML={{ __html: item?.sec2_h }}/>
+                    <h2 className="section-title" dangerouslySetInnerHTML={{ __html: item?.sec2_h }}/>
                     <p dangerouslySetInnerHTML={{ __html: item?.sec2_dsc }}/>
 
                   </div>

@@ -91,7 +91,7 @@ class Footer_v1 extends Component {
 				        </div>
 				        <div className="col-xl-2 col-md-6 col-sm-6 col-12">
 				          <div className="footer-widget footer-menu-widget clearfix">
-				            <h4 className="footer-title">Living LifeStyle </h4>
+				            <h2 className="footer-title">Living LifeStyle </h2>
 				            <div className="footer-menu go-top">
 				              <ul>
 				                <li><Link >Beachfront Properties</Link></li>
@@ -106,7 +106,7 @@ class Footer_v1 extends Component {
 				        </div>
 				        <div className="col-xl-2 col-md-6 col-sm-6 col-12">
 				          <div className="footer-widget footer-menu-widget clearfix">
-				            <h4 className="footer-title">Navigate </h4>
+				            <h2 className="footer-title">Navigate </h2>
 				            <div className="footer-menu go-top">
 				              <ul>
 							  <li><Link >Best Property In Dubai</Link></li>
@@ -123,7 +123,7 @@ class Footer_v1 extends Component {
 				        </div>
 				        <div className="col-xl-2 col-md-6 col-sm-6 col-12">
 				          <div className="footer-widget footer-menu-widget clearfix">
-				            <h4 className="footer-title">Community Guides </h4>
+				            <h2 className="footer-title">Community Guides </h2>
 				            <div className="footer-menu go-top">
 				              <ul>
 				                <li><Link >Business Bay</Link></li>
@@ -139,7 +139,7 @@ class Footer_v1 extends Component {
 
 						<div className="col-xl-2 col-md-6 col-sm-6 col-12">
 				          <div className="footer-widget footer-menu-widget clearfix">
-				            <h4 className="footer-title">Explore </h4>
+				            <h2 className="footer-title">Explore </h2>
 				            <div className="footer-menu go-top">
 				              <ul>
 				                <li><Link >Waterfront Properties for Sale</Link></li>

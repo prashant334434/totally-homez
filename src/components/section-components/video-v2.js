@@ -14,7 +14,7 @@ const VideoV2 = ({ homePage }) => {
 							<div className="col-lg-6 align-self-center">
 								<div className="about-us-info-wrap">
 									<div className="section-title-area ltn__section-title-2--- mb-20">
-										<h6 className="section-subtitle section-subtitle-2--- ltn__secondary-color"   dangerouslySetInnerHTML={{ __html: item?.sec8_h }}/>
+										<h2 className="section-subtitle section-subtitle-2--- ltn__secondary-color"   dangerouslySetInnerHTML={{ __html: item?.sec8_h }}/>
 										<p dangerouslySetInnerHTML={{ __html: item?.sec8_dsc }} />
 									</div>
 									{/* { <ul className="ltn__list-item-half ltn__list-item-half-2 list-item-margin clearfix">

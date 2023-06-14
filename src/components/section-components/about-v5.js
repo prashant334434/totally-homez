@@ -25,7 +25,7 @@ const AboutV5 = (props) => {
 								<div className="col-lg-7 align-self-center">
 									<div className="about-us-info-wrap">
 										<div className="section-title-area ltn__section-title-2--- mb-20">
-											<h1 className="section-title" dangerouslySetInnerHTML={{ __html: homePage?.sec18_h }} />
+											<h2 className="section-title" dangerouslySetInnerHTML={{ __html: homePage?.sec18_h }} />
 											<p dangerouslySetInnerHTML={{ __html: homePage?.sec18_dsc }} />
 										</div>
 										{/* <div className="about-us-info-wrap-inner about-us-info-devide---">
