@@ -31,7 +31,7 @@ const OffPlanCategoryProductGrid = (props) => {
         carouselItems = categoryProperties
 
 
-        console.log("categoryPropertiesSale", categoryProperties)
+       
     }
     return (
         <div>

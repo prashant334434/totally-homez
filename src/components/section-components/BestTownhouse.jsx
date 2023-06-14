@@ -10,7 +10,7 @@ const BestTownhouse = (props) => {
         <div className="container">
           {
             props?.homePage?.map((item, index) => (
-              <div className="row">
+              <div className="row" key={item.id}>
                 <div className="col-lg-6">
                   <div className="about-us-img-wrap about-img-right">
                     <img src={publicUrl + "assets/img/others/9.png"} alt="About Us Image"  height="500px" width="500px"/>

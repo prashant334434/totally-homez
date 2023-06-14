@@ -8,7 +8,7 @@ export const getTeamsApi = () => async (dispatch) => {
   
       const  {data}  = await axios.get(`https://totallyhomerealestate.com/API/api/teams`);
 
-      console.log("action",data)
+    
   
       dispatch({
         type: GET_ALL_TEAM_SUCCESS,
