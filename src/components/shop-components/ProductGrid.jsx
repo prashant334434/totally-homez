@@ -1,13 +1,22 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import { Link, useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import { getCatgoryProperties } from "../../actions/catgoryActions";
 import { PROPERTY_IMAGES_URL, TEAM_API_URL } from "../../constants/config";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import PropertyImage from "./PropertyImage";
+import { currentTeamMember } from "../../actions/teamActions";
 
 const ProductGrid = (props) => {
+  const history = useHistory();
+
+  const handleLinkClick = (id, name) => {
+    console.log("agentIdHome", id);
+
+    dispatch(currentTeamMember(id));
+    history.push(`/team/${name.toLowerCase().split(" ").join("-")}`);
+  };
   let carouselItems = [
     {
       id: 1,
@@ -173,8 +182,9 @@ const ProductGrid = (props) => {
                              
                             /th${item?.id}`}
                               >
-                                <h3 className="product-title go-top">{item?.property_name}</h3>
-                               
+                                <h3 className="product-title go-top">
+                                  {item?.property_name}
+                                </h3>
                               </Link>
                             )}
                           </div>
@@ -230,7 +240,9 @@ const ProductGrid = (props) => {
                           <div className="agent-brief go-top">
                             <p className="pt-10">
                               <Link
-                                to={`/team-details/${item?.property_agent_name}`}
+                                onClick={() =>
+                                  handleLinkClick(item?.property_agent_name, item?.name)
+                                }
                               >
                                 {item?.name}
                               </Link>

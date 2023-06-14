@@ -1,85 +1,122 @@
-import React, { useEffect, useState } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import { Link } from 'react-router-dom/cjs/react-router-dom.min'
-import { getApartmentCatgoryRentProperties, getCatgoryProperties, getCatgoryPropertiesRentApi } from '../../actions/catgoryActions'
-import { API_URL, PROPERTY_IMAGES_URL, TEAM_API_URL } from '../../constants/config'
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
-import PropertyImage from './PropertyImage'
+import React, { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { Link, useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import {
+  getApartmentCatgoryRentProperties,
+  getCatgoryProperties,
+  getCatgoryPropertiesRentApi,
+} from "../../actions/catgoryActions";
+import {
+  API_URL,
+  PROPERTY_IMAGES_URL,
+  TEAM_API_URL,
+} from "../../constants/config";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import PropertyImage from "./PropertyImage";
+import { currentTeamMember } from "../../actions/teamActions";
 
 const ProductGridRent = (props) => {
-	let carouselItems = [
-		{ id: 1, content: 'https://www.timeoutdubai.com/cloud/timeoutdubai/2021/09/13/Damx3DMM-The-Penthouse-1200x800.jpg' },
-		{ id: 2, content: 'https://www.timeoutdubai.com/cloud/timeoutdubai/2021/09/13/Damx3DMM-The-Penthouse-1200x800.jpg' },
-		{ id: 3, content: 'https://www.timeoutdubai.com/cloud/timeoutdubai/2021/09/13/Damx3DMM-The-Penthouse-1200x800.jpg' },
-		{ id: 4, content: 'https://www.timeoutdubai.com/cloud/timeoutdubai/2021/11/08/The-Penthouse.jpg' },
-		{ id: 5, content: 'https://www.timeoutdubai.com/cloud/timeoutdubai/2021/11/08/The-Penthouse.jpg' },
-		{ id: 6, content: 'https://www.timeoutdubai.com/cloud/timeoutdubai/2021/11/08/The-Penthouse.jpg' },
-		// Add more items as needed
-	];
-	const [propertyCategory, setPropertyCategory] = useState("villa")
-	let publicUrl = process.env.PUBLIC_URL + '/'
-	let customClass = props.customClass ? props.customClass : ''
-	const { categoryRentProperties } = useSelector((state) => state.categoryPropertiesRent)
-	const dispatch = useDispatch()
+  const history=useHistory()
+  const handleLinkClick = (id, name) => {
+    console.log("agentIdHome", id);
 
-	useEffect(() => {
-		dispatch(getCatgoryPropertiesRentApi())
-	}, [dispatch])
+    dispatch(currentTeamMember(id));
+    history.push(`/team/${name.toLowerCase().split(" ").join("-")}`);
+  };
+  let carouselItems = [
+    {
+      id: 1,
+      content:
+        "https://www.timeoutdubai.com/cloud/timeoutdubai/2021/09/13/Damx3DMM-The-Penthouse-1200x800.jpg",
+    },
+    {
+      id: 2,
+      content:
+        "https://www.timeoutdubai.com/cloud/timeoutdubai/2021/09/13/Damx3DMM-The-Penthouse-1200x800.jpg",
+    },
+    {
+      id: 3,
+      content:
+        "https://www.timeoutdubai.com/cloud/timeoutdubai/2021/09/13/Damx3DMM-The-Penthouse-1200x800.jpg",
+    },
+    {
+      id: 4,
+      content:
+        "https://www.timeoutdubai.com/cloud/timeoutdubai/2021/11/08/The-Penthouse.jpg",
+    },
+    {
+      id: 5,
+      content:
+        "https://www.timeoutdubai.com/cloud/timeoutdubai/2021/11/08/The-Penthouse.jpg",
+    },
+    {
+      id: 6,
+      content:
+        "https://www.timeoutdubai.com/cloud/timeoutdubai/2021/11/08/The-Penthouse.jpg",
+    },
+    // Add more items as needed
+  ];
+  const [propertyCategory, setPropertyCategory] = useState("villa");
+  let publicUrl = process.env.PUBLIC_URL + "/";
+  let customClass = props.customClass ? props.customClass : "";
+  const { categoryRentProperties } = useSelector(
+    (state) => state.categoryPropertiesRent
+  );
+  const dispatch = useDispatch();
 
+  useEffect(() => {
+    dispatch(getCatgoryPropertiesRentApi());
+  }, [dispatch]);
 
-	if (categoryRentProperties?.length > 0) {
-		carouselItems = categoryRentProperties
-	}
-	const url=(titleName)=>{
-		return titleName?.split(" ")?.join("-")?.toLowerCase()
-	}
+  if (categoryRentProperties?.length > 0) {
+    carouselItems = categoryRentProperties;
+  }
+  const url = (titleName) => {
+    return titleName?.split(" ")?.join("-")?.toLowerCase();
+  };
 
-	return (
-		<div>
-			<div>
-				<div className="ltn__product-slider-area ltn__product-gutter  plr--7">
-					<div className="container-fluid">
-						
-
-						<div className="row  slick-arrow-1">
-							<Carousel
-								additionalTransfrom={0}
-								arrows
-							
-								centerMode={false}
-								containerClass="carousel-container"
-								dotListClass=""
-								draggable
-								focusOnSelect={false}
-								infinite
-								itemClass=""
-								keyBoardControl
-								minimumTouchDrag={80}
-								renderButtonGroupOutside={false}
-								renderDotsOutside={false}
-								responsive={{
-									desktop: {
-										breakpoint: { max: 3000, min: 1024 },
-										items: 3,
-									},
-									tablet: {
-										breakpoint: { max: 1024, min: 464 },
-										items: 2,
-									},
-									mobile: {
-										breakpoint: { max: 464, min: 0 },
-										items: 1,
-									},
-								}}
-								showDots={true}
-								sliderClass=""
-								slidesToSlide={1}
-								swipeable
-							>
-
-								{carouselItems.map((item) => (
-									<div key={item?.id} className="col-lg-12">
+  return (
+    <div>
+      <div>
+        <div className="ltn__product-slider-area ltn__product-gutter  plr--7">
+          <div className="container-fluid">
+            <div className="row  slick-arrow-1">
+              <Carousel
+                additionalTransfrom={0}
+                arrows
+                centerMode={false}
+                containerClass="carousel-container"
+                dotListClass=""
+                draggable
+                focusOnSelect={false}
+                infinite
+                itemClass=""
+                keyBoardControl
+                minimumTouchDrag={80}
+                renderButtonGroupOutside={false}
+                renderDotsOutside={false}
+                responsive={{
+                  desktop: {
+                    breakpoint: { max: 3000, min: 1024 },
+                    items: 3,
+                  },
+                  tablet: {
+                    breakpoint: { max: 1024, min: 464 },
+                    items: 2,
+                  },
+                  mobile: {
+                    breakpoint: { max: 464, min: 0 },
+                    items: 1,
+                  },
+                }}
+                showDots={true}
+                sliderClass=""
+                slidesToSlide={1}
+                swipeable
+              >
+                {carouselItems.map((item) => (
+                  <div key={item?.id} className="col-lg-12">
                     <div className="ltn__product-item ltn__product-item-4 text-center---">
                       <div className="product-img go-top">
                         {item.property_level ? (
@@ -92,7 +129,10 @@ const ProductGridRent = (props) => {
                               item?.property_level
                             )}/th${item?.id}`}
                           >
-                            <img src={`${PROPERTY_IMAGES_URL}/${item?.img_name}`} alt="#" />
+                            <img
+                              src={`${PROPERTY_IMAGES_URL}/${item?.img_name}`}
+                              alt="#"
+                            />
                           </Link>
                         ) : (
                           <Link
@@ -102,7 +142,10 @@ const ProductGridRent = (props) => {
                               item?.property_type
                             )}-for-${url(item?.property_for)}/th${item?.id}`}
                           >
-                            <img src={`${PROPERTY_IMAGES_URL}/${item?.img_name}`} alt="#" />
+                            <img
+                              src={`${PROPERTY_IMAGES_URL}/${item?.img_name}`}
+                              alt="#"
+                            />
                           </Link>
                         )}
                         <div className="product-badge">
@@ -118,14 +161,14 @@ const ProductGridRent = (props) => {
                           <div className="title_div">
                             {item.property_level ? (
                               <Link
-                            to={`/${url(item?.property_city)}/${url(
-                              item?.property_community
-                            )}/${url(item?.property_sub_community)}/${url(
-                              item?.property_type
-                            )}-for-${url(item?.property_for)}-${url(
-                              item?.property_level
-                            )}/th${item?.id}`}
-                          >
+                                to={`/${url(item?.property_city)}/${url(
+                                  item?.property_community
+                                )}/${url(item?.property_sub_community)}/${url(
+                                  item?.property_type
+                                )}-for-${url(item?.property_for)}-${url(
+                                  item?.property_level
+                                )}/th${item?.id}`}
+                              >
                                 <h2
                                   dangerouslySetInnerHTML={{
                                     __html: item?.property_name,
@@ -135,12 +178,14 @@ const ProductGridRent = (props) => {
                               </Link>
                             ) : (
                               <Link
-                            to={`/${url(item?.property_city)}/${url(
-                              item?.property_community
-                            )}/${url(item?.property_sub_community)}/${url(
-                              item?.property_type
-                            )}-for-${url(item?.property_for)}/th${item?.id}`}
-                          >
+                                to={`/${url(item?.property_city)}/${url(
+                                  item?.property_community
+                                )}/${url(item?.property_sub_community)}/${url(
+                                  item?.property_type
+                                )}-for-${url(item?.property_for)}/th${
+                                  item?.id
+                                }`}
+                              >
                                 <h2
                                   dangerouslySetInnerHTML={{
                                     __html: item?.property_name,
@@ -151,7 +196,9 @@ const ProductGridRent = (props) => {
                             )}
                           </div>
                           <div className="price_div">
-                            <span>AED <br/> {item?.property_price}</span>
+                            <span>
+                              AED <br /> {item?.property_price}
+                            </span>
                           </div>
                         </div>
                         <div className="product-description">
@@ -199,7 +246,12 @@ const ProductGridRent = (props) => {
                           <div className="agent-brief go-top">
                             <h6>
                               <Link
-                                to={`/team-details/${item?.property_agent_name}`}
+                                onClick={() =>
+                                  handleLinkClick(
+                                    item?.property_agent_name,
+                                    item?.name
+                                  )
+                                }
                               >
                                 {item?.name}
                               </Link>
@@ -241,23 +293,18 @@ const ProductGridRent = (props) => {
                       </div>
                     </div>
                   </div>
-								))}
-							</Carousel>
+                ))}
+              </Carousel>
 
+              {/* ltn__product-item */}
 
+              {/*  */}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-
-							{/* ltn__product-item */}
-
-							{/*  */}
-						</div>
-
-					</div>
-				</div>
-
-			</div>
-		</div>
-	)
-}
-
-export default ProductGridRent
+export default ProductGridRent;

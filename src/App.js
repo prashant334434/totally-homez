@@ -79,8 +79,8 @@ const App = () => {
           <Route path="/career" component={CareerV1} />
           <Route path="/list-with-us" component={ListWithUs} />
 
-          <Route path="/team" component={Team} />
-          <Route path="/team-details/:name" component={TeamDetails} />
+          <Route exact path="/team" component={Team} />
+          <Route exact path="/team/:name" component={TeamDetails} />
           <Route path="/404" component={Error} />
           {/* <Route path="/" component={ Shop } /> */}
           {/* <Route path="/shop-grid" component={ ShopGrid } /> */}
