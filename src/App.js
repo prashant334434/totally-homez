@@ -108,7 +108,7 @@ const App = () => {
           <Route path="/:property_city/:property_community/:property_sub_community/:property_type-for-:property_for/TH:id" component={ProdductDetails} />
           <Route path="/:property_city/:property_community/:property_sub_community/:property_type-for-:property_for-:property_level/TH:id" component={ProdductDetails} />
           <Route path="/contact-us" component={NewContact} />
-          <Route exact path="/our-team" component={OurTeam} />
+          <Route exact path="/team" component={OurTeam} />
 
           <Route path="/property/:type" component={PropertyType} />
 

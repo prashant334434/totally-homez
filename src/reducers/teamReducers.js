@@ -1,4 +1,4 @@
-import { GET_ALL_TEAM_FAILURE, GET_ALL_TEAM_REQUEST, GET_ALL_TEAM_SUCCESS, GET_CURRENT_TEAM_MEMBER_FAILURE, GET_CURRENT_TEAM_MEMBER_ID, GET_CURRENT_TEAM_MEMBER_REQUEST, GET_CURRENT_TEAM_MEMBER_SUCCESS, GET_TEAM_DETAILS_FAILURE, GET_TEAM_DETAILS_REQUEST, GET_TEAM_DETAILS_SUCCESS } from "../constants/teamConstants";
+import { GET_AGENT_PROPERTIES_FAILURE, GET_AGENT_PROPERTIES_REQUEST, GET_AGENT_PROPERTIES_SUCCESS, GET_ALL_TEAM_FAILURE, GET_ALL_TEAM_REQUEST, GET_ALL_TEAM_SUCCESS, GET_CURRENT_TEAM_MEMBER_FAILURE, GET_CURRENT_TEAM_MEMBER_ID, GET_CURRENT_TEAM_MEMBER_REQUEST, GET_CURRENT_TEAM_MEMBER_SUCCESS, GET_TEAM_DETAILS_FAILURE, GET_TEAM_DETAILS_REQUEST, GET_TEAM_DETAILS_SUCCESS } from "../constants/teamConstants";
 
 export const teamReducer = (state = { team: [] }, action) => {
     switch (action.type) {
@@ -88,6 +88,31 @@ export const getCurrentTeamMemberIdReducer = (state = { currentTeamMemberId: {} 
               
             }
       
+        default:
+            return state;
+
+    }
+}
+
+export const agentPropertyReducer = (state = { agentProperty: [] }, action) => {
+    switch (action.type) {
+        case GET_AGENT_PROPERTIES_REQUEST:
+            return {
+                loading: true,
+                agentProperty: {},
+            }
+        case GET_AGENT_PROPERTIES_SUCCESS:
+            return {
+                loading: false,
+                agentProperty: action.payload.data,
+              
+            }
+        case GET_AGENT_PROPERTIES_FAILURE: {
+            return {
+                loading: false,
+                error: action.payload,
+            }
+        }
         default:
             return state;
 

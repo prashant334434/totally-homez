@@ -9,6 +9,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { getTeamDetailsApi } from '../actions/teamActions';
 import MobileNav from './global-components/Mobile-nav';
+import AgentPropertyGrid from './shop-components/AgentPropertyGrid';
 
 
 const Team_Details = () => {
@@ -26,6 +27,7 @@ const {currentTeamMemberId}=useSelector((state)=>state.currentTeamMemberId)
         
  
         <TeamDetails loading={loading} teamDetails={teamDetails} />
+        <AgentPropertyGrid agentId={currentTeamMemberId}/>
         {/* <CallToActionV1 /> */}
         <Footer />
     </div>

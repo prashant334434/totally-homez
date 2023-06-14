@@ -195,8 +195,8 @@ const TownhouseProductGrid = (props) => {
                           </div>
                         </div>
                         <div className="product-description">
-                          <Link> {item?.property_address}</Link>
-                          <br></br>
+                        <p>{item?.property_community}-{item?.property_sub_community}</p> 
+x                          <br></br>
                           <small>Ref No.{item?.property_ref_no}</small>
                         </div>
                         <div>

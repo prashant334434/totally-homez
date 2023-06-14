@@ -4,7 +4,7 @@ import {composeWithDevTools} from 'redux-devtools-extension'
 import { userReducer } from "./reducers/userReducers";
 import { propertyAmenitiesReducer, propertyDetailsReducer, propertyImageReducer, propertyImagesReducer, propertyLevelReducer, propertyNearByReducer, propertyReducer, propertySubCommunityReducer } from "./reducers/propertyReducers";
 import { carouselDetailsReducer, carouselReducer } from "./reducers/carouselReducers";
-import { getCurrentTeamMemberIdReducer, getCurrentTeamMemberReducer, teamDetailsReducer, teamReducer } from "./reducers/teamReducers";
+import { agentPropertyReducer, getCurrentTeamMemberIdReducer, getCurrentTeamMemberReducer, teamDetailsReducer, teamReducer } from "./reducers/teamReducers";
 import { apartmentCategoryReducer, apartmentCategoryRentReducer, catgoryPropertiesRentReducer, catgoryReducer, catgoryRentReducer, penthouseCategoryReducer, penthouseCategoryRentReducer, townhouseCategoryReducer, townhouseCategoryRentReducer } from "./reducers/catgoryReducres";
 import { blogReducer } from "./reducers/blogReducers";
 import { propertiesByTypeReducer } from "./reducers/propertyTypeReducers";
@@ -61,7 +61,8 @@ const reducer=combineReducers({
     propertyTypeDetails:propertyTypeReducerDetails,
     propertyImage:propertyImageReducer,
 
-    currentTeamMemberId:getCurrentTeamMemberIdReducer
+    currentTeamMemberId:getCurrentTeamMemberIdReducer,
+    agentProperty:agentPropertyReducer
 
 
   

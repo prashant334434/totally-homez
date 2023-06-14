@@ -98,13 +98,13 @@ const NavbarV3 = () => {
 													<li className={activeMenuItem === 'Home' ? 'active' : ''} ><Link to="/">Home</Link></li>
 													<li className="menu-icon a-inactive"><Link to="#">Buy</Link>
 														<ul>
-															<li><Link to="#">Apartments </Link></li>
+															<li><Link to="/apartment-for-sale-dubai">Apartments </Link></li>
 
-															<li><Link to="#">Villas </Link></li>
+															<li><Link to="/villa-for-sale-dubai">Villas </Link></li>
 
-															<li><Link to="#" >Penthouses </Link></li>
+															<li><Link to="/villa-for-sale-dubai" >Penthouses </Link></li>
 
-															<li><Link to="#" >Townhouses </Link></li>
+															<li><Link to="/villa-for-sale-dubai" >Townhouses </Link></li>
 
 															<li><Link to="#" >Off Plan </Link></li>
 

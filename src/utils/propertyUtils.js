@@ -75,3 +75,15 @@ export const getPropertiesCategoryUtils= async (property_city,property_type,prop
       throw new Error('Failed to fetch property types.');
     }
   };
+
+
+  export const getagentPropertyUtils= async (id) => {
+
+    try {
+      const response = await axios.get(`https://totallyhomerealestate.com/API/api/pro_by_agent/${id}`);
+      console.log("levelData",response.data)
+      return response.data;
+    } catch (error) {
+      throw new Error('Failed to fetch property types.');
+    }
+  };

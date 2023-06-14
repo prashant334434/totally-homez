@@ -202,7 +202,7 @@ const ProductGridRent = (props) => {
                           </div>
                         </div>
                         <div className="product-description">
-                          <Link> {item?.property_address}</Link>
+                        <p>{item?.property_community}-{item?.property_sub_community}</p> 
                           <br></br>
                           <small>Ref No.{item?.property_ref_no}</small>
                         </div>

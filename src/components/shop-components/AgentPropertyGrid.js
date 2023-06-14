@@ -2,50 +2,97 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import {
+  getApartmentCatgoryProperties,
+  getApartmentCatgoryRentProperties,
   getCatgoryProperties,
   getTownhouseCatgoryProperties,
-  getTownhouseCatgoryRentProperties,
 } from "../../actions/catgoryActions";
 import { PROPERTY_IMAGES_URL, TEAM_API_URL } from "../../constants/config";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { currentTeamMember } from "../../actions/teamActions";
-const TownhouseProductGridRent = (props) => {
-  const history = useHistory();
+import PropertyImage from "./PropertyImage";
+import { currentTeamMember, getAgentProperty } from "../../actions/teamActions";
+import { getPropertiesTypeUtils, getagentPropertyUtils } from "../../utils/propertyUtils";
+const AgentPropertyGrid = (props) => {
+
+  console.log("currentTeamMemberId",props?.agentId)
+const [agentProperty, setAgentProperty] = useState([])
+    const [loading, setLoading] = useState(false);
+
+
+    const handleLinkClick = (id, name) => {
+        console.log("agentIdHome", id);
+    
+        dispatch(currentTeamMember(parseInt(id)));
+        history.push(`/team/${name.toLowerCase().split(" ").join("-")}`);
+      };
+  const history=useHistory(props)
   let carouselItems = [
+    {
+      id: 1,
+      content:
+        "https://www.timeoutdubai.com/cloud/timeoutdubai/2021/09/13/Damx3DMM-The-Penthouse-1200x800.jpg",
+    },
+    {
+      id: 2,
+      content:
+        "https://www.timeoutdubai.com/cloud/timeoutdubai/2021/09/13/Damx3DMM-The-Penthouse-1200x800.jpg",
+    },
+    {
+      id: 3,
+      content:
+        "https://www.timeoutdubai.com/cloud/timeoutdubai/2021/09/13/Damx3DMM-The-Penthouse-1200x800.jpg",
+    },
+    {
+      id: 4,
+      content:
+        "https://www.timeoutdubai.com/cloud/timeoutdubai/2021/11/08/The-Penthouse.jpg",
+    },
+    {
+      id: 5,
+      content:
+        "https://www.timeoutdubai.com/cloud/timeoutdubai/2021/11/08/The-Penthouse.jpg",
+    },
+    {
+      id: 6,
+      content:
+        "https://www.timeoutdubai.com/cloud/timeoutdubai/2021/11/08/The-Penthouse.jpg",
+    },
     // Add more items as needed
   ];
   const [propertyCategory, setPropertyCategory] = useState("apartment");
   let publicUrl = process.env.PUBLIC_URL + "/";
   let customClass = props.customClass ? props.customClass : "";
-  const { townhouseCategoryRentProperties } = useSelector(
-    (state) => state.townhouseRentProperties
-  );
-
+ 
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    dispatch(getTownhouseCatgoryRentProperties());
-  }, [dispatch]);
-
-  if (townhouseCategoryRentProperties?.length > 0) {
-    carouselItems = townhouseCategoryRentProperties;
-  }
   const url = (titleName) => {
-    return titleName?.split(" ")?.join("-")?.toLowerCase()?.toLowerCase();
+    return titleName?.split(" ")?.join("-")?.toLowerCase();
   };
-  const handleLinkClick = (id, name) => {
-    console.log("agentIdHome", id);
 
-    dispatch(currentTeamMember(id));
-    history.push(`/team/${name.toLowerCase().split(" ").join("-")}`);
-  };
+  useEffect(() => {
+    const fetchData = async () => {
+        try {
+            setLoading(true);
+            const data = await getagentPropertyUtils(props?.agentId);
+            console.log(data)
+            setAgentProperty(data);
+            setLoading(false);
+        } catch (error) {
+            console.error(error);
+            setLoading(false);
+        }
+    };
+
+    fetchData();
+}, []);
   return (
     <div>
       <div>
-        <div className="ltn__product-slider-area ltn__product-gutter plr--7">
+        <div className="ltn__product-slider-area ltn__product-gutter  plr--7">
           <div className="container-fluid">
             <div className="row  slick-arrow-1">
+              <h2>Related Properties</h2>
               <Carousel
                 additionalTransfrom={0}
                 arrows
@@ -79,7 +126,7 @@ const TownhouseProductGridRent = (props) => {
                 slidesToSlide={1}
                 swipeable
               >
-                {carouselItems.map((item) => (
+                {agentProperty?.map((item) => (
                   <div key={item?.id} className="col-lg-12">
                     <div className="ltn__product-item ltn__product-item-4 text-center---">
                       <div className="product-img go-top">
@@ -94,7 +141,6 @@ const TownhouseProductGridRent = (props) => {
                             )}/th${item?.id}`}
                           >
                             <img
-                            className="homePageGridImages"
                               src={`${PROPERTY_IMAGES_URL}/${item?.img_name}`}
                               alt="#"
                             />
@@ -272,4 +318,4 @@ const TownhouseProductGridRent = (props) => {
   );
 };
 
-export default TownhouseProductGridRent;
+export default AgentPropertyGrid;
