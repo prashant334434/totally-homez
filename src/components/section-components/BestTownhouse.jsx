@@ -20,7 +20,7 @@ const BestTownhouse = (props) => {
                   <div className="about-us-info-wrap">
                     <div className="section-title-area ltn__section-title-2--- mb-30">
                       {/* <h6 className="section-subtitle section-subtitle-2 ltn__secondary-color">About Us</h6> */}
-                      <h1 className="section-title" dangerouslySetInnerHTML={{ __html: item?.sec15_h }} />
+                      <h2 className="section-title" dangerouslySetInnerHTML={{ __html: item?.sec15_h }} />
                       <p dangerouslySetInnerHTML={{ __html: item?.sec15_dsc }} />
                     </div>
 

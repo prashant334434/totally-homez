@@ -59,7 +59,7 @@ const url = (titleName) => {
 						<div className="row">
 							<div className="col-lg-12">
 								<div className="section-title-area ltn__section-title-2--- text-center">
-									<h1 className="section-title">{props?.homePage[0]?.sec19_h}</h1>
+									<h3 className="section-title">{props?.homePage[0]?.sec19_h}</h3>
 								</div>
 							</div>
 						</div>
@@ -110,7 +110,7 @@ const url = (titleName) => {
 												<div className="team-info">
 													<Link onClick={() => handleLinkClick(item?.id,item?.name)} ><h4>{item.name}</h4></Link>
 
-													<h6 className=" designnation ltn__secondary-color">{item.designation}</h6>
+													<h5 className=" designnation ltn__secondary-color">{item.designation}</h5>
 												</div>
 											</div>
 										</div>

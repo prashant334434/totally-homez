@@ -228,7 +228,7 @@ const ProductGrid = (props) => {
                             </Link>
                           </div>
                           <div className="agent-brief go-top">
-                            <p>
+                            <p className="pt-10">
                               <Link
                                 to={`/team-details/${item?.property_agent_name}`}
                               >

@@ -15,7 +15,7 @@ class CallToActonV1 extends Component {
 			      <div className="col-lg-12">
 			        <div className="call-to-action-inner call-to-action-inner-6 ltn__secondary-bg position-relative text-center---">
 			          <div className="coll-to-info text-color-white">
-			            <h1>Looking for a dream home?</h1>
+			            <p>Looking for a dream home?</p>
 			            <p>We can help you realize your dream of a new home</p>
 			          </div>
 			          <div className="btn-wrapper go-top">
