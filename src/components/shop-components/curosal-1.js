@@ -38,7 +38,7 @@ const Curousal1 = (props) => {
                 <div className="ltn__product-slider-area ltn__product-gutter mt-40  plr--7">
                     <div className="container-fluid">
 
-
+                    <h1 className="page-title">Off Plan Projects In Community</h1>
                         <div className="row  slick-arrow-1">
                             <Carousel
                                 additionalTransfrom={0}

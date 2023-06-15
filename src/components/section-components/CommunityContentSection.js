@@ -17,9 +17,10 @@ const CommunityContentSection = (props) => {
             props?.aboutUsData?.map((about) => (
               <div className="row pt-100">
                 <div className="container-fluid">
-            <h1 className="page-title">Community Guideline</h1>
           </div>
-                <div className="col-lg-6 align-self-center">
+                <div className="col-lg-6">
+            <h1 className="page-title">Community Guideline</h1>
+
                   <div className="about-us-info-wrap">
                     <div className="section-title-area ltn__section-title-2---  ">
                       {/* <h6 className="section-subtitle section-subtitle-2 ltn__secondary-color">About Us</h6> */}
@@ -55,7 +56,7 @@ const CommunityContentSection = (props) => {
 
                   </div>
                 </div>
-                <div className="col-lg-6 align-self-center">
+                <div className="col-lg-6 ">
                   <div className="about-us-img-wrap about-img-right">
                     <img src={`https://www.timeoutdubai.com/cloud/timeoutdubai/2022/12/30/image.png`} alt="About Us Image" />
                   </div>

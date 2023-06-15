@@ -13,7 +13,7 @@ const CommunityGrid = () => {
 		dispatch(getTownhouseCatgoryRentProperties())
 	}, [dispatch])
   return (
-    <div className="ltn__product-slider-area ltn__product-gutter pt-100 pb-40 plr--12">
+    <div className="ltn__product-slider-area ltn__product-gutter pt-50 pb-10 plr--12">
     <div className="container-fluid">
 					<h1 className="page-title">Community Guideline</h1>
 
