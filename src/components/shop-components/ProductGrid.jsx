@@ -238,7 +238,6 @@ const ProductGrid = (props) => {
                             </Link>
                           </div>
                           <div className="agent-brief go-top">
-                            <h6>
                               <Link
                                 onClick={() =>
                                   handleLinkClick(
@@ -249,7 +248,6 @@ const ProductGrid = (props) => {
                               >
                                 {item?.name}
                               </Link>
-                            </h6>
                           </div>
                         </div>
                         <div className="wcallFlex">
