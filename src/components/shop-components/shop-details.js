@@ -176,7 +176,7 @@ const ShopDetails = ({ propertyDetails }) => {
 					<div className="col-lg-7 col-md-12">
 
 						<div className="ltn__shop-details-inner ltn__page-details-inner mb-60">
-							<h4 className="title-2">Property Features</h4>
+							<h2 className="title-2">Property Features</h2>
 							<hr style={hrStyle} />
 							{/* <hr/> */}
 							<div className="property-detail-feature-list clearfix mb-45">
@@ -253,7 +253,7 @@ const ShopDetails = ({ propertyDetails }) => {
 							<div className="ltn__blog-meta">
 
 							</div>
-							<h4 className="title-2">Property Description</h4>
+							<h2 className="title-2">Property Description</h2>
 							<hr style={hrStyle} />
 
 

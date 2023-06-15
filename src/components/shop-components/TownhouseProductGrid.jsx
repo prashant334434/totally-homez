@@ -162,7 +162,7 @@ const TownhouseProductGrid = (props) => {
                                   item?.property_level
                                 )}/th${item?.id}`}
                               >
-                                <h2
+                                <h3
                                   dangerouslySetInnerHTML={{
                                     __html: item?.property_name,
                                   }}

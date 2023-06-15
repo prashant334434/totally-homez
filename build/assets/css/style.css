@@ -8995,16 +8995,16 @@ i {
 .ltn__product-item {
   position: relative;
   margin-bottom: 50px;
-  max-height: 720px;
-  min-height: 720px;
+  max-height: 680px;
+  min-height: 680px;
 
   
 }
 .ltn__product-item-carousel{
   position: relative;
   margin-bottom: 50px;
-  max-height: 620px;
-  min-height: 620px;
+  max-height: 520px;
+  min-height: 520px;
 
 }
 
@@ -9019,6 +9019,9 @@ i {
   -o-transition: all 3.5s ease 0s;
   transition: all 3.5s ease 0s;
   min-height: 337px;
+  max-height: 337px;
+  width: 100%;
+
   
 }
 
@@ -19405,4 +19408,48 @@ a.ltn__utilize-toggle.close {
 
 .homePageGridImages{
   height: 100px !important;
+}
+
+.bestOffPlanImage{
+  height: 650px;
+  
+}
+
+.offPlanCarouselImages{
+  height: 300px;
+}
+.bestVillaImages{
+  height: 300px;
+}
+.brokerName{
+  margin-bottom: 0;
+}
+
+
+
+
+
+.card{
+  border-radius: 20px !important;
+  padding: 32px;
+}
+.card-img-top{
+  border-radius: 20px !important;
+
+}
+.bg-section{
+      background-image: url('https://www.travelandleisure.com/thmb/Ob_Nwm7hl66sqsHuQghB9ERCEjs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/dubai-DUBAITG0721-04b6fdc668e649adb5368b3db401651c.jpg');
+}
+
+.btn-primary{
+  background-color: #ef2027 !important;
+  border-color: #ef2027 !important;
+  width: 100%;
+  border-radius: 10px !important;
+}
+.form-control{
+  height: 55px !important;
+  border-radius: 7px !important;
+  color: #111111;
+  background-color: #e5e5e5 !important;
 }

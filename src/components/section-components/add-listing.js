@@ -17,7 +17,7 @@ const AddListing = () => {
             <form action="#">
             <h2>1. Description</h2>
             <p><small>These fields are mandatory: Title, Property Media</small></p>
-            <h6>Property Description</h6>
+            <h2>Property Description</h2>
             <div className="row">
                 <div className="col-md-12">
                 <div className="input-item input-item-name ltn__custom-icon">
