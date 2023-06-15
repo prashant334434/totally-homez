@@ -44,8 +44,8 @@ const Pageform = () => {
 
           <div className='row'>
             <div className="col-lg-6">
-              <h6 className="section-subtitle section-subtitle-2--- ltn__secondary-color--- white-color">Area Guide - Dubai Hills Estate
-              </h6>
+              <h3 className="section-subtitle section-subtitle-2--- ltn__secondary-color--- white-color">Area Guide - Dubai Hills Estate
+              </h3>
               <p className=" white-color textsizingsmall">Dubai Hills Estate is an extensive residential and lifestyle development comprising villas, low-rise apartments and townhouses. It is a key part of the growing MBR City. The very finest properties and leisure destinations can be found in Dubai Hills, including a championship golf course.
               </p>
               <div className="btn-wrapper animated go-top">
@@ -58,7 +58,7 @@ const Pageform = () => {
 <div className="ltn__upcoming-project-info ltn__menu-widget pt-20">
 
   <form className="contact-form whitecoloringbg" onSubmit={handleSubmit}>
-    <h2>Contact Form</h2>
+    <h3>Contact Form</h3>
     <div className="form-group">
       <label htmlFor="name">Name</label>
       <input

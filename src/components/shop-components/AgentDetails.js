@@ -22,7 +22,7 @@ const AgentDetails = ({agentId}) => {
 
 									<img src={`${TEAM_API_URL}/${teamDetails?.path}`} alt="#" />
 
-										<h5>{teamDetails?.name}</h5>
+										<h3>{teamDetails?.name}</h3>
 										
 										<small>{teamDetails?.designation}</small>
 
