@@ -76,7 +76,7 @@ const ProductGrid = (props) => {
         <div className="ltn__product-slider-area ltn__product-gutter  plr--7">
           <div className="container-fluid">
             <div className="row  slick-arrow-1">
-            <Carousel
+              <Carousel
                 additionalTransfrom={0}
                 arrows
                 centerMode={false}
@@ -180,7 +180,7 @@ const ProductGrid = (props) => {
                                   item?.id
                                 }`}
                               >
-                                <h2
+                                <h3
                                   dangerouslySetInnerHTML={{
                                     __html: item?.property_name,
                                   }}
@@ -196,7 +196,10 @@ const ProductGrid = (props) => {
                           </div>
                         </div>
                         <div className="product-description">
-                        <p>{item?.property_community}-{item?.property_sub_community}</p> 
+                          <p>
+                            {item?.property_community}-
+                            {item?.property_sub_community}
+                          </p>
                           <br></br>
                           <small>Ref No.{item?.property_ref_no}</small>
                         </div>
@@ -238,6 +241,7 @@ const ProductGrid = (props) => {
                             </Link>
                           </div>
                           <div className="agent-brief go-top">
+                            <p className="brokerName">
                               <Link
                                 onClick={() =>
                                   handleLinkClick(
@@ -248,6 +252,7 @@ const ProductGrid = (props) => {
                               >
                                 {item?.name}
                               </Link>
+                            </p>
                           </div>
                         </div>
                         <div className="wcallFlex">
@@ -267,16 +272,15 @@ const ProductGrid = (props) => {
                               </a>
                             </li>
                             <li>
-                              <a
-                                href="#"
+                            <a
+                                href="tel:+971 54 289 7686"
                                 title="Wishlist"
-                                data-bs-toggle="modal"
-                                data-bs-target="#liton_wishlist_modal"
+                               
                                 className="wcallFlex"
                               >
                                 <i className="fa fa-phone rotateclass"></i>
                                 <span className="callclass hideclass">
-                                  Call
+                                  <a>Call</a>
                                 </span>
                               </a>
                             </li>

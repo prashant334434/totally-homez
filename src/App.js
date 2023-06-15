@@ -48,6 +48,8 @@ import TypePropertyPage from './components/shop-components/TypePropertyPage';
 import TeamV2 from './components/section-components/team-v2';
 import Team_Details from './components/team-details';
 import OurTeam from './components/section-components/ourTeam';
+import GoogleMapOnPlaceBasis from './components/global-components/googleMaps';
+import GoogleMap from './components/section-components/GoogleMap';
 
 
 
@@ -122,6 +124,13 @@ const App = () => {
           <Route exact path="/:property_city/:property_community/:property_type-for-:property_for-:property_sub_community" component={SubCommunityPage} />
           <Route exact path="/:property_city/:property_type-for-:property_for-:property_community" component={CommunityPage} />
           <Route exact path="/:property_type-for-:property_for-:property_city" component={TypePropertyPage} />
+
+
+          <Route exact path="/google-maps" component={GoogleMapOnPlaceBasis } />
+          <Route exact path="/google-maps-lat-lang-test" component={GoogleMap } />
+
+          
+
 
 
 

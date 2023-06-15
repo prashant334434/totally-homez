@@ -242,7 +242,7 @@ const ApartmentProductGridRent = (props) => {
                             </Link>
                           </div>
                           <div className="agent-brief go-top">
-                            <h6>
+                            <p className="brokerName">
                               <Link
                                 onClick={() =>
                                   handleLinkClick(
@@ -253,7 +253,7 @@ const ApartmentProductGridRent = (props) => {
                               >
                                 {item?.name}
                               </Link>
-                            </h6>
+                            </p>
                           </div>
                         </div>
                         <div className="wcallFlex">
@@ -273,16 +273,15 @@ const ApartmentProductGridRent = (props) => {
                               </a>
                             </li>
                             <li>
-                              <a
-                                href="#"
+                            <a
+                                href="tel:+971 54 289 7686"
                                 title="Wishlist"
-                                data-bs-toggle="modal"
-                                data-bs-target="#liton_wishlist_modal"
+                               
                                 className="wcallFlex"
                               >
                                 <i className="fa fa-phone rotateclass"></i>
                                 <span className="callclass hideclass">
-                                  Call
+                                  <a>Call</a>
                                 </span>
                               </a>
                             </li>

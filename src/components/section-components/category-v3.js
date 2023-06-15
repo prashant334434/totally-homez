@@ -23,7 +23,7 @@ class CategoryV3 extends Component {
 				<div className="row">
 					<div className="col-lg-12">
 					<div className="section-title-area ltn__section-title-2--- text-center">
-						<h2 className="section-title">Explore By Types</h2>
+						<h2 className="section-title">Explore By Property Type</h2>
 					</div>
 					</div>
 				</div>
