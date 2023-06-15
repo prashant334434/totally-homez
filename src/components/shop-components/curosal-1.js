@@ -80,7 +80,8 @@ const Curousal1 = (props) => {
                                     <div key={item?.id} className="col-lg-12">
                                         <div  className="ltn__product-item-carousel ltn__product-item-44 text-center---">
                                             <div className="product-img go-top">
-                                                <Link to={`/property-details/${item?.id}`}><img src="https://famproperties.s3.ap-southeast-1.amazonaws.com/project-medium-banners/royal.jpg" alt="#" /></Link>
+                                                <Link to={`/property-details/${item?.id}`}>
+                                                    <img src="https://famproperties.s3.ap-southeast-1.amazonaws.com/project-medium-banners/royal.jpg" alt="#" /></Link>
                                                 <div className="product-badge420">
                                                     <ul>
                                                         <li className="sale-badge bg-red">Ready</li>

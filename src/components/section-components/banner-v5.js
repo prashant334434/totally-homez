@@ -20,7 +20,7 @@ const BannerV5 = () => {
 								<a className="active show" data-bs-toggle="tab" href="#ltn__form_tab_1_1">Sale</a>
 
 									<a className="" data-bs-toggle="tab" href="#ltn__form_tab_1_2">Rent </a>
-									<a data-bs-toggle="tab" href="#ltn__form_tab_1_3" className>Projects </a>
+									<a data-bs-toggle="tab" href="#ltn__form_tab_1_3">Projects </a>
 								</div>
 								</div>
 								<center>

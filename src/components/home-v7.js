@@ -34,7 +34,6 @@ import { getHomePageApi } from '../actions/homePageActions';
 
 const Home_V7 = () => {
   const { loading, homePage } = useSelector((state) => state.homePage)
-  console.log("homePage77",homePage)
   const dispatch = useDispatch()
   useEffect(() => {
     dispatch(getAllPropertiesApi())

@@ -17,7 +17,7 @@ const BestVilla = (props) => {
         
           <div className="col-lg-6">
               <div className="about-us-img-wrap about-img-right">
-                <img src={"/assets/img/02june/02june002.png"} alt="About Us Image"  height="600px" width="500px"/>
+                <img src={"/assets/img/02june/02june002.png"} alt="About Us Image"  height="540px" width="500px"/>
               </div>
             </div>
             <div className="col-lg-6">

@@ -9003,8 +9003,8 @@ i {
 .ltn__product-item-carousel{
   position: relative;
   margin-bottom: 50px;
-  max-height: 620px;
-  min-height: 620px;
+  max-height: 520px;
+  min-height: 520px;
 
 }
 
@@ -19408,4 +19408,16 @@ a.ltn__utilize-toggle.close {
 
 .homePageGridImages{
   height: 100px !important;
+}
+
+.bestOffPlanImage{
+  height: 650px;
+  
+}
+
+.offPlanCarouselImages{
+  height: 300px;
+}
+.bestVillaImages{
+  height: 300px;
 }
