@@ -19,6 +19,7 @@ import MobileNav from './global-components/Mobile-nav';
 import TownhouseProductGrid from './shop-components/TownhouseProductGrid';
 import StickyBarIcon from './shop-components/sticky-iconbar';
 import RelatedProperties from './shop-components/RelatedProperties';
+import { PopupButton } from 'react-calendly';
 
 const Product_Details = () => {
     const { id } = useParams()
@@ -68,7 +69,14 @@ const Product_Details = () => {
                 </div> */}
                 <div className='sideBtns'>
                     <div className="btn-wrapper go-top leftbtn mt-0 ">
-                        <div className="btn btn-effect-5 theme-btn-1" to="/">Book A Viewing </div>
+                        
+                        <PopupButton
+												url="https://calendly.com/totally-home-real-estate/30min"
+
+												className="btn theme-btn-1"
+												rootElement={document.getElementById("root")}
+												text="Book A Viewing"
+											/>
                     </div>
                     <div className="btn-wrapper go-top rightBtn mt-0">
                         <div className="btn btn-effect-5 theme-btn-1" to="/">Contact Agent</div>

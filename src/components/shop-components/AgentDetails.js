@@ -37,7 +37,7 @@ const AgentDetails = ({agentId}) => {
 										<center>
 											{/* <Link className="btn btn-effect-3" to="/contact">Call</Link> */}
 											<PopupButton
-												url="https://calendly.com/prashant-vashisth/counsaltant"
+												url="https://calendly.com/totally-home-real-estate/30min"
 
 												className="btn theme-btn-1"
 												rootElement={document.getElementById("root")}
