@@ -380,7 +380,7 @@ const ShopDetails = ({ propertyDetails }) => {
 								<div className="row">
 									{
 										propertiesNearBy?.map((amenity, index) => (
-											<div key={index} className="col-lg-4 col-md-6">
+											<div key={index} className="col-lg-5  col-md-6">
 												<div className="ltn__menu-widget">
 													<ul>
 														<li>
