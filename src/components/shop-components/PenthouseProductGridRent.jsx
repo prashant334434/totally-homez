@@ -196,8 +196,10 @@ const PenthouseProductGridRent = (props) => {
                           </div>
                         </div>
                         <div className="product-description">
-                        <p>{item?.property_community}-{item?.property_sub_community}</p> 
-                          <br></br>
+                        <p>
+                            {item?.property_community}{" "}- {" "}
+                            {item?.property_sub_community}
+                          </p>                           <br></br>
                           <small>Ref No.{item?.property_ref_no}</small>
                         </div>
                         <div>

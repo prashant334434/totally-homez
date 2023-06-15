@@ -197,7 +197,7 @@ const ProductGrid = (props) => {
                         </div>
                         <div className="product-description">
                           <p>
-                            {item?.property_community}-
+                            {item?.property_community}{" "}- {" "}
                             {item?.property_sub_community}
                           </p>
                           <br></br>

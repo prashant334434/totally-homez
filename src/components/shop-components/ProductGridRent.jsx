@@ -202,8 +202,10 @@ const ProductGridRent = (props) => {
                           </div>
                         </div>
                         <div className="product-description">
-                        <p>{item?.property_community}-{item?.property_sub_community}</p> 
-                          <br></br>
+                        <p>
+                            {item?.property_community}{" "}- {" "}
+                            {item?.property_sub_community}
+                          </p>                          <br></br>
                           <small>Ref No.{item?.property_ref_no}</small>
                         </div>
                         <div>
@@ -244,7 +246,7 @@ const ProductGridRent = (props) => {
                             </Link>
                           </div>
                           <div className="agent-brief go-top">
-                            <p className="amitNew">
+                            <p className="brokerName">
                               <Link
                                 onClick={() =>
                                   handleLinkClick(
