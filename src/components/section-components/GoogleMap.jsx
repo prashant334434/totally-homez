@@ -1,15 +1,18 @@
 import React from "react";
-import { Map, GoogleApiWrapper,Circle } from "google-maps-react";
+import { Map, GoogleApiWrapper,Marker } from "google-maps-react";
 
 const GoogleMap = (props) => {
   const {latitude,longitude}=props?.propertyDetails
-  const circleOptions = {
-    strokeColor: "#FF0000",
-    strokeOpacity: 0.8,
-    strokeWeight: 2,
-    fillColor: "#FF0000",
-    fillOpacity: 0.35,
-    clickable: false,
+  const markerOptions = {
+    position: {    lat: latitude?latitude:25.2048, // Replace with the latitude from your map link
+    lng: longitude?longitude: 55.2708, // Replace with the longitude from your map link
+   },
+    icon: {
+      path: 'M10 0 L0 20 L20 20 Z',
+      fillColor: '#FF0000',
+      fillOpacity: 1,
+      strokeWeight: 0,
+    },
   };
   const mapStyles = {
     width: "100%",
@@ -28,14 +31,8 @@ const GoogleMap = (props) => {
           lng: longitude?longitude: 55.2708, // Replace with the longitude from your map link
         }}
       >
-        <Circle
-          center={{
-            lat: latitude,
-            lng: longitude,
-          }}
-          radius={1000} // Replace with your desired radius in meters
-          options={circleOptions}
-        />
+               <Marker options={markerOptions} />
+
       </Map>
     </div>
   );
