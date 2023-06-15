@@ -406,7 +406,8 @@ const ShopDetails = ({ propertyDetails }) => {
 
 					</div>
 
-					<div className="col-lg-5">
+					<div className="col-lg-5
+					">
 						<aside ref={stickyRef} className="sidebar ltn__shop-sidebar ltn__right-sidebar---">
 							{/* Author Widget */}
 							<div className="widget ltn__author-widget">
