@@ -20,6 +20,7 @@ import TownhouseProductGrid from './shop-components/TownhouseProductGrid';
 import StickyBarIcon from './shop-components/sticky-iconbar';
 import RelatedProperties from './shop-components/RelatedProperties';
 import { PopupButton } from 'react-calendly';
+import GoogleMap from './section-components/GoogleMap';
 
 const Product_Details = () => {
     const { id } = useParams()
@@ -86,7 +87,7 @@ const Product_Details = () => {
         </div>
         <PageHeader propertyDetails={propertyDetails} headertitle="Garden Homes Frond C" customclass="mb-0" />
         <ProductDetails propertyDetails={propertyDetails} />
-        <ShopGrid_V1/>
+        <GoogleMap  propertyDetails={propertyDetails}/>
         <RelatedProperties />
         <PageForm/>
         <CallToActionV1 />

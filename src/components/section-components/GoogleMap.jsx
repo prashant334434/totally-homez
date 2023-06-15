@@ -2,6 +2,7 @@ import React from "react";
 import { Map, GoogleApiWrapper,Circle } from "google-maps-react";
 
 const GoogleMap = (props) => {
+  const {latitude,longitude}=props?.propertyDetails
   const circleOptions = {
     strokeColor: "#FF0000",
     strokeOpacity: 0.8,
@@ -15,8 +16,7 @@ const GoogleMap = (props) => {
     height: "400px",
   };
 
-  const latitude = 25.0935189; // Replace with the latitude from your map link
-  const longitude = 55.1816531;
+  
   return (
     <div className="mt-100 property-details-google-map mb-100 pb-90">
       <Map
@@ -24,8 +24,8 @@ const GoogleMap = (props) => {
         zoom={14}
         style={mapStyles}
         initialCenter={{
-          lat: latitude, // Replace with the latitude from your map link
-          lng: longitude, // Replace with the longitude from your map link
+          lat: latitude?latitude:25.2048, // Replace with the latitude from your map link
+          lng: longitude?longitude: 55.2708, // Replace with the longitude from your map link
         }}
       >
         <Circle
