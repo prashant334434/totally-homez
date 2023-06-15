@@ -87,6 +87,7 @@ const Product_Details = () => {
         </div>
         <PageHeader propertyDetails={propertyDetails} headertitle="Garden Homes Frond C" customclass="mb-0" />
         <ProductDetails propertyDetails={propertyDetails} />
+
         <GoogleMap  propertyDetails={propertyDetails}/>
         <RelatedProperties />
         <PageForm/>

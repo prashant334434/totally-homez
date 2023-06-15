@@ -19,14 +19,17 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getAboutUsApi } from '../actions/aboutUsActions';
 import MetaData from './Layout/MetaData';
 import AboutTeams from './section-components/AboutTeams';
+import { getHomePageApi } from '../actions/homePageActions';
 
 const AboutUs = () => {
     const {loading,about}=useSelector((state)=>state.about)
-
+    const { loading:ld, homePage } = useSelector((state) => state.homePage)
     const dispatch=useDispatch()
 
     useEffect(()=>{
         dispatch(getAboutUsApi())
+        dispatch(getHomePageApi())
+
     },[dispatch])
     return <div>
         <MobileNav />
@@ -43,7 +46,7 @@ const AboutUs = () => {
         <ServiceV1 loading={loading} aboutUsData={about}/>
         <OurApproach loading={loading} aboutUsData={about}/>
       
-        <AboutTeams showThree={true} loading={loading} aboutUsData={about}/>
+        <TeamAgents homePage={homePage}   customClass='ltn__feature-area section-bg-1 pt-80  mb-120---' />
        {/* <BlogSlider sectionClass="pt-120" />*/}
         <CallToActionV1 />
         <Footer />

@@ -34,12 +34,16 @@ import { getHomePageApi } from '../actions/homePageActions';
 
 const Home_V7 = () => {
   const { loading, homePage } = useSelector((state) => state.homePage)
+ 
+
+
   const dispatch = useDispatch()
   useEffect(() => {
     dispatch(getAllPropertiesApi())
     dispatch(getHomePageApi())
 
   }, [dispatch])
+
   const slides = [
     {
       id: 1,
