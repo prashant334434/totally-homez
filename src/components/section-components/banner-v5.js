@@ -1,8 +1,15 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import parse from 'html-react-parser';
-const BannerV5 = () => {
+import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
+const BannerV5 = (props) => {
+	
+	const history=useHistory()
 	let publicUrl = process.env.PUBLIC_URL+'/'
+	const handleClick=(e)=>{
+history.push(props.homepage)
+	}
+
 
   return (
 <div className="ltn__slider-area ltn__slider-4">
@@ -245,6 +252,15 @@ const BannerV5 = () => {
 							</div>                                        
 							</div>
 						</div>
+						</div>
+						<div className='row'>
+							<div className='col-lg-12 '>
+							<center>
+								<button onClick={(e)=>handleClick(e)} className="btn btn-effect-5 theme-btn-1" style={{marginTop:'250px',}}>
+									Explore  <i className="icon-next" />
+								</button>
+								</center>
+							</div>
 						</div>
 					</div>
 					</div>
