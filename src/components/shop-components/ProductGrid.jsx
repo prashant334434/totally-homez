@@ -75,7 +75,6 @@ const ProductGrid = (props) => {
       <div>
         <div className="ltn__product-slider-area ltn__product-gutter  plr--7">
           <div className="container-fluid">
-          <h1 className="page-title">Properties In Community</h1>
 
             <div className="row  slick-arrow-1">
               <Carousel
