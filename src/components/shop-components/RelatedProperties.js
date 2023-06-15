@@ -109,7 +109,7 @@ const RelatedProperties = (props) => {
                 slidesToSlide={1}
                 swipeable
               >
-                {carouselItems.map((item) => (
+                  {carouselItems.map((item) => (
                   <div key={item?.id} className="col-lg-12">
                     <div className="ltn__product-item ltn__product-item-4 text-center---">
                       <div className="product-img go-top">
@@ -199,7 +199,7 @@ const RelatedProperties = (props) => {
                         <p>
                             {item?.property_community}{" "}- {" "}
                             {item?.property_sub_community}
-                          </p>                             <br></br>
+                          </p>                           <br></br>
                           <small>Ref No.{item?.property_ref_no}</small>
                         </div>
                         <div>
@@ -230,7 +230,7 @@ const RelatedProperties = (props) => {
                         </div>
                       </div>
                       <div className="product-info-bottom">
-                        <div className="real-estate-agent wcallFlex">
+                        <div className="real-estate-agent wcallFlex  mt-10">
                           <div className="agent-img go-top">
                             <Link to="/team-details">
                               <img
