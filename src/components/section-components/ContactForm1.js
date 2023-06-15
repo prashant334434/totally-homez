@@ -2,75 +2,44 @@ import React from 'react'
 
 const ContactForm1 = () => {
   return (
-   
-
-    <div className="container-fluid px-5 my-5">
-      <div className="row justify-content-center">
-        <div className="col-xl-10">
-          <div className="card border-0 rounded-3 shadow-lg overflow-hidden">
-            <div className="card-body p-0">
-              <div className="row g-0">
-                <div className="col-sm-6 d-none d-sm-block">
-                    <img style={{height:'100%',width:'100%'}} src='https://totallyhomerealestate.com/admin/uploads/home/fgh.jpeg'/>
-                </div>
-                <div className="col-sm-6 p-4">
-                  <div className="text-center">
-                    <div className="h3 fw-light">Contact Form</div>
-                    <p className="mb-4 text-muted">Split layout contact form</p>
-                  </div>
-    
-    
-                  <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-    
-                
-                    <div className="form-floating mb-3">
-                      <input className="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
-                      <label for="name">Name</label>
-                      <div className="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
-                    </div>
-    
-                
-                    <div className="form-floating mb-3">
-                      <input className="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
-                      <label for="emailAddress">Email Address</label>
-                      <div className="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
-                      <div className="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
-                    </div>
-    
-                
-                    <div className="form-floating mb-3">
-                      <textarea className="form-control" id="message" type="text" placeholder="Message" style={{height :'10rem'}} data-sb-validations="required"></textarea>
-                      <label for="message">Message</label>
-                      <div className="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
-                    </div>
-    
-                    <div className="d-none" id="submitSuccessMessage">
-                      <div className="text-center mb-3">
-                        <div className="fw-bolder">Form submission successful!</div>
-                        <p>To activate this form, sign up at</p>
-                        <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                      </div>
-                    </div>
-    
-                  
-                    <div className="d-none" id="submitErrorMessage">
-                      <div className="text-center text-danger mb-3">Error sending message!</div>
-                    </div>
-    
-                    <div className="d-grid">
-                      <button className="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
-                    </div>
-                  </form>
-                 
-    
+    <section class="bg-section">
+    <div class="container py-5">
+        <h4 class="text-center text-white">Contact Us</h4>
+        <p class="text-center  text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, voluptas?</p>
+        <div class="row  g-4 py-5">
+        <div class="col-md-7">
+            <div class="card" >
+                <img src="https://media.istockphoto.com/id/467829216/photo/dubai-marina.jpg?s=612x612&w=0&k=20&c=5KNh7wGSoP9i-UJzT-LtUfXgLHKKoBlPAK67R0LHRQY=" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores</h5>
                 </div>
               </div>
-    
-            </div>
-          </div>
         </div>
-      </div>
+        <div class="col-md-5">
+            <div class="card" >
+               <h4>Get in Touch</h4>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, delectus.</p>
+               <div class="mb-3">
+                {/* <label for="exampleFormControlInput1" class="form-label">Your Name</label> */}
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder='name' />
+              </div>
+               <div class="mb-3">
+                {/* <label for="exampleFormControlInput1" class="form-label">Your Email</label> */}
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder='email' />
+              </div>
+              <div class="mb-3">
+                {/* <label for="exampleFormControlTextarea1" class="form-label">How can we help?</label> */}
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder='How can we help?'></textarea>
+              </div>
+              <div class="mb-3">
+                <button class="btn btn-primary mt-3">Submit</button>
+              </div>
+            </div>
+        </div>
+       
+          </div>
     </div>
+  </section>
   )
 }
 
