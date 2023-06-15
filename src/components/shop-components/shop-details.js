@@ -83,7 +83,15 @@ const ShopDetails = ({ propertyDetails }) => {
 
 
 	}
-
+	const handleEmail = () => {
+		window.location.href = 'sales@totallyhomerealestate.com';
+	  };
+	  const handleCall = () => {
+		window.location.href = 'tel:+971542897686';
+	  };
+	  const handleWhatsApp = () => {
+		window.open('https://wa.me/1+971542897686'); // Replace with the desired phone number
+	  };
 
 	const getTruncatedContent = () => {
 		const maxLength = 100;
@@ -413,19 +421,19 @@ const ShopDetails = ({ propertyDetails }) => {
 									<div className={classes.container}>
 										<IconButton className={classes.button} aria-label="Delete">
 											<PhoneIcon />
-											<Typography className={classes.typographyText} variant="button">Call</Typography>
+											<Typography className={classes.typographyText} onClick={handleCall} variant="button">Call</Typography>
 
 										</IconButton>
 
 										<IconButton className={classes.button} aria-label="Edit">
 											<EmailIcon />
-											<Typography className={classes.typographyText} variant="button">Email</Typography>
+											<Typography className={classes.typographyText} onClick={handleEmail} variant="button">Email</Typography>
 
 										</IconButton>
 
 										<IconButton className={classes.button} aria-label="Whatsapp">
 											<WhatsAppIcon />
-											<Typography className={classes.typographyText} variant="button">Whatsapp</Typography>
+											<Typography className={classes.typographyText} onClick={handleWhatsApp} variant="button">Whatsapp</Typography>
 
 										</IconButton>
 									</div>

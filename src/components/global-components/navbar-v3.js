@@ -102,26 +102,26 @@ const NavbarV3 = () => {
 
 															<li><Link to="/villa-for-sale-dubai">Villas </Link></li>
 
-															<li><Link to="/villa-for-sale-dubai" >Penthouses </Link></li>
+															<li><Link to="/Penthouses-for-sale-dubai" >Penthouses </Link></li>
 
-															<li><Link to="/villa-for-sale-dubai" >Townhouses </Link></li>
+															<li><Link to="/Townhouses-for-sale-dubai" >Townhouses </Link></li>
 
-															<li><Link to="#" >Off Plan </Link></li>
+															<li><Link to="/offplan-for-sale-dubai" >Off Plan </Link></li>
 
 														</ul>
 													</li>
 													<li className="menu-icon a-inactive"><Link to="#">Rent</Link>
 														<ul>
-															<li className="menu-icon a-inactive-child"><Link to="#">Apartments </Link></li>
+															<li className="menu-icon a-inactive-child"><Link to="/apartment-for-rent-dubai">Apartments </Link></li>
 
-															<li className="menu-icon a-inactive-child"><Link to="#">Villas </Link></li>
+															<li className="menu-icon a-inactive-child"><Link to="/villa-for-rent-dubai">Villas </Link></li>
 
-															<li className="menu-icon a-inactive-child"><Link to="#" >Penthouses </Link></li>
+															<li className="menu-icon a-inactive-child"><Link to="/Penthouses-for-rent-dubai" >Penthouses </Link></li>
 
-															<li className="menu-icon a-inactive-child"><Link to="#">Townhouses </Link></li>
+															<li className="menu-icon a-inactive-child"><Link to="/Townhouses-for-rent-dubai">Townhouses </Link></li>
 														</ul>
 													</li>
-													<li className={activeMenuItem === '/off-plan' ? 'active' :"menu-icon a-inactive"}><Link to="/off-plan">OffPlan</Link></li>
+													<li className={activeMenuItem === '/off-plan' ? 'active' :"menu-icon a-inactive"}><Link to="/offplan-projects-in-dubai">OffPlan</Link></li>
 
 													<li className="menu-icon a-inactive" ><a href="#">Exclusive Properties </a>
 
