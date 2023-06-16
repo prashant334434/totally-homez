@@ -79,7 +79,7 @@ const TownhouseProductGridRent = (props) => {
                 slidesToSlide={1}
                 swipeable
               >
-                {carouselItems.map((item) => (
+             {carouselItems.map((item) => (
                   <div key={item?.id} className="col-lg-12">
                     <div className="ltn__product-item ltn__product-item-4 text-center---">
                       <div className="product-img go-top">
@@ -87,9 +87,9 @@ const TownhouseProductGridRent = (props) => {
                           <Link
                             to={`/${url(item?.property_city)}/${url(
                               item?.property_community
-                            )}/${url(
+                            )}/${url(item?.property_sub_community)}/${url(
                               item?.property_type
-                            )}-for-${url(item?.property_for)}-${url(item?.property_sub_community)}/-${url(
+                            )}-for-${url(item?.property_for)}-${url(
                               item?.property_level
                             )}/th${item?.id}`}
                           >
@@ -122,14 +122,13 @@ const TownhouseProductGridRent = (props) => {
                       </div>
                       <div className="product-info">
                         <div className="product-price">
-                          <div className="title_div">
                             {item.property_level ? (
                               <Link
                                 to={`/${url(item?.property_city)}/${url(
                                   item?.property_community
-                                )}/${url(
+                                )}/${url(item?.property_sub_community)}/${url(
                                   item?.property_type
-                                )}-for-${url(item?.property_for)}-${url(item?.property_sub_community)}-${url(
+                                )}-for-${url(item?.property_for)}-${url(
                                   item?.property_level
                                 )}/th${item?.id}`}
                               >
@@ -158,7 +157,6 @@ const TownhouseProductGridRent = (props) => {
                                 />
                               </Link>
                             )}
-                          </div>
                           <div className="price_div">
                             <span>
                               AED <br /> {item?.property_price}
@@ -166,10 +164,11 @@ const TownhouseProductGridRent = (props) => {
                           </div>
                         </div>
                         <div className="product-description">
-                        <p>
+                          <p>
                             {item?.property_community}{" "}- {" "}
                             {item?.property_sub_community}
-                          </p>                           <br></br>
+                          </p>
+                          <br></br>
                           <small>Ref No.{item?.property_ref_no}</small>
                         </div>
                         <div>
