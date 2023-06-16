@@ -110,7 +110,7 @@ const PenthouseProductGrid = (props) => {
                 slidesToSlide={1}
                 swipeable
               >
-                {carouselItems.map((item) => (
+               {carouselItems.map((item) => (
                   <div key={item?.id} className="col-lg-12">
                     <div className="ltn__product-item ltn__product-item-4 text-center---">
                       <div className="product-img go-top">
@@ -118,9 +118,9 @@ const PenthouseProductGrid = (props) => {
                           <Link
                             to={`/${url(item?.property_city)}/${url(
                               item?.property_community
-                            )}/${url(item?.property_sub_community)}/${url(
+                            )}/${url(
                               item?.property_type
-                            )}-for-${url(item?.property_for)}-${url(
+                            )}-for-${url(item?.property_for)}-${url(item?.property_sub_community)}/-${url(
                               item?.property_level
                             )}/th${item?.id}`}
                           >
@@ -133,9 +133,9 @@ const PenthouseProductGrid = (props) => {
                           <Link
                             to={`/${url(item?.property_city)}/${url(
                               item?.property_community
-                            )}/${url(item?.property_sub_community)}/${url(
+                            )}/${url(
                               item?.property_type
-                            )}-for-${url(item?.property_for)}/th${item?.id}`}
+                            )}-for-${url(item?.property_for)}-${url(item?.property_sub_community)}/th${item?.id}`}
                           >
                             <img
                               src={`${PROPERTY_IMAGES_URL}/${item?.img_name}`}
@@ -158,9 +158,9 @@ const PenthouseProductGrid = (props) => {
                               <Link
                                 to={`/${url(item?.property_city)}/${url(
                                   item?.property_community
-                                )}/${url(item?.property_sub_community)}/${url(
+                                )}/${url(
                                   item?.property_type
-                                )}-for-${url(item?.property_for)}-${url(
+                                )}-for-${url(item?.property_for)}-${url(item?.property_sub_community)}-${url(
                                   item?.property_level
                                 )}/th${item?.id}`}
                               >
@@ -175,9 +175,9 @@ const PenthouseProductGrid = (props) => {
                               <Link
                                 to={`/${url(item?.property_city)}/${url(
                                   item?.property_community
-                                )}/${url(item?.property_sub_community)}/${url(
+                                )}/${url(
                                   item?.property_type
-                                )}-for-${url(item?.property_for)}/th${
+                                )}-for-${url(item?.property_for)}-${url(item?.property_sub_community)}/th${
                                   item?.id
                                 }`}
                               >
@@ -231,7 +231,7 @@ const PenthouseProductGrid = (props) => {
                         </div>
                       </div>
                       <div className="product-info-bottom">
-                        <div className="real-estate-agent wcallFlex  mt-10">
+                        <div className="real-estate-agent wcallFlex mt-10">
                           <div className="agent-img go-top">
                             <Link to="/team-details">
                               <img

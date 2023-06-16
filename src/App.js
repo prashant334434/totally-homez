@@ -111,8 +111,8 @@ const App = () => {
 
 
           <Route path="/property-details/:id" component={ProdductDetails} />
-          <Route path="/:property_city/:property_community/:property_sub_community/:property_type-for-:property_for/TH:id" component={ProdductDetails} />
-          <Route path="/:property_city/:property_community/:property_sub_community/:property_type-for-:property_for-:property_level/TH:id" component={ProdductDetails} />
+          <Route path="/:property_city/:property_community/:property_type-for-:property_for-:property_sub_community/TH:id" component={ProdductDetails} />
+          <Route path="/:property_city/:property_community/:property_type-for-:property_for-:property_sub_community:property_level/TH:id" component={ProdductDetails} />
           <Route path="/contact-us" component={NewContact} />
           <Route exact path="/team" component={OurTeam} />
 

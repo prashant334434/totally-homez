@@ -121,9 +121,9 @@ const ApartmentProductGridRent = (props) => {
                           <Link
                             to={`/${url(item?.property_city)}/${url(
                               item?.property_community
-                            )}/${url(item?.property_sub_community)}/${url(
+                            )}/${url(
                               item?.property_type
-                            )}-for-${url(item?.property_for)}-${url(
+                            )}-for-${url(item?.property_for)}-${url(item?.property_sub_community)}/-${url(
                               item?.property_level
                             )}/th${item?.id}`}
                           >
@@ -136,9 +136,9 @@ const ApartmentProductGridRent = (props) => {
                           <Link
                             to={`/${url(item?.property_city)}/${url(
                               item?.property_community
-                            )}/${url(item?.property_sub_community)}/${url(
+                            )}/${url(
                               item?.property_type
-                            )}-for-${url(item?.property_for)}/th${item?.id}`}
+                            )}-for-${url(item?.property_for)}-${url(item?.property_sub_community)}/th${item?.id}`}
                           >
                             <img
                               src={`${PROPERTY_IMAGES_URL}/${item?.img_name}`}
@@ -161,9 +161,9 @@ const ApartmentProductGridRent = (props) => {
                               <Link
                                 to={`/${url(item?.property_city)}/${url(
                                   item?.property_community
-                                )}/${url(item?.property_sub_community)}/${url(
+                                )}/${url(
                                   item?.property_type
-                                )}-for-${url(item?.property_for)}-${url(
+                                )}-for-${url(item?.property_for)}-${url(item?.property_sub_community)}-${url(
                                   item?.property_level
                                 )}/th${item?.id}`}
                               >
@@ -178,9 +178,9 @@ const ApartmentProductGridRent = (props) => {
                               <Link
                                 to={`/${url(item?.property_city)}/${url(
                                   item?.property_community
-                                )}/${url(item?.property_sub_community)}/${url(
+                                )}/${url(
                                   item?.property_type
-                                )}-for-${url(item?.property_for)}/th${
+                                )}-for-${url(item?.property_for)}-${url(item?.property_sub_community)}/th${
                                   item?.id
                                 }`}
                               >
