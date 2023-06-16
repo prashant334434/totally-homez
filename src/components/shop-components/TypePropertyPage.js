@@ -45,7 +45,7 @@ if(loading){
 }
   return (
     <div>
-        <MetaData title={` ${capitalizeFirstLetter(property_type)} For ${capitalizeFirstLetter(property_for)} In ${capitalizeFirstLetter(property_city)}`} metaDesription={`Check Our Verified Listing Of Dubai ${capitalizeFirstLetter(property_type)} For ${capitalizeFirstLetter(property_for)} In Dubai With World Class Amenities, Amazing Views And Attractive Lifestyle.`}/>
+        <MetaData title={` ${capitalizeWords(property_type)} For ${capitalizeWords(property_for)} In ${capitalizeWords(property_city)}`} metaDesription={`Check Our Verified Listing Of Dubai ${capitalizeWords(property_type)} For ${capitalizeWords(property_for)} In Dubai With World Class Amenities, Amazing Views And Attractive Lifestyle.`}/>
         
       <MobileNav/>
       <TypeBreadcrums property_type={capitalizeWords(property_type)} property_city={capitalizeWords(property_city)} property_for={capitalizeWords(property_for)}/>

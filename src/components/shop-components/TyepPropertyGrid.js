@@ -172,14 +172,12 @@ const TyepPropertyGrid = (props) => {
                                       )}/${url(
                                         categoryProperty?.property_community
                                       )}/${url(
-                                        categoryProperty?.property_sub_community
-                                      )}/${url(
                                         categoryProperty?.property_type
                                       )}-for-${url(
                                         categoryProperty?.property_for
-                                      )}
-																			   
-																			  /th${categoryProperty?.id}`}
+                                      )}-${url(
+                                        categoryProperty?.property_sub_community
+                                      )}/th${categoryProperty?.id}`}
                                     >
                                       <img
                                         src={`${PROPERTY_IMAGES_URL}/${categoryProperty?.img_name}`}
@@ -229,14 +227,12 @@ const TyepPropertyGrid = (props) => {
                                         )}/${url(
                                           categoryProperty?.property_community
                                         )}/${url(
-                                          categoryProperty?.property_sub_community
-                                        )}/${url(
                                           categoryProperty?.property_type
                                         )}-for-${url(
                                           categoryProperty?.property_for
-                                        )}
-																			 
-																			/th${categoryProperty?.id}`}
+                                        )}-${url(
+                                          categoryProperty?.property_sub_community
+                                        )}/th${categoryProperty?.id}`}
                                       >
                                         <h3
                                           dangerouslySetInnerHTML={{

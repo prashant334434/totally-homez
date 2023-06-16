@@ -94,7 +94,7 @@ const CommunityPage = () => {
         )
     }
     return <div>
-        <MetaData title={` ${capitalizeWords(property_type)} For ${capitalizeWords(property_for)} In ${capitalizeWords(orignalCommunity)}`+`  ` +`-`+` `+` `+ `Totally Home Real Estate` } metaDesription={`Check Our Verified Listing Of Dubai ${capitalizeFirstLetter(property_type)} For ${capitalizeFirstLetter(property_for)} In ${capitalizeFirstLetter(orignalCommunity)} With World Class Amenities, Amazing Views And Attractive Lifestyle`}/>
+        <MetaData title={` ${capitalizeWords(property_type)} For ${capitalizeWords(property_for)} In ${capitalizeWords(orignalCommunity)}`+`  ` +`-`+` `+` `+ `Totally Home Real Estate` } metaDesription={`Check Our Verified Listing Of Dubai ${capitalizeWords(property_type)} For ${capitalizeWords(property_for)} In ${capitalizeWords(orignalCommunity)} With World Class Amenities, Amazing Views And Attractive Lifestyle`}/>
 
         <MobileNav />
       <CommunityBreadcrum city={capitalizeWords(property_city)} type={capitalizeWords(property_type)} for={capitalizeWords(property_for)} comm={capitalizeWords(orignalCommunity)}/>

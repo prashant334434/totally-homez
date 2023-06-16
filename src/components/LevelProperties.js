@@ -59,7 +59,9 @@ const LevelProperties = (props) => {
   if (townhouseCategoryRentProperties?.length > 0) {
     carouselItems = townhouseCategoryRentProperties;
   }
-
+  const url = (titleName) => {
+    return titleName?.split(" ")?.join("-")?.toLowerCase();
+  };
   return (
     <div>
       <div>
@@ -187,14 +189,48 @@ const LevelProperties = (props) => {
                                 className="ltn__product-item ltn__product-item-4 text-center---"
                               >
                                 <div className="product-img go-top">
+                                 { categoryProperty?.property_level ?(
+ <Link
+ to={`/${url(
+   categoryProperty?.property_city
+ )}/${url(
+   categoryProperty?.property_community
+ )}/${url(
+   categoryProperty?.property_type
+ )}-for-${url(
+   categoryProperty?.property_for
+ )}-${url(
+   categoryProperty?.property_sub_community
+ )}-${url(
+   categoryProperty?.property_level
+ )}/th${categoryProperty?.id}`}
+>
+ <img
+   src={`${PROPERTY_IMAGES_URL}/${categoryProperty?.img_name}`}
+   alt="#"
+ />
+</Link>
+                                 ):(
                                   <Link
-                                    to={`/property-details/${categoryProperty?.id}`}
+                                    to={`/${url(
+                                      categoryProperty?.property_city
+                                    )}/${url(
+                                      categoryProperty?.property_community
+                                    )}/${url(
+                                      categoryProperty?.property_type
+                                    )}-for-${url(
+                                      categoryProperty?.property_for
+                                    )}-${url(
+                                      categoryProperty?.property_sub_community
+                                    )}/th${categoryProperty?.id}`}
                                   >
-                                    <img
-                                      src={`${PROPERTY_IMAGES_URL}/${categoryProperty?.img_name}`}
-                                      alt="#"
-                                    />
-                                  </Link>
+                                  <img
+                                    src={`${PROPERTY_IMAGES_URL}/${categoryProperty?.img_name}`}
+                                    alt="#"
+                                  />
+                                </Link>
+                                 )}
+                                 
                                   <div className="product-badge">
                                     <ul>
                                       <li className="sale-badge bg-green">
@@ -205,12 +241,51 @@ const LevelProperties = (props) => {
                                 </div>
                                 <div className="product-info">
                                   <div className="product-price">
-                                    <h3
-                                      dangerouslySetInnerHTML={{
-                                        __html: categoryProperty?.property_name,
-                                      }}
-                                      className="product-title go-top"
-                                    />
+                                    {categoryProperty?.property_level ?(
+                                 <Link
+                                 to={`/${url(
+                                   categoryProperty?.property_city
+                                 )}/${url(
+                                   categoryProperty?.property_community
+                                 )}/${url(
+                                   categoryProperty?.property_type
+                                 )}-for-${url(
+                                   categoryProperty?.property_for
+                                 )}-${url(
+                                   categoryProperty?.property_sub_community
+                                 )}-${url(
+                                   categoryProperty?.property_level
+                                 )}/th${categoryProperty?.id}`}
+                               >
+   <h3 dangerouslySetInnerHTML={{
+   __html: categoryProperty?.property_name,
+ }}
+ className="product-title go-top"
+/>
+</Link>
+
+                                    ):(
+                                      <Link
+                                      to={`/${url(
+                                        categoryProperty?.property_city
+                                      )}/${url(
+                                        categoryProperty?.property_community
+                                      )}/${url(
+                                        categoryProperty?.property_type
+                                      )}-for-${url(
+                                        categoryProperty?.property_for
+                                      )}-${url(
+                                        categoryProperty?.property_sub_community
+                                      )}/th${categoryProperty?.id}`}
+                                    >
+                                      <h3 dangerouslySetInnerHTML={{
+                                      __html: categoryProperty?.property_name,
+                                    }}
+                                    className="product-title go-top"
+                                   />
+                                   </Link>
+                                    )}
+                                   
                                     <span>
                                       AED {categoryProperty?.property_price}
                                     </span>

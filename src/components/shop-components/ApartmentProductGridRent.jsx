@@ -114,7 +114,7 @@ const ApartmentProductGridRent = (props) => {
                 swipeable
               >
                     {carouselItems.map((item) => (
-                  <div key={item?.id} className="col-lg-12">
+                    <div key={item?.id} className="col-lg-12">
                     <div className="ltn__product-item ltn__product-item-4 text-center---">
                       <div className="product-img go-top">
                         {item.property_level ? (
