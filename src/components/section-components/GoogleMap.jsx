@@ -2,7 +2,8 @@ import React from "react";
 import { Map, GoogleApiWrapper, Marker } from "google-maps-react";
 
 const GoogleMap = (props) => {
-  const { latitude, longitude } = props?.propertyDetails;
+  const { property_location_lat:latitude, property_location_long:longitude } = props?.propertyDetails;
+  console.log(props)
   const markerOptions = {
     position: {
       lat: latitude ? latitude : 25.2048, // Replace with the latitude from your map link
