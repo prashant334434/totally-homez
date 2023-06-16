@@ -76,7 +76,7 @@ const CommunityPage = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                setLoading(true);
+                setLoading2(true);
                 const data = await getSubCommunitiesInaCommunityUtils(property_type,property_for,orignalCommunity);
                 setGetSubCommunitiesInaCommunity(data);
                 setLoading2(false);
@@ -99,7 +99,7 @@ const CommunityPage = () => {
         <MobileNav />
       <CommunityBreadcrum city={capitalizeFirstLetter(property_city)} type={capitalizeFirstLetter(property_type)} for={capitalizeFirstLetter(property_for)} comm={capitalizeFirstLetter(orignalCommunity)}/>
         {/* <VillaforSale city={capitalizeFirstLetter(property_city)} type={capitalizeFirstLetter(property_type)} for={capitalizeFirstLetter(property_for)} comm={capitalizeFirstLetter(orignalCommunity)}  headertitle="Garden Homes Frond C" customclass="mb-0 " /> */}
-        <CommunityColumnProperty loading={ld} getSubCommunitiesInaCommunity={getSubCommunitiesInaCommunity}/>
+        <CommunityColumnProperty loading={loading2} getSubCommunitiesInaCommunity={getSubCommunitiesInaCommunity}/>
        
         <CommunityPropertyGrid  propertyCategory={propertyCategory}/>
         <CallToActionV1 />

@@ -1,73 +1,90 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import Loader from "../Loader/Loader";
 
-const CommunityColumnProperty = ({ getSubCommunitiesInaCommunity }) => {
+const CommunityColumnProperty = ({
+  loading,
+  getSubCommunitiesInaCommunity,
+}) => {
+
+  console.log("getSubCommunitiesInaCommunity",getSubCommunitiesInaCommunity)
   const [itemsToShow, setItemsToShow] = useState(8);
   const showmore = () => {
-    setItemsToShow(getSubCommunitiesInaCommunity.length)
-  }
+    setItemsToShow(getSubCommunitiesInaCommunity.length);
+  };
 
   const showless = () => {
-    setItemsToShow(8)
-  }
+    setItemsToShow(8);
+  };
 
   useEffect(() => {
     const $ = window.$;
-    let publicUrl = process.env.PUBLIC_URL + '/';
+    let publicUrl = process.env.PUBLIC_URL + "/";
 
     const minscript = document.createElement("script");
     minscript.async = true;
     minscript.src = publicUrl + "assets/js/main.js";
     document.body.appendChild(minscript);
 
-    $('.go-top').find('a').on('click', function () {
-      $(".quarter-overlay").fadeIn(1);
-      $(window).scrollTop(0);
-      setTimeout(function () {
-        $(".quarter-overlay").fadeOut(300);
-      }, 800);
-    });
+    $(".go-top")
+      .find("a")
+      .on("click", function () {
+        $(".quarter-overlay").fadeIn(1);
+        $(window).scrollTop(0);
+        setTimeout(function () {
+          $(".quarter-overlay").fadeOut(300);
+        }, 800);
+      });
 
-    $(document).on('click', '.theme-btn-1', function () {
-      $('div').removeClass('modal-backdrop');
-      $('div').removeClass('show');
-      $('div').removeClass('fade');
-      $('body').attr("style", "");
+    $(document).on("click", ".theme-btn-1", function () {
+      $("div").removeClass("modal-backdrop");
+      $("div").removeClass("show");
+      $("div").removeClass("fade");
+      $("body").attr("style", "");
     });
   }, []);
 
-
-  let publicUrl = process.env.PUBLIC_URL + '/';
+  let publicUrl = process.env.PUBLIC_URL + "/";
   let imgattr = "Footer logo";
-
+  if (loading) {
+    return <Loader />;
+  }
   return (
     <footer className="ltn__footer-area ">
       <div className="footer-top-area ">
         <div className="container section-bg-1 pt-30 shadowboxing">
-          <div className='col-lg-12 '>
+          <div className="col-lg-12 ">
             <div className="row">
-              {
-
-getSubCommunitiesInaCommunity?.slice(0, itemsToShow).map((item, index) => (
-                  <div key={index} className="col-xl-3 col-md-4 col-sm-4 col-12">
+              {getSubCommunitiesInaCommunity
+                ?.slice(0, itemsToShow)
+                .map((item, index) => (
+                  <div
+                    key={index}
+                    className="col-xl-3 col-md-4 col-sm-4 col-12"
+                  >
                     <div className="footer-widget-breadcrum footer-menu-widget clearfix">
                       <div className="footer-menu go-top">
                         <ul>
-                          <li><Link to="/about">{item?.property_sub_community
-}</Link></li>
-
+                          <li>
+                            <Link to="/about">
+                              {item?.property_sub_community}
+                            </Link>
+                          </li>
                         </ul>
                       </div>
-
                     </div>
                   </div>
-                ))
-
-              }
-              {(itemsToShow === 8) ? <div className='columncss' onClick={showmore}>Show More</div> : <div className="columncss" onClick={showless}>Show Less</div>}
+                ))}
+              {itemsToShow === 8 ? (
+                <div className="columncss" onClick={showmore}>
+                  Show More
+                </div>
+              ) : (
+                <div className="columncss" onClick={showless}>
+                  Show Less
+                </div>
+              )}
             </div>
-
-
           </div>
         </div>
       </div>
