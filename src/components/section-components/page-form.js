@@ -9,34 +9,28 @@ import { useState } from 'react';
 
 const Pageform = () => {
   let publicUrl = process.env.PUBLIC_URL + '/'
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: ''
-  });
 
-  const handleChange = e => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
+  const [alert, setAlert] = React.useState({
+    type: 'error',
+    text: 'This is a alert message',
+    show: false
+  })
 
-  const handleSubmit = e => {
-    e.preventDefault();
-    // Perform form submission logic here
-    console.log(formData);
-    // Reset form data
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      message: ''
-    });
-  };
+  function onCloseAlert() {
+    setAlert({
+      type: '',
+      text: '',
+      show: false
+    })
+  }
 
-
+  function onShowAlert(type) {
+    setAlert({
+      type: type,
+      text: 'Demo alert',
+      show: true
+    })
+  }
   return (
     <div>
       <div className="ltn__upcoming-project-area section-bg-1--- bg-image-top pt-40 " data-bs-bg={publicUrl + "assets/img/bg/22.jpg"}>
@@ -57,7 +51,7 @@ const Pageform = () => {
 
 <div className="ltn__upcoming-project-info ltn__menu-widget pt-20">
 
-  <form className="contact-form whitecoloringbg" onSubmit={handleSubmit}>
+  <form className="contact-form whitecoloringbg" >
     <h3>Contact Form</h3>
     <div className="form-group">
       <label htmlFor="name">Name</label>
@@ -65,8 +59,7 @@ const Pageform = () => {
         type="text"
         id="name"
         name="name"
-        value={formData.name}
-        onChange={handleChange}
+        
         required
 
       />
@@ -77,8 +70,7 @@ const Pageform = () => {
         type="email"
         id="email"
         name="email"
-        value={formData.email}
-        onChange={handleChange}
+       
         required
       />
     </div>
@@ -88,8 +80,7 @@ const Pageform = () => {
         type="email"
         id="phone"
         name="phone"
-        value={formData.phone}
-        onChange={handleChange}
+       
         required
       />
     </div>
@@ -98,13 +89,13 @@ const Pageform = () => {
       <textarea
         id="message"
         name="message"
-        value={formData.message}
-        onChange={handleChange}
+       
+     
         required
       />
     </div>
     <div className="btn-wrapper animated go-top">
-      <Link to="/contact" className="theme-btn-1 btn btn-effect-1">Submit</Link>
+      <Link  className="theme-btn-1 btn btn-effect-1">Submit</Link>
     </div>
   </form>
 
