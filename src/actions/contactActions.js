@@ -1,5 +1,5 @@
 import axios from "axios";
-import { GET_CONTACT_FAILURE, GET_CONTACT_REQUEST, GET_CONTACT_SUCCESS } from "../constants/contactConstants";
+import { GET_CONTACT_FAILURE, GET_CONTACT_REQUEST, GET_CONTACT_SUCCESS, POST_CONTACT_FAILURE, POST_CONTACT_REQUEST, POST_CONTACT_SUCCESS } from "../constants/contactConstants";
 
 export const getContactUsApi = () => async (dispatch) => {
     try {
@@ -25,7 +25,7 @@ export const postContactApi =(page_name,name,email,mobile_no,message)=> async(di
     try{
 
        dispatch({
-           type:ORDER_CREATE_REQUEST
+           type:POST_CONTACT_REQUEST
        })
       
 
@@ -36,26 +36,17 @@ export const postContactApi =(page_name,name,email,mobile_no,message)=> async(di
         )
 
        dispatch({
-           type:ORDER_CREATE_SUCCESS,
+           type:POST_CONTACT_SUCCESS,
            payload:data
        })
-       dispatch({
-        type:CART_CLEAR_ITEMS,
-        payload:data
-    })
-    localStorage.removeItem('cartItems')
-       
-   
-
+       console.log(data)
 
     }
     catch(error){
 
        dispatch({
-           type:ORDER_CREATE_FAIL,
-           payload:error.response && error.response.data.detail
-           ? error.response.data.detail
-           :error.message,
+           type:POST_CONTACT_FAILURE,
+         
        })
 
     }
