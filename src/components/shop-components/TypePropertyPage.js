@@ -10,7 +10,7 @@ import { useDispatch } from 'react-redux';
 import { getPropertiesType } from '../../actions/propertiesActions2';
 import { useParams } from 'react-router-dom';
 import TypePropertyContent from '../section-components/TypePropertyContent';
-import { getPropertiesTypeUtils } from '../../utils/propertyUtils';
+import { capitalizeWords, getPropertiesTypeUtils } from '../../utils/propertyUtils';
 import TyepPropertyGrid from './TyepPropertyGrid';
 import Loader from '../Loader/Loader';
 import TypeBreadcrums from '../global-components/typeBreadcrums';
@@ -48,7 +48,7 @@ if(loading){
         <MetaData title={` ${capitalizeFirstLetter(property_type)} For ${capitalizeFirstLetter(property_for)} In ${capitalizeFirstLetter(property_city)}`} metaDesription={`Check Our Verified Listing Of Dubai ${capitalizeFirstLetter(property_type)} For ${capitalizeFirstLetter(property_for)} In Dubai With World Class Amenities, Amazing Views And Attractive Lifestyle.`}/>
         
       <MobileNav/>
-      <TypeBreadcrums property_type={capitalizeFirstLetter(property_type)} property_city={capitalizeFirstLetter(property_city)} property_for={capitalizeFirstLetter(property_for)}/>
+      <TypeBreadcrums property_type={capitalizeWords(property_type)} property_city={capitalizeWords(property_city)} property_for={capitalizeWords(property_for)}/>
 
       <SearchBarV1/>
       <TypePropertyContent/>

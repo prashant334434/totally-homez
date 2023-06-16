@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import ColumnProperty from './columnproperty';
+import { capitalizeWords } from '../../utils/propertyUtils';
 
 const CommunityBreadcrum = (props) => {
     let HeaderTitle = props.headertitle;
@@ -28,11 +29,11 @@ const CommunityBreadcrum = (props) => {
 					</div>
 					<div className="ltn__breadcrumb-list">
 						<ul>
-						<li><Link to="/"><span className="ltn__secondary-color"><i className="fas fa-home" style={{fontSize:'16px'}} /></span> {props?.city}</Link></li>
+						<li><Link to="/"><span className="ltn__secondary-color"><i className="fas fa-home" style={{fontSize:'16px'}} /></span> {capitalizeWords(props?.city)}</Link></li>
 						<li><Link to={`/${url(
 								props?.type
-                            )}-for-${url(props?.for)}-${url(props?.city)}`}> { props?.type }</Link></li>
-						<li><Link >{ props?.comm } </Link></li>
+                            )}-for-${url(props?.for)}-${url(props?.city)}`}> { capitalizeWords(props?.type) }</Link></li>
+						<li><Link >{ capitalizeWords(props?.comm) } </Link></li>
 						
 					
 						

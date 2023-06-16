@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { allEmptyStrings } from "../../utils/propertyUtils";
+import { allEmptyStrings, capitalizeWords } from "../../utils/propertyUtils";
 
 const SubCommunityColumnProperty = ({ getLevelsInASubCommunity }) => {
   let levelsArray = [];
@@ -64,9 +64,12 @@ const SubCommunityColumnProperty = ({ getLevelsInASubCommunity }) => {
                   <div className="footer-widget-breadcrum footer-menu-widget clearfix">
                     <div className="footer-menu go-top">
                       <ul>
+                        <Link>
                         <li>
-                          {item}
+                          {capitalizeWords(item)}
                         </li>
+                        </Link>
+                       
                       </ul>
                     </div>
                   </div>

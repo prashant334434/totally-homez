@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import ColumnProperty from './columnproperty';
+import { capitalizeWords } from '../../utils/propertyUtils';
 
 const SubCommunityBreadcrum = (props) => {
     let HeaderTitle = props.headertitle;
@@ -28,19 +29,19 @@ const SubCommunityBreadcrum = (props) => {
 					</div>
 					<div className="ltn__breadcrumb-list">
 						<ul>
-						<li><Link to="/"><span className="ltn__secondary-color"><i className="fas fa-home" style={{fontSize:'16px'}} /></span> {props?.city}</Link></li>
+						<li><Link to="/"><span className="ltn__secondary-color"><i className="fas fa-home" style={{fontSize:'16px'}} /></span> {capitalizeWords(props?.city)}</Link></li>
 						
 
 					
 						<li><Link to={`/${url(
 								props?.type
-                            )}-for-${url(props?.for)}-${url(props?.city)}`}>{ props?.type }</Link></li>
+                            )}-for-${url(props?.for)}-${url(props?.city)}`}>{capitalizeWords(props?.type) }</Link></li>
 						<li><Link to={`/${url(props?.city)}/${url(
 								props?.type
                             )}-for-${url(props?.for)}-${url(
 								props?.comm
-							  )}`}>{ props?.comm }</Link></li>
-						<li><Link >{ props?.subComm }</Link></li>
+							  )}`}>{capitalizeWords(props?.comm) }</Link></li>
+						<li><Link >{capitalizeWords( props?.subComm) }</Link></li>
 					
 
 
