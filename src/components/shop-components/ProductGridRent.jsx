@@ -158,7 +158,6 @@ const ProductGridRent = (props) => {
                       </div>
                       <div className="product-info">
                         <div className="product-price">
-                          <div className="title_div">
                             {item.property_level ? (
                               <Link
                                 to={`/${url(item?.property_city)}/${url(
@@ -194,7 +193,6 @@ const ProductGridRent = (props) => {
                                 />
                               </Link>
                             )}
-                          </div>
                           <div className="price_div">
                             <span>
                               AED <br /> {item?.property_price}

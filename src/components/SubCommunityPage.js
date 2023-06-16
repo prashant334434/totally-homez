@@ -95,7 +95,7 @@ const [getLevelsInASubCommunity, setGetLevelsInASubCommunity] = useState([])
         )
     }
     return <div>
-                <MetaData title={` ${capitalizeFirstLetter(property_type)} For ${capitalizeFirstLetter(property_for)} In ${capitalizeFirstLetter(orignalSubCommunity)}`} metaDesription={`Check Our Verified Listing Of Dubai ${capitalizeFirstLetter(property_type)} For ${capitalizeFirstLetter(property_for)} In ${capitalizeFirstLetter(orignalSubCommunity)} With World Class Amenities, Amazing Views And Attractive Lifestyle.`}/>
+                <MetaData title={` ${capitalizeWords(property_type)} For ${capitalizeWords(property_for)} In ${capitalizeWords(orignalSubCommunity)}`+`  ` +`-`+` `+` `+ `Totally Home Real Estate`} metaDesription={`Check Our Verified Listing Of Dubai ${capitalizeFirstLetter(property_type)} For ${capitalizeFirstLetter(property_for)} In ${capitalizeFirstLetter(orignalSubCommunity)} With World Class Amenities, Amazing Views And Attractive Lifestyle.`}/>
 
         <MobileNav />
         <SubCommunityBreadcrum city={capitalizeWords(property_city)} type={capitalizeWords(property_type)} for={capitalizeWords(property_for)} subComm={capitalizeWords(orignalSubCommunity)}  comm={capitalizeWords(orignalCommunity)} />
