@@ -23,7 +23,7 @@ import PaginationComponent from './PaginationComponent';
 import BreadCrumProperties from './BreadCrumProperties';
 import SubCommunityColumnProperty from './global-components/SubCommunityColumn';
 import SubCommunityPropertyGrid from './subCommunityPropertyGrid';
-import { capitalizeWords, getLevelsInASubCommunityUtils, getPropertiesSubCommunityUtils, getSubCommunitiesInaCommunityUtils } from '../utils/propertyUtils';
+import { capitalizeWords, getLevelsInASubCommunityUtils, getPropertiesSubCommunityUtils, getSubCommunitiesInaCommunityUtils, replaceHyphensAndCapitalize } from '../utils/propertyUtils';
 import VillaforSaleSub from './global-components/villaForSaleSub';
 import MetaData from './Layout/MetaData';
 import SubCommunityBreadcrum from './global-components/SubCommunityBreadcrum';
@@ -95,7 +95,7 @@ const [getLevelsInASubCommunity, setGetLevelsInASubCommunity] = useState([])
         )
     }
     return <div>
-                <MetaData title={` ${capitalizeWords(property_type)} For ${capitalizeWords(property_for)} In ${capitalizeWords(orignalSubCommunity)}`+`  ` +`-`+` `+` `+ `Totally Home Real Estate`} metaDesription={`Check Our Verified Listing Of Dubai ${capitalizeWords(property_type)} For ${capitalizeWords(property_for)} In ${capitalizeWords(orignalSubCommunity)} With World Class Amenities, Amazing Views And Attractive Lifestyle.`}/>
+                <MetaData title={` ${capitalizeWords(property_type)} For ${capitalizeWords(property_for)} In ${replaceHyphensAndCapitalize(orignalSubCommunity)}`+`  ` +`-`+` `+` `+ `Totally Home Real Estate`} metaDesription={`Check Our Verified Listing Of Dubai ${capitalizeWords(property_type)} For ${capitalizeWords(property_for)} In ${capitalizeWords(orignalSubCommunity)} With World Class Amenities, Amazing Views And Attractive Lifestyle.`}/>
 
         <MobileNav />
         <SubCommunityBreadcrum city={capitalizeWords(property_city)} type={capitalizeWords(property_type)} for={capitalizeWords(property_for)} subComm={capitalizeWords(orignalSubCommunity)}  comm={capitalizeWords(orignalCommunity)} />

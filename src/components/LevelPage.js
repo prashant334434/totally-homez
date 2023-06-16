@@ -101,7 +101,7 @@ const data = [
         )
     }
     return <div>
-        <MetaData title={` ${capitalizeFirstLetter(property_type)} For ${capitalizeFirstLetter(property_for)} In ${capitalizeWordsInHyphenatedString(property_level)}`+` `+`-`+` `+`Totally Home Real Estate`} metaDesription={`Check Our Verified Listing Of Dubai ${capitalizeFirstLetter(property_type)} For ${capitalizeFirstLetter(property_for)} In Level With World Class Amenities, Amazing Views And Attractive Lifestyle`}/>
+        <MetaData title={` ${capitalizeFirstLetter(property_type)} For ${capitalizeFirstLetter(property_for)} In ${replaceHyphensAndCapitalize(property_level)}`+` `+`-`+` `+`Totally Home Real Estate`} metaDesription={`Check Our Verified Listing Of Dubai ${capitalizeFirstLetter(property_type)} For ${capitalizeFirstLetter(property_for)} In Level With World Class Amenities, Amazing Views And Attractive Lifestyle`}/>
         <MobileNav />
         {/* <VillaforSaleLevel city={capitalizeFirstLetter(property_city)} type={capitalizeFirstLetter(capitalizeFirstLetter(property_type))} for={capitalizeFirstLetter(property_for)} level={capitalizeFirstLetter(property_level)} headertitle="Garden Homes Frond C" customclass="mb-0 pt-100 " /> */}
        <LevelBreadcrum city={capitalizeWords(property_city)} type={capitalizeFirstLetter(capitalizeWords(property_type))} for={capitalizeWords(property_for)} level={replaceHyphensAndCapitalize(property_level)} comm={capitalizeWords(orignalCommunity)} subComm={capitalizeWords(orignalSubCommunity)} />

@@ -10,7 +10,7 @@ import { useDispatch } from 'react-redux';
 import { getPropertiesType } from '../../actions/propertiesActions2';
 import { useParams } from 'react-router-dom';
 import TypePropertyContent from '../section-components/TypePropertyContent';
-import { capitalizeWords, getPropertiesTypeUtils } from '../../utils/propertyUtils';
+import { capitalizeWords, getPropertiesTypeUtils, replaceHyphensAndCapitalize } from '../../utils/propertyUtils';
 import TyepPropertyGrid from './TyepPropertyGrid';
 import Loader from '../Loader/Loader';
 import TypeBreadcrums from '../global-components/typeBreadcrums';
@@ -45,7 +45,8 @@ if(loading){
 }
   return (
     <div>
-        <MetaData title={` ${capitalizeWords(property_type)} For ${capitalizeWords(property_for)} In ${capitalizeWords(property_city)}`} metaDesription={`Check Our Verified Listing Of Dubai ${capitalizeWords(property_type)} For ${capitalizeWords(property_for)} In Dubai With World Class Amenities, Amazing Views And Attractive Lifestyle.`}/>
+              <MetaData title={` ${capitalizeFirstLetter(property_type)} For  ${capitalizeFirstLetter(property_for)} In ${replaceHyphensAndCapitalize(property_city)}`+` `+`-`+` `+`Totally Home Real Estate`} metaDesription={`Check Our Verified Listing Of Dubai ${capitalizeFirstLetter(property_type)} For ${capitalizeFirstLetter(property_for)} In Level With World Class Amenities, Amazing Views And Attractive Lifestyle`}/>
+
         
       <MobileNav/>
       <TypeBreadcrums property_type={capitalizeWords(property_type)} property_city={capitalizeWords(property_city)} property_for={capitalizeWords(property_for)}/>
