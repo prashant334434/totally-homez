@@ -259,18 +259,20 @@ const SubCommunityPropertyGrid = (props) => {
                                       </Link>
                                     ) : (
                                       <Link
-                                      to={`/${url(
-                                        categoryProperty?.property_city
-                                      )}/${url(
-                                        categoryProperty?.property_community
-                                      )}/${url(
-                                        categoryProperty?.property_type
-                                      )}-for-${url(
-                                        categoryProperty?.property_for
-                                      )}-${url(
-                                        categoryProperty?.property_sub_community
-                                      )}/th${categoryProperty?.id}`}
-                                    >
+                                        to={`/${url(
+                                          categoryProperty?.property_city
+                                        )}/${url(
+                                          categoryProperty?.property_community
+                                        )}/${url(
+                                          categoryProperty?.property_sub_community
+                                        )}/${url(
+                                          categoryProperty?.property_type
+                                        )}-for-${url(
+                                          categoryProperty?.property_for
+                                        )}-${url(
+                                          categoryProperty?.property_level
+                                        )}/th${categoryProperty?.id}`}
+                                      >
                                         <h3
                                           dangerouslySetInnerHTML={{
                                             __html:

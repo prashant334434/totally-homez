@@ -190,21 +190,21 @@ const LevelProperties = (props) => {
                               >
                                 <div className="product-img go-top">
                                  { categoryProperty?.property_level ?(
- <Link
- to={`/${url(
-   categoryProperty?.property_city
- )}/${url(
-   categoryProperty?.property_community
- )}/${url(
-   categoryProperty?.property_type
- )}-for-${url(
-   categoryProperty?.property_for
- )}-${url(
-   categoryProperty?.property_sub_community
- )}-${url(
-   categoryProperty?.property_level
- )}/th${categoryProperty?.id}`}
->
+                                  <Link
+                                      to={`/${url(
+                                        categoryProperty?.property_city
+                                      )}/${url(
+                                        categoryProperty?.property_community
+                                      )}/${url(
+                                        categoryProperty?.property_sub_community
+                                      )}/${url(
+                                        categoryProperty?.property_type
+                                      )}-for-${url(
+                                        categoryProperty?.property_for
+                                      )}-${url(
+                                        categoryProperty?.property_level
+                                      )}/th${categoryProperty?.id}`}
+                                    >
  <img
    src={`${PROPERTY_IMAGES_URL}/${categoryProperty?.img_name}`}
    alt="#"
@@ -212,18 +212,18 @@ const LevelProperties = (props) => {
 </Link>
                                  ):(
                                   <Link
-                                    to={`/${url(
-                                      categoryProperty?.property_city
-                                    )}/${url(
-                                      categoryProperty?.property_community
-                                    )}/${url(
-                                      categoryProperty?.property_type
-                                    )}-for-${url(
-                                      categoryProperty?.property_for
-                                    )}-${url(
-                                      categoryProperty?.property_sub_community
-                                    )}/th${categoryProperty?.id}`}
-                                  >
+                                        to={`/${url(
+                                          categoryProperty?.property_city
+                                        )}/${url(
+                                          categoryProperty?.property_community
+                                        )}/${url(
+                                          categoryProperty?.property_type
+                                        )}-for-${url(
+                                          categoryProperty?.property_for
+                                        )}-${url(
+                                          categoryProperty?.property_sub_community
+                                        )}/th${categoryProperty?.id}`}
+                                      >
                                   <img
                                     src={`${PROPERTY_IMAGES_URL}/${categoryProperty?.img_name}`}
                                     alt="#"
@@ -242,21 +242,21 @@ const LevelProperties = (props) => {
                                 <div className="product-info">
                                   <div className="product-price">
                                     {categoryProperty?.property_level ?(
-                                 <Link
-                                 to={`/${url(
-                                   categoryProperty?.property_city
-                                 )}/${url(
-                                   categoryProperty?.property_community
-                                 )}/${url(
-                                   categoryProperty?.property_type
-                                 )}-for-${url(
-                                   categoryProperty?.property_for
-                                 )}-${url(
-                                   categoryProperty?.property_sub_community
-                                 )}-${url(
-                                   categoryProperty?.property_level
-                                 )}/th${categoryProperty?.id}`}
-                               >
+                                      <Link
+                                        to={`/${url(
+                                          categoryProperty?.property_city
+                                        )}/${url(
+                                          categoryProperty?.property_community
+                                        )}/${url(
+                                          categoryProperty?.property_sub_community
+                                        )}/${url(
+                                          categoryProperty?.property_type
+                                        )}-for-${url(
+                                          categoryProperty?.property_for
+                                        )}-${url(
+                                          categoryProperty?.property_level
+                                        )}/th${categoryProperty?.id}`}
+                                      >
    <h3 dangerouslySetInnerHTML={{
    __html: categoryProperty?.property_name,
  }}
