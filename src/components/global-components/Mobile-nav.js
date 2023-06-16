@@ -67,32 +67,116 @@ const MobileNav = () => {
 
 												</li>
 												<li><Link>Buy</Link>
-													<ul className="sub-menu">
-														<li><Link >Apartments</Link></li>
-														<li><Link >Villas</Link></li>
-														<li><Link >Penthouse</Link></li>
-														<li><Link >Townhouse</Link></li>
-														<li><Link > Off Plan</Link></li>
+												<ul className="sub-menu">
+                            <li>
+                              <Link to="/apartment-for-sale-dubai">
+                                Apartments{" "}
+                              </Link>
+                            </li>
 
-													</ul>
+                            <li>
+                              <Link to="/villa-for-sale-dubai">Villas </Link>
+                            </li>
+
+                            <li>
+                              <Link to="/penthouses-for-sale-dubai">
+                                Penthouses{" "}
+                              </Link>
+                            </li>
+
+                            <li>
+                              <Link to="/pownhouses-for-sale-dubai">
+                                Townhouses{" "}
+                              </Link>
+                            </li>
+
+                            <li>
+                              <Link to="/offplan-for-sale-dubai">
+                                Off Plan{" "}
+                              </Link>
+                            </li>
+                          </ul>
 												</li>
 												<li><Link >Rent</Link>
-													<ul className="sub-menu">
-														<li><Link >Apartments</Link></li>
-														<li><Link >Villas</Link></li>
-														<li><Link >Penthouse</Link></li>
-														<li><Link >Townhouse</Link></li>
+												<ul className="sub-menu">
+                            <li>
+                              <Link to="/apartment-for-rent-dubai">
+                                Apartments{" "}
+                              </Link>
+                            </li>
 
-													</ul></li>
+                            <li>
+                              <Link to="/villa-for-rent-dubai">Villas </Link>
+                            </li>
+
+                            <li>
+                              <Link to="/penthouses-for-rent-dubai">
+                                Penthouses{" "}
+                              </Link>
+                            </li>
+
+                            <li>
+                              <Link to="/townhouses-for-rent-dubai">
+                                Townhouses{" "}
+                              </Link>
+                            </li>
+                          </ul></li>
 												<li><Link to="/off-plan">Off Plan</Link>
+												<ul className="sub-menu">
+                            <li>
+                              <Link to="/offplan-apartment-for-sale-dubai">
+                                Apartments{" "}
+                              </Link>
+                            </li>
 
+                            <li>
+                              <Link to="/offplan-villa-for-sale-dubai">
+                                Villas{" "}
+                              </Link>
+                            </li>
+
+                            <li>
+                              <Link to="/offplan-penthouses-for-sale-dubai">
+                                Penthouses{" "}
+                              </Link>
+                            </li>
+
+                            <li>
+                              <Link to="/offplan-townhouses-for-sale-dubai">
+                                Townhouses{" "}
+                              </Link>
+                            </li>
+                          </ul>
+						  <li >
+                          <Link to="/offplan-projects-in-dubai">
+                          
+                            DUBAI PROJECTS
+                          </Link>
+                        </li>
 												</li>
 												<li><Link to="#">Exclusive Properties</Link>
 
 												</li>
-												<li><Link to="">Explore Dubai</Link></li>
-												<li><Link >Our Mission</Link></li>
-												<li><Link to="/contact-us">Contact</Link></li>
+												<li >
+                          <Link to="/blogs">Explore Dubai </Link>
+                        </li>
+                        <li >
+                          <Link to="/about-us">Our Mission </Link>
+                          {/* <li ><Link to="/offplan-apartment-for-sale-dubai">Apartments </Link></li> */}
+                          <ul className='sub-menu'>
+                            <li>
+                              <Link to="/list-with-us">Sell With Us </Link>
+                            </li>
+
+                            <li>
+                              <Link to="/career">Join Us </Link>
+                            </li>
+
+                            <li>
+                              <Link to="/contact-us">Contact Us</Link>
+                            </li>
+                          </ul>
+                        </li>
 											</ul>
 										</div>
 
