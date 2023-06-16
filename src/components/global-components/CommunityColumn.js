@@ -1,20 +1,28 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Loader from "../Loader/Loader";
+import { allEmptyStrings } from "../../utils/propertyUtils";
 
 const CommunityColumnProperty = ({
   loading,
   getSubCommunitiesInaCommunity,
 }) => {
+  console.log("getSubCommunitiesInaCommunity", getSubCommunitiesInaCommunity);
+  let subCommunityArray = [];
+  if (getSubCommunitiesInaCommunity) {
+    for (let i = 0; i < getSubCommunitiesInaCommunity.length; i++) {
+      subCommunityArray.push(getSubCommunitiesInaCommunity[i]?.property_level);
+    }
+  }
 
-  console.log("getSubCommunitiesInaCommunity",getSubCommunitiesInaCommunity)
-  const [itemsToShow, setItemsToShow] = useState(8);
+  console.log("subCommunityArray",subCommunityArray)
+  const [itemsToShow, setItemsToShow] = useState(4);
   const showmore = () => {
-    setItemsToShow(getSubCommunitiesInaCommunity.length);
+    setItemsToShow(subCommunityArray.length);
   };
 
   const showless = () => {
-    setItemsToShow(8);
+    setItemsToShow(4);
   };
 
   useEffect(() => {
@@ -49,13 +57,19 @@ const CommunityColumnProperty = ({
   if (loading) {
     return <Loader />;
   }
+  if (!subCommunityArray || subCommunityArray.length === 0 || allEmptyStrings(subCommunityArray)) {
+    return null; // Render nothing if there are no elements in getSubCommunitiesInaCommunity or all elements are empty strings
+  }
+
+
+  const showMoreLessVisible = getSubCommunitiesInaCommunity.length > 3;
   return (
     <footer className="ltn__footer-area ">
       <div className="footer-top-area ">
         <div className="container section-bg-1 pt-30 shadowboxing">
           <div className="col-lg-12 ">
             <div className="row">
-              {getSubCommunitiesInaCommunity
+              {subCommunityArray
                 ?.slice(0, itemsToShow)
                 .map((item, index) => (
                   <div
@@ -67,7 +81,7 @@ const CommunityColumnProperty = ({
                         <ul>
                           <li>
                             <Link to="/about">
-                              {item?.property_sub_community}
+                              {item}
                             </Link>
                           </li>
                         </ul>
@@ -75,13 +89,19 @@ const CommunityColumnProperty = ({
                     </div>
                   </div>
                 ))}
-              {itemsToShow === 8 ? (
-                <div className="columncss" onClick={showmore}>
-                  Show More
-                </div>
-              ) : (
-                <div className="columncss" onClick={showless}>
+              {showMoreLessVisible && (
+                <div className="columncss" onClick={() => setItemsToShow(4)}>
                   Show Less
+                </div>
+              )}
+              {showMoreLessVisible && itemsToShow === 4 && (
+                <div
+                  className="columncss"
+                  onClick={() =>
+                    setItemsToShow(getSubCommunitiesInaCommunity.length)
+                  }
+                >
+                  Show More
                 </div>
               )}
             </div>

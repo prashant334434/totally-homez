@@ -87,3 +87,17 @@ export const getPropertiesCategoryUtils= async (property_city,property_type,prop
       throw new Error('Failed to fetch property types.');
     }
   };
+
+
+ export const capitalizeWords=(str)=> {
+    return str.replace(/\b\w/g, char => char.toUpperCase());
+  }
+  
+  
+  // Output: "Hello World! Welcome To Javascript"
+  
+
+  export const allEmptyStrings=(arr)=> {
+    return arr.every((element) => element === "");
+  }
+  
