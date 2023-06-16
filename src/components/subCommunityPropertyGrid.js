@@ -264,13 +264,11 @@ const SubCommunityPropertyGrid = (props) => {
                                         )}/${url(
                                           categoryProperty?.property_community
                                         )}/${url(
-                                          categoryProperty?.property_sub_community
-                                        )}/${url(
                                           categoryProperty?.property_type
                                         )}-for-${url(
                                           categoryProperty?.property_for
                                         )}-${url(
-                                          categoryProperty?.property_level
+                                          categoryProperty?.property_sub_community
                                         )}/th${categoryProperty?.id}`}
                                       >
                                         <h3
