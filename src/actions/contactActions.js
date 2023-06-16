@@ -19,3 +19,44 @@ console.log(data)
       });
     }
   };
+
+
+export const postContactApi =(page_name,name,email,mobile_no,message)=> async(dispatch)=>{
+    try{
+
+       dispatch({
+           type:ORDER_CREATE_REQUEST
+       })
+      
+
+
+       const {data}= await axios.post(
+        `https://totallyhomerealestate.com/API/api/contact_form`,
+        page_name,name,email,mobile_no,message
+        )
+
+       dispatch({
+           type:ORDER_CREATE_SUCCESS,
+           payload:data
+       })
+       dispatch({
+        type:CART_CLEAR_ITEMS,
+        payload:data
+    })
+    localStorage.removeItem('cartItems')
+       
+   
+
+
+    }
+    catch(error){
+
+       dispatch({
+           type:ORDER_CREATE_FAIL,
+           payload:error.response && error.response.data.detail
+           ? error.response.data.detail
+           :error.message,
+       })
+
+    }
+}

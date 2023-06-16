@@ -8,7 +8,7 @@ import { agentPropertyReducer, getCurrentTeamMemberIdReducer, getCurrentTeamMemb
 import { apartmentCategoryReducer, apartmentCategoryRentReducer, catgoryPropertiesRentReducer, catgoryReducer, catgoryRentReducer, penthouseCategoryReducer, penthouseCategoryRentReducer, townhouseCategoryReducer, townhouseCategoryRentReducer } from "./reducers/catgoryReducres";
 import { blogReducer } from "./reducers/blogReducers";
 import { propertiesByTypeReducer } from "./reducers/propertyTypeReducers";
-import { contactReducer } from "./reducers/contactReducer";
+import { contactFormReducer, contactReducer } from "./reducers/contactReducer";
 import { listWithUsReducer } from "./reducers/listWithUsReducer";
 import { careerReducer } from "./reducers/careerReducer";
 import { aboutReducer } from "./reducers/aboutReducer";
@@ -62,8 +62,8 @@ const reducer=combineReducers({
     propertyImage:propertyImageReducer,
 
     currentTeamMemberId:getCurrentTeamMemberIdReducer,
-    agentProperty:agentPropertyReducer
-
+    agentProperty:agentPropertyReducer,
+    contactForm:contactFormReducer
 
   
     
