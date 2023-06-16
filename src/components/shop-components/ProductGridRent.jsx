@@ -123,9 +123,9 @@ const ProductGridRent = (props) => {
                           <Link
                             to={`/${url(item?.property_city)}/${url(
                               item?.property_community
-                            )}/${url(
+                            )}/${url(item?.property_sub_community)}/${url(
                               item?.property_type
-                            )}-for-${url(item?.property_for)}-${url(item?.property_sub_community)}${url(
+                            )}-for-${url(item?.property_for)}-${url(
                               item?.property_level
                             )}/th${item?.id}`}
                           >
@@ -162,9 +162,9 @@ const ProductGridRent = (props) => {
                               <Link
                                 to={`/${url(item?.property_city)}/${url(
                                   item?.property_community
-                                )}/${url(
+                                )}/${url(item?.property_sub_community)}/${url(
                                   item?.property_type
-                                )}-for-${url(item?.property_for)}-${url(item?.property_sub_community)}-${url(
+                                )}-for-${url(item?.property_for)}-${url(
                                   item?.property_level
                                 )}/th${item?.id}`}
                               >
@@ -200,10 +200,11 @@ const ProductGridRent = (props) => {
                           </div>
                         </div>
                         <div className="product-description">
-                        <p>
+                          <p>
                             {item?.property_community}{" "}- {" "}
                             {item?.property_sub_community}
-                          </p>                          <br></br>
+                          </p>
+                          <br></br>
                           <small>Ref No.{item?.property_ref_no}</small>
                         </div>
                         <div>
@@ -233,9 +234,9 @@ const ProductGridRent = (props) => {
                           </center>
                         </div>
                       </div>
-                      <div className="product-info-bottom mt-20">
+                      <div className="product-info-bottom">
                         <div className="real-estate-agent wcallFlex mt-10">
-                          <div className="agent-img go-top ">
+                          <div className="agent-img go-top">
                             <Link to="/team-details">
                               <img
                                 src={`${TEAM_API_URL}/${item?.path}`}

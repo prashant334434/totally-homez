@@ -11,7 +11,7 @@ const CommunityColumnProperty = ({
   let subCommunityArray = [];
   if (getSubCommunitiesInaCommunity) {
     for (let i = 0; i < getSubCommunitiesInaCommunity.length; i++) {
-      subCommunityArray.push(getSubCommunitiesInaCommunity[i]?.property_level);
+      subCommunityArray.push(getSubCommunitiesInaCommunity[i]?.property_sub_community);
     }
   }
 

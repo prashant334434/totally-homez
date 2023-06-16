@@ -118,9 +118,9 @@ const ProductGrid = (props) => {
                           <Link
                             to={`/${url(item?.property_city)}/${url(
                               item?.property_community
-                            )}/${url(
+                            )}/${url(item?.property_sub_community)}/${url(
                               item?.property_type
-                            )}-for-${url(item?.property_for)}-${url(item?.property_sub_community)}${url(
+                            )}-for-${url(item?.property_for)}-${url(
                               item?.property_level
                             )}/th${item?.id}`}
                           >
@@ -174,9 +174,9 @@ const ProductGrid = (props) => {
                               <Link
                                 to={`/${url(item?.property_city)}/${url(
                                   item?.property_community
-                                )}/${url(item?.property_sub_community)}/${url(
+                                )}/${url(
                                   item?.property_type
-                                )}-for-${url(item?.property_for)}/th${
+                                )}-for-${url(item?.property_for)}-${url(item?.property_sub_community)}/th${
                                   item?.id
                                 }`}
                               >
