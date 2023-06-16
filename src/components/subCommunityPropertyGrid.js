@@ -290,6 +290,8 @@ const SubCommunityPropertyGrid = (props) => {
                                       {categoryProperty?.property_address}
                                     </Link>
                                     <br></br>
+                                    {categoryProperty?.property_community}{" "}- {" "}
+                           {categoryProperty?.property_sub_community}
                                     <small>
                                       Ref No.{categoryProperty?.property_ref_no}
                                     </small>

@@ -297,6 +297,10 @@ const LevelProperties = (props) => {
                                     </Link>
                                     <br></br>
                                     <small>
+                                    <p>
+                           {categoryProperty?.property_community}{" "}- {" "}
+                           {categoryProperty?.property_sub_community}
+                         </p>
                                       Ref No.{categoryProperty?.property_ref_no}
                                     </small>
                                   </div>
