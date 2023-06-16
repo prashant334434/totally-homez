@@ -115,6 +115,18 @@ export const getPropertiesCategoryUtils= async (property_city,property_type,prop
     const capitalizedString = capitalizedWords.join('-');
     return capitalizedString;
   }
+
+  export const replaceHyphensAndCapitalize=(str)=> {
+    const result = str.replace(/-/g, function(match) {
+      return ' ';
+    }).replace(/\b\w/g, function(match) {
+      return match.toUpperCase();
+    });
+  
+    return result;
+  }
+
+  
   
  
   

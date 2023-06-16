@@ -22,7 +22,7 @@ import { getcommunityApi } from '../actions/communityAction';
 import PaginationComponent from './PaginationComponent';
 import BreadCrumProperties from './BreadCrumProperties';
 import LevelProperties from './LevelProperties';
-import { capitalizeWords, capitalizeWordsInHyphenatedString, getPropertiesCategoryUtils, getPropertiesLevelUtils } from '../utils/propertyUtils';
+import { capitalizeWords, capitalizeWordsInHyphenatedString, getPropertiesCategoryUtils, getPropertiesLevelUtils, removeHyphensAndCapitalize, replaceHyphensAndCapitalize } from '../utils/propertyUtils';
 import VillaforSaleLevel from './global-components/villaForSaleLevel';
 import MetaData from './Layout/MetaData';
 import LevelBreadcrum from './global-components/LevelBreadcrum';
@@ -104,7 +104,7 @@ const data = [
         <MetaData title={` ${capitalizeFirstLetter(property_type)} For ${capitalizeFirstLetter(property_for)} In ${capitalizeWordsInHyphenatedString(property_level)}`+` `+`-`+` `+`Totally Home Real Estate`} metaDesription={`Check Our Verified Listing Of Dubai ${capitalizeFirstLetter(property_type)} For ${capitalizeFirstLetter(property_for)} In level With World Class Amenities, Amazing Views And Attractive Lifestyle`}/>
         <MobileNav />
         {/* <VillaforSaleLevel city={capitalizeFirstLetter(property_city)} type={capitalizeFirstLetter(capitalizeFirstLetter(property_type))} for={capitalizeFirstLetter(property_for)} level={capitalizeFirstLetter(property_level)} headertitle="Garden Homes Frond C" customclass="mb-0 pt-100 " /> */}
-       <LevelBreadcrum city={capitalizeWords(property_city)} type={capitalizeFirstLetter(capitalizeWords(property_type))} for={capitalizeWords(property_for)} level={capitalizeWords(property_level)} comm={capitalizeWords(orignalCommunity)} subComm={capitalizeWords(orignalSubCommunity)} />
+       <LevelBreadcrum city={capitalizeWords(property_city)} type={capitalizeFirstLetter(capitalizeWords(property_type))} for={capitalizeWords(property_for)} level={replaceHyphensAndCapitalize(property_level)} comm={capitalizeWords(orignalCommunity)} subComm={capitalizeWords(orignalSubCommunity)} />
 
         <LevelProperties loading={loading} propertyLevel={propertyLevel} />
         <CallToActionV1 />
