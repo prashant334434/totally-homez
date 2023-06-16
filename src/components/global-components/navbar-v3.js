@@ -96,40 +96,51 @@ const NavbarV3 = () => {
 			                    </ul> */}
 													{/* </li> */}
 													<li className={activeMenuItem === 'Home' ? 'active' : ''} ><Link to="/">Home</Link></li>
-													<li className="menu-icon a-inactive"><Link to="#">Buy</Link>
+													<li className=" a-inactive"><Link to="/">Buy</Link>
 														<ul>
 															<li><Link to="/apartment-for-sale-dubai">Apartments </Link></li>
 
 															<li><Link to="/villa-for-sale-dubai">Villas </Link></li>
 
-															<li><Link to="/Penthouses-for-sale-dubai" >Penthouses </Link></li>
+															<li><Link to="/penthouses-for-sale-dubai" >Penthouses </Link></li>
 
-															<li><Link to="/Townhouses-for-sale-dubai" >Townhouses </Link></li>
+															<li><Link to="/pownhouses-for-sale-dubai" >Townhouses </Link></li>
 
 															<li><Link to="/offplan-for-sale-dubai" >Off Plan </Link></li>
 
 														</ul>
 													</li>
-													<li className="menu-icon a-inactive"><Link to="#">Rent</Link>
+													<li className=" a-inactive"><Link to="/">Rent</Link>
 														<ul>
-															<li className="menu-icon a-inactive-child"><Link to="/apartment-for-rent-dubai">Apartments </Link></li>
+															<li ><Link to="/apartment-for-rent-dubai">Apartments </Link></li>
 
-															<li className="menu-icon a-inactive-child"><Link to="/villa-for-rent-dubai">Villas </Link></li>
+															<li ><Link to="/villa-for-rent-dubai">Villas </Link></li>
 
-															<li className="menu-icon a-inactive-child"><Link to="/Penthouses-for-rent-dubai" >Penthouses </Link></li>
+															<li ><Link to="/penthouses-for-rent-dubai" >Penthouses </Link></li>
 
-															<li className="menu-icon a-inactive-child"><Link to="/Townhouses-for-rent-dubai">Townhouses </Link></li>
+															<li ><Link to="/townhouses-for-rent-dubai">Townhouses </Link></li>
 														</ul>
 													</li>
-													<li className={activeMenuItem === '/off-plan' ? 'active' :"menu-icon a-inactive"}><Link to="/offplan-projects-in-dubai">OffPlan</Link></li>
+													<li className=" a-inactive"><Link to="/">OffPlan</Link>
+													<ul>
+															<li ><Link to="/offplan-apartment-for-sale-dubai">Apartments </Link></li>
 
-													<li className="menu-icon a-inactive" ><a href="#">Exclusive Properties </a>
+															<li ><Link to="/offplan-villa-for-sale-dubai">Villas </Link></li>
+
+															<li ><Link to="/offplan-penthouses-for-sale-dubai" >Penthouses </Link></li>
+
+															<li ><Link to="/offplan-townhouses-for-sale-dubai">Townhouses </Link></li>
+														</ul>
+													</li>
+													<li className="a-inactive"><Link to="#">Explore Dubai </Link></li>
+
+													<li className="a-inactive" ><a href="#">Exclusive Properties </a>
 
 													</li>
-													<li className="menu-icon a-inactive"><Link to="#">Explore Dubai </Link></li>
-													<li className="menu-icon a-inactive"><Link to="/about-us">Our Mission </Link></li>
+													<li className="a-inactive"><Link to="#">Explore Dubai </Link></li>
+													<li className="a-inactive"><Link to="/about-us">Our Mission </Link></li>
 
-													<li className="menu-icon a-inactive"><Link to="/contact-us">Contact</Link></li>
+													<li className="a-inactive"><Link to="/contact-us">Contact</Link></li>
 													{/* <li className="special-link">
 			                    <Link to="/add-listing">Add Listing</Link>
 			                  </li> */}

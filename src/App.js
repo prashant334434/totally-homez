@@ -53,6 +53,7 @@ import GoogleMap from './components/section-components/GoogleMap';
 import ContactForm1 from './components/section-components/ContactForm1';
 import Contact2 from './components/section-components/Contact2';
 import Contact3 from './components/section-components/Contact3';
+import ContactPage from './components/ContactPage';
 
 
 
@@ -120,7 +121,7 @@ const App = () => {
 
           <Route path="/about-us" component={aboutUs} />
           <Route path="/shop-page" component={ShopNew} />
-          <Route path="/contact1" component={ContactForm1} />
+          <Route path="/contact" component={ContactPage} />
           <Route path="/contact2" component={Contact2} />
           <Route path="/contact3" component={Contact3} />
           <Route exact path="/best-communites-in-dubai/:communityName" component={GuideLine} />

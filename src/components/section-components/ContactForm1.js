@@ -2,8 +2,8 @@ import React from 'react'
 
 const ContactForm1 = () => {
   return (
-    <section class="bg-section">
-    <div class="container py-5">
+    <section class="bg-section pt-70">
+    <div class="container py-5 ">
         <h4 class="text-center text-white">Contact Us</h4>
         <p class="text-center  text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, voluptas?</p>
         <div class="row  g-4 py-5">
@@ -21,11 +21,15 @@ const ContactForm1 = () => {
                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, delectus.</p>
                <div class="mb-3">
                 {/* <label for="exampleFormControlInput1" class="form-label">Your Name</label> */}
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder='name' />
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder='Name' />
+              </div>
+              <div class="mb-3">
+                {/* <label for="exampleFormControlInput1" class="form-label">Your Name</label> */}
+                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder='Phone' />
               </div>
                <div class="mb-3">
                 {/* <label for="exampleFormControlInput1" class="form-label">Your Email</label> */}
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder='email' />
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder='Email' />
               </div>
               <div class="mb-3">
                 {/* <label for="exampleFormControlTextarea1" class="form-label">How can we help?</label> */}
