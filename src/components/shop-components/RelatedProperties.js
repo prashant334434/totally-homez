@@ -115,27 +115,28 @@ const RelatedProperties = (props) => {
                       <div className="product-img go-top">
                         {item.property_level ? (
                           <Link
-                            to={`/${url(item?.property_city)}/${url(
-                              item?.property_community
-                            )}/${url(item?.property_sub_community)}/${url(
-                              item?.property_type
-                            )}-for-${url(item?.property_for)}-${url(
-                              item?.property_level
-                            )}/th${item?.id}`}
-                          >
+                           to={`/${url(item?.property_city)}/${url(
+                             item?.property_community
+                           )}/${url(item?.property_sub_community)}/${url(
+                             item?.property_type
+                           )}-for-${url(item?.property_for)}-${url(
+                             item?.property_level
+                           )}/th${item?.id}`}
+                         >
                             <img
                               src={`${PROPERTY_IMAGES_URL}/${item?.img_name}`}
                               alt="#"
                             />
                           </Link>
                         ) : (
+                          
                           <Link
-                            to={`/${url(item?.property_city)}/${url(
-                              item?.property_community
-                            )}/${url(item?.property_sub_community)}/${url(
-                              item?.property_type
-                            )}-for-${url(item?.property_for)}/th${item?.id}`}
-                          >
+                           to={`/${url(item?.property_city)}/${url(
+                             item?.property_community
+                           )}/${url(
+                             item?.property_type
+                           )}-for-${url(item?.property_for)}-${url(item?.property_sub_community)}/th${item?.id}`}
+                         >
                             <img
                               src={`${PROPERTY_IMAGES_URL}/${item?.img_name}`}
                               alt="#"
@@ -155,14 +156,14 @@ const RelatedProperties = (props) => {
                           <div className="title_div">
                             {item.property_level ? (
                               <Link
-                                to={`/${url(item?.property_city)}/${url(
-                                  item?.property_community
-                                )}/${url(item?.property_sub_community)}/${url(
-                                  item?.property_type
-                                )}-for-${url(item?.property_for)}-${url(
-                                  item?.property_level
-                                )}/th${item?.id}`}
-                              >
+                               to={`/${url(item?.property_city)}/${url(
+                                 item?.property_community
+                               )}/${url(item?.property_sub_community)}/${url(
+                                 item?.property_type
+                               )}-for-${url(item?.property_for)}-${url(
+                                 item?.property_level
+                               )}/th${item?.id}`}
+                             >
                                 <h3
                                   dangerouslySetInnerHTML={{
                                     __html: item?.property_name,
@@ -172,14 +173,14 @@ const RelatedProperties = (props) => {
                               </Link>
                             ) : (
                               <Link
-                                to={`/${url(item?.property_city)}/${url(
-                                  item?.property_community
-                                )}/${url(item?.property_sub_community)}/${url(
-                                  item?.property_type
-                                )}-for-${url(item?.property_for)}/th${
-                                  item?.id
-                                }`}
-                              >
+                               to={`/${url(item?.property_city)}/${url(
+                                 item?.property_community
+                               )}/${url(
+                                 item?.property_type
+                               )}-for-${url(item?.property_for)}-${url(item?.property_sub_community)}/th${
+                                 item?.id
+                               }`}
+                             >
                                 <h3
                                   dangerouslySetInnerHTML={{
                                     __html: item?.property_name,
