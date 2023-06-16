@@ -196,8 +196,23 @@ const NavbarV3 = () => {
                           </Link>
                         </li>
 
-                        <li className="a-inactive">
-                          <a href="#">Exclusive Properties </a>
+                        <li  className=" a-inactive">
+                          <Link >Exclusive Properties </Link>
+						  <ul>
+						
+						
+                         
+                            <li>
+                              <Link to="/list-with-us">Property For Rent </Link>
+                            </li>
+
+                            <li>
+                              <Link to="/career">Property For Rent </Link>
+                            </li>
+
+                          </ul>
+						
+						  
                         </li>
                         <li className="a-inactive">
                           <Link to="/blogs">Explore Dubai </Link>

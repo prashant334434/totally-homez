@@ -154,9 +154,19 @@ const MobileNav = () => {
                           </Link>
                         </li>
 												</li>
-												<li><Link to="#">Exclusive Properties</Link>
+												<li><Link to="/">Exclusive Properties</Link>
+												<ul className='sub-menu'>
+												<li>
+                              <Link to="/list-with-us">Property For Rent </Link>
+                            </li>
 
+                            <li>
+                              <Link to="/career">Property For Rent</Link>
+                            </li>
+
+                            </ul>
 												</li>
+												
 												<li >
                           <Link to="/blogs">Explore Dubai </Link>
                         </li>
