@@ -21,6 +21,7 @@ import StickyBarIcon from './shop-components/sticky-iconbar';
 import RelatedProperties from './shop-components/RelatedProperties';
 import { PopupButton } from 'react-calendly';
 import GoogleMap from './section-components/GoogleMap';
+import MetaData from './Layout/MetaData';
 
 const Product_Details = () => {
     const { id } = useParams()
@@ -40,6 +41,7 @@ const Product_Details = () => {
     }
     return <div>
         <MobileNav />
+        <MetaData title={propertyDetails?.property_seo_title} metaDesription={propertyDetails?.property_seo_dsc}/>
         <div className='parentDiv'>
             <div className=''>
                 <ProductSlider propertyDetails={propertyDetails} className="child1" />

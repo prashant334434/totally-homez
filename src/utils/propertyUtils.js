@@ -101,3 +101,20 @@ export const getPropertiesCategoryUtils= async (property_city,property_type,prop
     return arr.every((element) => element === "");
   }
   
+
+
+  export const  capitalizeWordsInHyphenatedString=(str)=> {
+    const words = str.split('-');
+    const capitalizedWords = [];
+  
+    for (let word of words) {
+      const capitalizedWord = word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+      capitalizedWords.push(capitalizedWord);
+    }
+  
+    const capitalizedString = capitalizedWords.join('-');
+    return capitalizedString;
+  }
+  
+ 
+  

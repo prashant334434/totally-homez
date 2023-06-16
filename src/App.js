@@ -138,7 +138,9 @@ const App = () => {
 
           
 
+          [Yesterday 8:37 am] Rohit Rai
 
+property-for-sale-dubai// only sale and dubai are dynamic
 
 
         </Switch>
