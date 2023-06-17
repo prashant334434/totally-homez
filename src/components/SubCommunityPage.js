@@ -49,7 +49,6 @@ const [getLevelsInASubCommunity, setGetLevelsInASubCommunity] = useState([])
     const { property_for, property_city, property_community, property_type, property_sub_community } = useParams()
     const orignalSubCommunity = property_sub_community?.split("-").join(" ")
     const orignalCommunity=property_community?.split("-").join(" ")
-    console.log("orignalSubCommunity", orignalSubCommunity)
     const { loading: communityloading, community } = useSelector((state) => state.community);
     const [propertyCategory, setpropertyCategory] = useState([])
     

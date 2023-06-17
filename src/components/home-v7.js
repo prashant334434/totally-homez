@@ -30,6 +30,7 @@ import AboutUs from './about-uss';
 import AboutUsHome from './shop-components/AboutUsHome';
 import Curousal1 from './shop-components/curosal-1';
 import { getHomePageApi } from '../actions/homePageActions';
+import SideEffect from '../utils/cleanup';
 
 
 const Home_V7 = () => {
@@ -62,6 +63,8 @@ const Home_V7 = () => {
     },
   ];
   return <div>
+            <SideEffect/>
+
     {homePage?.length > 0 &&
       <MetaData title={homePage[0]?.seo_titel} metaKeyword={homePage[0]?.seo_teg} metaDesription={homePage[0]?.seo_des} />
 

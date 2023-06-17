@@ -54,6 +54,7 @@ import ContactForm1 from './components/section-components/ContactForm1';
 import Contact2 from './components/section-components/Contact2';
 import Contact3 from './components/section-components/Contact3';
 import ContactPage from './components/ContactPage';
+import SideEffect from './utils/cleanup';
 
 
 
@@ -81,6 +82,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <div>
+        <SideEffect/>
         <Switch>
           <Route exact path="/" component={HomeV7} />
 

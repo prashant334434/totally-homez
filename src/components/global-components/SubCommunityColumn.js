@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { allEmptyStrings, capitalizeWords } from "../../utils/propertyUtils";
+import { allEmptyStrings, capitalizeWords, replaceSpacesWithHyphensAndLowerCase } from "../../utils/propertyUtils";
+import { useParams } from "react-router-dom/cjs/react-router-dom.min";
 
 const SubCommunityColumnProperty = ({ getLevelsInASubCommunity }) => {
+  const {property_city,property_community,property_type,property_for,property_sub_community}=useParams()
   let levelsArray = [];
   if (getLevelsInASubCommunity) {
     for (let i = 0; i < getLevelsInASubCommunity.length; i++) {
       levelsArray.push(getLevelsInASubCommunity[i].property_level);
     }
   }
-  console.log(levelsArray);
   const [itemsToShow, setItemsToShow] = useState(8);
   const showmore = () => {
     setItemsToShow(levelsArray.length);
@@ -64,7 +65,7 @@ const SubCommunityColumnProperty = ({ getLevelsInASubCommunity }) => {
                   <div className="footer-widget-breadcrum footer-menu-widget clearfix">
                     <div className="footer-menu go-top">
                       <ul>
-                        <Link>
+                        <Link to={`/${property_city}/${property_community}/${property_sub_community}/${property_type}-for-${property_for}-${replaceSpacesWithHyphensAndLowerCase(item)}`}>
                         <li>
                           {capitalizeWords(item)}
                         </li>

@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Loader from "../Loader/Loader";
-import { allEmptyStrings } from "../../utils/propertyUtils";
+import { allEmptyStrings, replaceSpacesWithHyphensAndLowerCase } from "../../utils/propertyUtils";
+import { useParams } from "react-router-dom/cjs/react-router-dom.min";
 
 const CommunityColumnProperty = ({
   loading,
   getSubCommunitiesInaCommunity,
 }) => {
   console.log("getSubCommunitiesInaCommunity", getSubCommunitiesInaCommunity);
+  const {property_city,property_type,property_for,property_community}=useParams()
   let subCommunityArray = [];
   if (getSubCommunitiesInaCommunity) {
     for (let i = 0; i < getSubCommunitiesInaCommunity.length; i++) {
@@ -80,7 +82,7 @@ const CommunityColumnProperty = ({
                       <div className="footer-menu go-top">
                         <ul>
                           <li>
-                            <Link to="/about">
+                            <Link to={`/${property_city}/${property_community}/${property_type}-for-${property_for}-${replaceSpacesWithHyphensAndLowerCase(item)}`}>
                               {item}
                             </Link>
                           </li>

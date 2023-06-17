@@ -197,7 +197,7 @@ const NavbarV3 = () => {
                         </li>
 
                         <li  className=" a-inactive">
-                          <Link >Exclusive Properties </Link>
+                          <Link to={``}>Exclusive Properties </Link>
 						  <ul>
 						
 						

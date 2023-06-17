@@ -14,7 +14,6 @@ const SubCommunityPropertyGrid = (props) => {
   const dispatch=useDispatch()
   const history=useHistory()
   const handleLinkClick = (id, name) => {
-    console.log("agentIdHome", id);
 
     dispatch(currentTeamMember(id));
     history.push(`/team/${name.toLowerCase().split(" ").join("-")}`);
@@ -185,7 +184,7 @@ const SubCommunityPropertyGrid = (props) => {
                       <div className="container-fluid">
                         <div className="row ltn__product slick-arrow-1">
                           {props?.propertySubcom?.map((categoryProperty) => (
-                            <div className="col-lg-4">
+                            <div index={categoryProperty?.id} className="col-lg-4">
                               <div
                                 key={categoryProperty?.id}
                                 className="ltn__product-item ltn__product-item-4 text-center---"
@@ -386,7 +385,7 @@ const SubCommunityPropertyGrid = (props) => {
                                         >
                                           <i className="fa fa-phone rotateclass"></i>
                                           <span className="callclass hideclass">
-                                            <a>Call</a>
+                                            Call
                                           </span>
                                         </a>
                                       </li>

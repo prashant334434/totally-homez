@@ -277,7 +277,7 @@ const PenthouseProductGridRent = (props) => {
                              >
                                <i className="fa fa-phone rotateclass"></i>
                                <span className="callclass hideclass">
-                                 <a>Call</a>
+                                 Call
                                </span>
                              </a>
                            </li>
