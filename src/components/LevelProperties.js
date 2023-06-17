@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import { Link, useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import {
   getCatgoryProperties,
   getTownhouseCatgoryProperties,
@@ -9,7 +9,17 @@ import {
 import { PROPERTY_IMAGES_URL, TEAM_API_URL } from "../constants/config";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { currentTeamMember } from "../actions/teamActions";
 const LevelProperties = (props) => {
+  const history=useHistory()
+
+
+  const handleLinkClick = (id, name) => {
+    console.log("agentIdHome", id);
+
+    dispatch(currentTeamMember(id));
+    history.push(`/team/${name.toLowerCase().split(" ").join("-")}`);
+  };
   let carouselItems = [
     {
       id: 1,
@@ -348,8 +358,13 @@ const LevelProperties = (props) => {
                                     </div>
                                     <div className="agent-brief go-top">
                                       <p className="brokerName">
-                                        <Link
-                                          to={`/team-details/${categoryProperty?.property_agent_name}`}
+                                      <Link
+                                          onClick={() =>
+                                            handleLinkClick(
+                                              categoryProperty?.property_agent_name,
+                                              categoryProperty?.name
+                                            )
+                                          }
                                         >
                                           {categoryProperty?.name}
                                         </Link>

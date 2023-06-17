@@ -1,19 +1,27 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import { Link, useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import {
   getCatgoryProperties,
   getTownhouseCatgoryProperties,
   getTownhouseCatgoryRentProperties,
 } from "../../actions/catgoryActions";
 import { PROPERTY_IMAGES_URL, TEAM_API_URL } from "../../constants/config";
+import { currentTeamMember } from "../../actions/teamActions";
 
 const TyepPropertyGrid = (props) => {
+  const history = useHistory();
+  const dispatch = useDispatch();
   const [propertyCategory, setPropertyCategory] = useState("apartment");
   let publicUrl = process.env.PUBLIC_URL + "/";
   let customClass = props.customClass ? props.customClass : "";
   // console.log(data)
+  const handleLinkClick = (id, name) => {
+    console.log("agentIdHome", id);
 
+    dispatch(currentTeamMember(id));
+    history.push(`/team/${name.toLowerCase().split(" ").join("-")}`);
+  };
   const url = (titleName) => {
     return titleName?.split(" ")?.join("-")?.toLowerCase();
   };
@@ -167,18 +175,18 @@ const TyepPropertyGrid = (props) => {
                                     </Link>
                                   ) : (
                                     <Link
-                                        to={`/${url(
-                                          categoryProperty?.property_city
-                                        )}/${url(
-                                          categoryProperty?.property_community
-                                        )}/${url(
-                                          categoryProperty?.property_type
-                                        )}-for-${url(
-                                          categoryProperty?.property_for
-                                        )}-${url(
-                                          categoryProperty?.property_sub_community
-                                        )}/th${categoryProperty?.id}`}
-                                      >
+                                      to={`/${url(
+                                        categoryProperty?.property_city
+                                      )}/${url(
+                                        categoryProperty?.property_community
+                                      )}/${url(
+                                        categoryProperty?.property_type
+                                      )}-for-${url(
+                                        categoryProperty?.property_for
+                                      )}-${url(
+                                        categoryProperty?.property_sub_community
+                                      )}/th${categoryProperty?.id}`}
+                                    >
                                       <img
                                         src={`${PROPERTY_IMAGES_URL}/${categoryProperty?.img_name}`}
                                         alt="#"
@@ -255,8 +263,8 @@ const TyepPropertyGrid = (props) => {
                                     </Link>
                                     <br></br>
                                     <small>
-                                    {categoryProperty?.property_community}{" "}- {" "}
-                           {categoryProperty?.property_sub_community}
+                                      {categoryProperty?.property_community} -{" "}
+                                      {categoryProperty?.property_sub_community}
                                       Ref No.{categoryProperty?.property_ref_no}
                                     </small>
                                   </div>
@@ -305,7 +313,12 @@ const TyepPropertyGrid = (props) => {
                                     <div className="agent-brief go-top">
                                       <p className="brokerName">
                                         <Link
-                                          to={`/team-details/${categoryProperty?.property_agent_name}`}
+                                          onClick={() =>
+                                            handleLinkClick(
+                                              categoryProperty?.property_agent_name,
+                                              categoryProperty?.name
+                                            )
+                                          }
                                         >
                                           {categoryProperty?.name}
                                         </Link>
