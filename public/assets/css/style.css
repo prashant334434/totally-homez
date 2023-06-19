@@ -11082,8 +11082,8 @@ input::placeholder {
 }
 
 .carousel img {
-  width: 100%;
-  height: auto;
+  width: 100%!important;
+  height: 80vh!important;
   max-width: 100%;
 }
 
@@ -19463,3 +19463,10 @@ a.ltn__utilize-toggle.close {
 .hoverHeading{
   cursor: pointer;
 }
+
+
+
+
+
+
+

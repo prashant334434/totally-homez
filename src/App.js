@@ -60,6 +60,8 @@ import ExclusiveProperties from './components/section-components/ExclusiveProper
 import ExclusivePropertiesCommunity from './components/section-components/ExclusivePropertiesCommunity';
 import ExclusivePropertiesSubCommunity from './components/section-components/ExclusivePropertiesSubCommunity';
 import ExclusivePropertiesLevel from './components/section-components/ExclusivePropertiesLevel';
+import NewSlide from './components/NewSlide';
+
 
 
 
@@ -127,6 +129,8 @@ const App = () => {
           <Route exact path="/property/:type" component={PropertyType} />
           <Route exact path="/property/:type" component={PropertyType} />
           <Route exact path="/tt" component={TailwindSlider} />
+          <Route path="/property/:type" component={PropertyType} />
+          <Route path="/tt" component={NewSlide} />
 
 
           <Route exact path="/about-us" component={aboutUs} />

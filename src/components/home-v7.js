@@ -31,7 +31,6 @@ import AboutUsHome from './shop-components/AboutUsHome';
 import Curousal1 from './shop-components/curosal-1';
 import { getHomePageApi } from '../actions/homePageActions';
 import SideEffect from '../utils/cleanup';
-import { create } from 'csrf';
 
 
 const Home_V7 = () => {
