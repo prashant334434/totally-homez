@@ -55,6 +55,7 @@ import Contact2 from './components/section-components/Contact2';
 import Contact3 from './components/section-components/Contact3';
 import ContactPage from './components/ContactPage';
 import SideEffect from './utils/cleanup';
+import TailwindSlider from './components/TailwindSlider';
 
 
 
@@ -119,6 +120,7 @@ const App = () => {
           <Route exact path="/team" component={OurTeam} />
 
           <Route path="/property/:type" component={PropertyType} />
+          <Route path="/tt" component={TailwindSlider} />
 
 
           <Route path="/about-us" component={aboutUs} />
