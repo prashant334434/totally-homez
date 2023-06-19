@@ -31,7 +31,7 @@ dispatch(getPropertiesFor(separatedStrings[0]))
 
 
 <MobileNav/>
-<ExclusivePropertiesBreadCrum />
+<ExclusivePropertiesBreadCrum separatedStrings={separatedStrings} />
 
 <SearchBarV2/>
 <TypePropertyContentExclv/>
