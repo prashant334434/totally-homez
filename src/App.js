@@ -57,6 +57,8 @@ import ContactPage from './components/ContactPage';
 import SideEffect from './utils/cleanup';
 import TailwindSlider from './components/TailwindSlider';
 import ExclusiveProperties from './components/section-components/ExclusiveProperties';
+import NewSlide from './components/NewSlide';
+
 
 
 
@@ -121,7 +123,7 @@ const App = () => {
           <Route exact path="/team" component={OurTeam} />
 
           <Route path="/property/:type" component={PropertyType} />
-          <Route path="/tt" component={TailwindSlider} />
+          <Route path="/tt" component={NewSlide} />
 
 
           <Route path="/about-us" component={aboutUs} />

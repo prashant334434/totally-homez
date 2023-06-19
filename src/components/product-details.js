@@ -22,7 +22,10 @@ import RelatedProperties from './shop-components/RelatedProperties';
 import { PopupButton } from 'react-calendly';
 import GoogleMap from './section-components/GoogleMap';
 import MetaData from './Layout/MetaData';
+// import TailwindSlider from '../TailwindSlider';
+import TailwindSlider from './TailwindSlider';
 
+ 
 const Product_Details = () => {
     const { id } = useParams()
     console.log(id)
@@ -44,7 +47,9 @@ const Product_Details = () => {
         <MetaData title={propertyDetails?.property_seo_title} metaDesription={propertyDetails?.property_seo_dsc}/>
         <div className='parentDiv'>
             <div className=''>
-                <ProductSlider propertyDetails={propertyDetails} className="child1" />
+                {/* <ProductSlider propertyDetails={propertyDetails} className="child1" /> */}
+                {/* <Tailwind /> */}
+                <TailwindSlider propertyDetails={propertyDetails} className="child1"/>
             </div>
             <div className='child2'>
                 {/* <div className='leftContent'>

@@ -18,7 +18,7 @@ const PageHead = (props) => {
 	}
   return (
     <div>
-        	<div className={"ltn__breadcrumb-area text-left   "+CustomClass} >
+        	<div className={"ltn__breadcrumb-area text-left  mt-140  "+CustomClass} >
 			<div className="container">
 				<div className="row">
 				<div className="col-lg-12">

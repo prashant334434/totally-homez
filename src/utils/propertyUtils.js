@@ -20,6 +20,17 @@ export const getPropertiesCategoryUtils= async (property_city,property_type,prop
     }
   };
 
+  export const getImagesApi= async () => {
+
+    try {
+      const response = await axios.get(`https://totallyhomerealestate.com/API/api/img_api`);
+      return response.data;
+    } catch (error) {
+      throw new Error('Failed to fetch property types.');
+    }
+  };
+
+
 
 
   
