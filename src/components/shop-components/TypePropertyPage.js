@@ -10,16 +10,22 @@ import { useDispatch } from 'react-redux';
 import { getPropertiesType } from '../../actions/propertiesActions2';
 import { useParams } from 'react-router-dom';
 import TypePropertyContent from '../section-components/TypePropertyContent';
-import { capitalizeWords, getPropertiesTypeUtils, replaceHyphensAndCapitalize } from '../../utils/propertyUtils';
+import { capitalizeWords, getPropertiesTypeUtils, replaceHyphensAndCapitalize, replaceHyphensWithSpaces } from '../../utils/propertyUtils';
 import TyepPropertyGrid from './TyepPropertyGrid';
 import Loader from '../Loader/Loader';
 import TypeBreadcrums from '../global-components/typeBreadcrums';
 import MetaData from '../Layout/MetaData';
+import { useLocation } from 'react-router-dom/cjs/react-router-dom.min';
 
 const TypePropertyPage = () => {
+  console.log("TypePropertyPageTypePropertyPage")
     const capitalizeFirstLetter=(string)=> {
         return string.replace(/^\w/, (firstLetter) => firstLetter.toUpperCase());
       }
+      const location = useLocation();
+      const pathnameParts = location.pathname.split('/');
+    
+    console.log(pathnameParts)
     const { property_type, property_for, property_city } = useParams()
     console.log(property_type, property_for, property_city)
     const [propertyTypes, setPropertyTypes] = useState([]);
@@ -30,7 +36,7 @@ const TypePropertyPage = () => {
             try {
                 setLoading(true);
                 console.log("before api call",propertyTypes)
-                const data = await getPropertiesTypeUtils(property_type, property_for, property_city);
+                const data = await getPropertiesTypeUtils(replaceHyphensWithSpaces(property_type), property_for, property_city);
                 console.log("data22",data)
                 console.log("after api call",propertyTypes)
                 setPropertyTypes(data);

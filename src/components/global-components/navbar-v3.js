@@ -199,11 +199,11 @@ const NavbarV3 = () => {
 						
                          
                             <li>
-                              <Link to="/property-for-rent-dubai">Property For Rent </Link>
+                              <Link to="/properties-for-rent-dubai">Property For Rent </Link>
                             </li>
 
                             <li>
-                              <Link to="/property-for-sale-dubai">Property For Sale </Link>
+                              <Link to="/properties-for-sale-dubai">Property For Sale </Link>
                             </li>
 
                           </ul>

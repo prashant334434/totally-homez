@@ -57,6 +57,9 @@ import ContactPage from './components/ContactPage';
 import SideEffect from './utils/cleanup';
 import TailwindSlider from './components/TailwindSlider';
 import ExclusiveProperties from './components/section-components/ExclusiveProperties';
+import ExclusivePropertiesCommunity from './components/section-components/ExclusivePropertiesCommunity';
+import ExclusivePropertiesSubCommunity from './components/section-components/ExclusivePropertiesSubCommunity';
+import ExclusivePropertiesLevel from './components/section-components/ExclusivePropertiesLevel';
 
 
 
@@ -87,6 +90,7 @@ const App = () => {
         <SideEffect/>
         <Switch>
           <Route exact path="/" component={HomeV7} />
+          <Route exact path="/properties-for:property_type:property_city" component={ExclusiveProperties } />
 
 
           <Route path="/career" component={CareerV1} />
@@ -114,38 +118,50 @@ const App = () => {
           <Route exact path="/offplan-projects-in-dubai/:offPlanCategoryName" component={OffPlan} />
 
 
-          <Route path="/property-details/:id" component={ProdductDetails} />
-          <Route path="/:property_city/:property_community/:property_type-for-:property_for-:property_sub_community/TH:id" component={ProdductDetails} />
-          <Route path="/:property_city/:property_community/:property_sub_community/:property_type-for-:property_for-:property_level/TH:id" component={ProdductDetails} />
-          <Route path="/contact-us" component={NewContact} />
-          <Route exact path="/team" component={OurTeam} />
+          <Route exact path="/property-details/:id" component={ProdductDetails} />
+          <Route exact path="/:property_city/:property_community/:property_type-for-:property_for-:property_sub_community/TH:id" component={ProdductDetails} />
+          <Route exact path="/:property_city/:property_community/:property_sub_community/:property_type-for-:property_for-:property_level/TH:id" component={ProdductDetails} />
+          <Route exact path="/contact-us" component={NewContact} />
+          <Route  exact path="/team" component={OurTeam} />
 
           <Route exact path="/property/:type" component={PropertyType} />
-          <Route path="/property/:type" component={PropertyType} />
-          <Route path="/tt" component={TailwindSlider} />
+          <Route exact path="/property/:type" component={PropertyType} />
+          <Route exact path="/tt" component={TailwindSlider} />
 
 
-          <Route path="/about-us" component={aboutUs} />
-          <Route path="/shop-page" component={ShopNew} />
+          <Route exact path="/about-us" component={aboutUs} />
+          <Route exact path="/shop-page" component={ShopNew} />
           <Route path="/contact" component={ContactPage} />
-          <Route path="/contact2" component={Contact2} />
-          <Route path="/contact3" component={Contact3} />
+          <Route exact path="/contact2" component={Contact2} />
+          <Route exact path="/contact3" component={Contact3} />
           <Route exact path="/best-communites-in-dubai/:communityName" component={GuideLine} />
           <Route exact path="/bread-crums" component={BreadCrumbs} />
           {/* <Route exact path="/:property_city/:property_community/:property_sub_community/:property_type-for-:property_for" component={ LevelPage } /> */}
            <Route path="/:property_city/:property_community/:property_sub_community/:property_type-for-:property_for-:property_level" component={ LevelPage } /> 
           <Route exact path="/:property_city/:property_community/:property_type-for-:property_for-:property_sub_community" component={SubCommunityPage} />
           <Route exact path="/:property_city/:property_type-for-:property_for-:property_community" component={CommunityPage} />
- 
+          <Route exact path="/:property_type-for-:property_for-:property_city" component={TypePropertyPage} />
+
           <Route exact path="/google-maps" component={GoogleMapOnPlaceBasis } />
           <Route exact path="/google-maps-lat-lang-test" component={GoogleMap } />
-
- 
-
-
-
-
           
+
+
+          <Route exact path="/properties-for-:prop_for-:prop_city" component={ExclusiveProperties } />
+
+
+          <Route exact path="/properties/properties-for-:property_for-:property_community" component={ExclusivePropertiesCommunity } />
+
+
+          <Route exact path="/properties/community/properties-for-:property_for-:property_subomm" component={ExclusivePropertiesSubCommunity } />
+
+          <Route exact path="/properties/community/subcomm/properties-for-:property_for-:property_level/th1" component={ExclusivePropertiesLevel } />
+
+
+
+          <Route exact path="/properties/community/subcomm/th1" component={ExclusivePropertiesLevel } />
+
+
 
 
         </Switch>
