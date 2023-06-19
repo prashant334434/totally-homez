@@ -24,6 +24,7 @@ import GoogleMap from './section-components/GoogleMap';
 import MetaData from './Layout/MetaData';
 // import TailwindSlider from '../TailwindSlider';
 import TailwindSlider from './TailwindSlider';
+import NewSlide from './NewSlide';
 
  
 const Product_Details = () => {
@@ -49,7 +50,8 @@ const Product_Details = () => {
             <div className=''>
                 {/* <ProductSlider propertyDetails={propertyDetails} className="child1" /> */}
                 {/* <Tailwind /> */}
-                <TailwindSlider propertyDetails={propertyDetails} className="child1"/>
+                {/* <TailwindSlider propertyDetails={propertyDetails} className="child1"/> */}
+                <NewSlide propertyDetails={propertyDetails} className="child1"/>
             </div>
             <div className='child2'>
                 {/* <div className='leftContent'>
