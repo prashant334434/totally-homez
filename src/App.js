@@ -118,7 +118,7 @@ const App = () => {
           <Route path="/contact-us" component={NewContact} />
           <Route exact path="/team" component={OurTeam} />
 
-          <Route path="/property/:type" component={PropertyType} />
+          <Route exact path="/property/:type" component={PropertyType} />
 
 
           <Route path="/about-us" component={aboutUs} />
@@ -137,10 +137,8 @@ const App = () => {
 
           <Route exact path="/google-maps" component={GoogleMapOnPlaceBasis } />
           <Route exact path="/google-maps-lat-lang-test" component={GoogleMap } />
-          <Route exact path="/property-for-:property_type-:property_city" component={GoogleMap } />
 
 
-// only sale and dubai are dynamic
 
 
 

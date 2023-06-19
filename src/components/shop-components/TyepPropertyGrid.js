@@ -10,6 +10,7 @@ import { PROPERTY_IMAGES_URL, TEAM_API_URL } from "../../constants/config";
 import { currentTeamMember } from "../../actions/teamActions";
 
 const TyepPropertyGrid = (props) => {
+  console.log("TyepPropertyGrid",props)
   const history = useHistory();
   const dispatch = useDispatch();
   const [propertyCategory, setPropertyCategory] = useState("apartment");

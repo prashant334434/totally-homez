@@ -40,6 +40,7 @@ const TypePropertyPage = () => {
 
         fetchData();
     }, []);
+    console.log(propertyTypes)
 if(loading){
     return <Loader/>
 }
