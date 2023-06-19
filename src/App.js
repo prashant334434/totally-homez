@@ -137,6 +137,10 @@ const App = () => {
 
           <Route exact path="/google-maps" component={GoogleMapOnPlaceBasis } />
           <Route exact path="/google-maps-lat-lang-test" component={GoogleMap } />
+          <Route exact path="/property-for-:property_type-:property_city" component={GoogleMap } />
+
+
+// only sale and dubai are dynamic
 
 
 
