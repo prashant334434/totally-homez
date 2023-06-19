@@ -29,7 +29,10 @@ const TypePropertyPage = () => {
         const fetchData = async () => {
             try {
                 setLoading(true);
+                console.log("before api call",propertyTypes)
                 const data = await getPropertiesTypeUtils(property_type, property_for, property_city);
+                console.log("data22",data)
+                console.log("after api call",propertyTypes)
                 setPropertyTypes(data);
                 setLoading(false);
             } catch (error) {

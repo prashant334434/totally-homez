@@ -1,37 +1,40 @@
-import React, { useEffect } from 'react';
-import Navbar from './global-components/navbar';
-import PageHeader from './global-components/page-header';
-import TeamDetails from './section-components/team-details';
-import CallToActionV1 from './section-components/call-to-action-v1';
-import Footer from './global-components/footer';
-import VideoV1 from './section-components/video-v1';
-import { useDispatch, useSelector } from 'react-redux';
-import { useParams } from 'react-router-dom';
-import { getTeamDetailsApi } from '../actions/teamActions';
-import MobileNav from './global-components/Mobile-nav';
-import AgentPropertyGrid from './shop-components/AgentPropertyGrid';
-
+import React, { useEffect } from "react";
+import Navbar from "./global-components/navbar";
+import PageHeader from "./global-components/page-header";
+import TeamDetails from "./section-components/team-details";
+import CallToActionV1 from "./section-components/call-to-action-v1";
+import Footer from "./global-components/footer";
+import VideoV1 from "./section-components/video-v1";
+import { useDispatch, useSelector } from "react-redux";
+import { useParams } from "react-router-dom";
+import { getTeamDetailsApi } from "../actions/teamActions";
+import MobileNav from "./global-components/Mobile-nav";
+import AgentPropertyGrid from "./shop-components/AgentPropertyGrid";
 
 const Team_Details = () => {
-const {loading,teamDetails}=useSelector((state)=>state.teamDetails)
-const {currentTeamMemberId}=useSelector((state)=>state.currentTeamMemberId)
-    const dispatch=useDispatch()
-    const {id}=useParams()
+  const { loading, teamDetails } = useSelector((state) => state.teamDetails);
+  const { currentTeamMemberId } = useSelector(
+    (state) => state.currentTeamMemberId
+  );
+  const dispatch = useDispatch();
+  const { id } = useParams();
 
-    useEffect(()=>{
-        dispatch(getTeamDetailsApi(currentTeamMemberId))
+  useEffect(() => {
+    dispatch(getTeamDetailsApi(currentTeamMemberId));
+    window.scrollTo(0, 0);
+  }, [dispatch]);
+  return (
+    <div>
+      <MobileNav />
 
-    },[dispatch])
-    return <div>
-        <MobileNav />
-        
- 
+      {teamDetails && (
         <TeamDetails loading={loading} teamDetails={teamDetails} />
-        <AgentPropertyGrid agentId={currentTeamMemberId}/>
-        {/* <CallToActionV1 /> */}
-        <Footer />
+      )}
+      <AgentPropertyGrid agentId={currentTeamMemberId} />
+      {/* <CallToActionV1 /> */}
+      <Footer />
     </div>
-}
+  );
+};
 
-export default Team_Details
-
+export default Team_Details;

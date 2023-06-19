@@ -11,8 +11,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { currentTeamMember } from "../actions/teamActions";
 const LevelProperties = (props) => {
-  const history=useHistory()
-
+  const history = useHistory();
 
   const handleLinkClick = (id, name) => {
     console.log("agentIdHome", id);
@@ -199,8 +198,8 @@ const LevelProperties = (props) => {
                                 className="ltn__product-item ltn__product-item-4 text-center---"
                               >
                                 <div className="product-img go-top">
-                                 { categoryProperty?.property_level ?(
-                                  <Link
+                                  {categoryProperty?.property_level ? (
+                                    <Link
                                       to={`/${url(
                                         categoryProperty?.property_city
                                       )}/${url(
@@ -215,32 +214,32 @@ const LevelProperties = (props) => {
                                         categoryProperty?.property_level
                                       )}/th${categoryProperty?.id}`}
                                     >
- <img
-   src={`${PROPERTY_IMAGES_URL}/${categoryProperty?.img_name}`}
-   alt="#"
- />
-</Link>
-                                 ):(
-                                  <Link
-                                        to={`/${url(
-                                          categoryProperty?.property_city
-                                        )}/${url(
-                                          categoryProperty?.property_community
-                                        )}/${url(
-                                          categoryProperty?.property_type
-                                        )}-for-${url(
-                                          categoryProperty?.property_for
-                                        )}-${url(
-                                          categoryProperty?.property_sub_community
-                                        )}/th${categoryProperty?.id}`}
-                                      >
-                                  <img
-                                    src={`${PROPERTY_IMAGES_URL}/${categoryProperty?.img_name}`}
-                                    alt="#"
-                                  />
-                                </Link>
-                                 )}
-                                 
+                                      <img
+                                        src={`${PROPERTY_IMAGES_URL}/${categoryProperty?.img_name}`}
+                                        alt="#"
+                                      />
+                                    </Link>
+                                  ) : (
+                                    <Link
+                                      to={`/${url(
+                                        categoryProperty?.property_city
+                                      )}/${url(
+                                        categoryProperty?.property_community
+                                      )}/${url(
+                                        categoryProperty?.property_type
+                                      )}-for-${url(
+                                        categoryProperty?.property_for
+                                      )}-${url(
+                                        categoryProperty?.property_sub_community
+                                      )}/th${categoryProperty?.id}`}
+                                    >
+                                      <img
+                                        src={`${PROPERTY_IMAGES_URL}/${categoryProperty?.img_name}`}
+                                        alt="#"
+                                      />
+                                    </Link>
+                                  )}
+
                                   <div className="product-badge">
                                     <ul>
                                       <li className="sale-badge bg-green">
@@ -251,7 +250,7 @@ const LevelProperties = (props) => {
                                 </div>
                                 <div className="product-info">
                                   <div className="product-price">
-                                    {categoryProperty?.property_level ?(
+                                    {categoryProperty?.property_level ? (
                                       <Link
                                         to={`/${url(
                                           categoryProperty?.property_city
@@ -267,14 +266,15 @@ const LevelProperties = (props) => {
                                           categoryProperty?.property_level
                                         )}/th${categoryProperty?.id}`}
                                       >
-   <h3 dangerouslySetInnerHTML={{
-   __html: categoryProperty?.property_name,
- }}
- className="product-title go-top"
-/>
-</Link>
-
-                                    ):(
+                                        <h3
+                                          dangerouslySetInnerHTML={{
+                                            __html:
+                                              categoryProperty?.property_name,
+                                          }}
+                                          className="product-title go-top"
+                                        />
+                                      </Link>
+                                    ) : (
                                       <Link
                                         to={`/${url(
                                           categoryProperty?.property_city
@@ -288,32 +288,32 @@ const LevelProperties = (props) => {
                                           categoryProperty?.property_sub_community
                                         )}/th${categoryProperty?.id}`}
                                       >
-                                      <h3 dangerouslySetInnerHTML={{
-                                      __html: categoryProperty?.property_name,
-                                    }}
-                                    className="product-title go-top"
-                                   />
-                                   </Link>
+                                        <h3
+                                          dangerouslySetInnerHTML={{
+                                            __html:
+                                              categoryProperty?.property_name,
+                                          }}
+                                          className="product-title go-top"
+                                        />
+                                      </Link>
                                     )}
-                                   
+
                                     <span>
                                       AED {categoryProperty?.property_price}
                                     </span>
+                                    
                                   </div>
                                   <div className="product-description">
-                                    <Link>
-                                      {" "}
-                                      {categoryProperty?.property_address}
-                                    </Link>
+                                    <p>
+                                      {categoryProperty?.property_community} -{" "}
+                                      {categoryProperty?.property_sub_community}
+                                    </p>
                                     <br></br>
                                     <small>
-                                    <p>
-                           {categoryProperty?.property_community}{" "}- {" "}
-                           {categoryProperty?.property_sub_community}
-                         </p>
                                       Ref No.{categoryProperty?.property_ref_no}
                                     </small>
                                   </div>
+                                  
                                   <div>
                                     <center>
                                       <ul className="ltn__list-item-2 ltn__list-item-2-before">
@@ -358,7 +358,7 @@ const LevelProperties = (props) => {
                                     </div>
                                     <div className="agent-brief go-top">
                                       <p className="brokerName">
-                                      <Link
+                                        <Link
                                           onClick={() =>
                                             handleLinkClick(
                                               categoryProperty?.property_agent_name,

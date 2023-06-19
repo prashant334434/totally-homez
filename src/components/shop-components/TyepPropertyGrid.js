@@ -10,7 +10,7 @@ import { PROPERTY_IMAGES_URL, TEAM_API_URL } from "../../constants/config";
 import { currentTeamMember } from "../../actions/teamActions";
 
 const TyepPropertyGrid = (props) => {
-  console.log("TyepPropertyGrid",props)
+  console.log("TyepPropertyGrid", props);
   const history = useHistory();
   const dispatch = useDispatch();
   const [propertyCategory, setPropertyCategory] = useState("apartment");
@@ -258,14 +258,12 @@ const TyepPropertyGrid = (props) => {
                                     </span>
                                   </div>
                                   <div className="product-description">
-                                    <Link>
-                                      {" "}
-                                      {categoryProperty?.property_address}
-                                    </Link>
-                                    <br></br>
-                                    <small>
+                                    <p>
                                       {categoryProperty?.property_community} -{" "}
                                       {categoryProperty?.property_sub_community}
+                                    </p>
+                                    <br></br>
+                                    <small>
                                       Ref No.{categoryProperty?.property_ref_no}
                                     </small>
                                   </div>

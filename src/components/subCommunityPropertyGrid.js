@@ -293,13 +293,11 @@ const SubCommunityPropertyGrid = (props) => {
                                     </span>
                                   </div>
                                   <div className="product-description">
-                                    <Link>
-                                      {" "}
-                                      {categoryProperty?.property_address}
-                                    </Link>
+                                    <p>
+                                      {categoryProperty?.property_community} -{" "}
+                                      {categoryProperty?.property_sub_community}
+                                    </p>
                                     <br></br>
-                                    {categoryProperty?.property_community}{" "}- {" "}
-                           {categoryProperty?.property_sub_community}
                                     <small>
                                       Ref No.{categoryProperty?.property_ref_no}
                                     </small>
@@ -335,6 +333,7 @@ const SubCommunityPropertyGrid = (props) => {
                                       </ul>
                                     </center>
                                   </div>
+                                  
                                 </div>
                                 <div className="product-info-bottom">
                                   <div className="real-estate-agent wcallFlex">

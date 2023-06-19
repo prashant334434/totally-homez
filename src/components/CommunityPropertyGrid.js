@@ -292,17 +292,16 @@ const CommunityPropertyGrid = (props) => {
                                     </span>
                                   </div>
                                   <div className="product-description">
-                                    <Link>
-                                      {" "}
-                                      {categoryProperty?.property_address}
-                                    </Link>
+                                    <p>
+                                      {categoryProperty?.property_community} -{" "}
+                                      {categoryProperty?.property_sub_community}
+                                    </p>
                                     <br></br>
                                     <small>
-                                    {categoryProperty?.property_community}{" "}- {" "}
-                           {categoryProperty?.property_sub_community}
                                       Ref No.{categoryProperty?.property_ref_no}
                                     </small>
                                   </div>
+                                  
                                   <div>
                                     <center>
                                       <ul className="ltn__list-item-2 ltn__list-item-2-before">
