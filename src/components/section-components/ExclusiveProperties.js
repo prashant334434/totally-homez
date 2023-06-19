@@ -16,13 +16,14 @@ const ExclusiveProperties = () => {
   const pathnameParts = location.pathname.split('/');
 
 console.log(pathnameParts)
-  const {prop_for,prop_city}=useParams()
-  console.log("property_for",prop_for,prop_city)
+  const {property_for,property_city}=useParams()
+  console.log("property_for",property_for,property_city)
   const dispatch=useDispatch()
   console.log("ExclusiveProperties",propertiesFor)
+const  separatedStrings = property_city.split("-");
 
   useEffect(()=>{
-dispatch(getPropertiesFor(prop_for))
+dispatch(getPropertiesFor(separatedStrings[0]))
   },[dispatch])
   return (
     <div>
