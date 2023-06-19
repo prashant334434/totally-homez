@@ -168,8 +168,7 @@ const [agentProperty, setAgentProperty] = useState([])
                         </div>
                       </div>
                       <div className="product-info">
-                        <div className="product-price">
-                          <div className="title_div">
+                      <div className="product-price">
                             {item.property_level ? (
                               <Link
                                 to={`/${url(item?.property_city)}/${url(
@@ -191,9 +190,9 @@ const [agentProperty, setAgentProperty] = useState([])
                               <Link
                                 to={`/${url(item?.property_city)}/${url(
                                   item?.property_community
-                                )}/${url(item?.property_sub_community)}/${url(
+                                )}/${url(
                                   item?.property_type
-                                )}-for-${url(item?.property_for)}/th${
+                                )}-for-${url(item?.property_for)}-${url(item?.property_sub_community)}/th${
                                   item?.id
                                 }`}
                               >
@@ -205,7 +204,6 @@ const [agentProperty, setAgentProperty] = useState([])
                                 />
                               </Link>
                             )}
-                          </div>
                           <div className="price_div">
                             <span>
                               AED <br /> {item?.property_price}
