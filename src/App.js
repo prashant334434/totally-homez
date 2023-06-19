@@ -55,6 +55,8 @@ import Contact2 from './components/section-components/Contact2';
 import Contact3 from './components/section-components/Contact3';
 import ContactPage from './components/ContactPage';
 import SideEffect from './utils/cleanup';
+import TailwindSlider from './components/TailwindSlider';
+import ExclusiveProperties from './components/section-components/ExclusiveProperties';
 
 
 
@@ -119,6 +121,8 @@ const App = () => {
           <Route exact path="/team" component={OurTeam} />
 
           <Route exact path="/property/:type" component={PropertyType} />
+          <Route path="/property/:type" component={PropertyType} />
+          <Route path="/tt" component={TailwindSlider} />
 
 
           <Route path="/about-us" component={aboutUs} />
@@ -132,12 +136,11 @@ const App = () => {
            <Route path="/:property_city/:property_community/:property_sub_community/:property_type-for-:property_for-:property_level" component={ LevelPage } /> 
           <Route exact path="/:property_city/:property_community/:property_type-for-:property_for-:property_sub_community" component={SubCommunityPage} />
           <Route exact path="/:property_city/:property_type-for-:property_for-:property_community" component={CommunityPage} />
-          <Route exact path="/:property_type-for-:property_for-:property_city" component={TypePropertyPage} />
-
-
+ 
           <Route exact path="/google-maps" component={GoogleMapOnPlaceBasis } />
           <Route exact path="/google-maps-lat-lang-test" component={GoogleMap } />
 
+ 
 
 
 
