@@ -56,6 +56,7 @@ import Contact3 from './components/section-components/Contact3';
 import ContactPage from './components/ContactPage';
 import SideEffect from './utils/cleanup';
 import TailwindSlider from './components/TailwindSlider';
+import ExclusiveProperties from './components/section-components/ExclusiveProperties';
 
 
 
@@ -134,15 +135,13 @@ const App = () => {
            <Route path="/:property_city/:property_community/:property_sub_community/:property_type-for-:property_for-:property_level" component={ LevelPage } /> 
           <Route exact path="/:property_city/:property_community/:property_type-for-:property_for-:property_sub_community" component={SubCommunityPage} />
           <Route exact path="/:property_city/:property_type-for-:property_for-:property_community" component={CommunityPage} />
-          <Route exact path="/:property_type-for-:property_for-:property_city" component={TypePropertyPage} />
-
-
+ 
           <Route exact path="/google-maps" component={GoogleMapOnPlaceBasis } />
           <Route exact path="/google-maps-lat-lang-test" component={GoogleMap } />
-          <Route exact path="/property-for-:property_type-:property_city" component={GoogleMap } />
+          <Route exact path="/property-for-:property_for-:property_city" component={ExclusiveProperties } />
 
+ 
 
-// only sale and dubai are dynamic
 
 
 
