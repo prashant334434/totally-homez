@@ -28,6 +28,8 @@ import MobileNav from '../global-components/Mobile-nav';
 import ShopGirdV1 from '../shop-components/shop-grid-v1';
 import OffPlanCategoryProductGrid from '../shop-components/offplan-categoryProductGrid';
 import Curousal1 from '../shop-components/curosal-1';
+import GoogleMap from './GoogleMap';
+import GoogleMapDubai from './GoogleMapDubai';
 const OffPlan = () => {
   return ( 
   
@@ -63,6 +65,7 @@ const OffPlan = () => {
 
 
         <CallToActionV1 />
+        <GoogleMapDubai/>
         <Footer2 customClass='ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---'/>
         <Footer_v1 />
     </div>

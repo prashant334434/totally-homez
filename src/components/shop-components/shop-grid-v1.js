@@ -13,7 +13,7 @@ const ShopGirdV1 = () => {
 			<div className="ltn__product-area ltn__product-gutter   mb-100">
 				<div className="container">
 				<h2 className="title-2">Property Location</h2>
-				<GoogleMap/>
+				{/* <GoogleMap/> */}
 
 				</div>
 			</div>

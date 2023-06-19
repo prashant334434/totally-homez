@@ -11,6 +11,7 @@ export const getPropertiesTypeUtils= async (property_type, property_for, propert
 
 
 export const getPropertiesCategoryUtils= async (property_city,property_type,property_for,orignalCommunity) => {
+  console.log("orignalCommunity",orignalCommunity)
 
     try {
       const response = await axios.get(`https://totallyhomerealestate.com/API/api/properties/typeforcomm/${property_type}/${property_for}/${orignalCommunity}`);
