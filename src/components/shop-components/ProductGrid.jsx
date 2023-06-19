@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import { getCatgoryProperties } from "../../actions/catgoryActions";
@@ -9,6 +9,8 @@ import PropertyImage from "./PropertyImage";
 import { currentTeamMember } from "../../actions/teamActions";
 
 const ProductGrid = (props) => {
+  const villaRef = useRef(null);
+
   const history = useHistory();
 
   const handleLinkClick = (id, name) => {
@@ -73,7 +75,7 @@ const ProductGrid = (props) => {
   return (
     <div>
       <div>
-        <div className="ltn__product-slider-area ltn__product-gutter  plr--7">
+        <div  id="villaRef" tabindex="0" className="ltn__product-slider-area ltn__product-gutter  plr--7">
           <div className="container-fluid">
 
             <div className="row  slick-arrow-1">

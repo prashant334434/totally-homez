@@ -44,7 +44,7 @@ const VideoV2 = ({ homePage }) => {
 							  </li>
 							</ul>} */}
 									<div className="  ltn__animation-pulse2 text-center mt-30">
-										<a className="ltn__video-play-btn bg-white--- ltn__secondary-bg" href="https://www.youtube.com/embed/HnbMYzdjuBs?autoplay=1&showinfo=0" data-rel="lightcase">
+										<a className="ltn__video-play-btn bg-white--- ltn__secondary-bg" href="https://www.youtube.com/watch?v=d1swIKTspDw" target='blank' data-rel="lightcase">
 											<i className="icon-play  ltn__secondary-color--- white-color" />
 										</a>
 									</div>

@@ -74,7 +74,7 @@ const ApartmentProductGridSale = (props) => {
   return (
     <div>
       <div>
-        <div className="ltn__product-slider-area ltn__product-gutter pt-40 plr--7">
+        <div id="apartmentRef" tabindex="1" className="ltn__product-slider-area ltn__product-gutter pt-40 plr--7">
           <div className="container-fluid">
             <div className="row  slick-arrow-1">
               <Carousel
