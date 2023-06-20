@@ -42,7 +42,7 @@ const ExclusivePropertiesTypeGrid = (props) => {
   return (
     <div>
       <div>
-        <h1>Exclusive</h1>
+      
         <div className="ltn__product-area ltn__product-gutter mb-100 ">
           <div className="container">
             <div className="row">
@@ -104,9 +104,7 @@ const ExclusivePropertiesTypeGrid = (props) => {
                                         categoryProperty?.property_community
                                       )}/${url(
                                         categoryProperty?.property_sub_community
-                                      )}/${url(
-                                        categoryProperty?.property_type
-                                      )}-for-${url(
+                                      )}/properties-for-${url(
                                         categoryProperty?.property_for
                                       )}-${url(
                                         categoryProperty?.property_level
@@ -123,9 +121,7 @@ const ExclusivePropertiesTypeGrid = (props) => {
                                         categoryProperty?.property_city
                                       )}/${url(
                                         categoryProperty?.property_community
-                                      )}/${url(
-                                        categoryProperty?.property_type
-                                      )}-for-${url(
+                                      )}/properties-for-${url(
                                         categoryProperty?.property_for
                                       )}-${url(
                                         categoryProperty?.property_sub_community
@@ -156,9 +152,7 @@ const ExclusivePropertiesTypeGrid = (props) => {
                                           categoryProperty?.property_community
                                         )}/${url(
                                           categoryProperty?.property_sub_community
-                                        )}/${url(
-                                          categoryProperty?.property_type
-                                        )}-for-${url(
+                                        )}/properties-for-${url(
                                           categoryProperty?.property_for
                                         )}-${url(
                                           categoryProperty?.property_level
@@ -178,9 +172,7 @@ const ExclusivePropertiesTypeGrid = (props) => {
                                           categoryProperty?.property_city
                                         )}/${url(
                                           categoryProperty?.property_community
-                                        )}/${url(
-                                          categoryProperty?.property_type
-                                        )}-for-${url(
+                                        )}/properties-for-${url(
                                           categoryProperty?.property_for
                                         )}-${url(
                                           categoryProperty?.property_sub_community

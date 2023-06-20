@@ -58,6 +58,7 @@ import ExclusivePropertiesCommunity from "./components/section-components/Exclus
 import ExclusivePropertiesSubCommunity from "./components/section-components/ExclusivePropertiesSubCommunity";
 import ExclusivePropertiesLevel from "./components/section-components/ExclusivePropertiesLevel";
 import NewSlide from "./components/NewSlide";
+import ExpropertyDetails from "./components/Exproperty-details";
 
 const App = () => {
   log.setLevel(log.levels.DEBUG);
@@ -141,6 +142,16 @@ const App = () => {
             exact
             path="/:property_city/:property_community/:property_sub_community/:property_type-for-:property_for-:property_level/TH:id"
             component={ProdductDetails}
+          />
+              <Route
+             exact
+            path="/:property_city/:property_community/properties-for-:property_for-:property_sub_community/TH:id"
+            component={ExpropertyDetails}
+          />
+           <Route
+              exact
+            path="/:property_city/:property_community/:property_sub_community/properties-for-:property_for-:property_level/TH:id"
+            component={ExpropertyDetails}
           />
           <Route exact path="/contact-us" component={NewContact} />
           <Route exact path="/team" component={OurTeam} />

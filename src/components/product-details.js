@@ -27,6 +27,7 @@ import TailwindSlider from "./TailwindSlider";
 import NewSlide from "./NewSlide";
 
 const Product_Details = () => {
+    console.log("product_details");
   const { id } = useParams();
   console.log(id);
   const { loading, propertyDetails } = useSelector(
