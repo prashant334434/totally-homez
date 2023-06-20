@@ -15,7 +15,7 @@ const ExclusiveProperties = () => {
   const {loading,propertiesFor}=useSelector((state)=>state.propertiesFor)
   const location = useLocation();
   const pathnameParts = location.pathname.split('/');
-
+console.log("exclv")
 console.log(pathnameParts)
   const {property_for,property_city}=useParams()
   console.log("property_for",property_for,property_city)

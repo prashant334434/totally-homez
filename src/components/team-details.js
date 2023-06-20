@@ -21,7 +21,6 @@ const Team_Details = () => {
 
   useEffect(() => {
     dispatch(getTeamDetailsApi(currentTeamMemberId));
-    window.scrollTo(0, 0);
   }, [dispatch]);
   return (
     <div>

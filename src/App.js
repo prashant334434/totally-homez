@@ -59,6 +59,7 @@ import ExclusivePropertiesSubCommunity from "./components/section-components/Exc
 import ExclusivePropertiesLevel from "./components/section-components/ExclusivePropertiesLevel";
 import NewSlide from "./components/NewSlide";
 import ExpropertyDetails from "./components/Exproperty-details";
+import ExclusivePropertiesDetails from "./components/section-components/ExclusivePropertiesDetails";
 
 const App = () => {
   log.setLevel(log.levels.DEBUG);
@@ -86,15 +87,30 @@ const App = () => {
         <SideEffect />
         <Switch>
           <Route exact path="/" component={HomeV7} />
+          
           <Route
             exact
             path="/properties-for:property_type:property_city"
             component={ExclusiveProperties}
           />
-
+          
+            <Route
+            exact
+            path="/properties/:community/:subcomm/th:id"
+            component={ExclusivePropertiesDetails}
+          />
+          <Route
+            exact
+            path="/properties/properties-for-:property_for-:property_community"
+            component={CommunityPage}
+          />
+          <Route
+            exact
+            path="/properties/:property_community/properties-for-:property_type-:property_subcomm"
+            component={CommunityPage}
+          />
           <Route path="/career" component={CareerV1} />
           <Route path="/list-with-us" component={ListWithUs} />
-
           {/* <Route exact path="/team" component={TeamV2} /> */}
           <Route exact path="/team/:name" component={TeamDetails} />
           <Route path="/404" component={Error} />
@@ -102,8 +118,7 @@ const App = () => {
           {/* <Route path="/shop-grid" component={ ShopGrid } /> */}
           {/* <Route path="/shop" component={ ShopLeftSidebar } /> */}
           {/* <Route path="/shopjhfe" component={ ShopRightSidebar } /> */}
-
-          <Route path="/product-details" component={ProdductDetails} />
+          {/* <Route path="/product-details" component={ProdductDetails} /> */}
           {/* blog */}
           <Route path="/blogs" component={BlogGrid} />
           <Route
@@ -118,16 +133,13 @@ const App = () => {
           />
           {/* <Route path="/blog-right-sidebar" component={ BlogRightSidebar } /> */}
           <Route path="/blog" component={Blog} />
-
           <Route path="/blog-details" component={BlogDetails} />
           {/* <Route path="/contact" component={ Contact } /> */}
-
           <Route
             exact
             path="/offplan-projects-in-dubai/:offPlanCategoryName"
             component={OffPlan}
           />
-
           {/* <Route
             exact
             path="/property-details/:id"
@@ -143,25 +155,13 @@ const App = () => {
             path="/:property_city/:property_community/:property_sub_community/:property_type-for-:property_for-:property_level/TH:id"
             component={ProdductDetails}
           />
-              <Route
-             exact
-            path="/:property_city/:property_community/properties-for-:property_for-:property_sub_community/TH:id"
-            component={ExpropertyDetails}
-          />
-           <Route
-              exact
-            path="/:property_city/:property_community/:property_sub_community/properties-for-:property_for-:property_level/TH:id"
-            component={ExpropertyDetails}
-          />
           <Route exact path="/contact-us" component={NewContact} />
           <Route exact path="/team" component={OurTeam} />
-
           {/* <Route exact path="/property/:type" component={PropertyType} />
           <Route exact path="/property/:type" component={PropertyType} /> */}
           {/* <Route exact path="/tt" component={TailwindSlider} /> */}
           {/* <Route exact path="/property/:type" component={PropertyType} /> */}
           {/* <Route exact path="/tt" component={NewSlide} /> */}
-
           <Route exact path="/about-us" component={aboutUs} />
           <Route exact path="/shop-page" component={ShopNew} />
           <Route path="/contact" component={ContactPage} />
@@ -193,39 +193,24 @@ const App = () => {
             path="/:property_type-for-:property_for-:property_city"
             component={TypePropertyPage}
           />
-
           <Route exact path="/google-maps" component={GoogleMapOnPlaceBasis} />
           <Route
             exact
             path="/google-maps-lat-lang-test"
             component={GoogleMap}
           />
-
-          <Route
+          {/* <Route
             exact
             path="/properties/properties-for-:property_for-:property_community"
             component={ExclusivePropertiesCommunity}
           />
-
           <Route
             exact
             path="/properties/community/properties-for-:property_for-:property_subomm"
             component={ExclusivePropertiesSubCommunity}
-          />
-
-          <Route
-            exact
-            path="/properties/community/subcomm/properties-for-:property_for-:property_level/th1"
-            component={ExclusivePropertiesLevel}
-          />
-
-          <Route
-            exact
-            path="/properties/community/subcomm/th1"
-            component={ExclusivePropertiesLevel}
-          />
-        </Switch>
+          /> */}
         
+        </Switch>
       </div>
     </BrowserRouter>
   );

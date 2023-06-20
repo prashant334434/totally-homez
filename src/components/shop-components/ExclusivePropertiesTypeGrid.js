@@ -96,11 +96,9 @@ const ExclusivePropertiesTypeGrid = (props) => {
                                 className="ltn__product-item ltn__product-item-4 text-center---"
                               >
                                 <div className="product-img go-top">
-                                  {categoryProperty?.property_level ? (
+                                  {categoryProperty?.property_level!=="" ? (
                                     <Link
-                                      to={`/${url(
-                                        categoryProperty?.property_city
-                                      )}/${url(
+                                      to={`/properties/${url(
                                         categoryProperty?.property_community
                                       )}/${url(
                                         categoryProperty?.property_sub_community
@@ -117,13 +115,7 @@ const ExclusivePropertiesTypeGrid = (props) => {
                                     </Link>
                                   ) : (
                                     <Link
-                                      to={`/${url(
-                                        categoryProperty?.property_city
-                                      )}/${url(
-                                        categoryProperty?.property_community
-                                      )}/properties-for-${url(
-                                        categoryProperty?.property_for
-                                      )}-${url(
+                                      to={`/properties/${url(categoryProperty?.property_community)}/${url(
                                         categoryProperty?.property_sub_community
                                       )}/th${categoryProperty?.id}`}
                                     >

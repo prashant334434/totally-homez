@@ -11083,7 +11083,7 @@ input::placeholder {
 
 .carousel img {
   width: 100%!important;
-  height: 80vh!important;
+  height: 100vh!important;
   max-width: 100%;
 }
 
@@ -19459,6 +19459,25 @@ a.ltn__utilize-toggle.close {
   color: #111111;
   background-color: #e5e5e5 !important;
 }
+.fl{
+
+  border-radius: 7px !important;
+  color: #111111;
+  background-color: #e5e5e5 !important;
+  border: 2px solid;
+  border-color: var(--black-2);
+  height: 45px !important;
+  border-radius:8px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding-left: 20px;
+  font-size: 16px;
+  color: var(--ltn__paragraph-color);
+  width: 100%;
+  min-height: 55px !important;
+  padding-right: 40px;
+  margin-bottom: 20px;  
+}
 
 .hoverHeading{
   cursor: pointer;
@@ -19518,6 +19537,8 @@ a.ltn__utilize-toggle.close {
 
 
 
-
+.my-svg path {
+  fill: red;
+}
 
 
