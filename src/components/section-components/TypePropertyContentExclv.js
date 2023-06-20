@@ -14,8 +14,8 @@ const TypePropertyContentExclv = () => {
         <div className="about-us-info-wrap">
             <div className="section-title-area ltn__section-title-2--- mb-20">
             {/* <h6 className="section-subtitle section-subtitle-2 ltn__secondary-color">Town House</h6> */}
-            <h1 className="section-title">Live in style and comfort with our spacious townhouses
-                <span>.</span></h1>
+            <h2 className="section-title">Live in style and comfort with our spacious townhouses
+                <span>.</span></h2>
           
                 <p>
 				Over 39,000 people work for us in more than 70 countries all over the
