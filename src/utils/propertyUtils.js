@@ -45,7 +45,7 @@ export const getPropertiesCategoryUtils= async (property_city,property_type,prop
   export const getPropertiesSubCommunityUtils= async (property_city,property_type,property_for,orignalSubCommunity) => {
 
     try {
-      const response = await axios.get(`https://totallyhomerealestate.com/API/api/properties/typeforsubcomm/${property_type}/${property_for}/${orignalSubCommunity}`);
+      const response = await axios.get(`https://totallyhomerealestate.com/API/api/properties/subcomm_level/${orignalSubCommunity}`);
       return response.data;
     } catch (error) {
       throw new Error('Failed to fetch property types.');
@@ -70,7 +70,8 @@ export const getPropertiesCategoryUtils= async (property_city,property_type,prop
 
 
     try {
-      const response = await axios.get(`https://totallyhomerealestate.com/API/api/properties/typeforcomm/${property_type}/${property_for}/${orignalCommunity}`);
+      const response = await axios.get(`https://totallyhomerealestate.com/API/api/properties/comm_subcomm/${orignalCommunity}`);
+      console.log("subCommunities",response.data)
       return response.data;
     } catch (error) {
       throw new Error('Failed to fetch property types.');

@@ -8,12 +8,11 @@ const CommunityColumnProperty = ({
   loading,
   getSubCommunitiesInaCommunity,
 }) => {
-  console.log("getSubCommunitiesInaCommunity", getSubCommunitiesInaCommunity);
   const {property_city,property_type,property_for,property_community}=useParams()
   let subCommunityArray = [];
   if (getSubCommunitiesInaCommunity) {
     for (let i = 0; i < getSubCommunitiesInaCommunity.length; i++) {
-      subCommunityArray.push(getSubCommunitiesInaCommunity[i]?.property_sub_community);
+      subCommunityArray.push(getSubCommunitiesInaCommunity[i]?.sub_community);
     }
   }
 
