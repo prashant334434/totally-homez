@@ -147,7 +147,7 @@ const App = () => {
 
           {/* <Route exact path="/property/:type" component={PropertyType} />
           <Route exact path="/property/:type" component={PropertyType} /> */}
-          <Route exact path="/tt" component={TailwindSlider} />
+          {/* <Route exact path="/tt" component={TailwindSlider} /> */}
           {/* <Route exact path="/property/:type" component={PropertyType} /> */}
           {/* <Route exact path="/tt" component={NewSlide} /> */}
 
