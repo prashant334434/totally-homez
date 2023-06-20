@@ -127,11 +127,11 @@ const App = () => {
             component={OffPlan}
           />
 
-          <Route
+          {/* <Route
             exact
             path="/property-details/:id"
             component={ProdductDetails}
-          />
+          /> */}
           <Route
             exact
             path="/:property_city/:property_community/:property_type-for-:property_for-:property_sub_community/TH:id"
