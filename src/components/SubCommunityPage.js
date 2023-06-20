@@ -23,7 +23,7 @@ import PaginationComponent from './PaginationComponent';
 import BreadCrumProperties from './BreadCrumProperties';
 import SubCommunityColumnProperty from './global-components/SubCommunityColumn';
 import SubCommunityPropertyGrid from './subCommunityPropertyGrid';
-import { capitalizeWords, getLevelsInASubCommunityUtils, getPropertiesSubCommunityUtils, getSubCommunitiesInaCommunityUtils, replaceHyphensAndCapitalize } from '../utils/propertyUtils';
+import { capitalizeWords, getLevelsInASubCommunityUtils, getPropertiesSubCommunity, getPropertiesSubCommunityUtils, getSubCommunitiesInaCommunityUtils, getSubCommunitiesPropertiesUtils, replaceHyphensAndCapitalize } from '../utils/propertyUtils';
 import VillaforSaleSub from './global-components/villaForSaleSub';
 import MetaData from './Layout/MetaData';
 import SubCommunityBreadcrum from './global-components/SubCommunityBreadcrum';
@@ -59,7 +59,7 @@ const [getLevelsInASubCommunity, setGetLevelsInASubCommunity] = useState([])
         const fetchData = async () => {
             try {
                 setLoading(true);
-                const data = await getPropertiesSubCommunityUtils(property_city, property_type, property_for, orignalSubCommunity,orignalCommunity);
+                const data = await getSubCommunitiesPropertiesUtils(property_city, property_type, property_for, orignalSubCommunity,orignalCommunity);
                 setGetLevelsInASubCommunity(data);
                 setLoading2(false);
             } catch (error) {
@@ -76,7 +76,7 @@ const [getLevelsInASubCommunity, setGetLevelsInASubCommunity] = useState([])
         const fetchData = async () => {
             try {
                 setLoading(true);
-                const data = await getPropertiesSubCommunityUtils(property_city, property_type, property_for, orignalSubCommunity ,orignalCommunity);
+                const data = await getPropertiesSubCommunity(property_type, property_for ,orignalSubCommunity);
                 setPropertySubCategory(data);
                 setLoading(false);
             } catch (error) {

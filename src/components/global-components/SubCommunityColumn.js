@@ -8,7 +8,7 @@ const SubCommunityColumnProperty = ({ getLevelsInASubCommunity }) => {
   let levelsArray = [];
   if (getLevelsInASubCommunity) {
     for (let i = 0; i < getLevelsInASubCommunity.length; i++) {
-      levelsArray.push(getLevelsInASubCommunity[i].property_level);
+      levelsArray.push(getLevelsInASubCommunity[i].pro_level);
     }
   }
   const [itemsToShow, setItemsToShow] = useState(8);
