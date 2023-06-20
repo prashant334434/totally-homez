@@ -145,17 +145,17 @@ const App = () => {
           <Route exact path="/contact-us" component={NewContact} />
           <Route exact path="/team" component={OurTeam} />
 
-          <Route exact path="/property/:type" component={PropertyType} />
-          <Route exact path="/property/:type" component={PropertyType} />
+          {/* <Route exact path="/property/:type" component={PropertyType} />
+          <Route exact path="/property/:type" component={PropertyType} /> */}
           <Route exact path="/tt" component={TailwindSlider} />
-          <Route exact path="/property/:type" component={PropertyType} />
-          <Route exact path="/tt" component={NewSlide} />
+          {/* <Route exact path="/property/:type" component={PropertyType} /> */}
+          {/* <Route exact path="/tt" component={NewSlide} /> */}
 
           <Route exact path="/about-us" component={aboutUs} />
           <Route exact path="/shop-page" component={ShopNew} />
           <Route path="/contact" component={ContactPage} />
-          <Route exact path="/contact2" component={Contact2} />
-          <Route exact path="/contact3" component={Contact3} />
+          {/* <Route exact path="/contact2" component={Contact2} />
+          <Route exact path="/contact3" component={Contact3} /> */}
           <Route
             exact
             path="/best-communites-in-dubai/:communityName"
