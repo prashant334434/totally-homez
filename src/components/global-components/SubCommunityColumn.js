@@ -1,10 +1,20 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { allEmptyStrings, capitalizeWords, replaceSpacesWithHyphensAndLowerCase } from "../../utils/propertyUtils";
+import {
+  allEmptyStrings,
+  capitalizeWords,
+  replaceSpacesWithHyphensAndLowerCase,
+} from "../../utils/propertyUtils";
 import { useParams } from "react-router-dom/cjs/react-router-dom.min";
 
 const SubCommunityColumnProperty = ({ getLevelsInASubCommunity }) => {
-  const {property_city,property_community,property_type,property_for,property_sub_community}=useParams()
+  const {
+    property_city,
+    property_community,
+    property_type,
+    property_for,
+    property_sub_community,
+  } = useParams();
   let levelsArray = [];
   if (getLevelsInASubCommunity) {
     for (let i = 0; i < getLevelsInASubCommunity.length; i++) {
@@ -49,7 +59,11 @@ const SubCommunityColumnProperty = ({ getLevelsInASubCommunity }) => {
 
   let publicUrl = process.env.PUBLIC_URL + "/";
   let imgattr = "Footer logo";
-  if (!levelsArray || levelsArray.length === 0 || allEmptyStrings(levelsArray)) {
+  if (
+    !levelsArray ||
+    levelsArray.length === 0 ||
+    allEmptyStrings(levelsArray)
+  ) {
     return null; // Render nothing if there are no elements in getSubCommunitiesInaCommunity or all elements are empty strings
   }
 
@@ -65,32 +79,29 @@ const SubCommunityColumnProperty = ({ getLevelsInASubCommunity }) => {
                   <div className="footer-widget-breadcrum footer-menu-widget clearfix">
                     <div className="footer-menu go-top">
                       <ul>
-                        <Link to={`/${property_city}/${property_community}/${property_sub_community}/${property_type}-for-${property_for}-${replaceSpacesWithHyphensAndLowerCase(item)}`}>
-                        <li>
-                          {capitalizeWords(item)}
-                        </li>
+                        <Link
+                          to={`/${property_city}/${property_community}/${property_sub_community}/${property_type}-for-${property_for}-${replaceSpacesWithHyphensAndLowerCase(
+                            item
+                          )}`}
+                        >
+                          <li>{capitalizeWords(item)}</li>
                         </Link>
-                       
                       </ul>
                     </div>
                   </div>
                 </div>
               ))}
-              {showMoreLessVisible && (
-                <div className="columncss" onClick={() => setItemsToShow(4)}>
-                  Show Less
+              {levelsArray.length > 4 && (
+                <div className="columncss">
+                  {showMoreLessVisible && itemsToShow === 4 ? (
+                    <div onClick={() => setItemsToShow(levelsArray.length)}>
+                      Show More
+                    </div>
+                  ) : (
+                    <div onClick={() => setItemsToShow(4)}>Show Less</div>
+                  )}
                 </div>
               )}
-              {showMoreLessVisible && itemsToShow === 4 && (
-                <div
-                  className="columncss"
-                  onClick={() =>
-                    setItemsToShow(levelsArray.length)
-                  }
-                >
-                  Show More
-                </div>
-              )}{" "}
             </div>
           </div>
         </div>
