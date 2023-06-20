@@ -305,18 +305,19 @@ const TyepPropertyGrid = (props) => {
 
                           {/*  */}
                         </div>
-                        <ReactPaginate
-                          previousLabel={"Previous"}
-                          nextLabel={"Next"}
-                          breakLabel={"..."}
-                          pageCount={pageCount}
-                          pageRangeDisplayed={5}
-                          onPageChange={handlePageChange}
-                          containerClassName={'pagination'}
-                          activeClassName={'pagination__link--active'}
-                          disabledClassName={'pagination__link--disabled'}
-                    
-                        />
+                        {props?.propertyTypes?.length >= 12 && (
+                          <ReactPaginate
+                            previousLabel={"Previous"}
+                            nextLabel={"Next"}
+                            breakLabel={"..."}
+                            pageCount={pageCount}
+                            pageRangeDisplayed={5}
+                            onPageChange={handlePageChange}
+                            containerClassName={"pagination"}
+                            activeClassName={"pagination__link--active"}
+                            disabledClassName={"pagination__link--disabled"}
+                          />
+                        )}
                       </div>
                     </div>
 

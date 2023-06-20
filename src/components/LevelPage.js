@@ -26,8 +26,10 @@ import { capitalizeWords, capitalizeWordsInHyphenatedString, getPropertiesCatego
 import VillaforSaleLevel from './global-components/villaForSaleLevel';
 import MetaData from './Layout/MetaData';
 import LevelBreadcrum from './global-components/LevelBreadcrum';
+import ReactPaginate from "react-paginate";
 
 const LevelPage = () => {
+    
     const capitalizeFirstLetter=(string)=> {
         return string.replace(/^\w/, (firstLetter) => firstLetter.toUpperCase());
       }
@@ -44,8 +46,7 @@ const data = [
         { id: 3, name: 'Item 3' },
         // ... more data
     ];
-    const itemsPerPage = 5;
-
+   
     const [loading, setLoading] = useState(false);
     const [propertyLevel, setPropertyLevel] = useState([])
     const [propertyTypes, setPropertyTypes] = useState([]);

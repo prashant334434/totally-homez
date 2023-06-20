@@ -104,7 +104,7 @@ const [getLevelsInASubCommunity, setGetLevelsInASubCommunity] = useState([])
         <SubCommunityPropertyGrid propertySubcom={propertySubCategory} />
         <CallToActionV1 />
 
-        <Footer />
+        <Footer />x
 
 
     </div>

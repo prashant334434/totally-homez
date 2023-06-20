@@ -11,9 +11,18 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { getPropertiesCommunity } from "../actions/propertiesActions";
 import { currentTeamMember } from "../actions/teamActions";
+import ReactPaginate from "react-paginate";
+
 const CommunityPropertyGrid = (props) => {
-  const dispatch=useDispatch()
-  const history=useHistory()
+  console.log("subCommPage")
+  const [currentPage, setCurrentPage] = useState(0);
+  const itemsPerPage = 12;
+  const pageCount = Math.ceil(props?.propertyCategory?.length / itemsPerPage);
+  const handlePageChange = (selectedPage) => {
+    setCurrentPage(selectedPage.selected);
+  };
+  const dispatch = useDispatch();
+  const history = useHistory();
   const handleLinkClick = (id, name) => {
     console.log("agentIdHome", id);
 
@@ -60,7 +69,11 @@ const CommunityPropertyGrid = (props) => {
   const url = (titleName) => {
     return titleName?.split(" ")?.join("-")?.toLowerCase();
   };
-
+  const offset = currentPage * itemsPerPage;
+  const paginatedPropertyTypes = props?.propertyTypes?.slice(
+    offset,
+    offset + itemsPerPage
+  );
   return (
     <div>
       <div>
@@ -181,7 +194,7 @@ const CommunityPropertyGrid = (props) => {
                     <div className="ltn__product-slider-area ltn__product-gutter pt-20 pb-40">
                       <div className="container-fluid">
                         <div className="row ltn__product slick-arrow-1">
-                          {props?.propertyCategory?.map((categoryProperty) => (
+                          {paginatedPropertyTypes?.map((categoryProperty) => (
                             <div className="col-lg-4">
                               <div
                                 key={categoryProperty?.id}
@@ -195,11 +208,11 @@ const CommunityPropertyGrid = (props) => {
                                       )}/${url(
                                         categoryProperty?.property_community
                                       )}/${url(
+                                        categoryProperty?.property_sub_community
+                                      )}/${url(
                                         categoryProperty?.property_type
                                       )}-for-${url(
                                         categoryProperty?.property_for
-                                      )}-${url(
-                                        categoryProperty?.property_sub_community
                                       )}-${url(
                                         categoryProperty?.property_level
                                       )}/th${categoryProperty?.id}`}
@@ -211,24 +224,25 @@ const CommunityPropertyGrid = (props) => {
                                     </Link>
                                   ) : (
                                     <Link
-                                    to={`/${url(
-                                      categoryProperty?.property_city
-                                    )}/${url(
-                                      categoryProperty?.property_community
-                                    )}/${url(
-                                      categoryProperty?.property_type
-                                    )}-for-${url(
-                                      categoryProperty?.property_for
-                                    )}-${url(
-                                      categoryProperty?.property_sub_community
-                                    )}/th${categoryProperty?.id}`}
-                                  >
+                                      to={`/${url(
+                                        categoryProperty?.property_city
+                                      )}/${url(
+                                        categoryProperty?.property_community
+                                      )}/${url(
+                                        categoryProperty?.property_type
+                                      )}-for-${url(
+                                        categoryProperty?.property_for
+                                      )}-${url(
+                                        categoryProperty?.property_sub_community
+                                      )}/th${categoryProperty?.id}`}
+                                    >
                                       <img
                                         src={`${PROPERTY_IMAGES_URL}/${categoryProperty?.img_name}`}
                                         alt="#"
                                       />
                                     </Link>
                                   )}
+
                                   <div className="product-badge">
                                     <ul>
                                       <li className="sale-badge bg-green">
@@ -246,11 +260,11 @@ const CommunityPropertyGrid = (props) => {
                                         )}/${url(
                                           categoryProperty?.property_community
                                         )}/${url(
+                                          categoryProperty?.property_sub_community
+                                        )}/${url(
                                           categoryProperty?.property_type
                                         )}-for-${url(
                                           categoryProperty?.property_for
-                                        )}-${url(
-                                          categoryProperty?.property_sub_community
                                         )}-${url(
                                           categoryProperty?.property_level
                                         )}/th${categoryProperty?.id}`}
@@ -265,18 +279,18 @@ const CommunityPropertyGrid = (props) => {
                                       </Link>
                                     ) : (
                                       <Link
-                                      to={`/${url(
-                                        categoryProperty?.property_city
-                                      )}/${url(
-                                        categoryProperty?.property_community
-                                      )}/${url(
-                                        categoryProperty?.property_type
-                                      )}-for-${url(
-                                        categoryProperty?.property_for
-                                      )}-${url(
-                                        categoryProperty?.property_sub_community
-                                      )}/th${categoryProperty?.id}`}
-                                    >
+                                        to={`/${url(
+                                          categoryProperty?.property_city
+                                        )}/${url(
+                                          categoryProperty?.property_community
+                                        )}/${url(
+                                          categoryProperty?.property_type
+                                        )}-for-${url(
+                                          categoryProperty?.property_for
+                                        )}-${url(
+                                          categoryProperty?.property_sub_community
+                                        )}/th${categoryProperty?.id}`}
+                                      >
                                         <h3
                                           dangerouslySetInnerHTML={{
                                             __html:
@@ -301,7 +315,6 @@ const CommunityPropertyGrid = (props) => {
                                       Ref No.{categoryProperty?.property_ref_no}
                                     </small>
                                   </div>
-                                  
                                   <div>
                                     <center>
                                       <ul className="ltn__list-item-2 ltn__list-item-2-before">
@@ -345,7 +358,8 @@ const CommunityPropertyGrid = (props) => {
                                       </Link>
                                     </div>
                                     <div className="agent-brief go-top">
-                                    <Link
+                                      <p className="brokerName">
+                                        <Link
                                           onClick={() =>
                                             handleLinkClick(
                                               categoryProperty?.property_agent_name,
@@ -355,6 +369,7 @@ const CommunityPropertyGrid = (props) => {
                                         >
                                           {categoryProperty?.name}
                                         </Link>
+                                      </p>
                                     </div>
                                   </div>
                                   <div className="wcallFlex">
@@ -396,6 +411,19 @@ const CommunityPropertyGrid = (props) => {
 
                           {/*  */}
                         </div>
+                        {paginatedPropertyTypes?.length >= 12 && (
+                          <ReactPaginate
+                            previousLabel={"Previous"}
+                            nextLabel={"Next"}
+                            breakLabel={"..."}
+                            pageCount={pageCount}
+                            pageRangeDisplayed={5}
+                            onPageChange={handlePageChange}
+                            containerClassName={"pagination"}
+                            activeClassName={"pagination__link--active"}
+                            disabledClassName={"pagination__link--disabled"}
+                          />
+                        )}
                       </div>
                     </div>
 

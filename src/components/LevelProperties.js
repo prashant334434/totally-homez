@@ -10,7 +10,15 @@ import { PROPERTY_IMAGES_URL, TEAM_API_URL } from "../constants/config";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { currentTeamMember } from "../actions/teamActions";
+import ReactPaginate from "react-paginate";
+
 const LevelProperties = (props) => {
+  const [currentPage, setCurrentPage] = useState(0);
+  const itemsPerPage = 12;
+  const pageCount = Math.ceil(props?.propertyLevel.length / itemsPerPage);
+  const handlePageChange = (selectedPage) => {
+    setCurrentPage(selectedPage.selected);
+  };
   const history = useHistory();
 
   const handleLinkClick = (id, name) => {
@@ -71,6 +79,12 @@ const LevelProperties = (props) => {
   const url = (titleName) => {
     return titleName?.split(" ")?.join("-")?.toLowerCase();
   };
+
+  const offset = currentPage * itemsPerPage;
+  const paginatedPropertyTypes = props?.propertyTypes?.slice(
+    offset,
+    offset + itemsPerPage
+  );
   return (
     <div>
       <div>
@@ -190,8 +204,8 @@ const LevelProperties = (props) => {
 								</div> */}
                     <div className="ltn__product-slider-area ltn__product-gutter pt-20 pb-40">
                       <div className="container-fluid">
-                        <div className="row ltn__product slick-arrow-1">
-                          {props?.propertyLevel?.map((categoryProperty) => (
+                      <div className="row ltn__product slick-arrow-1">
+                          {paginatedPropertyTypes?.map((categoryProperty) => (
                             <div className="col-lg-4">
                               <div
                                 key={categoryProperty?.id}
@@ -250,7 +264,7 @@ const LevelProperties = (props) => {
                                 </div>
                                 <div className="product-info">
                                   <div className="product-price">
-                                    {categoryProperty?.property_level ? (
+                                    {categoryProperty.property_level ? (
                                       <Link
                                         to={`/${url(
                                           categoryProperty?.property_city
@@ -301,7 +315,6 @@ const LevelProperties = (props) => {
                                     <span>
                                       AED {categoryProperty?.property_price}
                                     </span>
-                                    
                                   </div>
                                   <div className="product-description">
                                     <p>
@@ -313,7 +326,6 @@ const LevelProperties = (props) => {
                                       Ref No.{categoryProperty?.property_ref_no}
                                     </small>
                                   </div>
-                                  
                                   <div>
                                     <center>
                                       <ul className="ltn__list-item-2 ltn__list-item-2-before">
@@ -410,6 +422,19 @@ const LevelProperties = (props) => {
 
                           {/*  */}
                         </div>
+                        {paginatedPropertyTypes?.length >= 1 && (
+                          <ReactPaginate
+                            previousLabel={"Previous"}
+                            nextLabel={"Next"}
+                            breakLabel={"..."}
+                            pageCount={pageCount}
+                            pageRangeDisplayed={5}
+                            onPageChange={handlePageChange}
+                            containerClassName={"pagination"}
+                            activeClassName={"pagination__link--active"}
+                            disabledClassName={"pagination__link--disabled"}
+                          />
+                        )}
                       </div>
                     </div>
 

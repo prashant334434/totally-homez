@@ -9,8 +9,17 @@ import {
 import { PROPERTY_IMAGES_URL, TEAM_API_URL } from "../constants/config";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import ReactPaginate from "react-paginate";
+
 import { currentTeamMember } from "../actions/teamActions";
 const SubCommunityPropertyGrid = (props) => {
+  const [currentPage, setCurrentPage] = useState(0);
+  const itemsPerPage = 12;
+  const pageCount = Math.ceil(props?.propertySubcom?.length / itemsPerPage);
+  const handlePageChange = (selectedPage) => {
+    setCurrentPage(selectedPage.selected);
+  };
+
   const dispatch=useDispatch()
   const history=useHistory()
   const handleLinkClick = (id, name) => {
@@ -62,6 +71,12 @@ const SubCommunityPropertyGrid = (props) => {
   if (props?.propertySubcom?.length > 0) {
     carouselItems = props?.propertySubcom;
   }
+
+  const offset = currentPage * itemsPerPage;
+  const paginatedPropertyTypes = props?.propertySubcom?.slice(
+    offset,
+    offset + itemsPerPage
+  );
 
   return (
     <div>
@@ -182,9 +197,9 @@ const SubCommunityPropertyGrid = (props) => {
 								</div> */}
                     <div className="ltn__product-slider-area ltn__product-gutter pt-20 pb-40">
                       <div className="container-fluid">
-                        <div className="row ltn__product slick-arrow-1">
-                          {props?.propertySubcom?.map((categoryProperty) => (
-                            <div index={categoryProperty?.id} className="col-lg-4">
+                      <div className="row ltn__product slick-arrow-1">
+                          {paginatedPropertyTypes?.map((categoryProperty) => (
+                            <div className="col-lg-4">
                               <div
                                 key={categoryProperty?.id}
                                 className="ltn__product-item ltn__product-item-4 text-center---"
@@ -213,24 +228,25 @@ const SubCommunityPropertyGrid = (props) => {
                                     </Link>
                                   ) : (
                                     <Link
-                                        to={`/${url(
-                                          categoryProperty?.property_city
-                                        )}/${url(
-                                          categoryProperty?.property_community
-                                        )}/${url(
-                                          categoryProperty?.property_type
-                                        )}-for-${url(
-                                          categoryProperty?.property_for
-                                        )}-${url(
-                                          categoryProperty?.property_sub_community
-                                        )}/th${categoryProperty?.id}`}
-                                      >
+                                      to={`/${url(
+                                        categoryProperty?.property_city
+                                      )}/${url(
+                                        categoryProperty?.property_community
+                                      )}/${url(
+                                        categoryProperty?.property_type
+                                      )}-for-${url(
+                                        categoryProperty?.property_for
+                                      )}-${url(
+                                        categoryProperty?.property_sub_community
+                                      )}/th${categoryProperty?.id}`}
+                                    >
                                       <img
                                         src={`${PROPERTY_IMAGES_URL}/${categoryProperty?.img_name}`}
                                         alt="#"
                                       />
                                     </Link>
                                   )}
+
                                   <div className="product-badge">
                                     <ul>
                                       <li className="sale-badge bg-green">
@@ -288,6 +304,7 @@ const SubCommunityPropertyGrid = (props) => {
                                         />
                                       </Link>
                                     )}
+
                                     <span>
                                       AED {categoryProperty?.property_price}
                                     </span>
@@ -333,7 +350,6 @@ const SubCommunityPropertyGrid = (props) => {
                                       </ul>
                                     </center>
                                   </div>
-                                  
                                 </div>
                                 <div className="product-info-bottom">
                                   <div className="real-estate-agent wcallFlex">
@@ -347,7 +363,7 @@ const SubCommunityPropertyGrid = (props) => {
                                     </div>
                                     <div className="agent-brief go-top">
                                       <p className="brokerName">
-                                      <Link
+                                        <Link
                                           onClick={() =>
                                             handleLinkClick(
                                               categoryProperty?.property_agent_name,
@@ -399,6 +415,19 @@ const SubCommunityPropertyGrid = (props) => {
 
                           {/*  */}
                         </div>
+                        {paginatedPropertyTypes?.length >= 12 && (
+                          <ReactPaginate
+                            previousLabel={"Previous"}
+                            nextLabel={"Next"}
+                            breakLabel={"..."}
+                            pageCount={pageCount}
+                            pageRangeDisplayed={5}
+                            onPageChange={handlePageChange}
+                            containerClassName={"pagination"}
+                            activeClassName={"pagination__link--active"}
+                            disabledClassName={"pagination__link--disabled"}
+                          />
+                        )}
                       </div>
                     </div>
 
