@@ -30,7 +30,7 @@ export const getContactUsApi = () => async (dispatch) => {
   }
 };
 
-export const postContactApi = (formData) => async (dispatch) => {
+export const postContactApi = (formData,page_name) => async (dispatch) => {
   // const csrf = create();
   // const token = csrf.token();
   const config = {
@@ -49,7 +49,7 @@ export const postContactApi = (formData) => async (dispatch) => {
 
     const { data } = await axios.post(
       `https://totallyhomerealestate.com/API/api/contact_form`,
-      { ...formData, page_name: "propertyDetails" },
+      { ...formData, page_name },
       {config}
       
     );

@@ -6,13 +6,16 @@ import { postContactApi } from "../../actions/contactActions";
 import { useDispatch, useSelector } from "react-redux";
 import { useAlert } from "react-alert";
 const Pageform = () => {
-  const {error,success,contacts}=useSelector((state)=>state.contactForm)
-  const alert=useAlert()
+  const { error, success, contacts } = useSelector(
+    (state) => state.contactForm
+  );
+  const alert = useAlert();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     mobile_no: "",
-    message: "Hello! I came across your property with reference No (Ref No). I am highly interested, so kindly get in touch. Thank you",
+    message:
+      "Hello! I came across your property with reference No (Ref No). I am highly interested, so kindly get in touch. Thank you",
   });
 
   const handleChange = (event) => {
@@ -25,22 +28,18 @@ const Pageform = () => {
   const dispatch = useDispatch();
   let publicUrl = process.env.PUBLIC_URL + "/";
 
-  
-
-
   const submitForm = (e) => {
-    e.preventDefault()
-    dispatch(postContactApi(formData));
+    e.preventDefault();
+    dispatch(postContactApi(formData, "propertyDetails"));
   };
-  useEffect(()=>{
-    if(success){
-      alert.success("We have received your response")
+  useEffect(() => {
+    if (success) {
+      alert.success("We have received your response");
     }
-    if(success==false){
-      alert.error("Some error occured")
+    if (success == false) {
+      alert.error("Some error occured");
     }
-
-  },[alert,error,success])
+  }, [alert, error, success]);
   return (
     <div>
       <div
@@ -104,19 +103,30 @@ const Pageform = () => {
                       required
                     />
                   </div>
-                
+
                   <div className="form-group">
                     <label htmlFor="message">Message</label>
                     <textarea
                       id="message"
                       name="message"
                       onChange={handleChange}
-                      value={formData.name && formData.email && formData.mobile_no.length === 10 ? "Hello! I came across your property with reference No (Ref No). I am highly interested, so kindly get in touch. Thank you" : ""}
+                      value={
+                        formData.name &&
+                        formData.email &&
+                        formData.mobile_no.length === 10
+                          ? "Hello! I came across your property with reference No (Ref No). I am highly interested, so kindly get in touch. Thank you"
+                          : ""
+                      }
                       required
                     />
                   </div>
-                  <div className="btn-wrapper animated go-top">
-                    <button type="submit">Submit</button>
+                  <div className="btn-wrapper mt-0">
+                    <button
+                      className="btn theme-btn-1 btn-effect-1 text-uppercase"
+                      type="submit"
+                    >
+                      SUBMIT
+                    </button>
                   </div>
                 </form>
               </div>
