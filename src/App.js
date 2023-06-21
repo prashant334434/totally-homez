@@ -107,10 +107,9 @@ const App = () => {
           />
            <Route
             exact
-            path="/properties/properties-for-:property_type-:property_community"
+            path="/properties/properties-for-:property_for-:property_community"
             component={ExclusivePropertiesCommunity}
           />
-properties/community/properties-for-sale-subcomm
             <Route
             exact
             path="/properties/:property_community/properties-for-:property_for-:property_subcomm"

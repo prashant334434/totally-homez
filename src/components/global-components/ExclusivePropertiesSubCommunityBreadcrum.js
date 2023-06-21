@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import ColumnProperty from "./columnproperty";
 import { capitalizeWords } from "../../utils/propertyUtils";
 
-const ExclusiveCommunitiesBreadcrum = (props) => {
+const ExclusivePropertiesSubCommunityBreadcrum = (props) => {
   let HeaderTitle = props.headertitle;
   let publicUrl = process.env.PUBLIC_URL + "/";
   let Subheader = props.subheader ? props.subheader : "Villa";
@@ -16,6 +16,7 @@ const ExclusiveCommunitiesBreadcrum = (props) => {
   const url = (titleName) => {
     return titleName?.split(" ")?.join("-")?.toLowerCase();
   };
+  
   return (
     <div>
       <div className={"ltn__breadcrumb-area text-left pt-100  " + CustomClass}>
@@ -53,6 +54,9 @@ const ExclusiveCommunitiesBreadcrum = (props) => {
                   <li>
                     <Link>{capitalizeWords(props?.comm)} </Link>
                   </li>
+                  <li>
+                    <Link>{capitalizeWords(props?.subcomm)} </Link>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -63,4 +67,4 @@ const ExclusiveCommunitiesBreadcrum = (props) => {
   );
 };
 
-export default ExclusiveCommunitiesBreadcrum;
+export default ExclusivePropertiesSubCommunityBreadcrum;

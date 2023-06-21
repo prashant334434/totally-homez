@@ -2,7 +2,7 @@
 
 //src>components>product-deatils.js
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import PageHeader from "../global-components/page-header";
 import ProductSlider from "../shop-components/product-slider-v1";
 import ProductDetails from "../shop-components/shop-details";
@@ -26,9 +26,13 @@ import Loader from "../Loader/Loader";
 import NewSlide from "../NewSlide";
 import Pageform from "./page-form";
 import PageHeadExclusive from "../global-components/PageHeadExclusive";
+import { convertToLowercase, getExclusivePropertiesTypeUtils, getPropertiesTypeUtils, replaceHyphensWithSpaces } from "../../utils/propertyUtils";
 
 
 const ExclusivePropertiesDetails = () => {
+    const [loading2, setLoading2] = useState(false)
+    const [relatedProperties, setRelatedProperties] = useState([])
+
     console.log("product_details");
   const { id } = useParams();
   console.log("ExclusivePropertiesDetails",id);
@@ -40,6 +44,23 @@ const ExclusivePropertiesDetails = () => {
   useEffect(() => {
     dispatch(getSingalPropertyDetailsApi(id));
   }, [dispatch]);
+
+
+  useEffect(() => {
+    const fetchData = async () => {
+        try {
+            setLoading2(true);
+            const data = await getExclusivePropertiesTypeUtils("apartment", "sale", "dubai");
+            setRelatedProperties(data)
+            setLoading2(false);
+        } catch (error) {
+            console.error(error);
+            setLoading2(false);
+        }
+    };
+
+    fetchData();
+}, []);
 
   if (loading) {
     return <Loader />;
@@ -113,6 +134,14 @@ const ExclusivePropertiesDetails = () => {
       <Footer />
       <StickyBarIcon /> */}
       <PageHeadExclusive propertyDetails={propertyDetails}/>
+      <ProductDetails propertyDetails={propertyDetails} />
+
+      <GoogleMap propertyDetails={propertyDetails} />
+      <RelatedProperties relatedProperties={relatedProperties} />
+      <Pageform />
+      <CallToActionV1 />
+      <Footer />
+      <StickyBarIcon />
     </div>
   );
 };

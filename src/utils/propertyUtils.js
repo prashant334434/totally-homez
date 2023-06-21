@@ -4,9 +4,22 @@ export const getPropertiesTypeUtils= async (property_type, property_for, propert
 
   console.log("property_for",replaceHyphensWithSpaces(property_type))
   console.log("getPropertiesTypeUtils")
-  console.log(property_type, property_for, property_city)
+  console.log("getPropertiesTypeUtils",property_type, property_for, property_city)
   try {
     const response = await axios.get(`https://totallyhomerealestate.com/API/api/properties/typefor/${replaceHyphensWithSpaces(property_type)}/${property_for}`);
+
+    console.log("getPropertiesTypeUtils",response.data)
+    return response.data;
+  } catch (error) {
+    throw new Error('Failed to fetch property types.');
+  }
+};
+export const getExclusivePropertiesTypeUtils= async (property_type, property_for, property_city) => {
+
+  console.log("getPropertiesTypeUtils")
+  console.log("getPropertiesTypeUtils",property_type, property_for, property_city)
+  try {
+    const response = await axios.get(`https://totallyhomerealestate.com/API/api/properties/typefor/${property_type}/${property_for}`);
 
     console.log("getPropertiesTypeUtils",response.data)
     return response.data;
@@ -160,4 +173,4 @@ export const getPropertiesCategoryUtils= async (property_city,property_type,prop
     export const replaceHyphensWithSpaces = (str) => {
       return str.replace(/-/g, " ");
     };
-    
+    export const convertToLowercase = (str) => str.toLowerCase();
