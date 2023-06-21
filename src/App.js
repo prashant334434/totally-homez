@@ -137,8 +137,8 @@ const App = () => {
             component={OffPlanCategory}
           />
           {/* <Route path="/blog-right-sidebar" component={ BlogRightSidebar } /> */}
-          {/* <Route exact path="/blog" component={Blog} />
-          <Route exact path="/:title" component={BlogDetails} /> */}
+          <Route  exact path="/blog" component={Blog} />
+          <Route exact path="/blog/:title" component={BlogDetails} />
           <Route
             exact
             path="/offplan-projects-in-dubai/:offPlanCategoryName"

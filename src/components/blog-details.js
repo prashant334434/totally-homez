@@ -6,13 +6,14 @@ import CallToActionV1 from './section-components/call-to-action-v1';
 import Footer from './global-components/footer';
 import BlogSlider from './blog-components/blog-slider-v1';
 import MobileNav from './global-components/Mobile-nav';
+import BlogMap from './blog-components/blogMap';
 
 const BlogDetailsPage = () => {
     return <div>
         <MobileNav />
         {/* <PageHeader headertitle="News Details" /> */}
         <BlogDetails />
-        <BlogSlider sectionClass="pt-120" />
+        <BlogMap sectionClass="pt-120" />
         <CallToActionV1 />
         <Footer />
     </div>

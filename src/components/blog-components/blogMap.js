@@ -124,7 +124,7 @@ const BlogMap = (props) => {
 							<div className="col-lg-12" key={items.id}>
 							<div className="ltn__blog-item ltn__blog-item-3">
 								<div className="ltn__blog-img">
-									<Link to={`/${url(items.title)}`}><img src={`${ABOUT_IMAGE_URL}/${items?.blog_img}`} alt="#" /></Link>
+									<Link to={`/blog/${url(items.title)}`}><img src={`${ABOUT_IMAGE_URL}/${items?.blog_img}`} alt="#" /></Link>
 								</div>
 								<div className="ltn__blog-brief">
 									<div className="ltn__blog-meta">

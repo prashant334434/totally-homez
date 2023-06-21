@@ -1,18 +1,28 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Comments from './comments';
 import Sidebar from './sidebar';
+import { useDispatch, useSelector } from 'react-redux';
+import { getBlogDetailsApi } from '../../actions/blogActions';
 
     let publicUrl = process.env.PUBLIC_URL+'/'
     let imagealt = 'image'
 
-
+	
 const BlogDetails = () => {
+	const { blogDetails }=useSelector((state)=>(state.blogDetails))
+	const dispatch = useDispatch();
+  
+		  
+		  useEffect(() => {
+			  dispatch(getBlogDetailsApi())
+		  }, [dispatch])
 	return (
 		<div className="ltn__page-details-area ltn__blog-details-area mb-120 pt-70">
 			<div className="container">
 			<div className="row">
 				<div className="col-lg-12">
+				
 				<div className="ltn__blog-details-wrap">
 					<div className="ltn__page-details-inner ltn__blog-details-inner">
 					<div className="ltn__blog-meta">
@@ -40,9 +50,10 @@ const BlogDetails = () => {
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
 					<h2>A cleansing hot shower or bath</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia. </p>
+					<p><a href='#hh'>Setting the mood with incense</a></p>
 					<hr />
-					<h2>Setting the mood with incense</h2>
+					<h2 id='hh'>Setting the mood with incense</h2>
+					<img src={publicUrl+"assets/img/blog/35.jpg"} alt="Image" />
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia. </p>
 					<hr />
 					<h2>Setting the mood with incense</h2>
@@ -55,7 +66,7 @@ const BlogDetails = () => {
 						<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</li>
 						</ul>
 					</div>
-					<blockquote>
+					{/* <blockquote>
 						<h6 className="ltn__secondary-color mt-0">BY HETMAYAR</h6>
 						Viral dreamcatcher keytar typewriter, aest hetic offal umami. Aesthetic polaroid pug pitchfork post-ironic.
 					</blockquote>
@@ -64,8 +75,8 @@ const BlogDetails = () => {
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus</p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
 					<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur expedita velit laboriosam est sint laborum eos assumenda, quam voluptatem adipisci, reprehenderit ut nobis blanditiis perspiciatis!</p>
-					<div className="row">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur expedita velit laboriosam est sint laborum eos assumenda, quam voluptatem adipisci, reprehenderit ut nobis blanditiis perspiciatis!</p> */}
+					{/* <div className="row">
 						<div className="col-lg-12">
 						<img src={publicUrl+"assets/img/blog/35.jpg	"} alt="Image" />
 						<label>Image Caption Here</label>
@@ -73,8 +84,8 @@ const BlogDetails = () => {
 						<div className="col-lg-12">
 						<img src={publicUrl+"assets/img/service/32.jpg"} alt="Image" />
 						</div>
-					</div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, amet, fuga omnis eligendi sed cupiditate molestias enim autem animi est tempore ipsa corporis. Recusandae, quia.</p>
+					</div> */}
+					{/* <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, amet, fuga omnis eligendi sed cupiditate molestias enim autem animi est tempore ipsa corporis. Recusandae, quia.</p> */}
 					</div>
 					{/* blog-tags-social-media */}
 				{/*	<div className="ltn__blog-tags-social-media mt-80 row">
