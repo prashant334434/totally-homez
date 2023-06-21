@@ -27,9 +27,9 @@ const PageHeadExclusive = (props) => {
 					<div className="ltn__breadcrumb-list">
 						
 
-						{ props?.propertyDetails?.property_level ? (
+						{ props?.propertyDetails?.property_level!=="" ? (
 							<ul>
-						<li><Link to='/'><span className="ltn__secondary-color"><i className="fas fa-home" style={{fontSize:'16px'}} /></span> { props?.propertyDetails?.property_city }</Link></li>
+						<li><Link to='/'><span className="ltn__secondary-color"><i className="fas fa-home" style={{fontSize:'16px'}} /></span> { "Dubai" }</Link></li>
 						{/* <li><Link to="/">{ props?.propertyDetails?.property_for }</Link></li> */}
 						<li><Link to={`/${url(
 								props?.propertyDetails?.property_type
@@ -55,7 +55,7 @@ const PageHeadExclusive = (props) => {
 						</ul>
 						):(
 							<ul>
-						<li><Link to="/"><span className="ltn__secondary-color"><i className="fas fa-home" style={{fontSize:'16px'}} /></span> { props?.propertyDetails?.property_city }</Link></li>
+						<li><Link to="/"><span className="ltn__secondary-color"><i className="fas fa-home" style={{fontSize:'16px'}} /></span> { "Dubai" }</Link></li>
 						{/* <li><Link to="/">{ props?.propertyDetails?.property_for }</Link></li> */}
 						<li><Link to={`/${url(
 								props?.propertyDetails?.property_type

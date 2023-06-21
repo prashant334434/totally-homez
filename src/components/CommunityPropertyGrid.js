@@ -70,7 +70,7 @@ const CommunityPropertyGrid = (props) => {
     return titleName?.split(" ")?.join("-")?.toLowerCase();
   };
   const offset = currentPage * itemsPerPage;
-  const paginatedPropertyTypes = props?.propertyTypes?.slice(
+  const paginatedPropertyTypes = props?.propertyCategory?.slice(
     offset,
     offset + itemsPerPage
   );

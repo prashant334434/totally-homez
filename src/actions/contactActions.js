@@ -48,7 +48,7 @@ export const postContactApi = (formData) => async (dispatch) => {
 
     const { data } = await axios.post(
       `https://totallyhomerealestate.com/API/api/contact_form`,
-      { ...formData, pageName: "propertyDetails" },
+      { ...formData, page_name: "propertyDetails" },
       {config}
       
     );

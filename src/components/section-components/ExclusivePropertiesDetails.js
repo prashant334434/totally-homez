@@ -99,7 +99,7 @@ const ExclusivePropertiesDetails = () => {
           </div>
         </div>
       </div>
-      <PageHeadExclusive
+      {/* <PageHeadExclusive
         propertyDetails={propertyDetails}
         headertitle="Garden Homes Frond C"
         customclass="mb-0"
@@ -111,7 +111,8 @@ const ExclusivePropertiesDetails = () => {
       <Pageform />
       <CallToActionV1 />
       <Footer />
-      <StickyBarIcon />
+      <StickyBarIcon /> */}
+      <PageHeadExclusive/>
     </div>
   );
 };

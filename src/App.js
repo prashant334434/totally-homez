@@ -134,7 +134,6 @@ const App = () => {
           {/* <Route path="/blog-right-sidebar" component={ BlogRightSidebar } /> */}
           <Route path="/blog" component={Blog} />
           <Route path="/blog-details" component={BlogDetails} />
-          {/* <Route path="/contact" component={ Contact } /> */}
           <Route
             exact
             path="/offplan-projects-in-dubai/:offPlanCategoryName"
@@ -155,7 +154,6 @@ const App = () => {
             path="/:property_city/:property_community/:property_sub_community/:property_type-for-:property_for-:property_level/TH:id"
             component={ProdductDetails}
           />
-          <Route exact path="/contact-us" component={NewContact} />
           <Route exact path="/team" component={OurTeam} />
           {/* <Route exact path="/property/:type" component={PropertyType} />
           <Route exact path="/property/:type" component={PropertyType} /> */}
@@ -164,9 +162,8 @@ const App = () => {
           {/* <Route exact path="/tt" component={NewSlide} /> */}
           <Route exact path="/about-us" component={aboutUs} />
           <Route exact path="/shop-page" component={ShopNew} />
-          <Route path="/contact" component={ContactPage} />
-          {/* <Route exact path="/contact2" component={Contact2} />
-          <Route exact path="/contact3" component={Contact3} /> */}
+          <Route exact path="/contact" component={ContactPage} />
+         
           <Route
             exact
             path="/best-communites-in-dubai/:communityName"
