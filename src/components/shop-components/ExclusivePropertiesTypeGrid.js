@@ -114,6 +114,7 @@ const ExclusivePropertiesTypeGrid = (props) => {
                                       />
                                     </Link>
                                   ) : (
+                                    
                                     <Link
                                       to={`/properties/${url(categoryProperty?.property_community)}/${url(
                                         categoryProperty?.property_sub_community

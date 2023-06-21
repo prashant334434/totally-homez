@@ -99,9 +99,10 @@ const App = () => {
             path="/properties/:community/:subcomm/th:id"
             component={ExclusivePropertiesDetails}
           />
+         
            <Route
             exact
-            path="/properties/:community/:subcomm/th:id"
+            path="/properties/:community/:subcomm/properties-for-:property_for-:property_level/th:id"
             component={ExclusivePropertiesDetails}
           />
           <Route
