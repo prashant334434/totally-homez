@@ -31,6 +31,7 @@ import AboutUsHome from './shop-components/AboutUsHome';
 import Curousal1 from './shop-components/curosal-1';
 import { getHomePageApi } from '../actions/homePageActions';
 import SideEffect from '../utils/cleanup';
+import BlogMap from './blog-components/blogMap';
 
 
 const Home_V7 = () => {
@@ -129,7 +130,8 @@ const Home_V7 = () => {
     <TeamAgents homePage={homePage} customClass='ltn__feature-area section-bg-1 pt-80  mb-120---' />
     {/* <Testimonial customClass='ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---'/> */}
 
-    <BlogSlider homePage={homePage} customClass="section-subtitle-2 " />
+    {/* <BlogSlider homePage={homePage} customClass="section-subtitle-2 " /> */}
+    <BlogMap />
 
     {/* <BlogT customClass='ltn__feature-area section-bg-1 pt-120 pb-90 mb-120---'/> */}
     <CallToActionV1 />
