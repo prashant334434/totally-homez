@@ -131,11 +131,11 @@ const BlogMap = (props) => {
 			
 				
 									</div>
-									<p className="ltn__blog-title"><Link to="/blog-details">{items.title}</Link></p>
+									<p className="ltn__blog-title"><Link to={`/blog/${url(items.title)}`}>{items.title}</Link></p>
 									<div className="ltn__blog-meta-btn">
 									
 										<div className="ltn__blog-btn">
-											<Link to="/blog-details">Read more</Link>
+											<Link to={`/blog/${url(items.title)}`}>Read more</Link>
 										</div>
 									</div>
 								</div>
