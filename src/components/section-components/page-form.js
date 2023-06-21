@@ -1,16 +1,18 @@
-import React, { Component } from "react";
+import React, { Component, useEffect } from "react";
 import { Link } from "react-router-dom";
 import parse from "html-react-parser";
 import { useState } from "react";
 import { postContactApi } from "../../actions/contactActions";
-import { useDispatch } from "react-redux";
-
+import { useDispatch, useSelector } from "react-redux";
+import { useAlert } from "react-alert";
 const Pageform = () => {
+  const {error,success,contacts}=useSelector((state)=>state.contactForm)
+  const alert=useAlert()
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     mobile_no: "",
-    message: "",
+    message: "Hello! I came across your property with reference No (Ref No). I am highly interested, so kindly get in touch. Thank you",
   });
 
   const handleChange = (event) => {
@@ -23,32 +25,22 @@ const Pageform = () => {
   const dispatch = useDispatch();
   let publicUrl = process.env.PUBLIC_URL + "/";
 
-  const [alert, setAlert] = React.useState({
-    type: "error",
-    text: "This is a alert message",
-    show: false,
-  });
+  
 
-  function onCloseAlert() {
-    setAlert({
-      type: "",
-      text: "",
-      show: false,
-    });
-  }
-
-  function onShowAlert(type) {
-    setAlert({
-      type: type,
-      text: "Demo alert",
-      show: true,
-    });
-  }
 
   const submitForm = (e) => {
     e.preventDefault()
     dispatch(postContactApi(formData));
   };
+  useEffect(()=>{
+    if(success){
+      alert.success("We have received your response")
+    }
+    if(success==false){
+      alert.error("Some error occured")
+    }
+
+  },[alert,error,success])
   return (
     <div>
       <div
@@ -119,6 +111,7 @@ const Pageform = () => {
                       id="message"
                       name="message"
                       onChange={handleChange}
+                      value={formData.name && formData.email && formData.mobile_no.length === 10 ? "Hello! I came across your property with reference No (Ref No). I am highly interested, so kindly get in touch. Thank you" : ""}
                       required
                     />
                   </div>

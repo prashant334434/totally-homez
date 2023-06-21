@@ -10,12 +10,14 @@ export const contactReducer = (state = { contact: [] }, action) => {
         case GET_CONTACT_SUCCESS:
             return {
                 loading: false,
+                success:true,
                 contact: action.payload,
               
             }
         case GET_CONTACT_FAILURE: {
             return {
                 loading: false,
+                success:false,
                 error: action.payload,
             }
         }
@@ -37,13 +39,15 @@ export const contactFormReducer = (state = { }, action) => {
         case POST_CONTACT_SUCCESS:
             return {
                 loading: false,
+                success:true,
                 contacts: action.payload,
               
             }
         case POST_CONTACT_FAILURE: {
             return {
                 loading: false,
-                error: action.payload,
+                success:false,
+                error: true,
             }
         }
         default:
