@@ -133,7 +133,7 @@ const App = () => {
           />
           {/* <Route path="/blog-right-sidebar" component={ BlogRightSidebar } /> */}
           <Route path="/blog" component={Blog} />
-          <Route path="/blog-details" component={BlogDetails} />
+          <Route path="/:title" component={BlogDetails} />
           <Route
             exact
             path="/offplan-projects-in-dubai/:offPlanCategoryName"
