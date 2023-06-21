@@ -18,7 +18,7 @@ const dispatch=useDispatch()
           <MetaData title={contact[0]?.seo_titel} metaKeyword={contact[0]?.seo_teg} metaDesription={contact[0]?.seo_des} />
 
         <MobileNav/>
-        <ContactForm1 />
+        <ContactForm1 contact={contact} />
         <Footer_v1/>
     </>
   )

@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useAlert } from "react-alert";
 import { postContactApi } from "../../actions/contactActions";
 
-const ContactForm1 = () => {
+const ContactForm1 = ({contact}) => {
   const dispatch = useDispatch();
   const { error, success, contacts } = useSelector(
     (state) => state.contactForm
@@ -40,27 +40,29 @@ const ContactForm1 = () => {
         <h4 class="text-center text-white">Contact Us</h4>
         {/* <p class="text-center  text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, voluptas?</p> */}
         <div class="row  g-4 py-5">
-          <div class="col-md-7">
-            <div class="card">
-              <img
-                src="https://media.istockphoto.com/id/467829216/photo/dubai-marina.jpg?s=612x612&w=0&k=20&c=5KNh7wGSoP9i-UJzT-LtUfXgLHKKoBlPAK67R0LHRQY="
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <br />
-
-                <h5>Phone :- +971 54 289 7686</h5>
-
-                <h5>
-                  Office 103, Building 6 Bay Square Tower,
-                  <br /> Business Bay, Dubai,
-                  <br /> United Arab Emirates.
-                  <br /> PO Box: 418317
-                </h5>
+          {
+            contact?.map((con)=>(
+              <div key={con?.id} class="col-md-7">
+              <div class="card">
+                <img
+                  src="https://media.istockphoto.com/id/467829216/photo/dubai-marina.jpg?s=612x612&w=0&k=20&c=5KNh7wGSoP9i-UJzT-LtUfXgLHKKoBlPAK67R0LHRQY="
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <br />
+  
+                  <h5>{con?.c_mobile}</h5>
+  
+                  <h5>
+                    {con?.c_address}
+                  </h5>
+                </div>
               </div>
             </div>
-          </div>
+            ))
+          }
+         
           <div class="col-md-5">
             <div class="card">
               <h4>Get in Touch</h4>
@@ -112,7 +114,6 @@ const ContactForm1 = () => {
                   {/* <label for="exampleFormControlTextarea1" class="form-label">How can we help?</label> */}
                   <textarea
                     class="fl"
-                    id="exampleFormControlTextarea1"
                     rows="3"
                     placeholder="How can we help?"
                     id="message"
