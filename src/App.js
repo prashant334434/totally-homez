@@ -120,7 +120,7 @@ const App = () => {
           {/* <Route path="/shopjhfe" component={ ShopRightSidebar } /> */}
           {/* <Route path="/product-details" component={ProdductDetails} /> */}
           {/* blog */}
-          <Route path="/blogs" component={BlogGrid} />
+          <Route exact path="/blogs" component={BlogGrid} />
           <Route
             exact
             path="/best-communites-in-dubai"
@@ -132,8 +132,8 @@ const App = () => {
             component={OffPlanCategory}
           />
           {/* <Route path="/blog-right-sidebar" component={ BlogRightSidebar } /> */}
-          <Route path="/blog" component={Blog} />
-          <Route path="/:title" component={BlogDetails} />
+          {/* <Route exact path="/blog" component={Blog} />
+          <Route exact path="/:title" component={BlogDetails} /> */}
           <Route
             exact
             path="/offplan-projects-in-dubai/:offPlanCategoryName"
