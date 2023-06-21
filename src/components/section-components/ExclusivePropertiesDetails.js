@@ -112,7 +112,7 @@ const ExclusivePropertiesDetails = () => {
       <CallToActionV1 />
       <Footer />
       <StickyBarIcon /> */}
-      <PageHeadExclusive/>
+      <PageHeadExclusive propertyDetails={propertyDetails}/>
     </div>
   );
 };

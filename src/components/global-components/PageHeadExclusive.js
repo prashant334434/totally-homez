@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 const PageHeadExclusive = (props) => {
+	console.log("exclusiveProperty",props)
     let HeaderTitle = props.headertitle;
     let publicUrl = process.env.PUBLIC_URL+'/'
     let Subheader = props.subheader ? props.subheader : "Villa"
@@ -29,24 +30,33 @@ const PageHeadExclusive = (props) => {
 
 						{ props?.propertyDetails?.property_level!=="" ? (
 							<ul>
-						<li><Link to='/'><span className="ltn__secondary-color"><i className="fas fa-home" style={{fontSize:'16px'}} /></span> { "Dubai" }</Link></li>
+						<li><Link to='/'><span className="ltn__secondary-color"><i className="fas fa-home" style={{fontSize:'16px'}} /></span> { "Dubai" }</Link>
+						</li>
 						{/* <li><Link to="/">{ props?.propertyDetails?.property_for }</Link></li> */}
-						<li><Link to={`/${url(
+						<li>
+							<Link to={`/${url(
 								props?.propertyDetails?.property_type
-                            )}-for-${url(props?.propertyDetails?.property_for)}-${url(props?.propertyDetails?.property_city)}`}>{"Properties" }</Link></li>
-						<li><Link to={`/properties/properties-for-${url(props?.propertyDetails?.property_for)}-${url(
+                            )}-for-${url(props?.propertyDetails?.property_for)}-${url(props?.propertyDetails?.property_city)}`}>{"Properties" }</Link>
+							</li>
+						<li>
+							<Link to={`/properties/properties-for-${url(props?.propertyDetails?.property_for)}-${url(
 								props?.propertyDetails?.property_community
-							  )}`}>{ props?.propertyDetails?.property_community }</Link></li>
-						<li><Link to={`/properties/${url(
+							  )}`}>{props?.propertyDetails?.property_community}</Link>
+							  </li>
+						<li>
+							<Link to={`/properties/${url(
 								props?.propertyDetails?.property_community
-							  )}/properties-for-${url(props?.propertyDetails?.property_for)}-${url(props?.propertyDetails?.property_sub_community)}`}>{ props?.propertyDetails?.property_sub_community }</Link></li>
-						<li><Link to={`/${url(props?.propertyDetails?.property_city)}/${url(
+							  )}/properties-for-${url(props?.propertyDetails?.property_for)}-${url(props?.propertyDetails?.property_sub_community)}`}>{ props?.propertyDetails?.property_sub_community }</Link>
+							  </li>
+						<li>
+							<Link to={`/${url(props?.propertyDetails?.property_city)}/${url(
                               props?.propertyDetails?.property_community
                             )}/${url(props?.propertyDetails?.property_sub_community)}/${url(
 								props?.propertyDetails?.property_type
                             )}-for-${url(props?.propertyDetails?.property_for)}-${url(
 								props?.propertyDetails?.property_level
-                            )}`}>{ props?.propertyDetails?.property_level }</Link></li>
+                            )}`}>{ props?.propertyDetails?.property_level }</Link>
+							</li>
 						
 						<li>{"TH"}{ props?.propertyDetails?.id }</li>
 
@@ -59,7 +69,7 @@ const PageHeadExclusive = (props) => {
 						{/* <li><Link to="/">{ props?.propertyDetails?.property_for }</Link></li> */}
 						<li><Link to={`/${url(
 								props?.propertyDetails?.property_type
-                            )}-for-${url(props?.propertyDetails?.property_for)}-${url(props?.propertyDetails?.property_city)}`}>{ props?.propertyDetails?.property_type }</Link></li>
+                            )}-for-${url(props?.propertyDetails?.property_for)}-${url(props?.propertyDetails?.property_city)}`}>{ "Properties" }</Link></li>
 						<li><Link to={`/${url(props?.propertyDetails?.property_city)}/${url(
 								props?.propertyDetails?.property_type
                             )}-for-${url(props?.propertyDetails?.property_for)}-${url(
