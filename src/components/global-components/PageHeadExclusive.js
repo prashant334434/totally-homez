@@ -48,15 +48,11 @@ const PageHeadExclusive = (props) => {
 								props?.propertyDetails?.property_community
 							  )}/properties-for-${url(props?.propertyDetails?.property_for)}-${url(props?.propertyDetails?.property_sub_community)}`}>{ props?.propertyDetails?.property_sub_community }</Link>
 							  </li>
-						<li>
-							<Link to={`/${url(props?.propertyDetails?.property_city)}/${url(
-                              props?.propertyDetails?.property_community
-                            )}/${url(props?.propertyDetails?.property_sub_community)}/${url(
-								props?.propertyDetails?.property_type
-                            )}-for-${url(props?.propertyDetails?.property_for)}-${url(
-								props?.propertyDetails?.property_level
-                            )}`}>{ props?.propertyDetails?.property_level }</Link>
-							</li>
+							  <li>
+							<Link to={`/properties/${url(
+								props?.propertyDetails?.property_community
+							  )}/properties-for-${url(props?.propertyDetails?.property_for)}-${url(props?.propertyDetails?.property_sub_community)}`}>{ props?.propertyDetails?.property_sub_community }</Link>
+							  </li>
 						
 						<li>{"TH"}{ props?.propertyDetails?.id }</li>
 
@@ -70,16 +66,16 @@ const PageHeadExclusive = (props) => {
 						<li><Link to={`/${url(
 								props?.propertyDetails?.property_type
                             )}-for-${url(props?.propertyDetails?.property_for)}-${url(props?.propertyDetails?.property_city)}`}>{ "Properties" }</Link></li>
-						<li><Link to={`/${url(props?.propertyDetails?.property_city)}/${url(
-								props?.propertyDetails?.property_type
-                            )}-for-${url(props?.propertyDetails?.property_for)}-${url(
+						<li>
+							<Link to={`/properties/properties-for-${url(props?.propertyDetails?.property_for)}-${url(
 								props?.propertyDetails?.property_community
-							  )}`}>{ props?.propertyDetails?.property_community }</Link></li>
-						<li><Link to={`/${url(props?.propertyDetails?.property_city)}/${url(
-                              props?.propertyDetails?.property_community
-                            )}/${url(
-								props?.propertyDetails?.property_type
-                            )}-for-${url(props?.propertyDetails?.property_for)}-${url(props?.propertyDetails?.property_sub_community)}`}>{ props?.propertyDetails?.property_sub_community }</Link></li>
+							  )}`}>{props?.propertyDetails?.property_community}</Link>
+							  </li>
+							  <li>
+							<Link to={`/properties/${url(
+								props?.propertyDetails?.property_community
+							  )}/properties-for-${url(props?.propertyDetails?.property_for)}-${url(props?.propertyDetails?.property_sub_community)}`}>{ props?.propertyDetails?.property_sub_community }</Link>
+							  </li>
 					
 						
 						<li>{"TH"}{ props?.propertyDetails?.id }</li>

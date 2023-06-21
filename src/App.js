@@ -105,11 +105,22 @@ const App = () => {
             path="/properties/:community/:subcomm/properties-for-:property_for-:property_level/th:id"
             component={ExclusivePropertiesDetails}
           />
-          <Route
+           <Route
+            exact
+            path="/properties/properties-for-:property_type-:property_community"
+            component={ExclusivePropertiesCommunity}
+          />
+properties/community/properties-for-sale-subcomm
+            <Route
+            exact
+            path="/properties/:property_community/properties-for-:property_for-:property_subcomm"
+            component={ExclusivePropertiesSubCommunity}
+          />
+          {/* <Route
             exact
             path="/properties/properties-for-:property_for-:property_community"
-            component={CommunityPage}
-          />
+            component={ExclusivePropertiesCommunity}
+          /> */}
           <Route
             exact
             path="/properties/:property_community/properties-for-:property_type-:property_subcomm"
