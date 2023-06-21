@@ -35,9 +35,10 @@ const BlogDetails = () => {
 						</li>
 						</ul>
 					</div>
+					<img src={publicUrl+"assets/img/blog/35.jpg"} alt="Image" />
+
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
-					<img src={publicUrl+"assets/img/blog/35.jpg"} alt="Image" />
 					<h2>A cleansing hot shower or bath</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia. </p>
 					<hr />
@@ -65,11 +66,11 @@ const BlogDetails = () => {
 					<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur expedita velit laboriosam est sint laborum eos assumenda, quam voluptatem adipisci, reprehenderit ut nobis blanditiis perspiciatis!</p>
 					<div className="row">
-						<div className="col-lg-6">
-						<img src={publicUrl+"assets/img/service/31.jpg"} alt="Image" />
+						<div className="col-lg-12">
+						<img src={publicUrl+"assets/img/blog/35.jpg	"} alt="Image" />
 						<label>Image Caption Here</label>
 						</div>
-						<div className="col-lg-6">
+						<div className="col-lg-12">
 						<img src={publicUrl+"assets/img/service/32.jpg"} alt="Image" />
 						</div>
 					</div>
@@ -101,19 +102,7 @@ const BlogDetails = () => {
 						</ul>
 					</div>
 					</div>*/}
-					<hr />
-					{/* prev-next-btn */}
-					<div className="ltn__prev-next-btn row mb-50">
-					<div className="blog-prev col-lg-6">
-						<h6>Prev Post</h6>
-						<h3 className="ltn__blog-title"><Link to="#">Tips On Minimalist</Link></h3>
-					</div>
-					<div className="blog-prev blog-next text-right text-end col-lg-6">
-						<h6>Next Post</h6>
-						<h3 className="ltn__blog-title"><Link to="#">Less Is More</Link></h3>
-					</div>
-					</div>
-					<hr />
+					
 					{/* related-post */}
 					{/*<div className="related-post-area mb-50">
 					<h4 className="title-2">Related Post</h4>

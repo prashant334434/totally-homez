@@ -13,6 +13,8 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 import { currentTeamMember } from "../../actions/teamActions";
+
+
 const BlogMap = (props) => {
   const history = useHistory();
 
@@ -77,6 +79,7 @@ const BlogMap = (props) => {
     dispatch(currentTeamMember(id));
     history.push(`/team/${name.toLowerCase().split(" ").join("-")}`);
   };
+ 
   return (
     <div>
       <div>
@@ -116,37 +119,24 @@ const BlogMap = (props) => {
                 slidesToSlide={1}
                 swipeable
               >
+              
             	{carouselItems?.map((items,index)=>(
 							<div className="col-lg-12" key={items.id}>
 							<div className="ltn__blog-item ltn__blog-item-3">
 								<div className="ltn__blog-img">
-									<Link to="/blog-details"><img src={`${ABOUT_IMAGE_URL}/${items?.blog_img}`} alt="#" /></Link>
+									<Link to={`/${url(items.title)}`}><img src={`${ABOUT_IMAGE_URL}/${items?.blog_img}`} alt="#" /></Link>
 								</div>
 								<div className="ltn__blog-brief">
 									<div className="ltn__blog-meta">
-										{/* <ul>
-				  <li className="ltn__blog-author">
-					<Link to="/team-details"><i className="far fa-user" />by: Admin</Link>
-				  </li>
-				  <li className="ltn__blog-tags">
-					<Link to="/blog-grid"><i className="fas fa-tags" />Interior</Link>
-					<Link to="/blog-grid"><i className="fas fa-tags" />Interior</Link>
-				  </li>
-				</ul> */}
+			
+				
 									</div>
 									<p className="ltn__blog-title"><Link to="/blog-details">{items.title}</Link></p>
 									<div className="ltn__blog-meta-btn">
-										{/*<div className="ltn__blog-meta">
-											<ul>
-												<li className="ltn__blog-date"><i className="far fa-calendar-alt" />July 23, 2021</li>
-											</ul>
-											<ul>
-					<li className="ltn__blog-date"><i className="far fa-calendar-alt" />June 24, 2021</li>
-				  </ul>
-										</div>*/}
-										{/* <div className="ltn__blog-btn">
+									
+										<div className="ltn__blog-btn">
 											<Link to="/blog-details">Read more</Link>
-										</div> */}
+										</div>
 									</div>
 								</div>
 							</div>
