@@ -6,7 +6,7 @@ export const getBlogsApi = () => async (dispatch) => {
     try {
       dispatch({ type: GET_ALL_BLOG_REQUEST });
   
-      const  {data}  = await axios.get(`https://totallyhomerealestate.com/API/api/blogs`);
+      const  {data}  = await axios.get(`https://totallyhomerealestate.com/API/api/blog`);
 
   
       dispatch({

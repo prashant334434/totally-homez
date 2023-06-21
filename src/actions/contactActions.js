@@ -42,6 +42,7 @@ export const postContactApi = (formData) => async (dispatch) => {
   };
   console.log(formData);
   try {
+    console.log(formData)
     dispatch({
       type: POST_CONTACT_REQUEST,
     });

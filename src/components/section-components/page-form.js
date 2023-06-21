@@ -9,7 +9,7 @@ const Pageform = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    phone: "",
+    mobile_no: "",
     message: "",
   });
 
@@ -107,8 +107,8 @@ const Pageform = () => {
                     <input
                       onChange={handleChange}
                       type="number"
-                      id="phone"
-                      name="phone"
+                      id="mobile_no"
+                      name="mobile_no"
                       required
                     />
                   </div>
