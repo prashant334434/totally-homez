@@ -1,6 +1,6 @@
 //src>components>product-deatils.js
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "./global-components/navbar-v3";
 import PageHeader from "./global-components/page-header";
 import ProductSlider from "./shop-components/product-slider-v1";
@@ -25,12 +25,16 @@ import MetaData from "./Layout/MetaData";
 // import TailwindSlider from '../TailwindSlider';
 import TailwindSlider from "./TailwindSlider";
 import NewSlide from "./NewSlide";
+import { getPropertiesTypeUtils, replaceHyphensWithSpaces } from "../utils/propertyUtils";
 
 const Product_Details = () => {
+  const{property_type,property_for,property_city}=useParams()
+  const [loading, setLoading] = useState(false)
+  const [relatedProperties, setRelatedProperties] = useState([])
     console.log("product_details");
   const { id } = useParams();
   console.log(id);
-  const { loading, propertyDetails } = useSelector(
+  const { loading:ld, propertyDetails } = useSelector(
     (state) => state.propertyDetails
   );
   const dispatch = useDispatch();
@@ -39,7 +43,24 @@ const Product_Details = () => {
     dispatch(getSingalPropertyDetailsApi(id));
   }, [dispatch]);
 
-  if (loading) {
+
+  useEffect(() => {
+    const fetchData = async () => {
+        try {
+            setLoading(true);
+            const data = await getPropertiesTypeUtils(replaceHyphensWithSpaces(property_type), property_for, property_city);
+            setRelatedProperties(data)
+            setLoading(false);
+        } catch (error) {
+            console.error(error);
+            setLoading(false);
+        }
+    };
+
+    fetchData();
+}, []);
+
+  if (ld) {
     return <Loader />;
   }
   return (
@@ -105,7 +126,7 @@ const Product_Details = () => {
       <ProductDetails propertyDetails={propertyDetails} />
 
       <GoogleMap propertyDetails={propertyDetails} />
-      <RelatedProperties />
+      <RelatedProperties relatedProperties={relatedProperties} />
       <PageForm />
       <CallToActionV1 />
       <Footer />
