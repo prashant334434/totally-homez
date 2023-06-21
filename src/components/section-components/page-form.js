@@ -5,7 +5,7 @@ import { useState } from "react";
 import { postContactApi } from "../../actions/contactActions";
 import { useDispatch, useSelector } from "react-redux";
 import { useAlert } from "react-alert";
-const Pageform = () => {
+const Pageform = ({propertyRef}) => {
   const { error, success, contacts } = useSelector(
     (state) => state.contactForm
   );
@@ -114,7 +114,7 @@ const Pageform = () => {
                         formData.name &&
                         formData.email &&
                         formData.mobile_no.length === 10
-                          ? "Hello! I came across your property with reference No (Ref No). I am highly interested, so kindly get in touch. Thank you"
+                          ? `Hello! I came across your property with reference No ${propertyRef}. I am highly interested, so kindly get in touch. Thank you`
                           : ""
                       }
                       required

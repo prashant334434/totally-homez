@@ -127,7 +127,7 @@ const Product_Details = () => {
 
       <GoogleMap propertyDetails={propertyDetails} />
       <RelatedProperties relatedProperties={relatedProperties} />
-      <PageForm />
+      <PageForm propertyRef={propertyDetails?.property_ref_no} />
       <CallToActionV1 />
       <Footer />
       <StickyBarIcon />

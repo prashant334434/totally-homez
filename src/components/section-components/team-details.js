@@ -29,7 +29,7 @@ const TeamDetails = ({ loading, teamDetails }) => {
     email: "",
     mobile_no: "",
     message:
-      "Hello! I came across your property with reference No (Ref No). I am highly interested, so kindly get in touch. Thank you",
+      "",
   });
   let publicUrl = process.env.PUBLIC_URL + "/";
 
@@ -149,13 +149,7 @@ const TeamDetails = ({ loading, teamDetails }) => {
                       placeholder="Enter message"
                       id="message"
                       onChange={handleChange}
-                      value={
-                        formData.name &&
-                        formData.email &&
-                        formData.mobile_no.length === 10
-                          ? "Hello! I came across your property with reference No (Ref No). I am highly interested, so kindly get in touch. Thank you"
-                          : ""
-                      }
+                     
                       required
                     />
                   </div>
