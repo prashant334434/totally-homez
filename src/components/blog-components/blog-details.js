@@ -8,6 +8,7 @@ import { currentBlogId } from '../../actions/blogActions';
 
 import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
 import Loader from '../Loader/Loader';
+import { ABOUT_IMAGE_URL } from '../../constants/config';
 
     let publicUrl = process.env.PUBLIC_URL+'/'
     let imagealt = 'image'
@@ -42,131 +43,79 @@ console.log("blogDetails",blogDetails)
 							<Link to="/team-details"><img src={publicUrl+"assets/img/blog/author.jpg"} alt="#" />By: {item?.author}</Link>
 						</li>
 						<li className="ltn__blog-date">
-							<i className="far fa-calendar-alt" />June 22, 2020
+							<i className="far fa-calendar-alt" />{item?.date}
 						</li>
 						</ul>
 					</div>
-					<img src={publicUrl+"assets/img/blog/35.jpg"} alt="Image" />
+					<img src={`${ABOUT_IMAGE_URL}/${item.blog_img}`} alt="Image" />
 
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>
-					<h2>A cleansing hot shower or bath</h2>
-					<p><a href='#hh'>Setting the mood with incense</a></p>
-					<hr />
-					<h2 id='hh'>Setting the mood with incense</h2>
-					<img src={publicUrl+"assets/img/blog/35.jpg"} alt="Image" />
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia. </p>
-					<hr />
-					<h2>Setting the mood with incense</h2>
-					<div className="list-item-with-icon-2">
-						<ul>
-						<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</li>
-						<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</li>
-						<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</li>
-						<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</li>
-						<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</li>
-						</ul>
-					</div>
-					{/* <blockquote>
-						<h6 className="ltn__secondary-color mt-0">BY HETMAYAR</h6>
-						Viral dreamcatcher keytar typewriter, aest hetic offal umami. Aesthetic polaroid pug pitchfork post-ironic.
-					</blockquote>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium. </p>
-					<img className="alignleft" src={publicUrl+"assets/img/blog/blog-details/1.jpg"} alt="Image" />
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
-					<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur expedita velit laboriosam est sint laborum eos assumenda, quam voluptatem adipisci, reprehenderit ut nobis blanditiis perspiciatis!</p> */}
-					{/* <div className="row">
-						<div className="col-lg-12">
-						<img src={publicUrl+"assets/img/blog/35.jpg	"} alt="Image" />
-						<label>Image Caption Here</label>
-						</div>
-						<div className="col-lg-12">
-						<img src={publicUrl+"assets/img/service/32.jpg"} alt="Image" />
-						</div>
-					</div> */}
-					{/* <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, amet, fuga omnis eligendi sed cupiditate molestias enim autem animi est tempore ipsa corporis. Recusandae, quia.</p> */}
-					</div>
-					{/* blog-tags-social-media */}
-				{/*	<div className="ltn__blog-tags-social-media mt-80 row">
-					<div className="ltn__tagcloud-widget col-lg-8 go-top">
-						<h4>Releted Tags</h4>
-						<ul>
-						<li>
-							<Link to="/shop">Popular</Link>
-						</li>
-						<li>
-							<Link to="/shop">Business</Link>
-						</li>
-						<li>
-							<Link to="/shop">ux</Link>
-						</li>
-						</ul>
-					</div>
-					<div className="ltn__social-media text-right text-end col-lg-4">
-						<h4>Social Share</h4>
-						<ul>
-						<li><a href="#" title="Facebook"><i className="fab fa-facebook-f" /></a></li>
-						<li><a href="#" title="Twitter"><i className="fab fa-twitter" /></a></li>
-						<li><a href="#" title="Linkedin"><i className="fab fa-linkedin" /></a></li>
-						<li><a href="#" title="Youtube"><i className="fab fa-youtube" /></a></li>
-						</ul>
-					</div>
-					</div>*/}
+					<p>{item.des}</p>
+					<p><a href={`#${item.sec1_h}`}>{item.sec1_h}</a></p>
 					
-					{/* related-post */}
-					{/*<div className="related-post-area mb-50">
-					<h4 className="title-2">Related Post</h4>
-					<div className="row">
-						<div className="col-md-6">
-						<div className="ltn__blog-item ltn__blog-item-6">
-							<div className="ltn__blog-img">
-							<Link to="/blog-details"><img src={publicUrl+"assets/img/blog/blog-details/11.jpg"} alt="Image" /></Link>
-							</div>
-							<div className="ltn__blog-brief">
-							<div className="ltn__blog-meta">
-							<ul>
-								<li className="ltn__blog-date ltn__secondary-color">
-									<i className="far fa-calendar-alt" />June 22, 2020
-								</li>
-								</ul> 
-							</div>
-							<h3 className="ltn__blog-title"><Link to="/blog-details">A series of iOS 7 inspire
-								vector icons sense.</Link></h3>
-							<p>Lorem ipsum dolor sit amet, conse ctet ur adipisicing elit, sed doing.</p>
-							</div>
-						</div>
-						</div>
-						<div className="col-md-6">
-						
-						<div className="ltn__blog-item ltn__blog-item-6">
-							<div className="ltn__blog-img">
-							<Link to="/blog-details"><img src={publicUrl+"assets/img/blog/blog-details/12.jpg"} alt="Image" /></Link>
-							</div>
-							<div className="ltn__blog-brief">
-							<div className="ltn__blog-meta">
-								<ul>
-								<li className="ltn__blog-date ltn__secondary-color">
-								<i className="far fa-calendar-alt" />June 22, 2020
-							</li>
-								</ul>
-							</div>
-							<h3 className="ltn__blog-title"><Link to="/blog-details">A series of iOS 7 inspire
-								vector icons sense.</Link></h3>
-							<p>Lorem ipsum dolor sit amet, conse ctet ur adipisicing elit, sed doing.</p>
-							</div>
-						</div>
-						</div>
+					<p><a href={`#${item.sec2_h}`}>{item.sec2_h}</a></p>
+					<p><a href={`#${item.sec3_h}`}>{item.sec3_h}</a></p>
+					<p><a href={`#${item.sec4_h}`}>{item.sec4_h}</a></p>
+					<p><a href={`#${item.sec5_h}`}>{item.sec5_h}</a></p>
+					<p><a href={`#${item.sec6_h}`}>{item.sec6_h}</a></p>
+					<p><a href={`#${item.sec7_h}`}>{item.sec7_h}</a></p>
+					<p><a href={`#${item.sec8_h}`}>{item.sec8_h}</a></p>
+					<p><a href={`#${item.sec9_h}`}>{item.sec9_h}</a></p>
+					<p><a href={`#${item.sec10_h}`}>{item.sec10_h}</a></p>
+					<p><a href={`#${item.sec11_h}`}>{item.sec11_h}</a></p>
+					<p><a href={`#${item.sec12_h}`}>{item.sec12_h}</a></p>
+					<p><a href={`#${item.sec13_h}`}>{item.sec13_h}</a></p>
+					<hr />
+					<h2 id={item.sec1_h}>{item.sec1_h}</h2>
+					<img src={`${ABOUT_IMAGE_URL}/${item.sec1_img}`} alt="Image" />
+					<p>{item.sec1_dsc}</p>
+					<h2 id={item.sec2_h}>{item.sec2_h}</h2>
+					<img src={`${ABOUT_IMAGE_URL}/${item.sec2_img}`} alt="Image" />
+					<p>{item.sec2_dsc}</p>
+					<h2 id={item.sec3_h}>{item.sec3_h}</h2>
+					<img src={`${ABOUT_IMAGE_URL}/${item.sec3_img}`} alt="Image" />
+					<p>{item.sec3_dsc}</p>
+					<h2 id={item.sec4_h}>{item.sec4_h}</h2>
+					<img src={`${ABOUT_IMAGE_URL}/${item.sec4_img}`} alt="Image" />
+					<p>{item.sec4_dsc}</p>
+					<h2 id={item.sec5_h}>{item.sec5_h}</h2>
+					<img src={`${ABOUT_IMAGE_URL}/${item.sec5_img}`} alt="Image" />
+					<p>{item.sec5_dsc}</p>
+					<h2 id={item.sec6_h}>{item.sec6_h}</h2>
+					<img src={`${ABOUT_IMAGE_URL}/${item.sec6_img}`} alt="Image" />
+					<p>{item.sec6_dsc}</p>
+					<h2 id={item.sec7_h}>{item.sec7_h}</h2>
+					<img src={`${ABOUT_IMAGE_URL}/${item.sec7_img}`} alt="Image" />
+					<p>{item.sec7_dsc}</p>
+					<h2 id={item.sec8_h}>{item.sec8_h}</h2>
+					<img src={`${ABOUT_IMAGE_URL}/${item.sec8_img}`} alt="Image" />
+					<p>{item.sec8_dsc}</p>
+					<h2 id={item.sec9_h}>{item.sec9_h}</h2>
+					<img src={`${ABOUT_IMAGE_URL}/${item.sec9_img}`} alt="Image" />
+					<p>{item.sec9_dsc}</p>
+					<h2 id={item.sec10_h}>{item.sec10_h}</h2>
+					<img src={`${ABOUT_IMAGE_URL}/${item.sec10_img}`} alt="Image" />
+					<p>{item.sec10_dsc}</p>
+					<h2 id={item.sec11_h}>{item.sec11_h}</h2>
+					<img src={`${ABOUT_IMAGE_URL}/${item.sec11_img}`} alt="Image" />
+					<p>{item.sec11_dsc}</p>
+					<h2 id={item.sec12_h}>{item.sec12_h}</h2>
+					<img src={`${ABOUT_IMAGE_URL}/${item.sec12_img}`} alt="Image" />
+					<p>{item.sec12_dsc}</p>
+					<h2 id={item.sec13_h}>{item.sec13_h}</h2>
+					<img src={`${ABOUT_IMAGE_URL}/${item.sec13_img}`} alt="Image" />
+					<p>{item.sec13_dsc}</p>
+					
+				
+				
+	
 					</div>
-					</div>*/}
-					{/* <Comments/> */}
+				
+			
 				</div>
 				</div>
 					))
 				}
 				
-				{/* <Sidebar/> */}
 			</div>
 			</div>
 		</div>
