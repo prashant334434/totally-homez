@@ -4,19 +4,27 @@ import Comments from './comments';
 import Sidebar from './sidebar';
 import { useDispatch, useSelector } from 'react-redux';
 import { getBlogDetailsApi } from '../../actions/blogActions';
+import { currentBlogId } from '../../actions/blogActions';
+
+import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
+import Loader from '../Loader/Loader';
 
     let publicUrl = process.env.PUBLIC_URL+'/'
     let imagealt = 'image'
 
 	
 const BlogDetails = () => {
-	const { blogDetails }=useSelector((state)=>(state.blogDetails))
-	const dispatch = useDispatch();
-  
-		  
+	const { loading, blogDetails } = useSelector((state) => state.blogDetails);
+    const dispatch = useDispatch();
+    const { currentBlogId } = useSelector(
+        (state) => state.currentBlogId
+      );
+	  
+	
 		  useEffect(() => {
-			  dispatch(getBlogDetailsApi())
+			  dispatch(getBlogDetailsApi(currentBlogId))
 		  }, [dispatch])
+
 	return (
 		<div className="ltn__page-details-area ltn__blog-details-area mb-120 pt-70">
 			<div className="container">
@@ -32,13 +40,13 @@ const BlogDetails = () => {
 						</li>
 						</ul>
 					</div>
-					<h2 className="ltn__blog-title">Real estate is property consisting of land and the buildings on it, 
-						along with its
+					<h2 className="ltn__blog-title">{blogDetails?.title} 
+					
 					</h2>
 					<div className="ltn__blog-meta">
 						<ul>
 						<li className="ltn__blog-author go-top">
-							<Link to="/team-details"><img src={publicUrl+"assets/img/blog/author.jpg"} alt="#" />By: Ethan</Link>
+							<Link to="/team-details"><img src={publicUrl+"assets/img/blog/author.jpg"} alt="#" />By: {blogDetails?.author}</Link>
 						</li>
 						<li className="ltn__blog-date">
 							<i className="far fa-calendar-alt" />June 22, 2020

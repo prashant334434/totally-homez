@@ -6,7 +6,7 @@ import { propertiesForReducer, propertyAmenitiesReducer, propertyDetailsReducer,
 import { carouselDetailsReducer, carouselReducer } from "./reducers/carouselReducers";
 import { agentPropertyReducer, getCurrentTeamMemberIdReducer, getCurrentTeamMemberReducer, teamDetailsReducer, teamReducer } from "./reducers/teamReducers";
 import { apartmentCategoryReducer, apartmentCategoryRentReducer, catgoryPropertiesRentReducer, catgoryReducer, catgoryRentReducer, penthouseCategoryReducer, penthouseCategoryRentReducer, townhouseCategoryReducer, townhouseCategoryRentReducer } from "./reducers/catgoryReducres";
-import { blogDetailsReducer, blogReducer } from "./reducers/blogReducers";
+import { blogDetailsReducer, blogReducer, getCurrentBlogId } from "./reducers/blogReducers";
 import { propertiesByTypeReducer } from "./reducers/propertyTypeReducers";
 import { contactFormReducer, contactReducer } from "./reducers/contactReducer";
 import { listWithUsReducer } from "./reducers/listWithUsReducer";
@@ -65,7 +65,8 @@ const reducer=combineReducers({
     agentProperty:agentPropertyReducer,
     contactForm:contactFormReducer,
     propertiesFor:propertiesForReducer,
-    blogDetails:blogDetailsReducer
+    blogDetails:blogDetailsReducer,
+    currentBlogId:getCurrentBlogId,
   
     
    

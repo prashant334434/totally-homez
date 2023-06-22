@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import {  getBlogsApi } from '../../actions/blogActions';
-import { ABOUT_IMAGE_URL } from '../../constants/config';
+import { currentBlog, getBlogsApi } from "../../actions/blogActions";
+import { ABOUT_IMAGE_URL } from "../../constants/config";
 import { Link, useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import {
   getApartmentCatgoryProperties,
@@ -13,7 +13,6 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 import { currentTeamMember } from "../../actions/teamActions";
-
 
 const BlogMap = (props) => {
   const history = useHistory();
@@ -54,18 +53,22 @@ const BlogMap = (props) => {
   const [propertyCategory, setPropertyCategory] = useState("apartment");
   let publicUrl = process.env.PUBLIC_URL + "/";
   let customClass = props.customClass ? props.customClass : "";
- 
-  const {blogs}=useSelector((state)=>(state.blogs))
+
+  const { blogs } = useSelector((state) => state.blogs);
   const dispatch = useDispatch();
 
-		
-		useEffect(() => {
-			dispatch(getBlogsApi())
-		}, [dispatch])
+  useEffect(() => {
+    dispatch(getBlogsApi());
+  }, [dispatch]);
 
+  const handleClick = (id, title) => {
+    console.log("title", title);
+    console.log("id ", id);
 
+    dispatch(currentBlog(id));
+    history.push(`/blog/${title?.toLowerCase().split(" ").join("-")}`)
+  };
 
-  
   if (blogs?.length > 0) {
     carouselItems = blogs;
   }
@@ -73,17 +76,14 @@ const BlogMap = (props) => {
     return titleName?.split(" ")?.join("-")?.toLowerCase();
   };
 
-  const handleLinkClick = (id, name) => {
-    console.log("agentIdHome", id);
-
-    dispatch(currentTeamMember(id));
-    history.push(`/team/${name.toLowerCase().split(" ").join("-")}`);
-  };
- 
   return (
     <div>
       <div>
-        <div id="apartmentRef" tabindex="1" className="ltn__product-slider-area ltn__product-gutter pt-40 plr--7">
+        <div
+          id="apartmentRef"
+          tabindex="1"
+          className="ltn__product-slider-area ltn__product-gutter pt-40 plr--7"
+        >
           <div className="container-fluid">
             <div className="row  slick-arrow-1">
               <Carousel
@@ -119,29 +119,59 @@ const BlogMap = (props) => {
                 slidesToSlide={1}
                 swipeable
               >
-              
-            	{carouselItems?.map((items,index)=>(
-							<div className="col-lg-12" key={items.id}>
-							<div className="ltn__blog-item ltn__blog-item-3">
-								<div className="ltn__blog-img">
-									<Link to={`/blog/${url(items.title)}`}><img src={`${ABOUT_IMAGE_URL}/${items?.blog_img}`} alt="#" /></Link>
-								</div>
-								<div className="ltn__blog-brief">
-									<div className="ltn__blog-meta">
-			
-				
-									</div>
-									<p className="ltn__blog-title"><Link to={`/blog/${url(items.title)}`}>{items.title}</Link></p>
-									<div className="ltn__blog-meta-btn">
-									
-										<div className="ltn__blog-btn">
-											<Link to={`/blog/${url(items.title)}`}>Read more</Link>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						))}
+                {carouselItems?.map((items, index) => (
+                  <div className="col-lg-12" key={items.id}>
+                    <div className="ltn__blog-item ltn__blog-item-3">
+                      <div className="ltn__blog-img">
+                        <Link
+                          onClick={() =>
+                            handleClick(
+                              items?.id,
+
+                              items?.title
+                            )
+                          }
+                        >
+                          <img
+                            src={`${ABOUT_IMAGE_URL}/${items?.blog_img}`}
+                            alt="#"
+                          />
+                        </Link>
+                      </div>
+                      <div className="ltn__blog-brief">
+                        <div className="ltn__blog-meta"></div>
+                        <p className="ltn__blog-title">
+                        <Link
+                          onClick={() =>
+                            handleClick(
+                              items?.id,
+
+                              items?.title
+                            )
+                          }
+                        >
+                            {items.title}
+                          </Link>
+                        </p>
+                        <div className="ltn__blog-meta-btn">
+                          <div className="ltn__blog-btn">
+                          <Link
+                          onClick={() =>
+                            handleClick(
+                              items?.id,
+
+                              items?.title
+                            )
+                          }
+                        >
+                              Read more
+                            </Link>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
               </Carousel>
 
               {/* ltn__product-item */}
