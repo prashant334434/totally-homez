@@ -26,15 +26,15 @@ import Loader from "../Loader/Loader";
 import NewSlide from "../NewSlide";
 import Pageform from "./page-form";
 import PageHeadExclusive from "../global-components/PageHeadExclusive";
-import { convertToLowercase, getExclusivePropertiesTypeUtils, getPropertiesTypeUtils, replaceHyphensWithSpaces } from "../../utils/propertyUtils";
+import { convertToLowercase, getExclusivePropertiesTypeUtils, getPropertiesTypeUtils, getRelatedExclusiveProperties, replaceHyphensWithSpaces } from "../../utils/propertyUtils";
 import ExclusiveRelatedProperties from "./ExclusiveRelatedProperties";
 
 
-const ExclusivePropertiesDetails = () => {
+const   ExclusivePropertiesDetails = () => {
     const [loading2, setLoading2] = useState(false)
     const [relatedProperties, setRelatedProperties] = useState([])
-const {property_level}=useParams()
-console.log("property_level",property_level)
+const {property_for}=useParams()
+console.log("property_level",property_for)
     console.log("product_details");
   const { id } = useParams();
   console.log("ExclusivePropertiesDetails",id);
@@ -46,15 +46,16 @@ console.log("property_level",property_level)
   useEffect(() => {
     dispatch(getSingalPropertyDetailsApi(id));
   }, [dispatch]);
-console.log("propertyDetails",propertyDetails)
+console.log("propertyDetails",propertyDetails?.property_for)
 
   useEffect(() => {
     const fetchData = async () => {
         try {
-            const {property_type,property_for}=propertyDetails
+            const {property_for}=propertyDetails
+            console.log("property_for",property_for )
             console.log("relatedPropertiesApiCall")
             setLoading2(true);
-            const data = await getExclusivePropertiesTypeUtils(property_type, property_level);
+            const data = await getRelatedExclusiveProperties(property_for);
             console.log("relatedPropertiesApiCall2")
 
             setRelatedProperties(data)

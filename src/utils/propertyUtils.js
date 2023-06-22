@@ -14,12 +14,12 @@ export const getPropertiesTypeUtils= async (property_type, property_for, propert
     throw new Error('Failed to fetch property types.');
   }
 };
-export const getExclusivePropertiesTypeUtils= async (property_for,property_level) => {
-  console.log("property_for",property_for)
+export const getExclusivePropertiesTypeUtils= async (For) => {
+  console.log("For",For)
 
   console.log("getPropertiesTypeUtils")
   try {
-    const response = await axios.get(`https://totallyhomerealestate.com/API/api/properties/profor/${property_for}`);
+    const response = await axios.get(`https://totallyhomerealestate.com/API/api/properties/profor/${For}`);
 
     console.log("getPropertiesTypeUtils",response.data)
     return response.data;
@@ -42,7 +42,7 @@ export const getPropertiesCategoryUtils= async (property_for,orignalCommunity) =
   };
 
   export const getExclusivePropertiesInaCommunityUtils= async (property_for,orignalCommunity) => {
-    console.log("getExclusivePropertiesInaCommunityUtils",orignalCommunity)
+    console.log("getExclusivePropertiesInaCommunityUtils",property_for)
     https://totallyhomerealestate.com/API/api/properties/proforcomm/{for}/{comm}
   
       try {
@@ -202,3 +202,19 @@ export const getPropertiesCategoryUtils= async (property_for,orignalCommunity) =
           throw new Error('Failed to fetch property types.');
         }
       };
+
+
+      export const getRelatedExclusiveProperties= async (For) => {
+        console.log("getRelatedExclusiveProperties",For)
+      
+        console.log("getPropertiesTypeUtils")
+        try {
+          const response = await axios.get(`https://totallyhomerealestate.com/API/api/properties/profor/${For}`);
+      
+          console.log("getRelatedExclusivePropertiesResult",response.data)
+          return response.data;
+        } catch (error) {
+          throw new Error('Failed to fetch property types.');
+        }
+      };
+      
