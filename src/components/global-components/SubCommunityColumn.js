@@ -80,7 +80,7 @@ const SubCommunityColumnProperty = ({subcomm, getLevelsInASubCommunity }) => {
                     <div className="footer-menu go-top">
                       <ul>
                         <Link
-                          to={`/properties/${property_community}/${subcomm}/$properties-for-${property_for}-${replaceSpacesWithHyphensAndLowerCase(
+                          to={`/properties/${property_community}/${subcomm}/properties-for-${property_for}-${replaceSpacesWithHyphensAndLowerCase(
                             item
                           )}`}
                         >
