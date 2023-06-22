@@ -33,7 +33,8 @@ import ExclusiveRelatedProperties from "./ExclusiveRelatedProperties";
 const ExclusivePropertiesDetails = () => {
     const [loading2, setLoading2] = useState(false)
     const [relatedProperties, setRelatedProperties] = useState([])
-
+const {property_level}=useParams()
+console.log("property_level",property_level)
     console.log("product_details");
   const { id } = useParams();
   console.log("ExclusivePropertiesDetails",id);
@@ -50,16 +51,15 @@ console.log("propertyDetails",propertyDetails)
   useEffect(() => {
     const fetchData = async () => {
         try {
-          if(propertyDetails!==null){
             const {property_type,property_for}=propertyDetails
             console.log("relatedPropertiesApiCall")
             setLoading2(true);
-            const data = await getExclusivePropertiesTypeUtils(property_type, property_for, "dubai");
+            const data = await getExclusivePropertiesTypeUtils(property_type, property_level);
             console.log("relatedPropertiesApiCall2")
 
             setRelatedProperties(data)
             setLoading2(false);
-          }
+          
           
         } catch (error) {
             console.error(error);
