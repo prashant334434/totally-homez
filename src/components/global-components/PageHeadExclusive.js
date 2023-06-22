@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 const PageHeadExclusive = (props) => {
-	console.log("exclusiveProperty",props)
     let HeaderTitle = props.headertitle;
     let publicUrl = process.env.PUBLIC_URL+'/'
     let Subheader = props.subheader ? props.subheader : "Villa"

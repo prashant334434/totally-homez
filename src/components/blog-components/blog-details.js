@@ -16,7 +16,6 @@ import { ABOUT_IMAGE_URL } from '../../constants/config';
 	
 const BlogDetails = ({blogDetails}) => {
 
-console.log("blogDetails",blogDetails)
 	return (
 		<div className="ltn__page-details-area ltn__blog-details-area mb-120 pt-70">
 			<div className="container">

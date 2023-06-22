@@ -76,7 +76,6 @@ export const getTeamsApi = () => async (dispatch) => {
 
 
   export const getAgentProperty = (id) => async (dispatch) => {
-    console.log(id)
     try {
       dispatch({ type: GET_AGENT_PROPERTIES_REQUEST });
   

@@ -232,7 +232,6 @@ export const getPropertiesCommunity = (property_city,property_type,property_for,
 
     async (dispatch) => {
 
-        console.log("property_for",property_for)
         try {
             dispatch({ type: GET_PROPERTIES_FOR__REQUEST });
 
@@ -240,7 +239,6 @@ export const getPropertiesCommunity = (property_city,property_type,property_for,
 
             const { data } = await axios.get(`https://totallyhomerealestate.com/API/api/properties/profor/${property_for}`);
 
-            console.log(data)
 
             dispatch({
                 type: GET_PROPERTIES_FOR__SUCCESS,
