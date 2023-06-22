@@ -27,6 +27,7 @@ import NewSlide from "../NewSlide";
 import Pageform from "./page-form";
 import PageHeadExclusive from "../global-components/PageHeadExclusive";
 import { convertToLowercase, getExclusivePropertiesTypeUtils, getPropertiesTypeUtils, replaceHyphensWithSpaces } from "../../utils/propertyUtils";
+import ExclusiveRelatedProperties from "./ExclusiveRelatedProperties";
 
 
 const ExclusivePropertiesDetails = () => {
@@ -44,15 +45,22 @@ const ExclusivePropertiesDetails = () => {
   useEffect(() => {
     dispatch(getSingalPropertyDetailsApi(id));
   }, [dispatch]);
-
+console.log("propertyDetails",propertyDetails)
 
   useEffect(() => {
     const fetchData = async () => {
         try {
+          if(propertyDetails!==null){
+            const {property_type,property_for}=propertyDetails
+            console.log("relatedPropertiesApiCall")
             setLoading2(true);
-            const data = await getExclusivePropertiesTypeUtils("apartment", "sale", "dubai");
+            const data = await getExclusivePropertiesTypeUtils(property_type, property_for, "dubai");
+            console.log("relatedPropertiesApiCall2")
+
             setRelatedProperties(data)
             setLoading2(false);
+          }
+          
         } catch (error) {
             console.error(error);
             setLoading2(false);
@@ -137,7 +145,7 @@ const ExclusivePropertiesDetails = () => {
       <ProductDetails propertyDetails={propertyDetails} />
 
       <GoogleMap propertyDetails={propertyDetails} />
-      <RelatedProperties relatedProperties={relatedProperties} />
+      <ExclusiveRelatedProperties propertyDetails={propertyDetails}   />
       <Pageform />
       <CallToActionV1 />
       <Footer />
