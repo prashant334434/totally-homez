@@ -13,23 +13,16 @@ import Loader from '../Loader/Loader';
     let imagealt = 'image'
 
 	
-const BlogDetails = () => {
-	const { loading, blogDetails } = useSelector((state) => state.blogDetails);
-    const dispatch = useDispatch();
-    const { currentBlogId } = useSelector(
-        (state) => state.currentBlogId
-      );
-	  
-	
-		  useEffect(() => {
-			  dispatch(getBlogDetailsApi(currentBlogId))
-		  }, [dispatch])
+const BlogDetails = ({blogDetails}) => {
 
+console.log("blogDetails",blogDetails)
 	return (
 		<div className="ltn__page-details-area ltn__blog-details-area mb-120 pt-70">
 			<div className="container">
 			<div className="row">
-				<div className="col-lg-12">
+				{
+					blogDetails?.map((item)=>(
+						<div className="col-lg-12">
 				
 				<div className="ltn__blog-details-wrap">
 					<div className="ltn__page-details-inner ltn__blog-details-inner">
@@ -40,13 +33,13 @@ const BlogDetails = () => {
 						</li>
 						</ul>
 					</div>
-					<h2 className="ltn__blog-title">{blogDetails?.title} 
+					<h2 className="ltn__blog-title">{item?.title} 
 					
 					</h2>
 					<div className="ltn__blog-meta">
 						<ul>
 						<li className="ltn__blog-author go-top">
-							<Link to="/team-details"><img src={publicUrl+"assets/img/blog/author.jpg"} alt="#" />By: {blogDetails?.author}</Link>
+							<Link to="/team-details"><img src={publicUrl+"assets/img/blog/author.jpg"} alt="#" />By: {item?.author}</Link>
 						</li>
 						<li className="ltn__blog-date">
 							<i className="far fa-calendar-alt" />June 22, 2020
@@ -170,6 +163,9 @@ const BlogDetails = () => {
 					{/* <Comments/> */}
 				</div>
 				</div>
+					))
+				}
+				
 				{/* <Sidebar/> */}
 			</div>
 			</div>

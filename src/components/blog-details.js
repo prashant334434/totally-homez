@@ -15,12 +15,22 @@ import { currentBlogId } from '../actions/blogActions';
 
 const BlogDetailsPage = () => {
     
-     
+    const { loading, blogDetails } = useSelector((state) => state.blogDetails);
+    const dispatch = useDispatch();
+    const { currentBlogId } = useSelector(
+        (state) => state.currentBlogId
+      );
+	  
+	
+		  useEffect(() => {
+			  dispatch(getBlogDetailsApi(currentBlogId))
+		  }, [dispatch])
    
     return <div>
         <MobileNav />
         {/* <PageHeader headertitle="News Details" /> */}
-        <BlogDetails />
+        {blogDetails?.length>0 &&         <BlogDetails blogDetails={blogDetails} />
+}
         <BlogMap sectionClass="pt-120" />
         <CallToActionV1 />
         <Footer />
