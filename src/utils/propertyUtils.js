@@ -31,7 +31,6 @@ export const getExclusivePropertiesTypeUtils= async (property_type, property_for
 
 
 export const getPropertiesCategoryUtils= async (property_city,property_type,property_for,orignalCommunity) => {
-  console.log(property_city,property_type,property_for,orignalCommunity)
   console.log("orignalCommunity",orignalCommunity)
 
     try {
@@ -41,6 +40,19 @@ export const getPropertiesCategoryUtils= async (property_city,property_type,prop
       throw new Error('Failed to fetch property types.');
     }
   };
+
+  export const getExclusivePropertiesInaCommunityUtils= async (property_for,orignalCommunity) => {
+    console.log("getExclusivePropertiesInaCommunityUtils",orignalCommunity)
+    https://totallyhomerealestate.com/API/api/properties/proforcomm/{for}/{comm}
+  
+      try {
+        const response = await axios.get(`https://totallyhomerealestate.com/API/api/properties/proforcomm/${property_for}/${orignalCommunity}`);
+        console.log(response)
+        return response.data;
+      } catch (error) {
+        throw new Error('Failed to fetch property types.');
+      }
+    };
 
   export const getImagesApi= async () => {
 
@@ -175,3 +187,18 @@ export const getPropertiesCategoryUtils= async (property_city,property_type,prop
       return str.replace(/-/g, " ");
     };
     export const convertToLowercase = (str) => str.toLowerCase();
+
+
+
+
+    export const getExclusivePropertiesInaSubCommunityUtils= async (property_for,orignalCommunity) => {
+      console.log("getExclusivePropertiesInaCommunityUtils",orignalCommunity)
+    
+        try {
+          const response = await axios.get(`https://totallyhomerealestate.com/API/api/properties/proforsubcomm/${property_for}/${orignalCommunity}`);
+          console.log(response)
+          return response.data;
+        } catch (error) {
+          throw new Error('Failed to fetch property types.');
+        }
+      };
