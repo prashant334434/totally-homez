@@ -19,6 +19,7 @@ import MetaData from '../Layout/MetaData';
 import { capitalizeWords, getPropertiesCategoryUtils, getSubCommunitiesInaCommunityUtils } from '../../utils/propertyUtils';
 import ExclusiveCommunitiesBreadcrum from '../global-components/ExclusiveCommunitiesBreadcrum';
 import ExclusivePropertiesCommunityColumn from './ExclusivePropertiesCommunityColumn';
+import Product_Details from '../product-details';
 
 const CommunityPage = () => {
     const capitalizeFirstLetter=(string)=> {
@@ -52,7 +53,10 @@ const CommunityPage = () => {
         const fetchData = async () => {
             try {
                 setLoading(true);
-                const data = await getPropertiesCategoryUtils(property_city,property_type,property_for,orignalCommunity);
+                console.log("exclvpropertiesgrid1")
+                const data = await getPropertiesCategoryUtils("dubai",Product_Details?.property_type,property_for,orignalCommunity);
+                console.log("exclvpropertiesgrid2")
+
                 setpropertyCategory(data);
                 setLoading(false);
             } catch (error) {

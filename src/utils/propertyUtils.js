@@ -31,6 +31,7 @@ export const getExclusivePropertiesTypeUtils= async (property_type, property_for
 
 
 export const getPropertiesCategoryUtils= async (property_city,property_type,property_for,orignalCommunity) => {
+  console.log(property_city,property_type,property_for,orignalCommunity)
   console.log("orignalCommunity",orignalCommunity)
 
     try {
