@@ -91,7 +91,7 @@ const [getLevelsInASubCommunity, setGetLevelsInASubCommunity] = useState([])
         <ExclusivePropertiesSubCommunityBreadcrum city={"Dubai"} type={capitalizeWords("Properties")} for={capitalizeWords(property_for)} comm={capitalizeWords(orignalCommunity)} subcomm={orignalSubCommunity}/>
         {/* <SubCommunityBreadcrum city={capitalizeWords(property_city)} type={capitalizeWords(property_type)} for={capitalizeWords(property_for)} subComm={capitalizeWords(orignalSubCommunity)}  comm={capitalizeWords(orignalCommunity)} /> */}
         {/* <VillaforSaleSub city={capitalizeFirstLetter(property_city)} type={capitalizeFirstLetter(property_type)} for={capitalizeFirstLetter(property_for)} subComm={capitalizeFirstLetter(orignalSubCommunity)} headertitle="Garden Homes Frond C" customclass="mb-0 pt-100 " /> */}
-        <SubCommunityColumnProperty getLevelsInASubCommunity={getLevelsInASubCommunity} />
+        <SubCommunityColumnProperty subcomm={property_subcomm } getLevelsInASubCommunity={getLevelsInASubCommunity} />
 
         {/* <SubCommunityPropertyGrid propertySubcom={propertySubCategory} /> */}
         <CallToActionV1 />

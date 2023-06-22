@@ -1,29 +1,29 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Loader from "../Loader/Loader";
 import {
   allEmptyStrings,
-  capitalizeWords,
   replaceSpacesWithHyphensAndLowerCase,
 } from "../../utils/propertyUtils";
 import { useParams } from "react-router-dom/cjs/react-router-dom.min";
 
-const SubCommunityColumnProperty = ({subcomm, getLevelsInASubCommunity }) => {
-  const {
-    property_city,
-    property_community,
-    property_type,
-    property_for,
-    property_sub_community,
-  } = useParams();
-  let levelsArray = [];
-  if (getLevelsInASubCommunity) {
-    for (let i = 0; i < getLevelsInASubCommunity.length; i++) {
-      levelsArray.push(getLevelsInASubCommunity[i].pro_level);
+const ExclusivePropertiesCommunityColumn = ({
+  loading,
+  getSubCommunitiesInaCommunity,
+}) => {
+  const { property_city, property_type, property_for, property_community } =
+    useParams();
+  let subCommunityArray = [];
+  if (getSubCommunitiesInaCommunity) {
+    for (let i = 0; i < getSubCommunitiesInaCommunity.length; i++) {
+      subCommunityArray.push(getSubCommunitiesInaCommunity[i]?.sub_community);
     }
   }
-  const [itemsToShow, setItemsToShow] = useState(8);
+
+  console.log("subCommunityArray", subCommunityArray);
+  const [itemsToShow, setItemsToShow] = useState(4);
   const showmore = () => {
-    setItemsToShow(levelsArray.length);
+    setItemsToShow(subCommunityArray.length);
   };
 
   const showless = () => {
@@ -59,49 +59,58 @@ const SubCommunityColumnProperty = ({subcomm, getLevelsInASubCommunity }) => {
 
   let publicUrl = process.env.PUBLIC_URL + "/";
   let imgattr = "Footer logo";
+  if (loading) {
+    return <Loader />;
+  }
   if (
-    !levelsArray ||
-    levelsArray.length === 0 ||
-    allEmptyStrings(levelsArray)
+    !subCommunityArray ||
+    subCommunityArray.length === 0 ||
+    allEmptyStrings(subCommunityArray)
   ) {
     return null; // Render nothing if there are no elements in getSubCommunitiesInaCommunity or all elements are empty strings
   }
 
-  const showMoreLessVisible = getLevelsInASubCommunity.length > 3;
+  const showMoreLessVisible = getSubCommunitiesInaCommunity.length > 3;
   return (
     <footer className="ltn__footer-area ">
       <div className="footer-top-area ">
         <div className="container section-bg-1 pt-30 shadowboxing">
           <div className="col-lg-12 ">
             <div className="row">
-              {levelsArray?.slice(0, itemsToShow).map((item, index) => (
+              {subCommunityArray?.slice(0, itemsToShow).map((item, index) => (
                 <div key={index} className="col-xl-3 col-md-4 col-sm-4 col-12">
                   <div className="footer-widget-breadcrum footer-menu-widget clearfix">
                     <div className="footer-menu go-top">
                       <ul>
-                        <Link
-                          to={`/properties/${property_community}/${subcomm}/$properties-for-${property_for}-${replaceSpacesWithHyphensAndLowerCase(
-                            item
-                          )}`}
-                        >
-                          <li>{capitalizeWords(item)}</li>
-                        </Link>
+                        <li>
+                          <Link
+                            to={`/properties/${property_community}/properties-for-${property_for}-${replaceSpacesWithHyphensAndLowerCase(
+                              item
+                            )}`}
+                          >
+                            {item}
+                          </Link>
+                        </li>
                       </ul>
                     </div>
                   </div>
                 </div>
               ))}
-              {levelsArray.length > 4 && (
-                <div className="columncss">
-                  {showMoreLessVisible && itemsToShow === 4 ? (
-                    <div onClick={() => setItemsToShow(levelsArray.length)}>
-                      Show More
-                    </div>
-                  ) : (
-                    <div onClick={() => setItemsToShow(4)}>Show Less</div>
-                  )}
-                </div>
-              )}
+
+{getSubCommunitiesInaCommunity.length > 4 && (
+  <div className="columncss">
+    {showMoreLessVisible && itemsToShow === 4 ? (
+      <div onClick={() => setItemsToShow(getSubCommunitiesInaCommunity.length)}>
+        Show More
+      </div>
+    ) : (
+      <div onClick={() => setItemsToShow(4)}>
+        Show Less
+      </div>
+    )}
+  </div>
+)}
+
             </div>
           </div>
         </div>
@@ -110,4 +119,4 @@ const SubCommunityColumnProperty = ({subcomm, getLevelsInASubCommunity }) => {
   );
 };
 
-export default SubCommunityColumnProperty;
+export default ExclusivePropertiesCommunityColumn;

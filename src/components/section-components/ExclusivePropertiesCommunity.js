@@ -18,6 +18,7 @@ import CommunityBreadcrum from '../global-components/CommunityBreadcrum';
 import MetaData from '../Layout/MetaData';
 import { capitalizeWords, getPropertiesCategoryUtils, getSubCommunitiesInaCommunityUtils } from '../../utils/propertyUtils';
 import ExclusiveCommunitiesBreadcrum from '../global-components/ExclusiveCommunitiesBreadcrum';
+import ExclusivePropertiesCommunityColumn from './ExclusivePropertiesCommunityColumn';
 
 const CommunityPage = () => {
     const capitalizeFirstLetter=(string)=> {
@@ -93,7 +94,7 @@ const CommunityPage = () => {
         <ExclusiveCommunitiesBreadcrum city={"Dubai"} type={capitalizeWords("Properties")} for={capitalizeWords(property_for)} comm={capitalizeWords(orignalCommunity)}/>
       {/* <CommunityBreadcrum city={capitalizeWords(property_city)} type={capitalizeWords(property_type)} for={capitalizeWords(property_for)} comm={capitalizeWords(orignalCommunity)}/>
         {/* <VillaforSale city={capitalizeFirstLetter(property_city)} type={capitalizeFirstLetter(property_type)} for={capitalizeFirstLetter(property_for)} comm={capitalizeFirstLetter(orignalCommunity)}  headertitle="Garden Homes Frond C" customclass="mb-0 " /> */}
-        <CommunityColumnProperty loading={loading2} getSubCommunitiesInaCommunity={getSubCommunitiesInaCommunity}/>
+        <ExclusivePropertiesCommunityColumn loading={loading2} getSubCommunitiesInaCommunity={getSubCommunitiesInaCommunity}/>
        
         <CommunityPropertyGrid  propertyCategory={propertyCategory}/> 
         <CallToActionV1 />
