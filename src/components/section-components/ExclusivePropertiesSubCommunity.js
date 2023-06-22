@@ -106,8 +106,8 @@ const ExclusivePropertiesSubCommunity = () => {
   }
   return (
     <div>
-      {/* <MetaData title={` ${capitalizeWords(property_type)} For ${capitalizeWords(property_for)} In ${replaceHyphensAndCapitalize(orignalSubCommunity)}`+`  ` +`-`+` `+` `+ `Totally Home Real Estate`} metaDesription={`Check Our Verified Listing Of Dubai ${capitalizeWords(property_type)} For ${capitalizeWords(property_for)} In ${capitalizeWords(orignalSubCommunity)} With World Class Amenities, Amazing Views And Attractive Lifestyle.`}/> */}
-      <MobileNav />
+                    <MetaData title={` ${capitalizeWords("Properties")} For ${capitalizeWords(property_for)} In ${replaceHyphensAndCapitalize(orignalSubCommunity)}`+`  ` +`-`+` `+` `+ `Totally Home Real Estate`} metaDesription={`Check Our Verified Listing Of Dubai ${capitalizeWords("Properties")} For ${capitalizeWords(property_for)} In ${capitalizeWords(orignalSubCommunity)} With World Class Amenities, Amazing Views And Attractive Lifestyle.`}/>
+  <MobileNav />
       <ExclusivePropertiesSubCommunityBreadcrum
         city={"Dubai"}
         type={capitalizeWords("Properties")}

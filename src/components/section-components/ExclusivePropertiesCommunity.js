@@ -93,7 +93,7 @@ const CommunityPage = () => {
 
     console.log("propertyCategory",propertyCategory)
     return <div>
-        {/* <MetaData title={` ${capitalizeWords(property_type)} For ${capitalizeWords(property_for)} In ${capitalizeWords(orignalCommunity)}`+`  ` +`-`+` `+` `+ `Totally Home Real Estate` } metaDesription={`Check Our Verified Listing Of Dubai ${capitalizeWords(property_type)} For ${capitalizeWords(property_for)} In ${capitalizeWords(orignalCommunity)} With World Class Amenities, Amazing Views And Attractive Lifestyle`}/> */}
+        <MetaData title={` ${capitalizeWords("Properties")} For ${capitalizeWords(property_for)} In ${capitalizeWords(orignalCommunity)}`+`  ` +`-`+` `+` `+ `Totally Home Real Estate` } metaDesription={`Check Our Verified Listing Of Dubai ${capitalizeWords("Properties")} For ${capitalizeWords(property_for)} In ${capitalizeWords(orignalCommunity)} With World Class Amenities, Amazing Views And Attractive Lifestyle`}/>
 
         <MobileNav />
         <ExclusiveCommunitiesBreadcrum city={"Dubai"} type={capitalizeWords("Properties")} for={capitalizeWords(property_for)} comm={capitalizeWords(orignalCommunity)}/>
