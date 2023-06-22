@@ -137,20 +137,18 @@ const ExclusivePropertiesTypeGrid = (props) => {
                                 </div>
                                 <div className="product-info">
                                   <div className="product-price">
-                                    {categoryProperty.property_level ? (
+                                  {categoryProperty?.property_level!=="" ? (
                                       <Link
-                                        to={`/${url(
-                                          categoryProperty?.property_city
-                                        )}/${url(
-                                          categoryProperty?.property_community
-                                        )}/${url(
-                                          categoryProperty?.property_sub_community
-                                        )}/properties-for-${url(
-                                          categoryProperty?.property_for
-                                        )}-${url(
-                                          categoryProperty?.property_level
-                                        )}/th${categoryProperty?.id}`}
-                                      >
+                                      to={`/properties/${url(
+                                        categoryProperty?.property_community
+                                      )}/${url(
+                                        categoryProperty?.property_sub_community
+                                      )}/properties-for-${url(
+                                        categoryProperty?.property_for
+                                      )}-${url(
+                                        categoryProperty?.property_level
+                                      )}/th${categoryProperty?.id}`}
+                                    >
                                         <h3
                                           dangerouslySetInnerHTML={{
                                             __html:
@@ -161,16 +159,10 @@ const ExclusivePropertiesTypeGrid = (props) => {
                                       </Link>
                                     ) : (
                                       <Link
-                                        to={`/${url(
-                                          categoryProperty?.property_city
-                                        )}/${url(
-                                          categoryProperty?.property_community
-                                        )}/properties-for-${url(
-                                          categoryProperty?.property_for
-                                        )}-${url(
-                                          categoryProperty?.property_sub_community
-                                        )}/th${categoryProperty?.id}`}
-                                      >
+                                      to={`/properties/${url(categoryProperty?.property_community)}/${url(
+                                        categoryProperty?.property_sub_community
+                                      )}/th${categoryProperty?.id}`}
+                                    >
                                         <h3
                                           dangerouslySetInnerHTML={{
                                             __html:

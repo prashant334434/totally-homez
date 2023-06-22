@@ -88,29 +88,29 @@ const ExclusiveRelatedProperties = ({propertyDetails}) => {
                  <div key={item?.id} className="col-lg-12">
                  <div className="ltn__product-item ltn__product-item-4 text-center---">
                    <div className="product-img go-top">
-                     {item.property_level ? (
-                       <Link
-                         to={`/${url(item?.property_city)}/${url(
-                           item?.property_community
-                         )}/${url(item?.property_sub_community)}/${url(
-                           item?.property_type
-                         )}-for-${url(item?.property_for)}-${url(
-                           item?.property_level
-                         )}/th${item?.id}`}
-                       >
+                   {item?.property_level!=="" ? (
+                                    <Link
+                                      to={`/properties/${url(
+                                        item?.property_community
+                                      )}/${url(
+                                        item?.property_sub_community
+                                      )}/properties-for-${url(
+                                        item?.property_for
+                                      )}-${url(
+                                        item?.property_level
+                                      )}/th${item?.id}`}
+                                    >
                          <img
                            src={`${PROPERTY_IMAGES_URL}/${item?.img_name}`}
                            alt="#"
                          />
                        </Link>
                      ) : (
-                       <Link
-                         to={`/${url(item?.property_city)}/${url(
-                           item?.property_community
-                         )}/${url(
-                           item?.property_type
-                         )}-for-${url(item?.property_for)}-${url(item?.property_sub_community)}/th${item?.id}`}
-                       >
+                      <Link
+                                      to={`/properties/${url(item?.property_community)}/${url(
+                                        item?.property_sub_community
+                                      )}/th${item?.id}`}
+                                    >
                          <img
                            src={`${PROPERTY_IMAGES_URL}/${item?.img_name}`}
                            alt="#"
@@ -127,16 +127,18 @@ const ExclusiveRelatedProperties = ({propertyDetails}) => {
                    </div>
                    <div className="product-info">
                      <div className="product-price">
-                         {item.property_level ? (
-                           <Link
-                             to={`/${url(item?.property_city)}/${url(
-                               item?.property_community
-                             )}/${url(item?.property_sub_community)}/${url(
-                               item?.property_type
-                             )}-for-${url(item?.property_for)}-${url(
-                               item?.property_level
-                             )}/th${item?.id}`}
-                           >
+                     {item?.property_level!=="" ? (
+                                    <Link
+                                      to={`/properties/${url(
+                                        item?.property_community
+                                      )}/${url(
+                                        item?.property_sub_community
+                                      )}/properties-for-${url(
+                                        item?.property_for
+                                      )}-${url(
+                                        item?.property_level
+                                      )}/th${item?.id}`}
+                                    >
                              <h3
                                dangerouslySetInnerHTML={{
                                  __html: item?.property_name,
@@ -145,15 +147,11 @@ const ExclusiveRelatedProperties = ({propertyDetails}) => {
                              />
                            </Link>
                          ) : (
-                           <Link
-                             to={`/${url(item?.property_city)}/${url(
-                               item?.property_community
-                             )}/${url(
-                               item?.property_type
-                             )}-for-${url(item?.property_for)}-${url(item?.property_sub_community)}/th${
-                               item?.id
-                             }`}
-                           >
+                          <Link
+                                      to={`/properties/${url(item?.property_community)}/${url(
+                                        item?.property_sub_community
+                                      )}/th${item?.id}`}
+                                    >
                              <h3
                                dangerouslySetInnerHTML={{
                                  __html: item?.property_name,

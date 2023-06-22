@@ -34,9 +34,7 @@ const PageHeadExclusive = (props) => {
 						</li>
 						{/* <li><Link to="/">{ props?.propertyDetails?.property_for }</Link></li> */}
 						<li>
-							<Link to={`/${url(
-								props?.propertyDetails?.property_type
-                            )}-for-${url(props?.propertyDetails?.property_for)}-${url(props?.propertyDetails?.property_city)}`}>{"Properties" }</Link>
+							<Link to={`/properties-for-${url(props?.propertyDetails?.property_for)}-${url(props?.propertyDetails?.property_city)}`}>{"Properties" }</Link>
 							</li>
 						<li>
 							<Link to={`/properties/properties-for-${url(props?.propertyDetails?.property_for)}-${url(

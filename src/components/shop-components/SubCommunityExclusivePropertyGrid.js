@@ -156,22 +156,18 @@ const SubCommunityExclusivePropertyGrid = ({propertySubCategory}) => {
                               className="ltn__product-item ltn__product-item-4 text-center---"
                             >
                               <div className="product-img go-top">
-                                {categoryProperty?.property_level ? (
-                                  <Link
-                                    to={`/${url(
-                                      categoryProperty?.property_city
-                                    )}/${url(
-                                      categoryProperty?.property_community
-                                    )}/${url(
-                                      categoryProperty?.property_sub_community
-                                    )}/${url(
-                                      categoryProperty?.property_type
-                                    )}-for-${url(
-                                      categoryProperty?.property_for
-                                    )}-${url(
-                                      categoryProperty?.property_level
-                                    )}/th${categoryProperty?.id}`}
-                                  >
+                              {categoryProperty?.property_level!=="" ? (
+                                    <Link
+                                      to={`/properties/${url(
+                                        categoryProperty?.property_community
+                                      )}/${url(
+                                        categoryProperty?.property_sub_community
+                                      )}/properties-for-${url(
+                                        categoryProperty?.property_for
+                                      )}-${url(
+                                        categoryProperty?.property_level
+                                      )}/th${categoryProperty?.id}`}
+                                    >
                                     <img
                                       src={`${PROPERTY_IMAGES_URL}/${categoryProperty?.img_name}`}
                                       alt="#"
@@ -179,18 +175,10 @@ const SubCommunityExclusivePropertyGrid = ({propertySubCategory}) => {
                                   </Link>
                                 ) : (
                                   <Link
-                                    to={`/${url(
-                                      categoryProperty?.property_city
-                                    )}/${url(
-                                      categoryProperty?.property_community
-                                    )}/${url(
-                                      categoryProperty?.property_type
-                                    )}-for-${url(
-                                      categoryProperty?.property_for
-                                    )}-${url(
-                                      categoryProperty?.property_sub_community
-                                    )}/th${categoryProperty?.id}`}
-                                  >
+                                      to={`/properties/${url(categoryProperty?.property_community)}/${url(
+                                        categoryProperty?.property_sub_community
+                                      )}/th${categoryProperty?.id}`}
+                                    >
                                     <img
                                       src={`${PROPERTY_IMAGES_URL}/${categoryProperty?.img_name}`}
                                       alt="#"
@@ -208,17 +196,13 @@ const SubCommunityExclusivePropertyGrid = ({propertySubCategory}) => {
                               </div>
                               <div className="product-info">
                                 <div className="product-price">
-                                  {categoryProperty.property_level ? (
+                                {categoryProperty?.property_level!=="" ? (
                                     <Link
-                                      to={`/${url(
-                                        categoryProperty?.property_city
-                                      )}/${url(
+                                      to={`/properties/${url(
                                         categoryProperty?.property_community
                                       )}/${url(
                                         categoryProperty?.property_sub_community
-                                      )}/${url(
-                                        categoryProperty?.property_type
-                                      )}-for-${url(
+                                      )}/properties-for-${url(
                                         categoryProperty?.property_for
                                       )}-${url(
                                         categoryProperty?.property_level
@@ -234,15 +218,7 @@ const SubCommunityExclusivePropertyGrid = ({propertySubCategory}) => {
                                     </Link>
                                   ) : (
                                     <Link
-                                      to={`/${url(
-                                        categoryProperty?.property_city
-                                      )}/${url(
-                                        categoryProperty?.property_community
-                                      )}/${url(
-                                        categoryProperty?.property_type
-                                      )}-for-${url(
-                                        categoryProperty?.property_for
-                                      )}-${url(
+                                      to={`/properties/${url(categoryProperty?.property_community)}/${url(
                                         categoryProperty?.property_sub_community
                                       )}/th${categoryProperty?.id}`}
                                     >
