@@ -19463,7 +19463,7 @@ a.ltn__utilize-toggle.close {
 
   border-radius: 7px !important;
   color: #111111;
-  background-color: #e5e5e5 !important;
+  /* background-color: #e5e5e5 !important; */
   border: 2px solid;
   border-color: var(--black-2);
   height: 45px !important;

@@ -55,7 +55,7 @@ const ContactForm1 = ({contact}) => {
                   <h5>{con?.c_mobile}</h5>
   
                   <h5>
-                    {con?.c_address}
+                    {con?.c_address+con?.c_mobile}
                   </h5>
                 </div>
               </div>
@@ -85,16 +85,16 @@ const ContactForm1 = ({contact}) => {
                     type="text"
                     id="name"
                     name="name"
+                    placeholder="name"
                     required
                   />
                 </div>
                 <div class="">
                   {/* <label for="exampleFormControlInput1" class="form-label">Your Name</label> */}
                   <input
-                    class="form-control"
                     placeholder="Phone"
                     onChange={handleChange}
-                    type="number"
+                    type="text"
                     id="mobile_no"
                     name="mobile_no"
                     required
@@ -104,6 +104,7 @@ const ContactForm1 = ({contact}) => {
                   {/* <label for="exampleFormControlInput1" class="form-label">Your Email</label> */}
                   <input
                     onChange={handleChange}
+                    placeholder="email"
                     type="email"
                     id="email"
                     name="email"

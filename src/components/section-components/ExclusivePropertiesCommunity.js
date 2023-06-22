@@ -20,6 +20,7 @@ import { capitalizeWords, getPropertiesCategoryUtils, getSubCommunitiesInaCommun
 import ExclusiveCommunitiesBreadcrum from '../global-components/ExclusiveCommunitiesBreadcrum';
 import ExclusivePropertiesCommunityColumn from './ExclusivePropertiesCommunityColumn';
 import Product_Details from '../product-details';
+import ExclusiveCommunityGrid from './ExclusiveCommunityGrid';
 
 const CommunityPage = () => {
     const capitalizeFirstLetter=(string)=> {
@@ -54,7 +55,7 @@ const CommunityPage = () => {
             try {
                 setLoading(true);
                 console.log("exclvpropertiesgrid1")
-                const data = await getPropertiesCategoryUtils("dubai",Product_Details?.property_type,property_for,orignalCommunity);
+                const data = await getPropertiesCategoryUtils("dubai",property_type,property_for,orignalCommunity);
                 console.log("exclvpropertiesgrid2")
 
                 setpropertyCategory(data);
@@ -100,7 +101,7 @@ const CommunityPage = () => {
         {/* <VillaforSale city={capitalizeFirstLetter(property_city)} type={capitalizeFirstLetter(property_type)} for={capitalizeFirstLetter(property_for)} comm={capitalizeFirstLetter(orignalCommunity)}  headertitle="Garden Homes Frond C" customclass="mb-0 " /> */}
         <ExclusivePropertiesCommunityColumn loading={loading2} getSubCommunitiesInaCommunity={getSubCommunitiesInaCommunity}/>
        
-        <CommunityPropertyGrid  propertyCategory={propertyCategory}/> 
+        <ExclusiveCommunityGrid property_type={property_type} property_for={property_for}  property_comm={orignalCommunity}/> 
         <CallToActionV1 />
        
         <Footer />
