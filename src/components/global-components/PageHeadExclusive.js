@@ -51,7 +51,7 @@ const PageHeadExclusive = (props) => {
 							  <li>
 							<Link to={`/properties/${url(
 								props?.propertyDetails?.property_community
-							  )}/properties-for-${url(props?.propertyDetails?.property_for)}-${url(props?.propertyDetails?.property_sub_community)}`}>{ props?.propertyDetails?.property_level }</Link>
+							  )}/${url(props?.propertyDetails?.property_sub_community)}/properties-for-${url(props?.propertyDetails?.property_for)}-${url(props?.propertyDetails?.property_level)}`}>{ props?.propertyDetails?.property_level }</Link>
 							  </li>
 						
 						<li>{"TH"}{ props?.propertyDetails?.id }</li>
