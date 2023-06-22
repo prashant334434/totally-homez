@@ -10,8 +10,13 @@ import TyepPropertyGrid from '../shop-components/TyepPropertyGrid'
 import Footer_v1 from '../global-components/footer'
 import CallToActionV1 from '../section-components/call-to-action-v1';
 import ExclusivePropertiesTypeGrid from '../shop-components/ExclusivePropertiesTypeGrid'
+import MetaData from '../Layout/MetaData'
+import { replaceHyphensAndCapitalize } from '../../utils/propertyUtils'
 
 const ExclusiveProperties = () => {
+  const capitalizeFirstLetter=(string)=> {
+    return string?.replace(/^\w/, (firstLetter) => firstLetter.toUpperCase());
+  }
   const {loading,propertiesFor}=useSelector((state)=>state.propertiesFor)
   const location = useLocation();
   const pathnameParts = location.pathname.split('/');
@@ -30,6 +35,7 @@ dispatch(getPropertiesFor(separatedStrings[0]))
     <div>
     {/* <MetaData title={` ${capitalizeFirstLetter(property_type)} For  ${capitalizeFirstLetter(property_for)} In ${replaceHyphensAndCapitalize(property_city)}`+` `+`-`+` `+`Totally Home Real Estate`} metaDesription={`Check Our Verified Listing Of Dubai ${capitalizeFirstLetter(property_type)} For ${capitalizeFirstLetter(property_for)} In Level With World Class Amenities, Amazing Views And Attractive Lifestyle`}/> */}
 
+    <MetaData title={` ${capitalizeFirstLetter("Properties")} For ${capitalizeFirstLetter(separatedStrings[0])} In ${capitalizeFirstLetter(separatedStrings[1])}`+` `+`-`+` `+`Totally Home Real Estate`} metaDesription={`Check Our Verified Listing Of Dubai ${capitalizeFirstLetter("Properties")} For ${capitalizeFirstLetter(property_for)} In Level With World Class Amenities, Amazing Views And Attractive Lifestyle`}/>
 
 <MobileNav/>
 <ExclusivePropertiesBreadCrum separatedStrings={separatedStrings} />
