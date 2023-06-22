@@ -62,8 +62,7 @@ const BlogMap = (props) => {
   }, [dispatch]);
 
   const handleClick = (id, title) => {
-    console.log("title", title);
-    console.log("id ", id);
+    
 
     dispatch(currentBlog(id));
     history.push(`/blog/${title?.toLowerCase().split(" ").join("-")}`)

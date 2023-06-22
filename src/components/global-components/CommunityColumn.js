@@ -20,7 +20,6 @@ const CommunityColumnProperty = ({
     }
   }
 
-  console.log("subCommunityArray", subCommunityArray);
   const [itemsToShow, setItemsToShow] = useState(4);
   const showmore = () => {
     setItemsToShow(subCommunityArray.length);

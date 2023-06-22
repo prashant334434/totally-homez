@@ -23,7 +23,6 @@ const AllTeam = () => {
     }, [dispatch])
 
     const handleLinkClick = (id, name) => {
-        console.log("agentIdHome", id)
 
         dispatch(currentTeamMember(id))
         history.push(`/team/${name.toLowerCase().split(" ").join("-")}`)

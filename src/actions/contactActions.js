@@ -18,7 +18,6 @@ export const getContactUsApi = () => async (dispatch) => {
       `https://totallyhomerealestate.com/API/api/contacts`
     );
 
-    console.log(data);
     dispatch({
       type: GET_CONTACT_SUCCESS,
       payload: data,
@@ -40,9 +39,7 @@ export const postContactApi = (formData,page_name) => async (dispatch) => {
       // 'X-CSRF-TOKEN': `dfsdfsdfsdfsdfvsdvfsdfvsdfvcdfvfsxdvxvxfvf`
     },
   };
-  console.log(formData);
   try {
-    console.log(formData)
     dispatch({
       type: POST_CONTACT_REQUEST,
     });
@@ -58,7 +55,6 @@ export const postContactApi = (formData,page_name) => async (dispatch) => {
       type: POST_CONTACT_SUCCESS,
       payload: data,
     });
-    console.log(data);
   } catch (error) {
     dispatch({
       type: POST_CONTACT_FAILURE,
